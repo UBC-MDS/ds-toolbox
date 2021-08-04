@@ -2,7 +2,7 @@
 type: slides
 ---
 
-# Congratulations on completing Data Visualization!
+# Congratulations on completing The Data Science Toolbox!
 
 Notes: 
 
@@ -12,7 +12,7 @@ Notes:
 
 # You did it!
 
-We covered a lot of ground but you managed to finished all 7 Modules. It's important to celebrate this success. 
+We covered a lot of ground but you managed to finished all 8 Modules. It's important to celebrate this success. 
 
 
 Notes:

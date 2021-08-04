@@ -1,7 +1,7 @@
 ---
 title: 'Module Closing Remarks'
 description:
-  'Well done on finishing Exploratory Data Visualization.'
+  'Well done on finishing The Data Science Toolbox.'
 prev: /module7
 next: null
 type: chapter
