@@ -44,7 +44,7 @@
         "reveal.js": "^3.9.2",
         "vega-cli": "^5.13.0",
         "vega-lite": "^4.14.1",
-        "xmlhttprequest-ssl": "^1.6.2"
+        "xmlhttprequest-ssl": "^2.0.0"
     },
     "scripts": {
         "build": "gatsby build",
@@ -56,7 +56,6 @@
     },
     "devDependencies": {
         "browser-monads": "^1.0.0",
-        "critical": "^4.0.1",
         "prettier": "^1.19.1"
     },
     "repository": {
