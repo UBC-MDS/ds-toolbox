@@ -10,6 +10,10 @@ To view the course locally with Docker:
 
 1. Install docker and docker-compose
 
-2. Clone this GitHub repo, and then from the root of this project repo type: `docker-compose up`
+2. Clone this GitHub repo
 
-3. Then copy this url to the browser: `http://localhost:8000`
+3. From the root of this project repo type: `docker-compose build`
+
+4. After it's done building, run `docker-compose up`
+
+5. Then copy this url to the browser: `http://localhost:8000`
