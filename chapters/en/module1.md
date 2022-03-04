@@ -4,21 +4,21 @@ description:
   'This chapter will teach you about many cool things and introduce you to the
   most important concepts of the course.'
 prev: null
-next: /chapter2
-type: chapter
+next: /module2
+type: module
 id: 1
 ---
 
 <exercise id="1" title="Introduction" type="slides">
 
-<slides source="chapter1_01_Overview">
+<slides source="module1_01_Overview">
 </slides>
 
 </exercise>
 
 <exercise id="2" title="What is Jupyter Lab?" type="slides">
 
-<slides source="chapter1_02_JLab">
+<slides source="module1_02_JLab">
 </slides>
 
 </exercise>
@@ -49,7 +49,7 @@ You need internet access to get JupyterLab working, but it not coming from anuwh
 
 <exercise id="4" title="Jupyter Notebooks" type="slides">
 
-<slides source="chapter1_04_JNotebook">
+<slides source="module1_04_JNotebook">
 </slides>
 
 </exercise>
@@ -81,7 +81,7 @@ Double check in what order the cells where run
 
 <exercise id="6" title="Working with text via markdown cells" type="slides">
 
-<slides source="chapter1_06_Markdown">
+<slides source="module1_06_Markdown">
 </slides>
 
 </exercise>
@@ -102,9 +102,10 @@ You can check the cheatsheet (LINK)
 
 <exercise id="8" title="Static figure creation and exporting notebooks" type="slides">
 
-<slides source="chapter1_08_Figures">
+<slides source="module1_08_Figures">
 </slides>
 
+</exercise>
 
 <exercise id="9" title="Create and save your first plot!">
 
@@ -157,7 +158,7 @@ That is correct! But it is not the only way
 
 <exercise id="10" title="Jupyter Lab sidebars and other tools" type="slides">
 
-<slides source="chapter1_10_Sidebar">
+<slides source="module1_10_Sidebar">
 </slides>
 
 <exercise id="11" title="FINAL EXERCISE (pending)">

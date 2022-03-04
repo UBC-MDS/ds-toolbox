@@ -1,5 +1,5 @@
 ---
-title: 'Chapter 1: Bash'
+title: 'Chapter 2: Bash'
 description:
   'This chapter will teach you about many cool things and introduce you to the
   most important concepts of the course.'
