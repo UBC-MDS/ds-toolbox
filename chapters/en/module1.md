@@ -1,378 +1,184 @@
 ---
-title: 'Module 1: Why Visualize Data?'
+title: 'Chapter 1: Jupyter Lab'
 description:
-  'In this module we will be learning about the importance of data visualization and how a grammar of graphics can help us effectively visualize data.'
-prev: ../../module0
-next: ../../module2
+  'This chapter will teach you about many cool things and introduce you to the
+  most important concepts of the course.'
+prev: null
+next: /chapter2
 type: chapter
 id: 1
 ---
 
-<exercise id="0" title="Module Learning Outcomes"  type="slides, video">
-<slides source="module1/module1_00" shot="0" start="3:42" end="4:35"> </slides>
-</exercise>
+<exercise id="1" title="Introduction" type="slides">
 
-
-<exercise id="1" title="What is Data Visualization?" type="slides,video">
-<slides source="module1/module1_01" shot="1" start="0:003" end="05:31"> </slides>
-</exercise>
-
-<exercise id="2" title="True or False: Data Visualization">
-
-**True or False**       
-*It is easier for humans to interpret plots than raw numbers.*
-
-
-<choice id="1" >
-
-<opt text="True"  correct="true">
-
-You got it! We saw in the slides that sometimes humans can pick up more information about the data in plots. 
-
-</opt>
-
-
-<opt text="False">
-
-Take a look at the slides. Is it easier to notice trends and patterns with the data displayed in tables or in plots?
-
-</opt>
-
-
-</choice>
-
-**True or False**       
-*Statistical summaries are often useful, but it is a good idea to also visualize your data before drawing any conclusions.*
-
-<choice id="2" >
-
-<opt text="True"  correct="true">
-
-You've been paying attention. 
-
-</opt>
-
-<opt text="False">
-
-Summaries are helpful but don't get us a full picture like a visualization can. 
-
-</opt>
-
-</choice>
-</exercise>
-
-
-<exercise id="3" title="How Can We Visualize Data?" type="slides,video">
-<slides source="module1/module1_03" shot="1" start="5:4008" end="26:2200"> </slides>
-</exercise>
-
-<exercise id="4" title="Test Your Knowledge: Visualization Libraries">
-
-**Question 1**      
-What is another way of describing high-level visualization libraries? 
-
-<choice id="1" >
-<opt text="Imperative">
-
-This is low-level plotting.
-
-</opt>
-
-<opt text="Declarative" correct="true">
-
-Great!
-
-</opt>
-
-<opt text="Immediate">
-
-This isn't quite right. We made this part up!
-
-</opt>
-
-
-<opt text="Definitive">
-
-This isn't quite right. We made this part up!
-
-</opt>
-
-</choice>
-
-
-**Question 2**      
-What kind of components are combined in declarative plotting to create visualizations?
-
-<choice id="2" >
-<opt text="Dictionary Keys">
-
-This is a data structure and not quite a plotting structure.
-
-</opt>
-
-<opt text="Block Components">
-
-Think more language-oriented.
-
-</opt>
-
-<opt text="Grammatical Components"  correct="true">
-
-You got it!
-
-</opt>
-
-
-<opt text="Grouping Components">
-
-I'm not entirely sure what a grouping component is since we made this up!
-
-</opt>
-
-</choice>
-
-
-</exercise>
-
-<exercise id="5" title="True or False: Visualization Libaries">
-
-
-**True or False**    
-*A low-level visualization library focuses on plot construction details.*
-
-<choice id="1" >
-<opt text="True"  correct="true">
-
-Great job! 
-
-</opt>
-
-<opt text="False">
-
-Hmmm. It's possible you got mixed up with high-level visualization. 
-
-</opt>
-
-</choice>
-
-**True or False**    
-*A high-level visualization library focuses on data and relationships.*
-
-<choice id="2" >
-
-<opt text="True"  correct="true">
-
-Nice work!
-
-</opt>
-
-<opt text="False">
-
-High-level visualization libraries concentrate on the data and the relationships between them. 
-
-</opt>
-
-</choice>
-</exercise>
-
-
-<exercise id="6" title="Your First Plot">
-
-**Instructions:**    
-Be patient when running a coding exercise for the first time, it can take a few minutes. 
-
-**When you see `____` in a coding exercise, replace it with what you assume to be the correct code. Run the code to see if you obtain the desired output
-and submit it to validate if you were correct.**
-
-
-Let's use the same vehicle dataset we saw in the lecture, but visualize the relationship between two different columns.
-
-The data has already been imported for you in this exercise.
-
-Here is what it looks like:
-
-<codeblock id="cars_data">
-
-</codeblock>
-
-Tasks: 
-
-- Fill out the missing fields in the Altair plot in order to create a scatter plot.
-- The cars' `Horsepower` should be on the y-axis and their `Weight_in_lbs` on the x-axis.
-- Color the points by the `Origin` of the cars.
-
-<codeblock id="01_06">
-
-- Are the column names expressed in quotes, e.g. `y='Horsepower'`?
-
-</codeblock>
-</exercise>
-
-
-<exercise id="7" title="Aggregations, Lines, and Layers" type="slides,video">
-<slides source="module1/module1_07" shot="1" start="26:3200" end="40:07"></slides>
-</exercise>
-
-
-<exercise id="8" title="Questions on How Plots are Created">
-
-**Question 1**     
-Which function do we need to use to superimpose plots in Altair?
-
-<choice id="1">
-
-<opt text="Overlay">
-
-Not quite right here. 
-
-</opt>
-
-<opt text="Layer"  correct="true">
-
-That's it!
-
-</opt>
-
-<opt text= "Panel">
-
-This is something else by good try. 
-
-</opt>
-
-</choice>
-
-**Question 2**     
-Line plots are often preferable to point plots when visualizing trends over time because...
-
-<choice id="2">
-<opt text="The lines make the plot more visually appealing.">
-There is more to plots then just being visually appealing. 
-</opt>
-<opt text= "Line plots are faster to create.">
-They both take approximately the same time to create.
-</opt>
-<opt text="The line makes it easy to see which values are connected in the same group and its slope facilitates our interpretation of the overall trend."  correct="true">
-Nailed it!
-</opt>
-</choice>
-
-</exercise>
-
-<exercise id="9" title="Creating a Line Plot for Change Over Time">
-
-
-**Instructions:**    
-Be patient when running a coding exercise for the first time, it can take a few minutes. 
-
-**When you see `____` in a coding exercise, replace it with what you assume to be the correct code. Run the code to see if you obtain the desired output
-and submit it to validate if you were correct.**
-
-_**Make sure you remove the hash (`#`) symbol in the coding portions of this question.  We have commented them so that the line won't execute and you can test your code after each step.**_
-
-Let's use a line plot to visualize how the price of a few common stocks has changed over time.
-
-Click Run code to take a look at the stock data before uncommenting the plot code and creating the visualization.
-
-Tasks:
-
-- Fill out the missing fields in the code below.
-- Import the correct library from `vega_datasets`.
-- ***Before going further Click <font style="color:blue">Run code</font>   to take a look at the stock data before uncommenting the plot code and creating the visualization.***
-- Create a line plot with the stocks' date on the x-axis and their price on the y-axis. Save the plot in an object named `price_lineplot`.
-- You should colour the lines by the stock symbol
-so that you can compare the stock development for the different companies.
-
-<codeblock id="01_09a">
-
-- Are you putting the column names in quotes, e.g. `y='price'`?
-- Look at the dataframe by typing `stocks.columns` if you are unsure about the exact column names.
-
-</codeblock>
-
-
-**Question**   
-In the chart above, which stock was priced the highest in 2003?
-
-<choice id="1">
-
-<opt text="GOOG">
-
-GOOG wasn't present in 2003.
-
-</opt>
-
-<opt text= "AAPL">
-
-This stock was quite low in 2003.
-
-</opt>
-
-<opt text= "AMZN">
-
-This stock was quite low in 2003.
-
-</opt>
-
-<opt text="IBM"  correct="true">
-
-You got it!
-
-</opt>
-
-</choice>
-
-
-**Combining a point and line plot**
-
-Let's add points to the line above to indicate each observation along the line.
-
-Tasks:  
-
-- Fill out the missing fields in the code below.
-- Assign the line plot to a variable name (of your choice),
-and then use this name to combine a line plot and a point plot.
-
-<codeblock id="01_09b">
-
-- Remember that the column names should be in quotes, e.g. `y='price'`.
-- Look at the dataframe by typing `stocks.columns` if you are unsure about the exact column names.
-- Revisit the slides on how to build upon existing plots when layering.
-
-</codeblock>
-</exercise>
-
-<exercise id="10" title="Plotting an Aggregated Value">
-
-**Instructions:**    
-Be patient when running a coding exercise for the first time, it can take a few minutes. 
-
-**When you see `____` in a coding exercise, replace it with what you assume to be the correct code. Run the code to see if you obtain the desired output
-and submit it to validate if you were correct.**
-
-
-Instead of showing the value for each individual stock value,
-we could explore the average trend over time
-for all five companies.
-
-Tasks:
-
-- Create a line plot with the average value of all stocks over time,
-instead of giving each company its own line. 
-*Hint: This will require aggregating using the mean for your y-axis values.*
-
-
-<codeblock id="01_10">
-
-- Remember that the column names should be in quotes, e.g. `y='price'`.
-- Look at the dataframe by typing `stocks.columns` if you are unsure about the exact column names.
-- Remember that the string syntax for creating an average is `'mean(column_name)'`
-
-</codeblock>
-</exercise>
-
-
-
-<exercise id="11" title="What Did We Just Learn?" type="slides, video">
-<slides source="module1/module1_end" shot="0" start="04:37" end="05:35">
+<slides source="chapter1_01_Overview">
 </slides>
+
+</exercise>
+
+<exercise id="2" title="What is Jupyter Lab?" type="slides">
+
+<slides source="chapter1_02_JLab">
+</slides>
+
+</exercise>
+
+<exercise id="3" title="How to access JupyterLab?">
+
+As you can see, Jupyter Lab it is opened in a browser. Where is the program running?
+
+<choice>
+<opt text="My computer">
+You have not installed locally jupyter lab. You can install Jupyter Lab locally in your desktop here: https://github.com/jupyterlab/jupyterlab-desktop
+</opt>
+
+<opt text="UBC Servers" correct="true">
+
+For this course we are going to be using UBC Jupyter Lab. This means that you will be able to use the packages that are already installed in our servers. If you would like to learn how to install Jupyter Lab in your computer, you can follow these instructions: x
+
+</opt>
+
+<opt text="On the internet">
+
+You need internet access to get JupyterLab working, but it not coming from anuwhere on the internet. We have already installed some packages you are going to ube using during this course.
+
+</opt>
+</choice>
+
+</exercise>
+
+<exercise id="4" title="Jupyter Notebooks" type="slides">
+
+<slides source="chapter1_04_JNotebook">
+</slides>
+
+</exercise>
+
+<exercise id="5" title="Running cells">
+
+If you have the following code, what would be the value of the variable `var`
+
+IMAGE
+
+<choice>
+<opt text="5" correct="true">
+That is correct! 
+</opt>
+
+<opt text="3" >
+
+Double check in what order the cells where run
+
+</opt>
+
+<opt text="8">
+
+Double check in what order the cells where run
+</opt>
+</choice>
+
+</exercise>
+
+<exercise id="6" title="Working with text via markdown cells" type="slides">
+
+<slides source="chapter1_06_Markdown">
+</slides>
+
+</exercise>
+
+<exercise id="7" title="Markdown syntax">
+
+How would you write the following text using markdown?
+
+IMAGE
+
+<codeblock id="01_07">
+
+You can check the cheatsheet (LINK)
+
+</codeblock>
+
+</exercise>
+
+<exercise id="8" title="Static figure creation and exporting notebooks" type="slides">
+
+<slides source="chapter1_08_Figures">
+</slides>
+
+
+<exercise id="9" title="Create and save your first plot!">
+
+Copy the following code in one cell in your notebook, run it anf then export it as a `.png` image.
+
+```
+# Please note, you don't have to understand what is going on in this cell
+# it is just to show you how a static plot looks inside JupyterLab
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+N = 50
+x = np.random.rand(N)
+y = np.random.rand(N)
+colors = np.random.rand(N)
+area = (30 * np.random.rand(N))**2  # 0 to 15 point radii
+
+plt.scatter(x, y, s=area, c=colors, alpha=0.5)
+```
+
+<choice>
+
+<opt text="I right clicked is the JupyterLab menu and hold shift brings up the browser menu. Then I select Save">
+That is correct! But it is not the only way
+</opt>
+
+<opt text="I printed the screen to save it" >
+
+</opt>
+
+<opt text="I used the Save command in the plotting library" >
+That is correct! But it is not the only way
+</opt>
+
+<opt text="1 and 3 are correct"  correct="true" >
+
+</opt>
+
+<opt text="2 and 3 are correct" >
+
+</opt>
+
+<opt text="All are correct">
+
+</opt>
+</choice>
+
+</exercise>
+
+<exercise id="10" title="Jupyter Lab sidebars and other tools" type="slides">
+
+<slides source="chapter1_10_Sidebar">
+</slides>
+
+<exercise id="11" title="FINAL EXERCISE (pending)">
+
+**In progress**
+
+<choice>
+<opt text="5" correct="true">
+That is correct! 
+</opt>
+
+<opt text="3" >
+
+Double check in what order the cells where run
+
+</opt>
+
+<opt text="8">
+
+Double check in what order the cells where run
+</opt>
+</choice>
+
 </exercise>
