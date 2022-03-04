@@ -18,7 +18,7 @@ id: 1
 
 <exercise id="2" title="What is Jupyter Lab?" type="slides">
 
-<slides source="module1_02_JLab">
+<slides source="module1/module1_02_JLab">
 </slides>
 
 </exercise>
@@ -49,7 +49,7 @@ You need internet access to get JupyterLab working, but it not coming from anuwh
 
 <exercise id="4" title="Jupyter Notebooks" type="slides">
 
-<slides source="module1_04_JNotebook">
+<slides source="module1/module1_04_JNotebook">
 </slides>
 
 </exercise>
@@ -81,7 +81,7 @@ Double check in what order the cells where run
 
 <exercise id="6" title="Working with text via markdown cells" type="slides">
 
-<slides source="module1_06_Markdown">
+<slides source="module1/module1_06_Markdown">
 </slides>
 
 </exercise>
@@ -102,7 +102,7 @@ You can check the cheatsheet (LINK)
 
 <exercise id="8" title="Static figure creation and exporting notebooks" type="slides">
 
-<slides source="module1_08_Figures">
+<slides source="module1/module1_08_Figures">
 </slides>
 
 </exercise>
@@ -158,7 +158,7 @@ That is correct! But it is not the only way
 
 <exercise id="10" title="Jupyter Lab sidebars and other tools" type="slides">
 
-<slides source="module1_10_Sidebar">
+<slides source="module1/module1_10_Sidebar">
 </slides>
 
 <exercise id="11" title="FINAL EXERCISE (pending)">
