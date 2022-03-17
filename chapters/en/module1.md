@@ -1,7 +1,7 @@
 ---
-title: 'Module 1: Why Visualize Data?'
+title: 'Module 1: Introduction to the Data Science Toolbox'
 description:
-  'In this module we will be learning about the importance of data visualization and how a grammar of graphics can help us effectively visualize data.'
+  'In this module we will introduce you to several of the tools that we will be using in this course, as well as to computing in general.'
 prev: ../../module0
 next: ../../module2
 type: chapter
@@ -13,7 +13,7 @@ id: 1
 </exercise>
 
 
-<exercise id="1" title="What is Data Visualization?" type="slides,video">
+<exercise id="1" title="Introduction to the Data Science Toolbox" type="slides,video">
 <slides source="module1/module1_01" shot="1" start="0:003" end="05:31"> </slides>
 </exercise>
 
