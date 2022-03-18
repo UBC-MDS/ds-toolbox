@@ -11,12 +11,13 @@ title: 'module1_01'
 </head>
 
 <style>
-.row {
-  display: flex;
-}
+<!-- .row { -->
+  <!-- display: flex; -->
+<!-- } -->
 .column {
-  flex: 33.333%;
-  padding: 5px;
+    float: left;
+  <!-- flex: 33.333%; -->
+  padding: 10px;
 }
 </style>
 
@@ -63,10 +64,10 @@ is called Bash.
 
 <div class="row">
     <div class="column">
-        <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git logo" width="100%"></img>
+        <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git logo" width="200px"></img>
     </div>
     <div class="column">
-        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo" width="100%"></img>
+        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo" width="200px"></img>
     </div>
     <div class="column">
     </div>
@@ -177,6 +178,8 @@ of the same software.
 ---
 
 ## A commitment to open source
+
+<img src="https://opensource.org/files/osi_standard_logo_0.png" alt="Open Source Initiative logo" width="300px"></img>
 
 
 - Being able to use the software after leaving school without paying exorbitant amounts of money
