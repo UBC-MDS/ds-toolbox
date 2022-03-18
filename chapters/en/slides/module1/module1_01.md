@@ -28,7 +28,7 @@ before we will dive into how to install and use them.
 
 ## The Shell (Bash)
 
-<img src="https://cdn.rawgit.com/odb/official-bash-logo/master/assets/Logos/Identity/PNG/BASH_logo-transparent-bg-color.png" alt="Bash logo" width="100%"></img>
+<img src="https://cdn.rawgit.com/odb/official-bash-logo/master/assets/Logos/Identity/PNG/BASH_logo-transparent-bg-color.png" alt="Bash logo" width="40%"></img>
 
  <!-- https://raw.githubusercontent.com/odb/official-bash-logo/master/assets/Logos/Icons/PNG/512x512.png -->
 
@@ -55,7 +55,9 @@ is called Bash.
 - Collaboration
 - Communication
 
-<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Git logo" width="100%"></img>
+<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo" width="40%"></img>
+
+<img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git logo" width="40%"></img>
 
 
 Notes:
@@ -74,6 +76,12 @@ and review code.
 ---
 
 ## JupyterLab and VS Code
+
+
+<img src="https://jupyter.org/assets/homepage/main-logo.svg" alt="Jupyter Logo" width="40%"></img>
+
+<img src="https://code.visualstudio.com/assets/images/code-stable.png" alt="VS Code Logo" width="40%"></img>
+
 
 - Edit text and code files
 - Develop interactive notebooks
