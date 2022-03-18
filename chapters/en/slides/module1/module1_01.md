@@ -10,6 +10,16 @@ title: 'module1_01'
 <base target="_blank">
 </head>
 
+<style>
+.row {
+  display: flex;
+}
+.column {
+  flex: 50%;
+  padding: 5px;
+}
+</style>
+
 # Introduction to the Data Science Toolbox
 
 Notes:
@@ -28,7 +38,7 @@ before we will dive into how to install and use them.
 
 ## The Shell (Bash)
 
-<img src="https://cdn.rawgit.com/odb/official-bash-logo/master/assets/Logos/Identity/PNG/BASH_logo-transparent-bg-color.png" alt="Bash logo" width="40%"></img>
+<img src="https://cdn.rawgit.com/odb/official-bash-logo/master/assets/Logos/Identity/PNG/BASH_logo-transparent-bg-color.png" alt="Bash logo" width="50%"></img>
 
  <!-- https://raw.githubusercontent.com/odb/official-bash-logo/master/assets/Logos/Icons/PNG/512x512.png -->
 
@@ -55,10 +65,14 @@ is called Bash.
 - Collaboration
 - Communication
 
-<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo" width="40%"></img>
-
-<img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git logo" width="40%"></img>
-
+<div class="row">
+    <div class="column">
+        <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git logo" width="30%"></img>
+    </div>
+    <div class="column">
+        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo" width="30%"></img>
+    </div>
+</div>
 
 Notes:
 Git is a program that runs on your computer
@@ -77,11 +91,14 @@ and review code.
 
 ## JupyterLab and VS Code
 
-
-<img src="https://jupyter.org/assets/homepage/main-logo.svg" alt="Jupyter Logo" width="40%"></img>
-
-<img src="https://code.visualstudio.com/assets/images/code-stable.png" alt="VS Code Logo" width="40%"></img>
-
+<div class="row">
+    <div class="column">
+        <img src="https://jupyter.org/assets/homepage/main-logo.svg" alt="Jupyter Logo" width="30%"></img>
+    </div>
+    <div class="column">
+        <img src="https://code.visualstudio.com/assets/images/code-stable.png" alt="VS Code Logo" width="30%"></img>
+    </div>
+</div>
 
 - Edit text and code files
 - Develop interactive notebooks
