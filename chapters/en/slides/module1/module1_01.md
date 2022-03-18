@@ -28,9 +28,13 @@ before we will dive into how to install and use them.
 
 ## The Shell (Bash)
 
-- Navigate filesystem
+<img src="https://cdn.rawgit.com/odb/official-bash-logo/master/assets/Logos/Identity/PNG/BASH_logo-transparent-bg-color.png" alt="Bash logo" width="100%"></img>
+
+ <!-- https://raw.githubusercontent.com/odb/official-bash-logo/master/assets/Logos/Icons/PNG/512x512.png -->
+
+- Navigate the filesystem
 - Launch programs
-- Automation
+- Automation of tasks
 
 Notes:
 A shell is a tool that we can use to
@@ -50,6 +54,9 @@ is called Bash.
 - Version control
 - Collaboration
 - Communication
+
+<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Git logo" width="100%"></img>
+
 
 Notes:
 Git is a program that runs on your computer
