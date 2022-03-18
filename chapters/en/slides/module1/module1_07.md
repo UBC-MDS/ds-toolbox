@@ -1,356 +1,202 @@
 ---
+title: 'module1_07'
 type: slides
 ---
 
-# Aggregations, lines, and layers
+# Asking effective questions
 
 Notes:
-
-In this slide deck, we will see how to aggregate data in Altair (to plot
-the mean, median, etc), how to create lineplots via `mark_line()`, and
-how to combine line and point plots together via layers.
-
----
-
-## Including all the data can hinder visualization of general trends
-
-``` python
-import altair as alt
-from vega_datasets import data
-
-cars = data.cars()
-alt.Chart(cars).mark_point().encode(
-    x='Weight_in_lbs',
-    y='Miles_per_Gallon',
-    color='Origin')
-```
-
-<iframe src="/module1/charts/07/unnamed-chunk-1.html" width="100%" height="420px" style="border:none;">
-</iframe>
-
-Notes: Throughout this course we will explore many different datasets,
-but for now, we will stick to the `cars` dataset to keep it simple and
-focus on introducing additional Altair functionality.
-
-Let’s refresh our memory with this plot from the previous module.
-
-We noted that it appears that cars differ in their weight and mileage
-based on their country of origin. At least the American cars appear to
-stand out, but it is difficult to see any differences between Europe and
-Japan.
-
-Visualizing all data points as in this slide is helpful to detect
-patterns in the data.
-
-But when showing all observations, it can be hard to pick up on general
-trends in the data, e.g. if there are any differences in the mean weight
-of cars made in either Japan or Europe.
-
-To more effectively visualize such general trends in the data, we can
-create plots of statistical summaries, such as means and medians.
-
-In Altair (and pandas) these are referred to as data aggregations.
+An important part of working on
+both collaborative and individual software projects,
+is to be able to as effective questions
+so that you can get help 
 
 ---
 
-## Data aggregations are built into Altair
+## Why even bother?
 
-``` python
-alt.Chart(cars).mark_point().encode(
-    x='mean(Weight_in_lbs)',
-    y='mean(Miles_per_Gallon)',
-    color='Origin')
-```
-
-<iframe src="/module1/charts/07/unnamed-chunk-2.html" width="100%" height="420px" style="border:none;">
-</iframe>
-
-Notes: To plot the means of weight and mileage, we could use pandas to
-first calculate the mean values, and then plot the resulting dataframe
-in Altair.
-
-This is powerful since we can access all aggregations built into pandas,
-but it is a bit verbose for simple common operations, such as the mean.
-
-Fortunately, Altair has shortcuts for plotting simple aggregations where
-you provide the name of the aggregation together with the name of the
-column inside a string as in the example in this slide.
-
-<a href="https://altair-viz.github.io/user_guide/encoding.html#binning-and-aggregation" target="_blank">The
-Altair documentation includes a table with all available
-aggregations</a> (scroll down a little on the linked page).
-
-In this visualization, we can detect small differences between the means
-of the Japanese and Europeans cars, which was not discernible when we
-plotted all the points.
-
-Whether this difference is big enough to reach a different conclusion
-than when inspecting the previous plots depends on our application and
-the purpose of the data exploration.
-
----
-
-## Plotting aggregations to visualize trends over time
-
-``` python
-cars
-```
-
-```out
-                          Name  Miles_per_Gallon  Cylinders  Displacement  Horsepower  Weight_in_lbs  Acceleration       Year  Origin
-0    chevrolet chevelle malibu              18.0          8         307.0       130.0           3504          12.0 1970-01-01     USA
-1            buick skylark 320              15.0          8         350.0       165.0           3693          11.5 1970-01-01     USA
-2           plymouth satellite              18.0          8         318.0       150.0           3436          11.0 1970-01-01     USA
-3                amc rebel sst              16.0          8         304.0       150.0           3433          12.0 1970-01-01     USA
-4                  ford torino              17.0          8         302.0       140.0           3449          10.5 1970-01-01     USA
-..                         ...               ...        ...           ...         ...            ...           ...        ...     ...
-401            ford mustang gl              27.0          4         140.0        86.0           2790          15.6 1982-01-01     USA
-402                  vw pickup              44.0          4          97.0        52.0           2130          24.6 1982-01-01  Europe
-403              dodge rampage              32.0          4         135.0        84.0           2295          11.6 1982-01-01     USA
-404                ford ranger              28.0          4         120.0        79.0           2625          18.6 1982-01-01     USA
-405                 chevy s-10              31.0          4         119.0        82.0           2720          19.4 1982-01-01     USA
-
-[406 rows x 9 columns]
-```
-
-Notes: Aggregations are often helpful when comparing trends over time,
-especially when there are multiple groups in the data. In the cars
-dataset, there is a `Year` column, indicating when the car was made.
-
-Often when there is a notion of time in the data, it is interesting to
-see how values in the dataframe change over time.
-
-In this case, we might be interested in knowing whether newer cars are
-more fuel-efficient than older ones.
-
-Presumably, they should be, but does it differ depending on where the
-car was made?
-
-Let’s find out!
-
----
-
-## Plotting aggregations to visualize trends over time works well
-
-``` python
-alt.Chart(cars).mark_point().encode(
-    x='Year',
-    y='mean(Miles_per_Gallon)')
-```
-
-<iframe src="/module1/charts/07/unnamed-chunk-4.html" width="100%" height="420px" style="border:none;">
-</iframe>
-
-Notes: To visualize the mean mileage for each year of all cars, we want
-to perform the aggregation on the `Miles_per_Gallon` column while
-leaving the `Year` column intact.
-
-As you can see this plot one value (the mean) for each year in the
-dataframe.
-
-Here we can see that the observations in this dataframe span the years
-1970-1982 and it does indeed look like the mileage is getting better
-over time as we expected!
-
----
-
-## Plotting all data to visualize trends over time is not effective
-
-``` python
-alt.Chart(cars).mark_point().encode(
-    x='Year',
-    y='Miles_per_Gallon')
-```
-
-<iframe src="/module1/charts/07/unnamed-chunk-5.html" width="100%" height="420px" style="border:none;">
-</iframe>
-
-Notes: As a comparison with the previous slide, if we instead of the
-mean would plot all the data points for each year, it would be much more
-difficult to see the pattern over time as you can see here.
-
----
-
-## Plotting points to visualize trends over time is not ideal
-
-``` python
-alt.Chart(cars).mark_point().encode(
-    x='Year',
-    y='mean(Miles_per_Gallon)',
-    color='Origin')
-```
-
-<iframe src="/module1/charts/07/unnamed-chunk-6.html" width="100%" height="420px" style="border:none;">
-</iframe>
-
-Notes: If we try to explore the mileage over time while grouping the
-cars according to their origin, it is a bit difficult to immediately
-recognize which points belong to which group.
-
-In fact, using points for visualizing trends is not ideal, and lines are
-often preferred as we will see in the next slide.
-
----
-
-## Plotting lines to visualize trends over time is ideal
-
-``` python
-alt.Chart(cars).mark_line().encode(
-    x='Year',
-    y='mean(Miles_per_Gallon)',
-    color='Origin')
-```
-
-<iframe src="/module1/charts/07/unnamed-chunk-7.html" width="100%" height="420px" style="border:none;">
-</iframe>
-
-Notes: One key advantage of line plots is that they connect all the
-observations that belong to the same group presenting them as one
-unified graphical object (one line), which is easy for us to distinguish
-when looking at the plot instead of trying to connect the dots mentally.
-
-Another advantage is that the slope of the line makes it easier to see
-if the value from one year to another is increasing or decreasing.
-
-Altair grammar lets us switch from a point plot to a line plot, by only
-changing `mark_point()` to `mark_line()`, and keeping the rest of the
-code as-is.
-
-In this plot, we can clearly compare the mileage trends over time to
-conclude that cars from all origins improved their mileage, and that the
-trajectory and mileage values are the most similar between Europe and
-Japan.
-
----
-
-## Combining a line with a set of points via layers
-
-``` python
-line = alt.Chart(cars).mark_line().encode(
-    x='Year',
-    y='mean(Miles_per_Gallon)')
-
-point = alt.Chart(cars).mark_point().encode(
-    x='Year',
-    y='mean(Miles_per_Gallon)')
-
-line + point
-```
-
-<iframe src="/module1/charts/07/unnamed-chunk-8.html" width="100%" height="420px" style="border:none;">
-</iframe>
+- You will get help faster
+- Others will get help faster
 
 Notes:
+Asking questions effectively means that the person helping you
+will be able to answer your question better and quicker.
+Being able to answer a question quicker means more time to help others,
+including your future self.
 
-To augment a line plot, it is sometimes helpful to add `point` marks for
-each data point along the line, to emphasize where the observations
-fall.
-
-This is helpful since the line drawn between points could be misleading
-if we have very few points.
-
-For example, if you see a straight line, does that mean there are just
-two points, one in each corner of the line?
-
-Or are there ten points spread out all along the line?
-
-To combine two different types of graphical marks (line and point in
-this case), we will use Altair’s *layering* grammar.
-
-In this slide, we start by defining each chart separately:
-
-first a line plot, <br> then a point plot.
-
-We can then use the `+` (plus) operator to combine the two into a
-layered chart.
+When questions require clarification,
+fewer people will be helped overall.
+Sometimes this in unavoidable because the question is complex,
+but all too often it if because the person trying to help
+is not able to reproduce problem,
+or the question is unclear.
 
 ---
 
-## Building upon previous plots can save time when combining charts
+## Be respectful to volunteers helping you
 
-``` python
-line = alt.Chart(cars).mark_line().encode(
-    x='Year',
-    y='mean(Miles_per_Gallon)')
+- People are often volunteering their help
+- Be respectful and considerate
+- Don't ask unclear questions like this:
 
-line + line.mark_point()
-```
+> WHY IS THIS CODE NOT WORKING??????
 
-<iframe src="/module1/charts/07/unnamed-chunk-9.html" width="100%" height="420px" style="border:none;">
-</iframe>
+Notes:
+When you are asking for help online,
+e.g. on StackOverflow or on GitHub,
+remember that you are often receiving help from people
+who are volunteering their time.
+So please make it as easy as possible for them to help you.
 
-Notes: We can also create a layered plot by reusing a previous chart
-definition.
+You might be frustrated by a problem
+to the point where you just want to ask something like.
 
-Rather than creating the point plot from scratch, we can start with the
-line plot, and then invoke the `mark_point` method.
+> WHY IS THIS CODE NOT WORKING??????
 
-We could also have typed `mark_line(point=True)`, which is a special
-case for getting points on a line since it is such a common operation,
-but the layering grammar extends to other plots, so it is more helpful
-to focus on learning that.
-
----
-
-## Showing raw values together with the mean is often helpful
-
-``` python
-line = alt.Chart(cars).mark_line().encode(
-    x='Year',
-    y='mean(Miles_per_Gallon)')
-
-line + line.mark_point().encode(y='Miles_per_Gallon')
-```
-
-<iframe src="/module1/charts/07/unnamed-chunk-10.html" width="100%" height="420px" style="border:none;">
-</iframe>
-
-Notes: When we are combing plots in layers, we can not only change the
-mark, but also the encodings.
-
-This way, we can create a layer with one point per observations, and
-with a line for the average values.
-
-For this, we need to use `encode` again after creating the first plot,
-to instruct Altair to use the raw values instead of the mean for the
-points.
-
-(note that the axis now has two labels, we will see how to change that
-in a future lecture).
-
-This type of visualization is helpful when we want to show both the
-underlying data and a statistical summary, which is often helpful for
-elucidating what the data tells us.
-
-It is also a good check to make sure nothing unexpected is going on with
-the raw values as we saw in the introductory example with Anscombe’s
-quartet.
+Don't do this.  
+No one will help you.  
+You will get more frustrated.  
 
 ---
 
-## All encodings of the base chart are propagated unless they are overwritten
+## Type out the problem for yourself before asking the question
 
-``` python
-line = alt.Chart(cars).mark_line().encode(
-    x='Year',
-    y='mean(Miles_per_Gallon)',
-    color='Origin')
+- Type our a proper question for yourself
+- Simplifying and formalizing your issue might even lead you to the solution!
 
-line + line.mark_point().encode(y='Miles_per_Gallon')
-```
+Notes:
+When I feel frustrated by a problem
+I find it really helpful and calming to sit down
+and type out a proper question.
+You can start banging out words in the beginning,
+but as you slowly adhere to the format of asking properly,
+it will become like a meditative practice
+which also calms you down.
 
-<iframe src="/module1/charts/07/unnamed-chunk-11.html" width="100%" height="420px" style="border:none;">
-</iframe>
+In addition to your mental wellbeing,
+writing down questions properly has another superb quality:
+they help you solve your own problems.
+The act of formulating a question in either speech or text
+helps you uncover what you missed while the problem was a mere thought.
 
-Notes: We have already seen that the x and y encoding remain the same in
-any subsequently created plots.
+---
 
-Here, we’re showing that this also applies to the colour encoding to
-illustrate that any encoding will be propagated to all layers unless
-they are specifically overwritten.
+## Rubber duck debugging
 
-If we would only have added colour to the point chart, there would still
-have been a single line instead of three.
+<!--TODO include rubber duck debugging from google drive presentation -->
+
+<img src="/module1/your-screenshot.png" alt="My VS code screenshot" width="100%"></img>
+
+Notes:
+This is so common that it has a name:
+"Rubber duck debugging"
+allegedly from a software developer who put a rubber duck on their desk
+and whenever they had a problem they couldn't solve,
+they starting talking to the toy duck,
+and often came upon the resolution during while describing the problem.
+
+---
+
+## How to ask effectively
+
+- Make your question easy to understand
+- Include a succinct description of the problem
+- Include the minimal ode to reproduce it.
+
+<!--TODO Include screenshot of good and bad example? -->
+
+Notes:
+In essence,
+you want to make your question as easy to understand as possible
+and your specific problem as easy to reproduce as possible.
+
+If you just include a screenshot and title your question "Help",
+the person helping you has to spend time trying to figure out
+what you actually want help with instead of helping,
+
+Instead include a succinct, clear
+description of your problem
+and the minimal code needed to reproduce it.
+Altogether,
+this is often called a "Minimal reproducible example".
+
+## Minimal reproducible example
+
+0. Search for other questions similar to yours.
+1. Describe the issue clearly in the title and elaborate briefly in the text body.
+2. Reduce the code to the minimum required to recreate your error, and paste it as text.
+    - If your code includes functions or classes, include their definitions.
+    - Create small toy dataset instead of using real data.
+    - Use markdown code blocks for proper indentation and syntax highlighting.
+3. Describe what you have tried so far,
+   what you don't understand or what went wrong,
+   including any error messages and their full traceback.
+
+Notes:
+In summary,
+asking effectively 
+and creating an MRE includes completing the tasks
+listed in this slide.
+
+There have been great articles written on what goes into an MRE,
+and here are some of them that I recommend that you check out:
+
+- https://stackoverflow.com/help/how-to-ask
+- https://stackoverflow.com/help/minimal-reproducible-example
+- https://community.rstudio.com/t/faq-whats-a-reproducible-example-reprex-and-how-do-i-do-one/5219
+- https://reprex.tidyverse.org/ (an R package to help creating MREs from code)
+
+<!--TODO Where to put this detailed description? Mayve in a details tag? -->
+The points are elaborated on below:
+
+1. Search for other questions similar to yours.
+   Many questions already have an answer,
+   and finding it is faster both for you and for others.
+   If the answer to an existing question is not good enough,
+   improve it by adding the missing info!
+2. Write the tile as a summary of your issue.
+   Think about what you would want the title to say
+   if you were searching the issue list for help.
+   Just "Error" or "Question" is not helpful,
+   but "How to list content in a folder?" is.
+3. Introduce the problem by briefly describing what you want to do.
+4. Show what you have tried,
+   explain what you expected to happen,
+   and what went wrong.
+   It is often critical that the person helping you can reproduce the problem,
+   so include both the code or command you tried to run and the error message.
+      - For coding questions,
+        text is preferred over a screenshot since it is easy to copy and paste,
+        which facilitates reproducing your problem.
+      - Inline code should be surrounded by single backticks for clarity.
+        Longer blocks of code with multiple lines should be surrounded by triple backticks.
+5. Include versions of any packages you are using,
+   and the operating system if relevant,
+   e.g. Win10, Python 3.8, pandas 1.0.2.
+   On R you can use `devtools::session_info()` to see this information
+   (after `install.packages("devtools")`).
+   and on Python you can use `sinfo()`
+   (after importing: `from sinfo import sinfo`,
+   needs to be installed via `pip install sinfo`). 
+6. When your problem is solved,
+   acknowledge the solution,
+   close the issue/ticket/question.
+   If you found the solution yourself,
+   post it in a comment before closing,
+   so that others can find it.
+
+---
+
+## Where to ask?
+
+- Stack Overflow
+
+<!--TODO include course specific forum? -->
+
+Notes:
+If you are asking your question on stack overflow
+you can use tags to categorize it,
+and these can then be used to search for an answer via the syntax `[tag-name]`.
 
 ---
 
