@@ -68,6 +68,8 @@ is called Bash.
     <div class="column">
         <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo" width="100%"></img>
     </div>
+    <div class="column">
+    </div>
 </div>
 
 - Version control
@@ -169,6 +171,8 @@ of the same software.
 ---
 
 ## A commitment to open source
+
+<img src="https://docs.conda.io/en/latest/_images/conda_logo.svg" alt="Conda logo" width="60%"></img>
 
 - Being able to use the software after leaving school without paying exorbitant amounts of money
 - Having access to the source code - you can learn and fix bugs
