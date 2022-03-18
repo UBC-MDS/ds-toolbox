@@ -11,12 +11,8 @@ title: 'module1_01'
 </head>
 
 <style>
-<!-- .row { -->
-  <!-- display: flex; -->
-<!-- } -->
 .column {
     float: left;
-  <!-- flex: 33.333%; -->
   padding: 10px;
 }
 </style>
@@ -65,6 +61,11 @@ is called Bash.
 <div class="row">
     <div class="column">
         <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git logo" width="200px"></img>
+        <ul>
+        <li>Version control</li>
+        <li>Collaboration</li>
+        <li>Communication</li>
+        </ul>
     </div>
     <div class="column">
         <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo" width="200px"></img>
@@ -72,9 +73,6 @@ is called Bash.
     </div>
 </div>
 
-- Version control
-- Collaboration
-- Communication
 
 Notes:
 Git is a program that runs on your computer
@@ -96,17 +94,18 @@ and review code.
 <div class="row">
     <div class="column">
         <img src="https://jupyter.org/assets/homepage/main-logo.svg" alt="Jupyter Logo" width="200px"></img>
+        <ul>
+        <li>Edit text and code files</li>
+        <li>Develop interactive notebooks</li>
+        <li>Create and view data visualizations</li>
+        <li>Generate reports</li>
+        </ul>
     </div>
     <div class="column">
         <img src="https://code.visualstudio.com/assets/images/code-stable.png" alt="VS Code Logo" width="200px"></img>
         <p>text here</p>
     </div>
 </div>
-
-- Edit text and code files
-- Develop interactive notebooks
-- Create and view data visualizations
-- Generate reports
 
 Notes:
 You are already familiar with JupyterLab
@@ -129,19 +128,17 @@ later in this module.
 <div class="row">
     <div class="column">
         <img src="https://raw.githubusercontent.com/executablebooks/jupyter-book/aedee257645ee41906c4d64f66f71b7f0dc7acfa/docs/images/logo-square.svg" alt="Jupyter Logo" width="300px%"></img>
+        <ul>
+        <li>Create websites, books, and documentation</li>
+        <li>Allows for code execution and interaction</li>
+        <li>Content is written in Jupyter Notebooks and text files</li>
+        </ul>
     </div>
     <div class="column">
         <img src="https://raw.githubusercontent.com/dcurtis/markdown-mark/983259b19bbc9673e9cf337b98ac899bf8a1484a/svg/markdown-mark-solid.svg" alt="VS Code Logo" width="300px"></img>
     </div>
-    <div class="column">
-    <p>text here</p>
-    </div>
 </div>
 
-
-- Create websites, books, and documentation
-- Allows for code execution and interaction
-- Content is written in Jupyter Notebooks and text files
 
 Notes:
 Jupyter Book is an open source project for building beautiful,
