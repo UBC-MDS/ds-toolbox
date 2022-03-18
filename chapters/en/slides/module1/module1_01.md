@@ -15,7 +15,7 @@ title: 'module1_01'
   display: flex;
 }
 .column {
-  flex: 50%;
+  flex: 33.333%;
   padding: 5px;
 }
 </style>
@@ -63,10 +63,10 @@ is called Bash.
 
 <div class="row">
     <div class="column">
-        <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git logo" width="50%"></img>
+        <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git logo" width="100%"></img>
     </div>
     <div class="column">
-        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo" width="50%"></img>
+        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo" width="100%"></img>
     </div>
 </div>
 
@@ -93,10 +93,10 @@ and review code.
 
 <div class="row">
     <div class="column">
-        <img src="https://jupyter.org/assets/homepage/main-logo.svg" alt="Jupyter Logo" width="50%"></img>
+        <img src="https://jupyter.org/assets/homepage/main-logo.svg" alt="Jupyter Logo" width="80%"></img>
     </div>
     <div class="column">
-        <img src="https://code.visualstudio.com/assets/images/code-stable.png" alt="VS Code Logo" width="50%"></img>
+        <img src="https://code.visualstudio.com/assets/images/code-stable.png" alt="VS Code Logo" width="80%"></img>
     </div>
 </div>
 
