@@ -12,12 +12,79 @@ id: 1
 <slides source="module1/module1_00" shot="0" start="3:42" end="4:35"> </slides>
 </exercise>
 
-
 <exercise id="1" title="Introduction to the Data Science Toolbox" type="slides,video">
 <slides source="module1/module1_01" shot="1" start="0:003" end="05:31"> </slides>
 </exercise>
 
-<exercise id="2" title="True or False: Data Visualization">
+<exercise id="2" title="Test Your Knowledge: Data Science Tools">
+
+**Question 1**  
+The Shell (Bash) allows you to
+
+<choice id="1" >
+<opt text="Version control files">
+
+Git is the tool that allows you to version control files.
+
+</opt>
+
+<opt text="Navigate the file system" correct="true">
+
+Great!
+
+</opt>
+
+<opt text="Edit code files">
+
+We need a text editor or programming environment such as JupyterLab or VSCode for this!
+
+</opt>
+
+
+<opt text="Create data visualizations">
+
+We use a programming language such as Python or R to create data visualizations.
+
+</opt>
+
+</choice>
+
+
+**Question 2**      
+What kind of components are combined in declarative plotting to create visualizations?
+
+<choice id="2" >
+<opt text="Dictionary Keys">
+
+This is a data structure and not quite a plotting structure.
+
+</opt>
+
+<opt text="Block Components">
+
+Think more language-oriented.
+
+</opt>
+
+<opt text="Grammatical Components"  correct="true">
+
+You got it!
+
+</opt>
+
+
+<opt text="Grouping Components">
+
+I'm not entirely sure what a grouping component is since we made this up!
+
+</opt>
+
+</choice>
+
+
+</exercise>
+
+<exercise id="4" title="True or False">
 
 **True or False**       
 *It is easier for humans to interpret plots than raw numbers.*
@@ -66,73 +133,6 @@ Summaries are helpful but don't get us a full picture like a visualization can.
 <slides source="module1/module1_03" shot="1" start="5:4008" end="26:2200"> </slides>
 </exercise>
 
-<exercise id="4" title="Test Your Knowledge: Visualization Libraries">
-
-**Question 1**      
-What is another way of describing high-level visualization libraries? 
-
-<choice id="1" >
-<opt text="Imperative">
-
-This is low-level plotting.
-
-</opt>
-
-<opt text="Declarative" correct="true">
-
-Great!
-
-</opt>
-
-<opt text="Immediate">
-
-This isn't quite right. We made this part up!
-
-</opt>
-
-
-<opt text="Definitive">
-
-This isn't quite right. We made this part up!
-
-</opt>
-
-</choice>
-
-
-**Question 2**      
-What kind of components are combined in declarative plotting to create visualizations?
-
-<choice id="2" >
-<opt text="Dictionary Keys">
-
-This is a data structure and not quite a plotting structure.
-
-</opt>
-
-<opt text="Block Components">
-
-Think more language-oriented.
-
-</opt>
-
-<opt text="Grammatical Components"  correct="true">
-
-You got it!
-
-</opt>
-
-
-<opt text="Grouping Components">
-
-I'm not entirely sure what a grouping component is since we made this up!
-
-</opt>
-
-</choice>
-
-
-</exercise>
 
 <exercise id="5" title="True or False: Visualization Libaries">
 

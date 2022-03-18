@@ -69,7 +69,6 @@ is called Bash.
     </div>
     <div class="column">
         <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo" width="200px"></img>
-        <p>text here</p>
     </div>
 </div>
 
@@ -103,7 +102,6 @@ and review code.
     </div>
     <div class="column">
         <img src="https://code.visualstudio.com/assets/images/code-stable.png" alt="VS Code Logo" width="200px"></img>
-        <p>text here</p>
     </div>
 </div>
 
@@ -127,7 +125,7 @@ later in this module.
 
 <div class="row">
     <div class="column">
-        <img src="https://raw.githubusercontent.com/executablebooks/jupyter-book/aedee257645ee41906c4d64f66f71b7f0dc7acfa/docs/images/logo-square.svg" alt="Jupyter Logo" width="300px%"></img>
+        <img src="https://raw.githubusercontent.com/executablebooks/jupyter-book/aedee257645ee41906c4d64f66f71b7f0dc7acfa/docs/images/logo-square.svg" alt="Jupyter Logo" width="200px"></img>
         <ul>
         <li>Create websites, books, and documentation</li>
         <li>Allows for code execution and interaction</li>
@@ -135,7 +133,7 @@ later in this module.
         </ul>
     </div>
     <div class="column">
-        <img src="https://raw.githubusercontent.com/dcurtis/markdown-mark/983259b19bbc9673e9cf337b98ac899bf8a1484a/svg/markdown-mark-solid.svg" alt="VS Code Logo" width="300px"></img>
+        <img src="https://raw.githubusercontent.com/dcurtis/markdown-mark/983259b19bbc9673e9cf337b98ac899bf8a1484a/svg/markdown-mark-solid.svg" alt="VS Code Logo" width="200px"></img>
     </div>
 </div>
 
@@ -175,7 +173,7 @@ of the same software.
 
 ## A commitment to open source
 
-<img src="https://opensource.org/files/osi_standard_logo_0.png" alt="Open Source Initiative logo" width="300px"></img>
+<img src="https://opensource.org/files/osi_standard_logo_0.png" alt="Open Source Initiative logo" width="200px"></img>
 
 
 - Being able to use the software after leaving school without paying exorbitant amounts of money
