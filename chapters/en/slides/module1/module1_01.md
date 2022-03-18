@@ -68,8 +68,7 @@ is called Bash.
     </div>
     <div class="column">
         <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo" width="200px"></img>
-    </div>
-    <div class="column">
+        <p>text here</p>
     </div>
 </div>
 
@@ -100,8 +99,7 @@ and review code.
     </div>
     <div class="column">
         <img src="https://code.visualstudio.com/assets/images/code-stable.png" alt="VS Code Logo" width="200px"></img>
-    </div>
-    <div class="column">
+        <p>text here</p>
     </div>
 </div>
 
@@ -136,6 +134,7 @@ later in this module.
         <img src="https://raw.githubusercontent.com/dcurtis/markdown-mark/983259b19bbc9673e9cf337b98ac899bf8a1484a/svg/markdown-mark-solid.svg" alt="VS Code Logo" width="300px"></img>
     </div>
     <div class="column">
+    <p>text here</p>
     </div>
 </div>
 
