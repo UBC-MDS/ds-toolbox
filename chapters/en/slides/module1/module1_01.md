@@ -38,7 +38,7 @@ before we will dive into how to install and use them.
 
 ## The Shell (Bash)
 
-<img src="https://cdn.rawgit.com/odb/official-bash-logo/master/assets/Logos/Identity/PNG/BASH_logo-transparent-bg-color.png" alt="Bash logo" width="60%"></img>
+<img src="https://cdn.rawgit.com/odb/official-bash-logo/master/assets/Logos/Identity/PNG/BASH_logo-transparent-bg-color.png" alt="Bash logo" width="400px"></img>
 
  <!-- https://raw.githubusercontent.com/odb/official-bash-logo/master/assets/Logos/Icons/PNG/512x512.png -->
 
@@ -95,10 +95,12 @@ and review code.
 
 <div class="row">
     <div class="column">
-        <img src="https://jupyter.org/assets/homepage/main-logo.svg" alt="Jupyter Logo" width="80%"></img>
+        <img src="https://jupyter.org/assets/homepage/main-logo.svg" alt="Jupyter Logo" width="200px"></img>
     </div>
     <div class="column">
-        <img src="https://code.visualstudio.com/assets/images/code-stable.png" alt="VS Code Logo" width="80%"></img>
+        <img src="https://code.visualstudio.com/assets/images/code-stable.png" alt="VS Code Logo" width="200px"></img>
+    </div>
+    <div class="column">
     </div>
 </div>
 
@@ -127,10 +129,12 @@ later in this module.
 
 <div class="row">
     <div class="column">
-        <img src="https://raw.githubusercontent.com/executablebooks/jupyter-book/aedee257645ee41906c4d64f66f71b7f0dc7acfa/docs/images/logo-square.svg" alt="Jupyter Logo" width="50%"></img>
+        <img src="https://raw.githubusercontent.com/executablebooks/jupyter-book/aedee257645ee41906c4d64f66f71b7f0dc7acfa/docs/images/logo-square.svg" alt="Jupyter Logo" width="300px%"></img>
     </div>
     <div class="column">
-        <img src="https://raw.githubusercontent.com/dcurtis/markdown-mark/983259b19bbc9673e9cf337b98ac899bf8a1484a/svg/markdown-mark-solid.svg" alt="VS Code Logo" width="50%"></img>
+        <img src="https://raw.githubusercontent.com/dcurtis/markdown-mark/983259b19bbc9673e9cf337b98ac899bf8a1484a/svg/markdown-mark-solid.svg" alt="VS Code Logo" width="300px"></img>
+    </div>
+    <div class="column">
     </div>
 </div>
 
@@ -156,6 +160,8 @@ which are helpful when authoring a book or web page.
 
 ## Conda
 
+<img src="https://docs.conda.io/en/latest/_images/conda_logo.svg" alt="Conda logo" width="400px"></img>
+
 - Installing programs and packages (Python, R, and more)
 - Managing software versions
 - Separating software that requires different environments
@@ -172,7 +178,6 @@ of the same software.
 
 ## A commitment to open source
 
-<img src="https://docs.conda.io/en/latest/_images/conda_logo.svg" alt="Conda logo" width="60%"></img>
 
 - Being able to use the software after leaving school without paying exorbitant amounts of money
 - Having access to the source code - you can learn and fix bugs
