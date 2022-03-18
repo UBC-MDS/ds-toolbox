@@ -38,7 +38,7 @@ before we will dive into how to install and use them.
 
 ## The Shell (Bash)
 
-<img src="https://cdn.rawgit.com/odb/official-bash-logo/master/assets/Logos/Identity/PNG/BASH_logo-transparent-bg-color.png" alt="Bash logo" width="50%"></img>
+<img src="https://cdn.rawgit.com/odb/official-bash-logo/master/assets/Logos/Identity/PNG/BASH_logo-transparent-bg-color.png" alt="Bash logo" width="60%"></img>
 
  <!-- https://raw.githubusercontent.com/odb/official-bash-logo/master/assets/Logos/Icons/PNG/512x512.png -->
 
@@ -61,18 +61,18 @@ is called Bash.
 
 ## Git and GitHub
 
+<div class="row">
+    <div class="column">
+        <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git logo" width="50%"></img>
+    </div>
+    <div class="column">
+        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo" width="50%"></img>
+    </div>
+</div>
+
 - Version control
 - Collaboration
 - Communication
-
-<div class="row">
-    <div class="column">
-        <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git logo" width="30%"></img>
-    </div>
-    <div class="column">
-        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo" width="30%"></img>
-    </div>
-</div>
 
 Notes:
 Git is a program that runs on your computer
@@ -93,10 +93,10 @@ and review code.
 
 <div class="row">
     <div class="column">
-        <img src="https://jupyter.org/assets/homepage/main-logo.svg" alt="Jupyter Logo" width="30%"></img>
+        <img src="https://jupyter.org/assets/homepage/main-logo.svg" alt="Jupyter Logo" width="50%"></img>
     </div>
     <div class="column">
-        <img src="https://code.visualstudio.com/assets/images/code-stable.png" alt="VS Code Logo" width="30%"></img>
+        <img src="https://code.visualstudio.com/assets/images/code-stable.png" alt="VS Code Logo" width="50%"></img>
     </div>
 </div>
 
@@ -122,6 +122,16 @@ later in this module.
 ---
 
 ## Jupyter Book and Markdown
+
+<div class="row">
+    <div class="column">
+        <img src="https://raw.githubusercontent.com/executablebooks/jupyter-book/aedee257645ee41906c4d64f66f71b7f0dc7acfa/docs/images/logo-square.svg" alt="Jupyter Logo" width="50%"></img>
+    </div>
+    <div class="column">
+        <img src="https://raw.githubusercontent.com/dcurtis/markdown-mark/983259b19bbc9673e9cf337b98ac899bf8a1484a/svg/markdown-mark-solid.svg" alt="VS Code Logo" width="50%"></img>
+    </div>
+</div>
+
 
 - Create websites, books, and documentation
 - Allows for code execution and interaction
