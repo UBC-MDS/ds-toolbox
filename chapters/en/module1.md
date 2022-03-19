@@ -51,36 +51,50 @@ We use a programming language such as Python or R to create data visualizations.
 
 
 **Question 2**      
-What kind of components are combined in declarative plotting to create visualizations?
+What can you do with Jupyter Book?
 
 <choice id="2" >
-<opt text="Dictionary Keys">
+<opt text="Version control files">
 
-This is a data structure and not quite a plotting structure.
-
-</opt>
-
-<opt text="Block Components">
-
-Think more language-oriented.
+Git is the tool that allows you to version control files.
 
 </opt>
 
-<opt text="Grammatical Components"  correct="true">
+<opt text="Navigate the file system">
+
+For this you need a shell, such as Bash.
+
+</opt>
+
+<opt text="Publish books and web pages"  correct="true">
+
+You got it!
+
+</opt>
+
+<opt text="Edit code files">
+
+We need a text editor or programming environment such as JupyterLab or VSCode for this!
+
+</opt>
+
+**True or False**       
+*All the tools we are using in this course are open source and free to use.*
+
+<opt text="True"  correct="true">
 
 You got it!
 
 </opt>
 
 
-<opt text="Grouping Components">
+<opt text="False">
 
-I'm not entirely sure what a grouping component is since we made this up!
+They are! Volunteer contributions from people around the world support the development of these tools.
 
 </opt>
 
 </choice>
-
 
 </exercise>
 
