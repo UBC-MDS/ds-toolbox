@@ -79,11 +79,10 @@ We need a text editor or programming environment such as JupyterLab or VSCode fo
 
 </choice>
 
-<choice id="1" >
-
 **True or False**       
 *All the tools we are using in this course are open source and free to use.*
 
+<choice id="1" >
 <opt text="True"  correct="true">
 
 You got it!
