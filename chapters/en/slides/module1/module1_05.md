@@ -1,9 +1,9 @@
 ---
-title: 'module1_07'
+title: 'module1_05'
 type: slides
 ---
 
-# Asking effective questions
+# Asking Effective Questions
 
 Notes:
 An important part of working on
@@ -83,9 +83,7 @@ helps you uncover what you missed while the problem was a mere thought.
 
 ## Rubber duck debugging
 
-<!--TODO include rubber duck debugging from google drive presentation -->
-
-<img src="/module1/your-screenshot.png" alt="My VS code screenshot" width="100%"></img>
+<img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Rubber_duck_assisting_with_debugging.jpg" alt="Rubber duck debugging" width="300px"></img>
 
 Notes:
 This is so common that it has a name:
@@ -120,6 +118,8 @@ and the minimal code needed to reproduce it.
 Altogether,
 this is often called a "Minimal reproducible example".
 
+---
+
 ## Minimal reproducible example
 
 0. Search for other questions similar to yours.
@@ -134,66 +134,30 @@ this is often called a "Minimal reproducible example".
 
 Notes:
 In summary,
-asking effectively 
+asking effectively
 and creating an MRE includes completing the tasks
 listed in this slide.
 
 There have been great articles written on what goes into an MRE,
-and here are some of them that I recommend that you check out:
+and here are some of them that we recommend that you check out:
 
 - https://stackoverflow.com/help/how-to-ask
 - https://stackoverflow.com/help/minimal-reproducible-example
 - https://community.rstudio.com/t/faq-whats-a-reproducible-example-reprex-and-how-do-i-do-one/5219
 - https://reprex.tidyverse.org/ (an R package to help creating MREs from code)
 
-<!--TODO Where to put this detailed description? Mayve in a details tag? -->
-The points are elaborated on below:
-
-1. Search for other questions similar to yours.
-   Many questions already have an answer,
-   and finding it is faster both for you and for others.
-   If the answer to an existing question is not good enough,
-   improve it by adding the missing info!
-2. Write the tile as a summary of your issue.
-   Think about what you would want the title to say
-   if you were searching the issue list for help.
-   Just "Error" or "Question" is not helpful,
-   but "How to list content in a folder?" is.
-3. Introduce the problem by briefly describing what you want to do.
-4. Show what you have tried,
-   explain what you expected to happen,
-   and what went wrong.
-   It is often critical that the person helping you can reproduce the problem,
-   so include both the code or command you tried to run and the error message.
-      - For coding questions,
-        text is preferred over a screenshot since it is easy to copy and paste,
-        which facilitates reproducing your problem.
-      - Inline code should be surrounded by single backticks for clarity.
-        Longer blocks of code with multiple lines should be surrounded by triple backticks.
-5. Include versions of any packages you are using,
-   and the operating system if relevant,
-   e.g. Win10, Python 3.8, pandas 1.0.2.
-   On R you can use `devtools::session_info()` to see this information
-   (after `install.packages("devtools")`).
-   and on Python you can use `sinfo()`
-   (after importing: `from sinfo import sinfo`,
-   needs to be installed via `pip install sinfo`). 
-6. When your problem is solved,
-   acknowledge the solution,
-   close the issue/ticket/question.
-   If you found the solution yourself,
-   post it in a comment before closing,
-   so that others can find it.
-
 ---
 
 ## Where to ask?
 
-- Stack Overflow
+<img src="https://stackoverflow.design/assets/img/logos/so/logo-stackoverflow.svg" alt="Stack Overflow logo" width="400px"></img>
 
-<!--TODO include course specific forum? -->
+- https://stackoverflow.com/
 
 Notes:
+One of the most common places to ask for help is Stack Overflow.
+Thousands of volunteers are answering questions here everyday.
+
 If you are asking your question on stack overflow
 you can use tags to categorize it,
 and these can then be used to search for an answer via the syntax `[tag-name]`.
