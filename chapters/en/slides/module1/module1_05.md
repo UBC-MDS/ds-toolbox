@@ -85,6 +85,8 @@ helps you uncover what you missed while the problem was a mere thought.
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Rubber_duck_assisting_with_debugging.jpg" alt="Rubber duck debugging" width="300px"></img>
 
+[Image from Tim Morris - Wikimedia Common](https://commons.wikimedia.org/wiki/File:Rubber_duck_assisting_with_debugging.jpg)
+
 Notes:
 This is so common that it has a name:
 "Rubber duck debugging"
