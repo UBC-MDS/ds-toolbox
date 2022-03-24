@@ -2,10 +2,10 @@
 title: 'Module 5: Branches, forks, and streams… Welcome to the Git nature walk!'
 description:
   'Course introduction, summary of course learning outcomes and prerequisite validation.' 
-prev: null
+prev: ../../module4
 next: ../../module6
 type: chapter
-id: 0
+id: 4
 ---
 
 <exercise id="1" title="Branches" type="slides,video">

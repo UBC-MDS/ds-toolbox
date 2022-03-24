@@ -2,10 +2,10 @@
 title: 'Module 4: Getting groovy with Git and GitHub'
 description:
   'Course introduction, summary of course learning outcomes and prerequisite validation.' 
-prev: null
+prev: ../../module3
 next: ../../module5
 type: chapter
-id: 0
+id: 3
 ---
 
 <exercise id="1" title="git log" type="slides,video">

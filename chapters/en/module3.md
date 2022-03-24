@@ -2,10 +2,10 @@
 title: 'Module 3: Git and GitHub intro'
 description:
   'Course introduction, summary of course learning outcomes and prerequisite validation.' 
-prev: null
-next: ../../module1
+prev: ../../module1 # Should be changed
+next: ../../module4
 type: chapter
-id: 0
+id: 2
 ---
 
 <exercise id="1" title="What is version control?" type="slides,video">
