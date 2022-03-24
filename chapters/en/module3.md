@@ -52,8 +52,8 @@ Can you consider a folder you cloned to your computer a git repo?
 <exercise id='6' title='status'>
 
 `git status` output
-
 What files have been added recently to this repo?
+
 <choice>
 <opt text='file.txt' >
 </opt>
@@ -61,6 +61,7 @@ What files have been added recently to this repo?
 </opt>
 <opt text='mynewfile.txt' correct='true'>
 </opt>
+
 </choice>
 </exercise>
 
