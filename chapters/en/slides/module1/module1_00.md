@@ -4,6 +4,8 @@ type: slides
 
 # Module Learning Outcomes
 
+---
+
 In this module you will learn how to
 
 1. Explain what each tool in the Data Science toolbox is used for.
