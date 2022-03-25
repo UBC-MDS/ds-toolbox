@@ -12,13 +12,12 @@ Notes:
 
 # Module Learning Outcomes
 
-In this module students will learn how to
+In this module you learned how to
 
-- Explain the importance of data visualizations.
-- Use the grammar of graphics presented here.
-- Create point and line visualizations in Altair.
-- Transform data directly in Altair instead of pandas.
-- Combine graphical marks via layering.
+1. Explain what each tool in the Data Science toolbox is used for.
+2. Use VS Code to edit text and Python files.
+4. Ask effective questions.
+5. Create minimal reproducible code examples when asking for help.
 
 Notes:
 
