@@ -1,185 +1,165 @@
 ---
-title: 'Chapter 1: Jupyter Lab'
+title: 'Module 1: Introduction to the Data Science Toolbox'
 description:
-  'This chapter will teach you about many cool things and introduce you to the
-  most important concepts of the course.'
-prev: null
-next: /chapter2
+  'In this module we will introduce you to several of the tools that we will be using in this course, as well as to computing in general.'
+prev: ../../module0
+next: ../../module2
 type: chapter
 id: 1
 ---
 
 <exercise id="1" title="Introduction" type="slides">
 
-<slides source="module1_01_Overview">
-</slides>
-
+<exercise id="1" title="Introduction to the Data Science Toolbox" type="slides,video">
+<slides source="module1/module1_01" shot="1" start="0:003" end="05:31"> </slides>
 </exercise>
 
-<exercise id="2" title="What is Jupyter Lab?" type="slides">
+<exercise id="2" title="Test Your Knowledge">
 
-<slides source="module1/module1_02_JLab">
-</slides>
+**Question 1**  
+The Shell (Bash) allows you to
 
-</exercise>
+<choice id="1" >
+<opt text="Version control files">
 
-<exercise id="3" title="How to access JupyterLab?">
+Git is the tool that allows you to version control files.
 
-As you can see, Jupyter Lab it is opened in a browser. Where is the program running?
+</opt>
+
+<opt text="Navigate the file system" correct="true">
+
+Great!
 
 <choice>
 <opt text="My computer">
 You have not installed locally jupyter lab. You can install Jupyter Lab locally in your desktop here: https://github.com/jupyterlab/jupyterlab-desktop
 </opt>
 
-<opt text="UBC Servers" correct="true">
+<opt text="Edit code files">
 
-For this course we are going to be using UBC Jupyter Lab. This means that you will be able to use the packages that are already installed in our servers. If you would like to learn how to install Jupyter Lab in your computer, you can follow these instructions: x
+We need a text editor or programming environment such as JupyterLab or VSCode for this!
 
 </opt>
 
-<opt text="On the internet">
+<opt text="Create data visualizations">
 
-You need internet access to get JupyterLab working, but it not coming from anuwhere on the internet. We have already installed some packages you are going to ube using during this course.
+We use a programming language such as Python or R to create data visualizations.
 
 </opt>
 </choice>
 
 </exercise>
 
-<exercise id="4" title="Jupyter Notebooks" type="slides">
+**Question 2**      
+What can you do with Jupyter Book?
 
-<slides source="module1/module1_04_JNotebook">
-</slides>
+<choice id="2" >
+<opt text="Version control files">
 
-</exercise>
+Git is the tool that allows you to version control files.
 
 <exercise id="5" title="Running cells">
 
-If you have the following code, what would be the value of the variable `var`
+<opt text="Navigate the file system">
 
-IMAGE
+For this you need a shell, such as Bash.
 
 <choice>
 <opt text="5" correct="true">
 That is correct! 
 </opt>
 
-<opt text="3" >
+<opt text="Publish books and web pages"  correct="true">
 
 Double check in what order the cells where run
 
 </opt>
 
-<opt text="8">
+<opt text="Edit code files">
 
-Double check in what order the cells where run
+We need a text editor or programming environment such as JupyterLab or VSCode for this!
+
 </opt>
+</choice>
+
+**True or False**       
+*All the tools we are using in this course are open source and free to use.*
+
+<choice id="3" >
+<opt text="True"  correct="true">
+
+You got it!
+
+</opt>
+
+<opt text="False">
+
+They are! Volunteer contributions from people around the world support the development of these tools.
+
+</opt>
+
 </choice>
 
 </exercise>
 
-<exercise id="6" title="Working with text via markdown cells" type="slides">
-
-<slides source="module1/module1_06_Markdown">
-</slides>
-
+<exercise id="3" title="How Can We Visualize Data?" type="slides,video">
+<slides source="module1/module1_03" shot="1" start="5:4008" end="26:2200"> </slides>
 </exercise>
 
-<exercise id="7" title="Markdown syntax">
-
-How would you write the following text using markdown?
-
-IMAGE
-
-<codeblock id="01_07">
-
-You can check the cheatsheet (LINK)
-
-</codeblock>
-
+<exercise id="5" title="Asking Effective Questions" type="slides,video">
+<slides source="module1/module1_05" shot="1" start="26:3200" end="40:07"></slides>
 </exercise>
 
-<exercise id="8" title="Static figure creation and exporting notebooks" type="slides">
+<exercise id="6" title="Test Your Knowledge">
 
-<slides source="module1/module1_08_Figures">
-</slides>
+**Question 1**      
+Which of the following is **NOT** something you should do before asking for help online.
 
-</exercise>
+<choice id="1" >
+<opt text="Search to see if the solution to your question already is available">
 
-<exercise id="9" title="Create and save your first plot!">
-
-Copy the following code in one cell in your notebook, run it anf then export it as a `.png` image.
-
-```
-# Please note, you don't have to understand what is going on in this cell
-# it is just to show you how a static plot looks inside JupyterLab
-
-import numpy as np
-import matplotlib.pyplot as plt
-
-N = 50
-x = np.random.rand(N)
-y = np.random.rand(N)
-colors = np.random.rand(N)
-area = (30 * np.random.rand(N))**2  # 0 to 15 point radii
-
-plt.scatter(x, y, s=area, c=colors, alpha=0.5)
-```
-
-<choice>
+You should do this before asking a new question. It will make you find the answer faster and spare people from doing duplicate work.
 
 <opt text="I right clicked is the JupyterLab menu and hold shift brings up the browser menu. Then I select Save">
 That is correct! But it is not the only way
 </opt>
 
-<opt text="I printed the screen to save it" >
+<opt text="Type out the problem for youself before asking the question">
+
+You should do this before asking a new question. It can help you find the solution to the problem yourself!
 
 </opt>
 
-<opt text="I used the Save command in the plotting library" >
-That is correct! But it is not the only way
-</opt>
+<opt text="Post a screenshot of your full code as is."  correct="true">
 
-<opt text="1 and 3 are correct"  correct="true" >
+You should reduce your code to a minimal example, and post it as text instead of as a screenshot.
 
 </opt>
 
-<opt text="2 and 3 are correct" >
+</choice>
+
+**True or False**       
+*People often get paid to answer questions on online forums.*
+
+<choice id="2" >
+<opt text="False"  correct="true">
+
+You got it! People from around the world volunteer their time and expertise to answer questions online, so remember to be respectful and mindful of their time when asking for help.
 
 </opt>
 
-<opt text="All are correct">
+<opt text="True">
 
+People from around the world volunteer their time and expertise to answer questions online, so remember to be respectful and mindful of their time when asking for help.
+
+Double check in what order the cells where run
 </opt>
 </choice>
 
 </exercise>
 
-<exercise id="10" title="Jupyter Lab sidebars and other tools" type="slides">
-
-<slides source="module1/module1_10_Sidebar">
+<exercise id="7" title="What Did We Just Learn?" type="slides, video">
+<slides source="module1/module1_end" shot="0" start="04:37" end="05:35">
 </slides>
-
-<exercise id="11" title="FINAL EXERCISE (pending)">
-
-**In progress**
-
-<choice>
-<opt text="5" correct="true">
-That is correct! 
-</opt>
-
-<opt text="3" >
-
-Double check in what order the cells where run
-
-</opt>
-
-<opt text="8">
-
-Double check in what order the cells where run
-</opt>
-</choice>
-
 </exercise>
+
