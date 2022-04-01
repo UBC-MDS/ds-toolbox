@@ -5,7 +5,7 @@ description:
 prev: /module7
 next: null
 type: chapter
-id: 8
+id: 5
 ---
 
 <exercise id="0" title="Congratulations!" type="slides, video">
