@@ -1,8 +1,7 @@
 ---
 type: slides
+title: 'module1_01'
 ---
-
-# What is Data Visualization?
 
 <head>
 <base target="_blank">
@@ -11,762 +10,185 @@ type: slides
 <base target="_blank">
 </head>
 
-Notes: At its core, data visualization is about representing numbers
-with graphical elements such as the position of a line, the length of a
-bar, or the colour of a point.
+<style>
+.column {
+    float: left;
+  padding: 10px;
+}
+</style>
 
-We often use visualizations to explore data ourselves, and to
-effectively communicate our insights to others, as we will learn in
-later modules of this course.
+# Introduction to the Data Science Toolbox
 
----
+Notes:
+In this slide deck
+we will introduce the data science tools
+we are covering in this course.
 
-## What is the purpose of visualizing data?
-
-Visualizing data can be used to
-
--   Answer a specific question
--   Explore data more generally to generate new questions
-
-To create an effective visualization, start by
-
--   Looking at the data
--   Thinking about what you want to achieve by making the visualization
--   Drawing it out with pen and paper
-
-Notes: We often visualize data in order to help us answer a specific
-question we have about our dataset, but it can also help us generate new
-questions.
-
-Before creating a visualization, it is important that you think about
-why you are making it, and what you want to achieve from creating this
-plot.
-
-Is there a specific question you are trying to answer, like comparing
-the relationship between two dataframe columns? Or are you creating a
-plot to help you understand the structure of your data more in general,
-such as plotting the distribution of each dataframe column?
-
-In either case, it can be extremely helpful to draw out your plot with
-pen and paper first. This helps you think about if the plot you are
-creating makes sense or if there is another plot better suited for the
-task at hand.
-
-Drawing with pen and paper also makes it easier to write the code
-afterwards, since you clearly know what you are expecting the
-visualization to look like.
+We will briefly indicate the purpose of each tool
+so that you have an idea
+of what they are for
+before we will dive into how to install and use them.
 
 ---
 
-## Why bother visualizing data instead of showing raw numbers?
+<!--TODO add a logo on the slide for each  tool -->
 
-### Can you see any differences in the general trends of these four sets of numbers?
+## The Shell (Bash)
 
-<table border="1" style="width:70px; float:left; margin-right:40px">
-<thead style="text-align: center">
-<tr>
-<th colspan="2" halign="left">
-A
-</th>
-</tr>
-<tr>
-<th>
-X
-</th>
-<th>
-Y
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-10
-</td>
-<td>
-8.04
-</td>
-</tr>
-<tr>
-<td>
-8
-</td>
-<td>
-6.95
-</td>
-</tr>
-<tr>
-<td>
-13
-</td>
-<td>
-7.58
-</td>
-</tr>
-<tr>
-<td>
-9
-</td>
-<td>
-8.81
-</td>
-</tr>
-<tr>
-<td>
-11
-</td>
-<td>
-8.33
-</td>
-</tr>
-<tr>
-<td>
-14
-</td>
-<td>
-9.96
-</td>
-</tr>
-<tr>
-<td>
-6
-</td>
-<td>
-7.24
-</td>
-</tr>
-<tr>
-<td>
-4
-</td>
-<td>
-4.26
-</td>
-</tr>
-<tr>
-<td>
-12
-</td>
-<td>
-10.84
-</td>
-</tr>
-<tr>
-<td>
-7
-</td>
-<td>
-4.81
-</td>
-</tr>
-<tr>
-<td>
-5
-</td>
-<td>
-5.68
-</td>
-</tr>
-</tbody>
-</table>
-<table border="1" style="width:70px; float:left; margin-right:40px">
-<thead style="text-align: center">
-<tr>
-<th colspan="2" halign="left">
-B
-</th>
-</tr>
-<tr>
-<th>
-X
-</th>
-<th>
-Y
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-10
-</td>
-<td>
-9.14
-</td>
-</tr>
-<tr>
-<td>
-8
-</td>
-<td>
-8.14
-</td>
-</tr>
-<tr>
-<td>
-13
-</td>
-<td>
-8.74
-</td>
-</tr>
-<tr>
-<td>
-9
-</td>
-<td>
-8.77
-</td>
-</tr>
-<tr>
-<td>
-11
-</td>
-<td>
-9.26
-</td>
-</tr>
-<tr>
-<td>
-14
-</td>
-<td>
-8.10
-</td>
-</tr>
-<tr>
-<td>
-6
-</td>
-<td>
-6.13
-</td>
-</tr>
-<tr>
-<td>
-4
-</td>
-<td>
-3.10
-</td>
-</tr>
-<tr>
-<td>
-12
-</td>
-<td>
-9.13
-</td>
-</tr>
-<tr>
-<td>
-7
-</td>
-<td>
-7.26
-</td>
-</tr>
-<tr>
-<td>
-5
-</td>
-<td>
-4.74
-</td>
-</tr>
-</tbody>
-</table>
-<table border="1" style="width:70px; float:left; margin-right:40px">
-<thead style="text-align: center">
-<tr>
-<th colspan="2" halign="left">
-C
-</th>
-</tr>
-<tr>
-<th>
-X
-</th>
-<th>
-Y
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-10
-</td>
-<td>
-7.46
-</td>
-</tr>
-<tr>
-<td>
-8
-</td>
-<td>
-6.77
-</td>
-</tr>
-<tr>
-<td>
-13
-</td>
-<td>
-8.50
-</td>
-</tr>
-<tr>
-<td>
-9
-</td>
-<td>
-7.11
-</td>
-</tr>
-<tr>
-<td>
-11
-</td>
-<td>
-7.81
-</td>
-</tr>
-<tr>
-<td>
-14
-</td>
-<td>
-8.84
-</td>
-</tr>
-<tr>
-<td>
-6
-</td>
-<td>
-6.08
-</td>
-</tr>
-<tr>
-<td>
-4
-</td>
-<td>
-5.39
-</td>
-</tr>
-<tr>
-<td>
-12
-</td>
-<td>
-8.15
-</td>
-</tr>
-<tr>
-<td>
-7
-</td>
-<td>
-6.42
-</td>
-</tr>
-<tr>
-<td>
-5
-</td>
-<td>
-5.73
-</td>
-</tr>
-</tbody>
-</table>
-<table border="1" style="width:70px; float:left; margin-right:40px">
-<thead style="text-align: center">
-<tr>
-<th colspan="2" halign="left">
-D
-</th>
-</tr>
-<tr>
-<th>
-X
-</th>
-<th>
-Y
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-8
-</td>
-<td>
-6.58
-</td>
-</tr>
-<tr>
-<td>
-8
-</td>
-<td>
-5.76
-</td>
-</tr>
-<tr>
-<td>
-8
-</td>
-<td>
-7.71
-</td>
-</tr>
-<tr>
-<td>
-8
-</td>
-<td>
-8.84
-</td>
-</tr>
-<tr>
-<td>
-8
-</td>
-<td>
-8.47
-</td>
-</tr>
-<tr>
-<td>
-8
-</td>
-<td>
-7.04
-</td>
-</tr>
-<tr>
-<td>
-8
-</td>
-<td>
-5.25
-</td>
-</tr>
-<tr>
-<td>
-19
-</td>
-<td>
-12.50
-</td>
-</tr>
-<tr>
-<td>
-8
-</td>
-<td>
-5.56
-</td>
-</tr>
-<tr>
-<td>
-8
-</td>
-<td>
-7.91
-</td>
-</tr>
-<tr>
-<td>
-8
-</td>
-<td>
-6.89
-</td>
-</tr>
-</tbody>
-</table>
+<img src="https://cdn.rawgit.com/odb/official-bash-logo/master/assets/Logos/Identity/PNG/BASH_logo-transparent-bg-color.png" alt="Bash logo" width="400px"></img>
 
-Notes: Why do we need visualizations to help answer our questions?
+ <!-- https://raw.githubusercontent.com/odb/official-bash-logo/master/assets/Logos/Icons/PNG/512x512.png -->
 
-Is it not enough to look at numbers in tables?
+- Navigate the filesystem
+- Launch programs
+- Automation of tasks
 
-To understand why visualizations are so powerful, it is helpful to
-remember that to answer a question, we often have to put the data in a
-format that is easy for us humans to interpret.
+Notes:
+A shell is a tool that we can use to
+navigate our computers file system,
+launch programs,
+and automate tasks.
 
-Because our number systems have only been around for about 5,000 years,
-we need to assert effort and train ourselves to recognize structure in
-numerical data.
-
-Visual systems, on the other hand, have undergone refinement during
-500,000,000 years of evolution, so we can instinctively recognize visual
-patterns and accurately estimate visual properties such as colours and
-distances.
-
-Practically, this means that we can arrive at correct conclusions faster
-from studying visual rather than numerical representations of the same
-data.
-
-For example, have a look at the four sets of numbers in the table on the
-slide. Can you see the differences in the general trends between these
-four sets of numbers? This is a slightly modified version of the
-original,
-<a href="https://en.wikipedia.org/wiki/Anscombe%27s_quartet" target="_blank">which
-was put together by statistician Francis Anscombe in the 70s.</a>
+You can think of it as similar, but more powerful,
+than the default file browser on your computer.
+The specific shell that we will learn more about in this course
+is called Bash.
 
 ---
 
-## Although summary statistics are often useful, they don’t tell the whole story
+## Git and GitHub
 
-### C is the only set with a different mean and standard deviation
+<div class="row">
+    <div class="column">
+        <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git logo" width="200px"></img>
+        <ul>
+        <li>Version control</li>
+        <li>Collaboration</li>
+        <li>Communication</li>
+        </ul>
+    </div>
+    <div class="column">
+        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo" width="200px"></img>
+    </div>
+</div>
 
-<table border="1" style="width:70px; float:left; margin-right:40px">
-<thead style="text-align: center">
-<tr>
-<th>
-</th>
-<th colspan="2" halign="left">
-A
-</th>
-</tr>
-<tr>
-<th>
-</th>
-<th>
-X
-</th>
-<th>
-Y
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-mean
-</td>
-<td>
-9.00
-</td>
-<td>
-7.50
-</td>
-</tr>
-<tr>
-<td>
-std
-</td>
-<td>
-3.32
-</td>
-<td>
-2.03
-</td>
-</tr>
-</tbody>
-</table>
-<table border="1" style="width:70px; float:left; margin-right:40px">
-<thead style="text-align: center">
-<tr>
-<th>
-</th>
-<th colspan="2" halign="left">
-B
-</th>
-</tr>
-<tr>
-<th>
-</th>
-<th>
-X
-</th>
-<th>
-Y
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-mean
-</td>
-<td>
-9.00
-</td>
-<td>
-7.50
-</td>
-</tr>
-<tr>
-<td>
-std
-</td>
-<td>
-3.32
-</td>
-<td>
-2.03
-</td>
-</tr>
-</tbody>
-</table>
-<table border="1" style="width:70px; float:left; margin-right:40px">
-<thead style="text-align: center">
-<tr>
-<th>
-</th>
-<th colspan="2" halign="left">
-C
-</th>
-</tr>
-<tr>
-<th>
-</th>
-<th>
-X
-</th>
-<th>
-Y
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-mean
-</td>
-<td>
-9.00
-</td>
-<td style="background-color:#4853a4; color:#ffffff">
-<b>7.11</b>
-</td>
-</tr>
-<tr>
-<td>
-std
-</td>
-<td>
-3.32
-</td>
-<td style="background-color:#4853a4; color:#ffffff">
-<b>1.15</b>
-</td>
-</tr>
-</tbody>
-</table>
-<table border="1" style="width:70px; float:left; margin-right:40px">
-<thead style="text-align: center">
-<tr>
-<th>
-</th>
-<th colspan="2" halign="left">
-D
-</th>
-</tr>
-<tr>
-<th>
-</th>
-<th>
-X
-</th>
-<th>
-Y
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-mean
-</td>
-<td>
-9.00
-</td>
-<td>
-7.50
-</td>
-</tr>
-<tr>
-<td>
-std
-</td>
-<td>
-3.32
-</td>
-<td>
-2.03
-</td>
-</tr>
-</tbody>
-</table>
 
-Notes: Summaries, such as the mean and standard deviation, are helpful
-statistical tools that are often useful for detecting the differences
-between datasets.
+Notes:
+Git is a program that runs on your computer
+and allows you to keep track of old versions of your files.
+This version control is similar to how "Track Changes" works
+in word processors,
+but much more powerful.
 
-However, since they collapse the data into just a few numbers,
-statistical summaries can’t tell the whole story about the data and
-there can be important differences between datasets that summaries fail
-to reveal.
-
-Here, the mean and standard deviation indicate that set C is slightly
-different from the other sets of data in terms of the centre of the
-sample distribution and the spread of that distribution, while the
-remaining three sets of data have a similar centre and spread.
+GitHub is an online platform
+where developers and data scientists
+can collaborate on their projects
+by raising issues, discuss features,
+and review code.
 
 ---
 
-## Plotting the data immediately reveals patterns in the data
+## JupyterLab and VS Code
 
-### We could not detect these patterns from only looking at the raw numbers or summary statistics
+<div class="row">
+    <div class="column">
+        <img src="https://jupyter.org/assets/homepage/main-logo.svg" alt="Jupyter Logo" width="200px"></img>
+        <ul>
+        <li>Edit text and code files</li>
+        <li>Develop interactive notebooks</li>
+        <li>Create and view data visualizations</li>
+        <li>Generate reports</li>
+        </ul>
+    </div>
+    <div class="column">
+        <img src="https://code.visualstudio.com/assets/images/code-stable.png" alt="VS Code Logo" width="200px"></img>
+    </div>
+</div>
 
-<img src="/module1/modified-anscombes.svg" alt="" width="60%"></img>
+Notes:
+You are already familiar with JupyterLab
+from the Programming with Python course,
+where we used it to edit our Jupyter notebooks.
+Notebooks are powerful since they allow us to combine
+code, text, and rich output such as data visualizations.
 
-Notes: Humans are not good at detecting patterns in raw numbers, and we
-don’t have good intuition about how different distributions of data can
-contribute to identical statistical summaries.
-
-But guess what we excel at?
-
-Detecting visual patterns!
-
-It is immediately clear to us how these sets of numbers differ once they
-are shown as graphical elements instead of textual objects.
-
-This is one of the main reasons why data visualization is such a
-powerful tool for data exploration and communication.
-
-In our example here, we would come to widely different conclusions about
-the behaviour of the data for the four different data sets.
-
-Sets A and C are roughly linearly increasing at similar rates, whereas
-set B reaches a plateau and starts to drop, and set D has a constant
-X-value for all numbers except one big outlier.
+In this course we will see some more advanced features of JupyterLab
+and also introduce you to another commonly used tool for programming:
+VS Code.
+VS Code is a more traditional programming environment than JupyterLab
+and we will explore the reasons for using one over the other
+later in this module.
 
 ---
 
-## More examples of plotting versus statistical summaries
+## Jupyter Book and Markdown
 
-![](https://blog.revolutionanalytics.com/downloads/DataSaurus%20Dozen.gif)
+<div class="row">
+    <div class="column">
+        <img src="https://raw.githubusercontent.com/executablebooks/jupyter-book/aedee257645ee41906c4d64f66f71b7f0dc7acfa/docs/images/logo-square.svg" alt="Jupyter Logo" width="200px"></img>
+        <ul>
+        <li>Create websites, books, and documentation</li>
+        <li>Allows for code execution and interaction</li>
+        <li>Content is written in Jupyter Notebooks and text files</li>
+        </ul>
+    </div>
+    <div class="column">
+        <img src="https://raw.githubusercontent.com/dcurtis/markdown-mark/983259b19bbc9673e9cf337b98ac899bf8a1484a/svg/markdown-mark-solid.svg" alt="VS Code Logo" width="200px"></img>
+    </div>
+</div>
 
-<a href="https://www.autodesk.com/research/publications/same-stats-different-graphs" target="_blank">Source:
-Matejka and Fitzmaurice, 2017</a>
 
-Notes: A more recent and dynamic illustration of how graphical
-representations are much easier for us to interpret compared to
-statistical summaries, is the Datasaurus GIF
-<a href="https://www.autodesk.com/research/publications/same-stats-different-graphs" target="_blank">from
-Autodesk’s research team</a> in this slide.
+Notes:
+Jupyter Book is an open source project for building beautiful,
+publication-quality books and documents.
+The books allow for code to be executed
+and for visualizations to be interacted with.
 
-It displays several different datasets, all with the same mean, standard
-deviation and correlation between X and Y, but looking at the data
-graphically shows us how different these datasets actually are.
+Content is written in Jupyter Notebooks and text files,
+using Markdown syntax.
+You have already seen some simple examples of using Markdown
+for text formatting
+and this extends that syntax to involve more advanced features
+which are helpful when authoring a book or web page.
+
+---
+
+## Conda
+
+<img src="https://docs.conda.io/en/latest/_images/conda_logo.svg" alt="Conda logo" width="400px"></img>
+
+- Installing programs and packages (Python, R, and more)
+- Managing software versions
+- Separating software that requires different environments
+
+Notes:
+Conda is a package manager,
+which provides a convenient way to install programs and packages.
+It allows us to keep different programs separate,
+so that there are not conflicts
+when two programs requires different versions
+of the same software.
+
+---
+
+## A commitment to open source
+
+<img src="https://opensource.org/files/osi_standard_logo_0.png" alt="Open Source Initiative logo" width="200px"></img>
+
+
+- Being able to use the software after leaving school without paying exorbitant amounts of money
+- Having access to the source code - you can learn and fix bugs
+  (even closed source, Commercial Software has bugs, they are just harder to see and help fixing...).
+- Open Source software is customizable and flexible
+- It's becoming the standard in many tech companies
+- You are part of an awesome and active community!
+
+Notes:
+All the programs mentioned in the previous slides
+have active development communities and are open source,
+which means that anyone can read the source code and contribute to these projects.
+Open source programs have many benefits,
+such as those mentioned on this slide.
 
 ---
 

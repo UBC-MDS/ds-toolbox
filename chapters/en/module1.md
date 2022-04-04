@@ -1,7 +1,7 @@
 ---
-title: 'Module 1: Why Visualize Data?'
+title: 'Module 1: Introduction to the Data Science Toolbox'
 description:
-  'In this module we will be learning about the importance of data visualization and how a grammar of graphics can help us effectively visualize data.'
+  'In this module we will introduce you to several of the tools that we will be using in this course, as well as to computing in general.'
 prev: ../../module0
 next: ../../module2
 type: chapter
@@ -12,88 +12,37 @@ id: 1
 <slides source="module1/module1_00" shot="0" start="3:42" end="4:35"> </slides>
 </exercise>
 
-
-<exercise id="1" title="What is Data Visualization?" type="slides,video">
+<exercise id="1" title="Introduction to the Data Science Toolbox" type="slides,video">
 <slides source="module1/module1_01" shot="1" start="0:003" end="05:31"> </slides>
 </exercise>
 
-<exercise id="2" title="True or False: Data Visualization">
+<exercise id="2" title="Test Your Knowledge">
 
-**True or False**       
-*It is easier for humans to interpret plots than raw numbers.*
-
-
-<choice id="1" >
-
-<opt text="True"  correct="true">
-
-You got it! We saw in the slides that sometimes humans can pick up more information about the data in plots. 
-
-</opt>
-
-
-<opt text="False">
-
-Take a look at the slides. Is it easier to notice trends and patterns with the data displayed in tables or in plots?
-
-</opt>
-
-
-</choice>
-
-**True or False**       
-*Statistical summaries are often useful, but it is a good idea to also visualize your data before drawing any conclusions.*
-
-<choice id="2" >
-
-<opt text="True"  correct="true">
-
-You've been paying attention. 
-
-</opt>
-
-<opt text="False">
-
-Summaries are helpful but don't get us a full picture like a visualization can. 
-
-</opt>
-
-</choice>
-</exercise>
-
-
-<exercise id="3" title="How Can We Visualize Data?" type="slides,video">
-<slides source="module1/module1_03" shot="1" start="5:4008" end="26:2200"> </slides>
-</exercise>
-
-<exercise id="4" title="Test Your Knowledge: Visualization Libraries">
-
-**Question 1**      
-What is another way of describing high-level visualization libraries? 
+**Question 1**  
+The Shell (Bash) allows you to
 
 <choice id="1" >
-<opt text="Imperative">
+<opt text="Version control files">
 
-This is low-level plotting.
+Git is the tool that allows you to version control files.
 
 </opt>
 
-<opt text="Declarative" correct="true">
+<opt text="Navigate the file system" correct="true">
 
 Great!
 
 </opt>
 
-<opt text="Immediate">
+<opt text="Edit code files">
 
-This isn't quite right. We made this part up!
+We need a text editor or programming environment such as JupyterLab or VSCode for this!
 
 </opt>
 
+<opt text="Create data visualizations">
 
-<opt text="Definitive">
-
-This isn't quite right. We made this part up!
+We use a programming language such as Python or R to create data visualizations.
 
 </opt>
 
@@ -101,278 +50,111 @@ This isn't quite right. We made this part up!
 
 
 **Question 2**      
-What kind of components are combined in declarative plotting to create visualizations?
+What can you do with Jupyter Book?
 
 <choice id="2" >
-<opt text="Dictionary Keys">
+<opt text="Version control files">
 
-This is a data structure and not quite a plotting structure.
-
-</opt>
-
-<opt text="Block Components">
-
-Think more language-oriented.
+Git is the tool that allows you to version control files.
 
 </opt>
 
-<opt text="Grammatical Components"  correct="true">
+<opt text="Navigate the file system">
+
+For this you need a shell, such as Bash.
+
+</opt>
+
+<opt text="Publish books and web pages"  correct="true">
 
 You got it!
 
 </opt>
 
+<opt text="Edit code files">
 
-<opt text="Grouping Components">
-
-I'm not entirely sure what a grouping component is since we made this up!
+We need a text editor or programming environment such as JupyterLab or VSCode for this!
 
 </opt>
 
 </choice>
 
+**True or False**       
+*All the tools we are using in this course are open source and free to use.*
+
+<choice id="3" >
+<opt text="True"  correct="true">
+
+You got it!
+
+</opt>
+
+<opt text="False">
+
+They are! Volunteer contributions from people around the world support the development of these tools.
+
+</opt>
+
+</choice>
 
 </exercise>
 
-<exercise id="5" title="True or False: Visualization Libaries">
+<exercise id="3" title="How Can We Visualize Data?" type="slides,video">
+<slides source="module1/module1_03" shot="1" start="5:4008" end="26:2200"> </slides>
+</exercise>
 
+<exercise id="5" title="Asking Effective Questions" type="slides,video">
+<slides source="module1/module1_05" shot="1" start="26:3200" end="40:07"></slides>
+</exercise>
 
-**True or False**    
-*A low-level visualization library focuses on plot construction details.*
+<exercise id="6" title="Test Your Knowledge">
+
+**Question 1**      
+Which of the following is **NOT** something you should do before asking for help online.
 
 <choice id="1" >
-<opt text="True"  correct="true">
+<opt text="Search to see if the solution to your question already is available">
 
-Great job! 
+You should do this before asking a new question. It will make you find the answer faster and spare people from doing duplicate work.
 
 </opt>
 
-<opt text="False">
+<opt text="Type out the problem for youself before asking the question">
 
-Hmmm. It's possible you got mixed up with high-level visualization. 
+You should do this before asking a new question. It can help you find the solution to the problem yourself!
+
+</opt>
+
+<opt text="Post a screenshot of your full code as is."  correct="true">
+
+You should reduce your code to a minimal example, and post it as text instead of as a screenshot.
 
 </opt>
 
 </choice>
 
-**True or False**    
-*A high-level visualization library focuses on data and relationships.*
+**True or False**       
+*People often get paid to answer questions on online forums.*
 
 <choice id="2" >
+<opt text="False"  correct="true">
 
-<opt text="True"  correct="true">
-
-Nice work!
-
-</opt>
-
-<opt text="False">
-
-High-level visualization libraries concentrate on the data and the relationships between them. 
+You got it! People from around the world volunteer their time and expertise to answer questions online, so remember to be respectful and mindful of their time when asking for help.
 
 </opt>
 
-</choice>
-</exercise>
+<opt text="True">
 
-
-<exercise id="6" title="Your First Plot">
-
-**Instructions:**    
-Be patient when running a coding exercise for the first time, it can take a few minutes. 
-
-**When you see `____` in a coding exercise, replace it with what you assume to be the correct code. Run the code to see if you obtain the desired output
-and submit it to validate if you were correct.**
-
-
-Let's use the same vehicle dataset we saw in the lecture, but visualize the relationship between two different columns.
-
-The data has already been imported for you in this exercise.
-
-Here is what it looks like:
-
-<codeblock id="cars_data">
-
-</codeblock>
-
-Tasks: 
-
-- Fill out the missing fields in the Altair plot in order to create a scatter plot.
-- The cars' `Horsepower` should be on the y-axis and their `Weight_in_lbs` on the x-axis.
-- Color the points by the `Origin` of the cars.
-
-<codeblock id="01_06">
-
-- Are the column names expressed in quotes, e.g. `y='Horsepower'`?
-
-</codeblock>
-</exercise>
-
-
-<exercise id="7" title="Aggregations, Lines, and Layers" type="slides,video">
-<slides source="module1/module1_07" shot="1" start="26:3200" end="40:07"></slides>
-</exercise>
-
-
-<exercise id="8" title="Questions on How Plots are Created">
-
-**Question 1**     
-Which function do we need to use to superimpose plots in Altair?
-
-<choice id="1">
-
-<opt text="Overlay">
-
-Not quite right here. 
-
-</opt>
-
-<opt text="Layer"  correct="true">
-
-That's it!
-
-</opt>
-
-<opt text= "Panel">
-
-This is something else by good try. 
+People from around the world volunteer their time and expertise to answer questions online, so remember to be respectful and mindful of their time when asking for help.
 
 </opt>
 
 </choice>
 
-**Question 2**     
-Line plots are often preferable to point plots when visualizing trends over time because...
-
-<choice id="2">
-<opt text="The lines make the plot more visually appealing.">
-There is more to plots then just being visually appealing. 
-</opt>
-<opt text= "Line plots are faster to create.">
-They both take approximately the same time to create.
-</opt>
-<opt text="The line makes it easy to see which values are connected in the same group and its slope facilitates our interpretation of the overall trend."  correct="true">
-Nailed it!
-</opt>
-</choice>
-
 </exercise>
 
-<exercise id="9" title="Creating a Line Plot for Change Over Time">
-
-
-**Instructions:**    
-Be patient when running a coding exercise for the first time, it can take a few minutes. 
-
-**When you see `____` in a coding exercise, replace it with what you assume to be the correct code. Run the code to see if you obtain the desired output
-and submit it to validate if you were correct.**
-
-_**Make sure you remove the hash (`#`) symbol in the coding portions of this question.  We have commented them so that the line won't execute and you can test your code after each step.**_
-
-Let's use a line plot to visualize how the price of a few common stocks has changed over time.
-
-Click Run code to take a look at the stock data before uncommenting the plot code and creating the visualization.
-
-Tasks:
-
-- Fill out the missing fields in the code below.
-- Import the correct library from `vega_datasets`.
-- ***Before going further Click <font style="color:blue">Run code</font>   to take a look at the stock data before uncommenting the plot code and creating the visualization.***
-- Create a line plot with the stocks' date on the x-axis and their price on the y-axis. Save the plot in an object named `price_lineplot`.
-- You should colour the lines by the stock symbol
-so that you can compare the stock development for the different companies.
-
-<codeblock id="01_09a">
-
-- Are you putting the column names in quotes, e.g. `y='price'`?
-- Look at the dataframe by typing `stocks.columns` if you are unsure about the exact column names.
-
-</codeblock>
-
-
-**Question**   
-In the chart above, which stock was priced the highest in 2003?
-
-<choice id="1">
-
-<opt text="GOOG">
-
-GOOG wasn't present in 2003.
-
-</opt>
-
-<opt text= "AAPL">
-
-This stock was quite low in 2003.
-
-</opt>
-
-<opt text= "AMZN">
-
-This stock was quite low in 2003.
-
-</opt>
-
-<opt text="IBM"  correct="true">
-
-You got it!
-
-</opt>
-
-</choice>
-
-
-**Combining a point and line plot**
-
-Let's add points to the line above to indicate each observation along the line.
-
-Tasks:  
-
-- Fill out the missing fields in the code below.
-- Assign the line plot to a variable name (of your choice),
-and then use this name to combine a line plot and a point plot.
-
-<codeblock id="01_09b">
-
-- Remember that the column names should be in quotes, e.g. `y='price'`.
-- Look at the dataframe by typing `stocks.columns` if you are unsure about the exact column names.
-- Revisit the slides on how to build upon existing plots when layering.
-
-</codeblock>
-</exercise>
-
-<exercise id="10" title="Plotting an Aggregated Value">
-
-**Instructions:**    
-Be patient when running a coding exercise for the first time, it can take a few minutes. 
-
-**When you see `____` in a coding exercise, replace it with what you assume to be the correct code. Run the code to see if you obtain the desired output
-and submit it to validate if you were correct.**
-
-
-Instead of showing the value for each individual stock value,
-we could explore the average trend over time
-for all five companies.
-
-Tasks:
-
-- Create a line plot with the average value of all stocks over time,
-instead of giving each company its own line. 
-*Hint: This will require aggregating using the mean for your y-axis values.*
-
-
-<codeblock id="01_10">
-
-- Remember that the column names should be in quotes, e.g. `y='price'`.
-- Look at the dataframe by typing `stocks.columns` if you are unsure about the exact column names.
-- Remember that the string syntax for creating an average is `'mean(column_name)'`
-
-</codeblock>
-</exercise>
-
-
-
-<exercise id="11" title="What Did We Just Learn?" type="slides, video">
+<exercise id="7" title="What Did We Just Learn?" type="slides, video">
 <slides source="module1/module1_end" shot="0" start="04:37" end="05:35">
 </slides>
 </exercise>
+

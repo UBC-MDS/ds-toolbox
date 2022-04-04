@@ -4,23 +4,17 @@ type: slides
 
 # Module Learning Outcomes
 
-Notes: In this module we will be learning about the importance of data visualization and how a grammar of graphics can help us effectively visualize data.
-
 ---
 
-# Module Learning Outcomes
+In this module you will learn how to
 
-In this module students will learn how to
-
-- Explain the importance of data visualizations.
-- Use Altair's grammar of graphics.
-- Create point and line visualizations in Altair.
-- Transform data directly in Altair instead of pandas.
-- Combine graphical marks via layering.
+1. Explain what each tool in the Data Science toolbox is used for.
+2. Use VS Code to edit text and Python files.
+4. Ask effective questions.
+5. Create minimal reproducible code examples when asking for help.
 
 Notes:
-
-<br>
+In this module we will be introduced to the data science tools that we will be practicing with in this course and learn how to ask effective questions.
 
 ---
 
