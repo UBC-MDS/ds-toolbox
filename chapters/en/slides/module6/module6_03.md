@@ -69,9 +69,6 @@ Here are some files/folders in a standard project structure:
 - `notebooks/`: This is where Jupyter notebook files go, which are used for exploration and communication.
 - `src/`: Code files are usually stored in this folder, which can itself have subfolders as needed.
 
-<br>
-Th
-
 Note:
 
 ---

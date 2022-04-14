@@ -35,7 +35,7 @@ Git is letting us know about untracked files (ones we have never committed befor
 
 # Create a `.gitignore` file
 
-Using the plain text editor of your choice (mine is VS Code) create a file called .gitignore inside your Git repo:
+Using the plain text editor of your choice (mine is VS Code) create a file called `.gitignore` inside your Git repo:
 
 ```
 code .gitignore
@@ -63,8 +63,8 @@ Notes:
 
 # .gitignore tips and tricks
 
-- Append **/ to the beginning of any file/folder names listed in the `.gitignore` file to have them ignored in subdirectories within the repo as well
-- Create a global `.gitignore` file so that you do not have to create the same `.gitignore` for all your homework repos
+- Append `**/` to the beginning of any file/folder name listed in the `.gitignore` file to have them ignored in subdirectories within the repo as well
+- Create a global `.gitignore` file so that you do not have to create the same `.gitignore` for all your repos
 
 <br>
 
@@ -73,7 +73,7 @@ Steps to follow:
 - Use a text editor (e.g., VS Code, nano, Jupyter) to create a file called `.gitignore`
 - Add `**/.ipynb_checkpoints/` to that file and save it
 - `add` and `commit` it with Git
-- Type git status and see if you no longer see `.ipynb_checkpoints/` as a untracked file
+- Type `git status` and see if you no longer see `.ipynb_checkpoints/` as an untracked file
 
 Notes:
 

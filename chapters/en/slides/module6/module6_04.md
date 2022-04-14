@@ -133,7 +133,7 @@ To activate this new environment, you can type `conda activate test_env` (and `c
 
 ---
 
-# Sharing Environments With Others
+# Sharing environments with others
 
 <br>
 
