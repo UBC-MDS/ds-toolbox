@@ -8,12 +8,11 @@ Note:
 
 ---
 
-In the first part of this module, we talked about how using certain file name conventions makes finding and processing relevant information easy.
+<br>
 
-- When it comes to organizing an entire project, it's even more important to structure the files and folders in a logical, commonly accepted way.
-- In a data science project, it's easy to focus only on the final product.
-- The code and data that produce the end result are as important.
-- It's hard to change your mind once you're half way there, so it's best to start off with a standard project structure from the very beginning.
+- In a data science project, it's easy to focus only on the final product
+- The code and data that produce the end result are as important
+- It's hard to change your mind once you're half way there, so it's best to start off with a standard project structure from the very beginning
 
 <br>
 
@@ -25,12 +24,16 @@ In the first part of this module, we talked about how using certain file name co
 
 Note:
 
+In the first part of this module, we talked about how using certain file name conventions makes finding and processing relevant information easy.
+
+When it comes to organizing an entire project, it's even more important to structure the files and folders in a logical, commonly accepted way.
+
 ---
 
 **Example of a good project structure:**
 
 ```
-project/
+project-name/
 ├── .gitignore
 ├── README.md
 ├── environment.yaml
@@ -57,9 +60,21 @@ project/
 
 Note:
 
+In this slide, you can see an example of what a well-organized project structure looks like.
+
+Note that each category of files has its own special folder.
+
+When I look at this repo, I would immediately know where to look to find the data or where reports are kept, even if I haven never seen this project repo before.
+
+When most people agree on using more or less the same structure for organizing their projects, good things will happen.
+
+It will be much easier for people to collaborate with each other. It will also be easier for yourself to manage your project as it grows in complexity.
+
 ---
 
 Here are some files/folders in a standard project structure:
+
+<br>
 
 - `.gitignore`: List of files not to commit to your repo
 - `README.md`: General explanations about the project
@@ -70,6 +85,12 @@ Here are some files/folders in a standard project structure:
 - `src/`: Code files are usually stored in this folder, which can itself have subfolders as needed.
 
 Note:
+
+Here, I just want you to tell you about the role of each file and folder in an example of a standard project repo.
+
+Note that the naming of particular folders might be slightly different between different projects.
+
+For example, one might choose to call their code-containing folder `code` or even `script`. But it is still easy to see that such a folder hosts programming codes for the project, and not data or reports.
 
 ---
 
