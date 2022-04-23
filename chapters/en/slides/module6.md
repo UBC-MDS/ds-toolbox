@@ -16,7 +16,7 @@ id: 6
 <slides source="module6/module6_01"> </slides>
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id='4' title="Test Your Knowledge">
+<exercise id='3' title="Test Your Knowledge">
 
 Which of the following file names follows best practices?
 
@@ -60,11 +60,11 @@ If it was automatically prevented, then this couldn't have been a problem!
 
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id="5" title=".gitignore" type="slides,video">
+<exercise id="4" title=".gitignore" type="slides,video">
 <slides source="module6/module6_02"> </slides>
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id='6' title="Test Your Knowledge">
+<exercise id='5' title="Test Your Knowledge">
 
 `**/` is prepended to an entry in `.gitignore` to tell Git that this entry is a folder.
 
@@ -96,11 +96,11 @@ Remember that you need to do "add" and "commit" .gitignore with Git?
 
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id="7" title="Project Organization" type="slides,video">
+<exercise id="6" title="Project Organization" type="slides,video">
 <slides source="module6/module6_03"> </slides>
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id='8' title="Test Your Knowledge">
+<exercise id='7' title="Test Your Knowledge">
 
 Which of the following is NOT a reason for having a standard project structure?
 
@@ -120,6 +120,47 @@ This is indeed one of the reasons!
 
 <opt text="Optimizing code performance"  correct="true">
 The way a project is organized has no effect on the code performance.
+</opt>
+
+</choice>
+
+What is one problem with the following project repo?
+
+```
+sales-proj/
+├── .gitignore
+├── README.md
+├── proj-env.yaml
+├── data/
+├── reports/
+|   ├── figures/
+│   └── visualize.py
+│
+└── src/
+    ├── __init__.py
+    ├── make_dataset.py
+    │
+    ├── analysis
+    │   ├── stat_model.py
+    │   └── ml_model.py
+```
+
+<choice id="2">
+
+<opt text="`make_dataset.py` is not inside a separate folder within `scr/`">
+Unless the project is too complex and the `src` folder has a lot of files, it's not necessarily needed to put different code files inside separate folders.
+</opt>
+
+<opt text="`visualize.py` is a python code file and should be placed inside `src/`" correct="true">
+All code files should live in one place rather being scattered around.
+</opt>
+
+<opt text="The environment file name is `proj-env.yaml` instead of `environment.yaml`">
+As long as the file name is descriptive and relevant, any name is acceptable.
+</opt>
+
+<opt text="There is no folder for documentation">
+Not every project is supposed to have a documentation folder.
 </opt>
 
 </choice>
