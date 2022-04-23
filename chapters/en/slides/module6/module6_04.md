@@ -17,9 +17,28 @@ type: slides
 
 A virtual environments accomplishes exactly this:
 
-<b><p style="margin-left:10%; color:darkblue;">It lets you have multiple versions of packages on the same computer without causing conflict.</p></b>
+<b><p style="margin-left:10%; color:darkblue;">
+It lets you have multiple versions of packages on the same computer without causing conflict.
+</p></b>
 
 Notes:
+
+Just like we don't store files and folders of multiple projects at the same place,
+we also often don't want different projects to be run in the same computing environment.
+
+For example,
+what if we need to run the code in a project with `pandas 1.1`,
+and another project with `pandas 1.4`?
+
+Well, we probably shouldn't uninstall and reinstall different versions of `pandas` each time we switch between working on those two projects.
+
+What can we do then? Use different virtual computing environments!
+
+Virtual environments are also critical for reproducibility.
+
+Why?
+
+Because we want to run each project using the same version of packages with which the project is developed. If we don't do this, so many problems could occur just because of inconsistency between versions of packages on our machine, and the ones used for creating a project.
 
 ---
 
@@ -48,6 +67,12 @@ conda update --help
 
 Notes:
 
+Alright, I hope you're convinced that using virtual environments is a terrific idea. So, how can we create and use virtual environments?
+
+There are several tools to do this, including `virtualenv`, `venv`, `pipenv` and `conda`.
+
+Here we use Conda, which is an open source **package** and **environment** management system for any programming language; though it is the most popular in the python community.
+
 ---
 
 # Managing environments
@@ -56,9 +81,9 @@ Notes:
 
 **What is a conda environment and why is it so useful?**
 
-Using `conda`, you can create an isolated python environment for your project.
-
 An environment is a set of packages that can be used in one or multiple projects.
+
+Using `conda`, you can create an isolated python environment for your project.
 
 <br>
 
@@ -66,18 +91,21 @@ There are several major benefits of using environments:
 
 - Guarantee reproducibility of the computing environment
 - Use and manage different versions of the same package
-- Create isolated environment for testing and developing new packages
+- Create isolated environment for testing new packages, or develop new ones
 
-The default environment is the `base` environment.
+The default environment is `base`.
 
 Notes:
 
-- You can guarantee that someone else can reproduce your project by specifying which package versions your used and making it easy for others to install the same versions.
-- If two of your projects relies on different versions of the same package, you can install these in different environments.
-- If you want to play around with a new package, you don’t have to change the packages you use for your data analysis and risk messing something up.
-- When you develop your own packages, it is essential to use environments, since you want to to make sure you know exactly which packages yours depend on, so that it runs on other systems than your own.
+- You can guarantee that someone else can reproduce your project by specifying which package versions you used and making it easy for others to install the same versions.
 
-The default environment is the `base` environment, which contains only the essential packages from Miniconda. Your shell’s prompt string is prefixed with `(base)` when you are inside this environment.
+- If two of your projects rely on different versions of the same package, you can install these in different environments.
+
+- If you want to play around with a new package, you don’t have to change the packages you use for your data analysis and risk messing something up.
+
+The default environment is the `base` environment, which contains only the essential packages from Miniconda.
+
+Your shell’s prompt string is prefixed with `(base)` when you are inside this environment.
 
 ---
 
@@ -94,12 +122,12 @@ Notes:
 
 ---
 
-# Creating environment manually
+# Creating environments manually
 
 <br>
 
-- `conda create -n test_env` creates a new environment called `test_env`.
-- At the time of creation, we can also specify what packages to install in the new environment and the channel from which to download the packages:
+- `conda create -n test_env` creates a new environment called `test_env`
+- At the time of creation, we can also specify what packages to install in the new environment and the channel from which to download the packages
 
 ```
 conda create -n test_env -c conda-forge python=3.9 jupyterlab pandas=1.3.2
@@ -122,14 +150,21 @@ conda deactivate
 conda env list
 ```
 
-
 Notes:
 
-We can create `test_env` conda environment by typing `conda -n test_env`. However, it is often useful to specify more than just the name of the environment, e.g. the channel from which to install packages, the Python version, and a list of packages to install into the new env. In the example below, I am creating the `test_env` environment that uses python 3.7 and a list of libraries: `jupyterlab` and `pandas`.
+We can create `test_env` conda environment by typing `conda -n test_env`. However, it is often useful to specify more than just the name of the environment, e.g. the channel from which to install packages, the Python version, and a list of packages to install into the new env.
 
-conda will solve any dependencies between the packages like before and create a new environment with those packages. Usually, we don’t need to specify the channel, but in this case I want to get the very latest version of these packages, and they are made available in `conda-forge` before they reach the default conda channel.
+In the example below, I am creating the `test_env` environment that uses python 3.9 and a list of libraries: `jupyterlab` and `pandas`.
 
-To activate this new environment, you can type `conda activate test_env` (and `conda deactivate` for deactivating). Since you will do this often, we created an alias shortcut ca that you can use to activate environments. To know the current environment that you’re in you can look at the prefix of the prompt string in your shell which now changed to (test_env). And to see all your environments, you can type conda env list.
+conda will solve any dependencies between the packages and create a new environment with those packages.
+
+Usually, we don’t need to specify the channel, but in this case since I want to get the very latest version of these packages, and I'm using the flag `-c` together with `conda-forge`.
+
+To activate this new environment, you can type `conda activate test_env` (and `conda deactivate` for deactivating).
+
+To know the current environment that you’re in, you can look at the prefix of the prompt string in your shell which now changed to `(test_env)`.
+
+To see all your environments, you can type `conda env list`.
 
 ---
 
@@ -171,13 +206,17 @@ Notes:
 
 To share an environment, you can export your conda environment to an environment file, which will list each package and its version in the format `package=version=build`.
 
-The environment file is named `environment.yaml` here, but it could be called anything. This is the conventional name and using it makes it easy for others to recognize that this is a conda environment file. Also, the extension can be either `.yaml` or `.yml`.
+The environment file is named `environment.yaml` here, but it could be called anything.
 
-Remember that `.yaml` files are plain text, so you can use a text editor such as VS Code to open them. If you do, you will realize that this environment file has A LOT more packages than `jupyterlab` and `pandas`. This is because the default behavior is to also list the dependencies that were installed together with these packages, e.g. `numpy`. This is good in the sense that it gives an exact copy of everything in your environment.
+This is the conventional name and using it makes it easy for others to recognize that this is a conda environment file.
 
-However, some dependencies might differ between operating systems, so this file might not work with someone from a different OS. To remedy this, you can append the `--from-history` flag, which look at the history of the packages you explicitly told conda to install and only list those in the export. The required dependencies will then be handled in an OS-specific manner during the installation, which guarantees that they will work across OSes. This environment.yaml file would be much shorter this time.
+Also, the extension can be either `.yaml` or `.yml`. Remember that `.yaml` files are plain text, so you can use a text editor such as VS Code to open them.
 
-Importantly, this will not include the package version unless you included it when you installed with the `package==version` syntax. For an environment to be reproducible, you NEED to add the version string manually.
+If you do, you will realize that this environment file has a lot more packages than `jupyterlab` and `pandas`. This is because the default behavior is to also list the dependencies that were installed together with these packages, e.g. `numpy`. This is good in the sense that it gives an exact copy of everything in your environment.
+
+However, some dependencies might differ between operating systems, so this file might not work with someone from a different OS. To remedy this, you can append the `--from-history` flag, which look at the history of the packages you explicitly told conda to install and only list those in the export. The required dependencies will then be handled in an OS-specific manner during the installation, which guarantees that they will work across OSes. This `environment.yaml` file would be much shorter this time.
+
+Importantly, this will not include the package version unless you included it when you installed with the `package==version` syntax. For an environment to be reproducible, you need to add the version string manually.
 
 ---
 
@@ -215,23 +254,22 @@ Notes:
 
 ---
 
-# Conda environments in Jupyter Lab
+# Conda environments in JupyterLab
 
 <br>
 
-- By default, Jupyter Lab only sees the conda environment where it is installed.
-- But no need to install Jupyter Lab in each and every new environment!
-- There is a package called `nb_conda_kernels` that makes it possible to have a single installation of Jupyter Lab, and access all other conda environments.
+- By default, JupyterLab only sees the conda environment where it is installed.
+- But no need to install JupyterLab in each and every new environment!
+- There is a package called `nb_conda_kernels` that makes it possible to have a single installation of JupyterLab, and access all other conda environments
 
 <br>
 
-In order to make Jupyter Lab detect a new environment:
+In order to make JupyterLab detect a new environment:
 
-- `nb_conda_kernels` needs to be installed once in the conda environment where JupyterLab is installed (usually the `base` environment).
-- A package called `ipykernel` needs to be installed in each new environment to make it visible to Jupyter Lab.
+- `nb_conda_kernels` needs to be installed once in the conda environment where JupyterLab is installed (usually the `base` environment)
+- A package called `ipykernel` needs to be installed in each new environment to make it visible to JupyterLab
 
 Notes:
-
 
 ---
 
@@ -239,7 +277,7 @@ Notes:
 
 <br>
 
-Return the list of installed packages in the currently active environment using the following command:
+We can get the list of installed packages in the currently active environment using the following command:
 
 ```
 conda list
@@ -257,6 +295,8 @@ freetype                  2.6.3                         1    conda-forge
 functools32               3.2.3.2                  py27_1    conda-forge
 libgfortran               3.0.0                         0    conda-forge
 ```
+
+<br>
 
 The list will include versions of each package, the specific build, and the channel that the package was downloaded from.
 
@@ -331,6 +371,8 @@ conda install -c conda-forge rasterio=0.35
 ```
 conda config --add channels conda-forge
 ```
+
+Notes:
 
 ---
 
