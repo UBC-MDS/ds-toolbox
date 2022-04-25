@@ -1,21 +1,21 @@
 ---
 title: 'Module 3: Git and GitHub intro'
 description:
-  'Course introduction, summary of course learning outcomes and prerequisite validation.' 
-prev: ../../module1 # Should be changed
+  'This module will also introduce how to use the two most common version control tools: Git for local version control, and GitHub for remote version control.' 
+prev: ../../module2 
 next: ../../module4
 type: chapter
-id: 2
+id: 3
 ---
 
-<exercise id="1" title="What is version control?" type="slides,video">
+<exercise id="1" title="What is version control, and why should I use it?" type="slides,video">
 
-<slides source="module0/module0_00" shot="0" start="0:002" end="3:40">
+<slides source="module3/module3_01" shot="0" start="0:002" end="3:40">
 </slides>
 
 </exercise>
 
-<exercise id='2' title="git and GitHub">
+<exercise id='2' title="Test Your Knowledge">
 
 When are you working on a `git` repository
 
@@ -29,11 +29,11 @@ When are you working on a `git` repository
 </choice>
 </exercise>
 
-<exercise id='3' title="Git Clone"  type='slides, video'>
-<slides source='module1/module1_00' shot='0' start='3:42' end='4:35'> </slides>
+<exercise id='3' title="Version control repositories"  type='slides, video'>
+<slides source='module3/module3_02' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
-<exercise id='4' title='cloning a repo'>
+<exercise id='4' title='Test Your Knowledge'>
 
 Can you consider a folder you cloned to your computer a git repo?
 
@@ -45,11 +45,11 @@ Can you consider a folder you cloned to your computer a git repo?
 </choice>
 </exercise>
 
-<exercise id='5' title="git status"  type='slides, video'>
-<slides source='module1/module1_00' shot='0' start='3:42' end='4:35'> </slides>
+<exercise id='5' title="The staging area"  type='slides, video'>
+<slides source='module3/module3_03' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
-<exercise id='6' title='status'>
+<exercise id='6' title='Test Your Knowledge'>
 
 `git status` output
 What files have been added recently to this repo?
@@ -65,11 +65,11 @@ What files have been added recently to this repo?
 </choice>
 </exercise>
 
-<exercise id='7' title='git commit' type='slides, video'>
-<slides source='module1/module1_00' shot='0' start='3:42' end='4:35'> </slides>
+<exercise id='7' title='Committing changes to a local repository' type='slides, video'>
+<slides source='module3/module3_04' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
-<exercise id='8' title='commit message'>
+<exercise id='8' title='Test Your Knowledge'>
 
 What of the following commit messages is more informative?
 
@@ -90,22 +90,42 @@ c. x
 </choice>
 </exercise>
 
-<exercise id='9' title='git push'  type='slides, video'>
-<slides source='module1/module1_00' shot='0' start='3:42' end='4:35'> </slides>
+<exercise id='9' title='PUSHing changes from a remote repository'  type='slides, video'>
+<slides source='module3/module3_05' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
- <exercise id='10' title='push origin main'>
+<exercise id='10' title='Test Your Knowledge'>
 
 What is the correct command to push your changes to the branch `main`?
 
- <choice>
- <opt text='`git push origin main`' >
- </opt>
- <opt text='`git push`'>
- </opt>
- <opt text='`git push origin`'>
- </opt>
- <opt text='All are correct' correct='true'>
- </opt>
- </choice>
- </exercise>
+<choice>
+<opt text='`git push origin main`' >
+</opt>
+<opt text='`git push`'>
+</opt>
+<opt text='`git push origin`'>
+</opt>
+<opt text='All are correct' correct='true'>
+</opt>
+</choice>
+</exercise>
+
+<exercise id='11' title='PULLing changes from a remote repository'  type='slides, video'>
+<slides source='module3/module3_06' shot='0' start='3:42' end='4:35'> </slides>
+</exercise>
+
+<exercise id='12' title='Test Your Knowledge'>
+
+What is the correct command to push your changes to the branch `main`?
+
+<choice>
+<opt text='`git push origin main`' >
+</opt>
+<opt text='`git push`'>
+</opt>
+<opt text='`git push origin`'>
+</opt>
+<opt text='All are correct' correct='true'>
+</opt>
+</choice>
+</exercise>
