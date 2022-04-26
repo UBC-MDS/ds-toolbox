@@ -8,7 +8,7 @@ title: 'module3_06'
 ---
 # Pulling changes from the remote GitHub repository to synchronize your local repository
 
-<img src='/module3/vc-pull.png' width="40%" alt="404 image" class="centerImage"/>
+<img src='/module3/vc-pull.png' width="40%" alt="404 image" align="center"/>
 
 
 

@@ -9,7 +9,7 @@ title: 'module3_02'
 # Schematic of local and remote version control repositories. 
 
 
-<img src='/module3/vc-local-github-2.png' width="60%" alt="404 image" class="centerImage"/>
+<img src='/module3/vc-local-github-2.png' width="60%" alt="404 image" align="center"/>
 
 
 Notes: Typically, when we put a data analysis project under version control, we create two copies of the repository. One copy we use as our primary workspace where we create, edit, and delete files. This copy is commonly referred to as the **local repository**. The local repository most commonly exists on our computer or laptop, but can also exist within a workspace on a server (e.g., JupyterHub). The other copy is typically stored in a repository hosting service (e.g., GitHub), where we can easily share it with our collaborators. This copy is commonly referred to as the **remote repository**.
@@ -21,7 +21,7 @@ Under the hood, Git only saves the changes between your versions, so it is also 
 # Tracking the repository history using commit messages
 
 
-<img src='/module3/vc-local-github-3.png' width="60%" alt="404 image" class="centerImage"/>
+<img src='/module3/vc-local-github-3.png' width="60%" alt="404 image" align="center"/>
 
 
 
@@ -34,7 +34,7 @@ In the local repository we have something called "the staging" area. We are goin
 # Tracking the repository history using commit messages
 
 
-<img src='/module3/vc-local-github.png' width="48%" alt="404 image" class="centerImage"/>
+<img src='/module3/vc-local-github.png' width="48%" alt="404 image" align="center"/>
 
 
 
@@ -51,7 +51,7 @@ The **hash** is a string of characters consisting of about 40 letters and number
 # Tracking the repository history using commit messages
 
 
-<img src='/module3/vc-local-github.png' width="48%" alt="404 image" class="centerImage"/>
+<img src='/module3/vc-local-github.png' width="48%" alt="404 image" align="center"/>
 
 
 
@@ -67,7 +67,7 @@ The **hash** is a string of characters consisting of about 40 letters and number
 
 <center>
 
-<img src='/module3/vc-remote-repository.png' width="60%" alt="404 image" class="centerImage"/>
+<img src='/module3/vc-remote-repository.png' width="60%" alt="404 image" align="center"/>
 
 </center>
 
@@ -80,7 +80,7 @@ Notes: Before you can create remote repositories on GitHub, you will need a GitH
 
 
 
-<img src='/module3/vc-remote-repository-2.png' width="40%" alt="404 image" class="centerImage"/>
+<img src='/module3/vc-remote-repository-2.png' width="40%" alt="404 image" align="center"/>
 
 
 
@@ -103,7 +103,7 @@ The green “Code” drop-down menu contains the remote address (URL) correspond
 
 
 
-<img src='/module3/vc-clone-jupyter.png' width="60%" alt="404 image" class="centerImage"/>
+<img src='/module3/vc-clone-jupyter.png' width="60%" alt="404 image" align="center"/>
 
 
 Notes: Cloning a remote repository from GitHub to create a local repository results in a copy that knows where it was obtained from so that it knows where to send/receive new committed edits. In order to do this, first copy the URL from the HTTPS tab of the Code drop-down menu on GitHub
@@ -114,7 +114,7 @@ Notes: Cloning a remote repository from GitHub to create a local repository resu
 
 1. The Jupyter Git Clone icon (red circle). 
 
-<img src='/module3/vc-clone-jupyter-2.png' width="60%" alt="404 image" class="centerImage"/>
+<img src='/module3/vc-clone-jupyter-2.png' width="60%" alt="404 image"/>
 
 ---
 # Cloning a repository using Jupyter
@@ -122,7 +122,7 @@ Notes: Cloning a remote repository from GitHub to create a local repository resu
 2. Prompt where the remote address (URL) corresponding to the location of the GitHub repository needs to be input in Jupyter. 
 
 
-<img src='/module3/vc-clone-jupyter-3.png' width="60%" alt="404 image" class="centerImage"/>
+<img src='/module3/vc-clone-jupyter-3.png' width="60%" alt="404 image"/>
 
 
 Notes: Open Jupyter, and click the Git+ icon on the file browser tab. Paste the URL of the GitHub project repository you created and click the blue “CLONE” button.
@@ -132,7 +132,7 @@ Notes: Open Jupyter, and click the Git+ icon on the file browser tab. Paste the 
 
 On the file browser tab, you will now see a folder for the repository. Inside this folder will be all the files that existed on GitHub
 
-<img src='/module3/vc-clone-jupyter-4.png' width="60%" alt="404 image" class="centerImage"/>
+<img src='/module3/vc-clone-jupyter-4.png' width="60%" alt="404 image"/>
 
 
 ---

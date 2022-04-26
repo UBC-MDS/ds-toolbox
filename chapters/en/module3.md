@@ -19,7 +19,7 @@ id: 3
 
 Which reason listed below is not a good reason to use version control:
 
-<choice>
+<choice id='1'>
 <opt text='Version control tools provide transparency on how a project evolved by tracking the history of documents, and who made what changes to those documents.''>
 </opt>
 <opt text='Version control tools usually include a remote/cloud repository hosting service that can act as a backup of your local files (i.e., the files on your computer).'>
@@ -34,7 +34,7 @@ Is this sentence True or False?
 
 **Git** is a remote/cloud repository hosting service where you can backup and share your files with collaborators.
 
-<choice>
+<choice id='2'>
 <opt text='true'>
 
 Success! Git is a tool for version control that is used locally on your computer, whereas GitHub is an example of a remote/cloud repository hosting service where you can backup and share your files with collaborators.
@@ -56,7 +56,7 @@ Solution is incorrect. Git is a tool for version control that is used locally on
 
 Which statement below is **not** true about GitHub repositories: 
 
-<choice>
+<choice id='1'>
 <opt text='Immediately after a repository is created on GitHub.com using the website, the repository exists only on GitHub.com and does not exist on your computer (i.e., you need to do something to get a copy of it on your computer).' >
 </opt>
 <opt text='Only the creator of GitHub repository, and people the creator specify, can edit the files in the repository. This is true even when the repository is public.'>
@@ -73,7 +73,7 @@ Is this statement true or false?
 
 > The definition of cloning a repository is to copy/download the entire contents (files, project history, and location of the remote repository) of a remote GitHub.com repository to a computer (e.g., your workspace on a JupyterHub, or your laptop).
 
-<choice>
+<choice id='2'>
 <opt text='true' correct='true'>
 </opt>
 <opt text='false'>
@@ -115,7 +115,7 @@ Is this sentence true or false?
 
 > When we **commit** our changes to Git, the snapshot of changes, the commit message, the time and date stamp and the user who committed the changes are all saved to the Git history on GitHub.
 
-<choice>
+<choice id='1'>
 <opt text='true'>
 
 Solution is incorrect. Committing your changes only puts them in the Git history on the local computer you are working on (i.e., your workspace on the JupyterHub or your laptop). To get the changes on GitHub you need to do an additional step of pushing the changes to the remote repository on GitHub.
@@ -130,7 +130,7 @@ Solution is incorrect. Committing your changes only puts them in the Git history
 
 When working on a project that is under version control you should `commit` to you local Git repository:
 
-<choice>
+<choice id='2'>
 <opt text='After every new unit/addition/fix you add to the project' correct='true'>
 </opt>
 <opt text='2-3 times'>
@@ -143,7 +143,7 @@ When working on a project that is under version control you should `commit` to y
 
 Which command(s) below would save the changes of `README.md` to my local Git repository? 
 
-<choice>
+<choice id='3'>
 <opt text='`git init README.md` /n `git commit -m "Add authors and copyright"`' >
 </opt>
 <opt text='`git commit -m "Add authors and copyright"`'>

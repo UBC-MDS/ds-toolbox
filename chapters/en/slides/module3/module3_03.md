@@ -27,7 +27,7 @@ In this section we will discuss all three of these steps in detail.
 # Local repository with changes to files
  
 
-<img src='/module3/vc-local-github-notes.png' width="48%" alt="404 image" class="centerImage"/>
+<img src='/module3/vc-local-github-notes.png' width="40%" alt="404 image" align="center"/>
 
 
 Notes: When working on files in your local version control repository (e.g., using Jupyter) and saving your work, these changes will only initially exist in the working directory of the local repository
@@ -40,7 +40,7 @@ Notes: When working on files in your local version control repository (e.g., usi
 Adding modified files to the staging area in the local repository. 
 
 
-<img src='/module3/vc-staging-area.png' width="48%" alt="404 image" class="centerImage"/>
+<img src='/module3/vc-staging-area.png' width="48%" alt="404 image" align="center"/>
 
 
 Notes: Once you reach a point that you want Git to keep a record of the current version of your work, you need to commit (i.e., snapshot) your changes. A prerequisite to this is telling Git which files should be included in that snapshot. We call this step adding the files to the **staging area**. 
@@ -52,12 +52,12 @@ Note that the staging area is not a real physical location on your computer; it 
 ---
 # Jupyter Lab: Specifying files to commit
 
-Follow this steps in your computer to add files to the staging area
+Follow this steps in your computer to add files to the staging area:
 
 
 1. The file `eda.ipynb` is added to the staging area via the plus sign (+).
 
-<img src='/module3/vc-commits-jupyter-2.png' width="60%" alt="404 image" class="centerImage"/>
+<img src='/module3/vc-commits-jupyter-2.png' width="60%" alt="404 image" align="center"/>
 
 ---
 # Jupyter lab: Specifying files to commit
@@ -65,7 +65,7 @@ Follow this steps in your computer to add files to the staging area
 2. Adding `eda.ipynb` makes it visible in the staging area. 
 
 
-<img src='/module3/vc-commits-jupyter-3.png' width="60%" alt="404 image" class="centerImage"/>
+<img src='/module3/vc-commits-jupyter-3.png' width="60%" alt="404 image" align="center"/>
 
 
 Notes: This opens the Jupyter Git graphical user interface pane. Next, click the plus sign (+) beside the file(s) that you want to “add” (see image). Note that because this is the first change for this file, it falls under the “Untracked” heading. However, next time you edit this file and want to add the changes, you will find it under the “Changed” heading.

@@ -12,7 +12,7 @@ title: 'module3_04'
 Committing the modified files in the staging area to the local repository history, with an informative message about what changed. 
 
 
-<img src='/module3/vc-commit.png' width="60%" alt="404 image" />
+<img src='/module3/vc-commit.png' width="60%" alt="404 image" align="center"/>
 
 
 Notes: Once the files we wish to commit have been added to the staging area, we can then commit those files to the repository history. When we do this, we are required to include a helpful commit message to tell collaborators (which often includes future you!) about the changes that were made.
@@ -50,7 +50,7 @@ Notes: Now that you have cloned the remote repository from GitHub to create a lo
 3. After recording a commit, the staging area should be empty.
 
 
-<img src='/module3/vc-commits-jupyter-5.png' width="60%" alt="404 image" class="centerImage"/>
+<img src='/module3/vc-commits-jupyter-5.png' width="60%" alt="404 image"/>
 
 
 Notes: To snapshot the changes with an associated commit message, you must put a message in the text box at the bottom of the Git pane and click on the blue “Commit” button (Figure 12.29). It is highly recommended to write useful and meaningful messages about what was changed. These commit messages, and the datetime stamp for a given commit, are the primary means to navigate through the project’s history in the event that you need to view or retrieve a past version of a file, or revert your project to an earlier state. When you click the “Commit” button for the first time, you will be prompted to enter your name and email. This only needs to be done once for each machine you use Git on.
