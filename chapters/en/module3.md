@@ -17,6 +17,7 @@ id: 3
 
 <exercise id='2' title="Test Your Knowledge">
 
+**Question 1**
 Which reason listed below is not a good reason to use version control:
 
 <choice id='1'>
@@ -30,7 +31,9 @@ Which reason listed below is not a good reason to use version control:
 </opt>
 </choice>
 
-Is this sentence True or False?
+**Question 2**
+
+**True or false**
 
 **Git** is a remote/cloud repository hosting service where you can backup and share your files with collaborators.
 
@@ -42,7 +45,7 @@ Success! Git is a tool for version control that is used locally on your computer
 </opt>
 <opt text='false' correct='true'>
 
-Solution is incorrect. Git is a tool for version control that is used locally on your computer.
+Git is a tool for version control that is used locally on your computer.
 
 </opt>
 </choice>
@@ -54,6 +57,7 @@ Solution is incorrect. Git is a tool for version control that is used locally on
 
 <exercise id='4' title='Test Your Knowledge'>
 
+**Question 1**
 Which statement below is **not** true about GitHub repositories: 
 
 <choice id='1'>
@@ -69,7 +73,9 @@ Which statement below is **not** true about GitHub repositories:
 </opt>
 </choice>
 
-Is this statement true or false?
+**Question 2**
+
+**True or false**
 
 > The definition of cloning a repository is to copy/download the entire contents (files, project history, and location of the remote repository) of a remote GitHub.com repository to a computer (e.g., your workspace on a JupyterHub, or your laptop).
 
@@ -88,7 +94,7 @@ Is this statement true or false?
 
 <exercise id='6' title='Test Your Knowledge'>
 
-Git has a distinct step of **adding** files to the staging area because:
+**Git** has a distinct step of **adding** files to the staging area because:
 
 <choice>
 <opt text='Not all changes we make (i.e., files we create or edit) are ones that we want to push to our remote GitHub repository.'>
@@ -111,7 +117,9 @@ Git has a distinct step of **adding** files to the staging area because:
 
 <exercise id='8' title='Test Your Knowledge'>
 
-Is this sentence true or false?
+**Question 1**
+
+**True or false**
 
 > When we **commit** our changes to Git, the snapshot of changes, the commit message, the time and date stamp and the user who committed the changes are all saved to the Git history on GitHub.
 
@@ -128,6 +136,7 @@ Solution is incorrect. Committing your changes only puts them in the Git history
 </opt>
 </choice>
 
+**Question 2**
 When working on a project that is under version control you should `commit` to you local Git repository:
 
 <choice id='2'>
@@ -141,6 +150,7 @@ When working on a project that is under version control you should `commit` to y
 </opt>
 </choice>
 
+**Question 3**
 Which command(s) below would save the changes of `README.md` to my local Git repository? 
 
 <choice id='3'>

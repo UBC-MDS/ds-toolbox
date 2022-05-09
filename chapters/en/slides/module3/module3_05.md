@@ -81,4 +81,4 @@ Notes: To push from the terminal you should write the command `git push`
 
 ---
 
-# Let's practise!
+# Let's apply what we learned!

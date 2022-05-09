@@ -75,4 +75,4 @@ For more details, see Software Carpentry's lesson on tracking local changes with
 
 ---
 
-# Let's practise!
+# Let's apply what we learned!

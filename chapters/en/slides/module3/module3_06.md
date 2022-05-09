@@ -81,4 +81,4 @@ Notes: To pull from the terminal you should use the command `git pull`
 
 ---
 
-# Let's practise!
+# Let's apply what we learned!

@@ -8,9 +8,11 @@ title: 'module3_02'
 
 # Schematic of local and remote version control repositories. 
 
+<center>
 
-<img src='/module3/vc-local-github-2.png' width="60%" alt="404 image" align="center"/>
+<img src='/module3/vc-local-github-2.png' width="80%" alt="404 image"/>
 
+<center/>
 
 Notes: Typically, when we put a data analysis project under version control, we create two copies of the repository. One copy we use as our primary workspace where we create, edit, and delete files. This copy is commonly referred to as the **local repository**. The local repository most commonly exists on our computer or laptop, but can also exist within a workspace on a server (e.g., JupyterHub). The other copy is typically stored in a repository hosting service (e.g., GitHub), where we can easily share it with our collaborators. This copy is commonly referred to as the **remote repository**.
 
@@ -20,10 +22,11 @@ Under the hood, Git only saves the changes between your versions, so it is also 
 
 # Tracking the repository history using commit messages
 
+<center>
 
-<img src='/module3/vc-local-github-3.png' width="60%" alt="404 image" align="center"/>
+<img src='/module3/vc-local-github-3.png' width="60%" alt="404 image"/>
 
-
+<center/>
 
 Notes: Both copies of the repository have a **working directory** where you can create, store, edit, and delete files (e.g., `analysis.ipynb` in the image). 
 
@@ -33,33 +36,56 @@ In the local repository we have something called "the staging" area. We are goin
 
 # Tracking the repository history using commit messages
 
+<center>
 
-<img src='/module3/vc-local-github.png' width="48%" alt="404 image" align="center"/>
+<img src='/module3/vc-local-github.png' width="55%" alt="404 image" />
 
-
+<center/>
 
 Notes: Both copies of the repository also maintain a full project history. This history is a record of all versions of the project files that have been created. The repository history is not automatically generated; Git must be explicitly told when to record a version of the project. These records are called **commits**. They are a snapshot of the file contents as well metadata about the repository at that time the record was created (who made the commit, when it was made, etc.). In the local and remote repositories shown in the image, there are two commits represented as gray circles. Each commit can be identified by a human-readable message, which you write when you make a commit, and a commit hash that Git automatically adds for you
 
-The purpose of the message is to contain a brief, rich description of what work was done since the last commit. Messages act as a very useful narrative of the changes to a project over its lifespan. If you ever want to view or revert to an earlier version of the project, the message can help you identify which commit to view or revert to. In image, you can see two such messages, one for each commit: `Created README.md` and `Added analysis draft`.
 
-The **hash** is a string of characters consisting of about 40 letters and numbers. The purpose of the hash is to serve as a unique identifier for the commit, and is used by Git to index project history. Although hashes are quite long — imagine having to type out 40 precise characters to view an old project version! — Git is able to work with shorter versions of hashes. In the image, you can see two of these shortened hashes, one for each commit: `Daa29d6` and `884c7ce`.
 
 
 
 ---
 
-# Tracking the repository history using commit messages
+# Commits
+
+<center>
+
+<img src='/module3/vc-local-commits.png' width="70%" alt="404 image"/>
+
+<center/>
 
 
-<img src='/module3/vc-local-github.png' width="48%" alt="404 image" align="center"/>
-
-
-
-Notes: Both copies of the repository have a **working directory** where you can create, store, edit, and delete files (e.g., `analysis.ipynb` in the image). Both copies of the repository also maintain a full project history. This history is a record of all versions of the project files that have been created. The repository history is not automatically generated; Git must be explicitly told when to record a version of the project. These records are called **commits**. They are a snapshot of the file contents as well metadata about the repository at that time the record was created (who made the commit, when it was made, etc.). In the local and remote repositories shown in the image, there are two commits represented as gray circles. Each commit can be identified by a human-readable message, which you write when you make a commit, and a commit hash that Git automatically adds for you
-
-The purpose of the message is to contain a brief, rich description of what work was done since the last commit. Messages act as a very useful narrative of the changes to a project over its lifespan. If you ever want to view or revert to an earlier version of the project, the message can help you identify which commit to view or revert to. In image, you can see two such messages, one for each commit: `Created README.md` and `Added analysis draft`.
+Notes:  The purpose of the commit message is to contain a brief, rich description of what work was done since the last commit. Messages act as a very useful narrative of the changes to a project over its lifespan. If you ever want to view or revert to an earlier version of the project, the message can help you identify which commit to view or revert to. In image, you can see two such messages, one for each commit: `Created README.md` and `Added analysis draft`.
 
 The **hash** is a string of characters consisting of about 40 letters and numbers. The purpose of the hash is to serve as a unique identifier for the commit, and is used by Git to index project history. Although hashes are quite long — imagine having to type out 40 precise characters to view an old project version! — Git is able to work with shorter versions of hashes. In the image, you can see two of these shortened hashes, one for each commit: `Daa29d6` and `884c7ce`.
+
+
+---
+# 🙌 How can you create your repositories? 
+
+1. Create the remote repository in www.github.com (**GitHub**)
+2. Clone the repository to your local computer with the terminal OR JupyterLab (**Git**)
+
+Notes: 
+
+
+
+---
+
+# 1. Creating a remote repository on GitHub
+
+
+<center>
+
+<img src='/module3/vc-remote-repository.png' width="100%" alt="404 image" />
+
+</center>
+
+Notes: Before you can create remote repositories on GitHub, you will need a GitHub account; you can sign up for a free account at https://github.com. Once you have logged into your account, you can create a new repository to host your project by clicking on the `+` icon in the upper right-hand corner, and then on `New Repository`. 
 
 
 ---
@@ -67,33 +93,20 @@ The **hash** is a string of characters consisting of about 40 letters and number
 
 <center>
 
-<img src='/module3/vc-remote-repository.png' width="60%" alt="404 image" align="center"/>
+<img src='/module3/vc-remote-repository-2.png' width="40%" alt="404 image" />
 
-</center>
+<center/>
 
-Notes: Before you can create remote repositories on GitHub, you will need a GitHub account; you can sign up for a free account at https://github.com/. Once you have logged into your account, you can create a new repository to host your project by clicking on the “+” icon in the upper right-hand corner, and then on “New Repository” 
+Notes: Repositories can be set up with a variety of configurations, including a name, optional description, and the inclusion (or not) of several template files. One of the most important configuration items to choose is the visibility to the outside world, either public or private. **Public repositories** can be viewed by anyone. **Private repositories** can be viewed by only you. Both public and private repositories are only editable by you, but you can change that by giving access to other collaborators.
 
-
----
-
-# Creating a remote repository on GitHub
-
-
-
-<img src='/module3/vc-remote-repository-2.png' width="40%" alt="404 image" align="center"/>
-
-
-
-Notes: Repositories can be set up with a variety of configurations, including a name, optional description, and the inclusion (or not) of several template files. One of the most important configuration items to choose is the visibility to the outside world, either public or private. Public repositories can be viewed by anyone. Private repositories can be viewed by only you. Both public and private repositories are only editable by you, but you can change that by giving access to other collaborators.
-
-To get started with a public repository having a template README.md file, take the following steps:
+To get started with a public repository having a template `README.md` file, take the following steps:
 
 1. Enter the name of your project repository. In the example below, we use canadian_languages. 
-2. Most repositories follow a similar naming convention involving only lowercase letter words
+2. Most repositories follow a similar naming convention involving only lowercase letter words.
 3. separated by either underscores or hyphens.
 4. Choose an option for the privacy of your repository.
-5. Select “Add a README file.” This creates a template README.md file in your repository’s root folder.
-6. When you are happy with your repository name and configuration, click on the green “Create Repository” button.
+5. Select `Add a README file` This creates a template `README.md` file in your repository’s root folder.
+6. When you are happy with your repository name and configuration, click on the green `Create Repository` button.
 
 ---
 
@@ -144,4 +157,4 @@ Notes: If you want to repeat this in the terminal you can use the command git cl
 
 ---
 
-# Let's practise!
+# Let's apply what we learned!

@@ -87,4 +87,4 @@ Notes: If you decide to work in the terminal, you should use the command `git ad
 
 ---
 
-# Let's practise!
+# Let's apply what we learned!
