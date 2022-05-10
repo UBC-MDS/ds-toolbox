@@ -18,6 +18,7 @@ id: 3
 <exercise id='2' title="Test Your Knowledge">
 
 **Question 1**
+
 Which reason listed below is not a good reason to use version control:
 
 <choice id='1'>
@@ -35,7 +36,7 @@ Which reason listed below is not a good reason to use version control:
 
 **True or false**
 
-**Git** is a remote/cloud repository hosting service where you can backup and share your files with collaborators.
+(1) **Git** is a remote/cloud repository hosting service where you can backup and share your files with collaborators.
 
 <choice id='2'>
 <opt text='true'>
@@ -49,13 +50,29 @@ Git is a tool for version control that is used locally on your computer.
 
 </opt>
 </choice>
+
+(2) Are you getting the same information if you **download** a repository from GitHub than if you **clone** it?
+
+<choice id='3'>
+<opt text='true'>
+
+Try downloading a project and clone it and check if you can find any difference between the two options.
+
+</opt>
+<opt text='false' correct='true'>
+
+When you clone a Git repository from GitHub you get the hidden `.git` directory that contains all the history of the changes that Git knows about for that repository, and you get a remote that is already set up to push to the repository on GitHub (this makes it so that once you make changes that are added and committed to Git, all you need to do is push teh changes to GitHub). If you instead use the "Download ZIP" link you do not get the git history (stored in `.git`) nor a set-up remote for pushing to GitHub.
+
+
+</opt>
+</choice>
 </exercise>
 
 <exercise id='3' title="Version control repositories"  type='slides, video'>
 <slides source='module3/module3_02' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
-<exercise id='4' title='Test Your Knowledge'>
+<exercise id='4' title='Test your knowledge'>
 
 **Question 1**
 Which statement below is **not** true about GitHub repositories: 
@@ -137,6 +154,7 @@ Solution is incorrect. Committing your changes only puts them in the Git history
 </choice>
 
 **Question 2**
+
 When working on a project that is under version control you should `commit` to you local Git repository:
 
 <choice id='2'>
@@ -151,6 +169,7 @@ When working on a project that is under version control you should `commit` to y
 </choice>
 
 **Question 3**
+
 Which command(s) below would save the changes of `README.md` to my local Git repository? 
 
 <choice id='3'>

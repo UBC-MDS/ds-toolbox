@@ -24,7 +24,7 @@ Under the hood, Git only saves the changes between your versions, so it is also 
 
 <center>
 
-<img src='/module3/vc-local-github-3.png' width="60%" alt="404 image"/>
+<img src='/module3/vc-local-github-3.png' width="45%" alt="404 image"/>
 
 <center/>
 
@@ -38,15 +38,11 @@ In the local repository we have something called "the staging" area. We are goin
 
 <center>
 
-<img src='/module3/vc-local-github.png' width="55%" alt="404 image" />
+<img src='/module3/vc-local-github.png' width="35%" alt="404 image" />
 
 <center/>
 
 Notes: Both copies of the repository also maintain a full project history. This history is a record of all versions of the project files that have been created. The repository history is not automatically generated; Git must be explicitly told when to record a version of the project. These records are called **commits**. They are a snapshot of the file contents as well metadata about the repository at that time the record was created (who made the commit, when it was made, etc.). In the local and remote repositories shown in the image, there are two commits represented as gray circles. Each commit can be identified by a human-readable message, which you write when you make a commit, and a commit hash that Git automatically adds for you
-
-
-
-
 
 ---
 
@@ -54,7 +50,7 @@ Notes: Both copies of the repository also maintain a full project history. This 
 
 <center>
 
-<img src='/module3/vc-local-commits.png' width="70%" alt="404 image"/>
+<img src='/module3/vc-local-commit.png' width="70%" alt="404 image"/>
 
 <center/>
 
@@ -70,14 +66,14 @@ The **hash** is a string of characters consisting of about 40 letters and number
 1. Create the remote repository in www.github.com (**GitHub**)
 2. Clone the repository to your local computer with the terminal OR JupyterLab (**Git**)
 
-Notes: 
-
-
+Notes: We are going to learn how to create a remote repository in GitHub and then to clone it locally using the terminal or JupyterLab.
+Cloning a GitHub repository it is not the same as downloading it to your computer. When you clone it you are downloading the files and all the project history including the commits and their associated messages. This information about your project that are not the files you are working on themselves is dowloaded as a hidden folder `.git`. The folders that contain this information are considered Git repositories. By default all your projects on GitHub are Git repositories.
+You can clone your project to have a local copy using an integrated development environment (IDE) as JupyterLab or the terminal. The terminal will give you greater versatility since you can use a wide variety of commands, while the IDE will allow you to handle the basic commands in a more intuitive way.
+We are going to learn both ways! 
 
 ---
 
 # 1. Creating a remote repository on GitHub
-
 
 <center>
 
@@ -89,7 +85,7 @@ Notes: Before you can create remote repositories on GitHub, you will need a GitH
 
 
 ---
-# Creating a remote repository on GitHub
+# 1. Creating a remote repository on GitHub
 
 <center>
 
@@ -101,16 +97,18 @@ Notes: Repositories can be set up with a variety of configurations, including a 
 
 To get started with a public repository having a template `README.md` file, take the following steps:
 
-1. Enter the name of your project repository. In the example below, we use canadian_languages. 
+1. Enter the name of your project repository. In the example below, we use `canadian_languages`. 
 2. Most repositories follow a similar naming convention involving only lowercase letter words.
 3. separated by either underscores or hyphens.
 4. Choose an option for the privacy of your repository.
 5. Select `Add a README file` This creates a template `README.md` file in your repository’s root folder.
 6. When you are happy with your repository name and configuration, click on the green `Create Repository` button.
 
+That's it! Now let's clone it to get a local copy on your computer.
+
 ---
 
-# Cloning a repository using Jupyter
+# 2. Cloning a repository using JupyterLab (IDE)
 
 The green “Code” drop-down menu contains the remote address (URL) corresponding to the location of the remote GitHub repository. 
 
@@ -123,14 +121,14 @@ Notes: Cloning a remote repository from GitHub to create a local repository resu
 
 ---
 
-# Cloning a repository using Jupyter
+# 2. Cloning a repository using JupyterLab (IDE)
 
 1. The Jupyter Git Clone icon (red circle). 
 
 <img src='/module3/vc-clone-jupyter-2.png' width="60%" alt="404 image"/>
 
 ---
-# Cloning a repository using Jupyter
+# 2. Cloning a repository using JupyterLab (IDE)
 
 2. Prompt where the remote address (URL) corresponding to the location of the GitHub repository needs to be input in Jupyter. 
 
@@ -141,7 +139,7 @@ Notes: Cloning a remote repository from GitHub to create a local repository resu
 Notes: Open Jupyter, and click the Git+ icon on the file browser tab. Paste the URL of the GitHub project repository you created and click the blue “CLONE” button.
 
 ---
-# Cloning a repository using Jupyter
+# 2. Cloning a repository using JupyterLab (IDE)
 
 On the file browser tab, you will now see a folder for the repository. Inside this folder will be all the files that existed on GitHub
 
@@ -149,7 +147,7 @@ On the file browser tab, you will now see a folder for the repository. Inside th
 
 
 ---
-# The Terminal
+# 2. Cloning a repository using JupyterLab (terminal)
 
 **git clone**
 
