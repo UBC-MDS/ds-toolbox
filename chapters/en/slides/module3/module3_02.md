@@ -110,48 +110,65 @@ That's it! Now let's clone it to get a local copy on your computer.
 
 # 2. Cloning a repository using JupyterLab (IDE)
 
-The green “Code” drop-down menu contains the remote address (URL) corresponding to the location of the remote GitHub repository. 
+ 
 
-
+<center>
 
 <img src='/module3/vc-clone-jupyter.png' width="60%" alt="404 image" align="center"/>
 
+<center/>
 
-Notes: Cloning a remote repository from GitHub to create a local repository results in a copy that knows where it was obtained from so that it knows where to send/receive new committed edits. In order to do this, first copy the URL from the HTTPS tab of the Code drop-down menu on GitHub
+Notes: **The green “Code” drop-down menu contains the remote address (URL) corresponding to the location of the remote GitHub repository.**
+
+ Cloning a remote repository from GitHub to create a local repository results in a copy that knows where it was obtained from so that it knows where to send/receive new committed edits. In order to do this, first copy the URL from the HTTPS tab of the Code drop-down menu on GitHub
 
 ---
 
 # 2. Cloning a repository using JupyterLab (IDE)
 
-1. The Jupyter Git Clone icon (red circle). 
+<center>
 
 <img src='/module3/vc-clone-jupyter-2.png' width="60%" alt="404 image"/>
 
+<center/>
+
+Notes: **1. Click the Jupyter Git Clone icon (red circle).**
 ---
 # 2. Cloning a repository using JupyterLab (IDE)
 
-2. Prompt where the remote address (URL) corresponding to the location of the GitHub repository needs to be input in Jupyter. 
-
+<center>
 
 <img src='/module3/vc-clone-jupyter-3.png' width="60%" alt="404 image"/>
 
+<center/>
 
-Notes: Open Jupyter, and click the Git+ icon on the file browser tab. Paste the URL of the GitHub project repository you created and click the blue “CLONE” button.
+Notes: **2. Prompt where the remote address (URL) corresponding to the location of the GitHub repository needs to be input in Jupyter.** 
+
+Open Jupyter, and click the Git+ icon on the file browser tab. Paste the URL of the GitHub project repository you created and click the blue “CLONE” button.
 
 ---
 # 2. Cloning a repository using JupyterLab (IDE)
 
-On the file browser tab, you will now see a folder for the repository. Inside this folder will be all the files that existed on GitHub
+<center>
 
 <img src='/module3/vc-clone-jupyter-4.png' width="60%" alt="404 image"/>
 
+<center/>
+
+Notes: On the file browser tab, you will now see a folder for the repository. Inside this folder will be all the files that existed on GitHub
 
 ---
 # 2. Cloning a repository using JupyterLab (terminal)
 
-**git clone**
+<center>
 
-Notes: If you want to repeat this in the terminal you can use the command git clone to download a copy of the repository to your computer.
+<img src='/module3/vc-clone-jupyter-4.png' width="60%" alt="404 image"/>
+
+<center/>
+
+Notes: If you want to do this in the terminal you can use the command git clone to download a copy of a repository to your computer. You will see that the repository will appear in JupyterLab after you cloned it. Remember to check that you are in the directory where the file has been cloned.
+
+
 
 ---
 

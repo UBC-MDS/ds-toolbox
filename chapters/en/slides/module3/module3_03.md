@@ -40,7 +40,7 @@ Let's learn how to make a commit in your local repository step by step
  
 <center>
 
-<img src='/module3/vc-local-github-notes.png' width="40%" alt="404 image" />
+<img src='/module3/vc-local-github-notes.png' width="35%" alt="404 image" />
 
 <center/>
 
@@ -51,14 +51,16 @@ Notes: When working on files in your local version control repository (e.g., usi
 
 # Committing changes to a local repository 
 
-Adding modified files to the staging area in the local repository. 
-
-
+<center>
 
 <img src='/module3/vc-staging-area.png' width="48%" alt="404 image" />
 
+<center/>
 
-Notes: Once you reach a point that you want Git to keep a record of the current version of your work, you need to commit (i.e., snapshot) your changes. A prerequisite to this is telling Git which files should be included in that snapshot. We call this step adding the files to the **staging area**. 
+
+Notes: **Adding modified files to the staging area in the local repository.** 
+
+Once you reach a point that you want Git to keep a record of the current version of your work, you need to commit (i.e., snapshot) your changes. A prerequisite to this is telling Git which files should be included in that snapshot. We call this step adding the files to the **staging area**. 
 
 Note that the staging area is not a real physical location on your computer; it is instead a conceptual placeholder for these files until they are committed. The benefit of the Git version control system using a staging area is that you can choose to commit changes in only certain files. For example, we add only the two files that are important to the analysis project (`analysis.ipynb` and `README.md`) and not our personal scratch notes for the project (`notes.txt`).
 
@@ -69,21 +71,26 @@ Note that the staging area is not a real physical location on your computer; it 
 
 Follow this steps in your computer to add files to the staging area:
 
-
-1. The file `eda.ipynb` is added to the staging area via the plus sign (+).
+<center>
 
 <img src='/module3/vc-commits-jupyter-2.png' width="60%" alt="404 image" />
+
+<center/>
+
+Notes: **1. The file `eda.ipynb` is added to the staging area via the plus sign (`+`).**
 
 ---
 # JupyterLab: Specifying files to commit
 
-2. Adding `eda.ipynb` makes it visible in the staging area. 
-
+<center>
 
 <img src='/module3/vc-commits-jupyter-3.png' width="60%" alt="404 image" />
 
+<center/>
 
-Notes: This opens the Jupyter Git graphical user interface pane. Next, click the plus sign (+) beside the file(s) that you want to `add` (see image). Note that because this is the first change for this file, it falls under the `Untracked` heading. However, next time you edit this file and want to add the changes, you will find it under the `Changed` heading.
+Notes: **2. Adding `eda.ipynb` makes it visible in the staging area.** 
+
+This opens the Jupyter Git graphical user interface pane. Next, click the plus sign (+) beside the file(s) that you want to `add` (see image). Note that because this is the first change for this file, it falls under the `Untracked` heading. However, next time you edit this file and want to add the changes, you will find it under the `Changed` heading.
 
 You will also see an `eda-checkpoint.ipynb` file under the `Untracked` heading. This is a temporary “checkpoint file” created by Jupyter when you work on `eda.ipynb`. You generally do not want to add auto-generated files to Git repositories; only add the files you directly create and edit.
 
@@ -107,7 +114,7 @@ Changes not staged for commit:
 ```
 ---
 
-# Terminal: Specifying files to commit
+# JupyterLab terminal: Specifying files to commit
 
 If you want to add the files to the staging area using the terminal you can use the following command:
 

@@ -11,7 +11,7 @@ title: 'module3_05'
 
 <center>
 
-<img src='/module3/vc-local-github.png' width="40%" alt="404 image"/>
+<img src='/module3/vc-local-github.png' width="35%" alt="404 image"/>
 
 <center/>
 
@@ -63,7 +63,6 @@ You will then be prompted to enter your GitHub username and the personal access 
 ---
 # Pushing the commits to GitHub using JupyterLab
 
-
 <center>
 
 <img src='/module3/vc-push-jupyter-2.png' width="60%" alt="404 image"/>
@@ -95,7 +94,7 @@ If the files were successfully pushed to the project repository on GitHub, you w
 
 <center/>
 
-Notes: If insted of using JupyterLab you would like to push from the terminal you should write the command `git push`
+Notes: If insted of using JupyterLab you would like to push from the terminal you should write the command `git push`. When they
 
 ---
 
