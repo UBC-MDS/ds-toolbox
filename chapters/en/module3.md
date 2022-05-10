@@ -15,7 +15,7 @@ id: 3
 
 </exercise>
 
-<exercise id='2' title="Test Your Knowledge">
+<exercise id='2' title="What is the difference between Git and GitHub?">
 
 **Question 1**
 
@@ -72,7 +72,7 @@ When you clone a Git repository from GitHub you get the hidden `.git` directory 
 <slides source='module3/module3_02' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
-<exercise id='4' title='Test your knowledge'>
+<exercise id='4' title='Cloning a GitHub repo'">
 
 **Question 1**
 Which statement below is **not** true about GitHub repositories: 
@@ -109,7 +109,7 @@ Which statement below is **not** true about GitHub repositories:
 <slides source='module3/module3_03' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
-<exercise id='6' title='Test Your Knowledge'>
+<exercise id='6' title='What can an empty area on your local computer be used for?'>
 
 **Git** has a distinct step of **adding** files to the staging area because:
 
@@ -132,7 +132,7 @@ Which statement below is **not** true about GitHub repositories:
 <slides source='module3/module3_04' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
-<exercise id='8' title='Test Your Knowledge'>
+<exercise id='8' title='A commit in a bottle'>
 
 **Question 1**
 
@@ -173,11 +173,11 @@ When working on a project that is under version control you should `commit` to y
 Which command(s) below would save the changes of `README.md` to my local Git repository? 
 
 <choice id='3'>
-<opt text='`git init README.md` /n `git commit -m "Add authors and copyright"`' >
+<opt text='`git init README.md`  `git commit -m "Add authors and copyright"`' >
 </opt>
 <opt text='`git commit -m "Add authors and copyright"`'>
 </opt>
-<opt text='`git add README.md` /n `git commit -m "Add authors and copyright"`'  correct='true'>
+<opt text='`git add README.md` `git commit -m "Add authors and copyright"`'  correct='true'>
 </opt>
 <opt text='`git commit -m README.md "Add authors and copyright"`'>
 </opt>
@@ -188,7 +188,7 @@ Which command(s) below would save the changes of `README.md` to my local Git rep
 <slides source='module3/module3_05' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
-<exercise id='10' title='Test Your Knowledge'>
+<exercise id='10' title='Everything that goes up...'>
 
 When working on a project that is under version control you should `push` to online GitHub repository:
 
@@ -208,7 +208,7 @@ When working on a project that is under version control you should `push` to onl
 <slides source='module3/module3_06' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
-<exercise id='12' title='Test Your Knowledge'>
+<exercise id='12' title='...has to go down (with changes)'>
 
 Which statement below is **not** true?
 
