@@ -10,7 +10,7 @@ title: 'module3_06'
 
 <center>
 
-<img src='/module3/vc-pull.png' width="40%" alt="404 image" align="center"/>
+<img src='/module3/vc-pull.png' width="32%" alt="404 image"/>
 
 <center/>
 
@@ -74,7 +74,7 @@ Once the files are successfully pulled from GitHub, you need to click “Dismiss
 And then when you open (or refresh) the files whose changes you just pulled, you should be able to see them
 
 ---
-#  JupyterLab: Pulling changes from GitHub
+# JupyterLab: Pulling changes from GitHub
 
 <center>
 

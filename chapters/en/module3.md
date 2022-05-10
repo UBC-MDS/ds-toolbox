@@ -72,7 +72,7 @@ When you clone a Git repository from GitHub you get the hidden `.git` directory 
 <slides source='module3/module3_02' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
-<exercise id='4' title='Cloning a GitHub repo'">
+<exercise id='4' title='Cloning a GitHub repo'>
 
 **Question 1**
 Which statement below is **not** true about GitHub repositories: 

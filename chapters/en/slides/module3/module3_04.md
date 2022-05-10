@@ -26,7 +26,7 @@ In image, the message is `"Message about changes..."`; in your work you should m
 
 # JupyterLab: Making the commit
 
-Let's commit the files that are in the staging area
+🙌 Let's commit the files that are in the staging area
 
 <center>
 
@@ -68,15 +68,15 @@ Notes: **3. After recording a commit, the staging area should be empty.**
 After “committing” the file(s), you will see there are 0 “Staged” files. You are now ready to push your changes to the remote repository on GitHub
 
 ---
-# JupyterLab's Terminal: Making the commit
+# JupyterLab's terminal: Making the commit
 
 
 <div class="row">
   <div class="column">
-    <img src="/module3/vc-commit-jl-terminal.png" alt="404 image" style="width:100%">
+    <img src="/module3/vc-commit-jl-terminal.png" alt="404 image" style="width:50%">
   </div>
   <div class="column">
-    <img src="/module3/vc-commit-jl-terminal-editor.png" alt="404 image" style="width:100%">
+    <img src="/module3/vc-commit-jl-terminal-editor.png" alt="404 image" style="width:50%">
   </div>
 </div> 
 

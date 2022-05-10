@@ -38,7 +38,7 @@ In the local repository we have something called "the staging" area. We are goin
 
 <center>
 
-<img src='/module3/vc-local-github.png' width="35%" alt="404 image" />
+<img src='/module3/vc-local-github.png' width="40%" alt="404 image" />
 
 <center/>
 
@@ -50,7 +50,7 @@ Notes: Both copies of the repository also maintain a full project history. This 
 
 <center>
 
-<img src='/module3/vc-local-commit.png' width="70%" alt="404 image"/>
+<img src='/module3/vc-commit.png' width="70%" alt="404 image"/>
 
 <center/>
 
@@ -77,7 +77,7 @@ We are going to learn both ways!
 
 <center>
 
-<img src='/module3/vc-remote-repository.png' width="100%" alt="404 image" />
+<img src='/module3/vc-remote-repository.png' width="60%" alt="404 image" />
 
 </center>
 

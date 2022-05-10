@@ -13,13 +13,8 @@ title: 'module3_03'
 <br>
 <br>
 
-<p style="border:2px; border-style:solid; border-color:#FA9C18; padding: 1em;">
-
-1. Tell Git when to **make a commit** of your own changes in the local repository.
-2. Tell Git when to **send your new commits to the remote** GitHub repository.
-3. Tell Git when to **retrieve any new changes** (that others made) from the remote GitHub repository.
-
-</p>
+<p style="border:3px; border-style:solid; border-color:#FA9C18; padding: 1em;"> 1. Tell Git when to **make a commit** of your own changes in the local repository. <br> 2. Tell Git when to **send your new commits to the remote** GitHub repository.
+<br> 3. Tell Git when to **retrieve any new changes** (that others made) from the remote GitHub repository.</p>
 
 Notes: When you work in a local version-controlled repository, there are generally three additional steps you must take as part of your regular workflow. In addition to just working on files—creating, editing, and deleting files as you normally would—you must:
 
@@ -69,7 +64,7 @@ Note that the staging area is not a real physical location on your computer; it 
 ---
 # JupyterLab: Specifying files to commit
 
-Follow this steps in your computer to add files to the staging area:
+🙌 Follow this steps in your computer to add files to the staging area:
 
 <center>
 
@@ -99,11 +94,15 @@ Clicking the plus sign (+) moves the file from the `Untracked` heading to the `S
 
 ---
 
-# Terminal: Specifying files to commit
+# JupyterLab terminal: Specifying files to commit
 
 To check the status of the files using the terminal (`Untracked` / `Changed` / `Staged`) you can use the command `git status`
 
+<center>
+
 <img src='/module3/vc-staging-area-jl-terminal-status.png' width="60%" alt="404 image" />
+
+<center/>
 
 Notes: Before adding files to the staging area you can check the status of the files using the `git status` command. You can verify that this command gives you the same information as JupyterLab about which files are `Untracked`, `Changed` or `Staged`.
 An advantage of using this command if you are working in the terminal is that it gives you information on which commands to use to continue your workflow. For example, for files that are under the `Changes not staged for commit` area,it is suggesred to use the command `git add <file>` to include them into the staging area.
