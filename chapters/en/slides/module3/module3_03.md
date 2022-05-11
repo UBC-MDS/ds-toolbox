@@ -13,7 +13,7 @@ title: 'module3_03'
 <br>
 <br>
 
-<p style="border:3px; border-style:solid; border-color:#FA9C18; padding: 1px;"> 1. Tell Git when to **make a commit** of your own changes in the local repository. <br> 2. Tell Git when to **send your new commits to the remote** GitHub repository. <br> 3. Tell Git when to **retrieve any new changes** (that others made) from the remote GitHub repository.</p>
+<p style="border:3px; border-style:solid; border-color:#FA9C18; padding: 1px;"> 1. Tell Git when to <strong> make a commit <strong/> of your own changes in the local repository. <br> 2. Tell Git when to <strong> send your new commits to the remote <strong/> GitHub repository. <br> 3. Tell Git when to <strong> retrieve any new changes <strong/> (that others made) from the remote GitHub repository.</p>
 
 Notes: When you work in a local version-controlled repository, there are generally three additional steps you must take as part of your regular workflow. In addition to just working on files—creating, editing, and deleting files as you normally would—you must:
 
@@ -34,7 +34,7 @@ Let's learn how to make a commit in your local repository step by step
  
 <center>
 
-<img src='/module3/vc-local-github-notes.png' width="55%" alt="404 image" />
+<img src='/module3/vc-local-github-notes.png' width="65%" alt="404 image" />
 
 <center/>
 
@@ -47,7 +47,7 @@ Notes: When working on files in your local version control repository (e.g., usi
 
 <center>
 
-<img src='/module3/vc-staging-area.png' width="55%" alt="404 image" />
+<img src='/module3/vc-staging-area.png' width="65%" alt="404 image" />
 
 <center/>
 
@@ -67,7 +67,7 @@ Note that the staging area is not a real physical location on your computer; it 
 
 <center>
 
-<img src='/module3/vc-commits-jupyter-2.png' width="80%" alt="404 image" />
+<img src='/module3/vc-commits-jupyter-2.png' width="100%" alt="404 image" />
 
 <center/>
 
@@ -78,7 +78,7 @@ Notes: **1. The file `eda.ipynb` is added to the staging area via the plus sign 
 
 <center>
 
-<img src='/module3/vc-commits-jupyter-3.png' width="80%" alt="404 image" />
+<img src='/module3/vc-commits-jupyter-3.png' width="100%" alt="404 image" />
 
 <center/>
 
@@ -99,7 +99,7 @@ To check the status of the files using the terminal (`Untracked` / `Changed` / `
 
 <center>
 
-<img src='/module3/vc-staging-area-jl-terminal-status.png' width="80%" alt="404 image" />
+<img src='/module3/vc-staging-area-jl-terminal-status.png' width="100%" alt="404 image" />
 
 <center/>
 
@@ -118,7 +118,7 @@ If you want to add the files to the staging area using the terminal you can use 
 
 `git add <file-name(s)>`
 
-<img src='/module3/vc-staging-area-jl-terminal-add.png' width="80%" alt="404 image" />
+<img src='/module3/vc-staging-area-jl-terminal-add.png' width="100%" alt="404 image" />
 
 Notes: Working in the terminal you can add many files at the same time listing them after `git add`.
 

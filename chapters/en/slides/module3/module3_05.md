@@ -11,7 +11,7 @@ title: 'module3_05'
 
 <center>
 
-<img src='/module3/vc-local-github.png' width="55%" alt="404 image"/>
+<img src='/module3/vc-local-github.png' width="90%" alt="404 image"/>
 
 <center/>
 
@@ -25,7 +25,7 @@ If you are working on a project with collaborators, they will also be making cha
 
 <center>
 
-<img src='/module3/vc-push.png' width="80%" alt="404 image"/>
+<img src='/module3/vc-push.png' width="90%" alt="404 image"/>
 
 <center/>
 
@@ -36,7 +36,7 @@ Notes: Once you have made one or more commits that you want to share with your c
 
 <center>
 
-<img src='/module3/vc-push-jupyter.png' width="70%" alt="404 image"/>
+<img src='/module3/vc-push-jupyter.png' width="90%" alt="404 image"/>
 
 <center/>
 
@@ -51,7 +51,7 @@ Notes: **1. Push your commits**
 
 <center>
 
-<img src='/module3/vc-push-jupyter-1.png' width="70%" alt="404 image"/>
+<img src='/module3/vc-push-jupyter-1.png' width="90%" alt="404 image"/>
 
 <center/>
 
@@ -65,7 +65,7 @@ You will then be prompted to enter your GitHub username and the personal access 
 
 <center>
 
-<img src='/module3/vc-push-jupyter-2.png' width="70%" alt="404 image"/>
+<img src='/module3/vc-push-jupyter-2.png' width="90%" alt="404 image"/>
 
 <center/>
 
@@ -77,7 +77,7 @@ Notes: **3. The prompt that the push was successful.**
 
 <center>
 
-<img src='/module3/vc-push-jupyter-3.png' width="70%" alt="404 image"/>
+<img src='/module3/vc-push-jupyter-3.png' width="90%" alt="404 image"/>
 
 <center/>
 
@@ -90,7 +90,7 @@ If the files were successfully pushed to the project repository on GitHub, you w
 
 <center>
 
-<img src='/module3/vc-push-jl-terminal.png' width="70%" alt="404 image"/>
+<img src='/module3/vc-push-jl-terminal.png' width="90%" alt="404 image"/>
 
 <center/>
 
