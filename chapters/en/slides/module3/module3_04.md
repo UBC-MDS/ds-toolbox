@@ -12,7 +12,7 @@ title: 'module3_04'
 
 <center>
 
-<img src='/module3/vc-commit.png' width="60%" alt="404 image" align="center"/>
+<img src='/module3/vc-commit.png' width="80%" alt="404 image" align="center"/>
 
 <center/>
 
@@ -30,7 +30,7 @@ In image, the message is `"Message about changes..."`; in your work you should m
 
 <center>
 
-<img src='/module3/vc-commits-jupyter.png' width="60%" alt="404 image"/>
+<img src='/module3/vc-commits-jupyter.png' width="70%" alt="404 image"/>
 
 <center/>
 
@@ -44,7 +44,7 @@ Now that you have cloned the remote repository from GitHub to create a local rep
 
 <center>
 
-<img src='/module3/vc-commits-jupyter-4.png' width="50%" alt="404 image"/>
+<img src='/module3/vc-commits-jupyter-4.png' width="70%" alt="404 image"/>
 
 <center/>
 
@@ -58,7 +58,7 @@ To snapshot the changes with an associated commit message, you must put a messag
 
 <center>
 
-<img src='/module3/vc-commits-jupyter-5.png' width="60%" alt="404 image"/>
+<img src='/module3/vc-commits-jupyter-5.png' width="70%" alt="404 image"/>
 
 <center/>
 
@@ -73,10 +73,10 @@ After “committing” the file(s), you will see there are 0 “Staged” files.
 
 <div class="row">
   <div class="column">
-    <img src="/module3/vc-commit-jl-terminal.png" alt="404 image" style="width:50%">
+    <img src="/module3/vc-commit-jl-terminal.png" alt="404 image" style="width:25%">
   </div>
   <div class="column">
-    <img src="/module3/vc-commit-jl-terminal-editor.png" alt="404 image" style="width:50%">
+    <img src="/module3/vc-commit-jl-terminal-editor.png" alt="404 image" style="width:25%">
   </div>
 </div> 
 

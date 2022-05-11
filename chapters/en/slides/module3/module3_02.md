@@ -8,6 +8,12 @@ title: 'module3_02'
 
 # Schematic of local and remote version control repositories. 
 
+<br>
+<br>
+<br>
+<br>
+<br>
+
 <center>
 
 <img src='/module3/vc-local-github-2.png' width="80%" alt="404 image"/>
@@ -24,7 +30,7 @@ Under the hood, Git only saves the changes between your versions, so it is also 
 
 <center>
 
-<img src='/module3/vc-local-github-3.png' width="45%" alt="404 image"/>
+<img src='/module3/vc-local-github-3.png' width="55%" alt="404 image"/>
 
 <center/>
 
@@ -38,7 +44,7 @@ In the local repository we have something called "the staging" area. We are goin
 
 <center>
 
-<img src='/module3/vc-local-github.png' width="40%" alt="404 image" />
+<img src='/module3/vc-local-github.png' width="55%" alt="404 image" />
 
 <center/>
 
@@ -50,7 +56,7 @@ Notes: Both copies of the repository also maintain a full project history. This 
 
 <center>
 
-<img src='/module3/vc-commit.png' width="70%" alt="404 image"/>
+<img src='/module3/vc-commits.png' width="70%" alt="404 image"/>
 
 <center/>
 

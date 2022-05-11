@@ -10,7 +10,7 @@ title: 'module3_06'
 
 <center>
 
-<img src='/module3/vc-pull.png' width="32%" alt="404 image"/>
+<img src='/module3/vc-pull.png' width="55%" alt="404 image"/>
 
 <center/>
 
@@ -24,7 +24,7 @@ Notes: To obtain the new changes from the remote repository on GitHub, you will 
 
 <center>
 
-<img src='/module3/vc-pull-jupyter.png' width="60%" alt="404 image"/>
+<img src='/module3/vc-pull-jupyter.png' width="70%" alt="404 image"/>
 
 <center/>
 
@@ -38,7 +38,7 @@ Notes: **1. The GitHub interface indicates the name of the last person to push a
 
 <center>
 
-<img src='/module3/vc-pull-jupyter-1.png' width="60%" alt="404 image"/>
+<img src='/module3/vc-pull-jupyter-1.png' width="70%" alt="404 image"/>
 
 <center/>
 
@@ -53,7 +53,7 @@ You can tell Git to “pull” by clicking on the cloud icon with the down arrow
 
 <center>
 
-<img src='/module3/vc-pull-jupyter-3.png' width="60%" alt="404 image"/>
+<img src='/module3/vc-pull-jupyter-3.png' width="70%" alt="404 image"/>
 
 <center/>
 
@@ -64,7 +64,7 @@ Notes: **3. The prompt after changes have been successfully pulled from a remote
 
 <center>
 
-<img src='/module3/vc-pull-jupyter-4.png' width="60%" alt="404 image"/>
+<img src='/module3/vc-pull-jupyter-4.png' width="70%" alt="404 image"/>
 
 <center/>
 
@@ -78,7 +78,7 @@ And then when you open (or refresh) the files whose changes you just pulled, you
 
 <center>
 
-<img src='/module3/vc-pull-jupyter-4.png' width="60%" alt="404 image" />
+<img src='/module3/vc-pull-jupyter-4.png' width="70%" alt="404 image" />
 
 <center/>
 
