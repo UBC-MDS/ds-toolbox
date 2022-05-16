@@ -16,7 +16,7 @@ id: 8
 <slides source="module8/module8_01"> </slides>
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id='3' title="Test Your Knowledge">
+<exercise id='3' title="Time for practice">
 
 <QUESTION DESCRIPTION>
 
@@ -38,7 +38,7 @@ Comments
 <slides source="module8/module8_02"> </slides>
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id='5' title="Test Your Knowledge">
+<exercise id='5' title="Time for practice">
 
 <QUESTION DESCRIPTION>
 
@@ -60,7 +60,7 @@ Comments
 <slides source="module8/module8_03"> </slides>
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id='7' title="Test Your Knowledge">
+<exercise id='7' title="Time for practice">
 
 <QUESTION DESCRIPTION>
 
@@ -82,7 +82,7 @@ Comments
 <slides source="module8/module8_04"> </slides>
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id='9' title="Test Your Knowledge">
+<exercise id='9' title="Time for practice">
 
 <QUESTION DESCRIPTION>
 
