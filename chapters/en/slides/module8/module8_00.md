@@ -15,7 +15,6 @@ By the end of this module, you will learn
 - How to build your book
 - How to create your own content file
 - How to publishing a book online
-- How to add interactive content
 
 Notes:
 
@@ -26,10 +25,7 @@ By the end of this module, you will learn
 - How to build your book
 - How to create your own content file
 - How to publishing a book online
-- How to add interactive content
 
 ---
 
 # Let's get started!
-
-Notes:
