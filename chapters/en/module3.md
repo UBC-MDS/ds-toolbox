@@ -30,6 +30,8 @@ Incorrect. This is one of the main benefits of version control! Remember that we
 <opt text='In practice, most data science projects involve collaboration on documents that contain code (e.g., Jupyter notebooks), and version control tools facilitate collaboration on such documents.'>
 </opt>
 <opt text='Version control tools check the accuracy of your code.' correct='true'>
+
+Correct! Version control has many benefits as was described in the previous answers 1, 2, and 3, but it is not related to how good is your code. 
 </opt>
 </choice>
 
