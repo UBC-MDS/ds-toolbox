@@ -9,7 +9,7 @@ title: 'module3_01'
 
 # What is version control, and why should I use it?
 
-Instead of having a file by version as it is shown in the image, with version control you could save only the differences among the versions for the same file.
+Instead of creating a new copy for each version of a file with an unwieldy name (as in the image below), version control allows you to have a single file and records the changes between the versions.
 
 <img src='/module3/vc-files.png' width="30%" alt="404 image"/>
 
