@@ -38,7 +38,7 @@ Notes: **1. The GitHub interface indicates the name of the last person to push a
 
 <center>
 
-<img src='/module3/vc-pull-jupyter-1.png' width="70%" alt="404 image"/>
+<img src='/module3/vc-pull-jupyter-1.png' width="80%" alt="404 image"/>
 
 <center/>
 
