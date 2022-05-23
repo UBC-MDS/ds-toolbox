@@ -30,7 +30,7 @@ Under the hood, Git only saves the changes between your versions, so it is also 
 
 <center>
 
-<img src='/module3/vc-local-github-3.png' width="55%" alt="404 image"/>
+<img src='/module3/vc-local-github-3.png' width="65%" alt="404 image"/>
 
 <center/>
 
