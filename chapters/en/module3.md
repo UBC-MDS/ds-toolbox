@@ -143,7 +143,7 @@ Which statement below is **not** true about GitHub repositories:
 
 **True or false**
 
-> When we **commit** our changes to Git, the snapshot of changes, the commit message, the time and date stamp and the user who committed the changes are all saved to the Git history on GitHub.
+> When we **commit** our changes to Git, the record of changes, the commit message, the time and date stamp and the user who committed the changes are all saved to the Git history on GitHub.
 
 <choice id='1'>
 <opt text='true'>
