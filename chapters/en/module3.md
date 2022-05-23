@@ -26,6 +26,7 @@ Which reason listed below is not a good reason to use version control:
 Incorrect. This is one of the main benefits of version control! Remember that we can track the changes we did to the projects by reading the commit messages.
 </opt>
 <opt text='Version control tools usually include a remote/cloud repository hosting service that can act as a backup of your local files (i.e., the files on your computer).'>
+Incorrect. Even if you can use Git without an associated hosting service, it is a very common practice to do so. It allows you not only to keep a backup of your work if not also to socialize and work collaboratively. For example, in this course, we are using GitHub to host our remote repositories.
 </opt>
 <opt text='In practice, most data science projects involve collaboration on documents that contain code (e.g., Jupyter notebooks), and version control tools facilitate collaboration on such documents.'>
 Incorrect. One of the great advantages of version control tools is that they facilitate collaboration. We will learn more on how to use Git/GitHub collaboratively in the next chapters.
