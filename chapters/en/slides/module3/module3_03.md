@@ -110,6 +110,7 @@ An advantage of using this command if you are working in the terminal is that it
 Changes not staged for commit:
    (use "git add <file>..." to update what will be committed)
 ```
+We recommend using `git status` / checking the staging area before each commit to make sure you are committing what you think you are.
 ---
 
 # JupyterLab terminal: Specifying files to commit
