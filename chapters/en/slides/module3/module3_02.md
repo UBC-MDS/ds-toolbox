@@ -22,7 +22,7 @@ title: 'module3_02'
 
 Notes: Typically, when we put a data analysis project under version control, we create two copies of the repository. One copy we use as our primary workspace where we create, edit, and delete files. This copy is commonly referred to as the **local repository**. The local repository most commonly exists on our computer or laptop, but can also exist within a workspace on a server (e.g., JupyterHub). The other copy is typically stored in a repository hosting service (e.g., GitHub), where we can easily share it with our collaborators. This copy is commonly referred to as the **remote repository**.
 
-Under the hood, Git only saves the changes between your versions, so it is also efficient in terms of disk space. Not that while Git works great for text files, such as code, it is not so great for binary files such as images.
+Under the hood, Git only saves the changes between your versions, so it is also efficient in terms of disk space. Note that while Git works great for text files, such as code, it is not so great for binary files such as images.
 
 ---
 
