@@ -208,7 +208,7 @@ When working on a project that is under version control you should `push` to onl
 <slides source='module3/module3_06' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
-<exercise id='12' title='...has to go down (with changes)'>
+<exercise id='12' title='...has to come down (with changes)'>
 
 Which statement below is **not** true?
 
