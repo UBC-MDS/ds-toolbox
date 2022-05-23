@@ -28,6 +28,7 @@ Incorrect. This is one of the main benefits of version control! Remember that we
 <opt text='Version control tools usually include a remote/cloud repository hosting service that can act as a backup of your local files (i.e., the files on your computer).'>
 </opt>
 <opt text='In practice, most data science projects involve collaboration on documents that contain code (e.g., Jupyter notebooks), and version control tools facilitate collaboration on such documents.'>
+Incorrect. One of the great advantages of version control tools is that they facilitate collaboration. We will learn more on how to use Git/GitHub collaboratively in the next chapters.
 </opt>
 <opt text='Version control tools check the accuracy of your code.' correct='true'>
 
