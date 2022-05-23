@@ -23,6 +23,7 @@ Which reason listed below is not a good reason to use version control:
 
 <choice id='1'>
 <opt text='Version control tools provide transparency on how a project evolved by tracking the history of documents, and who made what changes to those documents.''>
+Incorrect. This is one of the main benefits of version control! Remember that we can track the changes we did to the projects by reading the commit messages.
 </opt>
 <opt text='Version control tools usually include a remote/cloud repository hosting service that can act as a backup of your local files (i.e., the files on your computer).'>
 </opt>
