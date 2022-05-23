@@ -178,7 +178,7 @@ Which command(s) below would save the changes of `README.md` to my local Git rep
 <choice id='3'>
 <opt text='`git init README.md`  `git commit -m "Add authors and copyright"`' >
 </opt>
-<opt text='`git commit -m "Add authors and copyright"`'>
+<opt text='<code>git commit -m "Add authors and copyright"</code>'>
 </opt>
 <opt text='`git add README.md` `git commit -m "Add authors and copyright"`'  correct='true'>
 </opt>
