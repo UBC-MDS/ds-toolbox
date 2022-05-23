@@ -61,7 +61,7 @@ Notes: Both copies of the repository also maintain a full project history. This 
 <center/>
 
 
-Notes:  The purpose of the commit message is to contain a brief, rich description of what work was done since the last commit. Messages act as a very useful narrative of the changes to a project over its lifespan. If you ever want to view or revert to an earlier version of the project, the message can help you identify which commit to view or revert to. In image, you can see two such messages, one for each commit: `Created README.md` and `Added analysis draft`.
+Notes:  The purpose of the commit message is to contain a brief, rich description of what work was done since the last commit. Messages act as a very useful narrative of the changes to a project over its lifespan. If you ever want to view or revert to an earlier version of the project, the message can help you identify which commit to view or revert to. In this image, you can see two such messages, one for each commit: `Created README.md` and `Added analysis draft`.
 
 The **hash** is a string of characters consisting of about 40 letters and numbers. The purpose of the hash is to serve as a unique identifier for the commit, and is used by Git to index project history. Although hashes are quite long — imagine having to type out 40 precise characters to view an old project version! — Git is able to work with shorter versions of hashes. In the image, you can see two of these shortened hashes, one for each commit: `Daa29d6` and `884c7ce`.
 
