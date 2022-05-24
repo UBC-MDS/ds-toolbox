@@ -24,19 +24,6 @@ Notes: Typically, when we put a data analysis project under version control, we 
 
 Under the hood, Git only saves the changes between your versions, so it is also efficient in terms of disk space. Note that while Git works great for text files, such as code, it is not so great for binary files such as images.
 
----
-
-# Tracking the repository history using commit messages
-
-<center>
-
-<img src='/module3/vc-local-github-3.png' width="65%" alt="404 image"/>
-
-<center/>
-
-Notes: Both copies of the repository have a **working directory** where you can create, store, edit, and delete files (e.g., `analysis.ipynb` in the image). 
-
-In the local repository we have something called "the staging" area. We are going to learn more about this soon.
 
 ---
 
@@ -48,7 +35,9 @@ In the local repository we have something called "the staging" area. We are goin
 
 <center/>
 
-Notes: Both copies of the repository also maintain a full project history. This history is a record of all versions of the project files that have been created. The repository history is not automatically generated; Git must be explicitly told when to record a version of the project. These records are called **commits**. They are a snapshot of the file contents as well metadata about the repository at that time the record was created (who made the commit, when it was made, etc.). In the local and remote repositories shown in the image, there are two commits represented as gray circles. Each commit can be identified by a human-readable message, which you write when you make a commit, and a commit hash that Git automatically adds for you
+Notes: Both copies of the repository have a **working directory** where you can create, store, edit, and delete files (e.g., `analysis.ipynb` in the image). 
+Also, both copies of the repository also maintain a full project history. This history is a record of all versions of the project files that have been created. The repository history is not automatically generated; Git must be explicitly told when to record a version of the project. These records are called **commits**. They are a snapshot of the file contents as well metadata about the repository at that time the record was created (who made the commit, when it was made, etc.). In the local and remote repositories shown in the image, there are two commits represented as gray circles. Each commit can be identified by a human-readable message, which you write when you make a commit, and a commit hash that Git automatically adds for you.
+Probably you have noticed that in the local repository it is a **staging area**, that is not existent in the remote repository. We will learn about it soon, but for now imagine that it is a particular area in your local repository that will give you more flexibility to track your changes.
 
 ---
 
@@ -64,6 +53,8 @@ Notes: Both copies of the repository also maintain a full project history. This 
 Notes:  The purpose of the commit message is to contain a brief, rich description of what work was done since the last commit. Messages act as a very useful narrative of the changes to a project over its lifespan. If you ever want to view or revert to an earlier version of the project, the message can help you identify which commit to view or revert to. In this image, you can see two such messages, one for each commit: `Created README.md` and `Added analysis draft`.
 
 The **hash** is a string of characters consisting of about 40 letters and numbers. The purpose of the hash is to serve as a unique identifier for the commit, and is used by Git to index project history. Although hashes are quite long — imagine having to type out 40 precise characters to view an old project version! — Git is able to work with shorter versions of hashes. In the image, you can see two of these shortened hashes, one for each commit: `Daa29d6` and `884c7ce`.
+
+
 
 
 ---

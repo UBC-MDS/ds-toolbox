@@ -6,21 +6,6 @@ title: 'module3_05'
 # Pushing changes from a remote repository
 
 ---
-# Communicating with the remote repository
-
-
-<center>
-
-<img src='/module3/vc-local-github.png' width="90%" alt="404 image"/>
-
-<center/>
-
-Notes: Changes pushed by collaborators, or created directly on GitHub will not be automatically sent to your local repository. 
-
-If you are working on a project with collaborators, they will also be making changes to files (e.g., to the analysis code in a Jupyter notebook and the project’s `README` file), committing them to their own local repository, and pushing their commits to the remote GitHub repository to share them with you. When they push their changes, those changes will only initially exist in the remote GitHub repository and not in your local repository 
-
----
-
 # Pushing the commit to send the changes to the remote repository on GitHub
 
 <center>

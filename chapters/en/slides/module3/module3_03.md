@@ -15,11 +15,11 @@ title: 'module3_03'
 
 <p style="border:3px; border-style:solid; border-color:#FA9C18; padding: 1px;"> 1. <strong> Make a commit <strong/> of your own changes in the local repository. <br> 2. <strong> Send your new commits to the remote <strong/> GitHub repository. <br> 3.  <strong> Retrieve any new changes <strong/> (that others made) from the remote GitHub repository.</p>
 
-Notes: When you work in a local version-controlled repository, there are generally three additional steps you must take as part of your regular workflow. In addition to just working on files—creating, editing, and deleting files as you normally would—you must:
+Notes: When you work in a local version-controlled repository, there are generally three additional steps you must take as part of your regular workflow. In addition to just working on files—creating, editing, and deleting files as you normally would—you must tell Git when to:
 
-1. Tell Git when to **make a commit** of your own changes in the local repository.
-2. Tell Git when to **send your new commits to the remote** GitHub repository.
-3. Tell Git when to **retrieve any new changes** (that others made) from the remote GitHub repository.
+1. **Make a commit** of your own changes in the local repository.
+2. **Send your new commits to the remote** GitHub repository.
+3. **Retrieve any new changes** (that others made) from the remote GitHub repository.
 
 
 In this section we will discuss the first step.
@@ -34,7 +34,7 @@ Let's learn how to make a commit in your local repository step by step
  
 <center>
 
-<img src='/module3/vc-local-github-notes.png' width="65%" alt="404 image" />
+<img src='/module3/vc-local-github-notes.png' width="55%" alt="404 image" />
 
 <center/>
 
@@ -47,7 +47,7 @@ Notes: When working on files in your local version control repository (e.g., usi
 
 <center>
 
-<img src='/module3/vc-staging-area.png' width="65%" alt="404 image" />
+<img src='/module3/vc-staging-area.png' width="85%" alt="404 image" />
 
 <center/>
 

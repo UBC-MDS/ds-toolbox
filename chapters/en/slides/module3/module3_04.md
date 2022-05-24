@@ -44,13 +44,25 @@ Now that you have cloned the remote repository from GitHub to create a local rep
 
 <center>
 
-<img src='/module3/vc-commits-jupyter-4.png' width="90%" alt="404 image"/>
+<img src='/module3/vc-commits-jupyter-4_1.png' width="90%" alt="404 image"/>
 
 <center/>
 
 Notes: **2. A commit message must be added into the Jupyter Git extension commit text box before the blue Commit button can be used to record the commit.**
 
 To snapshot the changes with an associated commit message, you must put a message in the text box at the bottom of the Git pane and click on the blue “Commit” button (see image). It is highly recommended to write useful and meaningful messages about what was changed. These commit messages, and the datetime stamp for a given commit, are the primary means to navigate through the project’s history in the event that you need to view or retrieve a past version of a file, or revert your project to an earlier state. When you click the “Commit” button for the first time, you will be prompted to enter your name and email. This only needs to be done once for each machine you use Git on.
+
+---
+
+# JupyterLab: Making the commit
+
+<center>
+
+<img src='/module3/vc-commits-jupyter-4_2.png' width="90%" alt="404 image"/>
+
+<center/>
+
+Notes: You need to include a title for your commit. If you wantm you can also include an optional description for the commit.
 
 ---
 # JupyterLab: Making the commit
@@ -68,25 +80,45 @@ Notes: **3. After recording a commit, the staging area should be empty.**
 After “committing” the file(s), you will see there are 0 “Staged” files. You are now ready to push your changes to the remote repository on GitHub
 
 ---
+# JupyterLab: Making the commit
+
+
+<center>
+
+<img src='/module3/vc-commits-jupyter-5_1.png' width="90%" alt="404 image"/>
+
+<center/>
+
+
+Notes: If the file has been committed, you are going to be able to detect it in the History tab. You have tracked this change and now part of the history of your project!
+
+---
 # JupyterLab's terminal: Making the commit
 
 
-<div class="row">
-  <div class="column">
-    <img src="/module3/vc-commit-jl-terminal.png" alt="404 image" style="width:10%">
-  </div>
-  <div class="column">
-    <img src="/module3/vc-commit-jl-terminal-editor.png" alt="404 image" style="width:25%">
-  </div>
-</div> 
+<center>
 
+<img src="/module3/vc-commit-jl-terminal.png" alt="404 image" style="width:75%">
+ 
+<center/> 
 
-Notes: To reproduce the same commit message using the terminal you should write the command `git commit` and press ENTER.
-This command will open a file called `COMMIT_EDITMSG` in your editor. There you can write the title and body of the commit message that you want to associate with your changes.
-
-In the case you don't want to add so many details and only write a title, you can use the shorter version of the command including the flag `-m`:
+Notes:  In the case you don't want to add so many details and only write a title, you can use the shorter version of the command including the flag `-m`:
 
 `git commit -m "Create an eda notebook"`
+
+---
+# JupyterLab's terminal: Making the commit
+
+
+<center>
+
+<img src="/module3/vc-commit-jl-terminal-editor.png" alt="404 image" style="width:25%">
+
+
+
+Notes: To include a description in your commit using the terminal, you should write the command `git commit` and press ENTER. After doing that, a file called `COMMIT_EDITMSG` will open in your editor. There you can write the title and body of the commit message that you want to associate with your changes.
+
+
 
 ---
 
