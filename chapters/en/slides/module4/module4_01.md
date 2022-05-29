@@ -10,8 +10,15 @@ title: 'module4_01'
 
 There are two ways you can view the Git history of a project:
 
+**In the remote**
 1. On GitHub through the repo's code commit view
-2. On your local machine using `git log`
+**In your computer**
+2. On Jupyter Lab through the repo's code commit view
+3. On your local machine using `git log`
+
+
+Notes: Do you remember the commit messages that we write for the different changes that we save from the project?
+It is possible to have a look at the history of the full project with any of these 3 different methods
 
 ---
 
@@ -21,25 +28,62 @@ On GitHub, on the repo's landing page click "*N* commit" link (where *N* is the 
 
 <center>
 
-<img src='/module4/vc-local-github.png' width="40%" alt="404 image"/>
+<img src='/module4/vc-history-gb.png' width="70%" alt="404 image"/>
 
 </center>
 
-Notes: Now we have a project, but only 2 commits (the initial creation and adding us as the author). Let's now add a couple more commits to generate a history that we can view and experiment with by editing our README.md.
-
+Notes: On GitHub, on the repo's landing page click "*N* commit" link (where *N* is the number of commits made on the repo)
 ---
 
-# 2. Viewing the history of a project: the Terminal
+# 1. Viewing the history of a project: GitHub
 
-`git log --oneline`
+
 
 <center>
 
-<img src='/module4/vc-local-github.png' width="40%" alt="404 image"/>
+<img src='/module4/vc-history-gb-2.png' width="70%" alt="404 image"/>
 
 </center>
 
-Notes: How similar are the local and webpage log views?? Do you get the same information from both? Which seems easier to read/navigate?
+Notes: Now we have a project, but only 3 commits. You can identify all the parts of each commit, includind day it was made, author, hash and also go back to the repository at the moment of this change chicking the button `<>`
+
+---
+
+# 2. Viewing the history of a project: Jupyter Lab
+
+<center>
+
+<img src='/module4/vc-history-jl-2.png' width="70%" alt="404 image"/>
+
+</center>
+
+Notes: Accessing the history of your project is very simple, you just have to look for the History tab within the Git options.
+
+---
+
+# 3. Viewing the history of a project: the Terminal
+
+<center>
+
+<img src='/module4/vc-history-terminal.png' width="70%" alt="404 image"/>
+
+</center>
+
+Notes: If you want to access your project information using the terminal you can use the `git log` command.
+
+---
+
+# 3. Viewing the history of a project: the Terminal
+
+<center>
+
+<img src='/module4/vc-history-terminal-2.png' width="70%" alt="404 image"/>
+
+</center>
+
+Notes: Adding the flag `--oneline` to the command `git log` will provide you a different format for the output, in this case, you get a succint version of the information of each commit. 
+
+The terminal allows greater flexibility when it comes to obtaining information about your project. If you would like to know what other possibilities you have for using the `git log` command, you can access the help by typing the command `git log --help`
 
 ---
 
