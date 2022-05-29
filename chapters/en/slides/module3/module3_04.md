@@ -22,6 +22,25 @@ Once the files we wish to commit have been added to the staging area, we can the
 
 In image, the message is `"Message about changes..."`; in your work you should make sure to replace this with an informative message about what changed. It is also important to note here that these changes are only being committed to the local repository’s history. The remote repository on GitHub has not changed, and collaborators would not yet be able to see your new changes.
 
+
+---
+
+# The importance of writting meaningful commit messages
+
+<center>
+
+<img src='/module3/vc-commit.png' width="80%" alt="404 image"/>
+
+<center/>
+
+<a href="https://xkcd.com/1296/">Image extracted from xkcd.com</a>
+
+Notes: When commit messages are too vague (`code additions` or `Add some stuff`) could be difficult to interpret for other collaborators, or even ourselves in the future. Selecting clear and descriptive commit messages increases the quality of your project and facilitates collaborative work. 
+
+
+
+
+
 ---
 
 # JupyterLab: Making the commit
@@ -85,7 +104,7 @@ After “committing” the file(s), you will see there are 0 “Staged” files.
 
 <center>
 
-<img src='/module3/vc-commits-jupyter-5_1.png' width="90%" alt="404 image"/>
+<img src='/module3/vc-commits-jupyter-5_2.png' width="90%" alt="404 image"/>
 
 <center/>
 

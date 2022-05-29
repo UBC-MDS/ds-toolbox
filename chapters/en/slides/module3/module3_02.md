@@ -36,12 +36,14 @@ Under the hood, Git only saves the changes between your versions, so it is also 
 <center/>
 
 Notes: Both copies of the repository have a **working directory** where you can create, store, edit, and delete files (e.g., `analysis.ipynb` in the image). 
+
 Also, both copies of the repository also maintain a full project history. This history is a record of all versions of the project files that have been created. The repository history is not automatically generated; Git must be explicitly told when to record a version of the project. These records are called **commits**. They are a snapshot of the file contents as well metadata about the repository at that time the record was created (who made the commit, when it was made, etc.). In the local and remote repositories shown in the image, there are two commits represented as gray circles. Each commit can be identified by a human-readable message, which you write when you make a commit, and a commit hash that Git automatically adds for you.
+
 Probably you have noticed that in the local repository it is a **staging area**, that is not existent in the remote repository. We will learn about it soon, but for now imagine that it is a particular area in your local repository that will give you more flexibility to track your changes.
 
 ---
 
-# Commits
+# Commit message
 
 <center>
 
@@ -58,19 +60,27 @@ The **hash** is a string of characters consisting of about 40 letters and number
 
 
 ---
-# 🙌 How can you create your repositories? 
+# How can you create your repositories? 
+
+<br>
+<br>
+<br>
+<br>
+<br>
 
 1. Create the remote repository in www.github.com (**GitHub**)
 2. Clone the repository to your local computer with the terminal OR JupyterLab (**Git**)
 
 Notes: We are going to learn how to create a remote repository in GitHub and then to clone it locally using the terminal or JupyterLab.
+
 Cloning a GitHub repository it is not the same as downloading it to your computer. When you clone it you are downloading the files and all the project history including the commits and their associated messages. This information about your project that are not the files you are working on themselves is dowloaded as a hidden folder `.git`. The folders that contain this information are considered Git repositories. By default all your projects on GitHub are Git repositories.
+
 You can clone your project to have a local copy using an integrated development environment (IDE) as JupyterLab or the terminal. The terminal will give you greater versatility since you can use a wide variety of commands, while the IDE will allow you to handle the basic commands in a more intuitive way.
 We are going to learn both ways! 
 
 ---
 
-# 1. Creating a remote repository on GitHub
+# 🙌  1. Creating a remote repository on GitHub
 
 <center>
 
@@ -105,7 +115,7 @@ That's it! Now let's clone it to get a local copy on your computer.
 
 ---
 
-# 2. Cloning a repository using JupyterLab (IDE)
+# 🙌  2. Cloning a repository using Jupyter Lab (IDE)
 
  
 
@@ -121,7 +131,7 @@ Notes: **The green “Code” drop-down menu contains the remote address (URL) c
 
 ---
 
-# 2. Cloning a repository using JupyterLab (IDE)
+# 2. Cloning a repository using Jupyter Lab (IDE)
 
 <center>
 
@@ -131,7 +141,7 @@ Notes: **The green “Code” drop-down menu contains the remote address (URL) c
 
 Notes: **1. Click the Jupyter Git Clone icon (red circle).**
 ---
-# 2. Cloning a repository using JupyterLab (IDE)
+# 2. Cloning a repository using Jupyter Lab (IDE)
 
 <center>
 
@@ -144,7 +154,7 @@ Notes: **2. Prompt where the remote address (URL) corresponding to the location 
 Open Jupyter, and click the Git+ icon on the file browser tab. Paste the URL of the GitHub project repository you created and click the blue “CLONE” button.
 
 ---
-# 2. Cloning a repository using JupyterLab (IDE)
+# 2. Cloning a repository using Jupyter Lab (IDE)
 
 <center>
 
@@ -155,7 +165,7 @@ Open Jupyter, and click the Git+ icon on the file browser tab. Paste the URL of 
 Notes: On the file browser tab, you will now see a folder for the repository. Inside this folder will be all the files that existed on GitHub
 
 ---
-# 2. Cloning a repository using JupyterLab (terminal)
+# 2. Cloning a repository using Jupyter Lab (terminal)
 
 <center>
 
@@ -165,7 +175,20 @@ Notes: On the file browser tab, you will now see a folder for the repository. In
 
 Notes: If you want to do this in the terminal you can use the command git clone to download a copy of a repository to your computer. You will see that the repository will appear in JupyterLab after you cloned it. Remember to check that you are in the directory where the file has been cloned.
 
+---
 
+# How can you check that you are working in a Git repository? (terminal)
+
+
+<center>
+
+<img src='/module3/vc-clone-jupyter-4.png' width="60%" alt="404 image"/>
+
+<center/>
+
+Notes: A Git repository stores all the necessary information for version control your project in a hidden folder called `.git`. If you want to know if you are working in a Git repo using the terminal you can use the bash command `ls -a` as you can see in the image. The `-a` flag will include into the lists of files displayed on the terminal the hidden folders. If `.git` is included you are working in a Git repository.
+
+By cloning a repository from GitHub to your computer, you are automatically getting a copy of `.git` and thus, working on a Git.
 
 ---
 

@@ -58,7 +58,7 @@ You can tell Git to “pull” by clicking on the cloud icon with the down arrow
 <center>
 
 <img src='/module3/vc-pull-jupyter-3.png' width="70%" alt="404 image"/>
-
+git pu
 <center/>
 
 Notes: **3. The prompt after changes have been successfully pulled from a remote repository.**
@@ -100,7 +100,7 @@ It can be very useful to review the history of the changes to your project. You 
 
 <center/>
 
-Notes: If you want to do this with terminal, you have to pull from the terminal you should use the command `git pull`.
+Notes: If you want to do this with the terminal, you have to pull from the terminal you should use the command `git pull`.
 
 ---
 

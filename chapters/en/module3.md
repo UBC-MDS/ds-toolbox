@@ -43,7 +43,6 @@ One of the great advantages of version control tools is that they facilitate col
 Correct! Version control has many benefits as was described in the previous answers 1, 2, and 3, but it is not related to how good is your code. 
 </opt>
 </choice>
-</exercise>
 
 **Question 2**
 
@@ -187,7 +186,7 @@ Solution is incorrect. Committing your changes only puts them in the Git history
 </opt>
 <opt text='false' correct='true'>
 
-"Success! You're right! The changes (and all the associated information) are not yet on GitHub, they are only in the Git history on the local computer you are working on (i.e., your workspace on the JupyterHub or your laptop)."
+Success! You're right! The changes (and all the associated information) are not yet on GitHub, they are only in the Git history on the local computer you are working on (i.e., your workspace on the JupyterHub or your laptop).
 
 </opt>
 </choice>
@@ -255,7 +254,7 @@ When working on a project that is under version control you should `push` to onl
 <choice>
 <opt text='obsessively, like every 5 minutes' >
 
-You will probably be using a lot of your time in pushing (and doing commits) that yuo can be using to move forward with the project.
+You will probably be better using your time to move forward with the project than in pushing (and doing commits). 
 
 </opt>
 <opt text='at least at the end of every session you work on the project' correct='true'>
@@ -265,7 +264,7 @@ Or if you want to share your work with other colleages.
 </opt>
 <opt text='2-3 times'>
 
-
+What if you have done more (or less) important changes to your project than 2-3? 
 
 </opt>
 <opt text='only once, shortly before the deadline'>

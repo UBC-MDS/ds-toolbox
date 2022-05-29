@@ -10,9 +10,11 @@ title: 'module3_01'
 
 <center>
 
-<img src='/module3/vc-final-comic.png' width="35%" alt="404 image"/>
-<a href="http://www.phdcomics.com">image source: “Piled Higher and Deeper” by Jorge Cham</a>   
+<img src='/module3/vc-final-comic.png' width="34%" alt="404 image"/>
+ 
 <center/>
+
+<a href="http://www.phdcomics.com">image source: “Piled Higher and Deeper” by Jorge Cham</a>  
 
 Notes: Data analysis projects often require iteration and revision to move from an initial idea to a finished product ready for the intended audience. Without deliberate and conscious effort towards tracking changes made to the analysis, projects tend to become messy. This mess can have serious, negative repercussions on an analysis project, including interesting results files that your code cannot reproduce, temporary files with snippets of ideas that are forgotten or not easy to find, mind-boggling file names that make it unclear which is the current working version of the file (e.g., `document_final.txt`, `to_hand_in_final_v2.txt`, etc.), and more.
 
@@ -34,6 +36,8 @@ Version control also facilitates collaboration via tools to share edits with oth
 
 # What is version control, and why should I use it?
 
+<br>
+<br>
 <br>
 <br>
 <br>
