@@ -24,11 +24,10 @@ It is possible to have a look at the history of the full project with any of the
 
 # 1. Viewing the history of a project: GitHub
 
-On GitHub, on the repo's landing page click "*N* commit" link (where *N* is the number of commits made on the repo)
 
 <center>
 
-<img src='/module4/vc-history-gb.png' width="70%" alt="404 image"/>
+<img src='/module4/vc-history-gb.png' width="90%" alt="404 image"/>
 
 </center>
 
@@ -41,7 +40,7 @@ Notes: On GitHub, on the repo's landing page click "*N* commit" link (where *N* 
 
 <center>
 
-<img src='/module4/vc-history-gb-2.png' width="70%" alt="404 image"/>
+<img src='/module4/vc-history-gb-2.png' width="90%" alt="404 image"/>
 
 </center>
 
@@ -53,7 +52,7 @@ Notes: Now we have a project, but only 3 commits. You can identify all the parts
 
 <center>
 
-<img src='/module4/vc-history-jl-2.png' width="70%" alt="404 image"/>
+<img src='/module4/vc-history-jl-2.png' width="90%" alt="404 image"/>
 
 </center>
 
@@ -65,11 +64,12 @@ Notes: Accessing the history of your project is very simple, you just have to lo
 
 <center>
 
-<img src='/module4/vc-history-terminal.png' width="70%" alt="404 image"/>
+<img src='/module4/vc-history-terminal.png' width="90%" alt="404 image"/>
 
 </center>
 
 Notes: If you want to access your project information using the terminal you can use the `git log` command.
+Pay attention that here you are visualizing the long version of the hash and not the 7 character length-version displayed by default in Jupyter Lab or GitHub. In both cases, you will be able to identify the commit with the hash.
 
 ---
 
@@ -77,7 +77,7 @@ Notes: If you want to access your project information using the terminal you can
 
 <center>
 
-<img src='/module4/vc-history-terminal-2.png' width="70%" alt="404 image"/>
+<img src='/module4/vc-history-terminal-2.png' width="90%" alt="404 image"/>
 
 </center>
 

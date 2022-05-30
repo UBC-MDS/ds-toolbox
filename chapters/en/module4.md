@@ -8,6 +8,7 @@ type: chapter
 id: 4
 ---
 
+
 <exercise id="1" title="Viewing your Git history" type="slides,video">
 
 <slides source="module4/module4_01" shot="0" start="0:002" end="3:40">
@@ -17,15 +18,22 @@ id: 4
 
 <exercise id='2' title="Test Your Knowledge">
 
-When was done the commit "Add file.txt" to the git repo?
-IN PROGRESS
+Clone the repo https://github.com/UBC-MDS/equine_numbers_value_canada. What is the hash or the first commit of the project? 
 
 <choice>
-<opt text='2020/3/22'>
+<opt text='cc400df4b2a382f653abd0d9e514f6daae98d2ad'>
 </opt>
-<opt text='2020/3/26'correct='true'>
+<opt text='cc400df'>
 </opt>
-<opt text='2020/3/21'>
+<opt text='0896801'>
+</opt>
+<opt text='0896801fdd38d461414e0b061b2b2ef3395f7dd0'>
+</opt>
+<opt text='A and B are correct'>
+</opt>
+<opt text='C and D are correct' correct='true'>
+</opt>
+<opt text='B and C are correct'>
 </opt>
 </choice>
 </exercise>
@@ -67,6 +75,7 @@ IN PROGRESS
 </choice>
 </exercise>
 
+
 <exercise id='7' title='Stashing local non-committed changes before pulling' type='slides, video'>
 <slides source='module4/module4_04' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
@@ -88,7 +97,7 @@ IN PROGRESS
 </choice>
 </exercise>
 
-<exercise id='9' title='gitignore'  type='slides, video'>
+<exercise id='9' title='GitHub Issues'  type='slides, video'>
 <slides source='module4/module4_05' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
