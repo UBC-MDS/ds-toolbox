@@ -8,13 +8,13 @@ type: slides
 
 # Module Learning Outcomes
 
-By the end of this module, you will learn
+By the end of this module, you will be able to
 
-- What Jupyter Book ecosystem is
-- How to install Jupyter Book
-- How to build your book
-- How to create your own content file
-- How to publishing a book online
+- Explain the Jupyter Book ecosystem
+- Install Jupyter Book
+- Build your book
+- Create your own content files
+- Publish your book online
 
 Notes:
 
