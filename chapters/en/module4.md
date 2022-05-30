@@ -39,7 +39,7 @@ Clone the repo https://github.com/UBC-MDS/equine_numbers_value_canada. What is t
 </exercise>
 
 <exercise id='3' title="Restoring an older version of a file"  type='slides, video'>
-<slides source='module4/module1_02' shot='0' start='3:42' end='4:35'> </slides>
+<slides source='module4/module4_02' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
 <exercise id='4' title='Test Your Knowledge'>

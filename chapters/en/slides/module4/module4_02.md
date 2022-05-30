@@ -115,7 +115,7 @@ You will see that after closing the editor, not you have a new commit updated wi
 
 <center>
 
-<img src='/module4/vc-reset.png' width="80%" alt="404 image"/>
+<img src='/module4/vc-reset.png' width="60%" alt="404 image"/>
 
 </center>
 
