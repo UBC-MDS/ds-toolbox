@@ -198,7 +198,23 @@ For `jb-book`, subsequent chapters can be added under the `chapters:` section in
 
 - **relative to your book’s root folder**.
 
-The title of each chapter will be inferred from the title in your files.
+The title of each chapter will be inferred from the title in your files, i.e. the top-level header specified with a single `#`, such as `# Title`.
+
+---
+
+# Table of contents (`_toc.yml`)
+
+<br>
+
+You can also put chapters into different groups, which are called `parts:`
+
+<img src="/module8/parts.png" width="750"></img>
+
+Notes:
+
+You may optionally organize your chapters into parts, by using the `parts:` key in your `_toc.yml`:
+
+The `parts:` key accepts a list of entries, each of which defines a chapter.
 
 ---
 
