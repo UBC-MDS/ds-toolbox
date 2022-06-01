@@ -11,6 +11,9 @@ type: slides
 <br>
 
 - More often than not, you work on multiple projects on your computer, and you need the computational environments to be isolated from each other.
+
+<br>
+
 - Isolated environments are also a first step towards reproducibility. You need to have the right versions of packages to ensure that everything works great together.
 
 <br>
@@ -44,26 +47,15 @@ Because we want to run each project using the same version of packages with whic
 
 # Conda
 
-Conda is an open source **package** and **environment** management system for any programming language; though it is the most popular in the python community.
+<br>
+
+<img src="/module6/conda-logo.png" width="400px"></img>
 
 <br>
 
-# Managing Conda
+- Conda is an open source **package** and **environment** management system for any programming language
 
-Let’s first start by checking if conda is installed, by running the following command in Bash:
-
-```
-conda --version
-```
-
-<br>
-
-- To see which conda commands are available, type `conda --help`
-- To see the full documentation for any command of these commands, type the command followed by `--help`. For example, to learn about the conda update command:
-
-```
-conda update --help
-```
+- It is the most popular in the Python community
 
 Notes:
 
@@ -75,15 +67,41 @@ Here we use Conda, which is an open source **package** and **environment** manag
 
 ---
 
+# Basic commands
+
+- Let’s first start by checking if conda is installed, by running `conda --version` in Bash:
+
+<img style="border:1px solid black;" src="/module6/conda-version.png" width="400px"></img>
+
+<br>
+
+- To see which conda commands are available, run `conda --help`
+
+<img style="border:1px solid black;" src="/module6/conda-help.png" width="800px"></img>
+
+<br>
+
+- To see the full documentation a command, type the command followed by `--help`:
+
+```
+conda update --help
+```
+
+---
+
 # Managing environments
 
 <br>
 
 **What is a conda environment and why is it so useful?**
 
-An environment is a set of packages that can be used in one or multiple projects.
+<br>
 
-Using `conda`, you can create an isolated python environment for your project.
+- An environment is a set of packages that can be used in one or multiple projects.
+
+<br>
+
+- Using `conda`, you can create an isolated python environment for your project.
 
 <br>
 
@@ -92,6 +110,8 @@ There are several major benefits of using environments:
 - Guarantee **reproducibility** of the computing environment
 - Use and **manage different versions** of the same package
 - **Create isolated environments** for testing new packages, or developing new ones
+
+<br>
 
 The default environment is `base`.
 
@@ -109,16 +129,22 @@ Your shell’s prompt string is prefixed with `(base)` when you are inside this 
 
 ---
 
-# Managing environments
-
 <br>
+
+There are two ways of setting up a conda environment:
+
+1. Creating the environment and installing packages manually
+
+2. Creating the environment using a file in `.yaml` format
+
+Notes:
 
 There are two ways of creating a conda environment:
 
-1. Manual specifications of packages
-2. An environment file in YAML format (`environment.yaml`)
+1. Creating an environment and then installing packages manually
+   - This can be done either at the time of environment creation or after creating the environment
 
-Notes:
+2. Creating the environment using a file in `.yaml` format (e.g. `environment.yaml`)
 
 ---
 
@@ -127,44 +153,64 @@ Notes:
 <br>
 
 - `conda create -n test_env` creates a new environment called `test_env`
-- At the time of creation, we can also specify what packages to install in the new environment and the channel from which to download the packages
+
+<br>
+
+- At the time of creation, we can also specify:
+
+  - what packages to install in the new environment and
+  - the channel from which to download the packages
+
+<br>
 
 ```
 conda create -n test_env -c conda-forge python=3.9 jupyterlab pandas=1.3.2
 ```
 
-<br>
-
-- To activate/deactivate the new environment:
-
-```
-conda activate test_env
-conda deactivate
-```
-
-<br>
-
-- To see all environments:
-
-```
-conda env list
-```
-
 Notes:
 
-We can create `test_env` conda environment by typing `conda -n test_env`. However, it is often useful to specify more than just the name of the environment, e.g. the channel from which to install packages, the Python version, and a list of packages to install into the new env.
+We can create `test_env` conda environment by running `conda -n test_env` (when seeing a prompt `Proceed ([y]/n)?`, press Enter to continue).
 
-In the example below, I am creating the `test_env` environment that uses python 3.9 and a list of libraries: `jupyterlab` and `pandas`.
+However, it is often useful to specify more than just the name of the environment, e.g. the channel from which to install packages, the Python version, and a list of packages to install into the new env.
+
+In the example below, I am creating the `test_env` environment that uses:
+
+- Python 3.9,
+- the right (usually the latest) version of `jupyterlab`,
+- and `pandas` version 1.3.2
 
 conda will solve any dependencies between the packages and create a new environment with those packages.
 
-Usually, we don’t need to specify the channel, but in this case since I want to get the very latest version of these packages, and I'm using the flag `-c` together with `conda-forge`.
+Usually, we don’t need to specify the channel, but in this case I want to get the latest version of these packages, so I'm using the flag `-c` together with the channel name `conda-forge`.
+
+---
+<br>
+
+- To activate a new environment, run `conda activate` followed by the name of the environment:
+
+<br>
+
+<img style="border:1px solid black;" src="/module6/conda-activate.png" width="600px"></img>
+
+Noticed how your shell prompt changed?
+
+<br>
+
+- To see all environments, run `conda env list`:
+
+<br>
+
+<img style="border:1px solid black;" src="/module6/conda-env-list.png" width="700px"></img>
+
+Notes:
 
 To activate this new environment, you can type `conda activate test_env` (and `conda deactivate` for deactivating).
 
-To know the current environment that you’re in, you can look at the prefix of the prompt string in your shell which now changed to `(test_env)`.
+Note how the prefix of the prompt string in your shell changed from `(base)` to `(test_env)`, to show you which environment is active.
 
-To see all your environments, you can type `conda env list`.
+To see all your environments, you can type `conda env list`. You can see I have a few environments for my work other than `(base)`.
+
+Note how the **currently active** environment (`(test_env)` in this case) is denoted with a `*`.
 
 ---
 
@@ -172,7 +218,7 @@ To see all your environments, you can type `conda env list`.
 
 <br>
 
-- Environments can shared by exporting using `conda` to an environment file:
+Environments can be shared by exporting to an environment file:
 
 ```
 conda env export -f environment.yaml
@@ -180,27 +226,11 @@ conda env export -f environment.yaml
 
 which list each package and its version in the format `package=version=build`.
 
-- If you look inside `environment.yaml`, you'll find a lot more packages than just `jupyterlab` and `pandas`.
-- It is the **default** behavior to list the dependencies and their exact versions and builds too.
-- If you want to only list the packages you explicitly installed, you should use the `--from-history` flag:
+<br>
 
-```
-conda env export --from-history -f environment.yaml
-```
+Let's look inside `environment.yaml`:
 
-This time, the environment file will look like this:
-
-```yaml
-name: test_env
-channels:
-  - conda-forge
-  - defaults
-dependencies:
-  - conda
-  - python=3.9
-  - pandas=1.3.2
-  - jupyterlab
-```
+<img style="border:1px solid black;" src="/module6/env-yaml-full.png" width="600px"></img>
 
 Notes:
 
@@ -212,11 +242,39 @@ This is the conventional name and using it makes it easy for others to recognize
 
 Also, the extension can be either `.yaml` or `.yml`. Remember that `.yaml` files are plain text, so you can use a text editor such as VS Code to open them.
 
-If you do, you will realize that this environment file has a lot more packages than `jupyterlab` and `pandas`. This is because the default behavior is to also list the dependencies that were installed together with these packages, e.g. `numpy`. This is good in the sense that it gives an exact copy of everything in your environment.
+If you do, you will realize that this environment file has a lot more packages than `jupyterlab` and `pandas`.
 
-However, some dependencies might differ between operating systems, so this file might not work with someone from a different OS. To remedy this, you can append the `--from-history` flag, which look at the history of the packages you explicitly told conda to install and only list those in the export. The required dependencies will then be handled in an OS-specific manner during the installation, which guarantees that they will work across OSes. This `environment.yaml` file would be much shorter this time.
+If you look inside `environment.yaml`, you'll find a lot more packages than just `jupyterlab` and `pandas`.
 
-Importantly, this will not include the package version unless you included it when you installed with the `package==version` syntax. For an environment to be reproducible, you need to add the version string manually.
+This is because the **default** behavior is to also list the dependencies that were installed together with these packages, e.g. `numpy`.
+This is good in the sense that it gives an exact copy of everything in your environment.
+
+---
+
+If you want to only list the packages you explicitly installed, you should use the `--from-history` flag:
+
+```
+conda env export --from-history -f environment.yaml
+```
+
+<br>
+
+This time, the environment file will look like this:
+
+<img style="border:1px solid black;" src="/module6/env-yaml.png" width="300px"></img>
+
+Notes:
+
+However, some dependencies might differ between operating systems, so this file might not work with someone from a different OS.
+
+To remedy this, you can append the `--from-history` flag, which look at the history of the packages you explicitly told conda to install and only list those in the export.
+
+The required dependencies will then be handled in an OS-specific manner during the installation, which guarantees that they will work across OSes. 
+
+This `environment.yaml` file would be much shorter this time.
+
+Importantly, this will not include the package version unless you included it when you installed with the `package==version` syntax.
+For an environment to be reproducible, you need to add the version string manually.
 
 ---
 
@@ -259,17 +317,36 @@ Notes:
 <br>
 
 - By default, JupyterLab only sees the conda environment where it is installed.
-- But no need to install JupyterLab in each and every new environment!
-- There is a package called `nb_conda_kernels` that makes it possible to have a single installation of JupyterLab, and access all other conda environments
 
 <br>
 
-In order to make JupyterLab detect a new environment:
+- But no need to install JupyterLab in each and every new environment!
 
-- `nb_conda_kernels` needs to be installed once in the conda environment where JupyterLab is installed (usually the `base` environment)
-- A package called `ipykernel` needs to be installed in each new environment to make it visible to JupyterLab
+<br>
+
+- There is a package called `nb_conda_kernels` that makes it possible to have a single installation of JupyterLab, and access all other conda environments.
+
+---
+
+To make JupyterLab detect a new environment:
+
+- Install `nb_conda_kernels` once in the conda environment where JupyterLab is installed (usually the `base` environment)
+
+- Install `ipykernel` in each new environment to make it visible to JupyterLab
+
+<br>
+
+<img style="border:1px solid black;" src="/module6/jl-envs.png" width="650px"></img>
 
 Notes:
+
+To make JupyterLab detect a new environment:
+
+- Install `nb_conda_kernels` once in the conda environment where JupyterLab is installed (usually the `base` environment)
+
+- Install `ipykernel` in each new environment to make it visible to JupyterLab
+
+I have followed these steps, so now when I launch JupyterLab from my `(base)` environment, I can see that all my conda environments are available to me in JupyterLab, including the newly created `(test_env)`.
 
 ---
 
@@ -298,9 +375,11 @@ libgfortran               3.0.0                         0    conda-forge
 
 <br>
 
-The list will include versions of each package, the specific build, and the channel that the package was downloaded from.
+The list will include
 
-Notes:
+- versions of each package,
+- the specific build, and
+- the channel that the package was downloaded from.
 
 ---
 
@@ -326,21 +405,11 @@ Packages:
                                           : Rasterio reads and writes geospatial raster datasets
      dharhas/rasterio          |   0.23.0 | conda           | win-64         
                                           : Rasterio reads and writes geospatial raster datasets.
-     erdc/rasterio             |   0.23.0 | conda           | win-64         
-                                          : Rasterio reads and writes geospatial raster datasets.
-     jesserobertson/rasterio   |   0.23.0 | conda           | linux-64, linux-32, osx-64
-     jhamman/rasterio_to_xarray | 2016.03.16-1558 | ipynb           |                
-                                          : IPython notebook
      krisvanneste/rasterio     |   0.26.0 | conda           | win-64         
      ocefpaf/rasterio          |   0.19.1 | conda           | linux-64, osx-64
      omgarcia/rasterio         |   0.25.0 | conda           | linux-64       
      pypi/rasterio             |   0.13.2 | pypi            |                
                                           : Fast and direct raster I/O for Python programmers who use Numpy
-     robintw/rasterio          |   0.35.1 | conda           | osx-64         
-                                          : Rasterio reads and writes geospatial raster datasets
-     sgillies/rasterio         |     0.15 | conda           | osx-64         
-     ztessler/rasterio         |   0.31.0 | conda           | osx-64         
-                                          : Fast and direct raster I/O for use with Numpy and SciPy
 Found 15 packages
 ```
 
