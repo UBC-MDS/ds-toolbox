@@ -68,7 +68,7 @@ Moreover, it's also very helpful to have files show up in a logical order when v
 
 ---
 
-# Machine-readable file names
+# 1. Machine-readable file names
 
 <br>
 
@@ -111,7 +111,7 @@ Notes:
 
 In this example here, we have specified a particular pattern, namely `*Plasmid*` to find all file names that contain this word. This is an example of "globbing" using the `*` wildcard.
 
-If we've already been careful to include `*Plasmid*` in the name of all files with a related content, then finding those files using a script or in the terminal would be very easy.
+If we've already been careful to include `Plasmid` in the name of all files with a related content, then finding those files using a script or in the terminal would be very easy.
 
 ---
 
@@ -188,7 +188,7 @@ Notes:
 
 ---
 
-# Human-readable file names
+# 2. Human-readable file names
 
 <br>
 
@@ -215,7 +215,7 @@ A URL slug is the last part of a URL, which is supposed to relevant to the conte
 
 ---
 
-# File names that play well with default
+# 3. File names that play well with default
 
 <br>
 

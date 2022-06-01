@@ -89,9 +89,9 @@ Using `conda`, you can create an isolated python environment for your project.
 
 There are several major benefits of using environments:
 
-- Guarantee reproducibility of the computing environment
-- Use and manage different versions of the same package
-- Create isolated environment for testing new packages, or develop new ones
+- Guarantee **reproducibility** of the computing environment
+- Use and **manage different versions** of the same package
+- **Create isolated environments** for testing new packages, or developing new ones
 
 The default environment is `base`.
 

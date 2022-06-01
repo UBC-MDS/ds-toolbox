@@ -12,7 +12,7 @@ Note:
 
 - In a data science project, it's easy to focus only on the final product
 - The code and data that produce the end result are as important
-- It's hard to change your mind once you're half way there, so it's best to start off with a standard project structure from the very beginning
+- It's hard to change your mind once you're halfway there, so **it's best to start with a standard project structure** from the very beginning
 
 <br>
 
