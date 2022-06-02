@@ -5,12 +5,12 @@ description:
 prev: ../../module4
 next: ../../module6
 type: chapter
-id: 4
+id: 5
 ---
 
 <exercise id="1" title="Branches" type="slides,video">
 
-<slides source="module0/module0_00" shot="0" start="0:002" end="3:40">
+<slides source="module5/module5_01" shot="0" start="0:002" end="3:40">
 </slides>
 
 </exercise>
@@ -31,7 +31,7 @@ IN PROGRESS
 </exercise>
 
 <exercise id='3' title="merge branches"  type='slides, video'>
-<slides source='module1/module1_00' shot='0' start='3:42' end='4:35'> </slides>
+<slides source='module5/module5_02' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
 <exercise id='4' title='merge branches'>
@@ -48,7 +48,7 @@ IN PROGRESS
 </exercise>
 
 <exercise id='5' title="forks"  type='slides, video'>
-<slides source='module1/module1_00' shot='0' start='3:42' end='4:35'> </slides>
+<slides source='module5/module5_03' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
 <exercise id='6' title='fork'>
@@ -67,7 +67,7 @@ How you can check locally if you are working in a repo clone from the original o
 </exercise>
 
 <exercise id='7' title='sync your local and origin remote' type='slides, video'>
-<slides source='module1/module1_00' shot='0' start='3:42' end='4:35'> </slides>
+<slides source='module5/module5_04' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
 <exercise id='8' title='sync your local and origin remote (full workflow)'>
@@ -90,7 +90,7 @@ In which cases is better you should work on a fork and or a branch?
 </exercise>
 
 <exercise id='9' title='git reset'  type='slides, video'>
-<slides source='module1/module1_00' shot='0' start='3:42' end='4:35'> </slides>
+<slides source='module5/module5_05' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
  <exercise id='10' title='git reset'>

@@ -5,12 +5,12 @@ description:
 prev: ../../module3
 next: ../../module5
 type: chapter
-id: 3
+id: 4
 ---
 
 <exercise id="1" title="git log" type="slides,video">
 
-<slides source="module0/module0_00" shot="0" start="0:002" end="3:40">
+<slides source="module4/module4_01" shot="0" start="0:002" end="3:40">
 </slides>
 
 </exercise>
@@ -31,7 +31,7 @@ IN PROGRESS
 </exercise>
 
 <exercise id='3' title="git reset"  type='slides, video'>
-<slides source='module1/module1_00' shot='0' start='3:42' end='4:35'> </slides>
+<slides source='module4/module1_02' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
 <exercise id='4' title='git reset'>
@@ -48,7 +48,7 @@ IN PROGRESS
 </exercise>
 
 <exercise id='5' title="merge conflicts"  type='slides, video'>
-<slides source='module1/module1_00' shot='0' start='3:42' end='4:35'> </slides>
+<slides source='module4/module4_03' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
 <exercise id='6' title='merge conflicts'>
@@ -68,7 +68,7 @@ IN PROGRESS
 </exercise>
 
 <exercise id='7' title='git stash' type='slides, video'>
-<slides source='module1/module1_00' shot='0' start='3:42' end='4:35'> </slides>
+<slides source='module4/module4_04' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
 <exercise id='8' title='git stash'>
@@ -89,7 +89,7 @@ IN PROGRESS
 </exercise>
 
 <exercise id='9' title='gitignore'  type='slides, video'>
-<slides source='module1/module1_00' shot='0' start='3:42' end='4:35'> </slides>
+<slides source='module4/module4_05' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
 <exercise id='10' title='gitignore'>
