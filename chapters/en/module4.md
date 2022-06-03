@@ -44,13 +44,21 @@ Clone the repo https://github.com/UBC-MDS/equine_numbers_value_canada. What is t
 
 <exercise id='4' title='Test Your Knowledge'>
 
-What command would you use to move back to X commit for this Y example?
-IN PROGRESS
+You are writing a book using version control. In your local repository you have text file for each chapter. Today, after reading your work again and decided to move some of the text you have written for `chapter3.md` to `chapter1.md`. How would you save this change in Git?
 
 <choice>
-<opt text='git reset --soft de6aea0' correct='true'>
+<opt text='It would cut and copy the text into the new file, add both files to the staging area, and then commit with a message explaining the changes.' correct='true'>
+
 </opt>
-<opt text='git reset --hard de6aea0'>
+
+<opt text='I would **revert** to the commit when I wrote the paragraph. Then, I would add the text in the correct chapter and make a new commit with a message explaining the changes.'>
+
+</opt>
+
+<opt text='I would perform a **hard reset** to the commit when I wrote the paragraph. Then, I would add the text in the correct chapter and make a new commit with a message explaining the changes.'>
+
+When you realize a hard reset, you are deleting the history of your project until that commit. This means that you will be losing all the changes you did in between that commit.
+
 </opt>
 </choice>
 </exercise>
@@ -97,23 +105,37 @@ IN PROGRESS
 </choice>
 </exercise>
 
-<exercise id='9' title='GitHub Issues'  type='slides, video'>
+<exercise id='9' title='.gitgnore'  type='slides, video'>
 <slides source='module4/module4_05' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
 <exercise id='10' title='Test Your Knowledge'>
 
-What do you have to write to git ignore `.ipynb_checkpoints`
-IN PROGRESS
+`**/` is prepended to an entry in `.gitignore` to tell Git that this entry is a folder.
 
-<choice>
-<opt text='x' >
+<choice id="1">
+
+<opt text="True">
+<code>**/</code> is used to tell Git that the same file/folder name should be ignored in the subdirectories of a repo as well.
 </opt>
-<opt text='x'>
+
+<opt text="False"  correct="true">
 </opt>
-<opt text='x'>
-</opt>
-<opt text='x correct='true'>
-</opt>
+
 </choice>
+
+The `.gitignore` file itself needs to be committed, and is thus version-controlled.
+
+<choice id="2">
+
+<opt text="True" correct="true">
+Right, <code>.gitignore</code> is not ignored itself.
+</opt>
+
+<opt text="False">
+Remember that you need to do "add" and "commit" <code>.gitignore</code> with Git?
+</opt>
+
+</choice>
+
 </exercise>
