@@ -51,11 +51,13 @@ You are writing a book using version control. In your local repository you have 
 
 </opt>
 
-<opt text='I would **revert** to the commit when I wrote the paragraph. Then, I would add the text in the correct chapter and make a new commit with a message explaining the changes.'>
+<opt text='I would <b>revert</b> to the commit I did after writing that paragraph. Then, I would add the text in the correct chapter and make a new commit with a message explaining the changes.'>
+
+Are you sure you want to loose all the changes you did for `chapter2.md`? Even if you can recover those changes, reverting the changes will make you go back to that particular point in the the history of your project.
 
 </opt>
 
-<opt text='I would perform a **hard reset** to the commit when I wrote the paragraph. Then, I would add the text in the correct chapter and make a new commit with a message explaining the changes.'>
+<opt text='I would perform a <b>hard reset</b> to the commit I did after writing that paragraph. Then, I would add the text in the correct chapter and make a new commit with a message explaining the changes.'>
 
 When you realize a hard reset, you are deleting the history of your project until that commit. This means that you will be losing all the changes you did in between that commit.
 
@@ -63,47 +65,74 @@ When you realize a hard reset, you are deleting the history of your project unti
 </choice>
 </exercise>
 
-<exercise id='5' title="Deal with merge conflicts"  type='slides, video'>
-<slides source='module4/module4_03' shot='0' start='3:42' end='4:35'> </slides>
+<exercise id='5' title='Revert your changes' type='slides, video'>
+<slides source='module4/module4_04' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
 <exercise id='6' title='Test Your Knowledge'>
 
-what steps you need to follow to solve a merge conflict
-IN PROGRESS
+What of this statements are TRUE about git revert
+
 
 <choice>
-<opt text='(1) open the editor (2) accept incoming changes (3) save changes' >
+<opt text='This command creates a new commit that undoes the changes from a previous commit.' >
 </opt>
-<opt text='TBD'>
+<opt text='This command changes the history of the project.'>
 </opt>
-<opt text='TBD' correct='true'>
+<opt text='It is used to undo changes in your working directory that have not been comitted yet.' correct='true'>
 </opt>
+
+</choice>
+
+TRUE OR FALSE
+
+Has more sense to use revert in a public repo than in a private one?
+
+<choice>
+<opt text='True' correct='true'>
+
+Yes, because leaving a commit is sharing with others the information that you have undone some changes. In a private repo could or could not be informative.
+
+</opt>
+<opt text='False' >
+
+
+</opt>
+
 
 </choice>
 </exercise>
 
-
-<exercise id='7' title='Stashing local non-committed changes before pulling' type='slides, video'>
-<slides source='module4/module4_04' shot='0' start='3:42' end='4:35'> </slides>
+<exercise id='7' title="Deal with merge conflicts"  type='slides, video'>
+<slides source='module4/module4_03' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
 <exercise id='8' title='Test Your Knowledge'>
 
-In what of this option is useful the command git stash?
-IN PROGRESS
+<<<<<<< HEAD
+Copyright (c) 2022 Florencia D'Andrea
+=======
+Copyright (c) 2022 Name
+>>>>>>> 3173605e73175bd86a3ee8cb078198040a3b3cf6
 
+
+What do you have to do if you are working with the terminal and you want to write a different text for this merge conflict?
 
 <choice>
-<opt text='situation a' >
+<opt text='Accept current change' >
 </opt>
-<opt text='situation b'>
+<opt text='Accept incoming change'>
 </opt>
-<opt text='situation c' correct='true'>
+<opt text='Accept both changes' correct='true'>
+</opt>
+<opt text='You should delete everything between <code> <<<<<<< </code> and <code> >>>>>>> </code> add the text you want instead'>
 </opt>
 
 </choice>
 </exercise>
+
+
+
 
 <exercise id='9' title='.gitgnore'  type='slides, video'>
 <slides source='module4/module4_05' shot='0' start='3:42' end='4:35'> </slides>

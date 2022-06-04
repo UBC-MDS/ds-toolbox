@@ -137,9 +137,7 @@ The specified files should now be automatically ignored in all repos, without ne
 
 Notes:
 
-Now comes the second trick:
-
-There might be certain files that you'd like to always get ignored in all repos.
+Now comes the second trick: There might be certain files that you'd like to always get ignored in all repos.
 
 In that case, you can add them once to a global `.gitignore` file called `.gitignore_global` which lives in your home directory.
 

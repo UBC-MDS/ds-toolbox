@@ -9,15 +9,15 @@ title: 'module4_02'
 # Time travelling 
 
 
-There are two ways you go back in time to a previos commit:
-
-1. **revert** your changes
-2. **reset** your changes
+We are going to learn two ways you to go back in time to a previous commits:
 
 
-Notes: Oh no! We realize by viewing the history that we made a mistake! We didn't mean to delete our list of dependencies. Worry not! We can now take advantage that we have been tracking this file under version control by using git restore to retrieve an older version of the file to replace the current version.
+1. **reset hard** 
+2. **revert** 
 
-Let's restore the version of the file BEFORE we deleted the software dependency list.
+Notes: Oh no! We realize by viewing the history that we made a mistake! We didn't mean to delete our list of dependencies. Worry not! We can now take advantage that we have been tracking this file under version control to retrieve an older version of the file to replace the current version.
+
+
 
 ---
 # Refer to a commit
@@ -28,86 +28,11 @@ Commit ID or SHA-1 hash
 commit b22d6421363c7b82e2b88b0b5f1f25edca703303
 commit b22d
 ```
-Notes: The commit ID or SHA-1 could identify the commit.
+Notes: The commit ID or SHA-1 identifies the commit. the commit ID will be necessary to can identify the change we want to modify.
 
 ---
 
-# 1. Revert your changes: move to a previous commit (JupyterLab)
 
-
-<center>
-
-<img src='/module4/vc-revert.png' width="80%" alt="404 image"/>
-
-</center>
-
-Notes:
-If you want to revert your changes you can clink in the arrow icon in the commit you want to go back in the JupyterLab's tab History.
-When you revert your changes, you don't loose the history of the project. This means that youa re going to create a new commit where you are saving the information that you have deleted that particular commit.
-
----
-
-# 1. Revert your changes: move to a previous commit (JupyterLab)
-
-
-<center>
-
-<img src='/module4/vc-revert-2.png' width="80%" alt="404 image"/>
-
-</center>
-
-Notes:
-When you click the arrow, JupyterLab request you the commit title and description for thet reversion. You can keep here the preloaded name or find a more meaningful one.
-
----
-
-# 1. Revert your changes: move to a previous commit (JupyterLab)
-
-
-<center>
-
-<img src='/module4/vc-revert-3.png' width="80%" alt="404 image"/>
-
-</center>
-
-Notes:
-Now you can see that you have a new commit and your project has travel back in time! Remember to push your changes if you want to keep your remote updated. This is particularly important if you are working with other colleagues that cna be modifying the part that have deleted!
-
-
----
-
-# 1. Revert your changes: move to a previous commit (terminal)
-
-`git revert <commit id>`
-
-<center>
-
-<img src='/module4/vc-revert-t.png' width="80%" alt="404 image"/>
-
-</center>
-
-Notes:
-If you want to do this with the terminal you will have to provide the SHA-1 code to identify the commit.
-
----
-
-# 1. Revert your changes: move to a previous commit (terminal)
-
-
-<center>
-
-<img src='/module4/vc-revert-t2.png' width="80%" alt="404 image"/>
-
-</center>
-
-Notes:
-
-After writing the command, the editor will pop up so you can modify the final commit message. If you close it as it is the message will be the default one.
-You will see that after closing the editor, not you have a new commit updated with the changes.
-
-
-
----
 
 # 2. Reset your changes: delete your changes AND the history of your project (JupyterLab)
 

@@ -3,84 +3,92 @@ type: slides
 title: 'module4_03'
 ---
 
-# Handling merge conflicts
+# Revert your changes
 
 
+**reset hard** ✔️
+**revert** ⬅️
+
+Notes: We have already learn how to undo changes deleting our project history with **reset hard**. But what if we want to keep track of the reversion? 
+ There is other way to go back in time that is **revert** your changes.
 
 ---
-# What is a merge conflict?
+#  Revert your changes: move to a previous commit (JupyterLab)
 
-Error message that indicates that there are changes on the remote repository that you do not have locally. 
 
 <center>
 
-<img src='/module4/vc-merge-conflict.png' width="60%" alt="404 image"/>
+<img src='/module4/vc-revert.png' width="80%" alt="404 image"/>
 
 </center>
 
-
-Notes: It is good practice to pull any changes at the start of every work session before you start working on your local copy. If you do not do this, and your collaborators have pushed some changes to the project to GitHub, then you will be unable to push your changes to GitHub until you pull. This situation can be recognized by the error message shown in the image
-
----
-# What is a merge conflict?
-
-Error message that indicates you and your collaborators made changes to the same line of the same file and that Git will not be able to automatically merge the changes. 
-
-<center>
-
-<img src='/module4/vc-merge-conflict-2.png' width="60%" alt="404 image"/>
-
-</center>
-
-Notes: Usually, getting out of this situation is not too troublesome. First you need to pull the changes that exist on GitHub that you do not yet have in the local repository. Usually when this happens, Git can automatically merge the changes for you, even if you and your collaborators were working on different parts of the same file!
-
-If, however, you and your collaborators made changes to the same line of the same file, Git will not be able to automatically merge the changes—it will not know whether to keep your version of the line(s), your collaborators version of the line(s), or some blend of the two. When this happens, Git will tell you that you have a merge conflict in certain file(s) 
+Notes:
+If you want to revert your changes you can clink in the arrow icon in the commit you want to go back in the JupyterLab's tab History.
+When you revert your changes, you don't loose the history of the project. This means that you are going to create a new commit where you are saving the information that you have deleted that particular commit.
 
 ---
 
-# Handling merge conflicts
+# Revert your changes: move to a previous commit (JupyterLab)
 
-Error message that indicates you and your collaborators made changes to the same line of the same file and that Git will not be able to automatically merge the changes. 
 
 <center>
 
-<img src='/module4/vc-merge-conflict-3.png' width="60%" alt="404 image"/>
+<img src='/module4/vc-revert-2.png' width="80%" alt="404 image"/>
 
 </center>
 
-Notes: To fix the merge conflict, you need to open the offending file in a plain text editor and look for special marks that Git puts in the file to tell you where the merge conflict occurred.
+Notes:
+When you click the arrow, JupyterLab request you the commit title and description for thet reversion. You can keep here the preloaded name or find a more meaningful one.
 
 ---
 
-# Handling merge conflicts
+# Revert your changes: move to a previous commit (JupyterLab)
 
-How to open a Jupyter notebook as a plain text file view in Jupyter. 
 
 <center>
 
-<img src='/module4/vc-merge-conflict-4.png' width="60%" alt="404 image"/>
+<img src='/module4/vc-revert-3.png' width="80%" alt="404 image"/>
 
 </center>
 
-Notes: The beginning of the merge conflict is preceded by `<<<<<<< HEAD` and the end of the merge conflict is marked by `>>>>>>>`. Between these markings, Git also inserts a separator (`=======`). The version of the change before the separator is your change, and the version that follows the separator was the change that existed on GitHub. In the image, you can see that in your local repository there is a line of code that calls `scale_color_manual` with three color values (`deeppink2`, `cyan4`, and `purple1`). It looks like your collaborator made an edit to that line too, except with different colors (to `blue3`, `red3`, `and black`)!
+Notes:
+Now you can see that you have a new commit and your project has travel back in time! Remember to push your changes if you want to keep your remote updated. This is particularly important if you are working with other colleagues that cna be modifying the part that have deleted!
+
 
 ---
 
-# Handling merge conflicts
+# Revert your changes: move to a previous commit (terminal)
 
-File where a merge conflict has been resolved. 
+`git revert <commit id>`
 
 <center>
 
-<img src='/module4/vc-merge-conflict-5.png' width="60%" alt="404 image"/>
+<img src='/module4/vc-revert-t.png' width="80%" alt="404 image"/>
 
 </center>
 
-Notes: Once you have decided which version of the change (or what combination!) to keep, you need to use the plain text editor to remove the special marks that Git added.
+Notes:
+If you want to do this with the terminal you will have to provide the SHA-1 code to identify the commit.
 
-The file must be saved, added to the staging area, and then committed before you will be able to push your changes to GitHub.
+---
+
+# Revert your changes: move to a previous commit (terminal)
+
+
+<center>
+
+<img src='/module4/vc-revert-t2.png' width="80%" alt="404 image"/>
+
+</center>
+
+Notes:
+
+After writing the command, the editor will pop up so you can modify the final commit message. If you close it as it is the message will be the default one.
+You will see that after closing the editor, not you have a new commit updated with the changes.
 
 ---
 
 # Let's Practise
+
+
 
