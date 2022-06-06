@@ -63,6 +63,30 @@ When you realize a hard reset, you are deleting the history of your project unti
 
 </opt>
 </choice>
+
+TRUE OR FALSE
+
+Select all the situations when it is a good idea to use reset your work to a previous commit
+
+<choice>
+<opt text='When you are working in a project locally, without pushing to the remote' correct='true'>
+
+If you are working locally on a private project, it is quite safe to use reset. Nobody is going to be affected by you deleting part of the history of your project.
+
+</opt>
+<opt text='When we are working with other colleagues pushing to the same repository' >
+
+This is not a good idea because you are deleting part of the history of your project. Consider that your colleagues are working with the full history. This could be a problem at the moment of combining the information. In this case probably it is better to revert the changes, a command that we are going to learn in the next sections of this module.
+
+</opt>
+
+<opt text='Both are correct' >
+
+You can hard reset your work in both cases, but one option could generate problems.
+
+</opt>
+
+</choice>
 </exercise>
 
 <exercise id='5' title='Revert your changes' type='slides, video'>
@@ -77,30 +101,19 @@ What of this statements are TRUE about git revert
 <choice>
 <opt text='This command creates a new commit that undoes the changes from a previous commit.' >
 </opt>
-<opt text='This command changes the history of the project.'>
+<opt text='This command undoes the changes of your project until the commit id that you determine.'>
 </opt>
-<opt text='It is used to undo changes in your working directory that have not been comitted yet.' correct='true'>
+<opt text='This command makes shorter the history of the project (deletes commits)'>
 </opt>
-
+<opt text='This command is used to undo changes in your working directory that have not been comitted yet.'>
+</opt>
+<opt text='A and B are correct' correct='true'>
+</opt>
+<opt text='A and C are correct'>
+</opt>
 </choice>
 
-TRUE OR FALSE
 
-Has more sense to use revert in a public repo than in a private one?
-
-<choice>
-<opt text='True' correct='true'>
-
-Yes, because leaving a commit is sharing with others the information that you have undone some changes. In a private repo could or could not be informative.
-
-</opt>
-<opt text='False' >
-
-
-</opt>
-
-
-</choice>
 </exercise>
 
 <exercise id='7' title="Deal with merge conflicts"  type='slides, video'>
