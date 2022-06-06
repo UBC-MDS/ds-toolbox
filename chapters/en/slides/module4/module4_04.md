@@ -97,8 +97,8 @@ After your changes the file must be saved, added to the staging area, and then c
 </center>
 
 Notes: It is possible to solve the merge conflicts using the terminal. For this you have to open the editor and find the files where the conflict is.
+You will be able to visualize the merge conflict as appears in the image.
 
-However, we don't recommend using the terminal to sove merge conflicts when you are working with Jupyter Notebooks! 
 
 
 ---
