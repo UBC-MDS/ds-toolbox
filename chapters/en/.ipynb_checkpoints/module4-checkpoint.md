@@ -122,13 +122,12 @@ What of this statements are TRUE about git revert
 
 <exercise id='8' title='Test Your Knowledge'>
 
-```
 <<<<<<< HEAD
 Copyright (c) 2022 Florencia D'Andrea
 =======
 Copyright (c) 2022 Name
 >>>>>>> 3173605e73175bd86a3ee8cb078198040a3b3cf6
-```
+
 
 What do you have to do if you are working with the terminal and you want to write a different text for this merge conflict?
 

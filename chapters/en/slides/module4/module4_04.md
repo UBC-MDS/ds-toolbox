@@ -101,11 +101,11 @@ It is possible to solve the merge conflicts using the terminal. For this you hav
 However, we don't recommend using the terminal to sove merge conflicts when you are working with Jupyter Notebooks! 
 
 
---
+---
 # Extra: Stashing local non-committed changes before pulling (terminal)
 
 
-```bash
+```
 error: Your local changes to the following files would be overwritten by merge:
         README.md
 Please commit your changes or stash them before you merge.
