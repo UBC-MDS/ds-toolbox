@@ -58,6 +58,7 @@ In the previous slide we used the position `Documents` relative to the directory
 We could instead have written out it's absolute position in the file system,
 starting with the root directory:
 `/home/username/Documents`.
+Absolute paths always start with a leading slash `/`.
 
 Using a relative path is like telling someone to go two kilometers north and then half a kilometer east;
 using an absolute path is like giving them the latitude and longitude of their destination.
@@ -156,6 +157,8 @@ since this is an indication that the creator of the file wanted it to be hidden
 
 We can ask `ls` to include all files by using the `-a` option,
 which stands for "all".
+You will see that this also includes a single dot `.`;
+this stands for the current directory.
 
 ---
 
