@@ -164,15 +164,30 @@ ls
 ```
 Downloads     Music
 Documents     todo.txt
-Pictures
+Pictures      my_program
 ```
 
-
+Notes:
 Now that we know where we are, let’s see what we have using the command ls (short for “listing”), which prints the names of the files and directories in the current directory:
 
 Again, our results may be different depending on our operating system and what files or directories we have.
 
-We can make the output of ls more informative using the -F option (also sometimes called a switch or a flag). Options are exactly like arguments to a function in Python; in this case, -F tells ls to decorate its output to show what things are. A trailing / indicates a directory, while a trailing * tells us something is a runnable program. Depending on our setup, the shell might also use colors to indicate whether each entry is a file or directory.
+---
+
+## Using commands with options
+
+```
+ls -F
+```
+
+```
+Downloads/    Music/
+Documents/    todo.txt
+Pictures/     my_program*
+```
+
+Notes:
+We can make the output of ls more informative using the -F option (also sometimes called a switch or a flag). Options are exactly like arguments to a function in Python; in this case, -F tells ls to decorate its output to show what things are. A trailing `/` indicates a directory, while a trailing `*` tells us something is a runnable program. Depending on our setup, the shell might also use colors to indicate whether each entry is a file or directory.
 
 # Let’s apply what we learned!
 
