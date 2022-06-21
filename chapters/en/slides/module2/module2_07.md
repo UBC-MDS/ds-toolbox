@@ -109,12 +109,12 @@ l
 
 ```out
 total 12
--rw-rw-r-- 1 joel joel   53 Jun 20 08:47 note_2022-06-22.md
-drwxr-xr-x 4 joel joel 4096 Jun 20 11:45 ../
--rw-rw-r-- 1 joel joel    0 Jun 20 11:53 note_2022-07-02.md.bkp
--rw-rw-r-- 1 joel joel    0 Jun 20 11:53 note_2022-07-02.md
--rw-rw-r-- 1 joel joel    0 Jun 20 11:53 note_2022-06-20.md.bkp
-drwxrwxr-x 2 joel joel 4096 Jun 20 14:54 ./
+-rw-rw-r-- 1 usergroup username   53 Jun 20 08:47 note_2022-06-22.md
+drwxr-xr-x 4 usergroup username 4096 Jun 20 11:45 ../
+-rw-rw-r-- 1 usergroup username    0 Jun 20 11:53 note_2022-07-02.md.bkp
+-rw-rw-r-- 1 usergroup username    0 Jun 20 11:53 note_2022-07-02.md
+-rw-rw-r-- 1 usergroup username    0 Jun 20 11:53 note_2022-06-20.md.bkp
+drwxrwxr-x 2 usergroup username 4096 Jun 20 14:54 ./
 ```
 
 Notes:
@@ -132,12 +132,17 @@ Let's say that we want to include the following options:
 
 - `-a` list all files, including hidden ones
 - `-F` append indicator characters to make the output easier to understand
-- `-l` show the "long" format, which includes more information about each file
+- `-l` show the "long" format, which includes more information about each file (read the man page to find out more!)
 - `-t` sort files by time instead of alphabetically
 - `-r` sort in reverse order with the most recent file at the bottom
 
 We could type out `ls -aFltr` each time, but that is cumbersome.
-If we instead type `alias l="ls -aFltr"`
+If we instead type `alias l="ls -aFltr"`,
+we can use the shorter `l` as an "alias" for the longer command.
+If we want to keep this alias between reboots,
+we need to save it to file `~/.bash_profile` (on Windows and Mac)
+or `~/.bashrc` (on Linux)
+the same way we did during the setup instructions.
 
 ---
 
