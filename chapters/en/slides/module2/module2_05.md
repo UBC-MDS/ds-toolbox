@@ -102,7 +102,7 @@ my-first-note.md
 ```
 
 ```sh
-cat my-first-note.md
+head my-first-note.md
 ```
 
 ```
@@ -114,15 +114,18 @@ in the file.
 Notes:
 If we now type `ls` we will see the name of the file we just created in VS Code.
 To see the content of the file,
-we can use the `cat` command.
-`cat` stands for **conCATenate** because it can be used to concatenate together files with each other
-before printing all their content to the shell
-(but here we use it just for the printing part).
+we can use the `head` command.
+`head` show the first few lines of a file
+(just as when we use `df.head()` in pandas),
+and optionally takes an argument for how many lines to show:
+`head -n 10` (the default is five).
 
-`cat` works with all plain text files,
+`head` works with all plain text files,
 such as code and markdown files,
 but not with binary files
 such as word documents, spreadsheets, or images.
+To see the last few lines,
+you can use `tail` instead of `head`.
 
 ---
 
