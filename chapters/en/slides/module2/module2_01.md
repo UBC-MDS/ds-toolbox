@@ -189,6 +189,8 @@ Pictures/     my_program*
 Notes:
 We can make the output of ls more informative using the -F option (also sometimes called a switch or a flag). Options are exactly like arguments to a function in Python; in this case, -F tells ls to decorate its output to show what things are. A trailing `/` indicates a directory, while a trailing `*` tells us something is a runnable program. Depending on our setup, the shell might also use colors to indicate whether each entry is a file or directory.
 
+---
+
 # Let’s apply what we learned!
 
 Notes: <br>

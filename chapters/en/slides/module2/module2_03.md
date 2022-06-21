@@ -67,6 +67,8 @@ They both have different advantages:
 An absolute path will always be the same on your file system,
 whereas using relative paths makes it easier to work with collaborators across multiple computers.
 
+---
+
 ## Moving to a directory
 
 ```sh
@@ -132,7 +134,7 @@ which is often called the "parent" directory of the current directory.
 
 ---
 
-# Listing hidden files
+## Listing hidden files
 
 ```sh
 # ls -Fa would also work

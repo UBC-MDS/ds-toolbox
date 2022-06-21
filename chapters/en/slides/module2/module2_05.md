@@ -314,6 +314,8 @@ they all have some characters after.
 Using wildcards is helpful when we want to delete, move, or copy files
 with a predictable naming pattern.
 
+---
+
 # Let’s apply what we learned!
 
 Notes: <br>
