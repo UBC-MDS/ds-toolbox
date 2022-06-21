@@ -15,6 +15,7 @@ That's what we will find out in this chapter.
 
 ```sh
 cd ~/Documents
+
 # MaKe Directory
 mkdir notes
 ```
@@ -44,6 +45,8 @@ For now it is enough if you remember these three guidelines.
 ```sh
 ls -F notes
 ```
+
+<br>
 
 ```sh
 cd notes
@@ -97,15 +100,17 @@ but it is worth knowing that you can use use it as a powerful editor for code as
 ls
 ```
 
-```
+```out
 my-first-note.md
 ```
+
+<br>
 
 ```sh
 head my-first-note.md
 ```
 
-```
+```out
 These are the first
 few lines of content
 in the file.
@@ -136,18 +141,20 @@ mv my-first-note.md ..
 ls ..
 ```
 
-```
+```out
 Downloads/    Music/        my-first-note.md
 Documents/    todo.txt
 Pictures/     my_program*
 ```
+
+<br>
 
 ```sh
 mv ../my-fist-note.md .
 ls
 ```
 
-```
+```out
 my-fist-note.md
 ```
 
@@ -172,15 +179,17 @@ mv my-fist-note.md note_2022-06-20.md
 ls
 ```
 
-```
+```out
 note_2022-06-20.md
 ```
+
+<br>
 
 ```sh
 mv -v notte_2022-06-20.md note_2022-06-20.md
 ```
 
-```
+```out
 renamed 'notte_2022-06-20.md' -> 'note_2022-06-20.md'
 ```
 
@@ -212,13 +221,15 @@ The option `-i` ("interactive") makes `mv` ask us for confirmation before overwr
 cp note_2022-06-20.md ..
 ```
 
+<br>
+
 ```sh
 # Create a backup copy in the same directory
 cp note_2022-06-20.md note_2022-06-20.md.bkp
 ls
 ```
 
-```
+```out
 note_2022-06-20.md
 note_2022-06-20.md.bkp
 ```
@@ -247,15 +258,17 @@ rm note_2022-06-20.md.bkp
 ls
 ```
 
-```
+```out
 note_2022-06-20.md
 ```
+
+<br>
 
 ```sh
 rm -iv ../note_2022-06-20.md
 ```
 
-```
+```out
 rm: remove regular file '../note_2022-06-20.md'? y
 removed '../note_2022-06-20.md'
 ```
@@ -283,16 +296,18 @@ touch note_2022-06-20.md.bkp note_2022-07-02.md note_2022-07-02.md.bkp
 ls *.bkp
 ```
 
-```
+```out
 note_2022-06-20.md.bkp
 note_2022-07-02.md.bkp
 ```
 
-```
+<br>
+
+```sh
 ls *07*
 ```
 
-```
+```out
 note_2022-07-02.md
 note_2022-07-02.md.bkp
 ```

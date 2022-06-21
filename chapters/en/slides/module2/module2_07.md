@@ -16,7 +16,7 @@ In this module we will look at slightly more complex and powerful shell workflow
 grep "the" note_2022-06-22.md
 ```
 
-```
+```out
 note_2022-06-22.md:These are the first
 note_2022-06-22.md:in the file.
 ```
@@ -35,7 +35,7 @@ This will return every line in the file that contains the word "the".
 history
 ```
 
-```
+```out
 1  pwd
 2  ls
 3  cd Documents/
@@ -60,7 +60,7 @@ and in which order we ran them.
 history | grep "ls"
 ```
 
-```
+```out
 2  ls
 5  cd ls -F -a
 7  history | grep "ls"
@@ -98,7 +98,7 @@ before printing the remaining three lines to the screen.
 l
 ```
 
-```
+```out
 l: command not found
 ```
 
@@ -107,8 +107,7 @@ alias l="ls -aFltr"
 l
 ```
 
-```
-joel@lemur:~/Documents/notes$ l
+```out
 total 12
 -rw-rw-r-- 1 joel joel   53 Jun 20 08:47 note_2022-06-22.md
 drwxr-xr-x 4 joel joel 4096 Jun 20 11:45 ../
@@ -144,11 +143,11 @@ If we instead type `alias l="ls -aFltr"`
 
 ## Reading the manual
 
-```
+```sh
 man ls
 ```
 
-```
+```out
 LS(1)                                                    User Commands
  
 NAME
