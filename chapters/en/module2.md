@@ -153,11 +153,11 @@ People from around the world volunteer their time and expertise to answer questi
 
 </exercise>
 
-<exercise id="5" title="Advanced shell" type="slides,video">
+<exercise id="7" title="Intermediate shell topics" type="slides,video">
 <slides source="module2/module2_07" shot="1" start="26:3200" end="40:07"></slides>
 </exercise>
 
-<exercise id="7" title="What Did We Just Learn?" type="slides, video">
+<exercise id="9" title="What Did We Just Learn?" type="slides, video">
 <slides source="module2/module2_end" shot="0" start="04:37" end="05:35">
 </slides>
 </exercise>

@@ -1,6 +1,6 @@
 ---
-type: slides
 title: 'module1_01'
+type: slides
 ---
 
 <head>
@@ -131,9 +131,15 @@ Let's see how to do that next!
 
 ## Your first words
 
+The default prompt character:
+
 ```sh
 $
 ```
+
+<br>
+
+Typing in a command and pressing enter to run it:
 
 ```sh
 whoami
@@ -142,6 +148,8 @@ whoami
 ```out
 username
 ```
+
+<br>
 
 ```sh
 pwd
@@ -156,7 +164,7 @@ Our first shell commands will let us explore our folders and files,
 and will also introduce us to several conventions that most Unix tools follow.
 To start,
 when Bash runs it presents us with a prompt to indicate that it is waiting for us to type something.
-This prompt is a simple dollar sign by default.
+This prompt is a simple dollar sign by default (`$`).
 However,
 different shells may use a different symbol:
 in particular,

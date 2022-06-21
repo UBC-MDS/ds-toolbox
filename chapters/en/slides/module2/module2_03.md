@@ -1,4 +1,5 @@
 ---
+title: 'module1_03'
 type: slides
 ---
 
@@ -21,6 +22,8 @@ Downloads/    Music/
 Documents/    todo.txt
 Pictures/     my_program*
 ```
+
+<br>
 
 ```sh
 ls -F Documents
@@ -108,7 +111,7 @@ cd username
 ```
 
 ```out
-cd: amira: No such file or directory
+cd: username: No such file or directory
 ```
 
 <br>
@@ -197,12 +200,24 @@ back to out home directory.
 
 ```sh
 cd ~/Documents
+pwd
 ```
+
+```out
+/home/username/Documents
+```
+
+<br>
 
 ```sh
 # These two commands both return you to the home directory
 cd ~
 cd
+pwd
+```
+
+```out
+/home/username
 ```
 
 

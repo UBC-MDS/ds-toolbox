@@ -76,7 +76,7 @@ Let's move on to the next slide to see how it looks when we are editing file in 
 
 ## Editing a file in VS Code
 
-<img src='/module2/edit-file-vscode.png' width="50%" alt="How to edit a file in VS Code"/>
+<img src='/module2/edit-file-vscode.png' width="80%" alt="How to edit a file in VS Code"/>
 
 Notes:
 This is what it looks like to edit a text file in VS Code.
