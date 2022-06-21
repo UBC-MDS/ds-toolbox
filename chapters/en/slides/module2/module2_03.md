@@ -12,11 +12,11 @@ we will see how we can use the shell to interact with
 ## Moving around in the shell
 
 ```sh
-# LiSt content
+# LiSt directory contents
 ls -F
 ```
 
-```
+```out
 Downloads/    Music/
 Documents/    todo.txt
 Pictures/     my_program*
@@ -26,7 +26,7 @@ Pictures/     my_program*
 ls -F Documents
 ```
 
-```
+```out
 my-document.pdf
 another-folder/
 ```
@@ -50,7 +50,9 @@ Documents/
 
 **Absolute path**
 
-`/home/username/Documents/`
+```
+/home/username/Documents/
+```
 
 Notes:
 Note that we can write paths in two separate ways.
@@ -74,13 +76,10 @@ whereas using relative paths makes it easier to work with collaborators across m
 ```sh
 # Change Directory
 cd Documents
-```
-
-```sh
 pwd
 ```
 
-```
+```out
 /home/username/Documents/
 ```
 
@@ -108,16 +107,18 @@ to print the **absolute** path to the current directory.
 cd username
 ```
 
-```
+```out
 cd: amira: No such file or directory
 ```
+
+<br>
 
 ```sh
 cd ..
 pwd
 ```
 
-```
+```out
 /home/username
 ```
 
@@ -141,7 +142,7 @@ which is often called the "parent" directory of the current directory.
 ls -F -a
 ```
 
-```
+```out
 ./             Downloads/    Music/
 ../            Documents/    todo.txt
 .hidden-file   Pictures/     my_program*
@@ -170,6 +171,8 @@ this stands for the current directory.
 # Navigate two folders down
 cd Documents/another-folder
 ```
+
+<br>
 
 ```sh
 # Navigate two folders up
