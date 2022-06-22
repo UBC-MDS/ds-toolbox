@@ -30,7 +30,7 @@ we want to give some background to the idea of computing.
 
 ## What is a computer
 
-<img src='/module2/wires-computers-eniax-1946.png' width="50%" alt="A few of the world's most prominent programmers of the time computing ballistic trajectories on the ENIAC during the second world war."/>
+<img src='/module2/wires-computers-eniac-1946.png' width="50%" alt="A few of the world's most prominent programmers of the time computing ballistic trajectories on the ENIAC during the second world war."/>
 
 A few of the world's most prominent programmers of the time computing ballistic trajectories on the ENIAC during the second world war.
 
@@ -56,10 +56,12 @@ and for computers to interpret them.
 
 ## Text-based communication
 
-Selecting open from the file menu
-<img src='/module2/file-open-menu.png' width="50%" alt="Selecting open from the file menu"/>
+Open a file from a graphical menu:
 
-Opening a file via a text based interface could look like this
+<img src='/module2/file-open-menu.png' width="30%" alt="Selecting open from the file menu"/>
+
+Opening a file via a text based interface:
+
 ```
 file.open('filename.csv')
 ```
