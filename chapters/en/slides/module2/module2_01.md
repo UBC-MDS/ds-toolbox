@@ -141,7 +141,7 @@ $
 
 <br>
 
-Typing in a command and pressing enter to run it:
+Typing in the `whoami` command for showing your username and pressing enter to run it:
 
 ```sh
 whoami
@@ -152,6 +152,8 @@ username
 ```
 
 <br>
+
+The `pwd` command stands for Print Wording Directory.
 
 ```sh
 pwd
