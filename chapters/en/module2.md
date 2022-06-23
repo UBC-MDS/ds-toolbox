@@ -112,8 +112,6 @@ Which of the following is True?
 
 </opt>
 
-</opt>
-
 <opt text="<code>~</code> is a shortcut for the parent directory.">
 
 `~` is a shortcut for the *user's home* directory.
@@ -134,8 +132,6 @@ The <code>-F</code> option flag adds a suffix decoration character to the output
 <opt text="<code>ls -Fa </code>">
 
 While this command would list the hidden files, the <code>-F</code> flag is not required.
-
-</opt>
 
 </opt>
 
@@ -195,7 +191,7 @@ This command would move a file from the current directory to the parent director
 
 <opt text="<code>mv Documents/agenda.txt .</code>">
 
-This command would move a file from a directory called `Document` that is under the current directory. The parent directory is above the current directory.
+This command would move a file from a directory called `Documents` that is under the current directory. The parent directory is above the current directory.
 
 </opt>
 
@@ -254,7 +250,7 @@ There is no `search` command in the shell.
 What is the purpose of a pipe (`|`) in the shell?
 
 <choice id="2">
-<opt text="A pipe allow you to save multiple commands and then execute them all at once.">
+<opt text="A pipe allow you to save multiple commands and then execute them all at once">
 
 This is not quite what a pipe does.
 
@@ -267,7 +263,7 @@ A pipe works between commands, not between files.
 
 </opt>
 
-<opt text='A pipe send the output from one command to the next command' correct="true">
+<opt text='A pipe send the output from one command to another command' correct="true">
 
 </opt>
 
