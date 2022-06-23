@@ -21,7 +21,7 @@ id: 1
 **True or False**       
 *Using a text-based interface such as a shell to communicate with your computer is always better than using a graphical interface.*
 
-<choice id="3" >
+<choice id="1" >
 <opt text="True">
 
 While text-based interfaces having many advantages over graphical shells, they are not always the right tool for the job.
@@ -38,7 +38,7 @@ Text-based interfaces have many advantages over graphical shells, but they are n
 
 What does the `ls` command do?
 
-<choice id="1" >
+<choice id="2" >
 <opt text="Lists the name of the current working directory">
 
 </opt>
@@ -55,12 +55,12 @@ What does the `ls` command do?
 
 How do you pass an option to <code>ls</code> which tells is to decorate the output with a suffix based on file type?
 
-<choice id="2" >
-<opt text="ls -f">
+<choice id="3" >
+<opt text="<code>ls -f</code>">
 
 </opt>
 
-<opt text="ls --f">
+<opt text="<code>ls --f</code>">
 
 </opt>
 
@@ -68,7 +68,7 @@ How do you pass an option to <code>ls</code> which tells is to decorate the outp
 
 </opt>
 
-<opt text="`ls --F`">
+<opt text="<code>ls --F</code>">
 
 </opt>
 
@@ -101,7 +101,7 @@ An absolute path always starts with a `/` (or a drive letter on Windows, e.g. `C
 
 Which of the following is True?
 
-<choice id="1" >
+<choice id="2" >
 <opt text="<code>.</code> is a shortcut for the parent directory.">
 
 `.` is a shortcut for the *current* directory.
@@ -124,7 +124,7 @@ Which of the following is True?
 
 How do you list all files in a directory, including hidden ones?
 
-<choice id="1" >
+<choice id="3" >
 <opt text="<code>ls -F</code>">
 
 The <code>-F</code> option flag adds a suffix decoration character to the output to indicate the file type.
@@ -150,6 +150,8 @@ While this command would list the hidden files, the <code>-F</code> flag is not 
 </opt>
 
 </choice>
+
+</exercise>
 
 <exercise id="5" title="Moving, copying, and deleting files" type="slides,video">
 <slides source="module2/module2_05" shot="1" start="26:3200" end="40:07"></slides>
@@ -180,7 +182,7 @@ That would show the last few lines of the file, not the first few.
 
 How would you move the file `agenda.txt` from the parent directory `Documents` to your current directory `meeting-notes`?
 
-<choice id="1">
+<choice id="2">
 <opt text="<code>mv ./agenda.txt ..</code>">
 
 This command would move a file from the current directory to the parent directory.
@@ -201,7 +203,7 @@ This command would move a file from a directory called `Document` that is under 
 
 Which of the following files would be removed if we type `rm not*`?
 
-<choice id="1">
+<choice id="3">
 <opt text="<code>no.txt</code>">
 
 The file needs to start with `not`.
@@ -219,6 +221,8 @@ The file needs to start with `not`.
 </opt>
 
 </choice>
+
+</exercise>
 
 <exercise id="7" title="Intermediate shell topics" type="slides,video">
 <slides source="module2/module2_07" shot="1" start="26:3200" end="40:07"></slides>
@@ -269,6 +273,7 @@ A pipe works between commands, not between files.
 
 </choice>
 
+</exercise>
 
 <exercise id="9" title="What Did We Just Learn?" type="slides, video">
 <slides source="module2/module2_end" shot="0" start="04:37" end="05:35">
