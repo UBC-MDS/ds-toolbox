@@ -30,7 +30,7 @@ IN PROGRESS
 </choice>
 </exercise>
 
-<exercise id='3' title="merge branches"  type='slides, video'>
+<exercise id='3' title="How to create a branch?"  type='slides, video'>
 <slides source='module5/module5_02' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
@@ -47,7 +47,7 @@ IN PROGRESS
 </choice>
 </exercise>
 
-<exercise id='5' title="forks"  type='slides, video'>
+<exercise id='5' title="Merging branches"  type='slides, video'>
 <slides source='module5/module5_03' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
@@ -66,7 +66,7 @@ How you can check locally if you are working in a repo clone from the original o
 </choice>
 </exercise>
 
-<exercise id='7' title='sync your local and origin remote' type='slides, video'>
+<exercise id='7' title='Forks' type='slides, video'>
 <slides source='module5/module5_04' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
@@ -89,11 +89,11 @@ In which cases is better you should work on a fork and or a branch?
 </choice>
 </exercise>
 
-<exercise id='9' title='git reset'  type='slides, video'>
+<exercise id='9' title='Creating pull requests'  type='slides, video'>
 <slides source='module5/module5_05' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
- <exercise id='10' title='git reset'>
+ <exercise id='10' title='Creating pull requests'>
 
 How is different the command `git reset` from `git restore`?
 
