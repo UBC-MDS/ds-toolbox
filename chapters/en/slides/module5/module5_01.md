@@ -6,15 +6,7 @@ title: 'module5_01'
 # Branches, forks, and streams... Welcome to the Git nature walk!
 
 
----
 
-# Collaboration
-
-<center>
-
-<img src='/module5/quote.png' width="100%" alt="404 image" />
-
-<center/>
 
 
 ---
@@ -24,7 +16,7 @@ title: 'module5_01'
 
 <center>
 
-<img src='/module5/branches-house-analogy.png' width="85%" alt="404 image" />
+<img src='/module5/branches-house-analogy.jpg' width="85%" alt="404 image" />
 
 <center/>
 

@@ -34,7 +34,7 @@ IN PROGRESS
 <slides source='module5/module5_02' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
-<exercise id='4' title='merge branches'>
+<exercise id='4' title='branches'>
 
 What command have to use to merge branches?
 IN PROGRESS
@@ -51,7 +51,7 @@ IN PROGRESS
 <slides source='module5/module5_03' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
-<exercise id='6' title='fork'>
+<exercise id='6' title='merging branches'>
 
 How you can check locally if you are working in a repo clone from the original one or from your fork?
 
@@ -66,11 +66,11 @@ How you can check locally if you are working in a repo clone from the original o
 </choice>
 </exercise>
 
-<exercise id='7' title='Forks' type='slides, video'>
+<exercise id='7' title='collaboration' type='slides, video'>
 <slides source='module5/module5_04' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
-<exercise id='8' title='sync your local and origin remote (full workflow)'>
+<exercise id='8' title='collab'>
 
 In which cases is better you should work on a fork and or a branch?
 
@@ -89,8 +89,32 @@ In which cases is better you should work on a fork and or a branch?
 </choice>
 </exercise>
 
-<exercise id='9' title='Creating pull requests'  type='slides, video'>
+<exercise id='7' title='forks' type='slides, video'>
 <slides source='module5/module5_05' shot='0' start='3:42' end='4:35'> </slides>
+</exercise>
+
+<exercise id='8' title='forks'>
+
+In which cases is better you should work on a fork and or a branch?
+
+(There is a similar question in 521 q)
+
+<choice>
+<opt text='x' >
+</opt>
+<opt text='x'>
+</opt>
+<opt text='x' correct='true'>
+</opt>
+<opt text='x'>
+</opt>
+
+</choice>
+</exercise>
+
+
+<exercise id='9' title='Creating pull requests'  type='slides, video'>
+<slides source='module5/module5_06' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
  <exercise id='10' title='Creating pull requests'>
