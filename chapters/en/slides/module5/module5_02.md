@@ -89,8 +89,6 @@ Notes: This shows how our branches are related! You might think this is a lot to
 
 ---
 
----
-
 # Seeing how branches are related
 ### In VS Code
 
