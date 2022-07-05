@@ -21,14 +21,20 @@ title: 'module5_01'
 <center/>
 
 
-Notes: Branches allow you to separate work that is happening on the main/main branch of the repo from new features that you are developing. This is beneficial since you don't want the repository's default branch to be updated with every commit of a half-finished feature. When features are completed, their branches will be merged into the main branch, often through a "pull request" where code is reviewed before it is merged. The separation of features from the main branch facilitates parallel development where progress can be made on multiple independent features simultaneously.
+Notes:
 
-To illustrate feature-based development with a practical example we can use the construction of a house. First, you need to build the foundation. Since everything depends on the foundation being built, this would be developed on the main branch. When the foundation is finished the construction of other parts of the house that don't depend on each other could take place in parallel, e.g. some contributors might start working on the walls and others on the floor. When either of these features is finished, it can be added back to the house (merged into main). When depicted graphically, this process would look something like this (each dot is a commit, see the video for details).
+It is time to learn about branches! 
+
+**You can consider a branch as a copy of the code in the repository from a particular commit.**. This is equivalent to say that you can take a snapshot of your work at a particular point and continue developing there independently of your principal changes in the `main` branch.. 
+This is beneficial since you don't want the repository's default branch to be updated with every commit of a half-finished feature. When features are completed, their branches will be merged into the `main` branch, often through a "pull request" where code is reviewed before it is merged. The separation of features from the main branch facilitates parallel development where progress can be made on multiple independent features simultaneously.
+
+To illustrate feature-based development with a practical example we can use the construction of a house. First, you need to build the foundation. Since everything depends on the foundation being built, this would be developed on the `main` branch. When the foundation is finished the construction of other parts of the house that don't depend on each other could take place in parallel, e.g. some contributors might start working on the walls and others on the floor. When either of these features is finished, it can be added back to the house (what would be similar to merged into `main`). When depicted graphically, this process would look something like this (each dot in the image represents a commit).
 
 ---
 
 # Branches
 
+When we initiate a repository by default we start working on the `main` branch, but we can be working in paralell in other features.
 
 <center>
 
@@ -37,60 +43,87 @@ To illustrate feature-based development with a practical example we can use the 
 <center/>
 
 
+Notes:  In the image we can see that two branches were created from `main`. The first snapshot was taken after the second commit to incude there the trained model. The second branch was initiated in the third commit to fix one of the exploratory analysis plots. At the end we merge all these branches to `main` so the isolated modifications are included in our principal source of code.
 
+When you should open a new branch? We will talk about it with more detail soon, but thinking that each change that can break the original code is potentially a good feature to start workin in a new branch.
+
+Note that in some old repositories the `main` branch could be called `master`.
 
 
 ---
-# How branches show up in the log output
+# How branches show up in the log output (JupyterLab)
+
+<center>
+
+<img src='/module5/create_branch.png' width="85%" alt="404 image" />
+
+<center/>
+
+Notes: TO create a branch in JupyterLab you have to go to **Current Branch (tab) > Branches > New branch** and then write the name of the branch you want there.
+
+You can create the branch from `main` or from `origin/HEAD` and `origin/main`. We already know that `main` is the default branch, but what about `origin` and `HEAD`? Let's review some concepts:
+
+* `main` is your default local branch.
+* `HEAD` is where you currently are (in this case, on the `main` branch)
+* `origin` is a nickname for your remote repo on GitHub (instead of showing the full URL), so `origin/main` is the `main` branch on your GitHub repo.
+   You don't need to care about `origin/HEAD`, it just point to the default remote branch, which will always be `main` unless you mess around with the settings on the GitHub webpage.
 
 
-```out
-0d5a6f7 (HEAD -> main, origin/main, origin/HEAD) Initial commit
-```
-
-Notes: To practice working with branches in git, let's create a new repo with your GitHub.ubc.ca account, initialize it with README and clone it to your computer.
-
-`cd` to the folder you just cloned, and run `git log --oneline`. You will see something like what you can see in the slide. 
-
-Now that you know what branches are, we can finally make sense of words in the parenthesis!
+⚠️ We are adding a new synonim for a GitHub repository. We can use `remote` as a way to mention GitHub in general, now we can refer specifically to the GitHub repository we are workin on as `origin`.
 
 ---
+# How branches show up in the log output (terminal)
 
-# How branches show up in the log output
+<center>
 
-```out
-0d5a6f7 (HEAD -> main, origin/main, origin/HEAD) Initial commit
-```
+<img src='/module5/terminal_branch.png' width="85%" alt="404 image" />
+
+<center/>
+
 
 Notes: 
 
-* `main` is your default local branch. master default branch has been renamed to main recently. You will still find master branch as the default branch in many repos.
-* `HEAD` is where you currently (on the main branch)
-* `origin` is a nickname for your remote repo on GitHub (instead of showing the full URL), so origin/main is the main branch on your GitHub repo.
-        You don't need to care about `origin/HEAD`, it just point to the default remote branch, which will always be main unless you mess around with the settings on the GitHub webpage.
+You can see the `origin/HEAD`, `origin/main` and `main` displayed in the terminal when you check the history of your project, in the example with `git log --oneline`.
+
+In JupyterLab you can see this information as labels under the tab **Changes**.
+
+🙌
+
+To practice working with branches, let's try adding a commit to one of your example repositories and check what happens in JupyterLab (tab Changes) and with the command line (with the command `git log --oneline`):
+1. Before and after doing a commit.
+2. Before and after pushing to the remote.
+
+
 
 ---
 
-# How branches show up in the log output
+# How branches show up in the log output (terminal)
 
+<center>
 
+<img src='/module5/branches-head.png' width="85%" alt="404 image" />
 
-```
-682306d (HEAD -> main) Add a line to the readme
-0d5a6f7 Initial commit (origin/main, origin/HEAD)
-```
+<center/>
 
 Notes: 
 
-Now let's see what happens when we make a commit locally. edit your README to append one more line of your choice, then add and commit it.
 
-run `git log --oneline`
+Now let's see what happens when we make a commit locally. 
 
-As expected, only the reference to where we are currently (HEAD) and the local main branch moved, because we have not pushed our changes to GitHub. Now do git push and the GitHub main branch will be updated with the latest commit:
+1. Edit your README to append one more line of your choice, then add and commit it.
+
+2. Run `git log --oneline`
+
+As expected, only the reference to where we are currently (HEAD) and the local main branch moved, because we have not pushed our changes to GitHub (`origin`). If you do git push, the GitHub main branch will be updated with the latest commit.
+
 
 ---
 
 
+# Let's apply what we learned!
 
 
----
+
+
+
+

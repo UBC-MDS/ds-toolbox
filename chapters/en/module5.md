@@ -17,17 +17,75 @@ id: 5
 
 <exercise id='2' title="Branches">
 
-What command have to use to create a new branch?
-IN PROGRESS
+What of this names refer to the default branch in Git/GitHub?
 
 <choice>
-<opt text='git switch c -new' correct='true'>
+<opt text='<code> master </code>'>
+Right, but there is also another correct option.
 </opt>
-<opt text='x'>
+<opt text='<code> HEAD </code>'>
+<code> HEAD </code> is providing valuable information to the user when checking the project history. Specifically will point to the last commit in the origin and in the local repository.
 </opt>
-<opt text='x'>
+<opt text='<code> main </code>'>
+Right, but there is also another correct option.
+</opt>
+<opt text='<code> origin </code>'>
+<code> origin </code> is referring to the remote GitHub repository.
+</opt>
+<opt text='2, 3 and 4 are correct'>
+<code> main </code>, <code> origin </code> and <code> HEAD </code> are concepts that provide valuable information to the user when checking the project history, but 2 of them not necessary refer to the default branch.
+</opt>
+<opt text='1 and 3 are correct' correct='true'>
+<code> master </code> was the old name for the <code> main </code> branch. You still will find repositories you can contribute to that uses <code> master </code> as the default branch.
+</opt>
+<opt text='2 and 3 are correct' >
+Only one of this options is correct.
 </opt>
 </choice>
+
+When do you need to open a new branch?
+
+<choice>
+<opt text='It is the first thing you should do after you start a project. You open a branch for all the features you are planning to add to your code' >
+You can not predict when you will have a bug to fix. Also, remember that you will open a branch from the stage your project currently is. Are you sure that would have sense to open all of them at the beggining of the project?   
+</opt>
+<opt text='When you want to make a change that can break the code in the <code> main </code> branch'>
+Right, but there is also another correct option.
+</opt>
+<opt text='You can create a branch when you decide to add a new feature'>
+Right, but there is also another correct option.
+</opt>
+<opt text='You can create a branch to fix a bug, and then merge it to <code> main </code> '>
+Right, but there is also another correct option.
+</opt>
+<opt text='All are correct '>
+Remember that you will open a branch from the stage your project currently is. Are you sure that would have sense to open all of them at the beggining of the project?   
+</opt>
+<opt text='2, 3 and 4 are correct' correct='true'>
+</opt>
+</choice>
+
+What of this expressions is incorrect?
+
+<choice>
+<opt text='I will push to the origin' >
+</opt>
+<opt text='When you want to make a change that can break the code in the <code> main </code> branch'>
+Right, but there is also another correct option.
+</opt>
+<opt text='You can create a branch when you decide to add a new feature'>
+Right, but there is also another correct option.
+</opt>
+<opt text='You can create a branch to fix a bug, and then merge it to <code> main </code> '>
+Right, but there is also another correct option.
+</opt>
+<opt text='All are correct'>
+Remember that you will open a branch from the stage your project currently is. Are you sure that would have sense to open all of them at the beggining of the project?   
+</opt>
+<opt text='2, 3 and 4 are correct' correct='true'>
+</opt>
+</choice>
+
 </exercise>
 
 <exercise id='3' title="How to create a branch?"  type='slides, video'>
