@@ -3,243 +3,94 @@ type: slides
 title: 'module5_04'
 ---
 
-# Collaborative work with GitHub
 
+# Creating a pull request
 
 ---
 
-# Let's work together!
+# When merging branches goes social
 
+
+> "When I first started we all pushed to one branch, but the problem is you push and nobody knows what changes are going through and there is no chance for a review. Our current system is that you don’t make any changes without submitting a **pull request**[...]and then one or more members will review it and you need one thumbs up from another team member to merge it, otherwise it can’t go in.”
+
+
+<a href="http://thesegalgroup.org/wp-content/uploads/2014/04/code-centric.pdf">Kalliamvakou, E. (2014). The Code-Centric Collaboration Perspective: Evidence from GitHub.</a>
+
+
+
+Notes: Pull requests are vital pieces for intra-team communication and also a necessary step to ensure the quality of the code.
+
+One thing that we did not do in the previous section was to upload our feature branch to GitHub. Instead, we finished the development of this branch locally and merged it into our `main` branch  using JupyterLab GUI or the command `git merge`. If we would have worked on a team of people, it would have been good practice to have first pushed the branch to GitHub, and then created a pull request to let the other people on the team review the code and suggested any changes before merging it in. 
+
+---
+
+# Creating a pull request (GitHub)
 
 <center>
 
-<img src='/module5/quote.jpg' width="80%" alt="404 image" />
+<img src='/module5/PR.png' width="80%" alt="404 image" />
 
 <center/>
 
-Notes: Git and GitHub allows collaboration with others . 
+
+Notes: To create a pull request, you click the green bottom "Compare and pull request". In the new page, add a message to describe the changes you have made, scroll down to review the changed files, and the click the green button that reads "Create pull request". 
 
 ---
 
+# Creating a pull request (GitHub)
 
-# Collaborative work 
+<center>
 
-There are 2 strategies we can use to work with others:
+<img src='/module5/PR-2.png' width="80%" alt="404 image" />
 
-1. **Branching**
-
-2. **Forks**
-
+<center/>
 
 
-Notes: 
-There are two major ways to work in a collaborative basis using Git and GitHub: 
+Notes: As general rule you are going to be doing pull requests to the `main` branch, but Github allows you to select the branches to merge in case you would like to select another one.
 
-1. Exchanging with other colleagues in a reporsitory where all of you can access through an strategy called **branching**.
-
-If you start a new repository with some coworkers and you add them as collaborators, you can avoid this step and directly work using branching. This means that all the contributors can create branches from the main branch. If you think in the analogy we worked in the previous slides, each contributor could be able to create one of more branches with their part of the house (or piece of code / text) that then they will merge to the main project.  
-
-
-2. Contributing to a repository that you don't have access using a GitHub tool called **fork**.
-
-
-On the other hand, the use of forks is more common if you want to contribute to open source projects or public online repositories which you don't have write access. 
-As an example imagine that you want to contribute to this [multilingual glossary for computing and data science terms](https://glosario.carpentries.org/) created by The Carpentries, an inclusive community willing to teach data and coding skills. If you explore the GitHub repo of the project (https://github.com/carpentries/glosario) you will see a file called `CONTRIBUTING.md` where it is explained how someone can add new terms to the glossary. In general, when you want to contribute to a public repository as this one, you will have to **fork the repository** first. You will create a copy in your GitHub account of the repository at that moment.
-
-Even if 1 and 2 are very different ways of work,  the most common practice before accepting contributions to the `main` branch not matter the strategy you are using involves to open a **pull request** with the proposed changes to the `main` branch and **ask for review** to someone part of the project before accepting those changes.
-
-Now will learn with more detail both strategies and finish this chapter with 
-
-
-
+Once you have open a pull request you can continue to add commits pushing to the branch you use to iniciate it. This means that you can open the pull request before finishing the work. Anyway, opening a pull request is a way to socialize that you are preparing changes to merge in `main` (or other branch) that will need review. These commits will appear in chronological order.
 
 
 ---
-# Collaborative work 
+# Creating a pull request (GitHub)
 
-There are 2 strategies we can use to work with others:
+<center>
 
-1. <mark><b> Branching </b></mark>
+<img src='/module5/PR3.png' width="80%" alt="404 image" />
+
+<center/>
+
+Notes:
+
+The next step is for the upstream repo maintainers to review your work and merge it in if they approve it. You have the option of assigning someone to a pull request and/or designating the parson as reviewer.
+
  
-2. **Forks**
+- **Reviewers**: You can choose anyone who can help from the list of prior authors that GitHub will offer as reviewers for that code. A review request will be sent to the reviewers. GitHub will automatically suggest you as reviewers past authors of that code (if existent), but you can select anyone. The reviewers will receive a review request. Later, you will obtain their final approval and feedback once they completed it.
 
+- **Assign**: Assigning someone to the pull request is less strict, basically you can assign anyone that you want to link with the pull request for any reason. Good reasons to assign someone to a project could be that for  merging the pull request you prefer someone different from the reviewer and/or that you prefer assigning someone else (you can even assign yourself!) to solve the review issues opened.
 
+If you are working with a team probably you will define how to designate reviewers and assign different team members in relation to your workflow.
 
-Notes: Let's start with branching!
+Other useful thing that you can do it is to include **labels**, they can help you to easily classify what your pull request is solving/adding. All the open pull request will be shown in the tab **Pull requests** of the repository.
 
-
-
----
-
-# Giving collaborators access to your project
-
-The “Invite a collaborator” button on the GitHub web interface. 
-<center>
-
-<img src='/module5/add-collab-1.png' width="80%" alt="404 image" />
-
-<center/>
-
-
-
-Notes: As mentioned earlier, GitHub allows you to control who has access to your project. The default of both public and private projects are that only the person who created the GitHub repository has permissions to create, edit and delete files (write access). To give your collaborators write access to the projects, navigate to the “Settings” tab
+You can reference this pull request when typing Markdown in a **GitHub issues** by typing # followed by the number of the PR, e.g. "Please see PR #1 for a fix to this issue". In the body of the message you type when opening the pull request, you can also indicate if it is fixing a currently open issue by typing /close #1 to close issue number 1 (pull requets and issues use the same numbering system, so if there is already an open issue, the first PR would be get the number 2).
 
 
 
 ---
-
-# Giving collaborators access to your project
-
-<center>
-
-<img src='/module5/add-collab-2.png' width="80%" alt="404 image" />
-
-<center/>
-
-Notes: Then click “Manage access” and type in the collaborator’s GitHub username or email, and select their name when it appears.
-
-After this, you should see your newly added collaborator listed under the “Manage access” tab. They should receive an email invitation to join the GitHub repository as a collaborator. **They need to accept this invitation to enable write access**.
-
-
----
-
-# Branch protection rules
-
-Under "Branch name pattern", type the branch name or pattern you want to protect. 
+# Pull request successfully merged and closed (GitHub)
 
 <center>
 
-<img src='/module5/add-branch-protection-rule.png' width="80%" alt="404 image" />
-
-<center/>
-
-Notes: Now that all the collaborators have access they can clone the repository and create a branch using a meaningful name with the feature they are willing to work on. Merging the individual branches without socializing it to the other team members could create merging problems. To avoid that, you can set a [branch protection rule](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/managing-a-branch-protection-rule) in the repository that requires a pull request before merging. We will talk with detail about pull requests later on, but for now you can think about them as specific notifications you will receive when someone is trying to modify the `main` branch. Pull request should be approved before merging in general by other team members.
-
-🙌
-To add a branch protection rule you should go to **Settings > Code and Automation (sidebar) > Branch protection rules** and click in **"Add rule"** in your repository. 
-
----
-
-# Branch protection rules
-
-
-
-<center>
-
-<img src='/module5/PR-review-required-updated.png' width="80%" alt="404 image" />
+<img src='/module5/PR-delete-branch.png' width="80%" alt="404 image" />
 
 <center/>
 
 Notes:
-
-🙌
-Under "Branch name pattern", type the branch name or pattern you want to protect. 
-Notice that you can create protect branches different to `main` but we will not cover those cases of use in this tutorial.
-
----
-
-# Branch protection rules
-
-<center>
-
-<img src='/module5/branches-house-analogy-explained.png' width="80%" alt="404 image" />
-
-<center/>
-
-Notes:
-
-If you think in the analogy of the house, protecting the `main` branch would be similar to avoid creating modifications in the structure of the house meanwhile each member is working in different sections. It is not a good idea to modify the foundation of the house at the same time other team members are working in the walls or windows. If there are changes in the house's foundation there could be problems when combining the parts, including the risk of collapsing the house.
-
-In your repository this means that you should be sure that code in `main`, also called the production branch, is high quality code without bugs or other run problems. Each time you accept merging a contribution of another team member in `main` be sure that the code is doing what is expected and it is well documented. This way you will always have stable and well build code that runs propoperly in your `main` branch. This ensures that you are producing code collaboratively in an organized way.
-
-Using branch protection rules is a team desicion that could avoid mistakes of pushing to the `main` branch without notifying your colleagues. If you made only minor edits the team might let you merge these to `main` locally and then push up the updated `main` branch (or even let you not create a branch in the first place).
-
-⚠️ Remember to share with other team members that you have stablish this dynamic of work in the repository
-
-We are ready to start collaborating!
+After you succesfully merge the pull request GitHub gives you the option to delete the branch automatically if you are not going to be working in that feature anymore.
 
 
 ---
 
-# How pull requests look like after you protect the branch
-<center>
 
-<img src='/module5/PR-aprove.png' width="80%" alt="404 image" />
-
-<center/>
-
-Notes: This means that when you are doing a pull request you will need the approval of a team member before can merge your pull request.
-
----
-
-# Branching basic workflow
-
-1. **Clone the project** - To work locally
-2. **Create your branch** - Create code or apply your changes
-3. **Push your changes and create a pull request** - This will create a pull request to be approved by other team member.
-
-*Remember to pull the changes before start working in the repository*
-
-Notes: Giving access to your collaborators to your repository is mandatory to collaborate using branches. Protecting the main branch it is consider a good practice but experienced users that are very familiar with the workflow could not use this at all.
-
-The workflow will be the same that we have learned before, cloning, adding to the staging area, committing the changes and pushing to the repo with the only difference you will have to create a pull request. Merge conflicts could happen and you can use the strategies you have learned in the past chapters.
-
-Before moving forward, we are going to explain other very useful tool that is key when working on GitHub to communicate with other team members or general public exploring your repository: github issues
-
-
----
-
-# Extra: Communicating using GitHub issues
-
-The “Issues” tab on the GitHub web interface
-
-<center>
-
-<img src='/module5/issue-1.png' width="80%" alt="404 image" />
-
-<center/>
-
-Notes: When working on a project in a team, you don’t just want a historical record of who changed what file and when in the project—you also want a record of decisions that were made, ideas that were floated, problems that were identified and addressed, and all other communication surrounding the project. Email and messaging apps are both very popular for general communication, but are not designed for project-specific communication: they both generally do not have facilities for organizing conversations by project subtopics, searching for conversations related to particular bugs or software versions, etc.
-
-
-
-🙌
-To open a GitHub issue, first click on the “Issues” tab 
-
----
-
-# Extra: Communicating using GitHub issues
-
-Dialog boxes and submission button for creating new GitHub issues.
-<center>
-
-<img src='/module5/issue-2.png' width="80%" alt="404 image" />
-
-<center/>
-
-Notes: GitHub issues are an alternative written communication medium to email and messaging apps, and were designed specifically to facilitate project-specific communication. Issues are opened from the “Issues” tab on the project’s GitHub page, and they persist there even after the conversation is over and the issue is closed (in contrast to email, issues are not usually deleted). One issue thread is usually created per topic, and they are easily searchable using GitHub’s search tools. All issues are accessible to all project collaborators, so no one is left out of the conversation. Finally, issues can be set up so that team members get email notifications when a new issue is created or a new post is made in an issue thread. Replying to issues from email is also possible. Given all of these advantages, we highly recommend the use of issues for project-related communication.
-
-
-🙌
-To open a GitHub issue, first click on the “Issues” tab 
-
----
-
-# Extra: Communicating using GitHub issues
-
-The “Closed” issues tab on the GitHub web interface. 
-
-<center>
-
-<img src='/module5/issue-3.png' width="80%" alt="404 image" />
-
-<center/>
-
-🙌
-When a conversation is resolved, you can click “Close issue.” The closed issue can be later viewed by clicking the “Closed” header link in the “Issue” tab
-
-
----
-
-# Let's work together!
-
+# Let's apply what we learned!

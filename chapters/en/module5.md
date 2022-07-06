@@ -1,7 +1,7 @@
 ---
 title: 'Module 5: Branches, forks, and streams… Welcome to the Git nature walk!'
 description:
-  'Course introduction, summary of course learning outcomes and prerequisite validation.' 
+  'Discover how to efficiently collaborate with Git and GitHub by using branches, forks ad pull requests.' 
 prev: ../../module4
 next: ../../module6
 type: chapter
@@ -185,7 +185,7 @@ Once the branch has been merged all the information is combined. If the merge wa
 </opt>
 </choice>
 
-what branches are you merging in this example:
+What branches are you merging in this example:
 
 <code>
 (base) Florencia@DESKTOP-KHE5L35 MINGW64 ~/canadian_languages (fix-app-slider)
@@ -207,24 +207,24 @@ Is <code> canadian-languages </code>  referring to a branch?
 </choice>
 </exercise>
 
-<exercise id='7' title='Pushing branches to the remote: creating pull requests'  type='slides, video'>
+<exercise id='7' title='When merging branches goes social: opening pull requests'  type='slides, video'>
 <slides source='module5/module5_06' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
-<exercise id='8' title='Creating pull requests'>
+<exercise id='8' title='Should we merge our branches?'>
 
 **True or false**
 
-You should be sure when opening a pull request because then you will not be able to include more changes in that one
+You should be sure when opening a pull request because after open it you will not be able to include more changes in that one.
 
- <choice>
- <opt text='True' >
- Try open a pull request and pushing new commits and check what happen!
- </opt>
- <opt text='False' correct='true'>
- You can continue pushing commits to a pull request pushing to the branch you used to create it. You will see the commits as a timeline when you open it on GitHub. Try it!
- </opt>
- </choice>
+<choice>
+<opt text='True' >
+Try open a pull request and pushing new commits and check what happen!
+</opt>
+<opt text='False' correct='true'>
+You can continue pushing commits to a pull request pushing to the branch you used to create it. You will see the commits as a timeline when you open it on GitHub. Try it!
+</opt>
+</choice>
 
 **True or false**
 It is possible to open a pull request locally
@@ -266,7 +266,7 @@ If you have not write access it would be impossible to contribute without forkin
 <opt text='The owner of the repository have set branch protection rules to the <code> main </code>  branch'>
 Even if it is a good practice as avoids that contributors push code directly to the <code> main </code> branch by accident, protecting the branch it is not requested for collaboration. 
 </opt>
-<opt text='You want to use GitHub issues to share problems to solve with your team members or other collaborators' >
+<opt text='You want to use GitHub issues to share with your team members or other collaborators' >
 It is always recommended to use Github issues, it does't matter your collaboration style.
 </opt>
 </choice>

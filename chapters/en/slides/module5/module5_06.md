@@ -3,94 +3,111 @@ type: slides
 title: 'module5_06'
 ---
 
+# Forks
 
-# Creating a pull request
-
----
-
-# When merging branches goes social
-
-
-> "When I first started we all pushed to one branch, but the problem is you push and nobody knows what changes are going through and there is no chance for a review. Our current system is that you don’t make any changes without submitting a **pull request**[...]and then one or more members will review it and you need one thumbs up from another team member to merge it, otherwise it can’t go in.”
-
-
-<a href="http://thesegalgroup.org/wp-content/uploads/2014/04/code-centric.pdf">Kalliamvakou, E. (2014). The Code-Centric Collaboration Perspective: Evidence from GitHub.</a>
-
-
-
-Notes: Pull requests are vital pieces for intra-team communication and also a necessary step to ensure the quality of the code.
-
-One thing that we did not do in the previous section was to upload our feature branch to GitHub. Instead, we finished the development of this branch locally and merged it into our `main` branch  using JupyterLab GUI or the command `git merge`. If we would have worked on a team of people, it would have been good practice to have first pushed the branch to GitHub, and then created a pull request to let the other people on the team review the code and suggested any changes before merging it in. 
-
----
-
-# Creating a pull request (GitHub)
-
-<center>
-
-<img src='/module5/PR.png' width="80%" alt="404 image" />
-
-<center/>
-
-
-Notes: To create a pull request, you click the green bottom "Compare and pull request". In the new page, add a message to describe the changes you have made, scroll down to review the changed files, and the click the green button that reads "Create pull request". 
-
----
-
-# Creating a pull request (GitHub)
-
-<center>
-
-<img src='/module5/PR-2.png' width="80%" alt="404 image" />
-
-<center/>
-
-
-Notes: As general rule you are going to be doing pull requests to the `main` branch, but Github allows you to select the branches to merge in case you would like to select another one.
-
-Once you have open a pull request you can continue to add commits pushing to the branch you use to iniciate it. This means that you can open the pull request before finishing the work. Anyway, opening a pull request is a way to socialize that you are preparing changes to merge in `main` (or other branch) that will need review. These commits will appear in chronological order.
 
 
 ---
-# Creating a pull request (GitHub)
+# Collaborative work 
 
-<center>
+There are 2 strategies we can use to work with others:
 
-<img src='/module5/PR3.png' width="80%" alt="404 image" />
-
-<center/>
-
-Notes:
-
-The next step is for the upstream repo maintainers to review your work and merge it in if they approve it. You have the option of assigning someone to a pull request and/or designating the parson as reviewer.
-
+1. **Branching** 
  
-- **Reviewers**: You can choose anyone who can help from the list of prior authors that GitHub will offer as reviewers for that code. A review request will be sent to the reviewers. GitHub will automatically suggest you as reviewers past authors of that code (if existent), but you can select anyone. The reviewers will receive a review request. Later, you will obtain their final approval and feedback once they completed it.
-
-- **Assign**: Assigning someone to the pull request is less strict, basically you can assign anyone that you want to link with the pull request for any reason. Good reasons to assign someone to a project could be that for  merging the pull request you prefer someone different from the reviewer and/or that you prefer assigning someone else (you can even assign yourself!) to solve the review issues opened.
-
-If you are working with a team probably you will define how to designate reviewers and assign different team members in relation to your workflow.
-
-Other useful thing that you can do it is to include **labels**, they can help you to easily classify what your pull request is solving/adding. All the open pull request will be shown in the tab **Pull requests** of the repository.
-
-You can reference this pull request when typing Markdown in a **GitHub issues** by typing # followed by the number of the PR, e.g. "Please see PR #1 for a fix to this issue". In the body of the message you type when opening the pull request, you can also indicate if it is fixing a currently open issue by typing /close #1 to close issue number 1 (pull requets and issues use the same numbering system, so if there is already an open issue, the first PR would be get the number 2).
-
-
+2. <mark><b> Forks </b></mark>
 
 ---
-# Pull request successfully merged and closed (GitHub)
+
+# Forks
+
+
 
 <center>
 
-<img src='/module5/PR-delete-branch.png' width="80%" alt="404 image" />
+<img src='/module5/issue-3.png' width="80%" alt="404 image" />
 
 <center/>
 
-Notes:
-After you succesfully merge the pull request GitHub gives you the option to delete the branch automatically if you are not going to be working in that feature anymore.
+Notes: We have learned that if you create your own repository on GitHub or you are part of a team of people who all have read and write access to a repo, then you can clone it to you computer, make changes and then push them back to this repository (either on a feature branch or on the `main` branch). We called this style of collaboration **branching**.
+
+If you want the code from someone else's repository, where you are not a member or official collaborator, then you can clone it and use it on computer. However, you cannot push your changes back to the GitHub repository because you don't have the write permissions to that repository.
+
+It would still be beneficial for the repository's owners to receive your contributions if you make code modifications and enhance something, without having to grant you full access and running the risk of breaking something. **Instead of working directly on the repository, you can fork someone else's repository and work in your own copy.**
 
 
 ---
 
+# How can I fork a repository?
+
+Go to the GitHub page of the project that you want to fork. In the upper right corner, click the icon that says "fork". That's it! You just forked a repo!
+
+<center>
+
+<img src='/module5/create-fork.png' width="80%" alt="404 image" />
+
+<center/>
+
+
+Notes:
+
+**Forks** are copies of other's repositories on GitHub that you own. You can do anything you want on your fork. If you make improvements, you can send a notification to the owner of the **"upstream"** repository (the one you forked from) and request that they pull the code from your repository (referred to as "origin") into theirs. This is referred to as a "pull request", and includes a review of the code from the maintainers of the upstream repository.
+
+The fork workflow is used in many open source projects where there is often a small team of core maintainers, but contributions from many more users. For example, the JupyterLab project has around 10 members in their team, but more than 300 people have contributed code to the project and almost 2 000 has forked it.
+
+
+---
+
+# Developing on a forked repo
+
+
+<center>
+
+<img src='/module5/fork.png' width="80%" alt="404 image" />
+
+<center/>
+
+Notes: To start developing on a fork, first clone it **(your fork, not the upstream repo)**. It is good practice to always create a branch when you are about to add changes to a fork, and in many projects this is required, so they will not accept a pull request that comes from your `main` branch. This is because it is easier to keep track of branches with descriptive names compared to having all pull request branches names `main`, but coming from different people.
+
+When you are working on a branch you have to push your branch to GitHub and ask for it to be merged via a pull request. Since you don't have write access to the upstream repo, you have to request they the maintainer pull your code (remember that merging is part of what happens during a pull, so this is similar to what we did with branches via git merge, just that the code first needs to be fetched from your forked repo)
+
+---
+
+# Pushing a branch to GitHub (terminal)
+
+```out
+fatal: The current branch lecture-todo has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin new-branch
+
+```
+
+
+Notes: To push a feature branch to GitHub, you can try typing git push, just as when we pushed to the master branch on GitHub It will show you the error message you can see in the slide.
+
+Git is telling you that there is no branch with this name currently on your GitHub repo, so it asks you to be explicit about creating a new branch and which name to give it. One gotcha here is that the word "upstream" is not referring to the GitHub branch you forked from. Instead, it is referring to a branch that will be created on your repo (origin). Technically, this seemingly ambiguous use of the word "upstream" is correct (the repo you forked from is upstream of your remote repo, and the branch on your remote repo is upstream of the branch on your local repo), but it can be confusing that the same name is used so it might help to think of the command above as `git push --set-repo-branch <repo-nickname> <new-branch-name>` instead.
+
+This behavior is rather conservative from Git's side. Almost always, we want the branch on our remote repo to have the same name as the branch on our local repo. If you want this to be the default behavior, you can type `git config --global push.default current`. From now on, you can just type git push even when pushing a new branch to GitHub.
+
+
+---
+
+
+# Keeping your remote (origin) up to date with the upstream remote
+
+
+<center>
+
+<img src='/module5/fetch-upstream.png' width="80%" alt="404 image" />
+
+<center/>
+
+
+Notes:  
+Forking a repo happens via the GitHub web interface, but this is a one time operation. If there are changes made to the upstream repo that you want to sync to your forked repo (origin), you have to first pull them from the upstream remote to your local computer and then push them to your forked remote (origin).
+
+To solve this you can update your forked repository with the button **fetch upstream**. Then you can pull this changes to continue working locally before doing the pull request.
+
+---
 
 # Let's apply what we learned!

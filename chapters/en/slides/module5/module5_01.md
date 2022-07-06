@@ -129,11 +129,11 @@ As expected, only the reference to where we are currently (HEAD) and the local m
 
 <center/>
 
-Notes: Pushing a new branch using JupyterLab is exacly the same as you are 
+Notes: Pushing a new branch using JupyterLab is exacly the same as you are use to, but there is a slight change in the command when you are doing this with the terminal. Instead of `git push` you will have to write:
 
 `git push --set-upstream origin <new-branch-name>`
 
-You shouldn't worry because git will remind you the command in the case you forget to speufy it. 
+You shouldn't worry because git will remind you the command in the case you forget to specify it as you can see in the image. 
 
 
 ---
