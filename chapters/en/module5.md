@@ -191,74 +191,119 @@ what branches are you merging in this example:
 <opt text='No' correct='true'>
 </opt>
 </choice>
-
-
-
 </exercise>
 
-<exercise id='7' title='collaboration' type='slides, video'>
-<slides source='module5/module5_04' shot='0' start='3:42' end='4:35'> </slides>
-</exercise>
-
-<exercise id='8' title='collab'>
-
-In which cases is better you should work on a fork and or a branch?
-
-(There is a similar question in 521 q)
-
-<choice>
-<opt text='x' >
-</opt>
-<opt text='x'>
-</opt>
-<opt text='x' correct='true'>
-</opt>
-<opt text='x'>
-</opt>
-
-</choice>
-</exercise>
-
-<exercise id='7' title='forks' type='slides, video'>
-<slides source='module5/module5_05' shot='0' start='3:42' end='4:35'> </slides>
-</exercise>
-
-<exercise id='8' title='forks'>
-
-In which cases is better you should work on a fork and or a branch?
-
-(There is a similar question in 521 q)
-
-<choice>
-<opt text='x' >
-</opt>
-<opt text='x'>
-</opt>
-<opt text='x' correct='true'>
-</opt>
-<opt text='x'>
-</opt>
-
-</choice>
-</exercise>
-
-
-<exercise id='9' title='Creating pull requests'  type='slides, video'>
+<exercise id='7' title='Pushing branches to the remote: creating pull requests'  type='slides, video'>
 <slides source='module5/module5_06' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
- <exercise id='10' title='Creating pull requests'>
+<exercise id='8' title='Creating pull requests'>
 
-How is different the command `git reset` from `git restore`?
+**True or false**
+
+You should be sure when opening a pull request because then you will not be able to include more changes in that one
 
  <choice>
- <opt text='x' >
+ <opt text='True' >
+ Try open a pull request and pushing new commits and check what happen!
  </opt>
- <opt text='x'>
- </opt>
- <opt text='x'>
- </opt>
- <opt text= x correct='true'>
+ <opt text='False' correct='true'>
+ You can continue pushing commits to a pull request pushing to the branch you used to create it. You will see the commits as a timeline when you open it on GitHub. Try it!
  </opt>
  </choice>
+
+**True or false**
+It is possible to open a pull request locally
+
+<choice>
+<opt text='True' >
+It is possible to ckeck out a pull request locally to solve a merge conflict or test changes before aproving it. https://docs.github.com/es/enterprise-server@3.1/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/checking-out-pull-requests-locally
+</opt>
+<opt text='False' correct='true'>
+You have to enter to your GitHub repository to star a pull request.
+</opt>
+</choice>
+
+How is it different to open a pull request to merging branches? Is it not basically the same?
+
+<choice>
+<opt text='Yes, it is the same, you are merging branches but using GitHub' >
+Even if the final goal of the pull request is to merge your changes with other branch, it is also a way to socialize that you created those changes and also to involve other team members for example as reviewers.
+</opt>
+<opt text='You open a pull request to merge branches when you want to involve your collaborators' correct='true'>
+</opt>
+</choice>
+
+
+
+
  </exercise>
+
+<exercise id='9' title='What is your style of collaboration?' type='slides, video'>
+<slides source='module5/module5_04' shot='0' start='3:42' end='4:35'> </slides>
+</exercise>
+
+<exercise id='10' title='Between braches and forks'>
+
+In which cases branching would be better?
+
+(There is a similar question in 521 q)
+
+<choice>
+<opt text='You have write access to the repository' correct='true'>
+If you have not write access it would be impossible to contribute without forking the repository first.
+</opt>
+<opt text='The owner of the repository have set branch protection rules to the <code> main </code>  branch'>
+Even if it is a good practice as avoids that contributors push code directly to the <code> main </code> branch by accident, protecting the branch it is not requested for collaboration. 
+</opt>
+<opt text='You want to use GitHub issues to share problems to solve with your team members or other collaborators' >
+It is always recommended to use Github issues, it does't matter your collaboration style.
+</opt>
+</choice>
+
+What of these names are good for branches?
+
+<choice>
+<opt text='arman, florencia, joel'>
+Select names of people as names of branches is not really meaningful as it is not given information about what each member of the team is working on.
+</opt>
+<opt text='fix-dockerfile, feature-testing, feature-app-modules' correct='true'>
+There is not only a correct way to do this, you will have to define with your team a rule or follow the criteria of the repository you are contributing.
+</opt>
+<opt text='1616789, 1235348, 1555684' >
+Using only numbers could create confusion when merging the branches. Selectins as branch name the issue id that the branch is trying to solve will seem a logical choice, but it is uninformative and could lead to mistakes.
+</opt>
+</choice>
+</exercise>
+
+<exercise id='11' title='Forks' type='slides, video'>
+<slides source='module5/module5_05' shot='0' start='3:42' end='4:35'> </slides>
+</exercise>
+
+<exercise id='12' title='Forks'>
+
+**True or false**
+
+It is a good practice to start working on a new specific branch before doing a pull request from your forked repository.
+
+<choice>
+<opt text='True' correct='true' >
+Doing the pull request from a specific branch with a meaningful name will provide valuable information to the recipients of the pull request. Also, making changes directly on the `main` branch in general could not be a good idea as it coud break the code.
+</opt>
+<opt text='False'>
+</opt>
+</choice>
+
+**True or false**
+To start working locally in a GitHub repository after forking it you should clone the copy of the repository in your GitHub account.
+
+<choice>
+<opt text='True'  correct='true'>
+</opt>
+<opt text='False'>
+You will clone, pull and push to the forked repository that lives in your GitHub account. The contribution to the initial GitHub repository will be through pul requests from your fork to the initial repository.
+</opt>
+</choice>
+</exercise>
+
+
