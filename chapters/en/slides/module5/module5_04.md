@@ -17,7 +17,7 @@ title: 'module5_04'
 
 <center/>
 
-Notes: One of the most interesting tools you will fins on GitHub . 
+Notes: Git and GitHub allows collaboration with others . 
 
 ---
 
@@ -140,8 +140,6 @@ Notice that you can create protect branches different to `main` but we will not 
 
 # Branch protection rules
 
-
-
 <center>
 
 <img src='/module5/branches-house-analogy-explained.png' width="80%" alt="404 image" />
@@ -153,6 +151,8 @@ Notes:
 If you think in the analogy of the house, protecting the `main` branch would be similar to avoid creating modifications in the structure of the house meanwhile each member is working in different sections. It is not a good idea to modify the foundation of the house at the same time other team members are working in the walls or windows. If there are changes in the house's foundation there could be problems when combining the parts, including the risk of collapsing the house.
 
 In your repository this means that you should be sure that code in `main`, also called the production branch, is high quality code without bugs or other run problems. Each time you accept merging a contribution of another team member in `main` be sure that the code is doing what is expected and it is well documented. This way you will always have stable and well build code that runs propoperly in your `main` branch. This ensures that you are producing code collaboratively in an organized way.
+
+Using branch protection rules is a team desicion that could avoid mistakes of pushing to the `main` branch without notifying your colleagues. If you made only minor edits the team might let you merge these to `main` locally and then push up the updated `main` branch (or even let you not create a branch in the first place).
 
 ⚠️ Remember to share with other team members that you have stablish this dynamic of work in the repository
 

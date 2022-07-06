@@ -128,24 +128,26 @@ The term `origin` refers to the remote repository. If the last change in the rem
 </opt>
 </choice>
 
-*git log --oneline --all --graph*
+After running <code> git log --oneline --all --graph </code> in your repository you get as output the following tree:
 
+<code>
 * a949e61 2020-09-13 (HEAD -> master) Update readme
 | * 0a8dfef 2020-09-13 (lecture-todo) List todo items
 |/
-* 6e69947 2020-09-13 (origin/master, origin/HEAD) Add a line to readme
+* 6e69947 2020-09-13 (origin/master, origin/HEAD) Add license
 * 0d5a6f7 2020-09-13 Initial commit
+</code>
 
 Select the options that are TRUE
 
 <choice>
 <opt text='The most recent commit on GitHub was performed in the master branch'>
-You can recognize the latest commit on GitHub with the label <code> origin/HEAD </code>
+You can recognize the latest commit on GitHub with the label <code> origin/HEAD </code>.
 </opt>
 <opt text='There is a branch called <code> lecture-todo </code> that has not been pushed to GitHub yet '>
 The labels <code> origin/master, origin/HEAD </code> that points the last change in the remote are downstream. This means that a949e61 and 0a8dfef were created after pulling or cloning from GitHub.
 </opt>
-<opt text='The last local change of this repository has associated the commit message "Update readme"' >
+<opt text='The most recent local commit of this repository has associated the message "Update readme"' >
 The last commit is always the one that appears first. <code> HEAD -> master </code>
 </opt>
 <opt text='The commits a949e61 and 0a8dfef exist only in your local computer'>
@@ -174,21 +176,33 @@ Would you delete a branch after merge it?
 
 <choice>
 <opt text='Yes, to avoid having extra copies of the code that you do not need anymore' >
-A branch in Git is a pointer, you are not saving extra information on it. 
+A branch in Git is a pointer, you are not saving an extra copy of the code on it. 
 </opt>
 <opt text='Yes, I am not going to develop more on it' correct='true'>
 </opt>
-<opt text='No, I could be loosing important information' >
-Once the branch has been merged all the information is combined. If the merge was successful no information could be missing.
+<opt text='No, I could be discarding important information' >
+Once the branch has been merged all the information is combined. If the merge was successful no information could be missing deleting the branch.
 </opt>
 </choice>
 
 what branches are you merging in this example:
 
+<code>
+(base) Florencia@DESKTOP-KHE5L35 MINGW64 ~/canadian_languages (fix-app-slider)
+git merge app
+</code>
+
 <choice>
-<opt text='Yes' >
+<opt text='the <code> app </code> branch with the <code> fix-app-slider </code> branch' correct='true'>
 </opt>
-<opt text='No' correct='true'>
+<opt text='the <code> app </code> branch with the <code> main </code> branch'>
+How do you know you are in the <code> main </code> branch? Where you can find which branch you are currently working on?
+</opt>
+<opt text='the <code> fix-app-slider </code> branch with the <code> main </code> branch'>
+How do you know you are in the <code> main </code> branch? Where you can find which branch you are currently working on?
+</opt>
+<opt text='the <code> canadian-languages </code> branch with the <code> app </code> branch'>
+Is <code> canadian-languages </code>  referring to a branch? 
 </opt>
 </choice>
 </exercise>
@@ -233,11 +247,7 @@ Even if the final goal of the pull request is to merge your changes with other b
 <opt text='You open a pull request to merge branches when you want to involve your collaborators' correct='true'>
 </opt>
 </choice>
-
-
-
-
- </exercise>
+</exercise>
 
 <exercise id='9' title='What is your style of collaboration?' type='slides, video'>
 <slides source='module5/module5_04' shot='0' start='3:42' end='4:35'> </slides>
@@ -268,7 +278,7 @@ What of these names are good for branches?
 Select names of people as names of branches is not really meaningful as it is not given information about what each member of the team is working on.
 </opt>
 <opt text='fix-dockerfile, feature-testing, feature-app-modules' correct='true'>
-There is not only a correct way to do this, you will have to define with your team a rule or follow the criteria of the repository you are contributing.
+There is not a unique way to do this, you will have to define with your team a rule or follow the criteria of the repository you are contributing.
 </opt>
 <opt text='1616789, 1235348, 1555684' >
 Using only numbers could create confusion when merging the branches. Selectins as branch name the issue id that the branch is trying to solve will seem a logical choice, but it is uninformative and could lead to mistakes.
@@ -299,6 +309,7 @@ To start working locally in a GitHub repository after forking it you should clon
 
 <choice>
 <opt text='True'  correct='true'>
+You probably don't have write access to the original repository to push modifications directly to it, that is why you have to clone your fork.
 </opt>
 <opt text='False'>
 You will clone, pull and push to the forked repository that lives in your GitHub account. The contribution to the initial GitHub repository will be through pul requests from your fork to the initial repository.

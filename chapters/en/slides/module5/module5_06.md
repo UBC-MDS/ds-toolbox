@@ -8,9 +8,19 @@ title: 'module5_06'
 
 ---
 
-# Creating a pull request
+# When merging branches goes social
 
-Notes: The next step after pushing your local branch to your remote repo, is to request that the upstream repo pulls from your branch into their master branch. To do this, go to the GitHub page of the upstream repo, and GitHub should show you a yellow banner listing any recently pushed branches (your origin repo will also show this banner):
+
+> "When I first started we all pushed to one branch, but the problem is you push and nobody knows what changes are going through and there is no chance for a review. Our current system is that you don’t make any changes without submitting a **pull request**[...]and then one or more members will review it and you need one thumbs up from another team member to merge it, otherwise it can’t go in.”
+
+
+<a href="http://thesegalgroup.org/wp-content/uploads/2014/04/code-centric.pdf">Kalliamvakou, E. (2014). The Code-Centric Collaboration Perspective: Evidence from GitHub.</a>
+
+
+
+Notes: Pull requests are vital pieces for intra-team communication and also a necessary step to ensure the quality of the code.
+
+One thing that we did not do in the previous section was to upload our feature branch to GitHub. Instead, we finished the development of this branch locally and merged it into our `main` branch  using JupyterLab GUI or the command `git merge`. If we would have worked on a team of people, it would have been good practice to have first pushed the branch to GitHub, and then created a pull request to let the other people on the team review the code and suggested any changes before merging it in. 
 
 ---
 
@@ -23,11 +33,7 @@ Notes: The next step after pushing your local branch to your remote repo, is to 
 <center/>
 
 
-
-
-
-
-Notes: To create PR, you click the green bottom "Compare and pull request". In the new page, add a message to describe the changes you have made, scroll down to review the changed files, and the click the green button that reads "Create pull request". If you are working together in a team, you could also designate certain team members to review your work and assign relevant labels, via the right hand side panel.
+Notes: To create a pull request, you click the green bottom "Compare and pull request". In the new page, add a message to describe the changes you have made, scroll down to review the changed files, and the click the green button that reads "Create pull request". 
 
 ---
 
@@ -40,7 +46,11 @@ Notes: To create PR, you click the green bottom "Compare and pull request". In t
 <center/>
 
 
-Notes: As general rule you are going to be doing pull requests to the main branch, but Github allows you to select the branches to merge in case you would like to select another one.
+Notes: As general rule you are going to be doing pull requests to the `main` branch, but Github allows you to select the branches to merge in case you would like to select another one.
+
+Once you have open a pull request you can continue to add commits pushing to the branch you use to iniciate it. This means that you can open the pull request before finishing the work. Anyway, opening a pull request is a way to socialize that you are preparing changes to merge in `main` (or other branch) that will need review. These commits will appear in chronological order.
+
+
 ---
 # Creating a pull request (GitHub)
 
@@ -66,6 +76,7 @@ Other useful thing that you can do it is to include **labels**, they can help yo
 You can reference this pull request when typing Markdown in a **GitHub issues** by typing # followed by the number of the PR, e.g. "Please see PR #1 for a fix to this issue". In the body of the message you type when opening the pull request, you can also indicate if it is fixing a currently open issue by typing /close #1 to close issue number 1 (pull requets and issues use the same numbering system, so if there is already an open issue, the first PR would be get the number 2).
 
 
+
 ---
 # Pull request successfully merged and closed (GitHub)
 
@@ -81,17 +92,5 @@ After you succesfully merge the pull request GitHub gives you the option to dele
 
 ---
 
-# Keeping your remote (origin) up to date with the upstream remote
-
-origin  https://github.ubc.ca/jostblom/fork-demo.git (fetch)
-origin  https://github.ubc.ca/jostblom/fork-demo.git (push)
-
-
-Notes:  
-Forking a repo happens via the GitHub web interface, but this is a one time operation. If there are changes made to the upstream repo that you want to sync to your forked repo (origin), you have to first pull them from the upstream remote to your local computer and then push them to your forked remote (origin).
-
-The first step in this, is to add the remote repo URL to your local repo so that git knows where to pull from. Remember that the forked relationship between the upstream and your forked remote is only available on GitHub; git on your computer does not care whether your repo is a fork or not. Type git remote -v and you should see something like this:
-
----
 
 # Let's apply what we learned!
