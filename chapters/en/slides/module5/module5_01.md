@@ -25,8 +25,8 @@ Notes:
 
 It is time to learn about branches! 
 
-**You can consider a branch as a copy of the code in the repository from a particular commit.**. This is equivalent to say that you can take a snapshot of your work at a particular point and continue developing there independently of your principal changes in the `main` branch.
-This is beneficial since you don't want the repository's default branch to be updated with every commit of a half-finished feature. When features are completed, their branches will be merged into the `main` branch, often through a "pull request" where code is reviewed before it is merged. The separation of features from the main branch facilitates parallel development where progress can be made on multiple independent features simultaneously.
+A branch is a pointer to a snapshot of your work that was taken at a specific commit. Working with branches enables you to continue developing from there in isolation of your principal changes in the `main` branch.
+This is beneficial since you don't want the repository's default branch to be updated with every commit of a half-finished feature. When a feature is finished, their branches will be merged into the `main` branch, often through a "pull request" where code is reviewed before it is merged. The separation of features from the main branch facilitates parallel development where progress can be made on multiple independent features simultaneously.
 
 To illustrate feature-based development with a practical example we can use the construction of a house. First, you need to build the foundation. Since everything depends on the foundation being built, this would be developed on the `main` branch. When the foundation is finished the construction of other parts of the house that don't depend on each other could take place in parallel, e.g. some contributors might start working on the walls and others on the floor. When either of these features is finished, it can be added back to the house (what would be similar to merged into `main`). When depicted graphically, this process would look something like this (each dot in the image represents a commit).
 
@@ -118,6 +118,22 @@ Now let's see what happens when we make a commit locally.
 2. Run `git log --oneline`
 
 As expected, only the reference to where we are currently (HEAD) and the local main branch moved, because we have not pushed our changes to GitHub (`origin`). If you do git push, the GitHub main branch will be updated with the latest commit.
+
+---
+
+# Pushing a new branch
+
+<center>
+
+<img src='/module5/pushing-new-branch.png' width="85%" alt="404 image" />
+
+<center/>
+
+Notes: Pushing a new branch using JupyterLab is exacly the same as you are 
+
+`git push --set-upstream origin <new-branch-name>`
+
+You shouldn't worry because git will remind you the command in the case you forget to speufy it. 
 
 
 ---

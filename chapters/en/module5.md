@@ -167,19 +167,33 @@ The most recent commits are always the first to appear in the representation of 
 <slides source='module5/module5_03' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
-<exercise id='6' title='merging branches'>
+<exercise id='6' title='Merging branches'>
 
-How you can check locally if you are working in a repo clone from the original one or from your fork?
+
+Would you delete a branch after merge it?
 
 <choice>
-<opt text='x' >
+<opt text='Yes, to avoid having extra copies of the code that you do not need anymore' >
+A branch in Git is a pointer, you are not saving extra information on it. 
 </opt>
-<opt text='x'>
+<opt text='Yes, I am not going to develop more on it' correct='true'>
 </opt>
-<opt text='x' correct='true'>
+<opt text='No, I could be loosing important information' >
+Once the branch has been merged all the information is combined. If the merge was successful no information could be missing.
 </opt>
-
 </choice>
+
+what branches are you merging in this example:
+
+<choice>
+<opt text='Yes' >
+</opt>
+<opt text='No' correct='true'>
+</opt>
+</choice>
+
+
+
 </exercise>
 
 <exercise id='7' title='collaboration' type='slides, video'>

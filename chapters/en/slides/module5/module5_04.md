@@ -158,6 +158,18 @@ In your repository this means that you should be sure that code in `main`, also 
 
 We are ready to start collaborating!
 
+
+---
+
+# How pull requests look like after you protect the branch
+<center>
+
+<img src='/module5/PR-aprove.png' width="80%" alt="404 image" />
+
+<center/>
+
+Notes: This means that when you are doing a pull request you will need the approval of a team member before can merge your pull request.
+
 ---
 
 # Branching basic workflow
