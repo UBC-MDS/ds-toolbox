@@ -37,3 +37,6 @@ Forking a repo happens via the GitHub web interface, but this is a one time oper
 
 The first step in this, is to add the remote repo URL to your local repo so that git knows where to pull from. Remember that the forked relationship between the upstream and your forked remote is only available on GitHub; git on your computer does not care whether your repo is a fork or not. Type git remote -v and you should see something like this:
 
+---
+
+# Let's apply what we learned!
