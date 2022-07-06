@@ -175,10 +175,6 @@ The workflow will be the same that we have learned before, cloning, adding to th
 Before moving forward, we are going to explain other very useful tool that is key when working on GitHub to communicate with other team members or general public exploring your repository: github issues
 
 
-
-
-
-
 ---
 
 # Extra: Communicating using GitHub issues

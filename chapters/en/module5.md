@@ -68,12 +68,10 @@ Remember that you will open a branch from the stage your project currently is. A
 What of this expressions is incorrect?
 
 <choice>
-<opt text='I will push to the origin' >
-</opt>
 <opt text='When you want to make a change that can break the code in the <code> main </code> branch'>
 Right, but there is also another correct option.
 </opt>
-<opt text='You can create a branch when you decide to add a new feature'>
+<opt text='You can create a branch when you decide to work on a new feature, even if later you decide not to merge it in the <code> main </code> branch'>
 Right, but there is also another correct option.
 </opt>
 <opt text='You can create a branch to fix a bug, and then merge it to <code> main </code> '>
@@ -86,21 +84,81 @@ Remember that you will open a branch from the stage your project currently is. A
 </opt>
 </choice>
 
+
+You clone a repository from Github with a README file to your own computer. After that, you create a new branch locally called 'app' and commit three times. What labels will include your most recent commit? 
+
+<choice>
+<opt text='<code>origin/HEAD</code> and <code>origin/main</code>'>
+
+</opt>
+<opt text='<code> HEAD -> app </code> ' correct='true'>
+Head is pointing to the last place you make changes and that was in the app branch
+</opt>
+<opt text='<code> main </code>'>
+
+</opt>
+<opt text=' <code> HEAD -> main </code>'>
+Remember that you will open a branch from the current stage of your project. Are you sure it makes sense to open all of them at the start of the project?  
+</opt>
+<opt text='<code> app </code>'>
+</opt>
+</choice>
+
+
 </exercise>
 
-<exercise id='3' title="How to create a branch?"  type='slides, video'>
+<exercise id='3' title="What is the relationship between the branches?"  type='slides, video'>
 <slides source='module5/module5_02' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
-<exercise id='4' title='branches'>
+<exercise id='4' title='Observing the trees'>
 
-What command have to use to merge branches?
-IN PROGRESS
+**True or False**
+
+The labels <code> origin/main </code> and <code> origin/HEAD </code> always will be associated to the more recent commit in the history of a project that you have just cloned from GitHub.
 
 <choice>
-<opt text='x' correct='true'>
+<opt text='True'>
+What happens if the last change in the GitHub repository was in a different branch than <code> main </code>. You can try in your computer what happens!
 </opt>
-<opt text='y'>
+<opt text='False'  correct='true' >
+
+The term `origin` refers to the remote repository. If the last change in the remote repository you are cloning was in other branch than <code> main </code> the labels in the most recent commit will be (HEAD -> new-branch, origin/new-branch)
+
+</opt>
+</choice>
+
+*git log --oneline --all --graph*
+
+* a949e61 2020-09-13 (HEAD -> master) Update readme
+| * 0a8dfef 2020-09-13 (lecture-todo) List todo items
+|/
+* 6e69947 2020-09-13 (origin/master, origin/HEAD) Add a line to readme
+* 0d5a6f7 2020-09-13 Initial commit
+
+Select the options that are TRUE
+
+<choice>
+<opt text='The most recent commit on GitHub was performed in the master branch'>
+You can recognize the latest commit on GitHub with the label <code> origin/HEAD </code>
+</opt>
+<opt text='There is a branch called <code> lecture-todo </code> that has not been pushed to GitHub yet '>
+The labels <code> origin/master, origin/HEAD </code> that points the last change in the remote are downstream. This means that a949e61 and 0a8dfef were created after pulling or cloning from GitHub.
+</opt>
+<opt text='The last local change of this repository has associated the commit message "Update readme"' >
+The last commit is always the one that appears first. <code> HEAD -> master </code>
+</opt>
+<opt text='The commits a949e61 and 0a8dfef exist only in your local computer'>
+</opt>
+<opt text='The commits 6e69947 and 0d5a6f7 exist both in your local computer and on GitHub'>
+</opt>
+<opt text='All are correct' correct='true' >
+</opt>
+<opt text='Only 1 and 3 are correct' correct='true' >
+What does the labels <code> origin/HEAD </code> and <code> HEAD </code> means?
+</opt>
+<opt text='Only 2, 4 and 5 are correct' correct='true' >
+The most recent commits are always the first to appear in the representation of the trees. 
 </opt>
 </choice>
 </exercise>

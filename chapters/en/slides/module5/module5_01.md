@@ -25,7 +25,7 @@ Notes:
 
 It is time to learn about branches! 
 
-**You can consider a branch as a copy of the code in the repository from a particular commit.**. This is equivalent to say that you can take a snapshot of your work at a particular point and continue developing there independently of your principal changes in the `main` branch.. 
+**You can consider a branch as a copy of the code in the repository from a particular commit.**. This is equivalent to say that you can take a snapshot of your work at a particular point and continue developing there independently of your principal changes in the `main` branch.
 This is beneficial since you don't want the repository's default branch to be updated with every commit of a half-finished feature. When features are completed, their branches will be merged into the `main` branch, often through a "pull request" where code is reviewed before it is merged. The separation of features from the main branch facilitates parallel development where progress can be made on multiple independent features simultaneously.
 
 To illustrate feature-based development with a practical example we can use the construction of a house. First, you need to build the foundation. Since everything depends on the foundation being built, this would be developed on the `main` branch. When the foundation is finished the construction of other parts of the house that don't depend on each other could take place in parallel, e.g. some contributors might start working on the walls and others on the floor. When either of these features is finished, it can be added back to the house (what would be similar to merged into `main`). When depicted graphically, this process would look something like this (each dot in the image represents a commit).
@@ -43,15 +43,15 @@ When we initiate a repository by default we start working on the `main` branch, 
 <center/>
 
 
-Notes:  In the image we can see that two branches were created from `main`. The first snapshot was taken after the second commit to incude there the trained model. The second branch was initiated in the third commit to fix one of the exploratory analysis plots. At the end we merge all these branches to `main` so the isolated modifications are included in our principal source of code.
+Notes:  In the image we can see that two branches were created from `main`. The first snapshot was taken after the second commit to include there the trained model. The second branch was initiated in the third commit to fix one of the exploratory analysis plots. At the end we merge all these branches to `main` so the isolated modifications are included in our principal source of code.
 
-When you should open a new branch? We will talk about it with more detail soon, but thinking that each change that can break the original code is potentially a good feature to start workin in a new branch.
+When you should open a new branch? As general rule you can think that each changes that can break the original code is potentially a good feature to start workin in a new branch.
 
 Note that in some old repositories the `main` branch could be called `master`.
 
 
 ---
-# How branches show up in the log output (JupyterLab)
+# How to create a branch? (JupyterLab)
 
 <center>
 
@@ -59,7 +59,7 @@ Note that in some old repositories the `main` branch could be called `master`.
 
 <center/>
 
-Notes: TO create a branch in JupyterLab you have to go to **Current Branch (tab) > Branches > New branch** and then write the name of the branch you want there.
+Notes: To create a branch in JupyterLab you have to go to **Current Branch (tab) > Branches > New branch** and then write the name of the branch you want there. If you want to switch to other branch you can click and select your branch in the **Branches** tab.
 
 You can create the branch from `main` or from `origin/HEAD` and `origin/main`. We already know that `main` is the default branch, but what about `origin` and `HEAD`? Let's review some concepts:
 
@@ -68,11 +68,12 @@ You can create the branch from `main` or from `origin/HEAD` and `origin/main`. W
 * `origin` is a nickname for your remote repo on GitHub (instead of showing the full URL), so `origin/main` is the `main` branch on your GitHub repo.
    You don't need to care about `origin/HEAD`, it just point to the default remote branch, which will always be `main` unless you mess around with the settings on the GitHub webpage.
 
+In JupyterLab you can see this information as labels under the tab **Changes**.
 
 ⚠️ We are adding a new synonim for a GitHub repository. We can use `remote` as a way to mention GitHub in general, now we can refer specifically to the GitHub repository we are workin on as `origin`.
 
 ---
-# How branches show up in the log output (terminal)
+# How to create a branch? (terminal)
 
 <center>
 
@@ -85,7 +86,9 @@ Notes:
 
 You can see the `origin/HEAD`, `origin/main` and `main` displayed in the terminal when you check the history of your project, in the example with `git log --oneline`.
 
-In JupyterLab you can see this information as labels under the tab **Changes**.
+To create a branch using the terminal with `git switch` command, that can be used to switch between existing branches. If a branch does not yet exist, you can append the `-c` flag to create the branch as you switch to it. Let's create a new branch! Type `git switch -c <branch-name>`, to create and switch to this branch.
+
+
 
 🙌
 
@@ -97,7 +100,7 @@ To practice working with branches, let's try adding a commit to one of your exam
 
 ---
 
-# How branches show up in the log output (terminal)
+# How to create a branch? (terminal)
 
 <center>
 
