@@ -19,7 +19,7 @@ id: 5
 
 What of this names refer to the default branch in Git/GitHub?
 
-<choice>
+<choice id = 1>
 <opt text='<code> master </code>'>
 Right, but there is also another correct option.
 </opt>
@@ -45,7 +45,7 @@ Only one of this options is correct.
 
 When do you need to open a new branch?
 
-<choice>
+<choice id = 2>
 <opt text='It is the first thing you should do after you start a project. You open a branch for all the features you are planning to add to your code' >
 You can not predict when you will have a bug to fix. Also, remember that you will open a branch from the stage your project currently is. Are you sure that would have sense to open all of them at the beggining of the project?   
 </opt>
@@ -67,7 +67,7 @@ Remember that you will open a branch from the stage your project currently is. A
 
 What of this expressions is incorrect?
 
-<choice>
+<choice id = 3>
 <opt text='When you want to make a change that can break the code in the <code> main </code> branch'>
 Right, but there is also another correct option.
 </opt>
@@ -87,7 +87,7 @@ Remember that you will open a branch from the stage your project currently is. A
 
 You clone a repository from Github with a README file to your own computer. After that, you create a new branch locally called 'app' and commit three times. What labels will include your most recent commit? 
 
-<choice>
+<choice id = 4>
 <opt text='<code>origin/HEAD</code> and <code>origin/main</code>'>
 
 </opt>
@@ -117,7 +117,7 @@ Remember that you will open a branch from the current stage of your project. Are
 
 The labels <code> origin/main </code> and <code> origin/HEAD </code> always will be associated to the more recent commit in the history of a project that you have just cloned from GitHub.
 
-<choice>
+<choice id = 5>
 <opt text='True'>
 What happens if the last change in the GitHub repository was in a different branch than <code> main </code>. You can try in your computer what happens!
 </opt>
@@ -140,7 +140,7 @@ After running <code> git log --oneline --all --graph </code> in your repository 
 
 Select the options that are TRUE
 
-<choice>
+<choice id = 6>
 <opt text='The most recent commit on GitHub was performed in the master branch'>
 You can recognize the latest commit on GitHub with the label <code> origin/HEAD </code>.
 </opt>
@@ -174,7 +174,7 @@ The most recent commits are always the first to appear in the representation of 
 
 Would you delete a branch after merge it?
 
-<choice>
+<choice id = 7>
 <opt text='Yes, to avoid having extra copies of the code that you do not need anymore' >
 A branch in Git is a pointer, you are not saving an extra copy of the code on it. 
 </opt>
@@ -192,7 +192,7 @@ What branches are you merging in this example:
 git merge app
 </code>
 
-<choice>
+<choice id = 8>
 <opt text='the <code> app </code> branch with the <code> fix-app-slider </code> branch' correct='true'>
 </opt>
 <opt text='the <code> app </code> branch with the <code> main </code> branch'>
@@ -217,7 +217,7 @@ Is <code> canadian-languages </code>  referring to a branch?
 
 You should be sure when opening a pull request because after open it you will not be able to include more changes in that one.
 
-<choice>
+<choice id = 9>
 <opt text='True' >
 Try open a pull request and pushing new commits and check what happen!
 </opt>
@@ -229,7 +229,7 @@ You can continue pushing commits to a pull request pushing to the branch you use
 **True or false**
 It is possible to open a pull request locally
 
-<choice>
+<choice id = 10>
 <opt text='True' >
 It is possible to ckeck out a pull request locally to solve a merge conflict or test changes before aproving it. https://docs.github.com/es/enterprise-server@3.1/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/checking-out-pull-requests-locally
 </opt>
@@ -240,7 +240,7 @@ You have to enter to your GitHub repository to star a pull request.
 
 How is it different to open a pull request to merging branches? Is it not basically the same?
 
-<choice>
+<choice id = 11>
 <opt text='Yes, it is the same, you are merging branches but using GitHub' >
 Even if the final goal of the pull request is to merge your changes with other branch, it is also a way to socialize that you created those changes and also to involve other team members for example as reviewers.
 </opt>
@@ -259,7 +259,7 @@ In which cases branching would be better?
 
 (There is a similar question in 521 q)
 
-<choice>
+<choice id = 12>
 <opt text='You have write access to the repository' correct='true'>
 If you have not write access it would be impossible to contribute without forking the repository first.
 </opt>
@@ -273,7 +273,7 @@ It is always recommended to use Github issues, it does't matter your collaborati
 
 What of these names are good for branches?
 
-<choice>
+<choice id = 13>
 <opt text='arman, florencia, joel'>
 Select names of people as names of branches is not really meaningful as it is not given information about what each member of the team is working on.
 </opt>
@@ -296,7 +296,7 @@ Using only numbers could create confusion when merging the branches. Selectins a
 
 It is a good practice to start working on a new specific branch before doing a pull request from your forked repository.
 
-<choice>
+<choice id = 14>
 <opt text='True' correct='true' >
 Doing the pull request from a specific branch with a meaningful name will provide valuable information to the recipients of the pull request. Also, making changes directly on the `main` branch in general could not be a good idea as it coud break the code.
 </opt>
@@ -307,7 +307,7 @@ Doing the pull request from a specific branch with a meaningful name will provid
 **True or false**
 To start working locally in a GitHub repository after forking it you should clone the copy of the repository in your GitHub account.
 
-<choice>
+<choice id = 15>
 <opt text='True'  correct='true'>
 You probably don't have write access to the original repository to push modifications directly to it, that is why you have to clone your fork.
 </opt>

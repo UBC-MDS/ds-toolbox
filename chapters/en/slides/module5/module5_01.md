@@ -59,7 +59,7 @@ Note that in some old repositories the `main` branch could be called `master`.
 
 <center/>
 
-Notes: To create a branch in JupyterLab you have to go to **Current Branch (tab) > Branches > New branch** and then write the name of the branch you want there. If you want to switch to other branch you can click and select your branch in the **Branches** tab.
+Notes: To create a branch in JupyterLab you have to go to **Branches > New branch** and then write the name of the branch you want there. If you want to switch to other branch you can click and select your branch in the **Branches** tab.
 
 You can create the branch from `main` or from `origin/HEAD` and `origin/main`. We already know that `main` is the default branch, but what about `origin` and `HEAD`? Let's review some concepts:
 
@@ -77,7 +77,7 @@ In JupyterLab you can see this information as labels under the tab **Changes**.
 
 <center>
 
-<img src='/module5/terminal_branch.png' width="85%" alt="404 image" />
+<img src='/module5/terminal_branches.png' width="85%" alt="404 image" />
 
 <center/>
 
