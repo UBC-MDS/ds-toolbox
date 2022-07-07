@@ -15,7 +15,7 @@ id: 5
 
 </exercise>
 
-<exercise id='2' title="Branches">
+<exercise id='2' title="Be careful if you can not see the wood from the trees">
 
 What of this names refer to the default branch in Git/GitHub?
 
@@ -139,7 +139,7 @@ The labels <code> origin/master</code>, origin/HEAD</code> that points the last 
 </choice>
 </exercise>
 
-<exercise id='5' title="All routes lead to `main`: Merging branches"  type='slides, video'>
+<exercise id='5' title="All routes lead to <code>main</code>: Merging branches"  type='slides, video'>
 <slides source='module5/module5_03' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
@@ -185,7 +185,7 @@ Is <code> canadian-languages</code>  referring to a branch?
 <slides source='module5/module5_04' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
-<exercise id='8' title='Pull requests: Should we merge our branches?'>
+<exercise id='8' title='You are cordially invited to review my changes'>
 
 **True or false**
 
@@ -226,23 +226,23 @@ Even if the final goal of the pull request is to merge your changes with other b
 </choice>
 </exercise>
 
-<exercise id='9' title='What is your style of collaboration?' type='slides, video'>
+<exercise id='9' title='About the different ways we can collaborate' type='slides, video'>
 <slides source='module5/module5_05' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
-<exercise id='10' title='Between braches and forks'>
+<exercise id='10' title='Between branches and forks'>
 
 In which cases branching would be better that using forks?
 
 <choice id = 11>
-<opt text='You have write access to the repository' correct='true'>
-If you have not write access it would be impossible to contribute without forking the repository first.
-</opt>
 <opt text='The owner of the repository have set branch protection rules to the <code>main</code>  branch'>
 Even if it is a good practice as avoid that contributors push code directly to the <code>main</code> branch by accident, protecting the branch it is not a requirement to collaborate using branching. 
 </opt>
 <opt text='You want to use GitHub issues to share with your team members or other collaborators' >
 It is always recommended to use Github issues, it does't matter your collaboration style.
+</opt>
+<opt text='You have write access to the repository' correct='true'>
+If you have not write access it would be impossible to contribute without forking the repository first.
 </opt>
 </choice>
 
@@ -280,6 +280,8 @@ Making the pull request from a branch with a meaningful name will give the pull 
 </choice>
 
 **True or false**
+
+
 After forking a GitHub repository, you should clone the repository's copy in your GitHub account to begin working on it locally. 
 
 <choice id = 14>

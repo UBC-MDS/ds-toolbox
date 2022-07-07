@@ -79,7 +79,7 @@ In JupyterLab you can see this information as labels under the tab **Changes**.
 
 <center>
 
-<img src='/module5/terminal_branches.png' width="85%" alt="404 image" />
+<img src='/module5/terminal-branches.png' width="85%" alt="404 image" />
 
 <center/>
 
@@ -127,7 +127,7 @@ As expected, only the reference to where we are currently (HEAD) and the local m
 
 <center>
 
-<img src='/module5/push-new-branch.png' width="85%" alt="404 image" />
+<img src='/module5/pushing-new-branch.png' width="85%" alt="404 image" />
 
 <center/>
 

@@ -32,7 +32,7 @@ The changes you was working on isolation in a particular branch now are combined
 <center/>
 
 
-Notes: To merge a branch using JupyterLab, you have to click in the tab **Branches** the name of the branch you want to merge your current work on it. For example, if you are working in the branch `report`, you can click next to the `main` branch and select "Merge this branch into the current branch"
+Notes: To merge a branch using JupyterLab, you have to click in the tab **Branches** the name of the branch you want to merge your current work on it. For example, if you are working on the branch `report`, you can click next to the `main` branch and select "Merge this branch into the current branch"
 
 Notice that after doing this, the report branch is not deleted except you do so explicitly.
 
@@ -77,7 +77,8 @@ Let's see how these graphics change once we merge the branches together on VS Co
 
 Notes:
 
-You will notice that merging the branch will not make it dissapear If you are not going to be developing that feature anymore you can delete it after merging it.
+You will notice that merging the branch will not make it dissapear. If you are not going to be developing that feature anymore you can delete it after merging it. You can delete a branch only when you are not working on it (it is not colores as blue)
+
 Be careful because if you didn't merge it it can be difficult to recover the information.
 
 ---
