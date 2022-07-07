@@ -8,7 +8,7 @@ type: chapter
 id: 5
 ---
 
-<exercise id="1" title="Branches" type="slides,video">
+<exercise id="1" title="The roles of branches" type="slides,video">
 
 <slides source="module5/module5_01" shot="0" start="0:002" end="3:40">
 </slides>
@@ -20,23 +20,23 @@ id: 5
 What of this names refer to the default branch in Git/GitHub?
 
 <choice id = 1>
-<opt text='<code> master </code>'>
+<opt text='<code>master</code>'>
 Right, but there is also another correct option.
 </opt>
-<opt text='<code> HEAD </code>'>
+<opt text='<code>HEAD</code>'>
 <code> HEAD </code> is providing valuable information to the user when checking the project history. Specifically will point to the last commit in the origin and in the local repository.
 </opt>
-<opt text='<code> main </code>'>
+<opt text='<code>main</code>'>
 Right, but there is also another correct option.
 </opt>
-<opt text='<code> origin </code>'>
+<opt text='<code>origin</code>'>
 <code> origin </code> is referring to the remote GitHub repository.
 </opt>
 <opt text='2, 3 and 4 are correct'>
-<code> main </code>, <code> origin </code> and <code> HEAD </code> are concepts that provide valuable information to the user when checking the project history, but 2 of them not necessary refer to the default branch.
+<code>main</code>, <code>origin</code> and <code>HEAD</code> are labels that provide valuable information to the user when checking the project history, but two of them not necessary refer to the default branch.
 </opt>
 <opt text='1 and 3 are correct' correct='true'>
-<code> master </code> was the old name for the <code> main </code> branch. You still will find repositories you can contribute to that uses <code> master </code> as the default branch.
+<code>master</code> was the old name for the <code>main</code> branch. You still will find repositories you can contribute to that uses <code>master</code> as the default branch.
 </opt>
 <opt text='2 and 3 are correct' >
 Only one of this options is correct.
@@ -47,12 +47,12 @@ When do you need to open a new branch?
 
 <choice id = 2>
 <opt text='It is the first thing you should do after you start a project. You open a branch for all the features you are planning to add to your code' >
-You can not predict when you will have a bug to fix. Also, remember that you will open a branch from the stage your project currently is. Are you sure that would have sense to open all of them at the beggining of the project?   
+You can not predict when you will have a bug to fix. 
 </opt>
 <opt text='When you want to make a change that can break the code in the <code> main </code> branch'>
 Right, but there is also another correct option.
 </opt>
-<opt text='You can create a branch when you decide to add a new feature'>
+<opt text='You can create a branch when you decide to add a new feature, even if later you decide not to merge it'>
 Right, but there is also another correct option.
 </opt>
 <opt text='You can create a branch to fix a bug, and then merge it to <code> main </code> '>
@@ -65,43 +65,23 @@ Remember that you will open a branch from the stage your project currently is. A
 </opt>
 </choice>
 
-What of this expressions is incorrect?
+
+You clone a repository from Github with a README file to your own computer. After that, you create a new branch locally called <code>app</code> and add to the stage area and commit changes three times. What labels will include your most recent commit (the third one)? 
 
 <choice id = 3>
-<opt text='When you want to make a change that can break the code in the <code> main </code> branch'>
-Right, but there is also another correct option.
-</opt>
-<opt text='You can create a branch when you decide to work on a new feature, even if later you decide not to merge it in the <code> main </code> branch'>
-Right, but there is also another correct option.
-</opt>
-<opt text='You can create a branch to fix a bug, and then merge it to <code> main </code> '>
-Right, but there is also another correct option.
-</opt>
-<opt text='All are correct'>
-Remember that you will open a branch from the stage your project currently is. Are you sure that would have sense to open all of them at the beggining of the project?   
-</opt>
-<opt text='2, 3 and 4 are correct' correct='true'>
-</opt>
-</choice>
-
-
-You clone a repository from Github with a README file to your own computer. After that, you create a new branch locally called 'app' and commit three times. What labels will include your most recent commit? 
-
-<choice id = 4>
 <opt text='<code>origin/HEAD</code> and <code>origin/main</code>'>
+<code>origin/HEAD</code> and <code>origin/main</code> are pointing to the latest changes in the remote the moment of pulling.
+</opt>
+<opt text='<code>HEAD -> app</code> ' correct='true'>
+'<code>HEAD</code> is pointing to the last place you make changes and that was in the '<code>app</code> branch
+</opt>
+<opt text='<code>main</code>'>
+In what branch are you working now?
+</opt>
+<opt text=' <code>HEAD -> main</code>'>
+In what branch are you working now? 
+</opt>
 
-</opt>
-<opt text='<code> HEAD -> app </code> ' correct='true'>
-Head is pointing to the last place you make changes and that was in the app branch
-</opt>
-<opt text='<code> main </code>'>
-
-</opt>
-<opt text=' <code> HEAD -> main </code>'>
-Remember that you will open a branch from the current stage of your project. Are you sure it makes sense to open all of them at the start of the project?  
-</opt>
-<opt text='<code> app </code>'>
-</opt>
 </choice>
 
 
@@ -115,57 +95,51 @@ Remember that you will open a branch from the current stage of your project. Are
 
 **True or False**
 
-The labels <code> origin/main </code> and <code> origin/HEAD </code> always will be associated to the more recent commit in the history of a project that you have just cloned from GitHub.
+The labels <code>origin/main</code> and <code>origin/HEAD</code> always will be associated to the more recent commit in the history of a project that you have just cloned from GitHub.
 
-<choice id = 5>
+<choice id = 4>
 <opt text='True'>
-What happens if the last change in the GitHub repository was in a different branch than <code> main </code>. You can try in your computer what happens!
+What happens if the last change in the GitHub repository was in a different branch than <code>main</code>? You can try to reproduce this in your computer, creating a new branch in the remote and pulling the information to the local repository!
 </opt>
 <opt text='False'  correct='true' >
 
-The term `origin` refers to the remote repository. If the last change in the remote repository you are cloning was in other branch than <code> main </code> the labels in the most recent commit will be (HEAD -> new-branch, origin/new-branch)
+The term `origin` refers to the remote repository. If the last change in the remote repository you are cloning was in other branch than <code>main</code> the label in the most recent commit will be (<code>origin/new-branch</code>). <code>origin/HEAD</code> will be always pointing the last commit in the <code>main</code> branch next to <code>origin/main</code>.
 
 </opt>
 </choice>
 
 After running <code> git log --oneline --all --graph </code> in your repository you get as output the following tree:
 
-<code>
+
 * a949e61 2020-09-13 (HEAD -> master) Update readme
 | * 0a8dfef 2020-09-13 (lecture-todo) List todo items
 |/
 * 6e69947 2020-09-13 (origin/master, origin/HEAD) Add license
 * 0d5a6f7 2020-09-13 Initial commit
-</code>
+
 
 Select the options that are TRUE
 
-<choice id = 6>
-<opt text='The most recent commit on GitHub was performed in the master branch'>
+<choice id = 5>
+<opt text='The most recent commit on GitHub was performed on the <code>lecture-todo</code> branch'>
 You can recognize the latest commit on GitHub with the label <code> origin/HEAD </code>.
 </opt>
-<opt text='There is a branch called <code> lecture-todo </code> that has not been pushed to GitHub yet '>
-The labels <code> origin/master, origin/HEAD </code> that points the last change in the remote are downstream. This means that a949e61 and 0a8dfef were created after pulling or cloning from GitHub.
+<opt text='There is a branch called <code> lecture-todo </code> that has not been pushed to GitHub yet ' correct='true'>
+The labels <code> origin/master</code> , origin/HEAD</code> that points the last change in the remote are downstream. This means that a949e61 and 0a8dfef were created after pulling or cloning from GitHub.
 </opt>
 <opt text='The most recent local commit of this repository has associated the message "Update readme"' >
-The last commit is always the one that appears first. <code> HEAD -> master </code>
-</opt>
-<opt text='The commits a949e61 and 0a8dfef exist only in your local computer'>
-</opt>
-<opt text='The commits 6e69947 and 0d5a6f7 exist both in your local computer and on GitHub'>
-</opt>
-<opt text='All are correct' correct='true' >
-</opt>
-<opt text='Only 1 and 3 are correct' correct='true' >
-What does the labels <code> origin/HEAD </code> and <code> HEAD </code> means?
-</opt>
-<opt text='Only 2, 4 and 5 are correct' correct='true' >
 The most recent commits are always the first to appear in the representation of the trees. 
+</opt>
+<opt text='The commits a949e61 and 0a8dfef exist only in your local computer' correct='true'>
+The labels <code> origin/master</code>, <code>origin/HEAD</code> that are pointing the last change in the remote are downstream these two commits. This means that a949e61 and 0a8dfef were created after pulling or cloning from GitHub.
+</opt>
+<opt text='The commits 6e69947 and 0d5a6f7 exist both in your local computer and on GitHub' correct='true'>
+The labels <code> origin/master</code>, origin/HEAD</code> that points the last change in the remote are upstream these two commits. This means that 6e69947 and 0d5a6f7 were pulled or cloned from GitHub.
 </opt>
 </choice>
 </exercise>
 
-<exercise id='5' title="Merging branches"  type='slides, video'>
+<exercise id='5' title="All routes lead to `main`: Merging branches"  type='slides, video'>
 <slides source='module5/module5_03' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
@@ -174,75 +148,78 @@ The most recent commits are always the first to appear in the representation of 
 
 Would you delete a branch after merge it?
 
-<choice id = 7>
+<choice id = 6>
 <opt text='Yes, to avoid having extra copies of the code that you do not need anymore' >
 A branch in Git is a pointer, you are not saving an extra copy of the code on it. 
 </opt>
 <opt text='Yes, I am not going to develop more on it' correct='true'>
 </opt>
 <opt text='No, I could be discarding important information' >
-Once the branch has been merged all the information is combined. If the merge was successful no information could be missing deleting the branch.
+Once the branch has been merged all the information of both branches is combined in a new commit. If the merge was successful no information could be missing deleting the branch.
 </opt>
 </choice>
 
 What branches are you merging in this example:
 
-<code>
+
 (base) Florencia@DESKTOP-KHE5L35 MINGW64 ~/canadian_languages (fix-app-slider)
 git merge app
-</code>
 
-<choice id = 8>
-<opt text='the <code> app </code> branch with the <code> fix-app-slider </code> branch' correct='true'>
+
+<choice id = 7>
+<opt text='the <code>app</code> branch with the <code>fix-app-slider</code> branch' correct='true'>
 </opt>
-<opt text='the <code> app </code> branch with the <code> main </code> branch'>
-How do you know you are in the <code> main </code> branch? Where you can find which branch you are currently working on?
+<opt text='the <code>app</code> branch with the <code>main</code> branch'>
+How do you know you are in the <code>main</code> branch? Where you can find which branch you are currently working on?
 </opt>
-<opt text='the <code> fix-app-slider </code> branch with the <code> main </code> branch'>
-How do you know you are in the <code> main </code> branch? Where you can find which branch you are currently working on?
+<opt text='the <code>fix-app-slider</code> branch with the <code>main</code> branch'>
+How do you know you are in the <code>main</code> branch? Where you can find which branch you are currently working on?
 </opt>
-<opt text='the <code> canadian-languages </code> branch with the <code> app </code> branch'>
-Is <code> canadian-languages </code>  referring to a branch? 
+<opt text='the <code>canadian-languages</code> branch with the <code>app</code> branch'>
+Is <code> canadian-languages</code>  referring to a branch? 
 </opt>
 </choice>
 </exercise>
 
 <exercise id='7' title='When merging branches goes social: opening pull requests'  type='slides, video'>
-<slides source='module5/module5_06' shot='0' start='3:42' end='4:35'> </slides>
+<slides source='module5/module5_04' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
-<exercise id='8' title='Should we merge our branches?'>
+<exercise id='8' title='Pull requests: Should we merge our branches?'>
 
 **True or false**
 
-You should be sure when opening a pull request because after open it you will not be able to include more changes in that one.
+You should be quite sure when creting a pull request because you will not be able add more commits after you create it.
 
-<choice id = 9>
+<choice id = 8>
 <opt text='True' >
 Try open a pull request and pushing new commits and check what happen!
 </opt>
 <opt text='False' correct='true'>
-You can continue pushing commits to a pull request pushing to the branch you used to create it. You will see the commits as a timeline when you open it on GitHub. Try it!
+You can continue adding commits to a pull request pushing to the branch you used to create it. You will see the commits as a timeline when you open it on GitHub. Try it!
 </opt>
 </choice>
 
-**True or false**
+**True or false**  
+
 It is possible to open a pull request locally
 
-<choice id = 10>
+<choice id = 9>
 <opt text='True' >
-It is possible to ckeck out a pull request locally to solve a merge conflict or test changes before aproving it. https://docs.github.com/es/enterprise-server@3.1/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/checking-out-pull-requests-locally
+It is possible to <a href="https://docs.github.com/es/enterprise-server@3.1/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/checking-out-pull-requests-locally">check out a pull request locally to solve a merge conflict or test changes before aproving it</a>, but not actually create one.
 </opt>
 <opt text='False' correct='true'>
-You have to enter to your GitHub repository to star a pull request.
+You have to enter to your GitHub repository to start a pull request. What you can do locally is to create a new branch and push it to GitHub. Then GitHub will give you the option to start a pull request.
 </opt>
 </choice>
 
 How is it different to open a pull request to merging branches? Is it not basically the same?
 
-<choice id = 11>
+Select the correct option
+
+<choice id = 10>
 <opt text='Yes, it is the same, you are merging branches but using GitHub' >
-Even if the final goal of the pull request is to merge your changes with other branch, it is also a way to socialize that you created those changes and also to involve other team members for example as reviewers.
+Even if the final goal of the pull request is to merge your changes with other branch, it is also a way to socialize that you created those changes and also to involve other team members, for example, as reviewers.
 </opt>
 <opt text='You open a pull request to merge branches when you want to involve your collaborators' correct='true'>
 </opt>
@@ -250,21 +227,19 @@ Even if the final goal of the pull request is to merge your changes with other b
 </exercise>
 
 <exercise id='9' title='What is your style of collaboration?' type='slides, video'>
-<slides source='module5/module5_04' shot='0' start='3:42' end='4:35'> </slides>
+<slides source='module5/module5_05' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
 <exercise id='10' title='Between braches and forks'>
 
-In which cases branching would be better?
+In which cases branching would be better that using forks?
 
-(There is a similar question in 521 q)
-
-<choice id = 12>
+<choice id = 11>
 <opt text='You have write access to the repository' correct='true'>
 If you have not write access it would be impossible to contribute without forking the repository first.
 </opt>
-<opt text='The owner of the repository have set branch protection rules to the <code> main </code>  branch'>
-Even if it is a good practice as avoids that contributors push code directly to the <code> main </code> branch by accident, protecting the branch it is not requested for collaboration. 
+<opt text='The owner of the repository have set branch protection rules to the <code>main</code>  branch'>
+Even if it is a good practice as avoid that contributors push code directly to the <code>main</code> branch by accident, protecting the branch it is not a requirement to collaborate using branching. 
 </opt>
 <opt text='You want to use GitHub issues to share with your team members or other collaborators' >
 It is always recommended to use Github issues, it does't matter your collaboration style.
@@ -273,46 +248,46 @@ It is always recommended to use Github issues, it does't matter your collaborati
 
 What of these names are good for branches?
 
-<choice id = 13>
+<choice id = 12>
 <opt text='arman, florencia, joel'>
-Select names of people as names of branches is not really meaningful as it is not given information about what each member of the team is working on.
+Using the names of collaborators as names of branches is not meaningful as it is not providing information about what each member of the team is working on.
 </opt>
 <opt text='fix-dockerfile, feature-testing, feature-app-modules' correct='true'>
 There is not a unique way to do this, you will have to define with your team a rule or follow the criteria of the repository you are contributing.
 </opt>
 <opt text='1616789, 1235348, 1555684' >
-Using only numbers could create confusion when merging the branches. Selectins as branch name the issue id that the branch is trying to solve will seem a logical choice, but it is uninformative and could lead to mistakes.
+Using only numbers could create confusion when merging the branches. For example, selecting as branch name the issue id that the branch is trying to solve will seem a logical choice, but it is uninformative and could lead to mistakes.
 </opt>
 </choice>
 </exercise>
 
-<exercise id='11' title='Forks' type='slides, video'>
-<slides source='module5/module5_05' shot='0' start='3:42' end='4:35'> </slides>
+<exercise id='11' title='GitHub cutlery: introducing the forks' type='slides, video'>
+<slides source='module5/module5_06' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
-<exercise id='12' title='Forks'>
+<exercise id='12' title='Forking your repository'>
 
 **True or false**
 
-It is a good practice to start working on a new specific branch before doing a pull request from your forked repository.
+When working on a forked repository, it is a good practice to begin a new branch before submitting a pull request.
 
-<choice id = 14>
+<choice id = 13>
 <opt text='True' correct='true' >
-Doing the pull request from a specific branch with a meaningful name will provide valuable information to the recipients of the pull request. Also, making changes directly on the `main` branch in general could not be a good idea as it coud break the code.
+Making the pull request from a branch with a meaningful name will give the pull request's receivers useful information. If not they will receive changes of <code>main</code> branches from different users.
 </opt>
 <opt text='False'>
 </opt>
 </choice>
 
 **True or false**
-To start working locally in a GitHub repository after forking it you should clone the copy of the repository in your GitHub account.
+After forking a GitHub repository, you should clone the repository's copy in your GitHub account to begin working on it locally. 
 
-<choice id = 15>
+<choice id = 14>
 <opt text='True'  correct='true'>
 You probably don't have write access to the original repository to push modifications directly to it, that is why you have to clone your fork.
 </opt>
 <opt text='False'>
-You will clone, pull and push to the forked repository that lives in your GitHub account. The contribution to the initial GitHub repository will be through pul requests from your fork to the initial repository.
+You will clone, pull, and push to your GitHub account's cloned repository. Contributions to the original GitHub repository will be made by pul requests from your fork to the original repository. 
 </opt>
 </choice>
 </exercise>

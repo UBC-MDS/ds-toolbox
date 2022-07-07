@@ -12,13 +12,13 @@ title: 'module5_03'
 
 <center>
 
-<img src='/module5/branches-house-analogy-explain.png' width="100%" alt="404 image"/>
+<img src='/module5/branches-house-analogy-explained.png' width="100%" alt="404 image"/>
 
 <center/>
 
 Notes: Once you have finished your modifications in the branch you are working, it is time to merge your changes to the `main` branch!
 
-This means that the changes you was working on isolation in a particular branch now are combined with the content of the `main` branch (or the branch you decide to merge your changes with)
+The changes you was working on isolation in a particular branch now are combined with the content of the `main` branch (or the branch you decide to merge your changes with)
 
 
 ---
@@ -32,7 +32,7 @@ This means that the changes you was working on isolation in a particular branch 
 <center/>
 
 
-Notes: To merge a branch using JupyterLab, you have to click in the tab **branches** the name of the branch you want to merge your current work on it. For example, if you are working in the branch `report`, you can click next to the `main` branch and select "Merge this branch into the current branch"
+Notes: To merge a branch using JupyterLab, you have to click in the tab **Branches** the name of the branch you want to merge your current work on it. For example, if you are working in the branch `report`, you can click next to the `main` branch and select "Merge this branch into the current branch"
 
 Notice that after doing this, the report branch is not deleted except you do so explicitly.
 
@@ -49,9 +49,8 @@ Notice that after doing this, the report branch is not deleted except you do so 
 
 Notes:
 
-To merge the branches you can type `git merge <branch>` to merge the commits from the `report` branch into the `main` branch. Remember that you have to be in the oposite branch 
+If you want to use the terminal to merge the branches you can type `git merge <branch>` to merge the commits from the `report` branch into the `main` branch. Remember that you have to be in the oposite branch 
 
-You have now merged your branch! 
 
 ---
 # Merging branches
@@ -64,7 +63,7 @@ You have now merged your branch!
 
 
 Notes: 
-Let's see how these graphics change once we merge the branches together. Let's see how that looks graphically on VS Code. Remember that you can open the editor from the terminal using the comand `code .` and opeining `git history`. 
+Let's see how these graphics change once we merge the branches together on VS Code. Remember that you can open the editor from the terminal using the comand `code .` and then writting `git history`. 
 
 ---
 

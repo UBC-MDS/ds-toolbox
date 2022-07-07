@@ -35,24 +35,16 @@ There are 2 strategies we can use to work with others:
 Notes: 
 There are two major ways to work in a collaborative basis using Git and GitHub: 
 
-1. Exchanging with other colleagues in a reporsitory where all of you can access through an strategy called **branching**.
+1. Exchanging with other colleagues in a reporsitory where all of you can access. We call this strategy **branching**.
 
-If you start a new repository with some coworkers and you add them as collaborators, you can avoid this step and directly work using branching. This means that all the contributors can create branches from the main branch. If you think in the analogy we worked in the previous slides, each contributor could be able to create one of more branches with their part of the house (or piece of code / text) that then they will merge to the main project.  
+If you start a new repository with some coworkers and you add them as collaborators, you can all contribute to it using branching. This means that all the contributors can create branches from the `main` branch. If you think in the analogy we worked in the previous slides, each contributor could be able to create one or more branches with their part of the house (or piece of code / text) that then they will merge to the `main` branc of the project.  
 
 
 2. Contributing to a repository that you don't have access using a GitHub tool called **fork**.
 
 
 On the other hand, the use of forks is more common if you want to contribute to open source projects or public online repositories which you don't have write access. 
-As an example imagine that you want to contribute to this [multilingual glossary for computing and data science terms](https://glosario.carpentries.org/) created by The Carpentries, an inclusive community willing to teach data and coding skills. If you explore the GitHub repo of the project (https://github.com/carpentries/glosario) you will see a file called `CONTRIBUTING.md` where it is explained how someone can add new terms to the glossary. In general, when you want to contribute to a public repository as this one, you will have to **fork the repository** first. You will create a copy in your GitHub account of the repository at that moment.
-
-Even if 1 and 2 are very different ways of work,  the most common practice before accepting contributions to the `main` branch not matter the strategy you are using involves to open a **pull request** with the proposed changes to the `main` branch and **ask for review** to someone part of the project before accepting those changes.
-
-Now will learn with more detail both strategies and finish this chapter with 
-
-
-
-
+As an example imagine that you want to contribute to this [multilingual glossary for computing and data science terms](https://glosario.carpentries.org/) created by The Carpentries, an inclusive community willing to teach data and coding skills. If you explore the GitHub repo of the project (https://github.com/carpentries/glosario) you will see a file called `CONTRIBUTING.md` where it is explained how someone can add new terms to the glossary. In general, when you want to contribute to a public repository as this one, you will have to **fork the repository** first because you don't have write access. Forking it allow you to create a copy in your GitHub account of the repository at that moment.
 
 ---
 # Collaborative work 
@@ -65,8 +57,9 @@ There are 2 strategies we can use to work with others:
 
 
 
-Notes: Let's start with branching!
+Notes: Even if 1 and 2 are very different ways of work,  the most common practice before accepting contributions to the `main` branch not matter the strategy you are using involves to open a **pull request** with the proposed changes to the `main` branch and **ask for review** to someone part of the project before accepting those changes.
 
+Let's start learning about branching!
 
 
 ---
@@ -113,7 +106,7 @@ Under "Branch name pattern", type the branch name or pattern you want to protect
 
 <center/>
 
-Notes: Now that all the collaborators have access they can clone the repository and create a branch using a meaningful name with the feature they are willing to work on. Merging the individual branches without socializing it to the other team members could create merging problems. To avoid that, you can set a [branch protection rule](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/managing-a-branch-protection-rule) in the repository that requires a pull request before merging. We will talk with detail about pull requests later on, but for now you can think about them as specific notifications you will receive when someone is trying to modify the `main` branch. Pull request should be approved before merging in general by other team members.
+Notes: Now that all the collaborators have access they can clone the repository and create a branch using a meaningful name with the feature they are willing to work on. If some of the collaborators push to `main` without socializing it to the other team members first could create merging problems. To avoid that risk, you can set a [branch protection rule](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/managing-a-branch-protection-rule) in the repository making it require a pull request before merging. We will talk with detail about pull requests later on, but for now you can think about them as specific notifications you will receive when someone is trying to modify the `main` branch. Pull request should be approved before merging in general by other team members.
 
 🙌
 To add a branch protection rule you should go to **Settings > Code and Automation (sidebar) > Branch protection rules** and click in **"Add rule"** in your repository. 
@@ -126,7 +119,7 @@ To add a branch protection rule you should go to **Settings > Code and Automatio
 
 <center>
 
-<img src='/module5/PR-review-required-updated.png' width="80%" alt="404 image" />
+<img src='/module5/PR-reviews-required-updated.png' width="80%" alt="404 image" />
 
 <center/>
 
