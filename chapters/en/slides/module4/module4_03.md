@@ -91,7 +91,7 @@ You will see that after closing the editor, now you have a new commit updated wi
 
 ---
 
-# Let's Practise
+# Let's apply what we learned!
 
 
 

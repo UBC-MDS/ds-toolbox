@@ -128,4 +128,4 @@ This workflow can save you from running into merge conflicts, as long as you hav
 
 ---
 
-# Let's Practise
+# Let's apply what we learned!

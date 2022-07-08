@@ -9,7 +9,7 @@ id: 4
 ---
 
 
-<exercise id="1" title="Viewing your Git history" type="slides,video">
+<exercise id="1" title="View your Git history" type="slides,video">
 
 <slides source="module4/module4_01" shot="0" start="0:002" end="3:40">
 </slides>

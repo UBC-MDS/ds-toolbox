@@ -145,4 +145,4 @@ This way, you'll no longer need to add those particular file or folder names to 
 
 ---
 
-# Let's get started!
+# Let's apply what we learned!

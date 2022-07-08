@@ -119,4 +119,4 @@ Don't forget `git push` to get the file backed up on GitHub!
 
 ---
 
-# Let's practise
+# Let's apply what we learned!

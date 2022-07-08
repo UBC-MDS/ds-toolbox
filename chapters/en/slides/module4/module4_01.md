@@ -87,4 +87,4 @@ The terminal allows greater flexibility when it comes to obtaining information a
 
 ---
 
-# Let's practise
+# Let's apply what we learned!
