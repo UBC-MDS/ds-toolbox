@@ -44,7 +44,7 @@ Clone the repo https://github.com/UBC-MDS/equine_numbers_value_canada. What is t
 
 <exercise id='4' title='Test Your Knowledge'>
 
-You are writing a book using version control. In your local repository you have text file for each chapter. Today, after reading your work again and decided to move some of the text you have written for `chapter3.md` to `chapter1.md`. How would you save this change in Git?
+You are writing a book using version control. In your local repository, you have a text file for each chapter. Today, after reading your work again you decided to move some of the text you have written for `chapter3.md` to `chapter1.md`. How would you save this change using Git?
 
 <choice>
 <opt text='It would cut and copy the text into the new file, add both files to the staging area, and then commit with a message explaining the changes.' correct='true'>
