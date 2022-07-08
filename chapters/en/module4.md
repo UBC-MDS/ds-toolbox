@@ -47,42 +47,42 @@ Clone the repo https://github.com/UBC-MDS/equine_numbers_value_canada. What is t
 You are writing a book using version control. In your local repository, you have a text file for each chapter. Today, after reading your work again you decided to move some of the text you have written for `chapter3.md` to `chapter1.md`. How would you save this change using Git?
 
 <choice>
-<opt text='It would cut and copy the text into the new file, add both files to the staging area, and then commit with a message explaining the changes.' correct='true'>
+<opt text='I would cut and copy the text into a new file, add both files to the staging area, and then commit with a message explaining the changes.' correct='true'>
 
 </opt>
 
 <opt text='I would <b>revert</b> to the commit I did after writing that paragraph. Then, I would add the text in the correct chapter and make a new commit with a message explaining the changes.'>
 
-Are you sure you want to loose all the changes you did for `chapter2.md`? Even if you can recover those changes, reverting the changes will make you go back to that particular point in the the history of your project.
+Are you sure you want to lose all the changes you made in `chapter2.md`? Even if you can recover those changes, reverting the changes will make you go back to that particular point in the the history of your project.
 
 </opt>
 
 <opt text='I would perform a <b>hard reset</b> to the commit I did after writing that paragraph. Then, I would add the text in the correct chapter and make a new commit with a message explaining the changes.'>
 
-When you realize a hard reset, you are deleting the history of your project until that commit. This means that you will be losing all the changes you did in between that commit.
+When you do a hard reset, you are deleting the history of your project up to a particular commit. This means that you will lose all the changes you made between that particular commit and your most recent one.
 
 </opt>
 </choice>
 
 TRUE OR FALSE
 
-Select all the situations when it is a good idea to use reset your work to a previous commit
+Select all the situations in which it is a good idea to reset your work to a previous commit:
 
 <choice>
-<opt text='When you are working in a project locally, without pushing to the remote' correct='true'>
+<opt text='When you are working on a project locally, without having already pushed your work to the remote' correct='true'>
 
 If you are working locally on a private project, it is quite safe to use reset. Nobody is going to be affected by you deleting part of the history of your project.
 
 </opt>
-<opt text='When we are working with other colleagues pushing to the same repository' >
+<opt text='When we are working with other collaborators pushing to the same repository' >
 
-This is not a good idea because you are deleting part of the history of your project. Consider that your colleagues are working with the full history. This could be a problem at the moment of combining the information. In this case probably it is better to revert the changes, a command that we are going to learn in the next sections of this module.
+This is not a good idea, because you are deleting part of the history of your project. Keep in mind that your collaborators are working with the full history. This could pose a problem at the time of combining the information. In this case, it is probably better to revert the changes—a command that we are going to learn in the next sections of this module.
 
 </opt>
 
 <opt text='Both are correct' >
 
-You can hard reset your work in both cases, but one option could generate problems.
+You can hard-reset your work in both cases, but one of the options could cause problems.
 
 </opt>
 
@@ -90,20 +90,20 @@ You can hard reset your work in both cases, but one option could generate proble
 </exercise>
 
 <exercise id='5' title='Revert your changes' type='slides, video'>
-<slides source='module4/module4_04' shot='0' start='3:42' end='4:35'> </slides>
+<slides source='module4/module4_03' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
 <exercise id='6' title='Test Your Knowledge'>
 
-What of this statements are TRUE about git revert
+Which of the following statements are TRUE about `git revert`?
 
 
 <choice>
 <opt text='This command creates a new commit that undoes the changes from a previous commit.' >
 </opt>
-<opt text='This command undoes the changes of your project until the commit id that you determine.'>
+<opt text='This command undoes the changes in your project up to the commit id that you have specified.'>
 </opt>
-<opt text='This command makes shorter the history of the project (deletes commits)'>
+<opt text='This command makes the history of the project shorter (deletes commits)'>
 </opt>
 <opt text='This command is used to undo changes in your working directory that have not been comitted yet.'>
 </opt>
@@ -117,7 +117,7 @@ What of this statements are TRUE about git revert
 </exercise>
 
 <exercise id='7' title="Deal with merge conflicts"  type='slides, video'>
-<slides source='module4/module4_03' shot='0' start='3:42' end='4:35'> </slides>
+<slides source='module4/module4_04' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
 <exercise id='8' title='Test Your Knowledge'>
@@ -139,7 +139,7 @@ What do you have to do if you are working with the terminal and you want to writ
 </opt>
 <opt text='Accept both changes' correct='true'>
 </opt>
-<opt text='You should delete everything between <code> <<<<<<< </code> and <code> >>>>>>> </code> add the text you want instead'>
+<opt text='You should delete everything between <code> <<<<<<< </code> and <code> >>>>>>> </code> and add the text you want instead'>
 </opt>
 
 </choice>
