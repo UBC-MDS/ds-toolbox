@@ -69,6 +69,41 @@ Notes:
 
 ---
 
+# Cell selection modes
+
+An **active** cell in a Jupyter notebook can be in either **command** or **edit** mode:
+
+- **Command** mode:
+  - You don't have a cursor inside the cell
+  - The cell has a **grey** background
+  - Hit `Esc` to switch from **edit** to **command** mode
+
+- **Edit** mode:
+  - You have a cursor inside the cell
+  - You can start typing or edit the code or text inside a cell
+  - The cell has a **white** background
+  - Hit `Enter` to switch from **command** to **edit** mode
+ 
+<br>
+
+<img src="/module7/command-edit.png" width="650"></img>
+
+Notes:
+
+Whenever you interact with a cell inside a Jupyter notebook, it becomes **activated**. This means that the cell is selected, and ready to be edited or executed.
+
+---
+
+# Cell selection modes
+
+<img src="/module7/command-edit2.png" width="550"></img>
+
+Notes:
+
+You can also find out whether you're in command or edit mode by looking at the status bar when you have an active cell.
+
+---
+
 # Code cells and kernels
 
 <br>
@@ -128,27 +163,6 @@ Note how `[ ]:` changes to `[1]:` when you run the cell. Anytime you run this ce
 
 ---
 
-# Cell selection modes
-
-A cell in a Jupyter notebook can be in either **command** or **edit** mode:
-
-- **Command** mode:
-  - You don't have an active cursor inside the cell
-  - The cell has a **grey** background
-  - Hit `Esc` to switch from **edit** to **command** mode
-
-- **Edit** mode:
-  - You have an active cursor inside the cell
-  - You can start typing or edit the code or text inside a cell
-  - The cell has a **white** background
-  - Hit `Enter` to switch from **command** to **edit** mode
- 
-<br>
-
-<img src="/module7/command-edit.png" width="650"></img>
-
----
-
 # Useful keyboard shortcuts for cell manipulation
 
 When you are in **command** mode, you can use the following keyboard shortcuts to perform a variety of cell actions:
@@ -173,13 +187,131 @@ You're already familiar with the following shortcuts:
 
 ---
 
-# Markdown cells
+# Consoles
 
+<br>
 
+Consoles in JupyterLab are **interactive command lines** connected to a kernel.
+
+<img src="/module7/console.png" width="600"></img>
 
 Notes:
 
+There are times that you want to quickly experiment with short pieces of code, but you don't necessarily want the code you write to be part of your Jupyter notebook.
 
+Using an interactive **console** is a great idea in such a situation. The nice thing about it is that you can open a console that's connected to your notebooks kernel, so it will be aware of all variables, arrays, functions, etc. that you have defined in your notebook.
+
+In order to open a console that's connected to your notebook's kernel, right-click on your notebook's name in the tab bar, and choose "New Console for Notebook".
+
+---
+
+# Consoles
+
+<img src="/module7/console2.png" width="700"></img>
+
+Notes:
+
+Here I have opened a console for the notebook which I already created. As you can see, I print a variable called `myString`, which stores a string value. Because the console is connected to the notebook's kernel, I can access that variable right from the console.
+
+You can resize or move the console window as you wish. Also, remember that you can run the piece of code that you've entered in the input area by pressing `Shift + Enter`.
+
+---
+
+# Getting help when writing code
+
+<br>
+
+**Auto-completion:**
+
+You can partially type the name of a variable, function, class, or any other known name in your Python session, and then press `Tab` to see the available options for auto-completion.
+
+<img src="/module7/tab.png" width="500"></img>
+
+Notes:
+
+Like in a terminal, you can take advantage of the auto-completion capability of JupyterLab (through the IPython kernel).
+
+Whenever you partially type the name of a variable, function, class, etc. you can press `Tab` on your keyboard to see the available options.
+
+Auto-completion is a very handy feature also to see what methods and functions are available in a package. You can type the packages alias (e.g. `np` in this case for the `numpy` package) followed by a `.`, and then hit `Tab` to see the available options.
+
+It's important to remember that, you won't get auto-completion until the expressions that you're looking for are known in your Python session. This means that, for example, unless you run `import numpy as np`, auto-completion won't be available for any function belonging to the Numpy package.
+
+---
+
+# Getting help when writing code
+
+<br>
+
+**Contextual help:**
+
+To see a function's docstring, press `Shift + Tab` while your curser is anywhere inside a function's name characters:
+
+<img src="/module7/help.png" width="700"></img>
+
+Notes:
+
+When you're writing code, you might not remember all arguments that a particular function accepts, or the type outputs. Sometimes it's also very helpful to be able to see a few examples of how a function can be used.
+
+In these situations, you might want to have a quick look at a function's documentation (i.e. "docstring" in Python lingo).
+
+In JupyterLab, you can press `Shift + Tab` while your cursor is anywhere inside a function's name characters, to quickly make the function's documentation appear as a pop-up window.
+
+Keep in mind that, the documentation pop-up content depends on the cursor location. If you move your cursor to a different function and hit `Shift + Tab` again, the helper pop-up would show the other function's documentation.
+
+---
+
+# Getting help when writing code
+
+<br>
+
+<img src="/module7/help2.png" width="800"></img>
+
+Notes:
+
+Another way of accessing the docstring for various functions is to open the "Contextual Help" window by right-clicking any cell and choosing "Show Contextual Help".
+
+As soon as you click on any function's name, the contextual help window will look something like this:
+
+---
+
+# Jupyter notebooks & reproducibility
+
+It is possible (and common) to execute code cells **out of order** in a Jupyter notebooks. If not careful, this can lead to to reproducibility issues.
+
+<img src="/module7/reprod.png" width="480"></img>
+
+Notes:
+
+In Jupyter notebooks, it is possible (and common) to execute code cells out of order. If not careful, this can lead to to reproducibility issues.
+
+Once you are done with your analysis, it's a good idea to take the following steps to ensure that your results and outputs are reproducible:
+
+- Restart your notebook kernel
+  - By doing this, you would make sure that the Python engine is fresh and does not contain any variables, functions, etc. Sometimes, you might define a variable and then delete the cell containing that piece of code. If someone else runs your notebook, they will run into error. Make sure your notebook contains everything it needs to run properly by restarting your kernel, and testing everything fresh!
+  - To restart the kernel, go to the "Kernel" menu and choose "Restart Kernel..."
+
+- After restarting, run all cells from the top
+  - This way, you would be sure that your out-of-order executions do not affect the reproducibility of your code.
+  - To run all cells from the top, go to the "Run" menu and choose "Run All Cells"
+
+It's not a bad idea to explore other similar options in the "Kernel" and "Run" menus. For example, it's also possible and sometimes helpful to run a notebook from the top, but up to a selected cell, or run a notebook beginning from a selected cell.
+
+---
+
+# The Command Palette
+
+<br>
+
+<img src="/module7/comm-pal.png" width="600"></img>
+
+Notes:
+
+Whenever you happen to forget the where a particular command is, you can take advantage of the Command Palette in JupyterLab.
+
+To open the Command Palette, go to the "View" menu and choose "Activate Command Palette", or use the corresponding keyboard shortcut.
+
+In the search box that appears, you can type the name of the command you're looking for. The nice thing is that, it works well even if you **partially** remember the command's name!
 
 ---
 
