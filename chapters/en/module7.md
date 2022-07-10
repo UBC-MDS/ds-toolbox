@@ -66,8 +66,26 @@ Hint
 
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id="8" title="JupyterLab extensions" type="slides,video">
+<exercise id="8" title="Markdown for text formatting" type="slides,video">
 <slides source="module7/module7_04"></slides>
+</exercise>
+<!-- ------------------------------------ -->
+<exercise id='9' title="Test your knowledge">
+
+Question description
+
+<choice id="1">
+
+<opt text="<code>EDA.ipynb</code>">
+Hint
+</opt>
+
+</choice>
+
+</exercise>
+<!-- ------------------------------------ -->
+<exercise id="10" title="Do more with JupyterLab" type="slides,video">
+<slides source="module7/module7_05"></slides>
 </exercise>
 <!-- ------------------------------------ -->
 <exercise id='9' title="Test your knowledge">
