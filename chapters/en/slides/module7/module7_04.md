@@ -188,4 +188,68 @@ You can also write math in a math block, which you can create using a pair of do
 
 ---
 
+# Markdown pro tips
+
+<br>
+
+- Standard Markdown provides a limited (but mostly enough) formatting styles
+
+- Sometimes, we just need more!
+
+<br>
+
+You can use HTML inside Markdown text to
+
+- Change the displayed size of an image
+- Change text size and color
+
+Notes:
+
+Since Markdown renderers use HTML under the hood to format a Markdown text document, HTML tags will be rendered when used inside a Markdown document.
+
+Sometimes it might be helpful to borrow a few tricks from HTML to achieve certain formatting styles that are not available in standard Markdown.
+
+Here are a few things you can't do with standard Markdown, but you can do with HTML tags:
+
+- Change the displayed size of an image
+- Change text size and color
+
+---
+
+# Pro tips: Change image size
+
+You can use the following HTML tag to change the displayed size of an image:
+
+```html
+<img src="<PATH_TO_FILE>" width="400"></img>
+```
+
+<br>
+
+<img src="/module7/html-tag.png" width="800"></img>
+
+---
+
+# Pro tips: Change text size & color
+
+You can use the following HTML tag to change the size and color of a piece of text:
+
+```html
+<p style="color:black; font-size:120%">
+Some text you want to show in a different color or size
+</p>
+```
+
+<br>
+
+<img src="/module7/html-tag2.png" width="800"></img>
+
+Notes:
+
+Keep in mind that you can do much more than just change the size of an image or color of text in HTML.
+
+However, since the whole idea of Markdown is its readability and that it can be written without the usual complexity of markup languages such as HTML, try to use HTML tags sparingly and only if you absolutely need to achieve a particular formatting.
+
+---
+
 # Let's see what you learned!
