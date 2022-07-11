@@ -269,7 +269,7 @@ Using only numbers could create confusion when merging the branches. For example
 
 **True or false**
 
-When working on a forked repository, it is a good practice to begin a new branch before submitting a pull request.
+When working on a forked repository, it is good practice to begin a new branch before submitting a pull request.
 
 <choice id = 13>
 <opt text='True' correct='true' >
