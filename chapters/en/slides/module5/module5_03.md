@@ -80,7 +80,7 @@ Notes:
 You will notice that merging the branch will not automatically delete it. If you are not going to be developing that feature anymore you can delete the branch after merging it by clicking on the small garbage bin icon in the "Branches" tab.
 `
 
-Be careful because if you didn't merge it it can be difficult to recover the information.
+You can only delete a branch when you are not working on it (it is not highlighted in blue in the JupyterLab UI) and although it can be difficult to recover the information after it is deleted, you can safely do so after successfully merging the changes into another branch.
 
 ---
 
