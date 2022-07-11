@@ -18,12 +18,37 @@ id: 7
 <!-- ------------------------------------ -->
 <exercise id='3' title="Test your knowledge">
 
-Question description
+JupyterLab only supports Python.
 
 <choice id="1">
 
-<opt text="<code>- file: EDA.ipynb</code>">
-Hint
+<opt text="True">
+Remember that the Jupyter Project is created to be language agnostic? It supports multiple languages, including Python, Julia, R, and more.
+</opt>
+
+<opt text="False" correct="true">
+</opt>
+
+</choice>
+
+Among the following options, which one is JupyterLab most similar to?
+
+<choice id="2">
+
+<opt text="Python">
+JupyterLab is an IDE, whereas Python is a programming language.
+</opt>
+
+<opt text="Visual Studio Code" correct="true">
+Both JupyterLab and Visual Studio code are IDEs with similar features.
+</opt>
+
+<opt text="GitHub">
+JupyterLab is an IDE, whereas GitHub is an online platform for hosting and managing code through the Git system.
+</opt>
+
+<opt text="Atom">
+JupyterLab is an IDE, whereas Atom is a text editor.
 </opt>
 
 </choice>
@@ -36,69 +61,159 @@ Hint
 <!-- ------------------------------------ -->
 <exercise id='5' title="Test your knowledge">
 
-Question description
+When you use the "Simple" mode in JupyterLab, all windows will be closed except for the currently active one.
 
 <choice id="1">
 
-<opt text="<code>EDA.ipynb</code>">
-Hint
+<opt text="True">
+All other windows will be just <b>hidden</b> from view, not closed! Once you disable the "Simple" mode, you'll see already open windows back in their original place.
+</opt>
+
+<opt text="False" correct="true">
 </opt>
 
 </choice>
 
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id="6" title="Jupyter notebooks" type="slides,video">
+<exercise id='6' title="Jupyter notebooks" type="slides,video">
 <slides source="module7/module7_03"></slides>
 </exercise>
 <!-- ------------------------------------ -->
 <exercise id='7' title="Test your knowledge">
 
-Question description
+Suppose that you have just opened a notebook with the following cells:
+
+<img src="/module7/mcq.png" width="500"></img>
+
+What happens if you hit `Shift + Tab` while your cursor is in the shown position?
 
 <choice id="1">
 
-<opt text="<code>EDA.ipynb</code>">
-Hint
+<opt text="A pop-up will appear to show the <code>pd.read_csv()</code>'s documentation">
+This is what's expected to happen, but it won't. Remember that, you've just opened your notebook...
+</opt>
+
+<opt text="Nothing will appear" correct="true">
+Since the first cell is not executed yet, the notebook's kernel doesn't know anything about those functions.
+</opt>
+
+<opt text="You'll get an error message">
+No error error message will appear as a result of pressing <code>Shift + Tab</code>.
+</opt>
+
+<opt text="JupyterLab's contextual help window will be opened">
+The <code>Shift + Tab</code> shortcut is not set for opening the contextual help window.
+</opt>
+
+</choice>
+
+A notebook's console uses the same kernel as the notebook itself.
+
+<choice id="2">
+
+<opt text="True" correct="true">
+</opt>
+
+<opt text="False">
+Even though you can launch an independent console in JupyterLab too, the console opened for a particular notebook is connected to the same kernel as the notebook.
+</opt>
+
+</choice>
+
+We have a notebook like the following:
+
+<img src="/module7/mcq2.png" width="500"></img>
+
+What do you think the output will be if we run the last cell?
+
+<choice id="3">
+
+<opt text="27">
+Note the order in which the cells have been executed. This would have been the output if only the second cell was already run.
+</opt>
+
+<opt text="9">
+Note the order in which the cells have been executed. This would have been the output if the second and third cell were already run.
+</opt>
+
+<opt text="60" correct="true">
+</opt>
+
+<opt text="An error message">
+Note that some cells have already been executed. An error message would have resulted from running the last cell only if the kernel didn't know about the variable <code>num</code>.
 </opt>
 
 </choice>
 
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id="8" title="Markdown for text formatting" type="slides,video">
+<exercise id='8' title="Markdown for text formatting" type="slides,video">
 <slides source="module7/module7_04"></slides>
 </exercise>
 <!-- ------------------------------------ -->
 <exercise id='9' title="Test your knowledge">
 
-Question description
+It's convenient to run code inside Markdown code blocks if you've specified the language after the first three back ticks, e.g. ` ```python`.
 
 <choice id="1">
 
-<opt text="<code>EDA.ipynb</code>">
-Hint
+<opt text="True">
+You can't run code inside a Markdown document! Code can only be executed inside code cells in a Jupyter notebook.
+</opt>
+
+<opt text="False" correct="true">
+</opt>
+
+</choice>
+
+Markdown documents can be rendered with any text editor.
+
+<choice id="2">
+
+<opt text="True">
+You can open a Markdown document with any text editor, since it only contains plain text. However, you can view <b>rendered output</b> only in environments that support displaying Markdown output, such as JupyterLab or GitHub.
+</opt>
+
+<opt text="False" correct="true">
 </opt>
 
 </choice>
 
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id="10" title="Do more with JupyterLab" type="slides,video">
+<exercise id='10' title="Do more with JupyterLab" type="slides,video">
 <slides source="module7/module7_05"></slides>
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id='9' title="Test your knowledge">
+<exercise id='11' title="Test your knowledge">
 
-Question description
+Which of the following statements is false?
 
 <choice id="1">
 
-<opt text="<code>EDA.ipynb</code>">
-Hint
+<opt text="When you edit a notebook, all notebook views reflect the change.">
+This is a true statement.
+</opt>
+
+<opt text="A notebook converted to Markdown format can be opened with any text editor.">
+This is a true statement.
+</opt>
+
+<opt text="A source extension requires rebuilding JupyterLab.">
+This is a true statement.
+</opt>
+
+<opt text="Different kernels can be used with different views of a notebook." correct="true">
+Views are just "views". In other words, view are like looking at a single notebook, but from different viewpoints.
+Each single notebook in Jupyter Lab can only be connected to a single kernel.
 </opt>
 
 </choice>
 
+</exercise>
+<!-- ------------------------------------ -->
+<exercise id='12' title="Summary of your learning" type="slides,video">
+<slides source="module7/module7_06"></slides>
 </exercise>
 <!-- ------------------------------------ -->
