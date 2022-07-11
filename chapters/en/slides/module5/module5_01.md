@@ -119,7 +119,7 @@ Let's see what happens when we make a commit locally.
 
 2. Run `git log --oneline`
 
-As expected, only the reference to where we are currently (HEAD) and the local main branch moved, because we have not pushed our changes to GitHub (`origin`). If you push your changes, the GitHub `main` branch (`origin/main`) will be updated with the latest commit in the remote and locally. You can run again `git log --oneline` after pushing the new commit to GitHub to check this.
+As expected, only the reference to where we are currently (HEAD) and the local main branch moved, because we have not pushed the changes to our GitHub remote (`origin`). If you push your changes, the GitHub `main` branch (`origin/main`) will also be updated with the latest commit local commit. To confirm this, you can run `git log --oneline` after pushing the new commit to GitHub.
 
 ---
 
