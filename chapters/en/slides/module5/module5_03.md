@@ -99,7 +99,7 @@ Notes:
 If you want to delete the branches using the terminal you can use the command `git branch -d <branch-name>`.
 
 
-Now that you have a strong idea of where you are in the Git commit tree it will be easier to deal with branches and forks.
+Now that you have a better grip on how to read the Git history and how to merge branches, it will be easier to work with both branches and forks.
 
 ---
 
