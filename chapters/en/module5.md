@@ -66,7 +66,7 @@ Remember that you will create a branch from the stage your project currently is 
 </choice>
 
 
-You clone a repository from Github with a README file to your own computer. After that, you create a new branch locally called <code>app</code> and add to the stage area and commit changes three times. What labels will include your most recent commit (the third one)? 
+Imagine that you cloned a repository from Github with a README file to your own computer. You then created a new local branch called <code>app</code> and made three commits. What labels will be included in your most recent commit (the third one) when you view the repo's commit history? 
 
 <choice id = 3>
 <opt text='<code>origin/HEAD</code> and <code>origin/main</code>'>
