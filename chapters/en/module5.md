@@ -79,7 +79,7 @@ Imagine that you cloned a repository from Github with a README file to your own 
 Which branch are you currently working on?
 </opt>
 <opt text=' <code>HEAD -> main</code>'>
-In what branch are you working now? 
+Which branch are you currently working on?
 </opt>
 
 </choice>
