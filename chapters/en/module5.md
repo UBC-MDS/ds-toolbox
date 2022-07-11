@@ -124,7 +124,7 @@ Select the options that are TRUE
 <opt text='The most recent commit on GitHub was performed on the <code>lecture-todo</code> branch'>
 You can recognize the latest commit on GitHub by comparing the timestamps for all commits marked with an <code> origin/ </code> label.
 </opt>
-<opt text='There is a branch called <code> lecture-todo </code> that has not been pushed to GitHub yet ' correct='true'>
+<opt text='There are changes to the <code> lecture-todo </code> branch that has not been pushed to GitHub yet ' correct='true'>
 The <code> lecture-todo </code> branch shows up alone on the latest commit. If the changes were on GitHub there would be at least one branch with the <code> origin/ </code> prefix on the latest commit as well.
 </opt>
 <opt text='The most recent local commit of this repository has associated the message "Update readme"' >
