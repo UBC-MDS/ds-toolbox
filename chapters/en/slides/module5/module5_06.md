@@ -90,7 +90,7 @@ Notes: To push a feature branch to GitHub, you can try typing git push, just as 
 
 Git is telling you that there is no branch with this name currently on your GitHub repo, so it asks you to be explicit about creating a new branch and which name to give it. One gotcha here is that the word "upstream" is not referring to the GitHub branch you forked from. Instead, it is referring to a branch that will be created on your repo (origin). Technically, this seemingly ambiguous use of the word "upstream" is correct (the repo you forked from is upstream of your remote repo, and the branch on your remote repo is upstream of the branch on your local repo), but it can be confusing that the same name is used so it might help to think of the command above as `git push --set-repo-branch <repo-nickname> <new-branch-name>` instead.
 
-This behavior is rather conservative from Git's side. Almost always, we want the branch on our remote repo to have the same name as the branch on our local repo. If you want this to be the default behavior, you can type `git config --global push.default current`. From now on, you can just type git push even when pushing a new branch to GitHub.
+
 
 
 ---
