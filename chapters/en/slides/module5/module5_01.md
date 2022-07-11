@@ -63,7 +63,7 @@ Note that in some old repositories the default branch could be called `master` i
 
 Notes: To create a branch in JupyterLab you have to go to **Branches > New branch** and then write the name of the branch there. If you want to create the new branch based on another branch than `main` you can click and select it in the menu. You can always switch easily between branches on the **Branches** tab.
 
-You can create the branch from `main` or from `origin/HEAD` and `origin/main`. We already know that `main` is the default branch, but what about `origin` and `HEAD`? Let's review some concepts:
+In this scenario, we create the branch from `main` or from `origin/HEAD` and `origin/main`. We already know that `main` is the default branch, but what about `origin` and `HEAD`? Let's review some concepts:
 
 * `main` is your default local branch.
 * `HEAD` is poiting where you currently are (in this case, on the `main` branch)
