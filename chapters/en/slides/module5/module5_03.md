@@ -7,7 +7,7 @@ title: 'module5_03'
 
 ---
 
-# Merging branches
+## Merging branches
 
 
 <center>
