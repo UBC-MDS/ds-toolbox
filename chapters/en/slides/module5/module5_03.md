@@ -77,7 +77,8 @@ Let's see how these graphics change once we merge the branches together on VS Co
 
 Notes:
 
-You will notice that merging the branch will not make it dissapear. If you are not going to be developing that feature anymore you can delete it after merging it. You can delete a branch only when you are not working on it (it is not colores as blue)
+You will notice that merging the branch will not automatically delete it. If you are not going to be developing that feature anymore you can delete the branch after merging it by clicking on the small garbage bin icon in the "Branches" tab.
+`
 
 Be careful because if you didn't merge it it can be difficult to recover the information.
 
