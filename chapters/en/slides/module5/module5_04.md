@@ -16,8 +16,9 @@ title: 'module5_04'
 <br>
 <br>
 
->*"When I first started we all pushed to one branch, but the problem is you push and nobody knows what changes are going through and there is no chance for a review. Our current system is that you don’t make any changes without submitting a **pull request**[...]and then one or more members will review it and you need one thumbs up from another team member to merge it, otherwise it can’t go in.”*
-
+<blockquote cite= "http://thesegalgroup.org/wp-content/uploads/2014/04/code-centric.pdf" >
+"When I first started we all pushed to one branch, but the problem is you push and nobody knows what changes are going through and there is no chance for a review. Our current system is that you don’t make any changes without submitting a **pull request**[...]and then one or more members will review it and you need one thumbs up from another team member to merge it, otherwise it can’t go in.”*
+</blockquote>
 
 <a href="http://thesegalgroup.org/wp-content/uploads/2014/04/code-centric.pdf">Kalliamvakou, E. (2014). The Code-Centric Collaboration Perspective: Evidence from GitHub.</a>
 

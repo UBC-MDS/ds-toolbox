@@ -63,7 +63,7 @@ If you want to use the terminal to merge the branches and you are currently work
 
 
 Notes: 
-Let's see how these graphics change once we merge the branches together on VS Code. Remember that you can open the editor from the terminal using the comand `code .` and then writting `git history`. 
+Let's see how these graphics change once we merge the branches together on VS Code. Remember that you can open the editor from the terminal using the comand `code .`. Then go to **View > Command Palette** and start writting `Git: View History (git log)`. A new tab will open with the Git History. If you want to display all the branches you will have to select them in one of the menus.
 
 ---
 
@@ -77,7 +77,7 @@ Let's see how these graphics change once we merge the branches together on VS Co
 
 Notes:
 
-You will notice that merging the branch will not automatically delete it. If you are not going to be developing that feature anymore you can delete the branch after merging it by clicking on the small garbage bin icon in the "Branches" tab.
+You will notice that merging the branch will not automatically delete it. If you are not going to be developing that feature anymore you can delete the branch after merging it by clicking on the small garbage bin icon in the **Branches** tab.
 `
 
 You can only delete a branch when you are not working on it (it is not highlighted in blue in the JupyterLab UI) and although it can be difficult to recover the information after it is deleted, you can safely do so after successfully merging the changes into another branch.

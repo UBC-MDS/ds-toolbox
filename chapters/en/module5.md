@@ -15,7 +15,7 @@ id: 5
 
 </exercise>
 
-<exercise id='2' title="Be careful if you can not see the wood from the trees">
+<exercise id='2' title="Be careful if you can't see the forest because of  trees">
 
 Which of these names are used to refer to the default branch in Git/GitHub?
 
@@ -91,7 +91,7 @@ Which branch are you currently working on?
 <slides source='module5/module5_02' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
-<exercise id='4' title='Observing the trees'>
+<exercise id='4' title='Observing the branches'>
 
 **True or False**
 
@@ -103,7 +103,7 @@ What happens if the last change in the GitHub repository was in a different bran
 </opt>
 <opt text='False'  correct='true' >
 
-The term `origin` refers to the remote repository. If the last change in the remote repository you are cloning was in other branch than <code>main</code> the label in the most recent commit will be (<code>origin/new-branch</code>). <code>origin/HEAD</code> will be always pointing the last commit in the <code>main</code> branch next to <code>origin/main</code>.
+The term `origin` refers to the remote repository. If the last change in the remote repository you are cloning was in other branch than <code>main</code> the label in the most recent commit will be (<code>origin/new-branch</code>). <code>origin/HEAD</code> will be always pointing the last commit in the <code>main</code> branch next to <code>origin/main</code> (except you change GitHub settings).
 
 </opt>
 </choice>
@@ -111,11 +111,7 @@ The term `origin` refers to the remote repository. If the last change in the rem
 After running <code> git log --oneline --all --graph </code> in your repository you get as output the following tree:
 
 
-* a949e61 2020-09-13 (HEAD -> master) Update readme
-| * 0a8dfef 2020-09-13 (lecture-todo) List todo items
-|/
-* 6e69947 2020-09-13 (origin/master, origin/HEAD) Add license
-* 0d5a6f7 2020-09-13 Initial commit
+<img src="module5/module5-gitlog.png" alt="output git log"> 
 
 
 Select the options that are TRUE
@@ -162,8 +158,7 @@ Once the branch has been merged all the information of both branches is combined
 What branches are you merging in this example:
 
 
-(base) Florencia@DESKTOP-KHE5L35 MINGW64 ~/canadian_languages (fix-app-slider)
-git merge app
+<img src="module5/module5-terminal.png" alt="terminal"> 
 
 
 <choice id = 7>
