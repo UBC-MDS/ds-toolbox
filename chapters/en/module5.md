@@ -59,7 +59,7 @@ Right, but there is also another correct option.
 Right, but there is also another correct option.
 </opt>
 <opt text='All are correct '>
-Remember that you will open a branch from the stage your project currently is. Are you sure that would have sense to open all of them at the beggining of the project?   
+Remember that you will create a branch from the stage your project currently is in. Are you sure that it would make sense to create all of them at the beginning of the project?   
 </opt>
 <opt text='2, 3 and 4 are correct' correct='true'>
 </opt>
