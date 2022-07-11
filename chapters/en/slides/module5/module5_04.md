@@ -97,9 +97,7 @@ The next step is for the upstream repo maintainers to review your work and merge
  
 - **Reviewers**: You can choose anyone who can help from the list of prior authors that GitHub will offer as reviewers for that code. A review request will be sent to the reviewers and you will obtain a notification and email once they have submitted their feedback. If you are working with a team you will probably define guidelines for which team member reviews which PRs.
 
-- **Assign**: Assigning someone to the pull request is less strict, basically you can assign anyone that you want. Good reasons to assign someone to a project could be that for  merging the pull request you prefer someone different from the reviewer and/or that you prefer assigning someone else (you can even assign yourself!) to solve the reviewer's comments.
 
-If you are working with a team probably you will define how to designate reviewers and assign different team members in relation to your workflow.
 
 
 You can reference a pull request or issue in GitHub's Markdown syntax by typing `#` followed by the number of the PR. e.g. "Please see PR #1 for a fix to this issue".
