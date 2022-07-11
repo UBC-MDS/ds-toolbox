@@ -17,7 +17,7 @@ id: 5
 
 <exercise id='2' title="Be careful if you can not see the wood from the trees">
 
-What of this names refer to the default branch in Git/GitHub?
+Which of these names are used to refer to the default branch in Git/GitHub?
 
 <choice id = 1>
 <opt text='<code>master</code>'>
