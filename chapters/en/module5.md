@@ -39,7 +39,7 @@ Right, but there is also another correct option.
 <code>master</code> was the old name for the default branch and <code>main</code> is the new one. You still will find repositories that use <code>master</code> to refer to the default branch.
 </opt>
 <opt text='2 and 3 are correct' >
-Only one of this options is correct.
+Only one of these options is correct.
 </opt>
 </choice>
 
