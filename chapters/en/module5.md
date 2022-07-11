@@ -36,7 +36,7 @@ Right, but there is also another correct option.
 <code>main</code>, <code>origin</code> and <code>HEAD</code> are labels that provide valuable information to the user when checking the project history, but two of them not necessary refer to the default branch.
 </opt>
 <opt text='1 and 3 are correct' correct='true'>
-<code>master</code> was the old name for the <code>main</code> branch. You still will find repositories you can contribute to that uses <code>master</code> as the default branch.
+<code>master</code> was the old name for the default branch and <code>main</code> is the new one. You still will find repositories that use <code>master</code> to refer to the default branch.
 </opt>
 <opt text='2 and 3 are correct' >
 Only one of this options is correct.
