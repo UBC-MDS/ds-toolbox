@@ -72,7 +72,7 @@ In this scenario, we create the branch from `main` or from `origin/HEAD` and `or
 
 In JupyterLab you can see this information as labels under the tab **Changes**.
 
-⚠️ We are adding a new synonim for a GitHub repository. We were using `remote` as a way to mention GitHub in general. Now we can refer specifically to the GitHub repository we are workin on as `origin`.
+⚠️ Here we added a new synonym for a GitHub repository. Previously, we were using `remote` as a way to refer to any GitHub repo. Now we can refer to the specific GitHub remote we are working on with the nickname `origin`.
 
 ---
 # How to create a branch? (terminal)
