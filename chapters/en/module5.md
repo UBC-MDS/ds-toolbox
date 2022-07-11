@@ -76,7 +76,7 @@ Imagine that you cloned a repository from Github with a README file to your own 
 '<code>HEAD</code> is pointing to the last place you make changes and that was in the '<code>app</code> branch
 </opt>
 <opt text='<code>main</code>'>
-In what branch are you working now?
+Which branch are you currently working on?
 </opt>
 <opt text=' <code>HEAD -> main</code>'>
 In what branch are you working now? 
