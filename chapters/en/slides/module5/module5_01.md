@@ -135,7 +135,7 @@ Notes: Pushing a new branch using JupyterLab is exacly the same as you are used 
 
 `git push --set-upstream origin <new-branch-name>`
 
-You shouldn't worry because git will remind you the command in the case you forget to specify it as you can see in the image. 
+This command decides what the new branch will be called on the remote GitHub repo. It is recommended that you use the same name as you use locally, and using a different name is rarely necessary. You don't need to worry about remembering this command, because git will remind you in the case you forget to specify it as you can see in the image. 
 
 
 ---
