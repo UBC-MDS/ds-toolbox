@@ -58,7 +58,7 @@ Since we just created the `notes` directory,
 ls doesn't display anything when we ask for a listing of its contents.
 
 Let’s change our working directory to `notes`,
-then use the VS Code editor to create a file called my-first-note.md.
+then use the `VS Code` editor to create a file called `my-first-note.md`.
 The command to invoke VS Code from the command line is `code`,
 and if we pass it a filename as an argument,
 the file will be created in the current directory.
@@ -70,7 +70,7 @@ we are going to put inside the file.
 These program can then activate special functions for certain files,
 such as using the appropriate colors to highlight headings and functions.
 
-Let's move on to the next slide to see how it looks when we are editing file in VS Code.
+Let's move on to the next slide to see how it looks when we are editing file in `VS Code`.
 
 ---
 
@@ -79,7 +79,7 @@ Let's move on to the next slide to see how it looks when we are editing file in 
 <img src='/module2/edit-file-vscode.png' width="80%" alt="How to edit a file in VS Code"/>
 
 Notes:
-This is what it looks like to edit a text file in VS Code.
+This is what it looks like to edit a text file in `VS Code`.
 You will see that there is a small white circle next to the file name.
 This is an indication that the file is not saved yet.
 
@@ -87,9 +87,9 @@ When we are done adding our edits,
 we can hit `Ctrl` + `s` to save the file,
 which will make the white circle disappear.
 After saving the file,
-you can optionally close VS Code before returning to the terminal.
+you can optionally close `VS Code` before returning to the terminal.
 
-We are only using VS Code as a simple text editor here,
+We are only using `VS Code` as a simple text editor here,
 but it is worth knowing that you can use use it as a powerful editor for code as well.
 
 ---

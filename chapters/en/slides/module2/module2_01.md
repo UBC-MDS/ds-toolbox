@@ -37,7 +37,7 @@ A few of the world's most prominent programmers of the time computing ballistic 
 Notes:
 Essentially,
 computing is about humans communicating
-with the computer to modulate flows of current in the hardware.
+with machines to modulate flows of current in the hardware.
 Early examples of human computer communication were quite primitive
 and included actually disconnecting a wire and connecting it again in a different spot.
 
@@ -74,7 +74,7 @@ rather than a graphical one.
 Using a text-based shell might at first seems counter-intuitive,
 since the reason for creating a shell in the first place
 was to facilitate user interaction with the computer.
-So now that we have these easy to use graphical user interfaces,
+So now that we have these easy to use graphical user interfaces (GUIs),
 why would anyone in their right mind go back to using a text based interface?
 
 Well,
@@ -202,7 +202,7 @@ Pictures      my_program
 
 Notes:
 Now that we know where we are,
-let’s see what we have using the command ls (short for “listing”),
+let’s see what we have using the command `ls` (short for “listing”),
 which prints the names of the files and directories in the current directory:
 
 Again,
@@ -223,7 +223,7 @@ Pictures/     my_program*
 ```
 
 Notes:
-We can make the output of ls more informative using the -F option (also sometimes called a switch or a flag).
+We can make the output of `ls` more informative using the `-F` option (also sometimes called a switch or a flag).
 Options are exactly like arguments to a function in Python;
 in this case,
 -F tells ls to decorate its output to show what things are.
