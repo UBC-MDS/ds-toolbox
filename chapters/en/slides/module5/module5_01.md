@@ -32,7 +32,7 @@ To illustrate feature-based development with a practical example we can use the 
 
 ---
 
-# Branches
+## When should a new branch be opened?
 
 When we initiate a repository by default we start working on the `main` branch, but we can be working in paralell in other features.
 
