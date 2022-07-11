@@ -15,7 +15,7 @@ id: 5
 
 </exercise>
 
-<exercise id='2' title="Be careful if you can't see the forest because of  trees">
+<exercise id='2' title="Be careful if you can't see the forest because of all the trees">
 
 Which of these names are used to refer to the default branch in Git/GitHub?
 
@@ -135,7 +135,7 @@ The position of the label <code> origin/master</code> indicates that both these 
 </choice>
 </exercise>
 
-<exercise id='5' title="All roads lead to main: Merging branches"  type='slides, video'>
+<exercise id='5' title="All roads lead to <code>main</code>: Merging branches"  type='slides, video'>
 <slides source='module5/module5_03' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
