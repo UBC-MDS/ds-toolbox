@@ -49,7 +49,7 @@ Notice that after doing this, the report branch is not deleted automatically, so
 
 Notes:
 
-If you want to use the terminal to merge the branches you can type `git merge <branch>` to merge the commits from the `report` branch into the `main` branch. Remember that you have to be in the oposite branch 
+If you want to use the terminal to merge the branches and you are currently working on the `main` branch, you can type `git merge <branch>` to merge the commits from the branch with the new feature into the `main` branch. In this slide, we merged in the changes of the branched named `report` into `main`.
 
 
 ---
