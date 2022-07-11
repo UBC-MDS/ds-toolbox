@@ -18,7 +18,7 @@ title: 'module5_03'
 
 Notes: Once you have finished your modifications in the branch you are working on, it is time to merge your changes to the `main` branch!
 
-The changes you was working on isolation in a particular branch now are combined with the content of the `main` branch (or the branch you decide to merge your changes with)
+Upon merging, the changes you were working on in a particular branch are combined with the content of the `main` branch (or any other branch that you decide to merge your changes with).
 
 
 ---
