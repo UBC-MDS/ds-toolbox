@@ -73,7 +73,7 @@ Imagine that you cloned a repository from Github with a README file to your own 
 <code>origin/HEAD</code> and <code>origin/main</code> are pointing to the latest changes in the remote the moment of pulling.
 </opt>
 <opt text='<code>HEAD -> app</code> ' correct='true'>
-'<code>HEAD</code> is pointing to the last place you make changes and that was in the '<code>app</code> branch
+<code>HEAD</code> is pointing to the last place you make changes and that was in the <code>app</code> branch
 </opt>
 <opt text='<code>main</code>'>
 Which branch are you currently working on?
