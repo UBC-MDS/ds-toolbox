@@ -24,7 +24,7 @@ Which of these names are used to refer to the default branch in Git/GitHub?
 Right, but there is also another correct option.
 </opt>
 <opt text='<code>HEAD</code>'>
-<code> HEAD </code> is providing valuable information to the user when checking the project history. Specifically will point to the last commit in the origin and in the local repository.
+<code> HEAD </code> is providing valuable information to the user when checking the project history. Specifically, it will point to the commit that you are currently at in the repository.
 </opt>
 <opt text='<code>main</code>'>
 Right, but there is also another correct option.
