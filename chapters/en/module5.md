@@ -125,7 +125,7 @@ Select the options that are TRUE
 You can recognize the latest commit on GitHub by comparing the timestamps for all commits marked with an <code> origin/ </code> label.
 </opt>
 <opt text='There is a branch called <code> lecture-todo </code> that has not been pushed to GitHub yet ' correct='true'>
-The labels <code> origin/master</code> , origin/HEAD</code> that points the last change in the remote are downstream. This means that a949e61 and 0a8dfef were created after pulling or cloning from GitHub.
+The <code> lecture-todo </code> branch shows up alone on the latest commit. If the changes were on GitHub there would be at least one branch with the <code> origin/ </code> prefix on the latest commit as well.
 </opt>
 <opt text='The most recent local commit of this repository has associated the message "Update readme"' >
 The most recent commits are always the first to appear in the representation of the trees. 
