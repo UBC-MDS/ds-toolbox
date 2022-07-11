@@ -229,7 +229,7 @@ The base environment is just an environment, the rules are the same!
 
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id="11" title="Summary of your learning" type="slides,video">
+<exercise id="11" title="What Did We Learn" type="slides,video">
 <slides source="module6/module6_05"> </slides>
 </exercise>
 <!-- ------------------------------------ -->

@@ -2,13 +2,13 @@
 type: slides
 ---
 
-# Summary of your learning
+# What Did We Learn
 
 ---
 
-# Module Learning Outcomes
+# What Did We Learn
 
-In this module you've learned how to
+In this module, you've learned how to
 
 - Name files in a human- and machine-readable manner
 - Organize projects with a meaningful folder hierarchy
@@ -20,6 +20,4 @@ Notes:
 
 ---
 
-# Let's get started!
-
-Notes:
+# On to Assignment 6!
