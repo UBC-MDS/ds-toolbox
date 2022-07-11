@@ -156,17 +156,21 @@ In Markdown, we can easily format any code to be rendered in mono-space font usi
 
 Another way to have code is to have a code block by enclosing text inside a pair of three back ticks:
 
+~~~
 ```
 arr = np.zeros((2, 2))
 result = arr + 10
 ```
+~~~
 
 We can also enable syntax highlighting by specifying the language in front of the first set of three back ticks:
 
+~~~
 ```python
 arr = np.zeros((2, 2))
 result = arr + np.pi
 ```
+~~~
 
 ---
 
