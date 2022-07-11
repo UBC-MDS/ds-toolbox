@@ -19,7 +19,7 @@ In this module you learned how to
 3. Move, copy, and delete files and directories
 4. Use "wildcards"
 5. Define and distinguish between absolute file paths and relative file paths
-6. Read the manual
+6. Read the shell's built-in manual
 
 Notes:
 

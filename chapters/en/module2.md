@@ -24,7 +24,7 @@ id: 1
 <choice id="1" >
 <opt text="True">
 
-While text-based interfaces having many advantages over graphical shells, they are not always the right tool for the job.
+While text-based interfaces having many advantages over graphical shells, they are not always the right tool for the job. For example, text based interfaces are better for automation, reproducibility, and advanced commands, but graphical interfaces can be easier to use for novices since they are more similar to the graphical operating systems that we are already used to using on our laptops and mobile devices.
 
 </opt>
 
@@ -40,15 +40,14 @@ What does the `ls` command do?
 
 <choice id="2" >
 <opt text="Lists the name of the current working directory">
-
+The command that does this is <code>pwd</code>.
 </opt>
 
 <opt text="Lists the content of the current working directory" correct="true">
-
 </opt>
 
 <opt text="Lists your username">
-
+The command that does this is <code>whoami</code>.
 </opt>
 
 </choice>
@@ -252,7 +251,7 @@ What is the purpose of a pipe (`|`) in the shell?
 <choice id="2">
 <opt text="A pipe allow you to save multiple commands and then execute them all at once">
 
-This is not quite what a pipe does.
+This is not quite what a pipe does; it let's you link the output from one command to another.
 
 </opt>
 

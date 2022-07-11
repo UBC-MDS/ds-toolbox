@@ -62,6 +62,7 @@ then use the `VS Code` editor to create a file called `my-first-note.md`.
 The command to invoke VS Code from the command line is `code`,
 and if we pass it a filename as an argument,
 the file will be created in the current directory.
+Now try launching it yourself!
 
 The `.md` syntax means that we want to create a markdown file.
 File extensions like `.md` and `.py` don't change anything about the content of the file,

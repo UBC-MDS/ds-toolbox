@@ -107,6 +107,7 @@ to print the **absolute** path to the current directory.
 ## Navigating up to the parent directory
 
 ```sh
+# Incorrect command
 cd username
 ```
 
@@ -117,6 +118,7 @@ cd: username: No such file or directory
 <br>
 
 ```sh
+# Correct command
 cd ..
 pwd
 ```

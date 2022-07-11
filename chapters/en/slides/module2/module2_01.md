@@ -28,11 +28,11 @@ we want to give some background to the idea of computing.
 
 ---
 
-## What is a computer
+## What is a computer?
 
-<img src='/module2/wires-computers-eniac-1946.png' width="50%" alt="A few of the world's most prominent programmers of the time computing ballistic trajectories on the ENIAC during the second world war."/>
+<img src='/module2/wires-computers-eniac-1946.png' width="50%" alt="A few of the world's most prominent programmers of the time computing ballistic trajectories on the ENIAC computer during the second world war."/>
 
-A few of the world's most prominent programmers of the time computing ballistic trajectories on the ENIAC during the second world war.
+A few of the world's most prominent programmers of the time computing ballistic trajectories on the ENIAC computer during the second world war.
 
 Notes:
 Essentially,
@@ -95,7 +95,7 @@ this is what speech- and brain-computer interfaces are concerned with.
 
 ---
 
-## Which shell are we using
+## Which shell will we be using?
 
 <img src="https://cdn.rawgit.com/odb/official-bash-logo/master/assets/Logos/Identity/PNG/BASH_logo-transparent-bg-color.png" alt="The Bourne Again SHell" width="400px"></img>
 
@@ -165,7 +165,7 @@ pwd
 
 Notes:
 Our first shell commands will let us explore our folders and files,
-and will also introduce us to several conventions that most Unix tools follow.
+and will also introduce us to several conventions that most command line tools follow.
 To start,
 when Bash runs it presents us with a prompt to indicate that it is waiting for us to type something.
 This prompt is a simple dollar sign by default (`$`).
@@ -223,10 +223,10 @@ Pictures/     my_program*
 ```
 
 Notes:
-We can make the output of `ls` more informative using the `-F` option (also sometimes called a switch or a flag).
-Options are exactly like arguments to a function in Python;
-in this case,
--F tells ls to decorate its output to show what things are.
+We can make the output of ls more informative using the -F option (also sometimes called a switch or a flag).
+Options modify the behavior of the command.
+In this case,
+`-F` tells ls to decorate the output of `ls` to show what type of file each entry is.
 A trailing `/` indicates a directory,
 while a trailing `*` tells us something is a runnable program.
 Depending on our setup,
