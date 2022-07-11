@@ -67,7 +67,7 @@ In this scenario, we create the branch from `main` or from `origin/HEAD` and `or
 
 * `main` is your default local branch.
 * `HEAD` is poiting where you currently are (in this case, on the `main` branch)
-* `origin` is a nickname for your remote repo on GitHub (instead of showing the full URL), so `origin/main` is the `main` branch on your GitHub repo.
+* `origin` is a nickname for your remote repo on GitHub (instead of showing the full URL), so `origin/main` is the `main` branch of the version of the repo you pushed to GitHub.com.
    You don't need to care about `origin/HEAD`, it just point to the default remote branch, which will always be `main` unless you mess around with the settings on the GitHub webpage.
 
 In JupyterLab you can see this information as labels under the tab **Changes**.
