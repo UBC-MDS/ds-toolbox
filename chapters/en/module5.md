@@ -52,7 +52,7 @@ You can not predict when you will have a bug to fix.
 <opt text='When you want to make a change that can break the code in the <code> main </code> branch'>
 Right, but there is also another correct option.
 </opt>
-<opt text='You can create a branch when you decide to add a new feature, even if later you decide not to merge it'>
+<opt text='You can create a branch when you decide to add a new feature, even if you later decide not to merge it'>
 Right, but there is also another correct option.
 </opt>
 <opt text='You can create a branch to fix a bug, and then merge it to <code> main </code> '>
