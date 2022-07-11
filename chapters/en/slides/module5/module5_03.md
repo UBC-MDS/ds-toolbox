@@ -34,7 +34,7 @@ Upon merging, the changes you were working on in a particular branch are combine
 
 Notes: To merge a branch using JupyterLab, you have to click on the tab **Branches** and then on the name of the branch you want to merge your current work with. For example, if you are working on the branch `report`, you can click next to the `main` branch and select "Merge this branch into the current branch".
 
-Notice that after doing this, the report branch is not deleted except you do so explicitly.
+Notice that after doing this, the report branch is not deleted automatically, so you can still access it if you need to.
 
 
 ---
