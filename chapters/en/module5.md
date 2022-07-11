@@ -134,7 +134,7 @@ By default, the most recent commits appear on the top of commit history.
 The labels <code> origin/master</code>, <code>origin/HEAD</code> that are pointing the last change in the remote are downstream these two commits. This means that a949e61 and 0a8dfef were created after pulling or cloning from GitHub.
 </opt>
 <opt text='The commits 6e69947 and 0d5a6f7 exist both in your local computer and on GitHub' correct='true'>
-The labels <code> origin/master</code>, origin/HEAD</code> that points the last change in the remote are upstream these two commits. This means that 6e69947 and 0d5a6f7 were pulled or cloned from GitHub.
+The position of the label <code> origin/master</code> indicates that both these commits are part of this branch on the GitHub remote.
 </opt>
 </choice>
 </exercise>
