@@ -128,7 +128,7 @@ You can recognize the latest commit on GitHub by comparing the timestamps for al
 The <code> lecture-todo </code> branch shows up alone on the latest commit. If the changes were on GitHub there would be at least one branch with the <code> origin/ </code> prefix on the latest commit as well.
 </opt>
 <opt text='The most recent local commit of this repository has associated the message "Update readme"' >
-The most recent commits are always the first to appear in the representation of the trees. 
+By default, the most recent commits appear on the top of commit history. 
 </opt>
 <opt text='The commits a949e61 and 0a8dfef exist only in your local computer' correct='true'>
 The labels <code> origin/master</code>, <code>origin/HEAD</code> that are pointing the last change in the remote are downstream these two commits. This means that a949e61 and 0a8dfef were created after pulling or cloning from GitHub.
