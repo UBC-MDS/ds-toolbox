@@ -273,9 +273,9 @@ When working on a forked repository, it is good practice to begin a new branch b
 
 <choice id = 13>
 <opt text='True' correct='true' >
-Making the pull request from a branch with a meaningful name will give the pull request's receivers useful information. If not they will receive changes of <code>main</code> branches from different users.
 </opt>
 <opt text='False'>
+Making the pull request from a branch with a meaningful name will give the pull request's reviewers useful information. If not they will receive changes of <code>main</code> branches from different users.
 </opt>
 </choice>
 
