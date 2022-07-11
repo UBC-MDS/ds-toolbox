@@ -8,6 +8,11 @@ type: chapter
 id: 4
 ---
 
+<exercise id="0" title="M0dule Learning Outcomes" type="slides,video">
+
+<slides source="module4/module4_00" shot="0" start="0:002" end="3:40">
+</slides>
+</exercise>
 
 <exercise id="1" title="View your Git history" type="slides,video">
 
@@ -170,7 +175,11 @@ Right, <code>.gitignore</code> is not ignored itself.
 <opt text="False">
 Remember that you need to do "add" and "commit" <code>.gitignore</code> with Git?
 </opt>
-
 </choice>
+</exercise>
 
+<exercise id="11" title="What did we just learned?" type="slides,video">
+
+<slides source="module4/module4_06" shot="0" start="0:002" end="3:40">
+</slides>
 </exercise>
