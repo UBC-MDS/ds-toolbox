@@ -213,7 +213,7 @@ Each single notebook in Jupyter Lab can only be connected to a single kernel.
 
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id='12' title="Summary of your learning" type="slides,video">
+<exercise id='12' title="What Did We Learn" type="slides,video">
 <slides source="module7/module7_06"></slides>
 </exercise>
 <!-- ------------------------------------ -->

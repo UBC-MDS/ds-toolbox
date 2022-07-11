@@ -2,11 +2,11 @@
 type: slides
 ---
 
-# Summary of your learning
+# What Did We Learn
 
 ---
 
-# Summary of your learning
+# What Did We Learn
 
 <br>
 
@@ -25,4 +25,4 @@ In this module, you've learned to
 
 ---
 
-# Time for Assignment 7!
+# On to Assignment 7!
