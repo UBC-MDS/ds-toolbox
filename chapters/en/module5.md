@@ -289,7 +289,7 @@ After forking a GitHub repository, you should clone the repository's copy in you
 You probably don't have write access to the original repository to push modifications directly to it, that is why you have to clone your fork.
 </opt>
 <opt text='False'>
-You will clone, pull, and push to your GitHub account's cloned repository. Contributions to the original GitHub repository will be made by pul requests from your fork to the original repository. 
+You will clone, pull, and push to your GitHub account's cloned repository (the fork). Contributions to the original GitHub repository will be made by pul requests from your fork to the original repository. 
 </opt>
 </choice>
 </exercise>
