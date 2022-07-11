@@ -36,7 +36,7 @@ Here you can see various tabs of the left sidebar:
 
 - (4): This is your table of contents tab. Whenever you insert Markdown headings to your notebooks, they will automatically show up here and will help you easily jump to any specific section of your notebook.
 
-There is also an Extension Manager tab which is not of much use to you, except for seeing which extensions are currently installed in your JupyterLab. We will talk about extensions in more detail later.
+There is also an Extension Manager tab which we will talk about in more detail in later sections of this module.
 
 ---
 
