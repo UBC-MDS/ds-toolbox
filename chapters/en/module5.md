@@ -122,7 +122,7 @@ Select the options that are TRUE
 
 <choice id = 5>
 <opt text='The most recent commit on GitHub was performed on the <code>lecture-todo</code> branch'>
-You can recognize the latest commit on GitHub with the label <code> origin/HEAD </code>.
+You can recognize the latest commit on GitHub by comparing the timestamps for all commits marked with an <code> origin/ </code> label.
 </opt>
 <opt text='There is a branch called <code> lecture-todo </code> that has not been pushed to GitHub yet ' correct='true'>
 The labels <code> origin/master</code> , origin/HEAD</code> that points the last change in the remote are downstream. This means that a949e61 and 0a8dfef were created after pulling or cloning from GitHub.
