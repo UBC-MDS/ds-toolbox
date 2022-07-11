@@ -73,6 +73,9 @@ When you are working on a branch you have to push your branch to GitHub and ask 
 ---
 
 # Pushing a branch to GitHub (terminal)
+```
+git push
+```
 
 ```out
 fatal: The current branch lecture-todo has no upstream branch.
