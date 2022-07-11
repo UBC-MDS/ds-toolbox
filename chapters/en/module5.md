@@ -150,7 +150,7 @@ Would you delete a branch after merging it?
 
 <choice id = 6>
 <opt text='Yes, to avoid having extra copies of the code that you do not need anymore' >
-A branch in Git is a pointer, you are not saving an extra copy of the code on it. 
+A branch in Git is a pointer to the previous version of the code, but it does not contain an entire extra copy of the code. 
 </opt>
 <opt text='Yes, I am not going to develop more on it' correct='true'>
 </opt>
