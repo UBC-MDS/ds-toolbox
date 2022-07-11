@@ -14,7 +14,7 @@ There are two main strategies we can use to work with others:
 
 1. **Branching** 
  
-2. <mark><b> Forks </b></mark>
+2. <mark><b> Forking </b></mark>
 
 ---
 
