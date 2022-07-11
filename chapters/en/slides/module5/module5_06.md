@@ -3,14 +3,14 @@ type: slides
 title: 'module5_06'
 ---
 
-# Forks
+# Forking
 
 
 
 ---
 # Collaborative work 
 
-There are 2 strategies we can use to work with others:
+There are two main strategies we can use to work with others:
 
 1. **Branching** 
  
@@ -18,7 +18,7 @@ There are 2 strategies we can use to work with others:
 
 ---
 
-# Forks
+# Forking
 
 
 
@@ -50,7 +50,7 @@ Go to the GitHub page of the project that you want to fork. In the upper right c
 
 Notes:
 
-**Forks** are copies of other's repositories on GitHub that you own. You can do anything you want on your fork. If you make improvements, you can send a notification to the owner of the **"upstream"** repository (the one you forked from) and request that they pull the code from your repository (referred to as "origin") into theirs. This is referred to as a "pull request", and includes a review of the code from the maintainers of the upstream repository.
+**Forks** are copies of other's repositories on GitHub that you own. You can do anything you want on your fork. If you make improvements, you can send a notification to the owner of the **"upstream"** repository (the one you forked from) and request that they pull the code from your repository (referred to as "origin") into theirs. This is referred to as a "pull request", and includes a review of the code from the maintainers of the upstream repository as we discussed in the last section.
 
 The fork workflow is used in many open source projects where there is often a small team of core maintainers, but contributions from many more users. For example, the JupyterLab project has around 10 members in their team, but more than 300 people have contributed code to the project and almost 2 000 has forked it.
 

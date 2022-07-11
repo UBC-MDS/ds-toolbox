@@ -152,10 +152,10 @@ Would you delete a branch after merging it?
 <opt text='Yes, to avoid having extra copies of the code that you do not need anymore' >
 A branch in Git is a pointer to the previous version of the code, but it does not contain an entire extra copy of the code. 
 </opt>
-<opt text='Yes, I am not going to develop more on it' correct='true'>
+<opt text='Yes, if I am not going to develop more on it' correct='true'>
 </opt>
 <opt text='No, I could be discarding important information' >
-Once the branch has been merged all the information of both branches is combined in a new commit. If the merge was successful no information could be missing deleting the branch.
+Once the branch has been merged all the information of both branches is combined in a new commit, and therefore no information would be lost when deleting the branch.
 </opt>
 </choice>
 
@@ -196,7 +196,7 @@ You should be quite sure when creting a pull request because you will not be abl
 Try open a pull request and pushing new commits and check what happen!
 </opt>
 <opt text='False' correct='true'>
-You can continue adding commits to a pull request pushing to the branch you used to create it. You will see the commits as a timeline when you open it on GitHub. Try it!
+You can continue adding commits to a pull request by pushing to the branch you used to create it. You will see the commits as a timeline when you open it on GitHub. Try it!
 </opt>
 </choice>
 
@@ -206,20 +206,20 @@ It is possible to open a pull request locally
 
 <choice id = 9>
 <opt text='True' >
-It is possible to <a href="https://docs.github.com/es/enterprise-server@3.1/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/checking-out-pull-requests-locally">check out a pull request locally to solve a merge conflict or test changes before aproving it</a>, but not actually create one.
+It is possible to <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/checking-out-pull-requests-locally">check out a pull request locally to solve a merge conflict or test changes before approving it</a>. If you wanted to created a pull request locally, you would need to use <a href="https://cli.github.com/"> the GitHub CLI</a>.
 </opt>
 <opt text='False' correct='true'>
 You have to enter to your GitHub repository to start a pull request. What you can do locally is to create a new branch and push it to GitHub. Then GitHub will give you the option to start a pull request.
 </opt>
 </choice>
 
-How is it different to open a pull request to merging branches? Is it not basically the same?
+Is opening a pull request essentially the same as merging a branch locally?
 
 Select the correct option
 
 <choice id = 10>
-<opt text='Yes, it is the same, you are merging branches but using GitHub' >
-Even if the final goal of the pull request is to merge your changes with other branch, it is also a way to socialize that you created those changes and also to involve other team members, for example, as reviewers.
+<opt text='Yes, it is the same, you are just merging branches, either using the GitHub UI or your local interface' >
+Even if the final goal of the pull request is to merge your changes with another branch, it is also a way to communicate that you created those changes and to involve other team members, for example as reviewers.
 </opt>
 <opt text='You open a pull request to merge branches when you want to involve your collaborators' correct='true'>
 </opt>
@@ -232,11 +232,11 @@ Even if the final goal of the pull request is to merge your changes with other b
 
 <exercise id='10' title='Between branches and forks'>
 
-In which cases branching would be better that using forks?
+In which cases would branching be better than using forks?
 
 <choice id = 11>
 <opt text='The owner of the repository have set branch protection rules to the <code>main</code>  branch'>
-Even if it is a good practice as avoid that contributors push code directly to the <code>main</code> branch by accident, protecting the branch it is not a requirement to collaborate using branching. 
+Even if it is a good practice to avoid that contributors push code directly to the <code>main</code> branch by accident, protecting the branch it is not a requirement to collaborate using branching. 
 </opt>
 <opt text='You want to use GitHub issues to share with your team members or other collaborators' >
 It is always recommended to use Github issues, it does't matter your collaboration style.

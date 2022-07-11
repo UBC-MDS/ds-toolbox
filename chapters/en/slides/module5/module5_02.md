@@ -20,9 +20,9 @@ title: 'module5_02'
 
 Notes: Before moving forward, let's practice!
 
-Remember that after you create the branch you will always going to be working on that new branch except you go back to your original branch clicking the name of the branch you want to return in the Branches tab (JupyterLab) with `git switch <branch-name>` (terminal).
+Remember that after you create the branch you are always going to be working on that new branch except if you go back to your original branch by clicking the name of the branch you want to return in the Branches tab (JupyterLab) or with `git switch <branch-name>` (terminal).
 
-Now you can use this repository as an example for the rest of this module.
+We will use the repository you just created as an example for the rest of this module.
 
 ---
 
@@ -37,11 +37,11 @@ Now you can use this repository as an example for the rest of this module.
 
 Notes: 
 
-For this section we are going to simulate that we start working on a project. After cloning the repository for the first time we want to see how the branches looks like. To see all branches as well as a graph indicating of their relationship instead do `git log --oneline --all --graph` in the terminal. 
+For this section we are going to simulate that we start working on a project. After cloning the repository for the first time we want to see what the branches look like. To see all branches as well as a graph indicating their relationship, we can type `git log --oneline --all --graph` in the terminal. 
 
-We can easily detect all the different branches (for example, `origin/hosting-revisions` means that the branch `hosting-revisions` it is in the commit 558114c)
+We can easily detect all the different branches (for example, `origin/hosting-revisions` means that the remote branch `hosting-revisions` it is in the commit 558114c)
 
-You can use the arrows on your keyboard to see the full history and the `q` to exit again to the terminal.
+You can use `space` on your keyboard to page down through the commit history and `b` to page up. Press `q` to exit back out to the terminal.
 
 ---
 
@@ -54,9 +54,9 @@ You can use the arrows on your keyboard to see the full history and the `q` to e
 <center/>
 
 
-Notes: Even if the representation that we can get form the terminal is not wrong, it is not the more user friendly.
+Notes: Even if the branch representation that we can view in the terminal is correct, it is not as visually appealing as what we can get from graphical interfaces such as VS Code.
 
-Open VS Code by typing `code .` inside your git folder, this will start VS Code with the current directory open (remember that `.` is a shortcut that means "current directory"). In VS Code, go to the extensions tab and search for "git history", install the extension and go to the source control tab in the left side bar, and then click the new Git history icon. 
+Open the current folder in VS Code by typing `code .` inside your git folder (remember that `.` is a shortcut that means "current directory"). In VS Code, go to the extensions tab and search for "git history", install the extension and go to the source control tab in the left side bar, and then click the new Git history icon. 
 
 Where it currently says "master", change it to show "All branches" and you should now see a nice graphical overview looking like the one in the picture. If the Git history view hangs or looks strange, press "Refresh". You're free to use the one you prefer between VS Code and `git log`, but many of the commands are the easiest to run via terminal.
 
@@ -76,7 +76,7 @@ Downloading a public GitHub repository from a project you like and observing the
 
 In the image, you can see the public repository of JupyterLab that has been cloned and opened using VS Code.
 
-Understanding how the relationships between the branches provides vital information about the structure of a project, the different modifications, and how to fix problems if they arise. 
+Understanding these graph-based commit history visualizations is helpful to understand the relationships between branches, provides vital information about the structure of a project, and can help you fix problems if they arise. For example, we can tell from the image in this slide that there are three active branches: the default master branch (the topmost commit), the branch for version 3.4 (the second commit from the top), and an older branch with a snapshot of the repo (commit message: "Update snapshots for challenger commit").
 
 ---
 
