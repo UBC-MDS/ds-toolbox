@@ -139,7 +139,7 @@ The position of the label <code> origin/master</code> indicates that both these 
 </choice>
 </exercise>
 
-<exercise id='5' title="All routes lead to <code>main</code>: Merging branches"  type='slides, video'>
+<exercise id='5' title="All roads lead to main: Merging branches"  type='slides, video'>
 <slides source='module5/module5_03' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
