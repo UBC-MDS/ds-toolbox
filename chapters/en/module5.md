@@ -43,7 +43,7 @@ Only one of these options is correct.
 </opt>
 </choice>
 
-When do you need to open a new branch?
+When do you need to create a new branch?
 
 <choice id = 2>
 <opt text='It is the first thing you should do after you start a project. You open a branch for all the features you are planning to add to your code' >
