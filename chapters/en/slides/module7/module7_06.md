@@ -2,19 +2,19 @@
 type: slides
 ---
 
-# Module Learning Outcomes
+# Summary of your learning
 
 ---
 
-# Module Learning Outcomes
+# Summary of your learning
 
 <br>
 
-Hi, and welcome to Module 7 of this course 👋
+Congratulations, you've done a great job 🏆
 
 <br>
 
-By the end of this module, you will be able to
+In this module, you've learned to
 
 - Explain what JupyterLab is
 - Install and use JupyterLab
@@ -25,4 +25,4 @@ By the end of this module, you will be able to
 
 ---
 
-# Let's get started!
+# Time for Assignment 7!
