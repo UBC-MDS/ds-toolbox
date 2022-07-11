@@ -146,7 +146,7 @@ The position of the label <code> origin/master</code> indicates that both these 
 <exercise id='6' title='Merging branches'>
 
 
-Would you delete a branch after merge it?
+Would you delete a branch after merging it?
 
 <choice id = 6>
 <opt text='Yes, to avoid having extra copies of the code that you do not need anymore' >
