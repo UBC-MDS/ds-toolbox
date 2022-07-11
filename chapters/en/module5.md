@@ -81,10 +81,7 @@ Which branch are you currently working on?
 <opt text=' <code>HEAD -> main</code>'>
 Which branch are you currently working on?
 </opt>
-
 </choice>
-
-
 </exercise>
 
 <exercise id='3' title="What is the relationship between the branches?"  type='slides, video'>
@@ -101,14 +98,14 @@ The labels <code>origin/main</code> and <code>origin/HEAD</code> always will be 
 <opt text='True'>
 What happens if the last change in the GitHub repository was in a different branch than <code>main</code>? You can try to reproduce this in your computer, creating a new branch in the remote and pulling the information to the local repository!
 </opt>
-<opt text='False'  correct='true' >
+<opt text='False' correct='true'>
 
 The term `origin` refers to the remote repository. If the last change in the remote repository you are cloning was in other branch than <code>main</code> the label in the most recent commit will be (<code>origin/new-branch</code>). <code>origin/HEAD</code> will be always pointing the last commit in the <code>main</code> branch next to <code>origin/main</code> (except you change GitHub settings).
 
 </opt>
 </choice>
 
-After running <code> git log --oneline --all --graph </code> in your repository you get as output the following tree:
+After running <code>git log --oneline --all --graph</code> in your repository you get as output the following tree:
 
 
 <img src="module5/module5-gitlog.png" alt="output git log"> 
@@ -118,24 +115,24 @@ Select the options that are TRUE
 
 <choice id = 5>
 <opt text='The most recent commit on GitHub was performed on the <code>lecture-todo</code> branch'>
-You can recognize the latest commit on GitHub by comparing the timestamps for all commits marked with an <code> origin/ </code> label.
+You can recognize the latest commit on GitHub by comparing the timestamps for all commits marked with an <code>origin/</code> label.
 </opt>
-<opt text='There are changes to the <code> lecture-todo </code> branch that has not been pushed to GitHub yet ' correct='true'>
-The <code> lecture-todo </code> branch shows up alone on the latest commit. If the changes were on GitHub there would be at least one branch with the <code> origin/ </code> prefix on the latest commit as well.
+<opt text='There are changes to the <code>lecture-todo</code> branch that has not been pushed to GitHub yet ' correct='true'>
+The <code>lecture-todo</code> branch shows up alone on the latest commit. If the changes were on GitHub there would be at least one branch with the <code>origin/</code> prefix on the latest commit as well.
 </opt>
 <opt text='The most recent local commit of this repository has associated the message "Update readme"' >
 By default, the most recent commits appear on the top of commit history. 
 </opt>
 <opt text='The commits a949e61 and 0a8dfef exist only in your local computer' correct='true'>
-The labels <code> origin/master</code>, <code>origin/HEAD</code> that are pointing the last change in the remote are downstream these two commits. This means that a949e61 and 0a8dfef were created after pulling or cloning from GitHub.
+The labels <code>origin/master</code>, <code>origin/HEAD</code> that are pointing the last change in the remote are downstream these two commits. This means that a949e61 and 0a8dfef were created after pulling or cloning from GitHub.
 </opt>
 <opt text='The commits 6e69947 and 0d5a6f7 exist both in your local computer and on GitHub' correct='true'>
-The position of the label <code> origin/master</code> indicates that both these commits are part of this branch on the GitHub remote.
+The position of the label <code>origin/master</code> indicates that both these commits are part of this branch on the GitHub remote.
 </opt>
 </choice>
 </exercise>
 
-<exercise id='5' title="All roads lead to <code>main</code>: Merging branches"  type='slides, video'>
+<exercise id='5' title="All roads lead to `main`: Merging branches"  type='slides, video'>
 <slides source='module5/module5_03' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
