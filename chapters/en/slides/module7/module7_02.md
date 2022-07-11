@@ -28,7 +28,7 @@ Notes:
 
 Here you can see various tabs of the left sidebar:
 
-- (1): This tab is the file explorer, which you can use to navigate your file system, open the files your looking for, or even create and rename files and much more. You can left-click on any file or folder to see available options.
+- (1): This tab is the file explorer, which you can use to navigate your file system, open the files your looking for, or even create and rename files and much more. You can right-click on any file or folder to see available options.
 
 - (2): This is the running terminals and kernels tab. Here you can see all open tabs in the working area, as well as all running kernels. A kernel is a running language engine connected to your notebooks. We'll learn about these later.
 
