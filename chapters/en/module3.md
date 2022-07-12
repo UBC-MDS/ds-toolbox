@@ -8,6 +8,14 @@ type: chapter
 id: 3
 ---
 
+
+<exercise id="0" title="Learning outcomes" type="slides,video">
+
+<slides source="module3/module3_00" shot="0" start="0:002" end="3:40">
+</slides>
+
+</exercise>
+
 <exercise id="1" title="What is version control, and why should I use it?" type="slides,video">
 
 <slides source="module3/module3_01" shot="0" start="0:002" end="3:40">
@@ -298,3 +306,9 @@ Cloning is downloading the repository for the first time, including the project 
 </choice>
 </exercise>
 
+<exercise id="13" title="What did we just learned?" type="slides,video">
+
+<slides source="module3/module3_07" shot="0" start="0:002" end="3:40">
+</slides>
+
+</exercise>
