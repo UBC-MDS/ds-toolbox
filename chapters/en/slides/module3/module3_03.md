@@ -7,7 +7,7 @@ title: 'module3_03'
 
 ---
 
-# Version control workflows
+## Version control workflows
 
 <br>
 <br>
@@ -30,7 +30,7 @@ Let's learn how to make a commit in your local repository step by step
 
 ---
 
-# Local repository with changes to files
+## Local repository with changes to files
  
 <center>
 
@@ -43,7 +43,7 @@ Notes: When working on files in your local version control repository (e.g., usi
 
 ---
 
-# Committing changes to a local repository 
+## Committing changes to a local repository 
 
 <center>
 
@@ -61,7 +61,7 @@ Note that the staging area is not a real physical location on your computer; it 
 
 
 ---
-# JupyterLab: Specifying files to commit
+## JupyterLab: Specifying files to commit
 
 🙌 Follow this steps in your computer to add files to the staging area:
 
@@ -74,7 +74,7 @@ Note that the staging area is not a real physical location on your computer; it 
 Notes: **1. The file `eda.ipynb` is added to the staging area via the plus sign (`+`).**
 
 ---
-# JupyterLab: Specifying files to commit
+## JupyterLab: Specifying files to commit
 
 <center>
 
@@ -93,7 +93,7 @@ Clicking the plus sign (+) moves the file from the `Untracked` heading to the `S
 
 ---
 
-# JupyterLab terminal: Specifying files to commit
+## JupyterLab terminal: Specifying files to commit
 
 To check the status of the files using the terminal (`Untracked` / `Changed` / `Staged`) you can use the command `git status`
 
@@ -113,7 +113,7 @@ Changes not staged for commit:
 We recommend using `git status` / checking the staging area before each commit to make sure you are committing what you think you are.
 ---
 
-# JupyterLab terminal: Specifying files to commit
+## JupyterLab terminal: Specifying files to commit
 
 If you want to add the files to the staging area using the terminal you can use the following command:
 

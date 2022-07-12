@@ -7,7 +7,7 @@ title: 'module3_04'
 
 ---
 
-# Committing changes to a local repository 
+## Committing changes to a local repository 
 
 
 <center>
@@ -25,7 +25,7 @@ In image, the message is `"Message about changes..."`; in your work you should m
 
 ---
 
-# The importance of writting meaningful commit messages
+## The importance of writting meaningful commit messages
 
 <center>
 
@@ -43,7 +43,7 @@ Notes: When commit messages are too vague (`code additions` or `Add some stuff`)
 
 ---
 
-# JupyterLab: Making the commit
+### JupyterLab: Making the commit
 
 🙌 Let's commit the files that are in the staging area
 
@@ -59,7 +59,7 @@ Now that you have cloned the remote repository from GitHub to create a local rep
 
 ---
 
-# JupyterLab: Making the commit
+## JupyterLab: Making the commit
 
 <center>
 
@@ -73,7 +73,7 @@ To snapshot the changes with an associated commit message, you must put a messag
 
 ---
 
-# JupyterLab: Making the commit
+## JupyterLab: Making the commit
 
 <center>
 
@@ -84,7 +84,7 @@ To snapshot the changes with an associated commit message, you must put a messag
 Notes: You need to include a title for your commit. If you wantm you can also include an optional description for the commit.
 
 ---
-# JupyterLab: Making the commit
+## JupyterLab: Making the commit
 
 
 <center>
@@ -99,7 +99,7 @@ Notes: **3. After recording a commit, the staging area should be empty.**
 After “committing” the file(s), you will see there are 0 “Staged” files. You are now ready to push your changes to the remote repository on GitHub
 
 ---
-# JupyterLab: Making the commit
+## JupyterLab: Making the commit
 
 
 <center>
@@ -112,7 +112,7 @@ After “committing” the file(s), you will see there are 0 “Staged” files.
 Notes: If the file has been committed, you are going to be able to detect it in the History tab. You have tracked this change and now part of the history of your project!
 
 ---
-# JupyterLab's terminal: Making the commit
+## JupyterLab's terminal: Making the commit
 
 
 <center>
@@ -126,7 +126,7 @@ Notes:  In the case you don't want to add so many details and only write a title
 `git commit -m "Create an eda notebook"`
 
 ---
-# JupyterLab's terminal: Making the commit
+## JupyterLab's terminal: Making the commit
 
 
 <center>

@@ -1,7 +1,7 @@
 ---
 title: 'Module 3: Git and GitHub intro'
 description:
-  'This module will also introduce how to use the two most common version control tools: Git for local version control, and GitHub for remote version control.' 
+  ' This module introduces how to use Git for local version control, and GitHub for remote version control.' 
 prev: ../../module2 
 next: ../../module4
 type: chapter
