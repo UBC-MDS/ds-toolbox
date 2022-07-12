@@ -9,9 +9,10 @@ title: 'module5_07'
 
 In this module you learned to:
 
-1. Understand the importance of version control.
-2. Use git's basic functions: `clone`, `add`, `commit`, `pull`, and `push`. 
-3. Create a new repository on GitHub via the web interface.
+1. Develop a feature on a branch in a Git repo.
+2. Merge the feature branch with the main branch.
+3. Create a fork of an existing GitHub repo.
+4. Open a pull request from your forked repo to the upstream repo.
 
 Notes: The assignment will concentrate on the learning objectives as well as building knowledge on existing concepts.
 

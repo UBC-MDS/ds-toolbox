@@ -8,7 +8,7 @@ title: 'module5_05'
 
 ---
 
-# Let's work together!
+## Let's work together!
 
 
 <center>
@@ -23,7 +23,7 @@ We have already seen some ways in which Git and GitHub allow collaboration with 
 ---
 
 
-## Collaborative work 
+### Collaborative work 
 
 There are two main strategies we can use to work with others:
 
@@ -48,7 +48,7 @@ The use of forks is common when you want to contribute online repositories where
 As an example imagine that you want to contribute to this [multilingual glossary for computing and data science terms](https://glosario.carpentries.org/) created by The Carpentries, an inclusive community willing to teach data and coding skills. If you explore the GitHub repo of the project (https://github.com/carpentries/glosario) you will see a file called `CONTRIBUTING.md` where it is explained how someone can add new terms to the glossary. In general, when you want to contribute to a public repository as this one, you will have to **fork the repository** first because you don't have write access. Forking it allow you to create a copy in your GitHub account of the repository at that moment.
 
 ---
-# Collaborative work 
+## Collaborative work 
 
 There are two main strategies we can use to work with others:
 
@@ -65,7 +65,7 @@ In the next slide deck we will focus on forking, but let's start by learning abo
 
 ---
 
-# Giving collaborators access to your project
+## Giving collaborators access to your project
 
 The “Invite a collaborator” button on the GitHub web interface. 
 <center>
@@ -82,7 +82,7 @@ Notes: As mentioned earlier, GitHub allows you to control who has access to your
 
 ---
 
-# Giving collaborators access to your project
+## Giving collaborators access to your project
 
 <center>
 
@@ -97,7 +97,7 @@ After this, you should see your newly added collaborator listed under the “Man
 
 ---
 
-# Branch protection rules
+## Branch protection rules
 
 Under "Branch name pattern", type the branch name or pattern you want to protect. 
 
@@ -132,7 +132,7 @@ Notice that you can create protect branches different to `main` but we will not 
 
 ---
 
-# Branch protection rules
+## Branch protection rules
 
 <center>
 
@@ -155,7 +155,7 @@ We are ready to start collaborating!
 
 ---
 
-# How pull requests look like after you protect the branch
+## How pull requests look like after you protect the branch
 <center>
 
 <img src='/module5/PR-aprove.png' width="80%" alt="404 image" />
@@ -166,7 +166,7 @@ Notes: This means that when you are doing a pull request you will need the appro
 
 ---
 
-# Branching basic workflow
+## Branching basic workflow
 
 1. **Clone the project** - To work locally
 2. **Create your branch** - Create code or apply your changes
@@ -183,7 +183,7 @@ Before moving forward, we are going to explain another very useful tool that is 
 
 ---
 
-# Extra: Communicating using GitHub issues
+## Extra: Communicating using GitHub issues
 
 The “Issues” tab on the GitHub web interface
 
@@ -202,7 +202,7 @@ To open a GitHub issue, first click on the “Issues” tab
 
 ---
 
-# Extra: Communicating using GitHub issues
+## Extra: Communicating using GitHub issues
 
 Dialog boxes and submission button for creating new GitHub issues.
 <center>
@@ -221,7 +221,7 @@ To open a GitHub issue, first click on the “Issues” tab
 
 ---
 
-# Extra: Communicating using GitHub issues
+## Extra: Communicating using GitHub issues
 
 The “Closed” issues tab on the GitHub web interface. 
 

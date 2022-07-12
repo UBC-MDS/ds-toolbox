@@ -23,7 +23,7 @@ Upon merging, the changes you were working on in a particular branch are combine
 
 ---
 
-# Merging branches (JupyterLab)
+## Merging branches (JupyterLab)
 
 <center>
 
@@ -39,7 +39,7 @@ Notice that after doing this, the report branch is not deleted automatically, so
 
 ---
 
-# Merging branches (terminal)
+## Merging branches (terminal)
 
 <center>
 
@@ -53,7 +53,7 @@ If you want to use the terminal to merge the branches and you are currently work
 
 
 ---
-# Merging branches
+## Merging branches
 
 <center>
 
@@ -67,7 +67,7 @@ Let's see how these graphics change once we merge the branches together on VS Co
 
 ---
 
-# Deleting branches (JupyterLab)
+## Deleting branches (JupyterLab)
 
 <center>
 
@@ -84,7 +84,7 @@ You can only delete a branch when you are not working on it (it is not highlight
 
 ---
 
-# Deleting branches (terminal)
+## Deleting branches (terminal)
 
 
 <center>

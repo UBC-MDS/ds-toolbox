@@ -53,7 +53,7 @@ Note that in some old repositories the default branch could be called `master` i
 
 
 ---
-# How to create a branch? (JupyterLab)
+## How to create a branch? (JupyterLab)
 
 <center>
 
@@ -75,7 +75,7 @@ In JupyterLab you can see this information as labels under the tab **Changes**.
 ⚠️ Here we added a new synonym for a GitHub repository. Previously, we were using `remote` as a way to refer to any GitHub repo. Now we can refer to the specific GitHub remote we are working on with the nickname `origin`.
 
 ---
-# How to create a branch? (terminal)
+## How to create a branch? (terminal)
 
 <center>
 

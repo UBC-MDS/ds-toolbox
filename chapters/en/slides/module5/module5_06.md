@@ -8,7 +8,7 @@ title: 'module5_06'
 
 
 ---
-# Collaborative work 
+## Collaborative work 
 
 There are two main strategies we can use to work with others:
 
@@ -18,7 +18,7 @@ There are two main strategies we can use to work with others:
 
 ---
 
-# Forking
+## Forking
 
 
 
@@ -37,7 +37,7 @@ It would still be beneficial for the repository's owners to receive your contrib
 
 ---
 
-# How can I fork a repository?
+## How can I fork a repository?
 
 Go to the GitHub page of the project that you want to fork. In the upper right corner, click the icon that says "fork". That's it! You just forked a repo!
 
@@ -57,7 +57,7 @@ The fork workflow is used in many open source projects where there is often a sm
 
 ---
 
-# Developing on a forked repo
+## Developing on a forked repo
 
 
 <center>
@@ -72,7 +72,7 @@ When you are working on a branch you have to push your branch to GitHub and ask 
 
 ---
 
-# Pushing a branch to GitHub (terminal)
+## Pushing a branch to GitHub (terminal)
 ```
 git push
 ```
@@ -96,7 +96,7 @@ Git is telling you that there is no branch with this name currently on your GitH
 ---
 
 
-# Keeping your remote (origin) up to date with the upstream remote
+## Keeping your remote (origin) up to date with the upstream remote
 
 
 <center>

@@ -8,7 +8,7 @@ title: 'module5_02'
 ---
 
 
-# Seeing how branches are related 🙌
+## Seeing how branches are related 🙌
 
 1. Create and clone a **Git repository** to your computer.
 2. Create 2 commits.
@@ -26,7 +26,7 @@ We will use the repository you just created as an example for the rest of this m
 
 ---
 
-# Seeing how branches are related (terminal)
+## Seeing how branches are related (terminal)
 
 
 <center>
@@ -45,7 +45,7 @@ You can use `space` on your keyboard to page down through the commit history and
 
 ---
 
-# Seeing how branches are related (VS Code)
+## Seeing how branches are related (VS Code)
 
 <center>
 
@@ -62,7 +62,7 @@ Where it currently says "master", change it to show "All branches" and you shoul
 
 ---
 
-# Observing the trees
+## Observing the trees
 
 <center>
 

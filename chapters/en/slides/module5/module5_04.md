@@ -40,7 +40,7 @@ If we would have worked in a team of people, it would have been good practice to
 
 ---
 
-# Opening a pull request (GitHub)
+## Opening a pull request (GitHub)
 
 <center>
 
@@ -55,7 +55,7 @@ Congrats! You have made your first Pull Request on GitHub!
 
 ---
 
-# Opening a pull request (GitHub)
+## Opening a pull request (GitHub)
 
 <center>
 
@@ -72,7 +72,7 @@ In the body of the message you can also indicate if it is fixing a currently ope
 
 
 ---
-# Opening a pull request (GitHub)
+## Opening a pull request (GitHub)
 
 <center>
 
@@ -87,7 +87,7 @@ Once you have open a pull request you can continue to add commits by pushing to 
 
 
 ---
-# Opening a pull request (GitHub)
+## Opening a pull request (GitHub)
 
 <center>
 
@@ -111,7 +111,7 @@ Another useful thing that you can do is to **label** each pull request, they can
 
 
 ---
-# Pull request successfully merged and closed (GitHub)
+## Pull request successfully merged and closed (GitHub)
 
 <center>
 
