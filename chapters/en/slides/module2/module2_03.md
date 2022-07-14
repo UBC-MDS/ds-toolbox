@@ -10,6 +10,30 @@ we will see how we can use the shell to interact with
 
 ---
 
+## Our file structure
+
+```
+/home/username
+├── Documents/
+│   ├── another-folder/
+│   └── my-document.pdf
+├── Downloads/
+├── Music/
+├── Pictures/
+├── .hidden-file
+├── my-program*
+└── todo.txt
+```
+
+Notes:
+For this slide deck,
+we will work with a file structure that looks like what is shown in this slide.
+We have four folders, a hidden file, and two regular files inside our home directory.
+Inside the `Documents` directory there is one additional file and one subfolder.
+Now let's see how we can use different shell commands to explore this file structure.
+
+---
+
 ## Moving around in the shell
 
 ```sh
