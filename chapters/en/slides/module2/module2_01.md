@@ -160,7 +160,14 @@ pwd
 ```
 
 ```out
+# Linux
 /home/username
+
+# MacOS
+/Users/username
+
+# Windows
+/c/Users/username
 ```
 
 Notes:
@@ -178,13 +185,17 @@ uses %.
 
 If we run the command `whoami`,
 the computer will tell us who we are (our login name),
-and if we run `pwd` (Print Working Directory) the shell tells us where we are (the `home` directory by default).
+and if we run `pwd` (Print Working Directory) the shell tells us where we are (the `home` directory by default when we launch the shell).
 
-Our home directory will be in different places on different operating systems.
-On Linux it may be `/home/username`,
-and on Windows it may be `C:\Documents and Settings\username` or `C:\Users\username` (depending on the version of Windows).
-On Max it will be `/Users/username`.
-Our examples show what we would see on Linux.
+Each user has a `home` directory;
+the function and location of this directory differs a little bit between operating systems.
+On Linux it is usually `/home/username`,
+on MacOS it is `/Users/username`,
+and on Windows it will show up as `/c/Users/username`
+(if you have Git Bash installed).
+Our examples in this module shows the Linux directory structure,
+but you will see that some of the other modules
+show what we would see on MacOS or Windows.
 
 ---
 

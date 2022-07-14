@@ -86,13 +86,13 @@ Is `Documents/pdfs` a relative or absolute path?
 <choice id="1" >
 <opt text="Absolute">
 
-An absolute path always starts with a `/` (or a drive letter on Windows, e.g. `C:`) which indicates the root (uppermost) directory on the file system.
+An absolute path always starts with a `/`  which indicates the root (uppermost) directory on the file system (on Windows an absolute path can sometimes start with a drive letter, e.g. `C:`, but Git Bash changes this to `/c` which is more in line with how Linux and MacOS work).
 
 </opt>
 
 <opt text="Relative" correct="true">
 
-An absolute path always starts with a `/` (or a drive letter on Windows, e.g. `C:`) which indicates the root (uppermost) directory on the file system.
+An absolute path always starts with a `/` which indicates the root (uppermost) directory on the file system (on Windows an absolute path can sometimes start with a drive letter, e.g. `C:`, but Git Bash changes this to `/c` which is more in line with how Linux and MacOS work).
 
 </opt>
 
