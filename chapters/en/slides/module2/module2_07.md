@@ -91,6 +91,52 @@ before printing the remaining three lines to the screen.
 
 ---
 
+## A complex pipe
+
+```text
+Fruit Color
+kiwi green
+plum purple
+apple red
+apple green
+plum purple
+apple red
+watermelon red
+```
+
+<br>
+
+```sh
+tail -n +2 fruit-colors.txt | cut -d ' ' -f2 | sort | uniq -c
+```
+
+```out
+2 green
+2 purple
+3 red
+```
+
+Notes:
+Pipes allow us to create rather complex commands.
+Imagine that we have a text file containing a list of fruits and their colors
+as in the top of this slide.
+How can we count how many fruits there are of each color?
+
+We need to break this down into several steps:
+
+1. We don't want to include the first line that says "Fruit Color" when we are counting. To show the entire file except this line we can use `tail -n +2` to print everything from the second line to the end of the file.
+2. To get only the colors, we need to `cut` out the second column. We can do this using the `cut` command, and specifying that the delimiter in this file is a space (`-d ' '`), and we are interesting in cutting out the second column/field (`-f2`).
+3. To count the unique occurrences, we first need to `sort` the file so that all the same colors are adjacent to each other. On a sorted file, we can use the `uniq` command with the `-c/--count` flag to count the unique occurrences of words.
+
+This is a rather complex pipe and we introduced a few new commands as well.
+You don't need to worry about the details here,
+it is the principle that is important:
+With the shell you can find many useful small commands
+and if you string them together using a pipe,
+it is possible to perform rather advanced text processing directly in the shell.
+
+---
+
 ## Creating an alias
 
 ```sh
