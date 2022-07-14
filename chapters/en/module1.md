@@ -19,7 +19,7 @@ id: 1
 <exercise id="2" title="Test Your Knowledge">
 
 **Question 1**  
-The Shell (Bash) allows you to
+The Shell (Bash) allows you to:
 
 <choice id="1" >
 <opt text="Version control files">
