@@ -248,7 +248,6 @@ Have you include the README.md file in the staging area?
 </opt>
 <opt text='<code>git add README.md</code> and <code>git commit -m "Add authors and copyright"</code>'  correct='true'>
 </opt>
-
 <opt text='<code>git commit -m README.md "Add authors and copyright"</code>'>
 Have you include the README.md file in the staging area?
 </opt>
@@ -310,12 +309,12 @@ Which statement below is **not** true?
 <choice id=3>
 <opt text='Cloning and pulling a GitHub repository are the exact same thing.' correct='true'>
 
-Cloning is downloading the repository for the first time, including the project history. Pulling is to update your local copy of the repository with the remote changes. For example, if a colleague has added changes to the repository you should update your local repository vefore push your own changes to avoid merging conflicts.
+Cloning is downloading the repository for the first time, including the project history. Pulling is to update your local copy of the repository with the remote changes. For example, if a colleague has added changes to the repository you should update your local repository before push your own changes to avoid merging conflicts.
 
 </opt>
 <opt text='Pushing with Git is the act of sending changes that were committed to Git to a remote repository, for example, on GitHub.com.'>
 </opt>
-<opt text='Pulling with Git is the act of collecting changes that exists in a remote repository, for example, on GitHub.com, that do not yet exist on the local computer you are working on'>
+<opt text='Pulling with Git is the act of collecting changes that exists in a remote repository, for example, on github.com, that do not yet exist on the local computer you are working on'>
 </opt>
 <opt text='You should push your work to GitHub anytime you want to share your work with others, or when you are done a work session and want to back up your work.'>
 </opt>
@@ -330,12 +329,12 @@ If you are working on a GitHub repository that is frecquently updated by other c
 <opt text='Clone the repository again to be updated with their changes'>
 The repository should be cloned only the first time you start working on a project locally. What other command would you use instead?
 </opt>
-<opt text=''>
+<opt text='Stage the files you are interested to work on'>
+You need to add to the staging area the changes on the files you are interested to commit and make part of your project history. You are already working locally on this step, the question is referring to a previous step.
 </opt>
 <opt text='Pull the remote changes to your computer'>
 </opt>
 </choice>
-
 </exercise>
 
 <exercise id="13" title="What did we just learned?" type="slides,video">
