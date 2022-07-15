@@ -92,6 +92,9 @@ To share your work with others, it is possible to export your notebook to variou
 Notes:
 
 Here you see how our notebook looks like when converted to HTML. This is the format used to show content on the web.
+Converting a notebook to HTML is convenient when you want to share it with someone who does not have JupyterLab installed themselves.
+You can simply send the exported HTML file in a email (or similar) to your colleague and they can download it and open it in any modern browser such as Firefox or Chrome.
+We will see later in this slide show how you can hide code cells in your exported notebook.
 
 ---
 
@@ -111,7 +114,9 @@ When you use the PDF option to convert your notebook, the output will look like 
 
 Notes:
 
-We've learned quite a bit about the Markdown format so far in this chapter. The Markdown option converts your notebook a plain Markdown file that only contains text, and can be opened with any text editor. In order to see the rendered Markdown file however, you need to open it using JupyterLab or another IDE like VSCode.
+We've learned quite a bit about the Markdown format so far in this chapter. The Markdown option converts your notebook to a Markdown file that only contains plain text, and can be opened with any text editor. In order to see the rendered Markdown file however, you need to open it using JupyterLab or another IDE like VSCode.
+
+It is actually possible to work with notebooks directly in Markdown format instead of the default JSON format that they `.ipynb` files as stored as. This has the advantage of making the notebook source files easier to read with the human eye which can be helpful when reviewing each others code on GitHub, so it is preferred by some organizations. To do this, you would need to install the [Jupytext extension](https://jupytext.readthedocs.io/en/latest/); we will show you how to install extensions in the next few slides.
 
 Note how computational cells are converted to Markdown code blocks with appropriate syntax highlighting.
 
@@ -123,7 +128,7 @@ Note how computational cells are converted to Markdown code blocks with appropri
 
 - When a feature is needed, developers can add it to JupyterLab by creating an extension
 
-- JupyterLab itself is nothing but a collection of various extensions
+- JupyterLab itself is mainly a collection of various extensions
 
 <img src="/module7/ext.png" width="300"></img>
 
@@ -143,25 +148,22 @@ As a matter of fact, JupyterLab itself is nothing but a collection of various ex
 
 <br>
 
-- JupyterLab extensions may be be either **source** or **prebuilt** extensions
+- JupyterLab extensions may be in either **source** or **prebuilt** format
 
-- Since extensions are created using **JavaScript**:
+**Prebuilt**
 
-  - Installing a **source** extension requires a rebuild of JupyterLab, which in turn needs **Node.js** to be installed in your conda environment. You can install Node.js by running `conda install nodejs`.
-
-  - **Prebuilt** extensions can be used right away
-
-<br>
-
-In general, there are three ways to install JupyterLab extensions:
-
-1. Using `conda install <extension_name>`
-
-2. The `jupyter labextension install <extension_name>` command
-
-3. JupyterLab's Extension Manager GUI
+- Most JupyterLab extensions are in the prebuilt format
+- These can be installed via `conda install <extension_name>`
+- They can be used right away after installation
 
 <br>
+
+**Source**
+
+- Some older JupyterLab extensions still use the source format
+- These can be installed via the Extension Manager GUI or by typing `jupyter labextension install <extension_name>` command
+- A **source** extension cannot be used right away, but requires a rebuild of JupyterLab.
+  -This rebuild required the program **Node.js** to be installed in your conda environment. You can install Node.js by running `conda install nodejs`.
 
 <p style="color:black; font-size:110%; background-color:floralwhite;">
 Always refer to an extension's documentation to find the recommended way of installation.

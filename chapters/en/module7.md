@@ -47,8 +47,8 @@ Both JupyterLab and Visual Studio code are IDEs with similar features.
 JupyterLab is an IDE, whereas GitHub is an online platform for hosting and managing code through the Git system.
 </opt>
 
-<opt text="Atom">
-JupyterLab is an IDE, whereas Atom is a text editor.
+<opt text="Notepad">
+JupyterLab is an IDE, whereas Notepad is a text editor.
 </opt>
 
 </choice>
@@ -154,7 +154,7 @@ Note that some cells have already been executed. An error message would have res
 <!-- ------------------------------------ -->
 <exercise id='9' title="Test your knowledge">
 
-It's convenient to run code inside Markdown code blocks if you've specified the language after the first three back ticks, e.g. ` ```python`.
+It's possible to run code inside Markdown code blocks if you've specified the language after the first three back ticks, e.g. ` ```python`.
 
 <choice id="1">
 
@@ -172,7 +172,7 @@ Markdown documents can be rendered with any text editor.
 <choice id="2">
 
 <opt text="True">
-You can open a Markdown document with any text editor, since it only contains plain text. However, you can view <b>rendered output</b> only in environments that support displaying Markdown output, such as JupyterLab or GitHub.
+You can <b>open</b> a Markdown document with any text editor, since it only contains plain text. However, you can view <b>rendered output</b> only in environments that support displaying Markdown output, such as JupyterLab, VS Code, and GitHub.
 </opt>
 
 <opt text="False" correct="true">

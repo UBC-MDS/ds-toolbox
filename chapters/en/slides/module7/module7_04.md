@@ -24,7 +24,7 @@ Markdown is supported on various platforms, including GitHub (remember `README.m
 
 Notes:
 
-So far we've only talked about code cells, which are responsible for the computational part of a Jupyter notebook. The other major type of cell in a Jupyter notebook is what's known as a **Markdown** cell, which allows you to write formatted text. This is where you can use to store the narrative part of your Jupyter notebook.
+So far we've only talked about code cells, which are responsible for the computational part of a Jupyter notebook. The other major type of cell in a Jupyter notebook is what's known as a **Markdown** cell, which allows you to write formatted text. This is where you can store the narrative part of your Jupyter notebook.
 
 **Markdown** provides a fast and easy way to format plain text, without the need to have a graphical interface to manipulate the looks of your document, or needing any special file format. If you're familiar with HTML or Latex, you'll notice a lot of similarities. But using Markdown is much simpler and geared towards applications where you need to write a formatted document with convenience, and you don't need super advanced typographical elements in your document.
 
@@ -102,7 +102,7 @@ Now's the time to create a bullet-point style list:
     - Sub-sub-item 1
 ```
 
-You can also create numbered lists:
+You can also create numbered lists (regardless which number you put in, JupyterLab will automatically number the list in consecutive order):
 
 ```md
 1. One
@@ -110,7 +110,7 @@ You can also create numbered lists:
 5. Three
 ```
 
-One other useful formatting syntax is the **block quote**:
+One other useful formatting syntax is the **block quote** for quoting or calling special attention to longer sections of text:
 
 ```md
 > Here is a block quote!
@@ -136,7 +136,9 @@ You can insert a link into your markdown cell by following this syntax:
 
 Inserting images is also very easy and has a syntax similar to inserting links, except that you also have to remember to put an exclamation mark at the beginning:
 
-`![](https://ubc-mds.github.io/img/mdslogopad.png)`
+`![UBC Master of data science logo](https://ubc-mds.github.io/img/mdslogopad.png)`
+
+The text inside the `[]` will show up if the image can't display for some reason, and it is also helpful for people who rely on accessibility features.
 
 ---
 
@@ -184,7 +186,8 @@ result = arr + np.pi
 
 Notes:
 
-If you're familiar with $\LaTeX$, you can also use math typesetting with ease.
+Markdown supports $\LaTeX$ math formulas, which are a powerful and commonly used way to write mathematical expression.
+If you have never seen $\LaTeX$ before, it can look a bit intimidating, especially for the more complex formulas, but you can quickly pick up the basic expressions and then look up more advanced functionality as it is needed.
 
 Here is an inline math formula: $ F = ma $.
 
@@ -192,17 +195,17 @@ You can also write math in a math block, which you can create using a pair of do
 
 ---
 
-# Markdown pro tips
+## Pro tips for Markdown formatting
 
 <br>
 
-- Standard Markdown provides a limited (but mostly enough) formatting styles
+- Markdown provides limited formatting styles that are often enough, but not always.
 
 - Sometimes, we just need more!
 
 <br>
 
-You can use HTML inside Markdown text to
+You can use HTML inside Markdown text to enable advanced formatting, such as
 
 - Change the displayed size of an image
 - Change text size and color
@@ -220,7 +223,7 @@ Here are a few things you can't do with standard Markdown, but you can do with H
 
 ---
 
-# Pro tips: Change image size
+# Pro tip 1: Change image size
 
 You can use the following HTML tag to change the displayed size of an image:
 
@@ -234,7 +237,7 @@ You can use the following HTML tag to change the displayed size of an image:
 
 ---
 
-# Pro tips: Change text size & color
+# Pro tip 2: Change text size & color
 
 You can use the following HTML tag to change the size and color of a piece of text:
 

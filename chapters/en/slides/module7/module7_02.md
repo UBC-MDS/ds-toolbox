@@ -4,6 +4,8 @@ type: slides
 
 # The JupyterLab interface
 
+In this slide deck we will learn about the different parts of the JupyterLab interface and how to navigate them effectively
+
 ---
 
 # The JupyterLab interface
@@ -34,7 +36,7 @@ Here you can see various tabs of the left sidebar:
 
 - (3): This is the Git extension tab. You've used it extensively in the previous chapters to version-control your repositories.
 
-- (4): This is your table of contents tab. Whenever you insert Markdown headings to your notebooks, they will automatically show up here and will help you easily jump to any specific section of your notebook.
+- (4): This is your table of contents tab. Whenever you insert Markdown headings to your notebooks, they will automatically show up here and will help you easily jump to any specific section of your notebook. You can also show code cells in the table of contents and expand and collapse sections to get a quick overview of your notebook.
 
 There is also an Extension Manager tab which we will talk about in more detail in later sections of this module.
 
@@ -46,20 +48,23 @@ There is also an Extension Manager tab which we will talk about in more detail i
 
 Notes:
 
-The main work area is all your working windows reside. Here for example, I have open:
+The main work area is where all your working windows reside. Here for example, we have opened:
 
 - a notebook,
 - an image file,
 - an IPython console, and
 - a terminal.
 
-The content of each window, as well as the toolbars (and whether or not you get one!) depends on the type of the file you opened (e.g. notebook, image, PDF), or the type of the window (e.g. whether it's a console or a terminal).
+The content of each window, as well as the toolbars (and whether or not you get one!) depends on the type of the file you opened (e.g. notebook, image, PDF), and the type of the window (e.g. whether it's a console or a terminal).
 
 You can resize the windows as you wish and change their arrangement by dragging the grey margin area between them.
 
 You can also drag and drop a tab to another window to make it part of that window, or you can do the reverse.
 
 ---
+
+## Simple mode
+
 
 <img src="/module7/simple.png" width="750"></img>
 

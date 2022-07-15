@@ -3,7 +3,8 @@ type: slides
 ---
 
 # What is Jupyter?
-
+Notes:
+You have already been working a bit with JupyterLab in this course and maybe also with Jupyter Notebooks if you have taken previous courses in the Data Science program. In this module we will go through these tools in more detail and show you some advanced functionality.
 ---
 
 # Project Jupyter
@@ -26,7 +27,9 @@ The name "Jupyter" -> "Julia" + "Python" + "R"
 
 Notes:
 
-Project Jupyter was born from the IPython project in 2014.
+Project Jupyter's foundation is the interactive Python project ("IPython"), which was started by a Colombian graduate student in physics back in 2001 with the goal of create an easier to use Python environment for scientific computing.
+In 2014, the notebook interface was first introduced and this part of the project was renamed to Jupyter to indicate that it supported more programming languages than just Python.
+The main goals of Project Jupyter are to provide an ecosystem for interactive data science projects and to support multiple popular programming languages.
 
 The name "Jupyter" is a combination of "Julia" (popular scientific computing language), "Python", and "R" (popular statistical analysis tool).
 
@@ -50,9 +53,9 @@ Notes:
 
 JupyterLab enables you to work with documents and activities such as Jupyter notebooks, text editors, terminals, and custom components in a flexible, integrated, and extensible manner. 
 
-The main document type that is most commonly used in JupyterLab is Jupyter **notebook**.
+The main document type that is most commonly used in JupyterLab is the Jupyter **notebook**.
 
-Jupyter notebooks enable you to combine narrative with interactive, executable code and its output all in one place. 
+One of the core strengths of Jupyter notebooks is that they enable you to combine narrative text with interactive, executable code and its output all in one place. 
 
 We'll talk about Jupyter notebooks in more detail in the upcoming sections.
 
@@ -92,12 +95,14 @@ jupyter lab
 to launch JupyterLab.
 
 Notes:
-
+We have already seen how to install and run JupyterLab in the instructions for assignment 1, but we are also included it here so that you have all the information about JupyterLab in one place.
 Make sure that you are in a conda environment (preferably the `(base)` environment), before attempting to install JupyterLab.
 
 Note that on MachOS and Linux, you can use the standard terminal app to run these commands. On Windows, you need to open "Anaconda Prompt" (the equivalent the terminal in Windows) to run these commands. Remember that "Anaconda Prompt" should be available on your system, as a part of your Miniconda installation.
 
 ---
+
+## The JupyterLab interface
 
 After running `jupyter lab`, a browser window should open with JupyterLab's interface:
 
@@ -106,7 +111,7 @@ After running `jupyter lab`, a browser window should open with JupyterLab's inte
 Notes:
 
 By default, you're going to see the "Launcher" tab, which allows you to create various new working environments.
-
+You have already used the terminal and Git extension inside JupyterLab in previous chapters. In this chapter, we will go in more detail about JupyterLab's functionality, and how we can effectively use this environment for interactive development of our data science projects.
 ---
 
 # Use conda environments with JupyterLab
@@ -151,11 +156,14 @@ Once you've done that, you'll be able to see your desired environment in the Lau
 
 ---
 
+## Launching a notebook with a specific conda environment
+
 <img style="border:1px solid black;" src="/module7/jl-launch_dstoolbox.png" width="800"></img>
 
 Notes:
 
-I have followed the steps that I mentioned earlier, and you can see that the `dstoolbox` environment has shown up in my JupyterLab's Launcher tab.
+After following the steps in the previous slide, you can see that the `dstoolbox` environment has shown up in JupyterLab's Launcher tab.
+Clicking this icon would launch a new Juptyer Notebook with the `dstoolbox` environment.
 
 ---
 

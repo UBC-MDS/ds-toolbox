@@ -32,9 +32,11 @@ Notes:
 
 Notes:
 
-You can create new notebooks in various ways.
+You can create new notebooks in three ways.
 
-One way is to click the blue `+` button on the top left corner of the file explorer tab, which opens a new Launcher. You can then click on any one of the available environment kernels to create a new notebook with that kernel.
+The first one is to click the blue `+` button on the top left corner of the file explorer tab, which opens a new Launcher. You can then click on any one of the available environment kernels to create a new notebook with that kernel.
+
+The second way is to click the icon in the main working area for the conda environment your want to launch
 
 ---
 
@@ -46,13 +48,13 @@ One way is to click the blue `+` button on the top left corner of the file explo
 
 Notes:
 
-Another way is to right-click on the empty space of the file explorer, and then choose "New notebook". You'll be asked to choose a kernel right afterwards, and then your new notebook will be ready.
+The third way is to right-click on the empty space of the file explorer, and then choose "New notebook". You'll be asked to choose a kernel right afterwards, and then your new notebook will be ready.
 
 ---
 
 # Building blocks of notebooks
 
-- A Jupyter notebook consists of **cells** (an nothing but cells).
+- A Jupyter notebook consists of **cells**.
 
 - A cell is a block of characters, that can be interpreted in different ways depending on its type.
 
@@ -76,13 +78,13 @@ An **active** cell in a Jupyter notebook can be in either **command** or **edit*
 - **Command** mode:
   - You don't have a cursor inside the cell
   - The cell has a **grey** background
-  - Hit `Esc` to switch from **edit** to **command** mode
+  - Hit `Esc` or click outside a cell to switch from **edit** to **command** mode
 
 - **Edit** mode:
   - You have a cursor inside the cell
   - You can start typing or edit the code or text inside a cell
   - The cell has a **white** background
-  - Hit `Enter` to switch from **command** to **edit** mode
+  - Hit `Enter` or click in a cell to switch from **command** to **edit** mode
  
 <br>
 
@@ -215,6 +217,8 @@ Here I have opened a console for the notebook which I already created. As you ca
 
 You can resize or move the console window as you wish. Also, remember that you can run the piece of code that you've entered in the input area by pressing `Shift + Enter`.
 
+Since the Jupyter Console is suitable for quick exploration, an increasing number of well-known data science packages have started to include it as part of their documentation.
+For example, the well-known `numpy` package allows you to try out NumPy directly on their web page without installing anything using a special Jupyter Console (under the "Try NumPy" section at https://numpy.org/)
 ---
 
 # Getting help when writing code
@@ -232,6 +236,7 @@ Notes:
 Like in a terminal, you can take advantage of the auto-completion capability of JupyterLab (through the IPython kernel).
 
 Whenever you partially type the name of a variable, function, class, etc. you can press `Tab` on your keyboard to see the available options.
+You can then press `Tab` and `Shift` + `Tab` to cycle through the completion and press `Enter` to insert the one you want.
 
 Auto-completion is a very handy feature also to see what methods and functions are available in a package. You can type the packages alias (e.g. `np` in this case for the `numpy` package) followed by a `.`, and then hit `Tab` to see the available options.
 
@@ -271,13 +276,13 @@ Notes:
 
 Another way of accessing the docstring for various functions is to open the "Contextual Help" window by right-clicking any cell and choosing "Show Contextual Help".
 
-As soon as you click on any function's name, the contextual help window will look something like this:
+As soon as you click on a function's name, the contextual help window will update to show the help for that function.
+This can be super useful when working with a package that you are not very familiar with and we recommend that you have the contextual help open all the time in this scenario.
 
 ---
 
 # Jupyter notebooks & reproducibility
 
-It is possible (and common) to execute code cells **out of order** in a Jupyter notebooks. If not careful, this can lead to to reproducibility issues.
 
 <img src="/module7/reprod.png" width="480"></img>
 
