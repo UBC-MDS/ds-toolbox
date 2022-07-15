@@ -10,10 +10,12 @@ title: 'module4_06'
 
 In this module you learned how to
 
-1. View your Git history via `git log` and restore an older version of a file via `git restore`.
-2. Deal with merge conflicts at the command line and in VS Code. 
+1. View your Git history via the command `git log` and using VS Code.
+2. Solve merge conflicts at the command line and in VS Code.
+3. Manage to avoid pushing specific local files by including a `.gitignore`.
+4. Differenciate between revert and hard reset a commit when restoring an older version of a file.
 
-Notes: The assignment will concentrate on the learning objectives as well as building knowledge on existing concepts.
+Notes:
 
 ---
 
