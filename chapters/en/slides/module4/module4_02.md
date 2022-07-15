@@ -3,7 +3,7 @@ type: slides
 title: 'module4_02'
 ---
 
-# Restoring an older version of a file
+# Restoring an older version of the project
 
 ---
 # Time travelling 
