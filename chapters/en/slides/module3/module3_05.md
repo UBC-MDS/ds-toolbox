@@ -3,7 +3,7 @@ type: slides
 title: 'module3_05'
 ---
 
-# Pushing changes from a remote repository
+# PUSHing changes from a remote repository
 
 ---
 ## Pushing the commit to send the changes to the remote repository on GitHub

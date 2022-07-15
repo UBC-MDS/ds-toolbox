@@ -9,16 +9,14 @@ title: 'module3_00'
 
 In this module you will learn how to:
 
-1. Recognize the importance of version control in data science.
-2. Identify the main uses of Git and GitHub for version control.
-3. Define what is a Git repository.
-4. Use Git's basic functions: `clone`, `add`, `commit`, `pull`, and `push` in JupyterLab and the command line.
+1. Differentiate the use of Git as version control system and GitHub as remote hosting service for version control.
+2. Recognize a Git repository.
+3. Implement Git's core functionality in JupyterLab and the command line: `clone`, `add`, `status`, `commit`, `pull`, and `push`.
+4. Understand how to use the staging area in a Git workflow.
+5. Recognize the commit as the primary building block for storing a project version specified by a message attached and a hash serving as a distinctive identifier. .
 
-Notes: This module introduces how to use Git for local version control, and GitHub for remote version control.
-
-
+Notes: This module covers the basics of version control with Git and GitHub. 
 
 ---
-
 
 # Let's Start!

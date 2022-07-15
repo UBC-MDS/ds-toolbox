@@ -3,7 +3,7 @@ type: slides
 title: 'module3_06'
 ---
 
-# Pulling changes from a remote repository
+# PULLing changes from a remote repository
 
 ---
 ## Pulling changes from the remote GitHub repository to synchronize your local repository

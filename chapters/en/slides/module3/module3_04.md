@@ -25,7 +25,9 @@ In image, the message is `"Message about changes..."`; in your work you should m
 
 ---
 
-## The importance of writting meaningful commit messages
+## Committing to add sections to your project history
+
+
 
 <center>
 
@@ -35,9 +37,7 @@ In image, the message is `"Message about changes..."`; in your work you should m
 
 <a href="https://xkcd.com/1296/">Image extracted from xkcd.com</a>
 
-Notes: When commit messages are too vague (`code additions` or `Add some stuff`) could be difficult to interpret for other collaborators, or even ourselves in the future. Selecting clear and descriptive commit messages increases the quality of your project and facilitates collaborative work. 
-
-
+Notes: Writting meaningful commit messages it is really important. When commit messages are too vague (`code additions` or `Add some stuff`) could be difficult to interpret for other collaborators, or even ourselves in the future. Selecting clear and descriptive commit messages increases the quality of your project and facilitates collaborative work. 
 
 
 

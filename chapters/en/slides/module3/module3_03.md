@@ -26,7 +26,7 @@ In this section we will discuss the first step.
 
 Making a commit is a two step process where you first add the changes to the staging area and then commit them, which saves the differences between the current and previous version of the file together with your message describing what you did. These changes are saved in the hidden `.git` directory in the Git repository.
 
-Let's learn how to make a commit in your local repository step by step
+Let's learn step by step how to make a commit in your local repository
 
 ---
 

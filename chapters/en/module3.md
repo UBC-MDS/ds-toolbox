@@ -1,7 +1,7 @@
 ---
 title: 'Module 3: Git and GitHub intro'
 description:
-  ' This module introduces how to use Git for local version control, and GitHub for remote version control.' 
+  'This module covers the basics of version control with Git and GitHub. ' 
 prev: ../../module2 
 next: ../../module4
 type: chapter
@@ -24,8 +24,6 @@ id: 3
 </exercise>
 
 <exercise id='2' title="What is the difference between Git and GitHub?">
-
-**Question 1**
 
 Which reason listed below is not a good reason to use version control:
 
@@ -51,8 +49,6 @@ One of the great advantages of version control tools is that they facilitate col
 Correct! Version control has many benefits as was described in the previous answers 1, 2, and 3, but it is not related to how good is your code. 
 </opt>
 </choice>
-
-**Question 2**
 
 **True or false**
 
@@ -93,7 +89,6 @@ When you clone a Git repository from GitHub you get the hidden `.git` directory 
 
 <exercise id='4' title='Cloning a GitHub repo'>
 
-**Question 1**
 Which statement below is **not** true about GitHub repositories: 
 
 <choice id='1'>
@@ -119,22 +114,19 @@ To be able to edit a repository, the owner should give you access first!
 </opt>
 </choice>
 
-**Question 2**
-
 **True or false**
 
 > The definition of cloning a repository is to copy/download the entire contents (files, project history, and location of the remote repository) of a remote GitHub.com repository to a computer (e.g., your workspace on a JupyterHub, or your laptop).
 
 <choice id='2'>
-<opt text='true' correct='true'>
+<opt text='True' correct='true'>
 </opt>
-<opt text='false'>
+<opt text='False'>
 
 When you are cloning a repository you are downloading a <code>.git</code> hidden folder that holds information as the project history. You can retrieve that information using git commands or JupyterLab GUI.
 
 </opt>
 </choice>
-
 </exercise>
 
 <exercise id='5' title="The staging area"  type='slides, video'>
@@ -145,7 +137,7 @@ When you are cloning a repository you are downloading a <code>.git</code> hidden
 
 **Git** has a distinct step of **adding** files to the staging area because:
 
-<choice>
+<choice id=1>
 <opt text='Not all changes we make (i.e., files we create or edit) are ones that we want to push to our remote GitHub repository.'>
 
 This is partially correct. 
@@ -168,6 +160,31 @@ It is possible to add more than one file to the staging area, using the `+` symb
 </opt>
 <opt text='A and B' correct='true'>
 
+</opt>
+</choice>
+
+**True or false?**
+
+The staging area doesn't exist on GitHub.
+
+<choice id=2>
+<opt text='True' correct='true'>
+</opt>
+<opt text='False'>
+
+There is not an equivalent to the staging area when you are working on GitHub. This means that you can commit the changes directly.
+
+</opt>
+</choice>
+
+You can add to the staging area both the changed and untracked files.
+
+<choice id=3>
+<opt text='True' correct='true'>
+</opt>
+<opt text='False'>
+
+Changed files or new files added to your repository (known as untracked) are possible to be staged and commited.
 
 </opt>
 </choice>
@@ -180,8 +197,6 @@ It is possible to add more than one file to the staging area, using the `+` symb
 
 <exercise id='8' title='A commit in a bottle'>
 
-**Question 1**
-
 **True or false**
 
 > When we **commit** our changes to Git, the record of changes, the commit message, the time and date stamp and the user who committed the changes are all saved to the Git history on GitHub.
@@ -189,17 +204,15 @@ It is possible to add more than one file to the staging area, using the `+` symb
 <choice id='1'>
 <opt text='true'>
 
-Solution is incorrect. Committing your changes only puts them in the Git history on the local computer you are working on (i.e., your workspace on the JupyterHub or your laptop). To get the changes on GitHub you need to do an additional step of pushing the changes to the remote repository on GitHub.
+Committing your changes only puts them in the Git history on the local computer you are working on. To get the changes on GitHub you need to do an additional step of pushing the changes to the remote repository on GitHub.
 
 </opt>
 <opt text='false' correct='true'>
 
-Success! You're right! The changes (and all the associated information) are not yet on GitHub, they are only in the Git history on the local computer you are working on (i.e., your workspace on the JupyterHub or your laptop).
+You're right! The changes (and all the associated information) are not yet on GitHub, they are only in the Git history on the local computer you are working on (i.e., your workspace on the JupyterHub or your laptop).
 
 </opt>
 </choice>
-
-**Question 2**
 
 When working on a project that is under version control you should `commit` to you local Git repository:
 
@@ -224,29 +237,20 @@ Are you sure you are committing only the relevant changes? You are spending prob
 </opt>
 </choice>
 
-**Question 3**
-
 Which command(s) below would save the changes of `README.md` to my local Git repository if you are using the terminal? 
 
 <choice id='3'>
 <opt text='<code>git init README.md</code> and <code>git commit -m "Add authors and copyright"</code>' >
-
 What does the command <code>git init</code> does?
-
 </opt>
 <opt text='<code>git commit -m "Add authors and copyright"</code>'>
-
 Have you include the README.md file in the staging area?
-
 </opt>
 <opt text='<code>git add README.md</code> and <code>git commit -m "Add authors and copyright"</code>'  correct='true'>
-
-
 </opt>
+
 <opt text='<code>git commit -m README.md "Add authors and copyright"</code>'>
-
 Have you include the README.md file in the staging area?
-
 </opt>
 </choice>
 </exercise>
@@ -259,27 +263,39 @@ Have you include the README.md file in the staging area?
 
 When working on a project that is under version control you should `push` to online GitHub repository:
 
-<choice>
+<choice id=1>
 <opt text='obsessively, like every 5 minutes' >
 
 You will probably be better using your time to move forward with the project than in pushing (and doing commits). 
 
 </opt>
 <opt text='at least at the end of every session you work on the project' correct='true'>
-
 Or if you want to share your work with other colleages.
-
 </opt>
 <opt text='2-3 times'>
-
 What if you have done more (or less) important changes to your project than 2-3? 
-
 </opt>
 <opt text='only once, shortly before the deadline'>
-
 If you are working in a collaborative project, pushing too close to the deadline could reveal merging conflicts that would take time to solve. 
+</opt>
+</choice>
+
+One of the following actions it is not necessary for pushing to the remote successfully. Can you detect it?
+
+<choice id=2>
+<opt text='add files you want to record changes to the staging area' >
+This is a necessary step before pushing your changes to GitHub.
 
 </opt>
+<opt text='commit your changes to record them as part of your project history'>
+This is a necessary step before pushing your changes to GitHub.
+</opt>
+
+<opt text='add a hash to your commit to can identify it easily'  correct='true'>
+The HASH code it is automatically generated by Git each time you create a commit. It allows you to identify unambiguosly the commit.
+
+</opt>
+
 </choice>
 </exercise>
 
@@ -291,7 +307,7 @@ If you are working in a collaborative project, pushing too close to the deadline
 
 Which statement below is **not** true?
 
-<choice>
+<choice id=3>
 <opt text='Cloning and pulling a GitHub repository are the exact same thing.' correct='true'>
 
 Cloning is downloading the repository for the first time, including the project history. Pulling is to update your local copy of the repository with the remote changes. For example, if a colleague has added changes to the repository you should update your local repository vefore push your own changes to avoid merging conflicts.
@@ -299,11 +315,27 @@ Cloning is downloading the repository for the first time, including the project 
 </opt>
 <opt text='Pushing with Git is the act of sending changes that were committed to Git to a remote repository, for example, on GitHub.com.'>
 </opt>
-<opt text='Pulling with Git is the act of collecting changes that exists in a remote repository, for example, on GitHub.com, that do not yet exist on the local computer you are working on (i.e., your workspace on the JupyterHub or your laptop).'>
+<opt text='Pulling with Git is the act of collecting changes that exists in a remote repository, for example, on GitHub.com, that do not yet exist on the local computer you are working on'>
 </opt>
 <opt text='You should push your work to GitHub anytime you want to share your work with others, or when you are done a work session and want to back up your work.'>
 </opt>
 </choice>
+
+
+If you are working on a GitHub repository that is frecquently updated by other colleagues. What is a recommended step before start working locally?
+
+
+<choice id=4>
+
+<opt text='Clone the repository again to be updated with their changes'>
+The repository should be cloned only the first time you start working on a project locally. What other command would you use instead?
+</opt>
+<opt text=''>
+</opt>
+<opt text='Pull the remote changes to your computer'>
+</opt>
+</choice>
+
 </exercise>
 
 <exercise id="13" title="What did we just learned?" type="slides,video">
