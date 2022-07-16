@@ -106,9 +106,7 @@ IN the option <bold>A.</bold>, <code>9021b83</code> is the SHA-1 of the last com
 <opt text='<B and C are correct' correct='true' >
 Writing the newest commit is not necessary. If you write only one commit (that is not the newest one) it will compare it with the last one without specifing anything else.
 </opt>
-
 </choice>
-
 </exercise>
 
 <exercise id='5' title="Restoring an older version of a file"  type='slides, video'>
@@ -137,7 +135,7 @@ When you do a hard reset, you are deleting the history of your project up to a p
 </opt>
 </choice>
 
-TRUE OR FALSE
+True or false
 
 Select all the situations in which it is a good idea to reset your work to a previous commit:
 
