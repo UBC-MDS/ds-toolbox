@@ -8,7 +8,7 @@ type: chapter
 id: 4
 ---
 
-<exercise id="0" title="M0dule Learning Outcomes" type="slides,video">
+<exercise id="0" title="Module Learning Outcomes" type="slides,video">
 
 <slides source="module4/module4_00" shot="0" start="0:002" end="3:40">
 </slides>
@@ -25,29 +25,97 @@ id: 4
 
 Clone the repo https://github.com/UBC-MDS/equine_numbers_value_canada. What is the hash or the first commit of the project? 
 
-<choice>
-<opt text='cc400df4b2a382f653abd0d9e514f6daae98d2ad'>
+<choice id=1>
+<opt text='<bold>A.</bold> cc400df4b2a382f653abd0d9e514f6daae98d2ad'>
+Is the first commit of the project or the first commit of the user flor14?
 </opt>
-<opt text='cc400df'>
+<opt text='<bold>B.</bold> e98d2ad'>
+To use a shorter version of a SHA you should select the first characters, not the last ones.
 </opt>
-<opt text='0896801'>
+<opt text='<bold>C.</bold> cc400df'>
+Is the first commit of the project or the first commit of the user flor14?
 </opt>
-<opt text='0896801fdd38d461414e0b061b2b2ef3395f7dd0'>
+<opt text='<bold>D.</bold> 0896801'>
+Why D is incorrect?
 </opt>
-<opt text='A and B are correct'>
+<opt text='<bold>E.</bold> 0896801fdd38d461414e0b061b2b2ef3395f7dd0'>
+Why C is incorrect?
 </opt>
-<opt text='C and D are correct' correct='true'>
+<opt text='A and C are correct'>
+Is the first commit of the project or the first commit of the user flor14?
 </opt>
-<opt text='B and C are correct'>
+<opt text='D and E are correct' correct='true'>
+</opt>
+</choice>
+
+What kind of information can you get from git history? Select the inorrect one.
+
+<choice id=2>
+<opt text='commit message' >
+</opt>
+<opt text='date and time'>
+</opt>
+<opt text='HASH'>
+</opt>
+<opt text='author'>
+</opt>
+<opt text='commit number' correct='true'>
+When checking your project history you will see that the commits are displayed from older to newer using the date as a reference. There is no explicit commit numeration.
 </opt>
 </choice>
 </exercise>
 
-<exercise id='3' title="Restoring an older version of a file"  type='slides, video'>
-<slides source='module4/module4_02' shot='0' start='3:42' end='4:35'> </slides>
+
+
+<exercise id="3" title="Comparing commits" type="slides,video">
+
+<slides source="module4/module4_02" shot="0" start="0:002" end="3:40">
+</slides>
+
 </exercise>
 
 <exercise id='4' title='Test Your Knowledge'>
+
+Enter to the comparison between this two commits on GitHub: https://github.com/UBC-MDS/equine_numbers_value_canada/compare/9021b83..1bb5ab8
+
+Go to the project history as we learned in the past set of the slides. What is the current state of the <code>README.md</code> file in the repository (the first change you can see)? The one that appear in red or the one that appears in green?
+<choice id=3>
+<opt text='red' correct='true'>
+The colors could be tricky, because you are always comparing the commit on the left as the one displayed as the red one with the commit on the right asdisplayed as the green one. If you want to use the color code remember to always write on the left the oldest commit. In this case would be writting https://github.com/UBC-MDS/equine_numbers_value_canada/compare/1bb5ab8..9021b83.
+</opt>
+<opt text='green' >
+Go to the repository as it is now https://github.com/UBC-MDS/equine_numbers_value_canada/ and check the <code>README.md</code> file. Is it look as the example of the left of on the right here https://github.com/UBC-MDS/equine_numbers_value_canada/compare/9021b83..1bb5ab8? 
+</opt>
+</choice>
+
+How would realice this comparison using the command line? https://github.com/UBC-MDS/equine_numbers_value_canada/compare/1bb5ab8..9021b83
+
+<choice id=4>
+<opt text='<bold>A.</bold><code>git diff 9021b83</code>' >
+<code>9021b83</code> is the SHA-1 of the last commit, what would you like to compare it with?
+</opt>
+<opt text='<bold>B.</bold><code>git diff 1bb5ab8</code>' >
+But there is also other correct option!
+</opt>
+<opt text='<bold>C.</bold><code>git diff 1bb5ab8 9021b83</code>' >
+But there is also other correct option!
+</opt>
+<opt text='<A and C are correct' >
+IN the option <bold>A.</bold>, <code>9021b83</code> is the SHA-1 of the last commit, what would you like to compare it with?
+</opt>
+<opt text='<B and C are correct' correct='true' >
+Writing the newest commit is not necessary. If you write only one commit (that is not the newest one) it will compare it with the last one without specifing anything else.
+</opt>
+
+</choice>
+
+</exercise>
+
+<exercise id='5' title="Restoring an older version of a file"  type='slides, video'>
+<slides source='module4/module4_03' shot='0' start='3:42' end='4:35'> </slides>
+</exercise>
+
+<exercise id='6' title='Test Your Knowledge'>
 
 You are writing a book using version control. In your local repository, you have a text file for each chapter. Today, after reading your work again you decided to move some of the text you have written for `chapter3.md` to `chapter1.md`. How would you save this change using Git?
 
@@ -94,11 +162,11 @@ You can hard-reset your work in both cases, but one of the options could cause p
 </choice>
 </exercise>
 
-<exercise id='5' title='Revert your changes' type='slides, video'>
-<slides source='module4/module4_03' shot='0' start='3:42' end='4:35'> </slides>
+<exercise id='7' title='Revert your changes' type='slides, video'>
+<slides source='module4/module4_04' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
-<exercise id='6' title='Test Your Knowledge'>
+<exercise id='8' title='Test Your Knowledge'>
 
 Which of the following statements are TRUE about `git revert`?
 
@@ -121,11 +189,11 @@ Which of the following statements are TRUE about `git revert`?
 
 </exercise>
 
-<exercise id='7' title="Deal with merge conflicts"  type='slides, video'>
-<slides source='module4/module4_04' shot='0' start='3:42' end='4:35'> </slides>
+<exercise id='9' title="Deal with merge conflicts"  type='slides, video'>
+<slides source='module4/module4_05' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
-<exercise id='8' title='Test Your Knowledge'>
+<exercise id='10' title='Test Your Knowledge'>
 
 What do you have to do if you are working with the terminal and you want to write a different text for this merge conflict?
 
@@ -145,11 +213,11 @@ What do you have to do if you are working with the terminal and you want to writ
 
 
 
-<exercise id='9' title='.gitgnore'  type='slides, video'>
-<slides source='module4/module4_05' shot='0' start='3:42' end='4:35'> </slides>
+<exercise id='11' title='.gitgnore'  type='slides, video'>
+<slides source='module4/module4_06' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
-<exercise id='10' title='Test Your Knowledge'>
+<exercise id='12' title='Test Your Knowledge'>
 
 `**/` is prepended to an entry in `.gitignore` to tell Git that this entry is a folder.
 
@@ -178,8 +246,8 @@ Remember that you need to do "add" and "commit" <code>.gitignore</code> with Git
 </choice>
 </exercise>
 
-<exercise id="11" title="What did we just learned?" type="slides,video">
+<exercise id="13" title="What did we just learned?" type="slides,video">
 
-<slides source="module4/module4_06" shot="0" start="0:002" end="3:40">
+<slides source="module4/module4_07" shot="0" start="0:002" end="3:40">
 </slides>
 </exercise>

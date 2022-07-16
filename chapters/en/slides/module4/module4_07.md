@@ -1,14 +1,14 @@
 ---
 type: slides
-title: 'module4_00'
+title: 'module4_07'
 ---
 
 
-# Module Learning Outcomes
+# What Did we Learn and What to Expect in Assignment 4
 
 ---
 
-# Module Learning Outcomes
+In this module you learned how to
 
 1. Explore the Git history via `git log` in the terminal, and the equivalent functions in JupyterLab and GitHub.
 2. Compare commits using `git diff` in the terminal, and the equivalent functions in JupyterLab and GitHub.
@@ -16,9 +16,8 @@ title: 'module4_00'
 4. Manage to avoid pushing specific local files by including a `.gitignore`.
 5. Differenciate between revert and hard reset a commit when restoring an older version of a project.
 
-Notes:  View your git history, travel back in time, deal with merge conflicts and other useful tools
-
+Notes:
 
 ---
 
-# Let's Start!
+# On to Assignment 4!
