@@ -3,10 +3,10 @@ type: slides
 title: 'module3_06'
 ---
 
-# Pulling changes from a remote repository
+# PULLing changes from a remote repository
 
 ---
-# Pulling changes from the remote GitHub repository to synchronize your local repository
+## Pulling changes from the remote GitHub repository to synchronize your local repository
 
 <center>
 
@@ -23,7 +23,7 @@ To obtain the new changes from the remote repository on GitHub, you will need to
 
 ---
 
-#  Pulling changes from GitHub using JupyterLab 
+## Pulling changes from GitHub using JupyterLab 
 
 
 <center>
@@ -37,7 +37,7 @@ Notes: **1. The GitHub interface indicates the name of the last person to push a
 
 ---
 
-#  Pulling changes from GitHub using JupyterLab 
+## Pulling changes from GitHub using JupyterLab 
 
 
 <center>
@@ -53,18 +53,18 @@ You can tell Git to “pull” by clicking on the cloud icon with the down arrow
 
 ---
 
-#  Pulling changes from GitHub using JupyterLab
+## Pulling changes from GitHub using JupyterLab
 
 <center>
 
 <img src='/module3/vc-pull-jupyter-3.png' width="70%" alt="404 image"/>
-git pu
+
 <center/>
 
 Notes: **3. The prompt after changes have been successfully pulled from a remote repository.**
 
 ---
-#  Pulling changes from GitHub using JupyterLab
+##  Pulling changes from GitHub using JupyterLab
 
 <center>
 
@@ -78,7 +78,7 @@ Once the files are successfully pulled from GitHub, you need to click “Dismiss
 And then when you open (or refresh) the files whose changes you just pulled, you should be able to see them
 
 ---
-# JupyterLab: Pulling changes from GitHub
+## JupyterLab: Pulling changes from GitHub
 
 <center>
 
@@ -92,7 +92,7 @@ It can be very useful to review the history of the changes to your project. You 
 
 ---
 
-# Jupyter Lab terminal: Pulling changes from GitHub
+## Jupyter Lab terminal: Pulling changes from GitHub
 
 <center>
 

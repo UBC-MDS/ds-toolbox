@@ -6,7 +6,7 @@ title: 'module3_02'
 
 ---
 
-# Schematic of local and remote version control repositories. 
+## Schematic of local and remote version control repositories. 
 
 <br>
 <br>
@@ -27,7 +27,7 @@ Under the hood, Git only saves the changes between your versions, so it is also 
 
 ---
 
-# Tracking the repository history using commit messages
+## Tracking the repository history using commit messages
 
 <center>
 
@@ -43,7 +43,7 @@ Probably you have noticed that in the local repository it is a **staging area**,
 
 ---
 
-# Commit message
+## Commit message
 
 <center>
 
@@ -60,7 +60,7 @@ The **hash** is a string of characters consisting of about 40 letters and number
 
 
 ---
-# How can you create your repositories? 
+## How can you create your repositories? 
 
 <br>
 <br>
@@ -80,7 +80,7 @@ We are going to learn both ways!
 
 ---
 
-# 🙌  1. Creating a remote repository on GitHub
+## 🙌  1. Creating a remote repository on GitHub
 
 <center>
 
@@ -92,7 +92,7 @@ Notes: Before you can create remote repositories on GitHub, you will need a GitH
 
 
 ---
-# 1. Creating a remote repository on GitHub
+## 1. Creating a remote repository on GitHub
 
 <center>
 
@@ -115,7 +115,7 @@ That's it! Now let's clone it to get a local copy on your computer.
 
 ---
 
-# 🙌  2. Cloning a repository using Jupyter Lab (IDE)
+## 🙌  2. Cloning a repository using Jupyter Lab (IDE)
 
  
 
@@ -131,7 +131,7 @@ Notes: **The green “Code” drop-down menu contains the remote address (URL) c
 
 ---
 
-# 2. Cloning a repository using Jupyter Lab (IDE)
+## 2. Cloning a repository using Jupyter Lab (IDE)
 
 <center>
 
@@ -141,7 +141,7 @@ Notes: **The green “Code” drop-down menu contains the remote address (URL) c
 
 Notes: **1. Click the Jupyter Git Clone icon (red circle).**
 ---
-# 2. Cloning a repository using Jupyter Lab (IDE)
+## 2. Cloning a repository using Jupyter Lab (IDE)
 
 <center>
 
@@ -154,7 +154,7 @@ Notes: **2. Prompt where the remote address (URL) corresponding to the location 
 Open Jupyter, and click the Git+ icon on the file browser tab. Paste the URL of the GitHub project repository you created and click the blue “CLONE” button.
 
 ---
-# 2. Cloning a repository using Jupyter Lab (IDE)
+## 2. Cloning a repository using Jupyter Lab (IDE)
 
 <center>
 
@@ -165,7 +165,7 @@ Open Jupyter, and click the Git+ icon on the file browser tab. Paste the URL of 
 Notes: On the file browser tab, you will now see a folder for the repository. Inside this folder will be all the files that existed on GitHub
 
 ---
-# 2. Cloning a repository using Jupyter Lab (terminal)
+## 2. Cloning a repository using Jupyter Lab (terminal)
 
 <center>
 
@@ -177,7 +177,7 @@ Notes: If you want to do this in the terminal you can use the command git clone 
 
 ---
 
-# How can you check that you are working in a Git repository? (terminal)
+## How can you check that you are working in a Git repository? (terminal)
 
 
 <center>

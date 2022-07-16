@@ -3,10 +3,10 @@ type: slides
 title: 'module3_05'
 ---
 
-# Pushing changes from a remote repository
+# PUSHing changes from a remote repository
 
 ---
-# Pushing the commit to send the changes to the remote repository on GitHub
+## Pushing the commit to send the changes to the remote repository on GitHub
 
 <center>
 
@@ -17,7 +17,7 @@ title: 'module3_05'
 Notes: Once you have made one or more commits that you want to share with your collaborators, you need to push (i.e., send) those commits back to GitHub. This updates the history in the remote repository (i.e., GitHub) to match what you have in your local repository. Now when collaborators interact with the remote repository, they will be able to see the changes you made. And you can also take comfort in the fact that your work is now backed up in the cloud!
 
 ---
-# 🙌 JupyterLab: Pushing the commits to GitHub  
+## 🙌 JupyterLab: Pushing the commits to GitHub  
 
 <center>
 
@@ -32,7 +32,7 @@ Notes: **1. Push your commits**
 
 ---
 
-# JupyterLab: Pushing the commits to GitHub 
+## JupyterLab: Pushing the commits to GitHub 
 
 <center>
 
@@ -46,7 +46,7 @@ To send the committed changes back to the remote repository on GitHub, you need 
 You will then be prompted to enter your GitHub username and the personal access token that you generated earlier (not your account password!). Click the blue “OK” button to initiate the push.
 
 ---
-# JupyterLab: Pushing the commits to GitHub 
+## JupyterLab: Pushing the commits to GitHub 
 
 <center>
 
@@ -58,7 +58,7 @@ Notes: **3. The prompt that the push was successful.**
 
 ---
 
-# JupyterLab: Pushing the commits to GitHub 
+## JupyterLab: Pushing the commits to GitHub 
 
 <center>
 
@@ -71,7 +71,7 @@ Notes: **4. The GitHub web interface shows a preview of the commit message, and 
 If the files were successfully pushed to the project repository on GitHub, you will be shown a success message. If you visit the remote repository on GitHub, you will see that the changes now exist there too!
 
 ---
-# JupyterLab terminal: Pushing the commits to GitHub 
+## JupyterLab terminal: Pushing the commits to GitHub 
 
 <center>
 

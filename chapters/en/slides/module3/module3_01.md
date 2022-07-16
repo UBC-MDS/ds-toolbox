@@ -6,7 +6,7 @@ title: 'module3_01'
 # What is version control, and why should I use it?
 
 ---
-# What is version control, and why should I use it?
+### What is version control, and why should I use it?
 
 <center>
 
@@ -22,7 +22,7 @@ Being able to record and view the history of a data analysis project is importan
 
 
 ---
-# What is version control, and why should I use it?
+### What is version control, and why should I use it?
 
 Instead of creating a new copy for each version of a file with an unwieldy name (as in the image below), version control allows you to have a single file and records the changes between the versions.
 
@@ -34,7 +34,7 @@ Version control also facilitates collaboration via tools to share edits with oth
 
 ---
 
-# What is version control, and why should I use it?
+## What is version control, and why should I use it?
 
 <br>
 <br>
