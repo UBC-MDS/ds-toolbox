@@ -26,19 +26,19 @@ id: 4
 Clone the repo https://github.com/UBC-MDS/equine_numbers_value_canada. What is the hash or the first commit of the project? 
 
 <choice id=1>
-<opt text='<bold>A.</bold> cc400df4b2a382f653abd0d9e514f6daae98d2ad'>
+<opt text='<b>A.</b> cc400df4b2a382f653abd0d9e514f6daae98d2ad'>
 Is the first commit of the project or the first commit of the user flor14?
 </opt>
-<opt text='<bold>B.</bold> e98d2ad'>
+<opt text='<b>B.</b> e98d2ad'>
 To use a shorter version of a SHA you should select the first characters, not the last ones.
 </opt>
-<opt text='<bold>C.</bold> cc400df'>
+<opt text='<b>C.</b> cc400df'>
 Is the first commit of the project or the first commit of the user flor14?
 </opt>
-<opt text='<bold>D.</bold> 0896801'>
+<opt text='<b>D.</b> 0896801'>
 Why D is incorrect?
 </opt>
-<opt text='<bold>E.</bold> 0896801fdd38d461414e0b061b2b2ef3395f7dd0'>
+<opt text='<b>E.</b> 0896801fdd38d461414e0b061b2b2ef3395f7dd0'>
 Why C is incorrect?
 </opt>
 <opt text='A and C are correct'>
@@ -91,19 +91,19 @@ Go to the repository as it is now https://github.com/UBC-MDS/equine_numbers_valu
 How would realice this comparison using the command line? https://github.com/UBC-MDS/equine_numbers_value_canada/compare/1bb5ab8..9021b83
 
 <choice id=4>
-<opt text='<bold>A.</bold><code>git diff 9021b83</code>' >
+<opt text='<b>A.</b><code>git diff 9021b83</code>' >
 <code>9021b83</code> is the SHA-1 of the last commit, what would you like to compare it with?
 </opt>
-<opt text='<bold>B.</bold><code>git diff 1bb5ab8</code>' >
+<opt text='<b>B.</b><code>git diff 1bb5ab8</code>' >
 But there is also other correct option!
 </opt>
-<opt text='<bold>C.</bold><code>git diff 1bb5ab8 9021b83</code>' >
+<opt text='<b>C.</b><code>git diff 1bb5ab8 9021b83</code>' >
 But there is also other correct option!
 </opt>
-<opt text='<A and C are correct' >
-IN the option <bold>A.</bold>, <code>9021b83</code> is the SHA-1 of the last commit, what would you like to compare it with?
+<opt text='A and C are correct' >
+IN the option <b>A.</b>, <code>9021b83</code> is the SHA-1 of the last commit, what would you like to compare it with?
 </opt>
-<opt text='<B and C are correct' correct='true' >
+<opt text='B and C are correct' correct='true' >
 Writing the newest commit is not necessary. If you write only one commit (that is not the newest one) it will compare it with the last one without specifing anything else.
 </opt>
 </choice>
