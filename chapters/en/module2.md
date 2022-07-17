@@ -1,4 +1,3 @@
----
 title: 'Module 2: The shell'
 description:
   'In this module we will introduce you to several of the tools that we will be using in this course, as well as to computing in general.'
