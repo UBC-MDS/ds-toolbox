@@ -12,14 +12,15 @@ title: 'module5_00'
 In this module you will learn how to
 
 
-1. Develop a feature on a branch in a Git repo.
-2. Merge the feature branch with the main branch.
-3. Create a fork of an existing GitHub repo.
-4. Open a pull request from your forked repo to the upstream repo.
+1. Manage feature-based development efficiently with JupyterLab and the terminal.
+2. Infer from a repository's current status and collaboration pattern by looking at visualizations of the project history on VS Code.
+3. Differentiate when to use forking or branching as a collaboration strategy.
+4. Recognize the essential components of a pull request.
+5. Determine whether merging changes is preferable to opening a pull request.
 
 
 
-Notes: This module will introduce how to use the two most common version control tools: Git for local version control, and GitHub for remote version control.
+Notes: Discover how to efficiently collaborate with Git and GitHub by using branches, forks ad pull requests.
 
 
 ---
