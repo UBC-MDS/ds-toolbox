@@ -61,16 +61,6 @@ We'll talk about Jupyter notebooks in more detail in the upcoming sections.
 
 ---
 
-<img style="border:1px solid black;" src="/module7/jl-interface.png" width="900"></img>
-
-Notes:
-
-By now, this interface should look familiar to you!
-
-You have used the terminal and Git extension inside JupyterLab in previous chapters. In this chapter, we will go in more detail about JupyterLab's functionality, and how we can effectively use this environment for interactive development of our data science projects.
-
----
-
 # Install and run JupyterLab
 
 <br>
@@ -95,7 +85,8 @@ jupyter lab
 to launch JupyterLab.
 
 Notes:
-We have already seen how to install and run JupyterLab in the instructions for assignment 1, but we are also included it here so that you have all the information about JupyterLab in one place.
+
+We have already seen how to install and run JupyterLab in the instructions for Assignment 1, but have also included it here so that you have all the information about JupyterLab in one place.
 Make sure that you are in a conda environment (preferably the `(base)` environment), before attempting to install JupyterLab.
 
 Note that on MachOS and Linux, you can use the standard terminal app to run these commands. On Windows, you need to open "Anaconda Prompt" (the equivalent the terminal in Windows) to run these commands. Remember that "Anaconda Prompt" should be available on your system, as a part of your Miniconda installation.
@@ -111,7 +102,11 @@ After running `jupyter lab`, a browser window should open with JupyterLab's inte
 Notes:
 
 By default, you're going to see the "Launcher" tab, which allows you to create various new working environments.
+
+By now, this interface should look familiar to you!
+
 You have already used the terminal and Git extension inside JupyterLab in previous chapters. In this chapter, we will go in more detail about JupyterLab's functionality, and how we can effectively use this environment for interactive development of our data science projects.
+
 ---
 
 # Use conda environments with JupyterLab

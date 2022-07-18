@@ -74,6 +74,15 @@ All other windows will be just <b>hidden</b> from view, not closed! Once you dis
 
 </choice>
 
+All JupyterLab windows have the same toolbar.
+
+<opt text="True">
+As opposed to a notebook window, you'd see that a terminal window, for example, does not have a toolbar at all.
+</opt>
+
+<opt text="False" correct="true">
+</opt>
+
 </exercise>
 <!-- ------------------------------------ -->
 <exercise id='6' title="Jupyter notebooks" type="slides,video">
@@ -207,6 +216,27 @@ This is a true statement.
 <opt text="Different kernels can be used with different views of a notebook." correct="true">
 Views are just "views". In other words, view are like looking at a single notebook, but from different viewpoints.
 Each single notebook in Jupyter Lab can only be connected to a single kernel.
+</opt>
+
+</choice>
+
+Which of the following prefix characters can be used in to run shell commands inside a code cell?
+
+<choice id="2">
+
+<opt text="<code>&</code>">
+This is not a valid command prefix in for a notebook cell.
+</opt>
+
+<opt text="<code>!</code>" correct="true">
+</opt>
+
+<opt text="<code>%</code>">
+This is the prefix for running magic commands.
+</opt>
+
+<opt text="<code>$</code>">
+This is not a valid command prefix in for a notebook cell.
 </opt>
 
 </choice>

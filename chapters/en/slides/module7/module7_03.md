@@ -20,7 +20,9 @@ type: slides
 
 Notes:
 
+- A Jupyter notebook is a document that contains **narrative text**, alongside **runnable code**
 
+- Jupyter notebooks have `.ipynb` extension
 
 ---
 
@@ -54,6 +56,10 @@ The third way is to right-click on the empty space of the file explorer, and the
 
 # Building blocks of notebooks
 
+<img src="/module7/cells.png" width="700"></img>
+
+Notes:
+
 - A Jupyter notebook consists of **cells**.
 
 - A cell is a block of characters, that can be interpreted in different ways depending on its type.
@@ -62,12 +68,6 @@ The third way is to right-click on the empty space of the file explorer, and the
   - Code
   - Markdown
   - Raw
-
-<img src="/module7/cells.png" width="500"></img>
-
-Notes:
-
-
 
 ---
 
@@ -144,7 +144,7 @@ To run a code cell:
 
 - Then, either click the little play button in the notebook toolbar, or
 
-- Hit `Ctrl + Enter` on your keyboard
+- Hit `Shift + Enter` on your keyboard
 
 <img src="/module7/run-cell.png" width="600"></img>
 
@@ -158,8 +158,8 @@ To run a code cell:
 
 - Then, either click the little play button in the notebook toolbar, or
 
-- Hit `Ctrl + Enter` on your keyboard
-  - You can also use `Shift + Enter` to run a cell. The difference is that `Shift + Enter` runs the cell, then advances to the next cell, whereas with `Ctrl + Enter` the focus remains on the currently selected cell.
+- Hit `Shift + Enter` on your keyboard
+  - You can also use `Ctrl + Enter` to run a cell. The difference is that `Shift + Enter` runs the cell, then advances to the next cell, whereas with `Ctrl + Enter` the focus remains on the currently selected cell.
 
 Note how `[ ]:` changes to `[1]:` when you run the cell. Anytime you run this cell, this execution count is incremented by 1.
 
@@ -171,6 +171,8 @@ When you are in **command** mode, you can use the following keyboard shortcuts t
 
 - `↑`: move cell selection to above cell
 - `↓`: move cell selection to below cell
+- `Shift + ↑`: extend selection to above cell
+- `Shift + ↓`: extend selection to below cell
 - `A`: insert a new cell above current cell
 - `B`: insert a new cell below current cell
 - `DD`: delete current cell
@@ -179,6 +181,7 @@ When you are in **command** mode, you can use the following keyboard shortcuts t
 - `V`: paste already cut or copied cell below current cell
 - `Z`: undo last cell action
 - `Shift + Z`: redo last undone cell action
+- `Ctrl + F`: find match in notebook
 
 <br>
 
@@ -186,6 +189,10 @@ You're already familiar with the following shortcuts:
 
 - `Ctrl + Enter`: run current cell
 - `Shift + Enter`: run current cell and advance
+
+Notes:
+
+You can always find all keyboard shortcuts using the "Settings" menu in JupyterLab interface. Just go to "Settings" -> "Advanced Settings Editor", and in the newly opened window, select "Keyboard Shortcuts" on the left sidebar.
 
 ---
 
@@ -284,7 +291,7 @@ This can be super useful when working with a package that you are not very famil
 # Jupyter notebooks & reproducibility
 
 
-<img src="/module7/reprod.png" width="480"></img>
+<img src="/module7/reprod.png" width="800"></img>
 
 Notes:
 
@@ -294,11 +301,13 @@ Once you are done with your analysis, it's a good idea to take the following ste
 
 - Restart your notebook kernel
   - By doing this, you would make sure that the Python engine is fresh and does not contain any variables, functions, etc. Sometimes, you might define a variable and then delete the cell containing that piece of code. If someone else runs your notebook, they will run into error. Make sure your notebook contains everything it needs to run properly by restarting your kernel, and testing everything fresh!
-  - To restart the kernel, go to the "Kernel" menu and choose "Restart Kernel..."
+  - To restart the kernel, go to the "Kernel" menu and choose "Restart Kernel...", or click the "Restart the kernel" button in your notebook's toolbar (shown with a circular arrow icon).
 
 - After restarting, run all cells from the top
   - This way, you would be sure that your out-of-order executions do not affect the reproducibility of your code.
   - To run all cells from the top, go to the "Run" menu and choose "Run All Cells"
+
+You can do the above two steps; namely, restarting and running all cells, in one go: just click the dedicated button in your notebook's toolbar as shown in the screenshot here on the right.
 
 It's not a bad idea to explore other similar options in the "Kernel" and "Run" menus. For example, it's also possible and sometimes helpful to run a notebook from the top, but up to a selected cell, or run a notebook beginning from a selected cell.
 

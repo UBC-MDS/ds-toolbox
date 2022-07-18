@@ -154,7 +154,7 @@ Notes:
 
 Code is usually formatted with a **mono-space font**, just as it usually appears in any IDE. For example, anything you write in a **code cell** inside Jupyter Lab shows up with a mono-space font and has Python syntax highlighting.
 
-In Markdown, we can easily format any code to be rendered in mono-space font using back ticks like `this` (the key under `Esc` on your keyboard!). For example, this is Python code: `import numpy as np`, right?
+In Markdown, we can easily format any code to be rendered in mono-space font using back ticks like `this` (the key under `Esc` on your keyboard with the symbol <code>\`</code>). For example, this is Python code: `import numpy as np`, right?
 
 Another way to have code is to have a code block by enclosing text inside a pair of three back ticks:
 
@@ -189,9 +189,9 @@ Notes:
 Markdown supports $\LaTeX$ math formulas, which are a powerful and commonly used way to write mathematical expression.
 If you have never seen $\LaTeX$ before, it can look a bit intimidating, especially for the more complex formulas, but you can quickly pick up the basic expressions and then look up more advanced functionality as it is needed.
 
-Here is an inline math formula: $ F = ma $.
+To write an "inline" math formula in a paragraph of text, we can surround the expression with a pair of dollar signs: `Here is an inline math formula $ F = ma $`.
 
-You can also write math in a math block, which you can create using a pair of double dollar signs:
+Longer formulas can be written in math "block", which you can create by surrounding the math expression with a pair of double dollar signs as in the bottom of the screenshot.
 
 ---
 
@@ -228,12 +228,28 @@ Here are a few things you can't do with standard Markdown, but you can do with H
 You can use the following HTML tag to change the displayed size of an image:
 
 ```html
-<img src="<PATH_TO_FILE>" width="400"></img>
+<img src="<PATH_TO_FILE>" width="400px"></img>
 ```
 
 <br>
 
 <img src="/module7/html-tag.png" width="800"></img>
+
+Notes:
+
+When you use
+
+```html
+<img src="<PATH_TO_FILE>" width="400px"></img>
+```
+
+The `px` for specifying the `width` is optional. Instead of `px`, you can also use `%` to specify the `width` relative to the original width of the image. For example, the following HTML tag
+
+```html
+<img src="<PATH_TO_FILE>" width="150%"></img>
+```
+
+shows an enlarged view of the image, where the displayed width is 1.5 times larger than the original width of the image.
 
 ---
 

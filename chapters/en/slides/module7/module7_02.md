@@ -4,6 +4,8 @@ type: slides
 
 # The JupyterLab interface
 
+Notes:
+
 In this slide deck we will learn about the different parts of the JupyterLab interface and how to navigate them effectively
 
 ---
