@@ -8,7 +8,9 @@ type: chapter
 id: 1
 ---
 
-<exercise id="1" title="Introduction" type="slides">
+<exercise id="0" title="Module Learning Outcomes"  type="slides, video">
+<slides source="module1/module1_00" shot="0" start="3:42" end="4:35"> </slides>
+</exercise>
 
 <exercise id="1" title="Introduction to the Data Science Toolbox" type="slides,video">
 <slides source="module1/module1_01" shot="1" start="0:003" end="05:31"> </slides>
@@ -30,9 +32,6 @@ Git is the tool that allows you to version control files.
 
 Great!
 
-<choice>
-<opt text="My computer">
-You have not installed locally jupyter lab. You can install Jupyter Lab locally in your desktop here: https://github.com/jupyterlab/jupyterlab-desktop
 </opt>
 
 <opt text="Edit code files">
@@ -46,9 +45,9 @@ We need a text editor or programming environment such as JupyterLab or VSCode fo
 We use a programming language such as Python or R to create data visualizations.
 
 </opt>
+
 </choice>
 
-</exercise>
 
 **Question 2**      
 What can you do with Jupyter Book?
@@ -58,20 +57,17 @@ What can you do with Jupyter Book?
 
 Git is the tool that allows you to version control files.
 
-<exercise id="5" title="Running cells">
+</opt>
 
 <opt text="Navigate the file system">
 
 For this you need a shell, such as Bash.
 
-<choice>
-<opt text="5" correct="true">
-That is correct! 
 </opt>
 
 <opt text="Publish books and web pages"  correct="true">
 
-Double check in what order the cells where run
+You got it!
 
 </opt>
 
@@ -80,6 +76,7 @@ Double check in what order the cells where run
 We need a text editor or programming environment such as JupyterLab or VSCode for this!
 
 </opt>
+
 </choice>
 
 **True or False**       
@@ -120,8 +117,6 @@ Which of the following is **NOT** something you should do before asking for help
 
 You should do this before asking a new question. It will make you find the answer faster and spare people from doing duplicate work.
 
-<opt text="I right clicked is the JupyterLab menu and hold shift brings up the browser menu. Then I select Save">
-That is correct! But it is not the only way
 </opt>
 
 <opt text="Type out the problem for youself before asking the question">
@@ -152,8 +147,8 @@ You got it! People from around the world volunteer their time and expertise to a
 
 People from around the world volunteer their time and expertise to answer questions online, so remember to be respectful and mindful of their time when asking for help.
 
-Double check in what order the cells where run
 </opt>
+
 </choice>
 
 </exercise>
