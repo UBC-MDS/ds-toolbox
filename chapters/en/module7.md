@@ -76,12 +76,16 @@ All other windows will be just <b>hidden</b> from view, not closed! Once you dis
 
 All JupyterLab windows have the same toolbar.
 
+<choice id="2">
+
 <opt text="True">
 As opposed to a notebook window, you'd see that a terminal window, for example, does not have a toolbar at all.
 </opt>
 
 <opt text="False" correct="true">
 </opt>
+
+</choice>
 
 </exercise>
 <!-- ------------------------------------ -->
