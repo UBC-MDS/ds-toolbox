@@ -6,7 +6,7 @@ type: slides
 
 ---
 
-# What is a Jupyter notebook?
+## What is a Jupyter notebook?
 
 <br>
 
@@ -16,7 +16,7 @@ type: slides
 
 <br>
 
-<img src="/module7/notebook.png" width="550"></img>
+<img src="/module7/notebook.png" width="600"></img>
 
 Notes:
 
@@ -26,11 +26,11 @@ Notes:
 
 ---
 
-# Creating new notebooks
+## Creating new notebooks
 
 <br>
 
-<img src="/module7/new-notebook.png" width="650"></img>
+<img src="/module7/new-notebook.png" width="750"></img>
 
 Notes:
 
@@ -42,11 +42,11 @@ The second way is to click the icon in the main working area for the conda envir
 
 ---
 
-# Creating new notebooks
+## Creating new notebooks
 
 <br>
 
-<img src="/module7/new-notebook2.png" width="700"></img>
+<img src="/module7/new-notebook2.png" width="750"></img>
 
 Notes:
 
@@ -54,7 +54,7 @@ The third way is to right-click on the empty space of the file explorer, and the
 
 ---
 
-# Building blocks of notebooks
+## Building blocks of notebooks
 
 <img src="/module7/cells.png" width="700"></img>
 
@@ -71,7 +71,7 @@ Notes:
 
 ---
 
-# Cell selection modes
+## Cell selection modes
 
 An **active** cell in a Jupyter notebook can be in either **command** or **edit** mode:
 
@@ -96,7 +96,7 @@ Whenever you interact with a cell inside a Jupyter notebook, it becomes **activa
 
 ---
 
-# Cell selection modes
+## Cell selection modes
 
 <img src="/module7/command-edit2.png" width="550"></img>
 
@@ -106,7 +106,7 @@ You can also find out whether you're in command or edit mode by looking at the s
 
 ---
 
-# Code cells and kernels
+## Code cells and kernels
 
 <br>
 
@@ -136,7 +136,7 @@ Notes:
 
 ---
 
-# Running code cells
+## Running code cells
 
 To run a code cell:
 
@@ -165,7 +165,7 @@ Note how `[ ]:` changes to `[1]:` when you run the cell. Anytime you run this ce
 
 ---
 
-# Useful keyboard shortcuts for cell manipulation
+## Useful keyboard shortcuts for cell manipulation
 
 When you are in **command** mode, you can use the following keyboard shortcuts to perform a variety of cell actions:
 
@@ -196,7 +196,7 @@ You can always find all keyboard shortcuts using the "Settings" menu in JupyterL
 
 ---
 
-# Consoles
+## Consoles
 
 <br>
 
@@ -214,7 +214,7 @@ In order to open a console that's connected to your notebook's kernel, right-cli
 
 ---
 
-# Consoles
+## Consoles
 
 <img src="/module7/console2.png" width="700"></img>
 
@@ -226,9 +226,10 @@ You can resize or move the console window as you wish. Also, remember that you c
 
 Since the Jupyter Console is suitable for quick exploration, an increasing number of well-known data science packages have started to include it as part of their documentation.
 For example, the well-known `numpy` package allows you to try out NumPy directly on their web page without installing anything using a special Jupyter Console (under the "Try NumPy" section at https://numpy.org/)
+
 ---
 
-# Getting help when writing code
+## Getting help when writing code
 
 <br>
 
@@ -251,7 +252,7 @@ It's important to remember that, you won't get auto-completion until the express
 
 ---
 
-# Getting help when writing code
+## Getting help when writing code
 
 <br>
 
@@ -273,7 +274,7 @@ Keep in mind that, the documentation pop-up content depends on the cursor locati
 
 ---
 
-# Getting help when writing code
+## Getting help when writing code
 
 <br>
 
@@ -288,7 +289,7 @@ This can be super useful when working with a package that you are not very famil
 
 ---
 
-# Jupyter notebooks & reproducibility
+## Jupyter notebooks & reproducibility
 
 
 <img src="/module7/reprod.png" width="800"></img>
@@ -313,7 +314,7 @@ It's not a bad idea to explore other similar options in the "Kernel" and "Run" m
 
 ---
 
-# The Command Palette
+## The Command Palette
 
 <br>
 

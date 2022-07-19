@@ -6,7 +6,7 @@ type: slides
 
 ---
 
-# What is Markdown?
+## What is Markdown?
 
 <br>
 
@@ -38,7 +38,7 @@ Most important features of the Markdown format are:
 
 ---
 
-# Markdown cells
+## Markdown cells
 
 <br>
 
@@ -50,7 +50,7 @@ Here is an example of of a Markdown cell. On the left, you see the Markdown sour
 
 ---
 
-# Markdown cells
+## Markdown cells
 
 <img src="/module7/md2.png" width="700"></img>
 
@@ -66,7 +66,7 @@ In order to convert a code (or raw) cell to a Markdown cell, you can do either o
 
 ---
  
-# The Markdown syntax
+## The Markdown syntax
 
 <br>
 
@@ -82,7 +82,7 @@ Here on the left, you can see the source Markdown written in a Markdown cell, an
 
 ---
 
-# The Markdown syntax
+## The Markdown syntax
 
 <br>
 
@@ -120,7 +120,7 @@ One other useful formatting syntax is the **block quote** for quoting or calling
 
 ---
 
-# The Markdown syntax
+## The Markdown syntax
 
 <br>
 
@@ -142,7 +142,7 @@ The text inside the `[]` will show up if the image can't display for some reason
 
 ---
 
-# The Markdown syntax
+## The Markdown syntax
 
 <br>
 
@@ -176,7 +176,7 @@ result = arr + np.pi
 
 ---
 
-# The Markdown syntax
+## The Markdown syntax
 
 <br>
 
@@ -223,7 +223,7 @@ Here are a few things you can't do with standard Markdown, but you can do with H
 
 ---
 
-# Pro tip 1: Change image size
+## Pro tip 1: Change image size
 
 You can use the following HTML tag to change the displayed size of an image:
 
@@ -253,7 +253,7 @@ shows an enlarged view of the image, where the displayed width is 1.5 times larg
 
 ---
 
-# Pro tip 2: Change text size & color
+## Pro tip 2: Change text size & color
 
 You can use the following HTML tag to change the size and color of a piece of text:
 

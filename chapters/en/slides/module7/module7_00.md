@@ -6,7 +6,7 @@ type: slides
 
 ---
 
-# Module Learning Outcomes
+## Module Learning Outcomes
 
 <br>
 

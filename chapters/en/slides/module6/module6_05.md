@@ -6,7 +6,7 @@ type: slides
 
 ---
 
-# What Did We Learn
+## What Did We Learn
 
 In this module, you've learned how to
 

@@ -6,7 +6,7 @@ type: slides
 
 ---
 
-# What is Jupyter Book?
+## What is Jupyter Book?
 
 <br>
 
@@ -43,7 +43,7 @@ Key Jupyter Book features:
 
 ---
 
-# Installing Jupyter Book
+## Installing Jupyter Book
 
 You can install Jupyter Book with Conda using the following command in your terminal:
 
@@ -61,7 +61,7 @@ jupyter-book -h
 
 The output should look like this:
 
-```
+```out
 Usage: jupyter-book [OPTIONS] COMMAND [ARGS]...
 
   Build and manage books with Jupyter.
@@ -97,7 +97,7 @@ jupyter-book -h
 
 The output should look like this:
 
-```
+```out
 Usage: jupyter-book [OPTIONS] COMMAND [ARGS]...
 
   Build and manage books with Jupyter.
@@ -117,7 +117,7 @@ Commands:
 
 ---
 
-# Book building process
+## Book building process
 
 <br>
 
@@ -147,7 +147,6 @@ Building a Jupyter Book broadly consists of these steps:
 
 - 📚 **Publish your book online.**
   - Once your book is built, you can share it with others. Most common is to build HTML, and host it as a public website.
-
 
 ---
 

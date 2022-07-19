@@ -6,7 +6,7 @@ type: slides
 
 ---
 
-# Module Learning Outcomes
+## Module Learning Outcomes
 
 In this module students will learn how to
 

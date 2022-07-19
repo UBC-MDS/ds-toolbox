@@ -3,11 +3,14 @@ type: slides
 ---
 
 # What is Jupyter?
+
 Notes:
+
 You have already been working a bit with JupyterLab in this course and maybe also with Jupyter Notebooks if you have taken previous courses in the Data Science program. In this module we will go through these tools in more detail and show you some advanced functionality.
+
 ---
 
-# Project Jupyter
+## Project Jupyter
 
 <br>
 
@@ -35,7 +38,7 @@ The name "Jupyter" is a combination of "Julia" (popular scientific computing lan
 
 ---
 
-# JupyterLab
+## JupyterLab
 
 <br>
 
@@ -61,7 +64,7 @@ We'll talk about Jupyter notebooks in more detail in the upcoming sections.
 
 ---
 
-# Install and run JupyterLab
+## Install and run JupyterLab
 
 <br>
 
@@ -109,7 +112,7 @@ You have already used the terminal and Git extension inside JupyterLab in previo
 
 ---
 
-# Use conda environments with JupyterLab
+## Use conda environments with JupyterLab
 
 <br>
 
@@ -122,6 +125,7 @@ To access your `dstoolbox` environment from JupyterLab, you need to:
 <br>
 
 - Install `nb_conda_kernels` in your base environment by running
+
 ```
 conda install nb_conda_kernels
 ```
@@ -129,6 +133,7 @@ conda install nb_conda_kernels
 <br>
 
 - Install `ipykernel` in your `dstoolbox` environment by running
+
 ```
 conda install ipykernel
 ```
@@ -138,11 +143,13 @@ Notes:
 From Chapter 6, you might remember that you need to follow two steps if you'd like to use conda environments within JupyterLab. That is:
 
 - Install `nb_conda_kernels` in your base environment by running
+
 ```
 conda install nb_conda_kernels
 ```
 
 - Install `ipykernel` in your `dstoolbox` environment by running
+
 ```
 conda install ipykernel
 ```
@@ -158,7 +165,7 @@ Once you've done that, you'll be able to see your desired environment in the Lau
 Notes:
 
 After following the steps in the previous slide, you can see that the `dstoolbox` environment has shown up in JupyterLab's Launcher tab.
-Clicking this icon would launch a new Juptyer Notebook with the `dstoolbox` environment.
+Clicking this icon would launch a new Jupyter Notebook with the `dstoolbox` environment.
 
 ---
 

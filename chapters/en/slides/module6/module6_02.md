@@ -20,7 +20,7 @@ You may have encountered this before:
 git status
 ```
 
-```
+```out
 On branch main
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
@@ -41,7 +41,7 @@ What do we do?
 
 ---
 
-# Create a `.gitignore` file
+## Create a `.gitignore` file
 
 <br>
 
@@ -62,7 +62,7 @@ Inside the text file, list the files and folders you would like to ignore, one p
 <br>
 Save the file, and add and commit it with Git. Then try git status again. You should see:
 
-```
+```out
 On branch main
 nothing to commit, working tree clean
 ```
@@ -73,7 +73,7 @@ Here are the steps you need to take in order to have Git ignore the files and fo
 
 ---
 
-# .gitignore tips and tricks
+## .gitignore tips and tricks
 
 <br>
 
@@ -87,7 +87,7 @@ Here are two useful tricks so that you can avoid doing unnecessary work when it 
 
 ---
 
-# 1. Recursive ignoring of filename patters
+## 1. Recursive ignoring of filename patters
 
 <br>
 
@@ -115,7 +115,7 @@ Simply add `**/` to the beginning of that file or folder name!
 
 ---
 
-# 2. Using `.gitignore_global`
+## 2. Using `.gitignore_global`
 
 <br>
 

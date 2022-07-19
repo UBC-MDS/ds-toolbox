@@ -6,7 +6,7 @@ type: slides
 
 ---
 
-# What works, and what doesn’t
+## What works, and what doesn’t
 
 <br>
 
@@ -44,7 +44,7 @@ The second file name, on the other hand, uses spaces and punctuation which can c
 
 ---
 
-# Three principles for file names
+## Three principles for file names
 
 <br>
 
@@ -68,7 +68,7 @@ Moreover, it's also very helpful to have files show up in a logical order when v
 
 ---
 
-# 1. Machine-readable file names
+## 1. Machine-readable file names
 
 <br>
 
@@ -79,7 +79,7 @@ Moreover, it's also very helpful to have files show up in a logical order when v
 
 <br>
 
-# Globbing
+## Globbing
 
 <br>
 
@@ -145,7 +145,7 @@ The takeaway here is that, if you consistently use machine-readable file names, 
 
 ---
 
-# Punctuation
+## Punctuation
 
 <br>
 
@@ -166,7 +166,7 @@ This makes it easy to recover all meta data in our file names in the future, usi
 
 ---
 
-# Recap
+## Recap
 
 <br>
 
@@ -188,7 +188,7 @@ Notes:
 
 ---
 
-# 2. Human-readable file names
+## 2. Human-readable file names
 
 <br>
 
@@ -215,7 +215,7 @@ A URL slug is the last part of a URL, which is supposed to relevant to the conte
 
 ---
 
-# 3. File names that play well with default
+## 3. File names that play well with default
 
 <br>
 
@@ -304,8 +304,7 @@ Computer environments understand this format well, and it is also nicely readabl
 
 ---
 
-
-# Recap
+## Recap
 
 <br>
 

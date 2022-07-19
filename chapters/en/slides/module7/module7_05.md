@@ -6,7 +6,7 @@ type: slides
 
 ---
 
-# Notebook views
+## Notebook views
 
 <br>
 
@@ -31,7 +31,7 @@ Let's see how views look like in JupyterLab in the next slides.
 
 ---
 
-# Cell output view
+## Cell output view
 
 <img src="/module7/view.png" width="425"></img>
 
@@ -45,7 +45,7 @@ You can reposition the location of your new output window as you wish, by draggi
 
 ---
 
-# Side-by-side output view
+## Side-by-side output view
 
 <img src="/module7/sbs-output.png" width="750"></img>
 
@@ -59,7 +59,7 @@ When you do that, your notebook will look like this:
 
 ---
 
-# Notebook view
+## Notebook view
 
 <img src="/module7/view2.png" width="650"></img>
 
@@ -75,7 +75,7 @@ Remember, though, you can only have one cell running at a time. This is because 
 
 ---
 
-# Exporting notebooks
+## Exporting notebooks
 
 <br>
 
@@ -99,7 +99,7 @@ To share your work with others, it is possible to export your notebook to variou
 
 ---
 
-# Notebook to HTML
+## Notebook to HTML
 
 <img style="border:1px solid black;" src="/module7/html-export.png" width="750"></img>
 
@@ -113,7 +113,7 @@ We will see later in this slide show how you can hide code cells in your exporte
 
 ---
 
-# Notebook to WebPDF
+## Notebook to WebPDF
 
 <img style="border:1px solid black;" src="/module7/webpdf-export.png" width="750"></img>
 
@@ -125,7 +125,7 @@ Please note that the WebPDF option does not support rendering images that are in
 
 ---
 
-# Notebook to Markdown
+## Notebook to Markdown
 
 <img style="border:1px solid black;" src="/module7/md-export.png" width="750"></img>
 
@@ -139,7 +139,7 @@ Note how computational cells are converted to Markdown code blocks with appropri
 
 ---
 
-# JupyterLab extensions
+## JupyterLab extensions
 
 - JupyterLab is built to be modular and extensible by nature
 
@@ -147,7 +147,7 @@ Note how computational cells are converted to Markdown code blocks with appropri
 
 - JupyterLab itself is mainly a collection of various extensions
 
-<img src="/module7/ext.png" width="300"></img>
+<img src="/module7/ext.png" width="400"></img>
 
 Find out more about JupyterLab extensions [here](https://jupyterlab.readthedocs.io/en/stable/user/extensions.html).
 
@@ -161,7 +161,7 @@ As a matter of fact, JupyterLab itself is nothing but a collection of various ex
 
 ---
 
-# Installing JupyterLab extensions
+## Installing JupyterLab extensions
 
 <br>
 
@@ -204,7 +204,7 @@ Here is the [link](https://github.com/jupyterlab/jupyterlab-git#install) to the 
 
 ---
 
-# JupyterLab Extension Manager
+## JupyterLab Extension Manager
 
 <img src="/module7/ext2.png" width="700"></img>
 
@@ -220,7 +220,7 @@ Note that, since the extensions that you can install using the GUI are **not pre
 
 ---
 
-# Running shell commands in Jupyter notebooks
+## Running shell commands in Jupyter notebooks
 
 <br>
 
@@ -234,7 +234,7 @@ Sometimes it is very handy to be able to quickly run shell commands from within 
 
 ---
 
-# Running shell commands in Jupyter notebooks
+## Running shell commands in Jupyter notebooks
 
 A common action: exporting a notebook without code cells
 
@@ -255,7 +255,7 @@ Of course you can run this command using a terminal, but it could be much more c
 
 ---
 
-# Magic commands
+## Magic commands
 
 <br>
 
@@ -287,7 +287,7 @@ for i in range(1_000_000):
 
 ---
 
-# Magic commands
+## Magic commands
 
 Two other common uses:
 
@@ -319,7 +319,7 @@ Finally, there are many more magic commands that we can cover here. If you're in
 
 ---
 
-# Multiple cursors
+## Multiple cursors
 
 <br>
 
@@ -351,7 +351,7 @@ at various locations to place multiple cursors wherever you need them, and then 
 
 ---
 
-# Next-level JupyterLab
+## Next-level JupyterLab
 
 <br>
 
@@ -377,7 +377,7 @@ We will not discuss these features in detail here, but we'll briefly explain the
 
 ---
 
-# The debugger
+## The debugger
 
 Documentation: [https://jupyterlab.readthedocs.io/en/stable/user/debugger.html](https://jupyterlab.readthedocs.io/en/stable/user/debugger.html)
 
@@ -391,7 +391,7 @@ JupyterLab provides a very useful visual debugger, which you can use to set brea
 
 ---
 
-# Real-time collaboration
+## Real-time collaboration
 
 Documentation: [https://jupyterlab.readthedocs.io/en/stable/user/rtc.html](https://jupyterlab.readthedocs.io/en/stable/user/rtc.html)
 
@@ -407,7 +407,7 @@ Note that the real-time collaboration feature of JupyterLab is still experimenta
 
 ---
 
-# Workspaces
+## Workspaces
 
 Documentation: [https://jupyterlab.readthedocs.io/en/stable/user/urls.html#managing-workspaces-ui](https://jupyterlab.readthedocs.io/en/stable/user/urls.html#managing-workspaces-ui)
 

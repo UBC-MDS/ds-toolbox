@@ -6,7 +6,7 @@ type: slides
 
 ---
 
-# Create your file and add content to it
+## Create your file and add content to it
 
 <br>
 
@@ -35,7 +35,7 @@ When you build your book, you’ll see how these links resolve in the output.
 
 ---
 
-# Add your file to your table of content
+## Add your file to your table of content
 
 <br>
 
@@ -51,7 +51,7 @@ By doing this, you are informing Jupyter Book where the new file fits with your 
 
 ---
 
-# Rebuild your book after making changes
+## Rebuild your book after making changes
 
 <br>
 
@@ -95,7 +95,7 @@ Your new page will now show up in the rebuilt book.
 
 ---
 
-# Figures
+## Figures
 
 You can include figures in your Jupyter Book using the following syntax:
 
@@ -135,7 +135,7 @@ After building the book, it will show up like this:
 
 ---
 
-# Cross-referencing figures
+## Cross-referencing figures
 
 <br>
 
@@ -187,7 +187,7 @@ Also note how the referenced figure looks like in the 2nd paragraph of the text.
 
 ---
 
-# Math and equations
+## Math and equations
 
 <br>
 
@@ -296,9 +296,10 @@ Rendered:
 <img style="border:1px solid black;" src="/module8/math-numbered.png" width="700"></img>
 
 You will see more details about this in the next slides.
+
 ---
 
-# Cross-referencing equations
+## Cross-referencing equations
 
 
 - You can refer to equation using their labels.
@@ -353,7 +354,7 @@ Once you add these equations to `mymarkdownfile.md` and rebuild your Jupyter Boo
 
 ---
 
-# Margin content
+## Margin content
 
 Sometimes it is helpful to add notes to the margin of a page. This is similar to _footnotes_ in a conventional book.
 
@@ -391,7 +392,7 @@ Here is how it appears in our Jupyter Book:
 
 ---
 
-# Admonitions
+## Admonitions
 
 Admonitions in Jupyter Book are visual elements that you can use to draw attention to important information.
 
@@ -429,7 +430,7 @@ I'm a note!
 
 ---
 
-# Panels
+## Panels
 
 <img src="/module8/panels.png" width="700"></img>
 
@@ -453,7 +454,7 @@ You can embed all kinds of content inside of panels. See [here](https://jupyterb
 
 ---
 
-# Dropdowns
+## Dropdowns
 
 <br>
 
@@ -465,7 +466,7 @@ You can use the `{dropdown}` directive to create a clickable dropdown with a tit
 
 ---
 
-# Dropdown admonitions
+## Dropdown admonitions
 
 <br>
 
@@ -483,7 +484,7 @@ Here is an example:
 
 ---
 
-# Showing and hiding code and its output
+## Showing and hiding code and its output
 
 <br>
 
@@ -542,7 +543,7 @@ Here is the result of hiding the output:
 
 ---
 
-# "Glueing" variables in your notebook
+## "Glueing" variables in your notebook
 
 Using the `glue` tool, you can:
 

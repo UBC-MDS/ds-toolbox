@@ -10,9 +10,9 @@ In this slide deck we will learn about the different parts of the JupyterLab int
 
 ---
 
-# The JupyterLab interface
+## The JupyterLab interface
 
-<img style="border:1px solid black;" src="/module7/jl-interface2.png" width="800"></img>
+<img style="border:1px solid black;" src="/module7/jl-interface2.png" width="700"></img>
 
 Notes:
 
@@ -24,7 +24,7 @@ We will explore both of these elements in detail in the next slides.
 
 ---
 
-# Left sidebar
+## Left sidebar
 
 <img src="/module7/left-sidebar.png" width="650"></img>
 
@@ -44,9 +44,9 @@ There is also an Extension Manager tab which we will talk about in more detail i
 
 ---
 
-# Main work area
+## Main work area
 
-<img src="/module7/main-work-area.png" width="750"></img>
+<img src="/module7/main-work-area.png" width="700"></img>
 
 Notes:
 

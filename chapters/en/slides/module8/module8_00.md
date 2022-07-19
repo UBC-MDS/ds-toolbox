@@ -6,7 +6,7 @@ type: slides
 
 ---
 
-# Module Learning Outcomes
+## Module Learning Outcomes
 
 By the end of this module, you will be able to
 

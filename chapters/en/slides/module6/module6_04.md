@@ -6,7 +6,7 @@ type: slides
 
 ---
 
-# Why use virtual environments?
+## Why use virtual environments?
 
 <br>
 
@@ -45,7 +45,7 @@ Because we want to run each project using the same version of packages with whic
 
 ---
 
-# Conda
+## Conda
 
 <br>
 
@@ -67,7 +67,7 @@ Here we use Conda, which is an open source **package** and **environment** manag
 
 ---
 
-# Basic commands
+## Basic commands
 
 - Let’s first start by checking if conda is installed, by running `conda --version` in Bash:
 
@@ -77,7 +77,7 @@ Here we use Conda, which is an open source **package** and **environment** manag
 
 - To see which conda commands are available, run `conda --help`
 
-<img style="border:1px solid black;" src="/module6/conda-help.png" width="800px"></img>
+<img style="border:1px solid black;" src="/module6/conda-help.png" width="700px"></img>
 
 <br>
 
@@ -89,7 +89,7 @@ conda update --help
 
 ---
 
-# Managing environments
+## Managing environments
 
 <br>
 
@@ -148,7 +148,7 @@ There are two ways of creating a conda environment:
 
 ---
 
-# Creating environments manually
+## Creating environments manually
 
 <br>
 
@@ -214,7 +214,7 @@ Note how the **currently active** environment (`(test_env)` in this case) is den
 
 ---
 
-# Sharing environments with others
+## Sharing environments with others
 
 <br>
 
@@ -278,7 +278,7 @@ For an environment to be reproducible, you need to add the version string manual
 
 ---
 
-# Creating environment from an environment file
+## Creating environment from an environment file
 
 To create a conda environment from an `environment.yaml` file, you can use the following command:
 
@@ -288,7 +288,7 @@ conda env create --file environment.yaml
 
 <br>
 
-# Cloning an environment
+## Cloning an environment
 
 We can clone an environment with a different name using the following command:
 
@@ -300,7 +300,7 @@ In this example, `test_env` is cloned to create `live_env`.
 
 <br>
 
-# Deleting an environment
+## Deleting an environment
 
 If we are only testing out our environment, we can delete `live_env` to remove some clutter. Make sure that `live_env` is not currently active:
 
@@ -312,7 +312,7 @@ Notes:
 
 ---
 
-# Conda environments in JupyterLab
+## Conda environments in JupyterLab
 
 <br>
 
@@ -350,7 +350,7 @@ I have followed these steps, so now when I launch JupyterLab from my `(base)` en
 
 ---
 
-# Listing installed packages
+## Listing installed packages
 
 <br>
 
@@ -360,7 +360,7 @@ We can get the list of installed packages in the currently active environment us
 conda list
 ```
 
-```
+```out
 # packages in environment at //miniconda/envs/test_env:
 #
 Using Anaconda Cloud api site https://api.anaconda.org
@@ -383,7 +383,7 @@ The list will include
 
 ---
 
-# Searching packages
+## Searching packages
 
 You can search to see if a particular package can be installed using `conda` or `pypi` the following command. For example, here we look for a package named `rasterio`:
 
@@ -391,7 +391,7 @@ You can search to see if a particular package can be installed using `conda` or 
 conda search rasterio
 ```
 
-```
+```out
 Using Anaconda Cloud api site https://api.anaconda.org
 Run 'anaconda show <USER/PACKAGE>' to get more details:
 Packages:
@@ -419,7 +419,7 @@ The anaconda cloud page for `rasterio` will show how to install the package, com
 
 ---
 
-# Installing packages
+## Installing packages
 
 <br>
 
@@ -445,7 +445,7 @@ Notes:
 
 ---
 
-# Removing a package
+## Removing a package
 
 <br>
 

@@ -30,7 +30,7 @@ There are a few steps to follow to publish your book using Github pages. We'll g
 
 ---
 
-# Create an online repository for your book
+## Create an online repository for your book
 
 <img src="/module8/ghp-mynewbook.png" width="550"></img>
 
@@ -100,7 +100,7 @@ git push
 
 ---
 
-# Publish your book online with Github Pages
+## Publish your book online with Github Pages
 
 - We have just pushed the **source files** for our book into our GitHub repository
   - This makes it publicly accessible for you or others to see
@@ -136,7 +136,7 @@ We'll learn how to use `ghp-import` in the next few slides.
 
 ---
 
-# How to use `ghp-import` to publish our book
+## How to use `ghp-import` to publish our book
 
 1. Install `ghp-import`:
 
@@ -183,7 +183,7 @@ ghp-import -n -p -f _build/html
 
 ---
 
-# Your book is now online!
+## Your book is now online!
 
 - Typically after a few minutes your site should be viewable online at a url such as: `https://<user>.github.io/<myonlinebook>/`
 
@@ -209,7 +209,7 @@ Notes:
 
 ---
 
-# How to update your book
+## How to update your book
 
 - Make changes to your book’s content on the `main` branch of your repository
 
