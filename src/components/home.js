@@ -25,7 +25,7 @@ export default ({ lang = 'en' }) => {
                         <section>
                                 <h1 className={classes.subtitle}><center>Data Science Toolbox</center></h1>
                             <div className={classes.introduction}>
-                                
+
                                         <p>
                                         <center>
                                         Welcome to The Data Science Toolbox!  This course is part of the <u><strong><a href="https://extendedlearning.ubc.ca/programs/key-capabilities-data-science">Key Capabilities for Data Science program</a></strong></u> and covers topics related to workflows, plateforms and tools used in data analysis.
@@ -33,12 +33,9 @@ export default ({ lang = 'en' }) => {
                                          </p>
                                          <p> 
                                          <center>
- In this course we will learn how to (and how not to)......... Add text here. 
+In this course, we will dive into the world of data science tools and utilities. While these are not strictly required for data analysis, they are necessary for efficient, reproducible, and collaborative data science practices, and are all important building blocks for a successful and sustained data science career.
                                         </center>
                                         </p>
-                                        <p>
-                                        <strong>Course prerequisites:</strong>  <u><a href="https://prog-learn.mds.ubc.ca/">Programming in Python for Data Science</a></u> 
-                        </p>
                              </div>
                     </section>
                         {chapters.map(({ slug, title, description }) => (
