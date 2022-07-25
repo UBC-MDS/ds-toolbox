@@ -18,10 +18,31 @@ id: 1
 
 <exercise id="2" title="❓ Test Your Knowledge">
 
-**Question 1**  
-The Shell (Bash) allows you to:
+What it the main reason that it is important to use the right data science tools for the job and learn to work with them effectively?
 
 <choice id="1" >
+<opt text="It is a requirement to work in many big companies">
+
+While this might be true, there are more important advantages to using the right tools for the job.
+
+</opt>
+
+<opt text="It looks better on your resume if you are familiar with the state of the art data science software">
+
+While this is often true, there are more important advantages to using the right tools for the job.
+
+</opt>
+
+<opt text="It allows you to complete tasks more effectively and reduces the number of costly mistakes made" correct="true">
+
+Great! While the other two options are also often correct, this is the most important motivation to learn about data science tools and how to use them effectively.
+
+</opt>
+
+
+The Shell (Bash) allows you to:
+
+<choice id="2" >
 <opt text="Version control files">
 
 Git is the tool that allows you to version control files.
