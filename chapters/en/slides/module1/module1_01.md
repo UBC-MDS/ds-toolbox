@@ -202,7 +202,7 @@ and we will learn more about it and other Conda features in module 6!
 Notes:
 As a soft prerequisite for this course,
 we recommend you to already be familiar with using JupyterLab
-it to edit Jupyter notebooks.
+to edit Jupyter notebooks.
 Notebooks are powerful since they allow us to combine
 code, text, and rich output such as data visualizations.
 
@@ -210,9 +210,14 @@ In this course we will see some more advanced features of JupyterLab,
 such as how to use it with Git for version control,
 and also introduce you to another commonly used tool for programming:
 VS Code.
+
 VS Code is a more traditional programming environment than JupyterLab
-and here we will use it for editing text files
+and in this course we will use it for editing text files
 and for some aspects of version control with Git.
+
+We will learn more about VS Code
+during the shell and version control modules,
+and we will look closer at advanced JupyterLab features in module 7!
 
 ---
 
@@ -239,11 +244,17 @@ publication-quality books and documents.
 The books allow for code to be executed
 and for visualizations to be interacted with.
 
-Content is written in Jupyter Notebooks and text files,
+Content for Jupter Book
+is written in Jupyter Notebooks and text files,
 using Markdown syntax.
-You have already seen some simple examples of using Markdown
+In this course,
+we will go beyond the simple examples of using Markdown
 for text formatting
+and extend that syntax to involve more advanced features
+which are helpful when authoring a book or web page
+with Jupyter Book.
 
+Module 8 will introduce you to how to use Jupyter Book!
 
 ---
 
@@ -264,7 +275,7 @@ All the programs mentioned in the previous slides
 have active development communities and are open source,
 which means that anyone can read the source code and contribute to these projects.
 Open source programs have many benefits,
-such as those mentioned on this slide.
+primarily including those that are listed on this slide.
 
 ---
 
