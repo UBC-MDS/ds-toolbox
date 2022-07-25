@@ -120,7 +120,7 @@ They are! Volunteer contributions from people around the world support the devel
 </exercise>
 
 <exercise id="3" title="Asking Effective Questions" type="slides,video">
-<slides source="module1/module1_05" shot="1" start="26:3200" end="40:07"></slides>
+<slides source="module1/module1_03" shot="1" start="26:3200" end="40:07"></slides>
 </exercise>
 
 <exercise id="4" title="❓Test Your Knowledge">
@@ -172,4 +172,3 @@ People from around the world volunteer their time and expertise to answer questi
 <slides source="module1/module1_end" shot="0" start="04:37" end="05:35">
 </slides>
 </exercise>
-
