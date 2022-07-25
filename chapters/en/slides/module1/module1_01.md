@@ -139,16 +139,23 @@ We will learn more about the shell in module 2!
 
 Notes:
 Git is a program that runs on your computer
-and allows you to keep track of old versions of your files.
+and allows you to keep track of historic versions of your files.
 This version control is similar to how "Track Changes" works
 in word processors,
-but much more powerful.
+but much more elaborate and powerful.
 
 GitHub is an online platform
 where developers and data scientists
-can collaborate on their projects
+can collaborate on their Git-based projects
 by raising issues, discuss features,
 and review code.
+
+Git and GitHub are used widely in both companies and hobby projects.
+They are the most common ways of collaborating on code
+and making sure that it easy to keep track of changes in code bases
+even as they grow large and are managed by multiple people.
+
+You will learn more about Git and GitHub in modules 3-5!
 
 ---
 
