@@ -148,7 +148,7 @@ and review code.
 
 <div class="row">
     <div class="column">
-        <img src="/module1/jupyterlab-logo.svg" alt="Jupyter Logo" width="200px"></img>
+        <img src="/module1/jupyter-logo.svg" alt="Jupyter Logo" width="200px"></img>
         <ul>
         <li>Edit text and code files</li>
         <li>Develop interactive notebooks</li>
