@@ -157,6 +157,29 @@ even as they grow large and are managed by multiple people.
 
 You will learn more about Git and GitHub in modules 3-5!
 
+## Conda
+
+<img src="/module1/conda-icon.svg" alt="Conda logo" width="400px"></img>
+
+- Installing programs and packages (Python, R, and more)
+- Managing software versions
+- Separating software that requires different environments
+
+Notes:
+Conda is a package manager,
+which provides a convenient way to install programs and packages.
+While there exist package managers that are tailor-made for programming language such as R and Python or for specific operating systems,
+Conda is the most widely use package manager that is both cross-platform
+(works on different operating systems)
+and allows you to install packages from many programming languages.
+
+Conda also allows us to keep different programs separate,
+so that there are not conflicts
+when two programs requires different versions
+of the same software.
+This is called virtual environments,
+and we will learn more about it and other Conda features in module 6!
+
 ---
 
 ## JupyterLab and VS Code
@@ -220,26 +243,7 @@ Content is written in Jupyter Notebooks and text files,
 using Markdown syntax.
 You have already seen some simple examples of using Markdown
 for text formatting
-and this extends that syntax to involve more advanced features
-which are helpful when authoring a book or web page.
 
----
-
-## Conda
-
-<img src="/module1/conda-icon.svg" alt="Conda logo" width="400px"></img>
-
-- Installing programs and packages (Python, R, and more)
-- Managing software versions
-- Separating software that requires different environments
-
-Notes:
-Conda is a package manager,
-which provides a convenient way to install programs and packages.
-It allows us to keep different programs separate,
-so that there are not conflicts
-when two programs requires different versions
-of the same software.
 
 ---
 
