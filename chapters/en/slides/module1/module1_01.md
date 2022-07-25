@@ -100,15 +100,23 @@ Let's briefly introduce the tools in the toolbox, starting with the shell!
 - Automation of tasks
 
 Notes:
-A shell is a tool that we can use to
+The first tool we will learn about is the shell.
+A shell can use to
 navigate our computers file system,
 launch programs,
-and automate tasks.
+and automate tasks via the shell's own programming language.
 
-You can think of it as similar, but more powerful,
-than the default file browser on your computer.
+You can think of it as a much more powerful
+version of your default graphical file browser.
 The specific shell that we will learn more about in this course
 is called Bash.
+Bash stands for "The Bourne Again Shell";
+the name was chosen as a pun
+to indicate that it was a rebirth with many new features
+compared to its predecessor "The Bourne Shell"
+(named after its creator Stephen Bourne).
+
+We will learn more about the shell in module 2!
 
 ---
 
