@@ -36,6 +36,9 @@ export default ({ lang = 'en' }) => {
 In this course, we will dive into the world of data science tools and utilities. While these are not strictly required for data analysis, they are necessary for efficient, reproducible, and collaborative data science practices, and are all important building blocks for a successful and sustained data science career.
                                         </center>
                                         </p>
+                                        <p>
+                                        <strong>Course prerequisites: This course does not have any formal prerequistes, but it is recommended that you have some experience with Jupyter Notebooks and JupyterLab, either from your own projects or the course </strong><u><a href="https://prog-learn.mds.ubc.ca/">Programming in Python for Data Science</a></u> 
+                                        </p>
                              </div>
                     </section>
                         {chapters.map(({ slug, title, description }) => (
