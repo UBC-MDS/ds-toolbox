@@ -29,9 +29,65 @@ so that you have an idea
 of what they are for
 before we will dive into how to install and use them.
 
+But first, let's see why it is so important
+to learn about the tools in the data science toolbox.
+
 ---
 
-<!--TODO add a logo on the slide for each  tool -->
+## Using the right tool for the job
+
+
+<center>
+
+<img src='/module1/the-right-tool.png' width="34%" alt="Three ways of driving in a screw. To the left using a coin, in the middle with a knife, and to the right using a screwdriver."/>
+
+</center>
+
+Notes:
+Knowing which tools to use
+and how to use them effectively
+are fundamental skills in many professions.
+
+For example,
+imagine that you are trying to drive in a screw using a coin
+instead of a screwdriver.
+The process of driving in the screw
+would be less efficient and more laborious
+than it needs to be.
+Using a coin as a screwdriver
+might be acceptable in an emergency situation,
+but you would not want it to be part of your everyday workflow.
+
+Now imagine that instead of a coin, you were using a knife to drive in a screw. This will not only be inefficient, but slipping with the knife could cause significant personal injury!
+
+In these examples, it is easy to see why using the right tool for the job is both the most efficient and safest option. For tasks that are less hands-on or that does not give immediate negative feedback when something goes wrong, it can be harder to realize the negative consequences of a suboptimal tool choice. 
+
+A prime example of this is when doing data analysis, where it can be tempting to reach for tools that are familiar instead of critically assessing which is the safest and most effective tool for the job. For a budding data scientist, it can be tricky to understand the long term consequences of using the wrong tool, but failing to do can lead to dire ramifications as we will see in the next slide.
+
+---
+
+## The consequences of using the wrong tool
+
+<center>
+
+<img src='/module1/hospital-delay.png' width="34%" alt="A screenshot of an article reporting on the delayed hospital opening, showing the article headline and a picture of the hospital."/>
+
+</center>
+
+Notes:
+In the most benign of cases, working with a less effective toolbox will be a waste of your and your employers time. A good example of this is when people repeatedly carry out tasks manually, instead of automating them which often happens when using a tool such as Excel for data analysis, instead of a programming language like Python.
+
+The consequences of using the wrong tool in data science could be much more severe than lost were eventually terminated several years after they started; around 25 scientific papers related to these trials were retracted, and the lead investigators were put under investigation for malpractice.
+
+Another example from a couple of years ago is how the opening of a new expensive hospital was delayed because there had been an error when copying values between spreadsheet; something that could have been avoided if programmatic tools with automatic sanity checks would have been used instead (if you are interested in more details and examples on inappropriate tool use, refer to [section 2.1 and 2.2 in one of our recently published papers](https://www.tandfonline.com/doi/full/10.1080/26939169.2022.2074922)).
+
+Although the use of improper tools and practices can lead to such negatively impactful real-life outcomes, there are few courses that focus on teaching toolbox skills to data scientists, and in many cases data scientists are expected to figure out what is effective for themselves. This is both inefficient and can lead to unfortunate and easily avoided mistakes.
+
+In this course, we learn which tools to use and how to use them to facilitate they are necessary for efficient, reproducible, and collaborative data science practices, which are all important building blocks for a successful and sustained data science career.
+
+Let's briefly introduce the tools in the toolbox, starting with the shell!
+
+---
 
 ## The Shell (Bash)
 
