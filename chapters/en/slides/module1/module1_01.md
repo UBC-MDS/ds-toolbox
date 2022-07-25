@@ -91,7 +91,7 @@ Let's briefly introduce the tools in the toolbox, starting with the shell!
 
 ## The Shell (Bash)
 
-<img src="https://cdn.rawgit.com/odb/official-bash-logo/master/assets/Logos/Identity/PNG/BASH_logo-transparent-bg-color.png" alt="Bash logo" width="400px"></img>
+<img src="/module1/bash-logo.png" alt="Bash logo" width="400px"></img>
 
  <!-- https://raw.githubusercontent.com/odb/official-bash-logo/master/assets/Logos/Icons/PNG/512x512.png -->
 
@@ -116,7 +116,7 @@ is called Bash.
 
 <div class="row">
     <div class="column">
-        <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git logo" width="200px"></img>
+        <img src="/module1/git-icon.png" alt="Git logo" width="200px"></img>
         <ul>
         <li>Version control</li>
         <li>Collaboration</li>
@@ -124,7 +124,7 @@ is called Bash.
         </ul>
     </div>
     <div class="column">
-        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo" width="200px"></img>
+        <img src="/module1/github-icon.png" alt="GitHub logo" width="200px"></img>
     </div>
 </div>
 
@@ -148,7 +148,7 @@ and review code.
 
 <div class="row">
     <div class="column">
-        <img src="https://jupyter.org/assets/homepage/main-logo.svg" alt="Jupyter Logo" width="200px"></img>
+        <img src="/module1/jupyterlab-logo.svg" alt="Jupyter Logo" width="200px"></img>
         <ul>
         <li>Edit text and code files</li>
         <li>Develop interactive notebooks</li>
@@ -157,23 +157,24 @@ and review code.
         </ul>
     </div>
     <div class="column">
-        <img src="https://code.visualstudio.com/assets/images/code-stable.png" alt="VS Code Logo" width="200px"></img>
+        <img src="/module1/vscode-icon.png" alt="VS Code Logo" width="200px"></img>
     </div>
 </div>
 
 Notes:
-You are already familiar with JupyterLab
-from the Programming with Python course,
-where we used it to edit our Jupyter notebooks.
+As a soft prerequisite for this course,
+we recommend you to already be familiar with using JupyterLab
+it to edit Jupyter notebooks.
 Notebooks are powerful since they allow us to combine
 code, text, and rich output such as data visualizations.
 
-In this course we will see some more advanced features of JupyterLab
+In this course we will see some more advanced features of JupyterLab,
+such as how to use it with Git for version control,
 and also introduce you to another commonly used tool for programming:
 VS Code.
 VS Code is a more traditional programming environment than JupyterLab
-and we will explore the reasons for using one over the other
-later in this module.
+and here we will use it for editing text files
+and for some aspects of version control with Git.
 
 ---
 
@@ -181,7 +182,7 @@ later in this module.
 
 <div class="row">
     <div class="column">
-        <img src="https://raw.githubusercontent.com/executablebooks/jupyter-book/aedee257645ee41906c4d64f66f71b7f0dc7acfa/docs/images/logo-square.svg" alt="Jupyter Logo" width="200px"></img>
+        <img src="/module1/jupyter-book-logo.svg" alt="Jupyter Logo" width="200px"></img>
         <ul>
         <li>Create websites, books, and documentation</li>
         <li>Allows for code execution and interaction</li>
@@ -189,7 +190,7 @@ later in this module.
         </ul>
     </div>
     <div class="column">
-        <img src="https://raw.githubusercontent.com/dcurtis/markdown-mark/983259b19bbc9673e9cf337b98ac899bf8a1484a/svg/markdown-mark-solid.svg" alt="VS Code Logo" width="200px"></img>
+        <img src="/module1/md-icon.svg" alt="Markdown Logo" width="200px"></img>
     </div>
 </div>
 
@@ -211,7 +212,7 @@ which are helpful when authoring a book or web page.
 
 ## Conda
 
-<img src="https://docs.conda.io/en/latest/_images/conda_logo.svg" alt="Conda logo" width="400px"></img>
+<img src="/module1/conda-icon.svg" alt="Conda logo" width="400px"></img>
 
 - Installing programs and packages (Python, R, and more)
 - Managing software versions
@@ -229,7 +230,7 @@ of the same software.
 
 ## A commitment to open source
 
-<img src="https://opensource.org/files/osi_standard_logo_0.png" alt="Open Source Initiative logo" width="200px"></img>
+<img src="/module1/osi-icon.png" alt="Open Source Initiative logo" width="200px"></img>
 
 
 - Being able to use the software after leaving school without paying exorbitant amounts of money
