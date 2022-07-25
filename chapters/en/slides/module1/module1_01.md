@@ -46,7 +46,7 @@ to learn about the tools in the data science toolbox.
 Notes:
 Knowing which tools to use
 and how to use them effectively
-are fundamental skills in many professions.
+is a fundamental skill in many professions.
 
 For example,
 imagine that you are trying to drive in a screw using a coin
@@ -156,6 +156,8 @@ and making sure that it easy to keep track of changes in code bases
 even as they grow large and are managed by multiple people.
 
 You will learn more about Git and GitHub in modules 3-5!
+
+---
 
 ## Conda
 
