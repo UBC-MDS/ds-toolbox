@@ -39,7 +39,7 @@ to learn about the tools in the data science toolbox.
 
 <center>
 
-<img src='/module1/the-right-tool.png' width="34%" alt="Three ways of driving in a screw. To the left using a coin, in the middle with a knife, and to the right using a screwdriver."/>
+<img src='/module1/the-right-tool.png' width="80%" alt="Three ways of driving in a screw. To the left using a coin, in the middle with a knife, and to the right using a screwdriver."/>
 
 </center>
 
@@ -70,7 +70,7 @@ A prime example of this is when doing data analysis, where it can be tempting to
 
 <center>
 
-<img src='/module1/hospital-delay.png' width="34%" alt="A screenshot of an article reporting on the delayed hospital opening, showing the article headline and a picture of the hospital."/>
+<img src='/module1/hospital-delay.png' width="60%" alt="A screenshot of an article reporting on the delayed hospital opening, showing the article headline and a picture of the hospital."/>
 
 </center>
 
