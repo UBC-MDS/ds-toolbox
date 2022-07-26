@@ -93,8 +93,6 @@ Let's briefly introduce the tools in the toolbox, starting with the shell!
 
 <img src="/module1/bash-logo.png" alt="Bash logo" width="400px"></img>
 
- <!-- https://raw.githubusercontent.com/odb/official-bash-logo/master/assets/Logos/Icons/PNG/512x512.png -->
-
 - Navigate the filesystem
 - Launch programs
 - Automation of tasks
@@ -267,7 +265,6 @@ Module 8 will introduce you to how to use Jupyter Book!
 
 - Being able to use the software after leaving school without paying exorbitant amounts of money
 - Having access to the source code - you can learn and fix bugs
-  (even closed source, Commercial Software has bugs, they are just harder to see and help fixing...).
 - Open Source software is customizable and flexible
 - It's becoming the standard in many tech companies
 - You are part of an awesome and active community!
@@ -278,6 +275,17 @@ have active development communities and are open source,
 which means that anyone can read the source code and contribute to these projects.
 Open source programs have many benefits,
 primarily including those that are listed on this slide.
+
+It is worthwhile saying a few extra words
+about the second bullet point in the slide.
+At first,
+it might not sounds that great that you software has bugs,
+so it is worth pointing out that nearly all software has some bugs,
+including commercial software from multi-billion dollar companies.
+The difference is that when the software is open,
+you can report bugs yourself
+and even learn how to fix them together with helpful community members
+(if you want to).
 
 ---
 
