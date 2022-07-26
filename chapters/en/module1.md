@@ -39,6 +39,7 @@ Great! While the other two options are also often correct, this is the most impo
 
 </opt>
 
+</choice>
 
 The Shell (Bash) allows you to:
 
