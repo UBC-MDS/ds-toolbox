@@ -6,6 +6,8 @@ type: slides
 
 ---
 
+## Module Learning Outcomes
+
 In this module you will learn how to
 
 1. Explore the Git history via `git log` in the terminal, and the equivalent functions in JupyterLab and GitHub.

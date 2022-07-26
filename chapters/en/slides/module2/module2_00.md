@@ -6,6 +6,8 @@ type: slides
 
 ---
 
+## Module Learning Outcomes
+
 In this module you will learn how to
 
 1. Use Bash to navigate the computer’s filesystem

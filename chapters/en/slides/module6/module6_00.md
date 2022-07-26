@@ -6,6 +6,8 @@ type: slides
 
 ---
 
+## Module Learning Outcomes
+
 In this module students will learn how to
 
 - Name files in a human- and machine-readable manner.

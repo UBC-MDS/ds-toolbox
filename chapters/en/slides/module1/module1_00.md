@@ -6,6 +6,8 @@ type: slides
 
 ---
 
+## Module Learning Outcomes
+
 In this module you will learn how to
 
 1. Explain why it is important to use the right tool for the job.

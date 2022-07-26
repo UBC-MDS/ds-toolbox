@@ -6,6 +6,8 @@ type: slides
 
 ---
 
+## Module Learning Outcomes
+
 In this module you will learn how to
 
 1. Manage feature-based development efficiently with Git in JupyterLab and in the terminal.

@@ -6,6 +6,8 @@ type: slides
 
 ---
 
+## Module Learning Outcomes
+
 In this module you will learn how to
 
 1. Differentiate between the use of GitHub as a remote hosting service for version control and Git as a version control system.
