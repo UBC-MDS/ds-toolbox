@@ -10,11 +10,11 @@ type: slides
 
 By the end of this module, you will be able to
 
-- Explain the Jupyter Book ecosystem
-- Install Jupyter Book
-- Build your book
-- Create your own content files
-- Publish your book online
+- Explain the Jupyter Book ecosystem.
+- Install Jupyter Book.
+- Complete the build process for a Jupyter Book.
+- Create your own content files.
+- Publish your book online for free using GitHub Pages.
 
 Notes:
 
