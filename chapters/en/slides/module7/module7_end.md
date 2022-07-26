@@ -2,19 +2,13 @@
 type: slides
 ---
 
-# What Did We Learn
+# What Did we Learn and What to Expect in Assignment 7
 
 ---
 
-## What Did We Learn
+## Module Learning Outcomes
 
-<br>
-
-Congratulations, you've done a great job 🏆
-
-<br>
-
-In this module, you've learned to
+In this module you learned how to
 
 - Explain what JupyterLab is
 - Install and use JupyterLab
@@ -22,6 +16,9 @@ In this module, you've learned to
 - Use Markdown to efficiently produce formatted text
 - Enhance productivity via advanced JupyterLab features
 - Export notebooks to various formats for sharing your work
+
+Notes:
+The assignment will concentrate on the learning objectives as well as building knowledge on existing concepts.
 
 ---
 

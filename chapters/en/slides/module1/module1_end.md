@@ -4,13 +4,9 @@ type: slides
 
 # What Did we Learn and What to Expect in Assignment 1
 
-Notes:
-
-<br>
-
 ---
 
-# Module Learning Outcomes
+## Module Learning Outcomes
 
 In this module you learned how to
 
@@ -20,14 +16,8 @@ In this module you learned how to
 4. Create minimal reproducible code examples when asking for help.
 
 Notes:
-
 The assignment will concentrate on the learning objectives as well as building knowledge on existing concepts.
 
 ---
 
 # On to Assignment 1!
-
-Notes:
-
-<br>
-

@@ -4,13 +4,9 @@ type: slides
 
 # What Did we Learn and What to Expect in Assignment 2
 
-Notes:
-
-<br>
-
 ---
 
-# Module Learning Outcomes
+## Module Learning Outcomes
 
 In this module you learned how to
 
@@ -22,14 +18,8 @@ In this module you learned how to
 6. Read the shell's built-in manual
 
 Notes:
-
 The assignment will concentrate on the learning objectives as well as building knowledge on existing concepts.
 
 ---
 
 # On to Assignment 2!
-
-Notes:
-
-<br>
-

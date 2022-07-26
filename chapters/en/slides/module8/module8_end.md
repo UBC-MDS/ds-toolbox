@@ -2,13 +2,13 @@
 type: slides
 ---
 
-# What Did We Learn
+# What Did we Learn and What to Expect in Assignment 8
 
 ---
 
-## What Did We Learn
+## Module Learning Outcomes
 
-In this module you've learned how to
+In this module you learned how to
 
 - Explain the Jupyter Book ecosystem
 - Install Jupyter Book
@@ -18,7 +18,7 @@ In this module you've learned how to
 
 Notes:
 
-
+Now is time to get to work with the last assignment!
 
 ---
 

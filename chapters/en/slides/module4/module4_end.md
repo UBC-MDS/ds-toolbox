@@ -1,12 +1,12 @@
 ---
 type: slides
-title: 'module4_07'
 ---
-
 
 # What Did we Learn and What to Expect in Assignment 4
 
 ---
+
+## Module Learning Outcomes
 
 In this module you learned how to
 
@@ -17,6 +17,7 @@ In this module you learned how to
 5. Differenciate between revert and hard reset a commit when restoring an older version of a project.
 
 Notes:
+The assignment will concentrate on the learning objectives as well as building knowledge on existing concepts.
 
 ---
 
