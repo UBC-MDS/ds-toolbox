@@ -177,12 +177,13 @@ for their toy duck.
 
 ## Where to ask?
 
-<img src="/module1/so-logo.svg" alt="Stack Overflow logo" width="400px"></img>
-<img src="/module1/cv-logo.svg" alt="Stack Overflow logo" width="400px"></img>
-
-
 - https://stackoverflow.com/
+
+<img src="/module1/so-logo.svg" alt="Stack Overflow logo" width="400px"></img>
+
 - https://stats.stackexchange.com/
+
+<img src="/module1/cv-logo.svg" alt="Stack Overflow logo" width="400px"></img>
 
 Notes:
 When you have written down an effective question
