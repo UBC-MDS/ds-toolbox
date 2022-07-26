@@ -16,7 +16,7 @@ In this module you will learn how to
 6. Read the shell's built-in manual
 
 Notes:
-In this module we will learn to use the shell to effectively communicate with the computer via text.
+In this module we will learn to use the shell to effectively communicate with the computer via a text-based shell.
 
 ---
 
