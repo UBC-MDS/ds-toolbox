@@ -17,6 +17,10 @@ By the end of this module, you will be able to
 5. Enhance productivity via advanced JupyterLab features.
 6. Export notebooks to various formats for sharing your work.
 
+Notes:
+
+In this module, you will learn how to work more effectively with JupyterLab.
+
 ---
 
 # Let's get started!

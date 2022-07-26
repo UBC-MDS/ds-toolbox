@@ -16,7 +16,8 @@ In this module you will learn how to
 4. Avoid pushing certain local files by including a `.gitignore` file.
 5. Differentiate between doing a revert and a hard reset of a commit when restoring an older version of a project.
 
-Notes: This module covers the git history, travelling back in time, dealing with merge conflicts and other related topics.
+Notes:
+This module covers the git history, travelling back in time, dealing with merge conflicts and other related topics.
 
 ---
 

@@ -16,7 +16,8 @@ In this module you will learn how to
 4. Recognize the essential components of a pull request.
 5. Determine whether directly merging changes is preferable to first opening a pull request.
 
-Notes: In this module you will discover how to efficiently collaborate with Git and GitHub by using branches, forks and pull requests.
+Notes:
+In this module you will discover how to efficiently collaborate with Git and GitHub by using branches, forks and pull requests.
 
 ---
 
