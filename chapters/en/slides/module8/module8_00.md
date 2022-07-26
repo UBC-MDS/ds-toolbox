@@ -29,3 +29,7 @@ By the end of this module, you will be able to
 ---
 
 # Let's get started!
+
+Notes:
+
+<br>

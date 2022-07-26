@@ -6,7 +6,7 @@ type: slides
 
 ---
 
-In this module you will learn how to:
+In this module you will learn how to
 
 1. Differentiate between the use of GitHub as a remote hosting service for version control and Git as a version control system.
 2. Identify a Git repository.
@@ -19,3 +19,7 @@ Notes: This module covers the basics of version control with Git and GitHub.
 ---
 
 # Let's Start!
+
+Notes:
+
+<br>
