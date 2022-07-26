@@ -14,10 +14,10 @@ Notes:
 
 In this module you learned how to
 
-1. Explain what each tool in the Data Science toolbox is used for.
-2. Use VS Code to edit text and Python files.
-4. Ask effective questions.
-5. Create minimal reproducible code examples when asking for help.
+1. Explain why it is important to use the right tool for the job.
+2. Name the tools in the data science toolbox and explain their main purposes.
+3. Ask effective questions.
+4. Create minimal reproducible code examples when asking for help.
 
 Notes:
 

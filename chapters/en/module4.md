@@ -246,6 +246,6 @@ Remember that you need to do "add" and "commit" <code>.gitignore</code> with Git
 
 <exercise id="13" title="What did we just learned?" type="slides,video">
 
-<slides source="module4/module4_07" shot="0" start="0:002" end="3:40">
+<slides source="module4/module4_end" shot="0" start="0:002" end="3:40">
 </slides>
 </exercise>

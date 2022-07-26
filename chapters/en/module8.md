@@ -205,6 +205,6 @@ You only need the build artifacts (i.e., the HTML files in the <code>_build/html
 </exercise>
 <!-- ------------------------------------ -->
 <exercise id="10" title="What Did We Learn" type="slides,video">
-<slides source="module8/module8_05"></slides>
+<slides source="module8/module8_end"></slides>
 </exercise>
 <!-- ------------------------------------ -->
