@@ -16,27 +16,24 @@ id: 0
 </exercise>
 
 
-<exercise id="2" title="Prerequisite Confirmation">
+<exercise id="2" title="Are your ready?">
 
-Have you taken the prerequisite **Programming in Python for Data Science**?
-
+This course does not require any prerequisite courses.
+Are you ready to start the course **The Data Science Toolbox**?
 
 <choice>
-<opt text="Yes I have and I am ready to take Exploratory Data Visualization." correct="true">
+<opt text="Yes! Let's get started!" correct="true">
 
-Great! Let's get started. Please continue on to Module 1.
-
-</opt>
-
-<opt text="I have not taken the prerequisite but I'm feeling confident that I know python well enough." correct="true">
-
-We recommend having a solid understanding in coding in Python. If you feel confident in your knowledge feel free to continue on to Module 1. 
+Great! Please continue on to Module 1!
 
 </opt>
 
-<opt text="I have not and I have little Python coding background.">
+</opt>
 
-Please take the course <a href="https://prog-learn.mds.ubc.ca/" target="_blank">**Programming in Python for Data Science**</a>  before proceeding onto Module 1.
+<opt text="I don't think this is the right fit for me." correct="true">
+
+
+That’s OK, if you don’t think this is the right course for you, we hope you find what you are looking for elsewhere. We still suggest taking a look at what we have to offer in Module 1 before making your decision.
 
 </opt>
 </choice>
