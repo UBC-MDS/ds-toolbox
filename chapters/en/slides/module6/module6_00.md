@@ -10,10 +10,10 @@ type: slides
 
 In this module students will learn how to
 
-- Name files in a human- and machine-readable manner.
-- Organize projects with a meaningful folder hierarchy.
-- Install packages using the `conda` package manager.
-- Manage virtual environments with `conda` to keep track of project-specific package versions.
+1. Name files in a human- and machine-readable manner.
+2. Organize projects with a meaningful folder hierarchy.
+3. Install packages using the `conda` package manager.
+4. Manage virtual environments with `conda` to keep track of project-specific package versions.
 
 Notes:
 
