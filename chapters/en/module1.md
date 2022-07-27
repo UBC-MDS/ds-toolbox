@@ -16,7 +16,7 @@ id: 1
 <slides source="module1/module1_01" shot="1" start="0:003" end="05:31"> </slides>
 </exercise>
 
-<exercise id="2" title="❓ Test Your Knowledge">
+<exercise id="2" title="✍️  Practice:  The tools of the trade">
 
 What it the main reason that it is important to use the right data science tools for the job and learn to work with them effectively?
 
@@ -124,7 +124,7 @@ They are! Volunteer contributions from people around the world support the devel
 <slides source="module1/module1_03" shot="1" start="26:3200" end="40:07"></slides>
 </exercise>
 
-<exercise id="4" title="❓Test Your Knowledge">
+<exercise id="4" title="✍️T Practice:H ow to ask?">
 
 Which of the following is **NOT** something you should do before asking for help online.
 
