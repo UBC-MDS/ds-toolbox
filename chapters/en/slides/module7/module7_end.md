@@ -11,9 +11,9 @@ type: slides
 In this module you learned how to
 
 1. Explain what JupyterLab is.
-2. Install and use JupyterLab.
-3. Perform literate data science programming using Jupyter Notebooks.
-4. Use Markdown to efficiently produce formatted text.
+2. Perform literate data science programming using Jupyter Notebooks.
+3. Use Markdown to efficiently produce formatted text.
+4. Work with Conda virtual environments inside JupyterLab.
 5. Enhance productivity via advanced JupyterLab features.
 6. Export notebooks to various formats for sharing your work.
 
