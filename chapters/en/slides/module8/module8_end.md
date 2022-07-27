@@ -2,13 +2,13 @@
 type: slides
 ---
 
-# Module Learning Outcomes
+# What Did we Learn and What to Expect in Assignment 8
 
 ---
 
 ## Module Learning Outcomes
 
-By the end of this module, you will be able to
+In this module you learned how to
 
 1. Explain the Jupyter Book ecosystem.
 2. Build Jupyter Books via the command line.
@@ -17,12 +17,8 @@ By the end of this module, you will be able to
 
 Notes:
 
-In this module, you will learn how to build books and create websites using Jupyter Book.
+Now is time to get to work with the last assignment!
 
 ---
 
-# Let's get started!
-
-Notes:
-
-<br>
+# On to Assignment 8!

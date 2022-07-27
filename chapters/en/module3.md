@@ -339,7 +339,7 @@ You need to add to the staging area the changes on the files you are interested 
 
 <exercise id="13" title="What did we just learned?" type="slides,video">
 
-<slides source="module3/module3_07" shot="0" start="0:002" end="3:40">
+<slides source="module3/module3_end" shot="0" start="0:002" end="3:40">
 </slides>
 
 </exercise>

@@ -2,13 +2,13 @@
 type: slides
 ---
 
-# Module Learning Outcomes
+# What Did we Learn and What to Expect in Assignment 6
 
 ---
 
 ## Module Learning Outcomes
 
-In this module students will learn how to
+In this module you learned how to
 
 1. Name files in a human- and machine-readable manner.
 2. Organize projects with a meaningful folder hierarchy.
@@ -16,13 +16,8 @@ In this module students will learn how to
 4. Manage virtual environments with `conda` to keep track of project-specific package versions.
 
 Notes:
-
-In this module, we will be learning about the importance of effective and efficient organization of coding projects in terms of file names, folder structures, and virtual environments.
+It is now time to put into practice everything we have learned!
 
 ---
 
-# Let's get started!
-
-Notes:
-
-<br>
+# On to Assignment 6!

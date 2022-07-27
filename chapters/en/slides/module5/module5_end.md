@@ -2,13 +2,11 @@
 type: slides
 ---
 
-# Module Learning Outcomes
+# What Did we Learn and What to Expect in Assignment 5
 
 ---
 
-## Module Learning Outcomes
-
-In this module you will learn how to
+In this module you learned how to
 
 1. Manage feature-based development efficiently with Git in JupyterLab and in the terminal.
 2. Infer a repository's current status and collaboration pattern by looking at visualizations of the project history on VS Code.
@@ -17,12 +15,8 @@ In this module you will learn how to
 5. Determine whether directly merging changes is preferable to first opening a pull request.
 
 Notes:
-In this module you will discover how to efficiently collaborate with Git and GitHub by using branches, forks and pull requests.
+Now is time to work!
 
 ---
 
-# Let's Start!
-
-Notes:
-
-<br>
+# On to Assignment 5!

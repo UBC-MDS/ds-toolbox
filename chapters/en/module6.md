@@ -230,6 +230,6 @@ The base environment is just an environment, the rules are the same!
 </exercise>
 <!-- ------------------------------------ -->
 <exercise id="11" title="What Did We Learn" type="slides,video">
-<slides source="module6/module6_05"> </slides>
+<slides source="module6/module6_end"> </slides>
 </exercise>
 <!-- ------------------------------------ -->

@@ -2,13 +2,13 @@
 type: slides
 ---
 
-# Module Learning Outcomes
+# What Did we Learn and What to Expect in Assignment 7
 
 ---
 
 ## Module Learning Outcomes
 
-By the end of this module, you will be able to
+In this module you learned how to
 
 1. Explain what JupyterLab is.
 2. Perform literate data science programming using Jupyter Notebooks.
@@ -18,13 +18,8 @@ By the end of this module, you will be able to
 6. Export notebooks to various formats for sharing your work.
 
 Notes:
-
-In this module, you will learn how to work more effectively with JupyterLab.
+The assignment will concentrate on the learning objectives as well as building knowledge on existing concepts.
 
 ---
 
-# Let's get started!
-
-Notes:
-
-<br>
+# On to Assignment 7!
