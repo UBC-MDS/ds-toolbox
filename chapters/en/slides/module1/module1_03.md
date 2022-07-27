@@ -98,7 +98,7 @@ which we will learn more about on the next page.
 3. Reduce the code to the minimum required to recreate your error, and paste it as text.
     - If your code includes functions or classes, include their definitions.
     - Create small toy dataset instead of using real data.
-    - Use markdown code blocks for proper indentation and syntax highlighting.
+    - Use triple backticks to create [markdown code blocks](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks) with proper indentation and syntax highlighting.
 4. Describe what you have tried so far,
    what you don't understand or what went wrong,
    including any error messages and their full traceback.
