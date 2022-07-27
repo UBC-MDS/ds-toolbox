@@ -60,8 +60,13 @@ but you would not want it to be part of your everyday workflow.
 
 Now imagine that instead of a coin, you were using a knife to drive in a screw. This will not only be inefficient, but slipping with the knife could cause significant personal injury!
 
-In these examples, it is easy to see why using the right tool for the job is both the most efficient and safest option. For tasks that are less hands-on or that does not give immediate negative feedback when something goes wrong, it can be harder to realize the negative consequences of a suboptimal tool choice. 
+In these examples,
+it is easy to see why using the right tool for the job
+is both the most efficient and safest option.
+Even when learning how to use the right tool could that take some time,
+the effort is worthwhile since it would give you increased efficiency and safety.
 
+For tasks that are less hands-on or that does not give immediate negative feedback when something goes wrong, it can be harder to realize the negative consequences of a suboptimal tool choice.
 A prime example of this is when doing data analysis, where it can be tempting to reach for tools that are familiar instead of critically assessing which is the safest and most effective tool for the job. For a budding data scientist, it can be tricky to understand the long term consequences of using the wrong tool, but failing to do can lead to dire ramifications as we will see in the next slide.
 
 ---
