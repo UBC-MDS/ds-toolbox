@@ -11,10 +11,9 @@ type: slides
 In this module you learned how to
 
 1. Explain the Jupyter Book ecosystem.
-2. Install Jupyter Book.
-3. Complete the build process for a Jupyter Book.
-4. Create your own content files.
-5. Publish your book online for free using GitHub Pages.
+2. Build Jupyter Books via the command line.
+3. Create your own content files.
+4. Publish your book online for free using GitHub Pages.
 
 Notes:
 
