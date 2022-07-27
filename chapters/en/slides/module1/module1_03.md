@@ -93,13 +93,13 @@ which we will learn more about on the next page.
 
 ## An effective question with a Minimal Reproducible Example
 
-1. Search for other questions similar to yours.
-2. Describe the issue clearly in the title and elaborate briefly in the text body.
-3. Reduce the code to the minimum required to recreate your error, and paste it as text.
+1. **Search for other questions** similar to yours.
+2. **Describe the issue clearly** in the title and elaborate briefly in the text body.
+3. **Reduce the code** to the minimum required to recreate your error, and paste it as text.
     - If your code includes functions or classes, include their definitions.
     - Create small toy dataset instead of using real data.
     - Use triple backticks to create [markdown code blocks](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks) with proper indentation and syntax highlighting.
-4. Describe what you have tried so far,
+4. **Describe what you have tried so far**,
    what you don't understand or what went wrong,
    including any error messages and their full traceback.
 
