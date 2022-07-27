@@ -175,7 +175,37 @@ for their toy duck.
 
 ---
 
-## Where to ask?
+## When to ask for help?
+
+<img src="/module1/code-hero.png" alt='An illustration of a "code hero", who is seemingly flying by themselves but in that is shown to actually be lifted up by two hot air balloons consisting of educators and developers, and supported by a safety net held up by the community' width="400px"></img>
+
+Artwork by [@allison_horst](https://twitter.com/allison_horst)
+
+Notes:
+It might be tempting to think of yourself as a "code hero"
+that can complete everything you need on your own.
+However,
+this mentality will ensure that you will get stuck
+and it would often be more beneficial to ask for help
+than to keep trying for another hour yourself.
+
+It is also important to realize that
+there aren't really any code heroes
+that excel from working all by themselves.
+Even people that appear to be super knowledgeable
+and have figured out everything on their own
+are in reality lifted up to where they are now
+by educators and developers,
+and supported by the community.
+
+It is not a sign of weakness to ask for help,
+and since formulating your thoughts into a question
+might lead you to the correct answer,
+it is often beneficial to start doing this early after getting stuck.
+
+---
+
+## Where to ask for help
 
 - https://stackoverflow.com/
 
@@ -189,6 +219,7 @@ Notes:
 When you have written down an effective question
 without finding the solution yourself in the process,
 then it is time to reach out to the data science community and ask for help.
+
 One of the most common places
 to ask for help with programming questions is Stack Overflow
 For data science questions,
