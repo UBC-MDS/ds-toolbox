@@ -11,7 +11,7 @@ type: slides
 In this module you will learn how to
 
 1. Use the shell to navigate the computer’s filesystem
-2. Creating new files and directories
+2. Create new files and directories
 3. Move, copy, and delete files and directories
 4. Use "wildcards"
 5. Define and distinguish between absolute file paths and relative file paths
