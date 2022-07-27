@@ -23,13 +23,13 @@ What it the main reason that it is important to use the right data science tools
 <choice id="1" >
 <opt text="It is a requirement to work in many big companies">
 
-While this might be true, there are more important advantages to using the right tools for the job.
+While this might be true, why do you think companies value employees that can efficiently use these tools?
 
 </opt>
 
 <opt text="It looks better on your resume if you are familiar with the state of the art data science software">
 
-While this is often true, there are more important advantages to using the right tools for the job.
+While this is often true, why do you think companies value employees that can efficiently use these tools?
 
 </opt>
 
