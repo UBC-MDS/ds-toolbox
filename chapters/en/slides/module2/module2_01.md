@@ -142,13 +142,14 @@ Let's see how to do that next!
 
 ## How do we open Bash on our computer?
 
-<img src='/module2/jl-terminal-open.png' width="300px" alt="A screenshot of opening the terminal in JupyterLab via the File menu."/>
+<img src='/module2/jl-terminal-open.png' width="600px" alt="A screenshot of opening the terminal in JupyterLab via the File menu."/>
 
 A screenshot of opening the terminal in JupyterLab via the File menu.
 
 <br>
+<br>
 
-<img src='/module2/jl-terminal.png' width="300px" alt="A screenshot of an open JupyterLab terminal with black background."/>
+<img src='/module2/jl-terminal.png' width="600px" alt="A screenshot of an open JupyterLab terminal with black background."/>
 
 A screenshot of an open JupyterLab terminal with black background.
 
