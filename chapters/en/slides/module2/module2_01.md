@@ -17,14 +17,19 @@ type: slides
 }
 </style>
 
-# Introduction to computing and text-based communication
+# Introduction to the shell
 
 Notes:
-In this slide deck
-we will introduce how to work
-with the shell,
-but before we get into exploring the shell,
-we want to give some background to the idea of computing.
+In this module we will be learning how to use the shell
+to communicate with out computer via text-based commands
+rather than graphical menus that we click with the mouse pointer.
+To get a deeper understanding of this concept,
+we will start with a brief introduction to computing in general.
+
+This chapter is largely based on the Shell chapters in the book
+["Research Software Engineering with Python"](https://merely-useful.tech/py-rse/bash-basics.html),
+which is freely available
+and can be referred to for additional details.
 
 ---
 
@@ -39,36 +44,37 @@ Essentially,
 computing is about humans communicating
 with machines to modulate flows of current in the hardware.
 Early examples of human computer communication were quite primitive
-and included actually disconnecting a wire and connecting it again in a different spot.
+and included physically disconnecting a wire and connecting it again in a different spot.
 
 Luckily,
 we are not doing this anymore;
-instead we have graphical user interface with menus and buttons,
-which is what you are commonly using on your laptop.
+instead we have graphical user interfaces with menus and buttons,
+which is what you are commonly using when interacting with a computer 
+that runs an operating system such as MacOS, Linux, or Windows.
 
-These graphical interface can be thought of as a layer (or *shell*)
+These graphical interface can be thought of as a layer (or a *shell*)
 around the internal components of your operating system.
-Shells exist as an intermediate that both makes it easy for us to express our thoughts,
+Shells exist as an intermediate between the human and the machine;
+they make it easy for us to express our commands,
 and for computers to interpret them.
-
 
 ---
 
-## Text-based communication
+## What is text-based communication?
 
 Open a file from a graphical menu:
 
 <img src='/module2/file-open-menu.png' width="30%" alt="Selecting open from the file menu"/>
 
-Opening a file via a text based interface:
+Opening a file via a text-based interface:
 
 ```
 file.open('filename.csv')
 ```
 
 Notes:
-Today,
-We will learn how to communicate to a computer via a text-based shell,
+In this slide deck,
+we will learn how to communicate with a computer via a text-based shell,
 rather than a graphical one.
 
 Using a text-based shell might at first seems counter-intuitive,
@@ -78,20 +84,26 @@ So now that we have these easy to use graphical user interfaces (GUIs),
 why would anyone in their right mind go back to using a text based interface?
 
 Well,
-it’s partly a misconception,
-GUIs are nice when you are new to something,
-but text based interfaces are actually faster
-and easier to use when you know what you are doing.
+this notion is partly a misconception;
+GUIs can be nice when you are new to something,
+but text-based interfaces are actually faster
+and easier to use when you become more experienced
+and know more precisely which commands you want the machine to execute.
 
-We can compare it to learning a language,
-in the beginning it’s nice to look things up in a dictionary (or a menu on the computer),
-but once I know what I want to say,
+We can compare this process to learning a language:
+in the beginning it’s nice to look things up in a dictionary
+(analogous to the menu on a computer),
+but once we know what we want to say,
 it is just easer to say or type it directly,
-instead of looking in submenues.
+instead of being forced to spend time on looking it up first.
 
-And by extension,
-it would be even faster to speak or even just think of what you want to do and have it executed by the computer,
-this is what speech- and brain-computer interfaces are concerned with.
+By extension,
+it would be even faster to speak
+or even just think of what you want to do
+and have the appropriate commands executed by the computer.
+This is what speech-and brain-computer interfaces are concerned with,
+and once these becomes more refined and accessible
+they might take over as the main way for us to interact with computers.
 
 ---
 
@@ -102,17 +114,12 @@ this is what speech- and brain-computer interfaces are concerned with.
 The Bourne Again SHell
 
 Notes:
-
 Bash is the most commonly used text shell.
-You have it installed on your computer by default if you are using Mac or Linux machine,
-and if you are on a Windows machine you downloaded bash as part of the setup instructions.
-Sometimes we might use "prompt",
-“command line”,
-or "terminal",
-which for the purposes of this lecture,
-refers to the same thing.
+You have it installed on your computer by default if you are using a Mac or Linux machine,
+and if you are on a Windows machine you downloaded Bash as part of the setup instructions.
 
-The abbreviation BASH stands for Bourne Again SHell.
+As we mentioned in the introduction chapter,
+the abbreviation BASH stands for "Bourne Again SHell".
 Other shells existed before Bash,
 and one of the most successful early shells was invented by Stephen Bourne at Bell Labs in 1977,
 which he called the Bourne Shell.
@@ -120,13 +127,19 @@ In 1989,
 the Free Software Foundation improved the Bourne Shell and as a pun named it the Bourne Again Shell,
 to symbolize it was now "reborn" with new features.
 
-Text-based shells are also called command-line interfaces (CLI).
-The heart of every CLI is a read-evaluate-print loop (REPL).
+Sometimes we might use the words "prompt", “command line”, or "terminal",
+instead of "shell".
+For the purposes of this lecture,
+they all refer to the same thing.
+Text-based shells are also called command-line interfaces (CLI)
+and at the heart of every CLI is a read-evaluate-print loop (REPL).
+
 When we type a command and press Return (also called Enter) the CLI reads the command,
 evaluates it (i.e.,
 executes it),
 prints the command’s output,
 and loops around to wait for another command.
+
 Let's see how to do that next!
 
 ---
