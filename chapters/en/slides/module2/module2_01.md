@@ -144,7 +144,14 @@ Let's see how to do that next!
 
 ---
 
-## Your first words
+## How do we open Bash on our computer?
+
+
+Notes:
+
+---
+
+## Your first words in Bash
 
 The default prompt character:
 
@@ -164,9 +171,30 @@ whoami
 username
 ```
 
-<br>
+Notes:
+Our first shell commands will let us explore our folders and files,
+and will also introduce us to several conventions that most command line tools follow.
+To start,
+when Bash runs it presents us with a prompt to indicate that it is waiting for us to type something.
+This prompt is a simple dollar sign by default (`$`).
+However,
+different shells may use a different symbol:
+in particular,
+the zsh shell,
+which is the default on newer versions of MacOS,
+uses %.
 
-The `pwd` command stands for Print Wording Directory.
+If we run the command `whoami`,
+the computer will tell us who we are
+by displaying our username.
+
+Let's find out where we are next!
+
+---
+
+## Where are we?
+
+The `pwd` command stands for Print Working Directory.
 
 ```sh
 pwd
@@ -184,25 +212,21 @@ pwd
 ```
 
 Notes:
-Our first shell commands will let us explore our folders and files,
-and will also introduce us to several conventions that most command line tools follow.
-To start,
-when Bash runs it presents us with a prompt to indicate that it is waiting for us to type something.
-This prompt is a simple dollar sign by default (`$`).
-However,
-different shells may use a different symbol:
-in particular,
-the zsh shell,
-which is the default on newer versions of MacOS,
-uses %.
+The shell is like a file browser
+in the sense that we are always inside a directory.
+When we launch the shell,
+it puts us inside our `home` directory by default.
+Each user on the computer has a separate `home` directory
+and the function and location of this directory
+differs a little bit between operating systems.
 
-If we run the command `whoami`,
-the computer will tell us who we are (our login name),
-and if we run `pwd` (Print Working Directory) the shell tells us where we are (the `home` directory by default when we launch the shell).
+To view which directory we are currently in
+we can execute the command `pwd` (Print Working Directory).
+Since the `home` directory differs between operating system,
+what the shell return when we type `pwd` inside our `home` directory
+will depend on which operating system we are using.
 
-Each user has a `home` directory;
-the function and location of this directory differs a little bit between operating systems.
-On Linux it is usually `/home/username`,
+On Linux the `home` directory is usually `/home/username`,
 on MacOS it is `/Users/username`,
 and on Windows it will show up as `/c/Users/username`
 (if you have Git Bash installed).
@@ -210,9 +234,15 @@ Our examples in this module shows the Linux directory structure,
 but you will see that some of the other modules
 show what we would see on MacOS or Windows.
 
+In general it is enough to be familiar with the directory structure on your machine,
+but if you ever work on a shared cloud computer
+to get access to more computing resources,
+it is important to also be familiar with the Linux directory structure
+since most cloud computers run Linux.
+
 ---
 
-## Exploring the files system
+## Exploring the filesystem
 
 ```
 ls
@@ -230,7 +260,8 @@ let’s see what we have using the command `ls` (short for “listing”),
 which prints the names of the files and directories in the current directory:
 
 Again,
-our results may be different depending on our operating system and what files or directories we have.
+our results may be different depending on our operating system
+and what files or directories we have created previously.
 
 ---
 
