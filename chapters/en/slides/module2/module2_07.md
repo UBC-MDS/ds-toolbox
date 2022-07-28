@@ -54,7 +54,7 @@ and in which order we ran them.
 
 ---
 
-## Combining commands
+## Combining commands with pipes
 
 ```sh
 history | grep "ls"
@@ -85,7 +85,7 @@ before printing it on the screen?
 This is exactly what a `pipe` (`|`) does,
 which we can use with the following syntax `command1 | command2`.
 In our case this would be `history | grep "ls"`,
-which sends the output to `grep`,
+which sends the output of `ls` to `grep`,
 which removes all the lines that don't contain "ls",
 before printing the remaining three lines to the screen.
 
@@ -139,14 +139,19 @@ it is possible to perform rather advanced text processing directly in the shell.
 
 ## Creating an alias
 
+Before creating the alias:
+
 ```sh
-# Before creating the alias
 l
 ```
 
 ```out
 l: command not found
 ```
+
+<br>
+
+After creating the alias:
 
 ```sh
 alias l="ls -aFltr"
@@ -237,7 +242,7 @@ Notes:
 How can we find out what options like `-t` and `-r` do if we don't know of them already?
 By reading the built-in help manual!
 Typing `man ls` brings up the manual help page for the `ls` command.
-You can navigate these pages with `Space` to go down and `b` to go **B**ack up.
+You can navigate these pages with `Space` to go down and `b` to go Back up.
 `q` quits the manual and takes you back to the shell prompt.
 
 Typing `/` starts a search.
@@ -247,6 +252,10 @@ To continue to the **n**ext search hit,
 press `n`,
 and to go to the previous,
 press `shift` + `n`.
+
+These navigation keys are important to remember
+as they will be helpful to navigate other terminal pages as well,
+not just the manual!
 
 ---
 
