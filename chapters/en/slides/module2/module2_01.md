@@ -127,13 +127,9 @@ In 1989,
 the Free Software Foundation improved the Bourne Shell and as a pun named it the Bourne Again Shell,
 to symbolize it was now "reborn" with new features.
 
-Sometimes we might use the words "prompt", “command line”, or "terminal",
-instead of "shell".
-For the purposes of this lecture,
-they all refer to the same thing.
-Text-based shells are also called command-line interfaces (CLI)
+Text-based shells are sometimes called command-line interfaces
+(CLI, or just "the command line")
 and at the heart of every CLI is a read-evaluate-print loop (REPL).
-
 When we type a command and press Return (also called Enter) the CLI reads the command,
 evaluates it (i.e.,
 executes it),
@@ -146,8 +142,43 @@ Let's see how to do that next!
 
 ## How do we open Bash on our computer?
 
+<img src='/module2/jl-terminal-open.png' width="300px" alt="A screenshot of opening the terminal in JupyterLab via the File menu."/>
+
+A screenshot of opening the terminal in JupyterLab via the File menu.
+
+<br>
+
+<img src='/module2/jl-terminal.png' width="300px" alt="A screenshot of an open JupyterLab terminal with black background."/>
+
+A screenshot of an open JupyterLab terminal with black background.
 
 Notes:
+To run a shell such a Bash,
+we need to use a Terminal Emulator,
+or just "Terminal" for short.
+Most operating systems have one built-in,
+on MacOS it is called `Terminal.app`,
+and on Linux it is usually just called `Terminal`.
+On Windows,
+you could use the terminal application that comes with Git Bash
+that you installed in Assignment 1,
+or the newer "Windows Terminal" application.
+
+In this course,
+we will be using Bash via the JupyterLab terminal,
+to ensure that the experience is similar
+across all three operating systems.
+
+To open the JupyterLab terminal,
+go to `File -> New -> Terminal`
+as in the screenshot in this slide.
+
+The JupyterLab terminal that opens will look slightly different
+depending on which operating system you are using
+and what its default terminal settings are.
+If you want to switch between dark and light backgrounds,
+you can go to `Settings -> Theme`
+and chose either `JupyterLab Light` or `JupyterLab Dark`.
 
 ---
 
