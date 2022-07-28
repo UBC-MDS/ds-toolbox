@@ -6,7 +6,7 @@ type: slides
 # Moving Around
 
 Notes: In this module,
-we will see how we can use the shell to interact with 
+we will see how we can use the shell to move around our file system.
 
 ---
 
@@ -28,16 +28,16 @@ we will see how we can use the shell to interact with
 Notes:
 For this slide deck,
 we will work with a file structure that looks like what is shown in this slide.
-We have four folders, a hidden file, and two regular files inside our home directory.
+We have four folders, a hidden file, and two regular files
+inside our user's home directory (`/home/username`).
 Inside the `Documents` directory there is one additional file and one subfolder.
-Now let's see how we can use different shell commands to explore this file structure.
+Now let's see how we can use different shell commands to move around in this structure.
 
 ---
 
 ## Moving around in the shell
 
 ```sh
-# LiSt directory contents
 ls -F
 ```
 
@@ -62,7 +62,7 @@ Notes:
 
 Let's first run `ls` again to remind us about what the directory structure looks like.
 
-If we want to see what’s in the `Documents` directory we can ask ls to list its contents,
+If we want to see what’s in the `Documents` directory we can ask `ls` to list its contents,
 by passing the folder name as an argument to `ls`.
 
 ---
@@ -101,8 +101,12 @@ whereas using relative paths makes it easier to work with collaborators across m
 ## Moving to a directory
 
 ```sh
-# Change Directory
 cd Documents
+```
+
+There is not output from the `cd` command so we use `pwd` to confirm where we are.
+
+```sh
 pwd
 ```
 
@@ -115,8 +119,8 @@ If we are going to do a lot of work inside the `Documents` directory,
 the easiest thing would be to change our current working directory,
 so that we don’t have to type zips over and over again.
 The command to do this is `cd`,
-which stands for "change directory",
-since it changes what directory we are in.
+which stands for "Change Directory",
+since it changes what directory we are currently inside.
 
 `cd` doesn't print anything.
 This is normal:
@@ -130,8 +134,9 @@ to print the **absolute** path to the current directory.
 
 ## Navigating up to the parent directory
 
+Incorrect command:
+
 ```sh
-# Incorrect command
 cd username
 ```
 
@@ -141,8 +146,9 @@ cd: username: No such file or directory
 
 <br>
 
+Correct command followed by `pwd`:
+
 ```sh
-# Correct command
 cd ..
 pwd
 ```
@@ -153,11 +159,12 @@ pwd
 
 Notes:
 We now know how to navigate down the directory tree,
-but how do we go bach up to our user's home directory?
+but how do we go back up to our user's home directory?
 It doesn't work to simply type `cd username` since we are inside the `Documents` subdirectory.
 
 To get back up,
-we could either type out the absolute path `cd /home/username` or use a special relative path called `..`
+we could either type out the absolute path `cd /home/username`
+or use a special relative path called `..`
 (two periods in a row with no spaces).
 This is a convenient shortcut that always means "the directory that contains the current one",
 which is often called the "parent" directory of the current directory.
@@ -167,7 +174,6 @@ which is often called the "parent" directory of the current directory.
 ## Listing hidden files
 
 ```sh
-# ls -Fa would also work
 ls -F -a
 ```
 
@@ -192,20 +198,32 @@ which stands for "all".
 You will see that this also includes a single dot `.`;
 this stands for the current directory.
 
+Some option also exist in a "long form",
+in this case the `-a` option is equivalent to writing `--all`.
+It is also possible to combine options with a single hyphen,
+so `ls -F -a` is the same as `ls -Fa`.
+
 ---
 
 ## Navigating several directories at a time
 
+Navigate two folders down:
+
 ```sh
-# Navigate two folders down
 cd Documents/another-folder
 ```
 
 <br>
 
+Navigate two folders up:
+
 ```sh
-# Navigate two folders up
 cd ../..
+pwd
+```
+
+```out
+/home/username
 ```
 
 Notes:
@@ -215,7 +233,8 @@ We can use this to navigate either down or up.
 
 For example,
 typing `cd Documents/another-folder`
-would take us directly to the `another-folder` directory.
+would take us directly to the `another-folder` directory
+(in our example folder structure).
 Typing `cd ../..`
 would take us two folders up:
 back to out home directory.
@@ -235,8 +254,9 @@ pwd
 
 <br>
 
+These two `cd` commands both return you to the home directory:
+
 ```sh
-# These two commands both return you to the home directory
 cd ~
 cd
 pwd
@@ -245,7 +265,6 @@ pwd
 ```out
 /home/username
 ```
-
 
 Notes:
 `cd` also offers a few shortcuts for common operations,
