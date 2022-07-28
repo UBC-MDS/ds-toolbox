@@ -1,7 +1,7 @@
 ---
 title: 'Module 2: The shell'
 description:
-  'In this module we will introduce you to several of the tools that we will be using in this course, as well as to computing in general.'
+  'In this module we will you will learn how to use the shell to navigate your filesystem and to execute commands.'
 prev: ../../module0
 next: ../../module2
 type: chapter
