@@ -188,7 +188,7 @@ and chose either `JupyterLab Light` or `JupyterLab Dark`.
 The default prompt character:
 
 ```sh
-$
+username@computer $
 ```
 
 <br>
@@ -206,9 +206,15 @@ username
 Notes:
 Our first shell commands will let us explore our folders and files,
 and will also introduce us to several conventions that most command line tools follow.
+
 To start,
-when Bash runs it presents us with a prompt to indicate that it is waiting for us to type something.
-This prompt is a simple dollar sign by default (`$`).
+you will have noticed that when the Terminal with Bash launches
+it presents us with a blinking line or block.
+This is called the "prompt"
+because the blinking is prompting us to enter a command.
+
+The default character that is used to represent the prompt
+is a dollar sign (`$`).
 However,
 different shells may use a different symbol:
 in particular,
@@ -216,11 +222,19 @@ the zsh shell,
 which is the default on newer versions of MacOS,
 uses %.
 
-If we run the command `whoami`,
+Before the dollar sign,
+we can see our username and computer name printed,
+but this might look different for you
+depending on your operating systems and settings.
+
+Let's run our first command!
+By typing in `whoami` and pressing `Enter`,
 the computer will tell us who we are
 by displaying our username.
 
-Let's find out where we are next!
+Next,
+let's move on to something more useful
+and find out which directory we are in!
 
 ---
 
@@ -288,12 +302,18 @@ Pictures      my_program
 
 Notes:
 Now that we know where we are,
-let’s see what we have using the command `ls` (short for “listing”),
-which prints the names of the files and directories in the current directory:
-
+let’s see what this directory contains by using the command `ls` (short for “listing”),
+which prints the names of the files and directories in the current directory.
 Again,
 our results may be different depending on our operating system
 and what files or directories we have created previously.
+
+In our example in the slide,
+we have one file with a `txt` extension
+which indicates that this files contains text,
+and we have five files without an extension
+(some of these appear to be directories,
+but we can't know for sure from this output).
 
 ---
 
@@ -310,14 +330,19 @@ Pictures/     my_program*
 ```
 
 Notes:
-We can make the output of ls more informative using the -F option (also sometimes called a switch or a flag).
+We can make the output of `ls` more informative
+by using the -F option
+(a command option is sometimes called a "switch" or a "flag").
 Options modify the behavior of the command.
+
 In this case,
-`-F` tells ls to decorate the output of `ls` to show what type of file each entry is.
-A trailing `/` indicates a directory,
-while a trailing `*` tells us something is a runnable program.
+`-F` tells `ls` to decorate the printed output
+to indicate what type of file each entry is.
+A trailing `/` ("slash") indicates a directory,
+while a trailing `*` ("asterisk") tells us that the file is a runnable program.
 Depending on our setup,
-the shell might also use colors to indicate whether each entry is a file or directory.
+the shell might also use colors
+to indicate what type of file or directory each entry is.
 
 ---
 
