@@ -6,17 +6,17 @@ type: slides
 # Working with Files and Directories
 
 Notes:
-We now know how to explore files and directories, but how do we create them? 
+We now know how to explore files and directories, but how do we create and move them around? 
 That's what we will find out in this chapter.
 
 ---
 
 ## Creating a directory
 
+Create a directory called "notes".
+
 ```sh
 cd ~/Documents
-
-# MaKe Directory
 mkdir notes
 ```
 
@@ -29,7 +29,8 @@ mkdir notes
 Notes:
 Let's go back to the `~/Documents` directory and create a subfolder called `notes`.
 For this we first use the `~` home  directory shortcut,
-and then the `mkdir` command.
+and then the `mkdir` command
+(MaKe DIRectory).
 
 We will talk more about useful naming conventions in module 6.
 For now it is enough if you remember these three guidelines.
@@ -45,6 +46,12 @@ For now it is enough if you remember these three guidelines.
 ```sh
 ls -F notes
 ```
+
+```out
+
+```
+
+(The output is empty because there are no files in the newly created directory)
 
 <br>
 
@@ -186,6 +193,8 @@ note_2022-06-20.md
 
 <br>
 
+The `-v` option prints the name of the moved file
+
 ```sh
 mv -v notte_2022-06-20.md note_2022-06-20.md
 ```
@@ -217,15 +226,17 @@ The option `-i` ("interactive") makes `mv` ask us for confirmation before overwr
 
 ## Copying files and directories
 
+Copy the file to the parent directory:
+
 ```sh
-# Copy the file to the parent directory
 cp note_2022-06-20.md ..
 ```
 
 <br>
 
+Create a backup copy in the same directory:
+
 ```sh
-# Create a backup copy in the same directory
 cp note_2022-06-20.md note_2022-06-20.md.bkp
 ls
 ```
@@ -236,7 +247,7 @@ note_2022-06-20.md.bkp
 ```
 
 Notes:
-The `cp` command create a **c**o**p**y of a file.
+The `cp` command create a CoPy of a file.
 Just as with `mv`,
 we optionally rename the file as we are copying it.
 
@@ -276,12 +287,16 @@ removed '../note_2022-06-20.md'
 
 Notes:
 Let's clean things up by removing our backup copy that we just created.
-The `rm` commands allows us to **r**e**m**ove files and folders.
+The `rm` commands allows us to ReMove files and folders.
 In this case we would type `rm note_2022-06-20.md.bkp`.
 
 Deleting is forever: unlike most graphical file browsers,
 the Unix shell doesn't have a trash bin that we can recover deleted files from.
-Just as with `mv`, we can use the `-i` and `-v` to make `rm` a bit more safe and informative.
+Just as with `mv`, we can use the `-v` to make `rm` a bit more informative.
+
+We can also use the `-i` flag to make it a bit more safe
+and ask for confirmation before moving the file.
+If we want to confirm we type `y` (for "yes") and then hit Enter.
 Let's use these flags when removing the copy we placed in the parent directory
 `rm -iv ../note_2022-06-20.md`.
 
