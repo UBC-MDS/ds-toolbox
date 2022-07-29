@@ -54,7 +54,7 @@ Correct! Version control has many benefits as was described in the previous answ
 
 **True or False**
 
-(1) **Git** is a remote/cloud repository hosting service where you can backup and share your files with collaborators.
+**Git** is a remote/cloud repository hosting service where you can backup and share your files with collaborators.
 
 <choice id='2'>
 <opt text='True'>
@@ -69,7 +69,9 @@ Git is a tool for version control that is used locally on your computer.
 </opt>
 </choice>
 
-(2) Are you getting the same information if you **download** a repository from GitHub than if you **clone** it?
+**True or False**
+
+Are you getting the same information if you **download** a repository from GitHub than if you **clone** it?
 
 <choice id='3'>
 <opt text='True'>
