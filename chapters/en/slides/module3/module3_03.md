@@ -17,7 +17,7 @@ in the git repository on your computer is used for.
 <br>
 <br>
 
-> 1. <strong> Make a commit <strong/> of your own changes in the local repository. <br> 2. <strong> Send your new commits to the remote <strong/> GitHub repository. <br> 3.  <strong> Retrieve any new changes <strong/> (that others made) from the remote GitHub repository.
+>1.<strong> Make a commit <strong/> of your own changes in the local repository.<br>2.<strong> Send your new commits to the remote <strong/> GitHub repository.<br>3.<strong> Retrieve any new changes <strong/> (that others made) from the remote GitHub repository.
 
 Notes:
 When you work in a local version-controlled repository, there are generally three additional steps you must take as part of your regular workflow. In addition to working on your files—creating, editing, and deleting them as you normally would—you must also tell Git when to:
@@ -38,7 +38,7 @@ Let's learn step by step how to make a commit in your local repository
 
 <center>
 
-<img src='/module3/vc-local-github-notes.png' width="45%" alt="404 image" />
+<img src='/module3/vc-local-github-notes.png' width="600px" alt="404 image" />
 
 </center>
 

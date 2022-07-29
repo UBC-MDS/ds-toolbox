@@ -5,6 +5,7 @@ title: 'module3_02'
 
 # Version control repositories
 
+Notes:
 In this slide deck,
 we will learn the basics of how to create repository that uses version control.
 
