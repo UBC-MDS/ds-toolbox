@@ -57,7 +57,7 @@ Version control also facilitates collaboration via tools to share edits with oth
 <br>
 <br>
 
-<p style="border:3px; border-style:solid; border-color:#FA9C18; padding: 2px;"> We can define <b>version control</b> as the process of keeping a record of changes to documents, including when the changes were made and who made them, throughout the history of their development. It also provides the means both to view earlier versions of the project and to revert changes. </p>
+> We can define <b>version control</b> as the process of keeping a record of changes to documents, including when the changes were made and who made them, throughout the history of their development. It also provides the means both to view earlier versions of the project and to revert changes.
 
 Notes: We can define **version control** as the process of keeping a record of changes to documents, including when the changes were made and who made them, throughout the history of their development. It also provides the means both to view earlier versions of the project and to revert changes. 
 
