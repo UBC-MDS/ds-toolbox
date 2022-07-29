@@ -3,16 +3,6 @@ type: slides
 title: 'module3_01'
 ---
 
-<!-- GitHub blockquote style -->
-<style>
-blockquote {
-  margin: 0;
-  padding: 0 1em;
-  color: #57606;
-  border-left: .25em solid #d0d7de;
-}
-</style>
-
 # What is version control, and why should I use it?
 
 Notes:

@@ -8,7 +8,6 @@ type: chapter
 id: 3
 ---
 
-
 <exercise id="0" title="Module Learning Outcomes" type="slides,video">
 
 <slides source="module3/module3_00" shot="0" start="0:002" end="3:40">
