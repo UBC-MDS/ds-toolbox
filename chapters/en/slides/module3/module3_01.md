@@ -92,5 +92,3 @@ Technically you don’t have to use a repository hosting service. You can, for e
 Notes:
 
 <br>
-
----
