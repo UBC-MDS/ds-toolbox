@@ -193,12 +193,21 @@ Inside this folder are all the files that existed on your repository on GitHub.
 </center>
 
 Notes:
-If you want to do this in the terminal you can use the command git clone to download a copy of a repository to your computer. You will see that the repository will appear in JupyterLab after you cloned it. Remember to check that you are in the directory where the file has been cloned.
+It is also possible to work with Git from the terminal instead of the JupyterLab Git client.
+We will later see that there are some advantages of working in the terminal for the more advanced commands.
+For now, let's see how we can perform the same cloning steps in the terminal as we just did via the graphical Git client.
+
+To clone a repository from the terminal,
+we will use the `git clone` command
+followed by the same URL we copied previously
+as can be seen in the screenshot on this slide.
+After the cloning has finished,
+you will see that the repository appears in the JupyterLab files tab,
+just as it did when we clones via the graphical Git client.
 
 ---
 
 ## How can you check that you are working in a Git repository? (terminal)
-
 
 <center>
 
