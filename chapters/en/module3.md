@@ -28,11 +28,12 @@ id: 3
 Which reason listed below is not a good reason to use version control:
 
 <choice id='1'>
-<opt text='Version control tools provide transparency on how a project evolved by tracking the history of documents, and who made what changes to those documents.''>
+<opt text='Version control tools provide transparency on how a project evolved by tracking the history of documents, and who made what changes to those documents.'>
 
 This is one of the main benefits of version control! Remember that we can track the changes we did to the projects by reading the commit messages.
 
 </opt>
+
 <opt text='Version control tools usually include a remote/cloud repository hosting service that can act as a backup of your local files (i.e., the files on your computer).'>
 
 Even if you can use Git without an associated hosting service, it is a very common practice to do so. It allows you not only to keep a backup of your work if not also to socialize and work collaboratively. For example, in this course, we are using GitHub to host our remote repositories.
@@ -47,7 +48,9 @@ One of the great advantages of version control tools is that they facilitate col
 <opt text='Version control tools check the accuracy of your code.' correct='true'>
 
 Correct! Version control has many benefits as was described in the previous answers 1, 2, and 3, but it is not related to how good is your code. 
+
 </opt>
+
 </choice>
 
 **True or false**
