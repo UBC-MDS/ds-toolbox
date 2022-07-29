@@ -186,7 +186,7 @@ You can add to the staging area both the changed and untracked files.
 </opt>
 <opt text='False'>
 
-Changed files or new files added to your repository (known as untracked) are possible to be staged and commited.
+Changed files or new files added to your repository (known as untracked) are possible to be staged and committed.
 
 </opt>
 </choice>
