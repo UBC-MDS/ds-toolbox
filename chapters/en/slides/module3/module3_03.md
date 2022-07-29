@@ -57,19 +57,15 @@ When working on files in your local version control repository (e.g., using Jupy
 
 
 Notes:
-**Adding modified files to the staging area in the local repository.** 
-
 Once you reach a point that you want Git to keep a record of the current version of your work, you need to commit (i.e., snapshot) your changes. A prerequisite to this is telling Git which files should be included in that snapshot. We call this step adding the files to the **staging area**. 
 
-Note that the staging area is not a real physical location on your computer; it is instead a conceptual placeholder for these files until they are committed. The benefit of the Git version control system using a staging area is that you can choose to commit changes in only certain files. For example, we add only the two files that are important to the analysis project (`analysis.ipynb` and `README.md`) and not our personal scratch notes for the project (`notes.txt`).
-
-
+Note that the staging area is not a meaningful location on your computer; it is instead a temporary placeholder for these files until they are committed. The benefit of the Git version control system using a staging area is that you can choose to commit changes in only certain files. For example, we could add only the two files that are important to the analysis project (`analysis.ipynb` and `README.md`) and not the changes we made to our personal scratch notes for the project (`notes.txt`).
 
 ---
 
 ## JupyterLab: Specifying files to commit
 
-🙌 Follow this steps in your computer to add files to the staging area:
+🙌 Follow these steps in your computer to add files to the staging area:
 
 <center>
 
@@ -78,9 +74,20 @@ Note that the staging area is not a real physical location on your computer; it 
 </center>
 
 Notes:
-**1. The file `eda.ipynb` is added to the staging area via the plus sign (`+`).**
+To add changes we have made to a file to the staging area through the JupyterLab,
+we can use the small plus sign (`+`).
+In this screenshot,
+we are adding the notebook file `eda.ipynb` to our project's staging area.
+
+Note that because if this was the first change we ever made to this file,
+it would have shown up under the `Untracked` heading in the side panel,
+indicating that Git is not yet keeping track of this file.
+However,
+in this example we had already made a previous commit to `eda.ipynb`,
+which why it showed up under the `Changed` heading in the side panel.
 
 ---
+
 ## JupyterLab: Specifying files to commit
 
 <center>
@@ -91,8 +98,6 @@ Notes:
 
 Notes:
 **2. Adding `eda.ipynb` makes it visible in the staging area.** 
-
-This opens the Jupyter Git graphical user interface pane. Next, click the plus sign (+) beside the file(s) that you want to `add` (see image). Note that because this is the first change for this file, it falls under the `Untracked` heading. However, next time you edit this file and want to add the changes, you will find it under the `Changed` heading.
 
 You will also see an `eda-checkpoint.ipynb` file under the `Untracked` heading. This is a temporary “checkpoint file” created by Jupyter when you work on `eda.ipynb`. You generally do not want to add auto-generated files to Git repositories; only add the files you directly create and edit.
 
