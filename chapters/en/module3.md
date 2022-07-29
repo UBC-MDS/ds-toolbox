@@ -53,17 +53,17 @@ Correct! Version control has many benefits as was described in the previous answ
 
 </choice>
 
-**True or false**
+**True or False**
 
 (1) **Git** is a remote/cloud repository hosting service where you can backup and share your files with collaborators.
 
 <choice id='2'>
-<opt text='true'>
+<opt text='True'>
 
 Success! Git is a tool for version control that is used locally on your computer, whereas GitHub is an example of a remote/cloud repository hosting service where you can backup and share your files with collaborators.
 
 </opt>
-<opt text='false' correct='true'>
+<opt text='False' correct='true'>
 
 Git is a tool for version control that is used locally on your computer.
 
@@ -73,12 +73,12 @@ Git is a tool for version control that is used locally on your computer.
 (2) Are you getting the same information if you **download** a repository from GitHub than if you **clone** it?
 
 <choice id='3'>
-<opt text='true'>
+<opt text='True'>
 
 Try downloading a project and clone it and check if you can find any difference between the two options.
 
 </opt>
-<opt text='false' correct='true'>
+<opt text='False' correct='true'>
 
 When you clone a Git repository from GitHub you get the hidden `.git` directory that contains all the history of the changes that Git knows about for that repository, and you get a remote that is already set up to push to the repository on GitHub (this makes it so that once you make changes that are added and committed to Git, all you need to do is push teh changes to GitHub). If you instead use the "Download ZIP" link you do not get the git history (stored in `.git`) nor a set-up remote for pushing to GitHub.
 
