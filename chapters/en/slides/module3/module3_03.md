@@ -5,6 +5,10 @@ title: 'module3_03'
 
 # The staging area
 
+Notes:
+In this module we will be learning more about what the staging area
+in the git repository on your computer is used for.
+
 ---
 
 ## Version control workflows
