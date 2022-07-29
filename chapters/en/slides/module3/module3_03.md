@@ -20,14 +20,13 @@ in the git repository on your computer is used for.
 > 1. <strong> Make a commit <strong/> of your own changes in the local repository. <br> 2. <strong> Send your new commits to the remote <strong/> GitHub repository. <br> 3.  <strong> Retrieve any new changes <strong/> (that others made) from the remote GitHub repository.
 
 Notes:
-When you work in a local version-controlled repository, there are generally three additional steps you must take as part of your regular workflow. In addition to just working on files—creating, editing, and deleting files as you normally would—you must tell Git when to:
+When you work in a local version-controlled repository, there are generally three additional steps you must take as part of your regular workflow. In addition to working on your files—creating, editing, and deleting them as you normally would—you must also tell Git when to:
 
 1. **Make a commit** of your own changes in the local repository.
 2. **Send your new commits to the remote** GitHub repository.
 3. **Retrieve any new changes** (that others made) from the remote GitHub repository.
 
-
-In this section we will discuss the first step.
+In this slide deck we will discuss the first step.
 
 Making a commit is a two step process where you first add the changes to the staging area and then commit them, which saves the differences between the current and previous version of the file together with your message describing what you did. These changes are saved in the hidden `.git` directory in the Git repository.
 
@@ -36,7 +35,7 @@ Let's learn step by step how to make a commit in your local repository
 ---
 
 ## Local repository with changes to files
- 
+
 <center>
 
 <img src='/module3/vc-local-github-notes.png' width="55%" alt="404 image" />
@@ -44,8 +43,7 @@ Let's learn step by step how to make a commit in your local repository
 </center>
 
 Notes:
-When working on files in your local version control repository (e.g., using JupyterLab) and saving your work, these changes will only initially exist in the working directory of the local repository
-
+When working on files in your local version control repository (e.g., using JupyterLab) and saving your work, these changes will only initially exist in the working directory of the local repository on your computer.
 
 ---
 
@@ -68,6 +66,7 @@ Note that the staging area is not a real physical location on your computer; it 
 
 
 ---
+
 ## JupyterLab: Specifying files to commit
 
 🙌 Follow this steps in your computer to add files to the staging area:
