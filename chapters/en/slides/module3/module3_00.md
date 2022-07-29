@@ -16,7 +16,8 @@ In this module you will learn how to
 4. Understand what it implies to use the staging area in a Git workflow.
 5. Use commits as the primary building block for storing a project versions together with an attached message and a unique identifier.
 
-Notes: This module covers the basics of version control with Git and GitHub. 
+Notes:
+This module covers the basics of version control with Git and GitHub. 
 
 ---
 
