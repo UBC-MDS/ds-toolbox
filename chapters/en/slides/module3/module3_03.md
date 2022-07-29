@@ -38,7 +38,7 @@ Let's learn step by step how to make a commit in your local repository
 
 <center>
 
-<img src='/module3/vc-local-github-notes.png' width="55%" alt="404 image" />
+<img src='/module3/vc-local-github-notes.png' width="45%" alt="404 image" />
 
 </center>
 
