@@ -16,12 +16,34 @@ id: 1
 <slides source="module1/module1_01" shot="1" start="0:003" end="05:31"> </slides>
 </exercise>
 
-<exercise id="2" title="Test Your Knowledge">
+<exercise id="2" title="✍️  Practice: The tools of the trade">
 
-**Question 1**  
-The Shell (Bash) allows you to:
+What it the main reason that it is important to use the right data science tools for the job and learn to work with them effectively?
 
 <choice id="1" >
+<opt text="It is a requirement to work in many big companies">
+
+While this might be true, why do you think companies value employees that can efficiently use these tools?
+
+</opt>
+
+<opt text="It looks better on your resume if you are familiar with the state of the art data science software">
+
+While this is often true, why do you think companies value employees that can efficiently use these tools?
+
+</opt>
+
+<opt text="It allows you to complete tasks more effectively and reduces the number of costly mistakes made" correct="true">
+
+Great! While the other two options are also often correct, this is the most important motivation to learn about data science tools and how to use them effectively.
+
+</opt>
+
+</choice>
+
+The Shell (Bash) allows you to:
+
+<choice id="2" >
 <opt text="Version control files">
 
 Git is the tool that allows you to version control files.
@@ -49,10 +71,9 @@ We use a programming language such as Python or R to create data visualizations.
 </choice>
 
 
-**Question 2**      
 What can you do with Jupyter Book?
 
-<choice id="2" >
+<choice id="3" >
 <opt text="Version control files">
 
 Git is the tool that allows you to version control files.
@@ -99,17 +120,12 @@ They are! Volunteer contributions from people around the world support the devel
 
 </exercise>
 
-<exercise id="3" title="How Can We Visualize Data?" type="slides,video">
-<slides source="module1/module1_03" shot="1" start="5:4008" end="26:2200"> </slides>
+<exercise id="3" title="Asking Effective Questions" type="slides,video">
+<slides source="module1/module1_03" shot="1" start="26:3200" end="40:07"></slides>
 </exercise>
 
-<exercise id="5" title="Asking Effective Questions" type="slides,video">
-<slides source="module1/module1_05" shot="1" start="26:3200" end="40:07"></slides>
-</exercise>
+<exercise id="4" title="✍️ Your turn: How to ask efectively?">
 
-<exercise id="6" title="Test Your Knowledge">
-
-**Question 1**      
 Which of the following is **NOT** something you should do before asking for help online.
 
 <choice id="1" >
@@ -153,8 +169,7 @@ People from around the world volunteer their time and expertise to answer questi
 
 </exercise>
 
-<exercise id="7" title="What Did We Just Learn?" type="slides, video">
+<exercise id="5" title="What Did We Just Learn?" type="slides, video">
 <slides source="module1/module1_end" shot="0" start="04:37" end="05:35">
 </slides>
 </exercise>
-

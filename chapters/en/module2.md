@@ -2,10 +2,10 @@
 title: 'Module 2: The shell'
 description:
   'In this module we will introduce you to several of the tools that we will be using in this course, as well as to computing in general.'
-prev: ../../module0
-next: ../../module2
+prev: ../../module1
+next: ../../module3
 type: chapter
-id: 1
+id: 2
 ---
 
 <exercise id="0" title="Module Learning Outcomes"  type="slides, video">
