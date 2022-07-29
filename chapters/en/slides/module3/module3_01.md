@@ -3,26 +3,41 @@ type: slides
 title: 'module3_01'
 ---
 
+<style>
+blockquote {
+  margin: 0;
+  padding: 0 1em;
+  color: var(--color-fg-muted);
+  border-left: .25em solid var(--color-border-default);
+}
+</style>
+
 # What is version control, and why should I use it?
 
+Notes:
+In this slide deck we will about the motivation behind using version control
+when working on our projects.
+
 ---
-### What is version control, and why should I use it?
+
+## What is version control, and why should I use it?
 
 <center>
 
 <img src='/module3/vc-final-comic.png' width="34%" alt="404 image"/>
- 
+
 <center/>
 
 <a href="http://www.phdcomics.com">image source: “Piled Higher and Deeper” by Jorge Cham</a>  
 
-Notes: Data analysis projects often require iteration and revision to move from an initial idea to a finished product ready for the intended audience. Without deliberate and conscious effort towards tracking changes made to the analysis, projects tend to become messy. This mess can have serious, negative repercussions on an analysis project, including interesting results files that your code cannot reproduce, temporary files with snippets of ideas that are forgotten or not easy to find, mind-boggling file names that make it unclear which is the current working version of the file (e.g., `document_final.txt`, `to_hand_in_final_v2.txt`, etc.), and more.
+Notes: Data analysis projects often require iteration and revision to move from an initial idea to a finished product ready for the intended audience. Without deliberate and conscious effort towards tracking changes made to the analysis, projects tend to become messy. This mess can have serious, negative repercussions on an analysis project, including losing interesting results files that your code cannot reproduce, temporary files with snippets of ideas that are forgotten or not easy to find, mind-boggling file names that make it unclear which is the current working version of the file (e.g., `document_final.txt`, `to_hand_in_final_v2.txt`, etc.), and more.
 
 Being able to record and view the history of a data analysis project is important for understanding how and why decisions to use one method or another were made, among other things. Many of you might already have used version control software if you work with Google Docs, Dropbox, or TimeMachine on macOS. These programs, all automatically create versions of your documents and you can then browse through the history.
 
 
 ---
-### What is version control, and why should I use it?
+
+## What is version control, and why should I use it?
 
 Instead of creating a new copy for each version of a file with an unwieldy name (as in the image below), version control allows you to have a single file and records the changes between the versions.
 
