@@ -171,7 +171,7 @@ You will learn more about Git and GitHub in modules 3-5!
 - Separating software that requires different environments
 
 Notes:
-Conda is a package manager,
+`conda` is a package manager,
 which provides a convenient way to install programs and packages.
 While there exist package managers that are tailor-made for programming language such as R and Python or for specific operating systems,
 Conda is the most widely use package manager that is both cross-platform
