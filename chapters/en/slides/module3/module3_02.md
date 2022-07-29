@@ -195,7 +195,12 @@ Inside this folder are all the files that existed on your repository on GitHub.
 Notes:
 It is also possible to work with Git from the terminal instead of the JupyterLab Git client.
 We will later see that there are some advantages of working in the terminal for the more advanced commands.
-For now, let's see how we can perform the same cloning steps in the terminal as we just did via the graphical Git client.
+For now, let's see how we can perform the same cloning steps in the terminal
+as we just did via the graphical Git client.
+Note that we will never need to clone a project *both* from the Git client
+and the terminal,
+so we are just doing this here
+to show you how it is done in both interfaces.
 
 To clone a repository from the terminal,
 we will use the `git clone` command
@@ -218,7 +223,10 @@ just as it did when we clones via the graphical Git client.
 Notes:
 A Git repository stores all the necessary information for version control your project in a hidden folder called `.git`. If you want to know if you are working in a Git repo using the terminal you can use the bash command `ls -a` as you can see in the image. The `-a` flag will include into the lists of files displayed on the terminal the hidden folders. If `.git` is included you are working in a Git repository.
 
-By cloning a repository from GitHub to your computer, you are automatically getting a copy of `.git` and thus, working on a Git.
+Remember to first double check that you are in the directory which the files have been cloned to.
+When you clone, the files will be downloaded to a subdirectory of the folder you are currently in,
+so you need to use `cd` to get to that folder before running `ls -a`.
+By cloning a repository from GitHub to your computer, you are automatically getting a copy of `.git` and thus, working in a Git repository.
 
 ---
 
