@@ -67,8 +67,7 @@ We can define **version control** as the process of keeping a record of changes 
 
 ---
 
-
-# Git and GitHub
+## Git and GitHub
 
 **Git** - Version control system
 
