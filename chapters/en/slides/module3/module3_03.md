@@ -13,7 +13,7 @@ title: 'module3_03'
 <br>
 <br>
 
-<p style="border:3px; border-style:solid; border-color:#FA9C18; padding: 1px;"> 1. <strong> Make a commit <strong/> of your own changes in the local repository. <br> 2. <strong> Send your new commits to the remote <strong/> GitHub repository. <br> 3.  <strong> Retrieve any new changes <strong/> (that others made) from the remote GitHub repository.</p>
+> 1. <strong> Make a commit <strong/> of your own changes in the local repository. <br> 2. <strong> Send your new commits to the remote <strong/> GitHub repository. <br> 3.  <strong> Retrieve any new changes <strong/> (that others made) from the remote GitHub repository.
 
 Notes: When you work in a local version-controlled repository, there are generally three additional steps you must take as part of your regular workflow. In addition to just working on files—creating, editing, and deleting files as you normally would—you must tell Git when to:
 
