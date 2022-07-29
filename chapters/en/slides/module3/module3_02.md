@@ -25,7 +25,6 @@ Typically, when we put a data analysis project under version control, we create 
 
 Under the hood, Git only saves the changes between your versions, so it is also efficient in terms of disk space. Note that while Git works great for text files, such as code, it is not so great for binary files such as images.
 
-
 ---
 
 ## Tracking the repository history using commit messages
@@ -175,6 +174,7 @@ Notes:
 On the file browser tab, you will now see a folder for the repository. Inside this folder will be all the files that existed on GitHub
 
 ---
+
 ## 2. Cloning a repository using Jupyter Lab (terminal)
 
 <center>
