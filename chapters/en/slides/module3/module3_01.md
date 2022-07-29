@@ -80,4 +80,8 @@ Technically you don’t have to use a repository hosting service. You can, for e
 
 # Let's apply what we learned!
 
+Notes:
+
+<br>
+
 ---
