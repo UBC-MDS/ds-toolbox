@@ -2,15 +2,6 @@
 type: slides
 ---
 
-<style>
-blockquote {
-    margin: 0;
-    padding: 0 1em;
-    color: #57606;
-    border-left: .25em solid #d0d7de;
-}
-</style>
-
 # Module Learning Outcomes
 
 ---

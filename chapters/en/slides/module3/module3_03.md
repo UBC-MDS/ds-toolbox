@@ -3,6 +3,15 @@ type: slides
 title: 'module3_03'
 ---
 
+<style>
+blockquote {
+    margin: 0;
+    padding: 0 1em;
+    color: #57606;
+    border-left: .25em solid #d0d7de;
+}
+</style>
+
 # The staging area
 
 Notes:
