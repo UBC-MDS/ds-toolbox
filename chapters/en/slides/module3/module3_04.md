@@ -94,6 +94,14 @@ Notes:
 
 When committing changes, you need to include a title/summary for each message (the upper text box in JupyterLab). Optionally, you could also include a longer description for the commit in the next text box.
 
+You can see a good example of an informative title and long description in this slide. The general guideline for the title is to summarize the purpose of the commit as a short descriptive message. It is recommended to write your messages in imperative mood (imagine that your commit should complete the sentence "this commit will...") and start with a capital letter. You can [read more about how to write a good commit message in this article](https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/) and see a few examples below:
+
+- Bad messages:
+    - fixes an error
+    - added new code
+- Good messages:
+    - Reorder sections to make the README more welcoming
+    - Fix notebook error to allow for export with images
 
 ---
 
