@@ -144,51 +144,51 @@ When you are cloning a repository you are downloading a <code>.git</code> hidden
 <choice id=1>
 <opt text='Not all changes we make (i.e., files we create or edit) are ones that we want to push to our remote GitHub repository.'>
 
-This is partially correct. 
+This is partially correct.
 
 </opt>
 <opt text='It allows us to edit multiple files at once, but associate particular commit messages with those modifications (so that the commit messages can more specifically reflect the changes that were made).'>
 
-This is partially correct. 
+This is partially correct.
 
 </opt>
 <opt text='This is technically required of all version control software.'>
 
-The staging area it is mainly use in Git, that is not the only version control software available (but it is the most popular so far).
+Although a staging area is used in Git which is the most popular version control software, there are other software that use different approaches for version control.
 
 </opt>
-<opt text='A and C'>
+<opt text='Both the first and the third options are correct.'>
 
-It is possible to add more than one file to the staging area, using the `+` symbol next to the file in the **Staging area** section of JupyterLab or if you are using the terminal using the command <code>git add <file1> <file2> <file3></code> including the name of the files you are interested after.
+The third option is not correct. Although a staging area is used in Git which is the most popular version control software, there are other software that use different approaches for version control.
 
 </opt>
-<opt text='A and B' correct='true'>
+<opt text='Both the first and the second options are correct.' correct='true'>
 
 </opt>
 </choice>
 
-**True or false?**
+**True or False**
 
-The staging area doesn't exist on GitHub.
+The staging area doesn't exist in the GitHub web interface.
 
 <choice id=2>
 <opt text='True' correct='true'>
 </opt>
 <opt text='False'>
 
-There is not an equivalent to the staging area when you are working on GitHub. This means that you can commit the changes directly.
+There is no equivalent to the staging area when you are working with the GitHub web interface. This means that you will have to commit each change directly and can't e.g. combine changes from multiple files into the same commit directly via the web interface.
 
 </opt>
 </choice>
 
-You can add to the staging area both the changed and untracked files.
+Both changed and untracked files can be added to the staging area.
 
 <choice id=3>
 <opt text='True' correct='true'>
 </opt>
 <opt text='False'>
 
-Changed files or new files added to your repository (known as untracked) are possible to be staged and committed.
+Changed files and new (untracked) files can both be added to the staging area and then committed.
 
 </opt>
 </choice>
@@ -201,7 +201,7 @@ Changed files or new files added to your repository (known as untracked) are pos
 
 <exercise id='8' title='A commit in a bottle'>
 
-**True or false**
+**True or False**
 
 > When we **commit** our changes to Git, the record of changes, the commit message, the time and date stamp and the user who committed the changes are all saved to the Git history on GitHub.
 
