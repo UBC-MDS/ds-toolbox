@@ -52,9 +52,12 @@ Writing meaningful commit messages is really important. When commit messages are
 </center>
 
 Notes:
-**1. Jupyter Git extension icon (circled in red).**
+There are two required steps when creating a commit in JupyterLab,
+which we will explain in the next few slides.
 
-Now that you have cloned the remote repository from GitHub to create a local repository, you can get to work editing, creating, and deleting files. For example, suppose you created and saved a new file (named `eda.ipynb`) that you would like to send back to the project repository on GitHub. To “add” this modified file to the staging area (i.e., flag that this is a file whose changes we would like to commit), click the Jupyter Git extension icon on the far left-hand side of Jupyter.
+**Step 1. Click Jupyter Git extension icon (circled in red).**
+
+After you have cloned the remote repository from GitHub to create a local repository, you can get to work editing, creating, and deleting files. For example, suppose you created a new file named `eda.ipynb` that you would like to commit to the project history. To "add" this modified file to the staging area (i.e., flag that this is a file with changes we would like to commit), click the Jupyter Git extension icon on the far left-hand side of JupyterLab.
 
 ---
 
@@ -67,9 +70,13 @@ Now that you have cloned the remote repository from GitHub to create a local rep
 </center>
 
 Notes:
-**2. A commit message must be added into the Jupyter Git extension commit text box before the blue Commit button can be used to record the commit.**
+**Step 2. Add a commit message into the Jupyter Git extension commit text box before pressing the blue "Commit" button to commit the staged changes.**
 
-To snapshot the changes with an associated commit message, you must put a message in the text box at the bottom of the Git pane and click on the blue “Commit” button (see image). It is highly recommended to write useful and meaningful messages about what was changed. These commit messages, and the datetime stamp for a given commit, are the primary means to navigate through the project’s history in the event that you need to view or retrieve a past version of a file, or revert your project to an earlier state. When you click the “Commit” button for the first time, you will be prompted to enter your name and email. This only needs to be done once for each machine you use Git on.
+To commit the staged changes together with an associated commit message, you must write a message in the text box at the bottom of the Git pane and click on the blue "Commit" button (see image). It is highly recommended to write useful and meaningful messages about what was changed.
+
+These commit messages, and the time stamp for a given commit, are the primary means to navigate through the project’s history in the event that you need to view or retrieve a past version of a file, or revert your project to an earlier state.
+
+When you click the "Commit" button for the very first time, you will be prompted to enter your name and email. This only needs to be done once for each machine you use Git on, and is added as author information to the commit message.
 
 ---
 
@@ -82,9 +89,14 @@ To snapshot the changes with an associated commit message, you must put a messag
 </center>
 
 Notes:
-You need to include a title for your commit. If you wantm you can also include an optional description for the commit.
+
+(continuation of step 2)
+
+When committing changes, you need to include a title/summary for each message (the upper text box in JupyterLab). Optionally, you could also include a longer description for the commit in the next text box.
+
 
 ---
+
 ## JupyterLab: Making the commit
 
 
@@ -96,11 +108,10 @@ You need to include a title for your commit. If you wantm you can also include a
 
 
 Notes:
-**3. After recording a commit, the staging area should be empty.**
-
-After “committing” the file(s), you will see there are 0 “Staged” files. You are now ready to push your changes to the remote repository on GitHub
+After recording a commit, the staging area should be empty and you will see that there are 0 staged files. You are now ready to push your changes to the remote repository on GitHub, which we will show you how to do in the next slide deck.
 
 ---
+
 ## JupyterLab: Making the commit
 
 
@@ -112,7 +123,7 @@ After “committing” the file(s), you will see there are 0 “Staged” files.
 
 
 Notes:
-If the file has been committed, you are going to be able to detect it in the History tab. You have tracked this change and now part of the history of your project!
+After the changes have been successfully committed, you can view them in the History tab together with your message. You have now tracked this change and made it part of the history of your project!
 
 ---
 ## JupyterLab's terminal: Making the commit
