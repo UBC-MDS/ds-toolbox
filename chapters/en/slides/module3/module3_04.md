@@ -14,9 +14,10 @@ title: 'module3_04'
 
 <img src='/module3/vc-commit.png' width="100%" alt="404 image"/>
 
-<center/>
+</center>
 
-Notes: **Committing the modified files in the staging area to the local repository history, with an informative message about what changed.** 
+Notes:
+** to the local repository history, with an informative message about what changed.** 
 
 Once the files we wish to commit have been added to the staging area, we can then commit those files to the repository history. When we do this, we are required to include a helpful commit message to tell collaborators (which often includes future you!) about the changes that were made.
 
@@ -33,11 +34,12 @@ In image, the message is `"Message about changes..."`; in your work you should m
 
 <img src='/module3/vc-commit.png' width="80%" alt="404 image"/>
 
-<center/>
+</center>
 
 <a href="https://xkcd.com/1296/">Image extracted from xkcd.com</a>
 
-Notes: Writting meaningful commit messages it is really important. When commit messages are too vague (`code additions` or `Add some stuff`) could be difficult to interpret for other collaborators, or even ourselves in the future. Selecting clear and descriptive commit messages increases the quality of your project and facilitates collaborative work. 
+Notes:
+Writting meaningful commit messages it is really important. When commit messages are too vague (`code additions` or `Add some stuff`) could be difficult to interpret for other collaborators, or even ourselves in the future. Selecting clear and descriptive commit messages increases the quality of your project and facilitates collaborative work. 
 
 
 
@@ -51,9 +53,10 @@ Notes: Writting meaningful commit messages it is really important. When commit m
 
 <img src='/module3/vc-commits-jupyter.png' width="90%" alt="404 image"/>
 
-<center/>
+</center>
 
-Notes: **1. Jupyter Git extension icon (circled in red).**
+Notes:
+**1. Jupyter Git extension icon (circled in red).**
 
 Now that you have cloned the remote repository from GitHub to create a local repository, you can get to work editing, creating, and deleting files. For example, suppose you created and saved a new file (named `eda.ipynb`) that you would like to send back to the project repository on GitHub. To “add” this modified file to the staging area (i.e., flag that this is a file whose changes we would like to commit), click the Jupyter Git extension icon on the far left-hand side of Jupyter.
 
@@ -65,9 +68,10 @@ Now that you have cloned the remote repository from GitHub to create a local rep
 
 <img src='/module3/vc-commits-jupyter-4_1.png' width="90%" alt="404 image"/>
 
-<center/>
+</center>
 
-Notes: **2. A commit message must be added into the Jupyter Git extension commit text box before the blue Commit button can be used to record the commit.**
+Notes:
+**2. A commit message must be added into the Jupyter Git extension commit text box before the blue Commit button can be used to record the commit.**
 
 To snapshot the changes with an associated commit message, you must put a message in the text box at the bottom of the Git pane and click on the blue “Commit” button (see image). It is highly recommended to write useful and meaningful messages about what was changed. These commit messages, and the datetime stamp for a given commit, are the primary means to navigate through the project’s history in the event that you need to view or retrieve a past version of a file, or revert your project to an earlier state. When you click the “Commit” button for the first time, you will be prompted to enter your name and email. This only needs to be done once for each machine you use Git on.
 
@@ -79,9 +83,10 @@ To snapshot the changes with an associated commit message, you must put a messag
 
 <img src='/module3/vc-commits-jupyter-4_2.png' width="90%" alt="404 image"/>
 
-<center/>
+</center>
 
-Notes: You need to include a title for your commit. If you wantm you can also include an optional description for the commit.
+Notes:
+You need to include a title for your commit. If you wantm you can also include an optional description for the commit.
 
 ---
 ## JupyterLab: Making the commit
@@ -91,10 +96,11 @@ Notes: You need to include a title for your commit. If you wantm you can also in
 
 <img src='/module3/vc-commits-jupyter-5.png' width="90%" alt="404 image"/>
 
-<center/>
+</center>
 
 
-Notes: **3. After recording a commit, the staging area should be empty.**
+Notes:
+**3. After recording a commit, the staging area should be empty.**
 
 After “committing” the file(s), you will see there are 0 “Staged” files. You are now ready to push your changes to the remote repository on GitHub
 
@@ -106,10 +112,11 @@ After “committing” the file(s), you will see there are 0 “Staged” files.
 
 <img src='/module3/vc-commits-jupyter-5_2.png' width="90%" alt="404 image"/>
 
-<center/>
+</center>
 
 
-Notes: If the file has been committed, you are going to be able to detect it in the History tab. You have tracked this change and now part of the history of your project!
+Notes:
+If the file has been committed, you are going to be able to detect it in the History tab. You have tracked this change and now part of the history of your project!
 
 ---
 ## JupyterLab's terminal: Making the commit
@@ -119,9 +126,10 @@ Notes: If the file has been committed, you are going to be able to detect it in 
 
 <img src="/module3/vc-commit-jl-terminal.png" alt="404 image" style="width:75%">
  
-<center/> 
+</center> 
 
-Notes:  In the case you don't want to add so many details and only write a title, you can use the shorter version of the command including the flag `-m`:
+Notes:
+ In the case you don't want to add so many details and only write a title, you can use the shorter version of the command including the flag `-m`:
 
 `git commit -m "Create an eda notebook"`
 
@@ -135,7 +143,8 @@ Notes:  In the case you don't want to add so many details and only write a title
 
 
 
-Notes: To include a description in your commit using the terminal, you should write the command `git commit` and press ENTER. After doing that, a file called `COMMIT_EDITMSG` will open in your editor. There you can write the title and body of the commit message that you want to associate with your changes.
+Notes:
+To include a description in your commit using the terminal, you should write the command `git commit` and press ENTER. After doing that, a file called `COMMIT_EDITMSG` will open in your editor. There you can write the title and body of the commit message that you want to associate with your changes.
 
 
 
