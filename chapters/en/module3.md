@@ -317,15 +317,21 @@ Cloning is downloading the repository for the first time, including the project 
 
 </opt>
 <opt text='Pushing with Git is the act of sending changes that were committed to Git to a remote repository, for example, on GitHub.com.'>
+
+Pushing updates the remote repository with any changes committed in your remote repository.
 </opt>
-<opt text='Pulling with Git is the act of collecting changes that exists in a remote repository, for example, on github.com, that do not yet exist on the local computer you are working on'>
+<opt text='Pulling with Git is the act of collecting changes that exists in a remote repository, for example, on GitHub.com, that do not yet exist on the local computer you are working on'>
+
+Pulling updates your local repository with any changes existing in the remote repository.
 </opt>
-<opt text='You should push your work to GitHub anytime you want to share your work with others, or when you are done a work session and want to back up your work.'>
+<opt text='You should push your work to GitHub anytime you want to share your work with others, or when you finish a work session and want to back up your work.'>
+
+These are both good reasons to push your changes to GitHub.com.
 </opt>
 </choice>
 
 
-If you are working on a GitHub repository that is frecquently updated by other colleagues. What is a recommended step before start working locally?
+If you are working on a GitHub repository that is frequently updated by other colleagues. What is a recommended step before start working locally?
 
 
 <choice id=4>
@@ -336,7 +342,7 @@ The repository should be cloned only the first time you start working on a proje
 <opt text='Stage the files you are interested to work on'>
 You need to add to the staging area the changes on the files you are interested to commit and make part of your project history. You are already working locally on this step, the question is referring to a previous step.
 </opt>
-<opt text='Pull the remote changes to your computer'>
+<opt text='Pull the remote changes to your computer' correct='true'>
 </opt>
 </choice>
 </exercise>
