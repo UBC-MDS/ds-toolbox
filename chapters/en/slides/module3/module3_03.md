@@ -159,6 +159,14 @@ If you want to add the files to the staging area using the terminal you can use 
 Notes:
 Working in the terminal you can add many files at the same time listing them after `git add`.
 
+A very command to use in the terminal is `git add -p`.
+This allows you to interactively choose which part of each file to add
+by answering either `y` (yes) or `n` (no)
+to the messages that prompts you about which parts you want to add to the staging area.
+This way you can add just some changes in a file,
+which is helpful when trying to include only the relevant changes in each commit
+and ensuring that you can describe all your changes in a short commit message.
+
 ---
 
 # Let's apply what we learned!
