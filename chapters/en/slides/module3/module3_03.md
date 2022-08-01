@@ -88,7 +88,10 @@ Notes:
 To add changes we have made to a file to the staging area through the JupyterLab,
 we can use the small plus sign (`+`).
 In this screenshot,
-we are adding the notebook file `eda.ipynb` to our project's staging area.
+we are adding the notebook file `eda.ipynb` to our project's staging area
+("eda" stands for "Exploratory Data Analysis",
+and is something we often do at the beginning of our project
+in order to familiarize ourselves with our dataset).
 
 Note that because if this was the first change we ever made to this file,
 it would have shown up under the `Untracked` heading in the side panel,
