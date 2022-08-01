@@ -34,7 +34,7 @@ In the screenshot in this slide, the commit message is `"Message about changes..
 
 </center>
 
-<a href="https://xkcd.com/1296/">Image extracted from xkcd.com</a>
+<a href="https://xkcd.com/1296/">Image from xkcd.com</a>
 
 Notes:
 Writing meaningful commit messages is really important. When commit messages are too vague (`code additions` or `Add some stuff`) it will be difficult to interpret for our collaborators, including ourselves in the future. Writing clear and descriptive commit messages increases the quality of your project and facilitates collaborative work.
@@ -65,7 +65,7 @@ After you have cloned the remote repository from GitHub to create a local reposi
 
 <center>
 
-<img src='/module3/vc-commits-jupyter-4_1.png' width="90%" alt="404 image"/>
+<img src='/module3/vc-commits-jupyter-4_1.png' width="80%" alt="404 image"/>
 
 </center>
 
@@ -84,13 +84,13 @@ When you click the "Commit" button for the very first time, you will be prompted
 
 <center>
 
-<img src='/module3/vc-commits-jupyter-4_2.png' width="90%" alt="404 image"/>
+<img src='/module3/vc-commits-jupyter-4_2.png' width="80%" alt="404 image"/>
 
 </center>
 
 Notes:
 
-(continuation of step 2)
+**Step 2 continued**
 
 When committing changes, you need to include a title/summary for each message (the upper text box in JupyterLab). Optionally, you could also include a longer description for the commit in the next text box.
 
@@ -110,7 +110,7 @@ You can see a good example of an informative title and long description in this 
 
 <center>
 
-<img src='/module3/vc-commits-jupyter-5.png' width="90%" alt="404 image"/>
+<img src='/module3/vc-commits-jupyter-5.png' width="80%" alt="404 image"/>
 
 </center>
 
@@ -134,34 +134,32 @@ Notes:
 After the changes have been successfully committed, you can view them in the History tab together with your message. You have now tracked this change and made it part of the history of your project!
 
 ---
-## JupyterLab's terminal: Making the commit
+
+## Terminal: Making the commit
 
 
 <center>
 
-<img src="/module3/vc-commit-jl-terminal.png" alt="404 image" style="width:75%">
- 
-</center> 
+<img src="/module3/vc-commit-jl-terminal.png" alt="404 image" width="70%">
+
+</center>
 
 Notes:
- In the case you don't want to add so many details and only write a title, you can use the shorter version of the command including the flag `-m`:
+In the case you don't want to add so many details and only write a title, you can use the shorter version of the command including the flag `-m`:
 
 `git commit -m "Create an eda notebook"`
 
 ---
-## JupyterLab's terminal: Making the commit
+
+## Terminal: Making the commit
 
 
 <center>
 
-<img src="/module3/vc-commit-jl-terminal-editor.png" alt="404 image" style="width:25%">
-
-
+<img src="/module3/vc-commit-jl-terminal-editor.png" alt="404 image" width="70%">
 
 Notes:
 To include a description in your commit using the terminal, you should write the command `git commit` and press ENTER. After doing that, a file called `COMMIT_EDITMSG` will open in your editor. There you can write the title and body of the commit message that you want to associate with your changes.
-
-
 
 ---
 
