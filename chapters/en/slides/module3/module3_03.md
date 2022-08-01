@@ -108,18 +108,15 @@ which why it showed up under the `Changed` heading in the side panel.
 </center>
 
 Notes:
-**2. Adding `eda.ipynb` makes it visible in the staging area.** 
+Clicking the plus sign (+) moves the file from the `Untracked` heading to the `Staged` heading, so that Git knows you want a snapshot of its current state as a commit (see image). Now you are ready to `commit` the changes. When committing it is important to include a (clear and helpful!) message about what was changed so that your collaborators (and future you) know what happened in this commit, something we will learn more about in the next slide deck.
 
-You will also see an `eda-checkpoint.ipynb` file under the `Untracked` heading. This is a temporary “checkpoint file” created by Jupyter when you work on `eda.ipynb`. You generally do not want to add auto-generated files to Git repositories; only add the files you directly create and edit.
-
-Clicking the plus sign (+) moves the file from the `Untracked` heading to the `Staged` heading, so that Git knows you want a snapshot of its current state as a commit (see image). Now you are ready to `commit` the changes. Make sure to include a (clear and helpful!) message about what was changed so that your collaborators (and future you) know what happened in this commit.
-
+Note that you will also see an `eda-checkpoint.ipynb` file under the `Untracked` heading in the side panel. This is a temporary “checkpoint file” created by Jupyter when you work on `eda.ipynb`. You generally do not want to add auto-generated files like this one to Git repositories; only add the files you directly create and edit.
 
 ---
 
 ## JupyterLab terminal: Specifying files to commit
 
-To check the status of the files using the terminal (`Untracked` / `Changed` / `Staged`) you can use the command `git status`
+To check the status of the files using the terminal (`Untracked` / `Changed` / `Staged`) you can use the command `git status`.
 
 <center>
 
@@ -128,14 +125,24 @@ To check the status of the files using the terminal (`Untracked` / `Changed` / `
 </center>
 
 Notes:
-Before adding files to the staging area you can check the status of the files using the `git status` command. You can verify that this command gives you the same information as JupyterLab about which files are `Untracked`, `Changed` or `Staged`.
+
+If you would be using the terminal outside JupyterLab,
+you would not have access to the side panel
+that shows which files are  `Untracked`, `Changed`, and `Staged`.
+To check the status of all files in your repository using the terminal
+you can instead use the command `git status`.
+In this slide you can see how the different parts of the output from `git status`
+corresponds to the JupyterLab side panel.
+
 An advantage of using this command if you are working in the terminal is that it gives you information on which commands to use to continue your workflow. For example, for files that are under the `Changes not staged for commit` area,it is suggesred to use the command `git add <file>` to include them into the staging area.
 
 ```
 Changes not staged for commit:
    (use "git add <file>..." to update what will be committed)
 ```
+
 We recommend using `git status` / checking the staging area before each commit to make sure you are committing what you think you are.
+
 ---
 
 ## JupyterLab terminal: Specifying files to commit
