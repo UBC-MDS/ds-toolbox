@@ -30,7 +30,7 @@ In the screenshot in this slide, the commit message is `"Message about changes..
 
 <center>
 
-<img src='/module3/commit-messages-comic.png' width="80%" alt="404 image"/>
+<img src='/module3/commit-messages-comic.png' width="70%" alt="404 image"/>
 
 </center>
 
@@ -129,7 +129,6 @@ After recording a commit, the staging area should be empty and you will see that
 
 </center>
 
-
 Notes:
 After the changes have been successfully committed, you can view them in the History tab together with your message. You have now tracked this change and made it part of the history of your project!
 
@@ -145,9 +144,13 @@ After the changes have been successfully committed, you can view them in the His
 </center>
 
 Notes:
-In the case you don't want to add so many details and only write a title, you can use the shorter version of the command including the flag `-m`:
-
-`git commit -m "Create an eda notebook"`
+The equivalent terminal command for making a commit
+with a title and long description,
+is to type `git commit` inside Bash and press enter.
+This will open your default text editor
+with a temporary file called `COMMIT_EDITMSG`
+where you can type in the commit message
+as shown in the next slide.
 
 ---
 
@@ -159,7 +162,29 @@ In the case you don't want to add so many details and only write a title, you ca
 <img src="/module3/vc-commit-jl-terminal-editor.png" alt="404 image" width="70%">
 
 Notes:
-To include a description in your commit using the terminal, you should write the command `git commit` and press ENTER. After doing that, a file called `COMMIT_EDITMSG` will open in your editor. There you can write the title and body of the commit message that you want to associate with your changes.
+Your default text editor should be VS Code
+if you followed the setup steps in the first assignment.
+If you didn't, you might end up in a text editor called `vim`
+that runs inside the terminal
+as shown in this slide.
+`vim` is powerful,
+but has a steep learning curve,
+so in case this happens,
+you can exit `vim` by typing `:q`
+and then pressing `Enter`.
+Then you can go back
+and make sure that VS Code is your default editor
+by following the instructions in the first assignment.
+
+Often,
+a descriptive summary in the title field is sufficient
+and we don't need to write out a long description.
+When this is the case,
+you can use the shorter version of the command `git commit` command with option `-m`,
+which allows you to type in the title summary
+together with the command:
+
+`git commit -m "Create an eda notebook"`
 
 ---
 
