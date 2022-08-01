@@ -203,40 +203,39 @@ Changed files and new (untracked) files can both be added to the staging area an
 
 **True or False**
 
-> When we **commit** our changes to Git, the record of changes, the commit message, the time and date stamp and the user who committed the changes are all saved to the Git history on GitHub.
+> When we **commit** our changes to Git the record of changes, the commit message, the timestamp and the user who committed the changes are all uploaded to the Git history on GitHub.
 
 <choice id='1'>
-<opt text='true'>
+<opt text='True'>
 
-Committing your changes only puts them in the Git history on the local computer you are working on. To get the changes on GitHub you need to do an additional step of pushing the changes to the remote repository on GitHub.
+Committing your changes only puts them in the Git history on the local computer you are working on. To get the changes on GitHub you need to do an additional step of pushing the changes to the remote repository on GitHub which we will learn about in the next slide deck.
 
 </opt>
-<opt text='false' correct='true'>
+<opt text='False' correct='true'>
 
 You're right! The changes (and all the associated information) are not yet on GitHub, they are only in the Git history on the local computer you are working on (i.e., your workspace on the JupyterHub or your laptop).
 
 </opt>
 </choice>
 
-When working on a project that is under version control you should `commit` to you local Git repository:
+When working on a project that is under version control, how often should you `commit` to your local Git repository?
 
 <choice id='2'>
 <opt text='After every new unit/addition/fix you add to the project' correct='true'>
 </opt>
 <opt text='2-3 times'>
 
-How many important changes do you incude in your project? More than the number of times, it is about the number of relevant changes. Think of this commits as checkpoints you can revisit if something goes wrong.
+How many important changes did you include in your project? Rather than the absolute number of commits, it is more important to focus on the number of relevant changes. Think of the commits as checkpoints you can revisit if something goes wrong.
 
 </opt>
-<opt text='only once, shortly before the deadline'>
+<opt text='Only once, shortly before the deadline'>
 
-
-Imagine that minutes before the deadline you realized you was wrong about your last changes. Git allow you to revert your project to a particular past commit! But if you have not tracked yuor changes eith some frecquency it wouldn't be possible! It is a good practice to commit each time you add, edit, fix or remove important units of the project.
+Imagine that minutes before the deadline you realized you shouldn't have made your last changes. Git allow you to revert your project to a particular past commit! But if you have not tracked your changes frequently it wouldn't be possible! It is a good practice to commit each time you add, edit, fix or remove important units of the project.
 
 </opt>
-<opt text='obsessively, like every 5 minutes'>
+<opt text='Obsessively, like every 5 minutes'>
 
-Are you sure you are committing only the relevant changes? You are spending probably too much time writting meaningful commit messages. Also, think that if you want to revert your project to a particular commit, you will probably spend time finding the exact commit you want.
+Are you sure you are committing only the relevant changes? You are probably spending too much time writing meaningful commit messages. Also, if you want to revert your project to a particular commit, you will probably spend too much time finding the exact commit you want, since not all of them are for a meaningful change.
 
 </opt>
 </choice>
@@ -245,10 +244,10 @@ Which command(s) below would save the changes of `README.md` to my local Git rep
 
 <choice id='3'>
 <opt text='<code>git init README.md</code> and <code>git commit -m "Add authors and copyright"</code>' >
-What does the command <code>git init</code> does?
+What does the command <code>git init</code> do? You can read the manual to find out: `man git init` or `git init --help`.
 </opt>
 <opt text='<code>git commit -m "Add authors and copyright"</code>'>
-Have you include the README.md file in the staging area?
+Have you included the README.md file in the staging area?
 </opt>
 <opt text='<code>git add README.md</code> and <code>git commit -m "Add authors and copyright"</code>'  correct='true'>
 </opt>
