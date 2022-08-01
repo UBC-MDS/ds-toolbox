@@ -3,12 +3,15 @@ type: slides
 title: 'module3_04'
 ---
 
-# Committing changes to a local repository 
+# Committing changes to a local repository
+
+Notes:
+In this slide deck we will see how we can commit our staged changes
+to the repository on our computer.
 
 ---
 
-## Committing changes to a local repository 
-
+## Committing the modified files in the staging area
 
 <center>
 
@@ -17,35 +20,28 @@ title: 'module3_04'
 </center>
 
 Notes:
-** to the local repository history, with an informative message about what changed.** 
+Once the files we wish to commit have been added to the staging area, we can then "commit" those files to add them to the repository history. When we do this, we are required to include an informative message briefly describing the purpose of the changes we made. This message will be helpful to explain why the changes were made to your collaborators. Remember that your most common collaborator is a future version of yourself, and that it is very easy to forget why made a particular change a few month ago!.
 
-Once the files we wish to commit have been added to the staging area, we can then commit those files to the repository history. When we do this, we are required to include a helpful commit message to tell collaborators (which often includes future you!) about the changes that were made.
-
-In image, the message is `"Message about changes..."`; in your work you should make sure to replace this with an informative message about what changed. It is also important to note here that these changes are only being committed to the local repository’s history. The remote repository on GitHub has not changed, and collaborators would not yet be able to see your new changes.
-
+In the screenshot in this slide, the commit message is `"Message about changes..."`; in your work you should make sure to replace this with an informative message about what you changed. It is also important to note that these changes are only being committed to the history of the local repository's on your computer. The remote repository on GitHub has not changed, and collaborators would not yet be able to see your new changes online.
 
 ---
 
 ## Committing to add sections to your project history
 
-
-
 <center>
 
-<img src='/module3/vc-commit.png' width="80%" alt="404 image"/>
+<img src='/module3/commit-messages-comic.png' width="80%" alt="404 image"/>
 
 </center>
 
 <a href="https://xkcd.com/1296/">Image extracted from xkcd.com</a>
 
 Notes:
-Writting meaningful commit messages it is really important. When commit messages are too vague (`code additions` or `Add some stuff`) could be difficult to interpret for other collaborators, or even ourselves in the future. Selecting clear and descriptive commit messages increases the quality of your project and facilitates collaborative work. 
-
-
+Writing meaningful commit messages is really important. When commit messages are too vague (`code additions` or `Add some stuff`) it will be difficult to interpret for our collaborators, including ourselves in the future. Writing clear and descriptive commit messages increases the quality of your project and facilitates collaborative work.
 
 ---
 
-### JupyterLab: Making the commit
+## JupyterLab: Making the commit
 
 🙌 Let's commit the files that are in the staging area
 
