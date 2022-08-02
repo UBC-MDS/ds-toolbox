@@ -5,6 +5,9 @@ title: 'module4_02'
 
 # Comparing commits
 
+Notes:
+In this slide deck we will see how we can visualize the changes between two commits.
+
 ---
 
 ## Comparing commits
@@ -15,76 +18,105 @@ title: 'module4_02'
 
 </center>
 
-Notes: What are the changes introduced between two commits? Whe have already learned three different ways to check your project history. Basically your project history is a temporary line with the changes (commits) made in your project along with its message and commit id or hash.
-We can have access to this information on GitHub, and locally using the terminal and Jupyter Lab.
+Notes:
+We have just learned how to check your project's commit history
+using GitHub, JupyterLab, and the terminal.
+In this history view,
+we could see some key information about each commit
+such as when it was made and who made it.
 
-But what if we want to go more into the detail and see exactly what have changed between two commits? What lines have been modified?
+But what if we want to go more into the detail and see exactly what have changed between two commits? What lines have been modified in which files?
 
-In the image you can see the comparison between two commits. In read is the old commit and in green is the most recent one. On the commit on the right has been introduced the phrase *"I have changed!* in line number 3 between the commits 35c218 and 89e195.
+In this slide you can see the comparison between two commits for a single file (`instructions.txt`). The version of the file to the left is the older (commit `35c218`)
+and the version to the right is more recent (commit `89e195`)
+The green and red highlights indicate that there has been one line changed between these two commits:
+The phrase *"I have changed!* in line number three
+has been introduced between the commits 35c218 and 89e195.
 
-This is the way we compare commits, let's see how we can access this view in the different platforms.
+This type of comparison is called the "diff" (difference) between commits,
+and you can probably already appreciate that this type of comparison can be helpful to understand what has changed,
+so let's explore how we can access this view in JupyterLab, the terminal, and on GitHub.
 
 ---
-## 🙌 Differences between commits (JupyterLab)
+
+## 🙌 Differences between commits: JupyterLab
 
 <center>
 
 <img src='/module4/diff-commits-jl.png' width="90%" alt="404 image"/>
 
 </center>
- 
+
 Notes:
-
-To see the different between commits you have to go to the tab **History**.
-
-Select the commit you want to compare and click in the file icon with the `+` and `-` symbols on it as you can see on the image.
-
-In case you don't see the options pay attention to click on the small arrow that looks down in the upper right corner to display the information.
+To see the difference between commits in JupyterLab,
+you first need to open the **History** tab.
+Select the commit you want to compare
+and click in the file icon with the `+` and `-` symbols on it as you can see in this slide.
+In case you don't see these icons,
+you need to click on the small down arrow that in the upper right corner of the commit.
 
 By default you are going to compare the information with the last commit.
 
 ---
-## 🙌 Differences between commits (JupyterLab)
+
+## 🙌 Differences between commits: JupyterLab
 
 <center>
 
 <img src='/module4/diff-commits-distant-jl.png' width="90%" alt="404 image"/>
 
 </center>
- 
-Notes: If you want to compare commits that are more distant among each other you can click the symbol of the file with the left pointing arrow in the newest commit and then the icon of the right poiting arrow in the oldest commit you want to compare.
+
+Notes:
+If you want to compare against another commit than the most recent one, you can click the symbol of the file with the left pointing arrow in the newest commit and then the icon of the right pointing arrow in the oldest commit you want to compare against.
 A new tab will be open in the bottom of the screen. There you can select the file you would like to compare.
 
 ---
-## 🙌 Differences between commits (the terminal)
+
+## 🙌 Differences between commits: Terminal
 
 <center>
 
 <img src='/module4/diff-commits-t.png' width="90%" alt="404 image"/>
 
 </center>
- 
-Notes: As always that we use the terminal we have more flexibility with the use of the commands.
 
-Let's compare two commits the same as we did with JupyterLab. For this we will use the command `git diff <commit 1 id> <commit 2 id>`. You can see in the output that between these 2 commits we have differences in two files: `afile.txt` and `instructions.txt`. That is why in JupyterLab we have to go to that special tab to select the file with changes!
+Notes:
+As we have seen before,
+the terminal is often more flexible
+than the graphical user interface
+and the same is true when comparing commits.
 
-In this case, as we are comparing it with the newest commit, this will be equal to specifying only one commit id (the oldest one) doing `git diff 9a83b69`.
+Let's first compare two commits the same way as we did with JupyterLab. For this we will use the command `git diff <commit 1 id> <commit 2 id>` as in the slide.
+You can see in the diff output that between these two commits there are changes in two files: `afile.txt` and `instructions.txt`.
+This is why we earlier had to go to that special box to select the file with changes in JupyterLab!
 
-You can see the difference in both files using `diff --git a/afile.txt b/afile.txt` and `diff --git a/instructions.txt b/instructions.txt` (note for the reviewer: this should be corrected after the image is final. The output should be explained).
+Just as in JupyterLab,
+the default is to compare the specified commit with the most recent one
+so what we wrote about would be equal to specifying only one commit id
+(the oldest one) doing `git diff 9a83b69`,
+since `89e195e` is the most recent commit.
 
+Note that `git diff` is useful for comparing files outside git repositories as well.
+You can use `git diff <file 1> <file 2>` to see all the differences between two text files
+in the familiar `git diff` format.
 
 ---
-## 🙌 Differences between commits (GitHub)
+
+## 🙌 Differences between commits: GitHub
 
 <center>
 
 <img src='/module4/diff-github.png' width="90%" alt="404 image"/>
 
 </center>
- 
-Notes: Is it possible to visualize differences among commits in the remote?
 
-Yes, it is! You can add to the url of your repository the following end `/compare/<commit 1 id>..<commit 2 id>`, reeplacing with the commits hash of your interest and you will access a view as the one you can see in the slide.
+Notes:
+So far we have seen how to compare commits locally in JupyterLab and via the terminal.
+What about visualizing the differences between commits directly on GitHub,
+is that possible?
+
+Yes, it is! There is no way to click in the GitHub web interface, but you can append add the following to your repository's URL `/compare/<commit 1 id>..<commit 2 id>` (substituting in the commits hashes to compare) and you will access the view that you can see in this slide.
 
 Pay attention to use 7 characters for the commits id, if not is not going to work! Give it a try in one of your repositories!
 
