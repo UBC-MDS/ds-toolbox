@@ -105,10 +105,10 @@ How could you make this same comparison using `git diff` from the command line h
 <code>9021b83</code> is the SHA-1 of the last commit, what would you like to compare it with?
 </opt>
 <opt text='<code>git diff 1bb5ab8</code>' >
-That's right, but there is also other correct option!
+That's right, but there is also another correct option!
 </opt>
 <opt text='<code>git diff 1bb5ab8 9021b83</code>' >
-That's right, but there is also other correct option!
+That's right, but there is also another correct option!
 </opt>
 <opt text='The first and third options are both correct' >
 In the first option, <code>9021b83</code> is the SHA-1 of the last commit, what would you like to compare it with?
@@ -158,25 +158,29 @@ You can hard-reset your work in both cases, but one of the options could cause p
 
 Which of the following statements are TRUE about `git revert`?
 
-
 <choice>
-<opt text='This command creates a new commit that undoes the changes from a previous commit.' >
+<opt text='This command creates a new commit that undoes the changes from previous commits.' >
 </opt>
+That's right, but there is also another correct option!
 <opt text='This command undoes the changes in your project up to the commit id that you have specified.'>
+That's right, but there is also another correct option!
 </opt>
-<opt text='This command makes the history of the project shorter (deletes commits)'>
+<opt text='This command makes the history of the project shorter by deleting commits'>
+Resetting deletes commits, but reverting does not.
 </opt>
 <opt text='This command is used to undo changes in your working directory that have not been comitted yet.'>
+We cannot use revert for this task.
 </opt>
-<opt text='A and B are correct' correct='true'>
+<opt text='The first and second options are both correct' correct='true'>
 </opt>
-<opt text='A and C are correct'>
+<opt text='The first and third options are both correct'>
+Is the third options really correct?
 </opt>
 </choice>
 
 You are writing a book using version control. In your local repository, you have a text file for each chapter. Today, after reading your work again you decided to move some of the text you have written for `chapter3.md` to `chapter1.md`. How would you save this change using Git?
 
-<choice>
+<choice id=2>
 <opt text='I would cut and copy the text into a new file, add both files to the staging area, and then commit with a message explaining the changes.' correct='true'>
 
 </opt>
