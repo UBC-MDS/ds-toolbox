@@ -3,9 +3,10 @@ type: slides
 title: 'module4_04'
 ---
 
-# Revert your changes
+# Revert changes made to your git project
 
 ---
+
 # Revert your changes
 
 

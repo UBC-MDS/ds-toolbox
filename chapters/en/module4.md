@@ -119,7 +119,7 @@ Writing the newest commit is not necessary. If you write only one commit (that i
 </choice>
 </exercise>
 
-<exercise id='5' title="Restoring an older version of a file"  type='slides, video'>
+<exercise id='5' title="Reset your Git project to an earlier state"  type='slides, video'>
 <slides source='module4/module4_03' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
@@ -170,7 +170,7 @@ You can hard-reset your work in both cases, but one of the options could cause p
 </choice>
 </exercise>
 
-<exercise id='7' title='Revert your changes' type='slides, video'>
+<exercise id='7' title='Revert changes made to your Git project' type='slides, video'>
 <slides source='module4/module4_04' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
