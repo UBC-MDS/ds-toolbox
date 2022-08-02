@@ -206,7 +206,7 @@ When you do a hard reset, you are deleting the history of your project up to a p
 
 <exercise id='10' title='Test Your Knowledge'>
 
-What do you have to do if you are working with the terminal and you want to write a different text for this merge conflict?
+What do you have to do if you are working with the terminal and you want to write a different text for this merge conflict? 
 
 <choice>
 <opt text='Accept current change' >
@@ -220,8 +220,6 @@ What do you have to do if you are working with the terminal and you want to writ
 
 </choice>
 </exercise>
-
-
 
 
 <exercise id='11' title='.gitgnore'  type='slides, video'>
