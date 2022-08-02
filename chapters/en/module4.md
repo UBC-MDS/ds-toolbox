@@ -98,23 +98,23 @@ try reversing the order of the commits to `1bb5ab8..9021b83` and you will see.).
 </opt>
 </choice>
 
-How would realice this comparison using the command line? https://github.com/UBC-MDS/equine_numbers_value_canada/compare/1bb5ab8..9021b83
+How could you make this same comparison using `git diff` from the command line https://github.com/UBC-MDS/equine_numbers_value_canada/compare/1bb5ab8..9021b83?
 
 <choice id=4>
-<opt text='<b>A.</b><code>git diff 9021b83</code>' >
+<opt text='<code>git diff 9021b83</code>' >
 <code>9021b83</code> is the SHA-1 of the last commit, what would you like to compare it with?
 </opt>
-<opt text='<b>B.</b><code>git diff 1bb5ab8</code>' >
-But there is also other correct option!
+<opt text='<code>git diff 1bb5ab8</code>' >
+That's right, but there is also other correct option!
 </opt>
-<opt text='<b>C.</b><code>git diff 1bb5ab8 9021b83</code>' >
-But there is also other correct option!
+<opt text='<code>git diff 1bb5ab8 9021b83</code>' >
+That's right, but there is also other correct option!
 </opt>
-<opt text='A and C are correct' >
-IN the option <b>A.</b>, <code>9021b83</code> is the SHA-1 of the last commit, what would you like to compare it with?
+<opt text='The first and third options are both correct' >
+In the first option, <code>9021b83</code> is the SHA-1 of the last commit, what would you like to compare it with?
 </opt>
-<opt text='B and C are correct' correct='true' >
-Writing the newest commit is not necessary. If you write only one commit (that is not the newest one) it will compare it with the last one without specifing anything else.
+<opt text='The second and third option are both B correct' correct='true' >
+Writing the newest commit is not necessary. If you write only one commit (that is not the newest one) it will compare it with the last one without specifying anything else.
 </opt>
 </choice>
 </exercise>
