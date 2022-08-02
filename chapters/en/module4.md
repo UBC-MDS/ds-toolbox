@@ -26,29 +26,30 @@ id: 4
 Clone the repo https://github.com/UBC-MDS/equine_numbers_value_canada. What is the hash or the first commit of the project? 
 
 <choice id=1>
-<opt text='<b>A.</b> cc400df4b2a382f653abd0d9e514f6daae98d2ad'>
+<opt text='cc400df4b2a382f653abd0d9e514f6daae98d2ad'>
 Is the first commit of the project or the first commit of the user flor14?
 </opt>
-<opt text='<b>B.</b> e98d2ad'>
+<opt text='e98d2ad'>
 To use a shorter version of a SHA you should select the first characters, not the last ones.
 </opt>
-<opt text='<b>C.</b> cc400df'>
+<opt text='cc400df'>
 Is the first commit of the project or the first commit of the user flor14?
 </opt>
-<opt text='<b>D.</b> 0896801'>
-Why D is incorrect?
+<opt text='0896801'>
+This is correct, but there is one more correct answer.
 </opt>
-<opt text='<b>E.</b> 0896801fdd38d461414e0b061b2b2ef3395f7dd0'>
-Why C is incorrect?
+<opt text='0896801fdd38d461414e0b061b2b2ef3395f7dd0'>
+This is correct, but there is one more correct answer.
 </opt>
-<opt text='A and C are correct'>
+<opt text='The first and the third options are correct'>
 Is the first commit of the project or the first commit of the user flor14?
 </opt>
-<opt text='D and E are correct' correct='true'>
+<opt text='The two last options are both correct' correct='true'>
 </opt>
 </choice>
 
-What kind of information can you get from git history? Select the inorrect one.
+
+What kind of information is not displayed **not** in a Git project's history?
 
 <choice id=2>
 <opt text='commit message' >
@@ -60,7 +61,7 @@ What kind of information can you get from git history? Select the inorrect one.
 <opt text='author'>
 </opt>
 <opt text='commit number' correct='true'>
-When checking your project history you will see that the commits are displayed from older to newer using the date as a reference. There is no explicit commit numeration.
+When checking your project history you will see that the commits are displayed from older to newer using the date as a reference, but there is no explicit commit enumeration.
 </opt>
 </choice>
 </exercise>
