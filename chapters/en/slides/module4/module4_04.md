@@ -5,50 +5,48 @@ title: 'module4_04'
 
 # Revert changes made to your git project
 
----
-
-# Revert your changes
-
-
-1. **Doing a hard reset** ✔️  
-<br>
-
-2. **Reverting previous changes** ⬅️
-
-Notes: We have already learned how to undo changes and delete our project history with **`git reset --hard`**. But what if we want to keep track of the reversion? 
- There is another way to go back in time, and that is to **revert** your changes.
+In this slide deck we will see how we can undo changes we have made without deleting our past commits.
 
 ---
-##  Revert your changes: Go back to a previous commit (JupyterLab)
 
+## Reversion (JupyterLab)
 
 <center>
 
-<img src='/module4/vc-revert.png' width="80%" alt="404 image"/>
+<img src='/module4/vc-revert.png' width="70%" alt="404 image"/>
 
 </center>
 
 Notes:
-If you want to revert your changes, you can click the arrow icon in the commit you want to go back to in JupyterLab's "History" tab.
-When you revert changes, you don't lose the history of the project. This means that you are going to create a new commit which reflects the fact that some intermediate commits have been reverted.
+As we saw in the previous slide deck,
+it is troublesome to perform a hard reset
+when we are working together with collaborators online.
+Another approach for undoing some of your work
+is to create a new commit that reverts your changes.
+This means that nothing in your Git history is deleted,
+there is just a new commit added containing the reversions to each file.
+
+To revert to a previous commit via JupyterLab,
+you can click the arrow icon in the commit you want to go back to in JupyterLab's "History" tab,
+as seen in this slide.
 
 ---
 
-## Revert your changes: move to a previous commit (JupyterLab)
+## Reversion (JupyterLab)
 
 
 <center>
 
-<img src='/module4/vc-revert-2.png' width="80%" alt="404 image"/>
+<img src='/module4/vc-revert-2.png' width="90%" alt="404 image"/>
 
 </center>
 
 Notes:
-When you click the arrow, JupyterLab asks you for the commit title and description for that reversion. You can either keep the preloaded name here or find a more meaningful one.
+When you click the arrow, JupyterLab asks you for the commit title and description for the new reversion commit. You can either keep the preloaded name here or find a more meaningful one.
 
 ---
 
-## Revert your changes: move to a previous commit (JupyterLab)
+## Reversion (JupyterLab)
 
 
 <center>
@@ -58,12 +56,14 @@ When you click the arrow, JupyterLab asks you for the commit title and descripti
 </center>
 
 Notes:
-Now you can see that you have a new commit, and your project has travelled back in time! Remember to push your changes if you want to keep your remote updated. This is particularly important if you are working with other collaborators who might be modifying the part that has been deleted!
+Now you can see that you have a new commit, and the state of the your project is the same as it was previously, without deleting anything!
 
+Remember to push your changes if you want to keep your remote updated. In contrast to a hard reset,
+a reversion if more friendly for collaborating on GitHub, but it is still important to push big reversions soon and inform your collaborators, since some of them might be modifying the part that you reverted!
 
 ---
 
-## Revert your changes: move to a previous commit (terminal)
+## Reversion (Terminal)
 
 `git revert <commit id>`
 
@@ -74,12 +74,13 @@ Now you can see that you have a new commit, and your project has travelled back 
 </center>
 
 Notes:
-If you want to do this with the terminal you will have to provide the SHA-1 code to identify the commit.
+If you want to revert changes with the terminal
+you can use `git revert`
+together with the commit hash you want to revert to.
 
 ---
 
-## Revert your changes: move to a previous commit (terminal)
-
+## Reversion (Terminal)
 
 <center>
 
@@ -88,9 +89,9 @@ If you want to do this with the terminal you will have to provide the SHA-1 code
 </center>
 
 Notes:
-
-After running the command, the editor will pop up so you can modify the final commit message. If you close it as it is, the message will be the default one.
-You will see that after closing the editor, now you have a new commit updated with the changes.
+After running `git revert`, your default text editor will pop up so you can modify the final commit message. If you close it as it is, the message will be the default one.
+After closing the editor, you can view the new reversion in the project history tab
+or with `git log`.
 
 ---
 
@@ -102,13 +103,15 @@ You will see that after closing the editor, now you have a new commit updated wi
 
 2. **Reverting previous changes** ✔️  
 
-Notes: We have learned two ways to go back in time in our project history: hard reset and revert changes. One of the major differences is that when we select the option of doing a hard reset we are deleting the history of a project. This is the opposite of what happens when you revert your changes. If you revert the changes you can include the deletions as a new commit that grows the history of your project.
-
-The question will be, would you like to track the deletion (revert) or go back to a previous point of your project (hard reset)?
+Notes:
+In the last two slide decks,
+we have learned two ways of restoring our project to a previous point in time:
+hard reset and revert changes.
+One of the major differences is that when we select the option of doing a hard reset we are removing the previous commits we made and thereby modifying the Git history of the project.
+If we instead chose to revert our changes,
+we keep all our previous commits
+and add a new "reversion" commit that includes all the changes needed to make our repository identical to a previous points in time.
 
 ---
 
 # Let's apply what we learned!
-
-
-
