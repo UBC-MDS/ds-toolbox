@@ -6,6 +6,7 @@ title: 'module4_01'
 # Viewing the history of a project
 
 ---
+
 ## Viewing the history of a project
 
 There are two ways you can view the Git history of a project:
@@ -17,7 +18,8 @@ There are two ways you can view the Git history of a project:
 3. In the terminal using `git log`
 
 
-Notes: Do you remember the commit messages that we used to write at the time of making a commit, for saving the state of a project?
+Notes:
+Do you remember the commit messages that we used to write at the time of making a commit, for saving the state of a project?
 It is possible to have a look at the history of the full project with any of these 3 different methods
 
 ---
@@ -31,12 +33,11 @@ It is possible to have a look at the history of the full project with any of the
 
 </center>
 
-Notes: On GitHub, on the repo's landing page click "*N* commits" link (where *N* is the number of commits made on the repo)
+Notes:
+On GitHub, on the repo's landing page click "*N* commits" link (where *N* is the number of commits made on the repo)
 ---
 
 ## 1. Viewing the history of a project: GitHub
-
-
 
 <center>
 
@@ -44,7 +45,8 @@ Notes: On GitHub, on the repo's landing page click "*N* commits" link (where *N*
 
 </center>
 
-Notes: Now we have a project, but only 3 commits. You can identify all parts of each commit, including the day it was made, author, hash. You can also go back to the repository at the moment of making this change by clicking the `<>` button.
+Notes:
+Now we have a project, but only 3 commits. You can identify all parts of each commit, including the day it was made, author, hash. You can also go back to the repository at the moment of making this change by clicking the `<>` button.
 
 ---
 
@@ -56,7 +58,8 @@ Notes: Now we have a project, but only 3 commits. You can identify all parts of 
 
 </center>
 
-Notes: Accessing the history of your project is very simple in JupyterLab, you just have to look for the "History" tab within the Git options.
+Notes:
+Accessing the history of your project is very simple in JupyterLab, you just have to look for the "History" tab within the Git options.
 
 ---
 
@@ -68,7 +71,8 @@ Notes: Accessing the history of your project is very simple in JupyterLab, you j
 
 </center>
 
-Notes: If you want to access your project information using the terminal you can use the `git log` command.
+Notes:
+If you want to access your project information using the terminal you can use the `git log` command.
 Pay attention that here you are looking at the long version of the hash and not the 7-character long version displayed by default in Jupyter Lab or GitHub. In both cases, you will be able to identify the commit using its hash.
 
 ---
@@ -81,11 +85,13 @@ Pay attention that here you are looking at the long version of the hash and not 
 
 </center>
 
-Notes: Adding the flag `--oneline` to the command `git log` will provide you a different format for the output, in this case, you get a succint version of the information of each commit. 
+Notes:
+Adding the flag `--oneline` to the command `git log` will provide you a different format for the output, in this case, you get a succint version of the information of each commit. 
 
 The terminal allows greater flexibility when it comes to obtaining information about your project. If you would like to know what other possibilities you have for using the `git log` command, you can access the help by typing the command `git log --help`
 
 ---
+
 ## Viewing the history of a project 
 
 **On the remote**
@@ -94,7 +100,8 @@ The terminal allows greater flexibility when it comes to obtaining information a
 2. In Jupyter Lab through the repo's code commit view ✔️
 3. In the terminal using `git log` ✔️
 
-Notes: We have covered three distinct methods for viewing your project's history.
+Notes:
+We have covered three distinct methods for viewing your project's history.
 Prior to starting the activities, give them a try yourself in an example Git repository! 
 
 ---
