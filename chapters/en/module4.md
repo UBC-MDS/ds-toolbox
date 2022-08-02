@@ -77,15 +77,24 @@ When checking your project history you will see that the commits are displayed f
 
 <exercise id='4' title='Test Your Knowledge'>
 
-Enter to the comparison between this two commits on GitHub: https://github.com/UBC-MDS/equine_numbers_value_canada/compare/9021b83..1bb5ab8
+View this git diff comparison between on GitHub:
+https://github.com/UBC-MDS/equine_numbers_value_canada/compare/1bb5ab8..9021b83
 
-Go to the project history as we learned in the past set of the slides. What is the current state of the <code>README.md</code> file in the repository (the first change you can see)? The one that appear in red or the one that appears in green?
+You can see that there has been changes made to the `README.md` file,
+highlighted in red and green in the web interface.
+Looking at the commit history of the repository and the order the commits were made in,
+which of the red and green highlights represent
+the current state of the <code>README.md</code> file in the repository?
+
 <choice id=3>
-<opt text='red' correct='true'>
-The colors could be tricky, because you are always comparing the commit on the left as the one displayed as the red one with the commit on the right asdisplayed as the green one. If you want to use the color code remember to always write on the left the oldest commit. In this case would be writting https://github.com/UBC-MDS/equine_numbers_value_canada/compare/1bb5ab8..9021b83.
+<opt text='Red'>
+The colors could be tricky, because they depend on in which order the commits are written, so you can't rely on the same color always indicating that a change is newer/older. Try reversing the order of the commits to `1bb5ab8..9021b83` and you will see.
 </opt>
-<opt text='green' >
-Go to the repository as it is now https://github.com/UBC-MDS/equine_numbers_value_canada/ and check the <code>README.md</code> file. Is it look as the example of the left of on the right here https://github.com/UBC-MDS/equine_numbers_value_canada/compare/9021b83..1bb5ab8? 
+<opt text='Green' correct='true'>
+If you go to the current state of the repository (https://github.com/UBC-MDS/equine_numbers_value_canada/) and check the <code>README.md</code> file or the commit history,
+you can see that the green highlights represent the more recent commits
+(remember that the color alone is not enough to tell which are more recent,
+try reversing the order of the commits to `1bb5ab8..9021b83` and you will see.).
 </opt>
 </choice>
 

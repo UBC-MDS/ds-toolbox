@@ -117,8 +117,15 @@ What about visualizing the differences between commits directly on GitHub,
 is that possible?
 
 Yes, it is! There is no way to click in the GitHub web interface, but you can append add the following to your repository's URL `/compare/<commit 1 id>..<commit 2 id>` (substituting in the commits hashes to compare) and you will access the view that you can see in this slide.
+Which changes show up in red and which show up in green
+depends on which commit hash your write in on the left and right,
+so you cannot always rely on the color
+to indicate which change is the oldest.
 
 Pay attention to use 7 characters for the commits id, if not is not going to work! Give it a try in one of your repositories!
+
+Also note that you could use `...` instead of `..` to compare commits,
+and you can [read more about the difference of two and three dots in this StackOverflow answer](https://stackoverflow.com/a/24186641/2166823).
 
 ---
 
