@@ -5,22 +5,33 @@ title: 'module4_01'
 
 # Viewing the history of a project
 
+Notes:
+In this slide deck we will explore how we can view a projects commit history.
+
 ---
 
 ## Viewing the history of a project
 
-There are two ways you can view the Git history of a project:
+There are three ways you can view the Git history of a project:
 
 **On the remote**
-1. On GitHub through the repo's code commit view
-**On your computer**
-2. In Jupyter Lab through the repo's code commit view
-3. In the terminal using `git log`
 
+1. In the GitHub web interface through the repo's code commit view
+
+**On your computer**
+
+1. In Jupyter Lab through the repo's code commit view
+2. In the terminal using `git log`
 
 Notes:
 Do you remember the commit messages that we used to write at the time of making a commit, for saving the state of a project?
-It is possible to have a look at the history of the full project with any of these 3 different methods
+We said that these were helpful when we need to look back at the repository's history,
+but how can we go about viewing this history?
+As we can see in this slide,
+it is possible to have a look at the history of the full project
+with three different methods.
+
+Let's look closer at each one in the next few slides.
 
 ---
 
@@ -34,7 +45,8 @@ It is possible to have a look at the history of the full project with any of the
 </center>
 
 Notes:
-On GitHub, on the repo's landing page click "*N* commits" link (where *N* is the number of commits made on the repo)
+On the repo's landing page on GitHub, you can click the "*N* commits" link marked in red in the slide (where *N* is the number of commits made on the repo).
+
 ---
 
 ## 1. Viewing the history of a project: GitHub
