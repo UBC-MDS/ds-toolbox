@@ -58,7 +58,13 @@ On the repo's landing page on GitHub, you can click the "*N* commits" link marke
 </center>
 
 Notes:
-Now we have a project, but only 3 commits. You can identify all parts of each commit, including the day it was made, author, hash. You can also go back to the repository at the moment of making this change by clicking the `<>` button.
+After clicking the "*N* commits" link, we can see the view on this slide.
+Here we can see all the commits in our projects;
+in this toy project, there are only three commits.
+You can identify all parts of each commit,
+including the day it was made, its author, and hash.
+You can also go back to browse the state of the repository
+at the time of this commit by clicking the `<>` button.
 
 ---
 
@@ -66,12 +72,15 @@ Now we have a project, but only 3 commits. You can identify all parts of each co
 
 <center>
 
-<img src='/module4/vc-history-jl-2.png' width="90%" alt="404 image"/>
+<img src='/module4/vc-history-jl-2.png' width="70%" alt="404 image"/>
 
 </center>
 
 Notes:
-Accessing the history of your project is very simple in JupyterLab, you just have to look for the "History" tab within the Git options.
+In JupyterLab, you can access the history of your project by looking in the "History" tab within the Git extension side panel (as we did in the previous module).
+In this view,
+we can see the same information as we could online:
+the time when the commit was made, its author, and hash.
 
 ---
 
