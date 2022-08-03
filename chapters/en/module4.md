@@ -21,9 +21,9 @@ id: 4
 
 </exercise>
 
-<exercise id='2' title="Test Your Knowledge">
+<exercise id='2' title="✍️ Practice: A history lesson">
 
-Clone the repo https://github.com/UBC-MDS/equine_numbers_value_canada. What is the hash or the first commit of the project? 
+Clone the repo https://github.com/UBC-MDS/equine_numbers_value_canada. What is the hash or the first commit of the project?
 
 <choice id="1">
 <opt text='cc400df4b2a382f653abd0d9e514f6daae98d2ad'>
@@ -75,7 +75,7 @@ When checking your project history you will see that the commits are displayed f
 
 </exercise>
 
-<exercise id='4' title='Test Your Knowledge'>
+<exercise id='4' title='✍️ Practice: Know your diffs'>
 
 View this git diff comparison between on GitHub:
 https://github.com/UBC-MDS/equine_numbers_value_canada/compare/1bb5ab8..9021b83
@@ -113,7 +113,7 @@ That's right, but there is also another correct option!
 <opt text='The first and third options are both correct' >
 In the first option, <code>9021b83</code> is the SHA-1 of the last commit, what would you like to compare it with?
 </opt>
-<opt text='The second and third option are both B correct' correct='true' >
+<opt text='The second and third option are both correct' correct='true' >
 Writing the newest commit is not necessary. If you write only one commit (that is not the newest one) it will compare it with the last one without specifying anything else.
 </opt>
 </choice>
@@ -123,7 +123,7 @@ Writing the newest commit is not necessary. If you write only one commit (that i
 <slides source='module4/module4_03' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
-<exercise id='6' title='Test Your Knowledge'>
+<exercise id='6' title='✍️ Practice: The "no regrets" reset'>
 
 **True or False**
 
@@ -154,7 +154,7 @@ You can hard-reset your work in both cases, but one of the options could cause p
 <slides source='module4/module4_04' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
-<exercise id='8' title='Test Your Knowledge'>
+<exercise id='8' title='✍️ Practice: Subtraction through addition (of a new commit)'>
 
 Which of the following statements are TRUE about `git revert`?
 
@@ -204,7 +204,7 @@ When you do a hard reset, you are deleting the history of your project up to a p
 <slides source='module4/module4_05' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
-<exercise id='10' title='Test Your Knowledge'>
+<exercise id='10' title='✍️ Practice: Merge with care'>
 
 What do you have to do if you are working with the terminal and you want to write a different text for this merge conflict?
 
@@ -226,7 +226,7 @@ What do you have to do if you are working with the terminal and you want to writ
 <slides source='module4/module4_06' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
-<exercise id='12' title='Test Your Knowledge'>
+<exercise id='12' title='✍️ Practice: Ignorance is bliss'>
 
 **True or False**
 
