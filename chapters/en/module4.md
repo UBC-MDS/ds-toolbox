@@ -228,6 +228,8 @@ What do you have to do if you are working with the terminal and you want to writ
 
 <exercise id='12' title='Test Your Knowledge'>
 
+**True or False**
+
 `**/` is prepended to an entry in `.gitignore` to tell Git that this entry is a folder.
 
 <choice id="1">
@@ -241,16 +243,16 @@ What do you have to do if you are working with the terminal and you want to writ
 
 </choice>
 
-The `.gitignore` file itself needs to be committed, and is thus version-controlled.
+The `.gitignore` file itself can be committed and pushed to a remote repository.
 
 <choice id="2">
 
 <opt text="True" correct="true">
-Right, <code>.gitignore</code> is not ignored itself.
+Yes, <code>.gitignore</code> is like any other file in your repository, so if you want to share it with your collaborators, you need to commit it and push it to the remote repository.
 </opt>
 
 <opt text="False">
-Remember that you need to do "add" and "commit" <code>.gitignore</code> with Git?
+<code>.gitignore</code> is like any other file in your repository, so if you want to share it with your collaborators, you need to commit it and push it to the remote repository.
 </opt>
 </choice>
 </exercise>
