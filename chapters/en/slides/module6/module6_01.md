@@ -4,9 +4,11 @@ type: slides
 
 # File Names: Best Practices
 
+In this slide deck we will learn about the most effective conventions when naming files.
+
 ---
 
-## What works, and what doesn’t
+## What works, and what doesn't
 
 <br>
 
