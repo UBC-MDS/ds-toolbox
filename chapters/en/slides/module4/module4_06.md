@@ -18,7 +18,7 @@ You may have encountered this before:
 git status
 ```
 
-```
+```out
 On branch main
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
@@ -73,6 +73,10 @@ Inside the text file, list the files and folders you would like to ignore, one p
 Save the file, add it to the staging area, and commit the changes with Git. Then try git status again. You should now see that the files are ignored by Git:
 
 ```
+git status
+```
+
+```out
 On branch main
 nothing to commit, working tree clean
 ```
