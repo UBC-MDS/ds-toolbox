@@ -454,4 +454,30 @@ Notes:
 
 ---
 
+## Learning more about Conda
+
+- To see which Conda commands are available, run `conda --help`
+
+<img style="border:1px solid black;" src="/module6/conda-help.png" width="700px"></img>
+
+<br>
+
+- To see the full documentation a command, type the command followed by `--help`:
+
+```
+conda update --help
+```
+
+- The Conda version you have installed can be seen by running `conda --version` in Bash:
+
+<img style="border:1px solid black;" src="/module6/conda-version.png" width="400px"></img>
+
+<br>
+
+
+---
+
+
+
+
 # Let's see what you've learned!
