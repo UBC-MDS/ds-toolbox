@@ -48,6 +48,35 @@ Let's look closer at each one of these in the next few slides.
 
 ---
 
+## 1. Human-readable filenames
+
+<br>
+
+- Name contains info on content
+- Connects to the concept of a _slug_ from semantic URLs
+
+<br>
+
+**Example:**
+
+Which set of filenames do you want to see at 3 a.m. before a deadline?
+
+<img src="/module6/human_readable_not_options.png" width="80%"></img>
+
+Notes:
+Filenames provide an opportunity to describe what a file contains
+so that we don't have to open each file in order to know what is in it
+(imagine how tedious this would be!).
+Therefore,
+it is important to write filenames in a way
+that makes them easy to interpret for a human reader.
+It is always preferred to use filenames that reflect something important about the content of the files.
+
+The informative part of a filename is often called a "slug".
+This is similar to how the last part of a URL is also called a "slug" and is supposed to be relevant to the content of the webpage it points to. If it nicely matches the content of the webpage and is easy to read, chances are more people will click on it, and mention it in other places. It will also help search engines identify the content of a webpage.
+
+---
+
 ## 1. Human readable filenames
 
 <br>
@@ -59,6 +88,8 @@ my-figure.png
 ```
 
 A filename that is not human readable:
+
+<br>
 
 ```
 1_scat_len_int.png
@@ -73,13 +104,6 @@ fig1_scatterplot-length-vs-interest.png
 ```
 
 Notes:
-Filenames provide an opportunity to describe what a file contains
-so that we don't have to open each file in order to know what is in it
-(imagine how tedious this would be!).
-Therefore,
-it is important to write filenames in a way
-that makes them easy to interpret for a human reader.
-
 In this slide,
 the name `my-figure.png` is does not contain much information about what this file contains. What if you created multiple figures for different purposes, then they would all have the same name.
 
@@ -103,11 +127,15 @@ An ineffective name that contains the special characters `*` and `&`:
 figure1-scatterplot-*-vs-&.png
 ```
 
+<br>
+
 An ineffective name that contains spaces:
 
 ```
 Figure 1 scatterplot of asterisks vs ampersands.png
 ```
+
+<br>
 
 An name that is easy to parse for a computer:
 
@@ -147,8 +175,6 @@ The name `1986-01-28_raw-data-from-challenger-o-rings.txt` addresses all these i
 
 ## 2. Machine-readable filenames: Deliberate use of delimiters
 
-<br>
-
 Deliberate use of `-` and `_` allows recovery of metadata from filenames:
 
 - `_` underscore used to delimit units of metadata we want later
@@ -156,21 +182,25 @@ Deliberate use of `-` and `_` allows recovery of metadata from filenames:
 
 <br>
 
-An ineffective name without delimiters
+An ineffective name without delimiters:
 
 ```
 Jun6th Figure 1 scatterplot of asterisks vs ampersands.png
 ```
 
-An name where metadata fields are separated by `_`
+<br>
+
+An name where metadata fields are separated by `_`:
 
 ```
 fig1_2022-06-20_scatterplot-asterisks-vs-ampersands.png
 ```
 
+<br>
+
 Consistent use of delimiters for files with similar content:
 
-<img src="/module6/plasmid_delimiters.png" width="60%"></img>
+<img src="/module6/plasmid_delimiters.png" width="40%"></img>
 
 Notes:
 Although filenames should never contain punctuation characters such as `*` or `?`
@@ -207,13 +237,13 @@ as we will see in the next slide.
 
 Files in the directory:
 
-<img src="/module6/plasmid_names.png" width="60%"></img>
+<img src="/module6/plasmid_names.png" width="50%"></img>
 
 <br>
 
 **Example:** Globbing with <code>ls</code>to narrow file listing:
 
-<img src="/module6/plasmid_glob.png" width="80%"></img>
+<img src="/module6/plasmid_glob.png" width="60%"></img>
 
 Notes:
 Machine-readable filenames make it easy to find a group of desired filenames by using special patterns to match parts of the filenames.
@@ -231,7 +261,7 @@ If we've already been careful to include `Plasmid` in the name of all files with
 
 <br>
 
-<img src="/module6/plasmid_mac_os_search.png" width="80%"></img>
+<img src="/module6/plasmid_mac_os_search.png" width="70%"></img>
 
 Notes:
 
@@ -247,7 +277,7 @@ as can be seen in this slide.
 
 <br>
 
-<img src="/module6/plasmid_regex.png" width="80%"></img>
+<img src="/module6/plasmid_regex.png" width="70%"></img>
 
 Notes:
 The same goes for when you want to find those files in a Python or R script. In this case, you have a similar pattern matching mechanism available to you called "regular expressions".
@@ -257,6 +287,48 @@ They are very similar to globbing,
 but have a more advanced syntax available.
 
 The takeaway here is that, if you consistently use machine-readable filenames, you can easily find what you want later, whether it be in the terminal, in a file explorer or using a script!
+
+---
+
+## 3. Works well with default ordering
+
+<br>
+
+- Put something numeric first
+- Left-pad numbers with zeros or display files in "natural" order
+- Use the `YYYY-MM-DD` format for dates
+
+<br>
+
+Let's see some examples.
+
+Notes:
+One other helpful convention to consider is to use filenames that will be ordered in a preferable way by default.
+
+Depending on the context, we should practice:
+
+- Putting something numeric first
+- Left-pad numbers with zeros or display files in "natural" order
+- Using the `YYYY-MM-DD` format for dates
+
+---
+
+## 3. Works well with default ordering
+
+<br>
+
+Logical order:
+
+<br>
+
+<img src="/module6/logical_order.png" width="80%"></img>
+
+Notes:
+
+In this example, we have reason to have the first 5 files in a particular order, and the next 4 in another order.
+To make sure this happens by default, we can use numbers in the beginning of filenames in a particular order.
+
+Note the zero-left-padding of the numbers. We'll see an example of why this is important in the next slide.
 
 ---
 
@@ -295,127 +367,12 @@ because `1` comes before `2`.
 To avoid this
 we can number files with a leading zero (e.g. `01`, `02`, etc)
 or use the `-v` option with `ls` in the terminal.
+The `-v` option is called "natural" sort
+and is available for some graphical file browsers as well.
 
 ---
 
-
-## Recap
-
-<br>
-
-Machine-readable filenames are:
-
-- Easy to search for files later
-- Easy to narrow file lists based on names
-- Easy to extract info from filenames, e.g. by splitting
-
-<br>
-
-Even if you're new to regular expressions and globbing, be kind to yourself and avoid
-- Spaces in filenames
-- Punctuation
-- Accented characters
-- Different files named `foo` and `Foo`
-
-Notes:
-
----
-
-## 2. Human-readable filenames
-
-<br>
-
-- Name contains info on content
-- Connects to the concept of a _slug_ from semantic URLs
-
-<br>
-
-**Example:**
-
-Which set of filenames do you want to see at 3 a.m. before a deadline?
-
-<img src="/module6/human_readable_not_options.png" width="80%"></img>
-
-Notes:
-
-Computers are used by humans, so it makes sense to come up with filenames that are meaningful to humans.
-
-It is always preferred to use filenames that reflect something important about the content of the files.
-
-The idea of having meaningful filenames consisting words separated by delimiters, such as a hyphen or underscore is related to concept of a URL slug.
-
-A URL slug is the last part of a URL, which is supposed to relevant to the content of the webpage it points to. If it nicely matches the content of the webpage and is easy to read, chances are more people will click on it, and mention it in other places. It will also help search engines identify the content of a webpage.
-
----
-
-## 3. Filenames that play well with default
-
-<br>
-
-- Put something numeric first
-- Left-pad other numbers with zeros
-- Use the `YYYY-MM-DD` format for dates
-
-<br>
-
-Let's see some examples.
-
-Notes:
-
-One other helpful convention to consider is to use filenames that will be ordered in a preferable way by default.
-
-Depending on the context, we should practice:
-
-- Putting something numeric first
-- Left-padding other numbers with zeros
-- Using the `YYYY-MM-DD` format for dates
-
----
-<br>
-
-Logical order:
-
-<br>
-
-<img src="/module6/logical_order.png" width="80%"></img>
-
-Notes:
-
-In this example, we have reason to have the first 5 files in a particular order, and the next 4 in another order.
-
-To make sure this happens by default, we can use numbers in the beginning of filenames in a particular order.
-
-Note the zero-left-padding of the numbers. We'll see an example of why this is important in the next slide.
-
----
-
-<br>
-
-We should left-pad numbers with zeros:
-
-<br>
-
-<img src="/module6/left_pad.png" width="80%"></img>
-
-<br>
-
-If you don’t left-pad, you'll get this:
-
-<br>
-
-```
-10_final-figs-for-publication.R
-1_data-cleaning.R
-2_fit-model.R
-```
-
-Notes:
-
-In this case, we probably want `1_data-cleaning.R` and `2_fit-model.R` to appear before `10_final-figs-for-publication.R`.
-
-But since sorting in the terminal or file explorer is done first according to the first character from the left, we ended up with this illogical order order here.
-
----
+## 3. Works well with default ordering
 
 Chronological order:
 
@@ -428,10 +385,9 @@ Always use the **YYYY-MM-DD** format (that is, the ISO 8601 standard) for dates:
 <img src="/module6/chronological_order.png" width="80%"></img>
 
 Notes:
-
 For ordering based on date and time, we need to use a formatting that computers understand.
 
-I encourage you to always use the **YYYY-MM-DD** format, also known as the ISO 8601 standard.
+We encourage you to always use the **YYYY-MM-DD** format, also known as the ISO 8601 standard.
 
 Computer environments understand this format well, and it is also nicely readable by humans.
 
