@@ -34,16 +34,8 @@ of more effective filenames in the next few slides.
 <br>
 
 1. Be easy to read and informative to a human
-2. Be machine readable
+2. Be machine-readable
 3. Play well with default ordering
-
-<br>
-
-Awesome filenames:
-
-<br>
-
-<img src="/module6/awesome_names.png" width="80%"></img>
 
 Notes:
 In general, we'd like filenames to be easy to process by the computer and easy to read and explore by a human.
@@ -98,6 +90,8 @@ just from reading the filename.
 A more effective name for this file would be something like `fig1_scatterplot-length-vs-interest.png`.
 This name is easy to parse for a human
 and includes relevant information about the content of the file.
+
+---
 
 ## 2. Machine-readable filenames: Special characters and spaces
 
@@ -189,10 +183,14 @@ we can see that `Jun6th Figure 1 scatterplot of asterisks vs ampersands.png`
 is an ineffective name where it is hard for a machine
 to make out the different distinct metadata contained within the filename
 (date, figure number, and description).
+
 A better name would be `fig1_2022-06-20_scatterplot-asterisks-vs-ampersands.png`
 where the format of the name is `<figure number>_<date>_<description>`
 which can easily be parsed programmatically
 by using underscore as a separator for the different parts.
+This also avoid using upper case letters,
+which can be confusing since filenames are case sensitive on MacOS and Linux,
+but not on Windows.
 
 When using delimiters to separate metadata fields,
 it is important to be consistent across files with similar content
@@ -448,6 +446,15 @@ Remember these three principles for filenames:
 - Being machine-readable
 - Being human-readable
 - Playing well with default ordering
+
+<br>
+
+Some more examples of effective filenames:
+
+<br>
+
+<img src="/module6/awesome_names.png" width="80%"></img>
+
 
 Notes:
 
