@@ -5,10 +5,13 @@ type: slides
 # Project Organization
 
 Note:
+In this slide deck we will learn more about how we can effectively organize our projects.
 
 ---
 
 <br>
+
+# Project Organization
 
 - In a data science project, it's easy to focus only on the final product
 - The code and data that produce the end result are as important
@@ -69,6 +72,8 @@ When I look at this repo, I would immediately know where to look to find the dat
 When most people agree on using more or less the same structure for organizing their projects, good things will happen.
 
 It will be much easier for people to collaborate with each other. It will also be easier for yourself to manage your project as it grows in complexity.
+
+Let's have closer looks at each of these directories in the next slide!
 
 ---
 

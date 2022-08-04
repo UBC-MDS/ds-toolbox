@@ -87,7 +87,7 @@ The way a project is organized has no effect on the code performance.
 
 </choice>
 
-What is one problem with the following project repo?
+What is one problem with the following project structure?
 
 ```
 sales-proj/
@@ -110,7 +110,7 @@ sales-proj/
 
 <choice id="2">
 
-<opt text="<code>make_dataset.py</code> is not inside a separate folder within <code>scr/</code>">
+<opt text="<code>make_dataset.py</code> is not inside a separate folder within <code>src/</code>">
 Unless the project is too complex and the <code>src</code> folder has a lot of files, it's not necessarily needed to put different code files inside separate folders.
 </opt>
 
