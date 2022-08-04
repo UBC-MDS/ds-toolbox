@@ -61,7 +61,7 @@ Let's look closer at each one of these in the next few slides.
 
 Which set of filenames do you want to see at 3 a.m. before a deadline?
 
-<img src="/module6/human_readable_not_options.png" width="80%"></img>
+<img src="/module6/human_readable_not_options.png" width="70%"></img>
 
 Notes:
 Filenames provide an opportunity to describe what a file contains
@@ -77,7 +77,7 @@ This is similar to how the last part of a URL is also called a "slug" and is sup
 
 ---
 
-## 1. Human readable filenames
+## 1. Human-readable filenames
 
 <br>
 
@@ -87,9 +87,9 @@ An uninformative filename:
 my-figure.png
 ```
 
-A filename that is not human readable:
-
 <br>
+
+A filename that is not human-readable:
 
 ```
 1_scat_len_int.png
@@ -200,7 +200,7 @@ fig1_2022-06-20_scatterplot-asterisks-vs-ampersands.png
 
 Consistent use of delimiters for files with similar content:
 
-<img src="/module6/plasmid_delimiters.png" width="40%"></img>
+<img src="/module6/plasmid_delimiters.png" width="50%"></img>
 
 Notes:
 Although filenames should never contain punctuation characters such as `*` or `?`
@@ -409,7 +409,7 @@ Some more examples of effective filenames:
 
 <br>
 
-<img src="/module6/awesome_names.png" width="80%"></img>
+<img src="/module6/awesome_names.png" width="65%"></img>
 
 
 Notes:
