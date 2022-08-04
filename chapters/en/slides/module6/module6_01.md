@@ -2,120 +2,232 @@
 type: slides
 ---
 
-# File Names: Best Practices
+# Filenames: Best Practices
 
+Notes:
 In this slide deck we will learn about the most effective conventions when naming files.
 
 ---
 
-## What works, and what doesn't
+## Examples of bad filenames
 
 <br>
 
-No:
-
 ```
-myabstract.docx
-Joe’s Filenames Use Spaces and Punctuation.xlsx
-figure 1.png
-fig 2.png
-JW7d^(2sl@deletethisandyourcareerisoverWx2*.txt
-```
-
-<br>
-
-Yes:
-
-```
-2014-06-08_abstract-for-sla.docx
-joes-filenames-are-getting-better.xlsx
-fig01_talk-scatterplot-length-vs-interest.png
-fig02_talk-histogram-attendance.png
-1986-01-28_raw-data-from-challenger-o-rings.txt
+my-figure.png
+figure1-scatterplot-*-vs-&.png
+Figure 1 scatterplot of asterisks vs ampersands.png
 ```
 
 Notes:
+Here are a few examples of filenames that are not recommended to use.
+Pause here for a minute and study these examples;
+Can you point out a few problems with the examples in this slide?
 
-Here are two sets of file name examples: one with not-so-great choices, and another that is much more readable.
-
-Can you point out a few problems with the first set of file names?
-
-For example, the last file name is not so easily readable by a human, despite containing certain words.
-
-The second file name, on the other hand, uses spaces and punctuation which can cause problems when processing files using a script or in the terminal, because they usually have special meanings.
+We will come back to these and show examples
+of more effective filenames in the next few slides.
 
 ---
 
-## Three principles for file names
+## Three principles for effective filenames
 
 <br>
 
-1. Be machine readable
-2. Be human readable
+1. Be easy to read and informative to a human
+2. Be machine readable
 3. Play well with default ordering
 
 <br>
 
-Awesome file names:
+Awesome filenames:
 
 <br>
 
 <img src="/module6/awesome_names.png" width="80%"></img>
 
 Notes:
+In general, we'd like filenames to be easy to process by the computer and easy to read and explore by a human.
+This means that a filename should ideally include both
+an easily readable human description of what is in the file,
+and metadata such as dates or tags that make it easy for to parse for a computer.
+It's also very helpful to have files show up in a logical order when viewed in a file explorer or when listed in the terminal.
 
-In general, we'd like file names to be easy to process by the computer and easy to read and explore by a human.
-
-Moreover, it's also very helpful to have files show up in a logical order when viewed in a file explorer or when listed in the terminal.
+Let's look closer at each one of these in the next few slides.
 
 ---
 
-## 1. Machine-readable file names
+## 1. Human readable filenames
 
 <br>
 
-- Regular expression and globbing friendly
-  - Avoid spaces, punctuation, accented characters, case sensitivity
-- Easy to compute on
-  - Deliberate use of delimiters
+An uninformative filename:
+
+```
+my-figure.png
+```
+
+A filename that is not human readable:
+
+```
+1_scat_len_int.png
+```
 
 <br>
 
-## Globbing
+An easy to read and informative filename:
 
-<br>
-
-<img src="/module6/plasmid_names.png" width="80%"></img>
+```
+fig1_scatterplot-length-vs-interest.png
+```
 
 Notes:
+Filenames provide an opportunity to describe what a file contains
+so that we don't have to open each file in order to know what is in it
+(imagine how tedious this would be!).
+Therefore,
+it is important to write filenames in a way
+that makes them easy to interpret for a human reader.
 
+In this slide,
+the name `my-figure.png` is does not contain much information about what this file contains. What if you created multiple figures for different purposes, then they would all have the same name.
+
+The name `1_scat_len_int.png` does seem to contain some information,
+but it is not easy for a human to understand what
+just from reading the filename.
+
+A more effective name for this file would be something like `fig1_scatterplot-length-vs-interest.png`.
+This name is easy to parse for a human
+and includes relevant information about the content of the file.
+
+## 2. Machine-readable filenames: Special characters and spaces
+
+<br>
+
+An ineffective name that contains the special characters `*` and `&`:
+
+```
+figure1-scatterplot-*-vs-&.png
+```
+
+An ineffective name that contains spaces:
+
+```
+Figure 1 scatterplot of asterisks vs ampersands.png
+```
+
+An name that is easy to parse for a computer:
+
+```
+fig1_scatterplot-asterisks-vs-ampersands.png
+```
+
+Notes:
 In a data science project, we usually read files using a script or inside the terminal environment.
+Therefore, it is critical to use filenames that are both machine friendly and consistent across files with similar or related content.
 
-Therefore, it is critical to use file names that are both machine friendly and consistent across files with similar or related content.
+For example, spaces and punctuation should be avoided in filenames. The reason is that these characters carry special meaning in most programming languages and in Bash.
+So working with a filename that contains these characters requires special treatment to prevent a script or the terminal from misinterpreting it.
 
-For example, spaces and punctuation should be avoided in file names. The reason is that these characters carry special meaning in most programming languages and in Bash.
+Returning to our example in the first slide,
+`figure1-scatterplot-*-vs-&.png` is not an effective file name.
+This is because it contains special characters,
+some of which have special meanings in the shell and will therefore be hard to type in (e.g.
+`*`, which we learned is a wildcard matching any characters in Bash).
 
-So working with a file name that contains these characters requires special treatment to prevent a script or the terminal from misinterpreting it.
+The second name, `Figure 1 scatterplot of asterisks vs ampersands.png`,
+might initially look like a suitable filename
+because it is easy for us humans to read
+and it does not appear to contain any special characters.
 
-Machine-readable file names make it easy to find a group of desired file names by using special patterns that the machine understands.
+However,
+it does contain spaces, and these are often hard to work with,
+both in Bash and in programming languages like Python.
+It is therefore recommended to use `hyphens` instead of spaces to separate words.
 
-These patterns are called "glob"s, and finding file names using this method is called "globbing".
+
+The words in the filename are also not separated in a way that is easy for a human to read,
+and they are not descriptive for what is in the file.
+The name `1986-01-28_raw-data-from-challenger-o-rings.txt` addresses all these issues.
 
 ---
 
-**Example:** Globbing to narrow file listing
+## 2. Machine-readable filenames: Deliberate use of delimiters
 
 <br>
+
+Deliberate use of `-` and `_` allows recovery of metadata from filenames:
+
+- `_` underscore used to delimit units of metadata we want later
+- `-` hyphen used to delimit words so reading becomes easier
+
+<br>
+
+An ineffective name without delimiters
+
+```
+Jun6th Figure 1 scatterplot of asterisks vs ampersands.png
+```
+
+An name where metadata fields are separated by `_`
+
+```
+fig1_2022-06-20_scatterplot-asterisks-vs-ampersands.png
+```
+
+Consistent use of delimiters for files with similar content:
+
+<img src="/module6/plasmid_delimiters.png" width="60%"></img>
+
+Notes:
+Although filenames should never contain punctuation characters such as `*` or `?`
+we can use underscores or hyphens
+to separate meaningful parts of a filename
+such as metadata or tags.
+
+Using an extended example from our previous slide,
+we can see that `Jun6th Figure 1 scatterplot of asterisks vs ampersands.png`
+is an ineffective name where it is hard for a machine
+to make out the different distinct metadata contained within the filename
+(date, figure number, and description).
+A better name would be `fig1_2022-06-20_scatterplot-asterisks-vs-ampersands.png`
+where the format of the name is `<figure number>_<date>_<description>`
+which can easily be parsed programmatically
+by using underscore as a separator for the different parts.
+
+When using delimiters to separate metadata fields,
+it is important to be consistent across files with similar content
+as we can see an example of in the screenshot in this slide.
+
+Deliberate and consistent use of delimiters
+make it easy to recover all metadata in our filenames in the future,
+using pattern matching by globbing or regular expressions
+as we will see in the next slide.
+
+---
+
+## 2. Machine-readable filenames: Pattern matching in the terminal
+
+Files in the directory:
+
+<img src="/module6/plasmid_names.png" width="60%"></img>
+
+<br>
+
+**Example:** Globbing with <code>ls</code>to narrow file listing:
 
 <img src="/module6/plasmid_glob.png" width="80%"></img>
 
 Notes:
+Machine-readable filenames make it easy to find a group of desired filenames by using special patterns to match parts of the filenames.
+These patterns are called "glob"s, and finding filenames using this method is called "globbing".
 
-In this example here, we have specified a particular pattern, namely `*Plasmid*` to find all file names that contain this word. This is an example of "globbing" using the `*` wildcard.
+In this example here, we have specified a particular pattern, namely `*Plasmid*` to find all filenames that contain this word. This is an example of "globbing" using the `*` wildcard as you might remember from module 2.
 
 If we've already been careful to include `Plasmid` in the name of all files with a related content, then finding those files using a script or in the terminal would be very easy.
 
 ---
+
+## 2. Machine-readable filenames: Pattern matching in the file browser
 
 **Example:** Using MacOS Finder search
 
@@ -125,63 +237,84 @@ If we've already been careful to include `Plasmid` in the name of all files with
 
 Notes:
 
-Well, it's not just the terminal.
-
-Using these file name conventions also makes it easy to find the files you need in the Mac Finder, or in Windows Explorer:
+Using these filename conventions are not only useful in the terminal.
+They also makes it easy to find the files you need in file browser on Linux, MacOS, or Windows,
+as can be seen in this slide.
 
 ---
 
-**Example:** Using regex in R
+## 2. Machine-readable filenames: Pattern matching in a programming language
+
+**Example:** Using regex in Python
 
 <br>
 
 <img src="/module6/plasmid_regex.png" width="80%"></img>
 
 Notes:
+The same goes for when you want to find those files in a Python or R script. In this case, you have a similar pattern matching mechanism available to you called "regular expressions".
+Regular expressions are simply search patterns for finding desired strings of characters
+when we are using a programming language like Python.
+They are very similar to globbing,
+but have a more advanced syntax available.
 
-The same goes for when you want to find those files in a Python or R script. In this case, you have a similar matching mechanism available to you called "regular expressions".
-
-Regular expressions are simply search patterns for finding desired strings of characters, just like globs, when we are using a programming language like Python.
-
-The takeaway here is that, if you consistently use machine-readable file names, you can easily find what you want later, whether it be in the terminal, in a file explorer or using a script!
+The takeaway here is that, if you consistently use machine-readable filenames, you can easily find what you want later, whether it be in the terminal, in a file explorer or using a script!
 
 ---
 
-## Punctuation
+## 3. Works well with default ordering
 
 <br>
 
-Deliberate use of `-` and `_` allows recovery of meta data from the filenames:
+```
+ls
+```
 
-- `_` underscore used to delimit units of meta data we want later
-- `-` hyphen used to delimit words so your eyes don’t bleed
+```out
+figure02.png
+figure12.png
+figure2.png
+```
 
 <br>
 
-<img src="/module6/plasmid_delimiters.png" width="80%"></img>
+```
+ls -v
+```
+
+```out
+figure02.png
+figure2.png
+figure12.png
+```
 
 Notes:
-
-Although file names should never contain punctuation characters such as `*` or `?` (because they have special meaning in e.g. globbing and regular expressions), we can use underscores or hyphens to separate units of meta data or words in a file name.
-
-This makes it easy to recover all meta data in our file names in the future, using pattern matching by globbing or regular expressions.
+It is good to name files so that they show up in the expected order
+when viewing them in the terminal or in a file browser.
+By default,
+`figure12.png` would show up before `figure2.png`
+because `1` comes before `2`.
+To avoid this
+we can number files with a leading zero (e.g. `01`, `02`, etc)
+or use the `-v` option with `ls` in the terminal.
 
 ---
+
 
 ## Recap
 
 <br>
 
-Machine-readable file names are:
+Machine-readable filenames are:
 
 - Easy to search for files later
 - Easy to narrow file lists based on names
-- Easy to extract info from file names, e.g. by splitting
+- Easy to extract info from filenames, e.g. by splitting
 
 <br>
 
 Even if you're new to regular expressions and globbing, be kind to yourself and avoid
-- Spaces in file names
+- Spaces in filenames
 - Punctuation
 - Accented characters
 - Different files named `foo` and `Foo`
@@ -190,7 +323,7 @@ Notes:
 
 ---
 
-## 2. Human-readable file names
+## 2. Human-readable filenames
 
 <br>
 
@@ -201,23 +334,23 @@ Notes:
 
 **Example:**
 
-Which set of file names do you want to see at 3 a.m. before a deadline?
+Which set of filenames do you want to see at 3 a.m. before a deadline?
 
 <img src="/module6/human_readable_not_options.png" width="80%"></img>
 
 Notes:
 
-Computers are used by humans, so it makes sense to come up with file names that are meaningful to humans.
+Computers are used by humans, so it makes sense to come up with filenames that are meaningful to humans.
 
-It is always preferred to use file names that reflect something important about the content of the files.
+It is always preferred to use filenames that reflect something important about the content of the files.
 
-The idea of having meaningful file names consisting words separated by delimiters, such as a hyphen or underscore is related to concept of a URL slug.
+The idea of having meaningful filenames consisting words separated by delimiters, such as a hyphen or underscore is related to concept of a URL slug.
 
 A URL slug is the last part of a URL, which is supposed to relevant to the content of the webpage it points to. If it nicely matches the content of the webpage and is easy to read, chances are more people will click on it, and mention it in other places. It will also help search engines identify the content of a webpage.
 
 ---
 
-## 3. File names that play well with default
+## 3. Filenames that play well with default
 
 <br>
 
@@ -231,7 +364,7 @@ Let's see some examples.
 
 Notes:
 
-One other helpful convention to consider is to use file names that will be ordered in a preferable way by default.
+One other helpful convention to consider is to use filenames that will be ordered in a preferable way by default.
 
 Depending on the context, we should practice:
 
@@ -252,7 +385,7 @@ Notes:
 
 In this example, we have reason to have the first 5 files in a particular order, and the next 4 in another order.
 
-To make sure this happens by default, we can use numbers in the beginning of file names in a particular order.
+To make sure this happens by default, we can use numbers in the beginning of filenames in a particular order.
 
 Note the zero-left-padding of the numbers. We'll see an example of why this is important in the next slide.
 
@@ -310,7 +443,7 @@ Computer environments understand this format well, and it is also nicely readabl
 
 <br>
 
-Remember these three principles for file names:
+Remember these three principles for filenames:
 
 - Being machine-readable
 - Being human-readable
