@@ -59,46 +59,11 @@ If it was automatically prevented, then this couldn't have been a problem!
 
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id="4" title=".gitignore" type="slides,video">
-<slides source="module6/module6_02"> </slides>
-</exercise>
-<!-- ------------------------------------ -->
-<exercise id='5' title="Test Your Knowledge">
-
-`**/` is prepended to an entry in `.gitignore` to tell Git that this entry is a folder.
-
-<choice id="1">
-
-<opt text="True">
-<code>**/</code> is used to tell Git that the same file/folder name should be ignored in the subdirectories of a repo as well.
-</opt>
-
-<opt text="False"  correct="true">
-</opt>
-
-</choice>
-
-The `.gitignore` file itself needs to be committed, and is thus version-controlled.
-
-<choice id="2">
-
-<opt text="True" correct="true">
-Right, <code>.gitignore</code> is not ignored itself.
-</opt>
-
-<opt text="False">
-Remember that you need to do "add" and "commit" <code>.gitignore</code> with Git?
-</opt>
-
-</choice>
-
-</exercise>
-<!-- ------------------------------------ -->
-<exercise id="6" title="Project Organization" type="slides,video">
+<exercise id="4" title="Project Organization" type="slides,video">
 <slides source="module6/module6_03"> </slides>
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id='7' title="Test Your Knowledge">
+<exercise id='5' title="Test Your Knowledge">
 
 Which of the following is NOT a reason for having a standard project structure?
 
@@ -165,11 +130,11 @@ Not every project is supposed to have a documentation folder.
 
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id="9" title="Virtual Environments" type="slides,video">
+<exercise id="6" title="Virtual Environments" type="slides,video">
 <slides source="module6/module6_04"> </slides>
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id='10' title="Test Your Knowledge">
+<exercise id='7' title="Test Your Knowledge">
 
 What does `conda list` do?
 
@@ -229,7 +194,7 @@ The base environment is just an environment, the rules are the same!
 
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id="11" title="What Did We Learn" type="slides,video">
+<exercise id="8" title="What Did We Learn" type="slides,video">
 <slides source="module6/module6_end"> </slides>
 </exercise>
 <!-- ------------------------------------ -->
