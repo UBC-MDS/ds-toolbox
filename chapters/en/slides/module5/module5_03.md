@@ -5,6 +5,9 @@ title: 'module5_03'
 
 # Merging branches
 
+Notes:
+In this slide deck, we will learn how we can merge branches together.
+
 ---
 
 ## Merging branches

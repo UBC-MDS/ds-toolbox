@@ -3,7 +3,19 @@ type: slides
 title: 'module5_04'
 ---
 
+<style>
+blockquote {
+    margin: 0;
+    padding: 0 1em;
+    color: #57606;
+    border-left: .25em solid #d0d7de;
+}
+</style>
+
 # When merging branches goes social: Opening a pull request
+
+Notes:
+In this slide deck, we will learn how to merge branches in a collaborative setting via pull requests.
 
 ---
 
@@ -13,33 +25,21 @@ title: 'module5_04'
 <br>
 <br>
 <br>
-<br>
 
-<figure class="quote">
-  <blockquote style="background: gray;">
-When I first started we all pushed to one branch, but the problem is you push and nobody knows what changes are going through and there is no chance for a review. Our current system is that you don’t make any changes without submitting a <strong>pull request</strong>[...]and then one or more members will review it and you need one thumbs up from another team member to merge it, otherwise it can’t go in.
-</blockquote>
-  <figcaption>
-    &mdash; <a href="http://thesegalgroup.org/wp-content/uploads/2014/04/code-centric.pdf">Kalliamvakou, E. (2014). The Code-Centric Collaboration Perspective: Evidence from GitHub.</a>
-  </figcaption>
-</figure>
+> When I first started we all pushed to one branch, but the problem is you push and nobody knows what changes are going through and there is no chance for a review. Our current system is that you don’t make any changes without submitting a <strong>pull request</strong>[...]and then one or more members will review it and you need one thumbs up from another team member to merge it, otherwise it can’t go in.
 
+&mdash; <a href="http://thesegalgroup.org/wp-content/uploads/2014/04/code-centric.pdf">Kalliamvakou, E. (2014). The Code-Centric Collaboration Perspective: Evidence from GitHub.</a>
 
-
-
-
-Notes: 
-
-Pull requests involve merging someone else's changes into your code. They are essential for team collaboration and proper pull request review is critical for for ensuring code quality.
+Notes:
+Pull requests involve merging someone else's changes into your remote repository on GitHub. They are essential for team collaboration and proper pull request review is critical for for ensuring code quality.
 
 In the previous part, we did not push our feature branch to GitHub. Instead, we finished the development of this branch locally and merged it into our `main` branch using JupyterLab GUI or the command `git merge`.
 
-If we would have worked in a team of people, it would have been good practice to have first push the branch to GitHub, and then creat a pull request to let the other people on the team review the code and suggested any changes before merging it in.
-
+If we would have worked in a team of people, it would have been good practice to have first push the branch to GitHub, and then create a pull request to let the other people on the team review the code and suggested any changes before merging it in.
 
 ---
 
-## Opening a pull request (GitHub)
+## Opening a pull request
 
 <center>
 
@@ -48,13 +48,11 @@ If we would have worked in a team of people, it would have been good practice to
 <center/>
 
 
-Notes: To create a pull request, you have to push the changes in your branch to GitHub. After doing so, a yellow banner will appear at the top of the repository interface on GitHub and you can click the green button that says "Compare and pull request". In the new page, add a message to describe the changes you have made, scroll down to review the changed files, and the click the green button that reads "Create pull request".
-
-Congrats! You have made your first Pull Request on GitHub!
+Notes: To create a pull request, you have to push the changes in your branch to GitHub. After doing so, a yellow banner will appear at the top of the repository interface on GitHub and you can click the green button that says "Compare and pull request".
 
 ---
 
-## Opening a pull request (GitHub)
+## Opening a pull request
 
 <center>
 
@@ -71,7 +69,7 @@ In the body of the message you can also indicate if it is fixing a currently ope
 
 
 ---
-## Opening a pull request (GitHub)
+## Opening a pull request
 
 <center>
 
@@ -86,7 +84,7 @@ Once you have open a pull request you can continue to add commits by pushing to 
 
 
 ---
-## Opening a pull request (GitHub)
+## Opening a pull request
 
 <center>
 
@@ -98,10 +96,7 @@ Notes:
 
 The next step is for the upstream repo maintainers to review your work and merge it in if they approve it. You have the option of assigning someone to a pull request and/or designating the parson as reviewer.
 
- 
 - **Reviewers**: You can choose anyone who can help from the list of prior authors that GitHub will offer as reviewers for that code. A review request will be sent to the reviewers and you will obtain a notification and email once they have submitted their feedback. If you are working with a team you will probably define guidelines for which team member reviews which PRs.
-
-
 
 
 You can reference a pull request or issue in GitHub's Markdown syntax by typing `#` followed by the number of the PR. e.g. "Please see PR #1 for a fix to this issue".
@@ -110,7 +105,8 @@ Another useful thing that you can do is to **label** each pull request, they can
 
 
 ---
-## Pull request successfully merged and closed (GitHub)
+
+## Pull request successfully merged and closed
 
 <center>
 
