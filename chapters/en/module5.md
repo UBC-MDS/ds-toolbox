@@ -224,7 +224,7 @@ Even if the final goal of the pull request is to merge your changes with another
 </choice>
 </exercise>
 
-<exercise id='9' title='About the different ways we can collaborate' type='slides, video'>
+<exercise id='9' title='Collaborative GitHub workflows: Branching' type='slides, video'>
 <slides source='module5/module5_05' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 

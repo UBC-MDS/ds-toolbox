@@ -3,11 +3,12 @@ type: slides
 title: 'module5_06'
 ---
 
-# Forking
+# Collaborative GitHub workflows: Forking
 
 
 
 ---
+
 ## Collaborative work 
 
 There are two main strategies we can use to work with others:
