@@ -114,4 +114,58 @@ To solve this you can update your forked repository with the button **fetch upst
 
 ---
 
+
+## Extra: Communicating using GitHub issues
+
+The “Issues” tab on the GitHub web interface
+
+<center>
+
+<img src='/module5/issue-1.png' width="80%" alt="404 image" />
+
+</center>
+
+Notes:
+When working on a project in a team, you don’t just want a historical record of who changed what file and when in the project—you also want a record of decisions that were made, ideas that were floated, problems that were identified and addressed, and all other communication surrounding the project. Email and messaging apps are both very popular for general communication, but are not designed for project-specific communication: they often lack functionality for organizing conversations by project subtopics, searching for conversations related to particular bugs or software versions, etc.
+
+🙌
+To open a GitHub issue, first click on the “Issues” tab,
+and then click the green button that says "New Issue".
+
+---
+
+## Extra: Communicating using GitHub issues
+
+Dialog boxes and submission button for creating new GitHub issues.
+<center>
+
+<img src='/module5/issue-2.png' width="80%" alt="404 image" />
+
+</center>
+
+Notes:
+GitHub issues are an alternative written communication medium to email and messaging apps, and were designed specifically to facilitate project-specific communication. Issues are opened from the “Issues” tab on the project’s GitHub page, and they persist there even after the conversation is over and the issue is closed (in contrast to email, issues are not usually deleted). One issue thread is usually created per topic, and they are easily searchable using GitHub’s search tools. 
+
+All issues are accessible to all project collaborators, so no one is left out of the conversation. If someone mention your name with the syntax `@yourname`, you will get a notification. If you want to be notified about all new issues and pull requests you can click the little eye icong in the top right corner that says "Watch". Replying to issues from email is also possible. Given all of these advantages, we highly recommend the use of issues for project-related communication.
+
+---
+
+## Extra: Communicating using GitHub issues
+
+The “Closed” issues tab on the GitHub web interface. 
+
+<center>
+
+<img src='/module5/issue-3.png' width="80%" alt="404 image" />
+
+</center>
+
+Notes:
+
+🙌
+When a conversation is resolved, you can click “Close issue.” The closed issue can be later viewed by clicking the “Closed” header link in the “Issue” tab.
+Issues will be automatically closed if you merge a PR that refers to the issue.
+
+---
+
 # Let's apply what we learned!
