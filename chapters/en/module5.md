@@ -16,7 +16,7 @@ id: 5
 
 </exercise>
 
-<exercise id="1" title="The roles of branches" type="slides,video">
+<exercise id="1" title="The role of branches" type="slides,video">
 
 <slides source="module5/module5_01" shot="0" start="0:002" end="3:40">
 </slides>
@@ -28,9 +28,6 @@ id: 5
 Which of these names are used to refer to the default branch in Git/GitHub?
 
 <choice id = 1>
-<opt text='<code>master</code>'>
-Right, but there is also another correct option.
-</opt>
 <opt text='<code>HEAD</code>'>
 <code> HEAD </code> is providing valuable information to the user when checking the project history. Specifically, it will point to the commit that you are currently at in the repository.
 </opt>
@@ -40,23 +37,23 @@ Right, but there is also another correct option.
 <opt text='<code>origin</code>'>
 <code> origin </code> is referring to the remote GitHub repository.
 </opt>
-<opt text='2, 3 and 4 are correct'>
+<opt text='<code>master</code>'>
+Right, but there is also another correct option.
+</opt>
+<opt text='The three first options are all correct'>
 <code>main</code>, <code>origin</code> and <code>HEAD</code> are labels that provide valuable information to the user when checking the project history, but two of them not necessary refer to the default branch.
 </opt>
-<opt text='1 and 3 are correct' correct='true'>
+<opt text='The second and fourth options are both correct' correct='true'>
 <code>master</code> was the old name for the default branch and <code>main</code> is the new one. You still will find repositories that use <code>master</code> to refer to the default branch.
 </opt>
-<opt text='2 and 3 are correct' >
+<opt text='The two last options are both correct' >
 Only one of these options is correct.
 </opt>
 </choice>
 
-When do you need to create a new branch?
+When should you create a new branch?
 
 <choice id = 2>
-<opt text='It is the first thing you should do after you start a project. You open a branch for all the features you are planning to add to your code' >
-You can not predict when you will have a bug to fix. 
-</opt>
 <opt text='When you want to make a change that can break the code in the <code> main </code> branch'>
 Right, but there is also another correct option.
 </opt>
@@ -66,10 +63,13 @@ Right, but there is also another correct option.
 <opt text='You can create a branch to fix a bug, and then merge it to <code> main </code> '>
 Right, but there is also another correct option.
 </opt>
-<opt text='All are correct '>
+<opt text='It is the first thing you should do after you start a project. You open a branch for all the features you are planning to add to your code' >
+You can not predict when you will have a bug to fix. 
+</opt>
+<opt text='All options are correct'>
 Remember that you will create a branch from the stage your project currently is in. Are you sure that it would make sense to create all of them at the beginning of the project?   
 </opt>
-<opt text='2, 3 and 4 are correct' correct='true'>
+<opt text='The three first options are all correct' correct='true'>
 </opt>
 </choice>
 
@@ -96,7 +96,7 @@ Which branch are you currently working on?
 <slides source='module5/module5_02' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
-<exercise id='4' title='Observing the branches'>
+<exercise id='4' title='How branches are related'>
 
 **True or False**
 

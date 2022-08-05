@@ -3,7 +3,7 @@ type: slides
 title: 'module5_02'
 ---
 
-# Seeing how branches are related
+# How branches are related
 
 ---
 
