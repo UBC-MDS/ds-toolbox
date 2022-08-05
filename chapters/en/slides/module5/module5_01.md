@@ -18,7 +18,7 @@ title: 'module5_01'
 
 <img src='/module5/branches-house-analogy.jpg' width="85%" alt="404 image" />
 
-<center/>
+</center>
 
 
 Notes:
@@ -40,10 +40,11 @@ When we initiate a repository by default we start working on the `main` branch, 
 
 <img src='/module5/branches-house-analogy-explained.png' width="85%" alt="404 image" />
 
-<center/>
+</center>
 
 
-Notes:  In the image we can see that two branches were created from `main`. The first snapshot was taken after the second commit to include there the trained model. The second branch was initiated in the third commit to fix one of the exploratory analysis plots. At the end we merge all these branches to `main` so the isolated modifications are included in our principal source of code.
+Notes:
+ In the image we can see that two branches were created from `main`. The first snapshot was taken after the second commit to include there the trained model. The second branch was initiated in the third commit to fix one of the exploratory analysis plots. At the end we merge all these branches to `main` so the isolated modifications are included in our principal source of code.
 
 When should a new branch be opened?
 Generally speaking, you can assume that every modification that has the potential to break the original code is a good one to attempt to fix without taking the risk of working in the `main` branch.
@@ -59,9 +60,10 @@ Note that in some old repositories the default branch could be called `master` i
 
 <img src='/module5/create_branch.png' width="85%" alt="404 image" />
 
-<center/>
+</center>
 
-Notes: To create a branch in JupyterLab you have to go to **Branches > New branch** and then write the name of the branch there. If you want to create the new branch based on another branch than `main` you can click and select it in the menu. You can always switch easily between branches on the **Branches** tab.
+Notes:
+To create a branch in JupyterLab you have to go to **Branches > New branch** and then write the name of the branch there. If you want to create the new branch based on another branch than `main` you can click and select it in the menu. You can always switch easily between branches on the **Branches** tab.
 
 In this scenario, we create the branch from `main` or from `origin/HEAD` and `origin/main`. We already know that `main` is the default branch, but what about `origin` and `HEAD`? Let's review some concepts:
 
@@ -81,10 +83,11 @@ In JupyterLab you can see this information as labels under the tab **Changes**.
 
 <img src='/module5/terminal-branches.png' width="85%" alt="404 image" />
 
-<center/>
+</center>
 
 
-Notes: 
+Notes:
+
 
 You can see the `origin/HEAD`, `origin/main` and `main` displayed in the terminal when you check the history of your project, in the example with `git log --oneline`.
 
@@ -108,9 +111,10 @@ To practice working with branches, let's try adding a commit to one of your exam
 
 <img src='/module5/branches-head.png' width="85%" alt="404 image" />
 
-<center/>
+</center>
 
-Notes: 
+Notes:
+
 
 
 Let's see what happens when we make a commit locally. 
@@ -129,9 +133,10 @@ As expected, only the reference to where we are currently (HEAD) and the local m
 
 <img src='/module5/pushing-new-branch.png' width="85%" alt="404 image" />
 
-<center/>
+</center>
 
-Notes: Pushing a new branch using JupyterLab is exacly the same as you are used to with the "push" button. However, there is a slight change in the command when you are pushing a branch you created locally with the terminal. Instead of `git push` you will have to write:
+Notes:
+Pushing a new branch using JupyterLab is exacly the same as you are used to with the "push" button. However, there is a slight change in the command when you are pushing a branch you created locally with the terminal. Instead of `git push` you will have to write:
 
 `git push --set-upstream origin <new-branch-name>`
 
