@@ -70,19 +70,21 @@ remember that regardless of whether you are collaborating via branching or forki
 
 ## Giving collaborators access to your project
 
-The “Invite a collaborator” button on the GitHub web interface. 
+The “Invite a collaborator” button on the GitHub web interface.
+
 <center>
 
-<img src='/module5/add-collab-1.png' width="80%" alt="404 image" />
+<img src='/module5/add-collab-1.png' width="70%" alt="404 image" />
 
 </center>
 
 
 
 Notes:
+When working with a branching workflow,
+all collaborators need to have write access to the remote repository
+so that they can push up their branches to GitHub.
 As mentioned earlier, GitHub allows you to control who has access to your project. The default of both public and private projects are that only the person who created the GitHub repository has permissions to create, edit and delete files (write access). To give your collaborators write access to the projects, navigate to the “Settings” tab and click "Invite a collaborator".
-
-
 
 ---
 
@@ -120,9 +122,7 @@ To add a branch protection rule you can go to **Settings > Code and Automation (
 
 ---
 
-# Branch protection rules
-
-
+## Branch protection rules
 
 <center>
 
@@ -173,11 +173,13 @@ This means that when you are doing a pull request you will need the approval of 
 
 ---
 
-## Branching basic workflow
+## A basic branching workflow
 
-1. **Clone the project** - To work locally
-2. **Create your branch** - Create code or apply your changes
-3. **Push your changes and create a pull request** - This will create a pull request to be approved by another team member.
+1. **Clone the project** - To work locally.
+2. **Create your branch** - Create code or apply your changes.
+3. **Make the desired modifications** - Adding a new feature, fixing a bug, etc.
+4. **Push your changes** - This will upload your branch to GitHub
+5. **Create a pull request** - So that your changes can be reviewed by another team member.
 
 *Remember to pull the changes before starting to work in the repository*
 
@@ -185,9 +187,6 @@ Notes:
 Giving your collaborators access to your repository is mandatory to collaborate using branches. Protecting the main branch is considered good practice but experienced users that are very familiar with the workflow could opt to not use this strategy.
 
 The workflow will be the same that we have learned before, cloning, adding to the staging area, committing the changes and pushing to the repo with the only difference being that you will have to create a pull request. Merge conflicts could happen and you can use the strategies you have learned in the past chapters to resolve them.
-
-Before moving forward, we are going to explain another very useful tool that is key when working on GitHub to communicate with other team members or general public exploring your repository: GitHub issues
-
 
 ---
 
@@ -204,10 +203,9 @@ The “Issues” tab on the GitHub web interface
 Notes:
 When working on a project in a team, you don’t just want a historical record of who changed what file and when in the project—you also want a record of decisions that were made, ideas that were floated, problems that were identified and addressed, and all other communication surrounding the project. Email and messaging apps are both very popular for general communication, but are not designed for project-specific communication: they often lack functionality for organizing conversations by project subtopics, searching for conversations related to particular bugs or software versions, etc.
 
-
-
 🙌
-To open a GitHub issue, first click on the “Issues” tab 
+To open a GitHub issue, first click on the “Issues” tab,
+and then click the green button that says "New Issue".
 
 ---
 
@@ -225,10 +223,6 @@ GitHub issues are an alternative written communication medium to email and messa
 
 All issues are accessible to all project collaborators, so no one is left out of the conversation. If someone mention your name with the syntax `@yourname`, you will get a notification. If you want to be notified about all new issues and pull requests you can click the little eye icong in the top right corner that says "Watch". Replying to issues from email is also possible. Given all of these advantages, we highly recommend the use of issues for project-related communication.
 
-
-🙌
-To open a GitHub issue, first click on the “Issues” tab 
-
 ---
 
 ## Extra: Communicating using GitHub issues
@@ -244,8 +238,8 @@ The “Closed” issues tab on the GitHub web interface.
 Notes:
 
 🙌
-When a conversation is resolved, you can click “Close issue.” The closed issue can be later viewed by clicking the “Closed” header link in the “Issue” tab
-
+When a conversation is resolved, you can click “Close issue.” The closed issue can be later viewed by clicking the “Closed” header link in the “Issue” tab.
+Issues will be automatically closed if you merge a PR that refers to the issue.
 
 ---
 

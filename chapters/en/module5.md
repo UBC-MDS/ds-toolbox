@@ -228,7 +228,7 @@ Even if the final goal of the pull request is to merge your changes with another
 <slides source='module5/module5_05' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
-<exercise id='10' title='Between branches and forks'>
+<exercise id='10' title='Branching out'>
 
 In which cases would branching be better than using forks?
 
