@@ -187,7 +187,7 @@ Is <code> canadian-languages</code>  referring to a branch?
 
 <exercise id='8' title='You are cordially invited to review my changes'>
 
-**True or false**
+**True or False**
 
 You should be quite sure when creting a pull request because you will not be able add more commits after you create it.
 
@@ -200,7 +200,7 @@ You can continue adding commits to a pull request by pushing to the branch you u
 </opt>
 </choice>
 
-**True or false**  
+**True or False**  
 
 It is possible to open a pull request locally
 
@@ -213,9 +213,7 @@ You have to enter to your GitHub repository to start a pull request. What you ca
 </opt>
 </choice>
 
-Is opening a pull request essentially the same as merging a branch locally?
-
-Select the correct option
+Is opening a pull request the same as merging a branch locally?
 
 <choice id = 10>
 <opt text='Yes, it is the same, you are just merging branches, either using the GitHub UI or your local interface' >
@@ -261,13 +259,13 @@ Using only numbers could create confusion when merging the branches. For example
 </choice>
 </exercise>
 
-<exercise id='11' title='GitHub cutlery: introducing the forks' type='slides, video'>
+<exercise id='11' title='Collaborative GitHub workflows: Forking' type='slides, video'>
 <slides source='module5/module5_06' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
 <exercise id='12' title='Forking your repository'>
 
-**True or false**
+**True or False**
 
 When working on a forked repository, it is good practice to begin a new branch before submitting a pull request.
 
@@ -279,7 +277,7 @@ Making the pull request from a branch with a meaningful name will give the pull 
 </opt>
 </choice>
 
-**True or false**
+**True or False**
 
 
 After forking a GitHub repository, you should clone the repository's copy in your GitHub account to begin working on it locally. 
