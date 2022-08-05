@@ -108,7 +108,7 @@ What happens if the last change in the GitHub repository was in a different bran
 </opt>
 <opt text='False' correct='true'>
 
-The term `origin` refers to the remote repository. If the last change in the remote repository you are cloning was in other branch than <code>main</code> the label in the most recent commit will be (<code>origin/new-branch</code>). <code>origin/HEAD</code> will be always pointing the last commit in the <code>main</code> branch next to <code>origin/main</code> (except you change GitHub settings).
+The term `origin` refers to the remote repository. If the last change in the remote repository you are cloning was in other branch than <code>main</code> the label in the most recent commit will be (<code>origin/new-branch</code>). <code>origin/HEAD</code> will always point to the last commit in the <code>main</code> branch next to <code>origin/main</code> (except if you change the GitHub default settings).
 
 </opt>
 </choice>
@@ -116,7 +116,7 @@ The term `origin` refers to the remote repository. If the last change in the rem
 After running <code>git log --oneline --all --graph</code> in your repository you get as output the following tree:
 
 
-<img src="module5/module5-gitlog.png" alt="output git log"> 
+<img src="/module5/module5-gitlog.png" alt="output git log"> 
 
 
 Select the options that are TRUE
@@ -163,7 +163,7 @@ Once the branch has been merged all the information of both branches is combined
 What branches are you merging in this example:
 
 
-<img src="module5/module5-terminal.png" alt="terminal"> 
+<img src="/module5/module5-terminal.png" alt="terminal"> 
 
 
 <choice id = 7>
