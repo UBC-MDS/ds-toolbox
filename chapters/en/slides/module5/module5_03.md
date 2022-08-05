@@ -63,7 +63,7 @@ If you want to use the terminal to merge the branches and you are currently work
 
 
 Notes:
-Let's see how VS Code's graphical representation of the Git history changed when we merged the branches together. Remember that you can open VS Code from the terminal using the command `code .`. Then go to **View > Command Palette** and start writing `Git: View History (git log)`. A new tab will open with the Git History. If you want to display all the branches you will have to select them in one of the menus.
+Let's see how VS Code's graphical representation of the Git history changed when we merged the branches together. Remember that you can open VS Code from the terminal using the command `code .`. Then go to **View > Command Palette** and start writing `Git: View History (git log)`. A new tab will open with the Git History. If you want to display all the branches you will have to select them in one of the menus. In this view, we can see that the line for our branch has re-connected to the main branch with a merge commit.
 
 ---
 
@@ -93,11 +93,10 @@ You can only delete a branch when you are not working on it (it is not highlight
 
 
 Notes:
-
 If you want to delete the branches using the terminal you can use the command `git branch -d <branch-name>`.
 
 
-Now that you have a better grip on how to read the Git history and how to merge branches, it will be easier to work with both branches and forks.
+Now that you have a better grip on how to read the Git history and how to merge branches, it will be easier to work with both branches and forks!
 
 ---
 

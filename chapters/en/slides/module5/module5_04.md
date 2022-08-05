@@ -3,7 +3,6 @@ type: slides
 title: 'module5_04'
 ---
 
-
 # When merging branches goes social: Opening a pull request
 
 ---

@@ -23,7 +23,7 @@ id: 5
 
 </exercise>
 
-<exercise id='2' title="Be careful if you can't see the forest because of all the trees">
+<exercise id='2' title="Be careful if you can't see the forest because of all the branches">
 
 Which of these names are used to refer to the default branch in Git/GitHub?
 
