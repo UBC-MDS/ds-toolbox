@@ -14,9 +14,10 @@ title: 'module5_03'
 
 <img src='/module5/branches-house-analogy-explained.png' width="100%" alt="404 image"/>
 
-<center/>
+</center>
 
-Notes: Once you have finished your modifications in the branch you are working on, it is time to merge your changes to the `main` branch!
+Notes:
+Once you have finished your modifications in the branch you are working on, it is time to merge your changes to the `main` branch!
 
 Upon merging, the changes you were working on in a particular branch are combined with the content of the `main` branch (or any other branch that you decide to merge your changes with).
 
@@ -29,10 +30,11 @@ Upon merging, the changes you were working on in a particular branch are combine
 
 <img src='/module5/merge-branch.png' width="100%" alt="404 image"/>
 
-<center/>
+</center>
 
 
-Notes: To merge a branch using JupyterLab, you have to click on the tab **Branches** and then on the name of the branch you want to merge your current work with. For example, if you are working on the branch `report`, you can click next to the `main` branch and select "Merge this branch into the current branch".
+Notes:
+To merge a branch using JupyterLab, you have to click on the tab **Branches** and then on the name of the branch you want to merge your current work with. For example, if you are working on the branch `report`, you can click next to the `main` branch and select "Merge this branch into the current branch".
 
 Notice that after doing this, the report branch is not deleted automatically, so you can still access it if you need to.
 
@@ -45,7 +47,7 @@ Notice that after doing this, the report branch is not deleted automatically, so
 
 <img src='/module5/merge-branch-2.png' width="100%" alt="404 image"/>
 
-<center/>
+</center>
 
 Notes:
 
@@ -59,10 +61,11 @@ If you want to use the terminal to merge the branches and you are currently work
 
 <img src='/module5/git-history-log.png' width="100%" alt="404 image"/>
 
-<center/>
+</center>
 
 
-Notes: 
+Notes:
+
 Let's see how these graphics change once we merge the branches together on VS Code. Remember that you can open the editor from the terminal using the comand `code .`. Then go to **View > Command Palette** and start writting `Git: View History (git log)`. A new tab will open with the Git History. If you want to display all the branches you will have to select them in one of the menus.
 
 ---
@@ -73,7 +76,7 @@ Let's see how these graphics change once we merge the branches together on VS Co
 
 <img src='/module5/delete-branch.png' width="100%" alt="404 image"/>
 
-<center/>
+</center>
 
 Notes:
 
@@ -91,7 +94,7 @@ You can only delete a branch when you are not working on it (it is not highlight
 
 <img src='/module5/delete-branch-t.png' width="100%" alt="404 image"/>
 
-<center/>
+</center>
 
 
 Notes:
