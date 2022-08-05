@@ -292,7 +292,7 @@ You will clone, pull, and push to your GitHub account's cloned repository (the f
 </choice>
 </exercise>
 
-<exercise id="13" title="What we have learned?" type="slides,video">
+<exercise id="13" title="What did we learn?" type="slides,video">
 
 <slides source="module5/module5_end" shot="0" start="0:002" end="3:40">
 </slides>
