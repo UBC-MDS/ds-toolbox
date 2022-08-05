@@ -5,6 +5,7 @@ title: 'module5_01'
 
 # The role of branches
 
+Notes:
 In this slide deck we will learn about branches and how they can make our Git workflow more effective.
 
 ---
@@ -94,6 +95,7 @@ In JupyterLab you can see this information as labels under the tab **Changes** i
 Notes:
 In the terminal, you can use `git log --oneline` to check the history of your project,
 and see which commits correspond to the names `origin/HEAD`, `origin/main` and `main`.
+You can also see that the currently active branch is shown in cyan at the end of the terminal prompt.
 
 The `git switch` command can be used to alternate between existing branches. If a branch does not yet exist, you can append the `-c` flag to create the branch as you switch to it. Let's create a new branch! Type `git switch -c <branch-name>`, to create and switch to this branch.
 

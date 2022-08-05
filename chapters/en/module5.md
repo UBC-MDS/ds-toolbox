@@ -140,11 +140,11 @@ The position of the label <code>origin/master</code> indicates that both these c
 </choice>
 </exercise>
 
-<exercise id='5' title="All roads lead to `main`: Merging branches"  type='slides, video'>
+<exercise id='5' title="Mergin branches"  type='slides, video'>
 <slides source='module5/module5_03' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
-<exercise id='6' title='Merging branches'>
+<exercise id='6' title='All roads merge to `main`'>
 
 
 Would you delete a branch after merging it?
