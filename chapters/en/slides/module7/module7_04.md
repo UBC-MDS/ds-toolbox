@@ -281,4 +281,4 @@ Keep in mind that you can do much more than just change the size of an image or 
 
 ---
 
-# Let's see what you learned!
+# Let's apply what we learned!

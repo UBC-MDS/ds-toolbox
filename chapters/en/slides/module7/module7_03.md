@@ -338,4 +338,4 @@ In the search box that appears, you can type the name of the command you're look
 
 ---
 
-# Let's see what you learned!
+# Let's apply what we learned!
