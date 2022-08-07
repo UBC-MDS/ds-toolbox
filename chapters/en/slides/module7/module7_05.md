@@ -5,7 +5,7 @@ type: slides
 # Intermediate JupyterLab tips and tricks
 
 Notes:
-In this module we will present and assortment of intermediate techniques that can help you be more efficient when working in JupyterLab.
+In this module we will present an assortment of intermediate techniques that can help you be more efficient when working in JupyterLab.
 
 ---
 

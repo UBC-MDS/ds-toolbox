@@ -5,7 +5,9 @@ type: slides
 # Advanced JupyterLab tips and tricks
 
 Notes:
-In this module we will present and assortment of intermediate techniques that can help you be more efficient when working in JupyterLab.
+In this module we will present an assortment of intermediate techniques that can help you be more efficient when working in JupyterLab.
+
+---
 
 ## Running shell commands in Jupyter notebooks
 
@@ -29,7 +31,11 @@ A common action: exporting a notebook without code cells
 
 Notes:
 
-One common use of `!` commands in notebook cells is to export a notebook using `nbconvert` without its code cells. To do this, copy and paste bellow command into a code cell in your notebook. Then modify the command with an appropriate notebook file name instead of `this-notebooks-name.ipynb`, and run the code cell:
+One common use of `!` commands in notebook cells is to export a notebook without its code cells by using `nbconvert` directly,
+instead of the export menu in JupyterLab (which also calls `nbconvert` under the hood).
+To do this, copy and paste bellow command into a code cell in your notebook.
+Then modify the command with an appropriate notebook file name instead of `this-notebooks-name.ipynb`,
+and run the code cell:
 
 ```shell
 !jupyter nbconvert this-notebooks-name.ipynb \
@@ -39,6 +45,9 @@ One common use of `!` commands in notebook cells is to export a notebook using `
 ```
 
 Of course you can run this command using a terminal, but it could be much more convenient if you just quickly want to run a shell command in the folder in which the notebook resides.
+If you put it in the last cell in your notebook,
+you will always update the exported HTML file
+when you click "Run all" in JupyterLab.
 
 ---
 
