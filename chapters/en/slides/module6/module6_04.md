@@ -498,4 +498,4 @@ conda update --help
 
 
 
-# Let's see what you've learned!
+# Let's apply what we learned!

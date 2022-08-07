@@ -99,4 +99,4 @@ For example, one might choose to call their code-containing folder `code` or eve
 
 ---
 
-# Let's see what you've learned!
+# Let's apply what we learned!

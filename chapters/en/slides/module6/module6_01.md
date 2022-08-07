@@ -421,4 +421,4 @@ Adopting these basic principles is recommended as soon as you start working on a
 
 ---
 
-# Let's see what you've learned!
+# Let's apply what we learned!
