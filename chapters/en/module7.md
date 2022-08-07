@@ -154,6 +154,28 @@ Each single notebook in Jupyter Lab can only be connected to a single kernel.
 
 </choice>
 
+Which of the following statements is true?
+
+<choice id="2">
+
+<opt text="You should avoid using extensions since they are a security risk">
+Although some extension could provide security risks since they are written by someone else, they are not more dangerous than downloading a Python package made by someone else. In other words, most popular extensions are safe and you are encouraged to use them to improve your JupyterLab experience.
+</opt>
+
+<opt text="Prebuilt extensions can be installed via the extension manager GUI">
+This is only true for the old source extension format.
+</opt>
+
+<opt text="Exporting to WebPDF requires that you install the LaTeX typesetting program">
+This is only required for the regular PDF export.
+</opt>
+
+<opt text="Additional cell and notebook views are helpful when working with long notebook files" correct="true">
+Using additional views can allow you to compare output and input cells next to each other, even if they are far apart in the notebook.
+</opt>
+
+</choice>
+
 </exercise>
 <!-- ------------------------------------ -->
 <exercise id='7' title="Advanced JupyterLab tips and tricks" type="slides,video">
@@ -162,7 +184,7 @@ Each single notebook in Jupyter Lab can only be connected to a single kernel.
 <!-- ------------------------------------ -->
 <exercise id='8' title="✍️ Practice: JupyterLab level up again">
 
-Which of the following prefix characters can be used in to run shell commands inside a code cell?
+Which of the following prefix characters can be used in to run **shell** commands inside a code cell?
 
 <choice id="1">
 
@@ -183,6 +205,26 @@ This is not a valid command prefix in for a notebook cell.
 
 </choice>
 
+Which of the following prefix characters can be used in to run **magic** commands inside a code cell?
+
+<choice id="2">
+
+<opt text="<code>&</code>">
+This is not a valid command prefix in for a notebook cell.
+</opt>
+
+<opt text="<code>!</code>">
+This is the prefix for running shell commands.
+</opt>
+
+<opt text="<code>%</code>" correct="true">
+</opt>
+
+<opt text="<code>$</code>">
+This is not a valid command prefix in for a notebook cell.
+</opt>
+
+</choice>
 </exercise>
 <!-- ------------------------------------ -->
 <exercise id='9' title="What Did We Learn" type="slides,video">
