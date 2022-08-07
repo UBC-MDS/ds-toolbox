@@ -65,7 +65,7 @@ a reversion if more friendly for collaborating on GitHub, but it is still import
 
 ## Reversion (Terminal)
 
-`git revert <commit id>`
+`git revert <commit hash>`
 
 <center>
 

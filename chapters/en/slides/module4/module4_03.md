@@ -89,7 +89,7 @@ by pulling back the commits from the remote repository.
 
 ## Hard reset (Terminal)
 
-`git reset --hard <commit id>`
+`git reset --hard <commit hash>`
 
 <center>
 
@@ -99,7 +99,7 @@ by pulling back the commits from the remote repository.
 
 Notes:
 In the terminal,
-we can look at the `git log` output to find the commit hash we want to reset our project to. Then we can use the command `git reset --hard <commit id>`.
+we can look at the `git log` output to find the commit hash we want to reset our project to. Then we can use the command `git reset --hard <commit hash>`.
 If we are really sure about this change and want to push it to GitHub
 we need to use `git push -f` to "force" the push
 since GitHub by default protects us

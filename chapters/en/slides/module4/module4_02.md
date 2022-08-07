@@ -93,7 +93,7 @@ This is why we earlier had to go to that special box to select the file with cha
 
 Just as in JupyterLab,
 the default is to compare the specified commit with the most recent one
-so what we wrote about would be equal to specifying only one commit id
+so what we wrote about would be equal to specifying only one commit hash
 (the oldest one) doing `git diff 9a83b69`,
 since `89e195e` is the most recent commit.
 

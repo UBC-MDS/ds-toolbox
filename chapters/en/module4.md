@@ -30,7 +30,7 @@ Clone the repo https://github.com/UBC-MDS/equine_numbers_value_canada. What is t
 Is the first commit of the project or the first commit of the user flor14?
 </opt>
 <opt text='e98d2ad'>
-To use a shorter version of a SHA you should select the first characters, not the last ones.
+To use a shorter version of a commit hash you should select the first characters, not the last ones.
 </opt>
 <opt text='cc400df'>
 Is the first commit of the project or the first commit of the user flor14?
@@ -102,7 +102,7 @@ How could you make this same comparison using `git diff` from the command line h
 
 <choice id="4">
 <opt text='<code>git diff 9021b83</code>' >
-<code>9021b83</code> is the SHA-1 of the last commit, what would you like to compare it with?
+<code>9021b83</code> is the hash of the last commit, what would you like to compare it with?
 </opt>
 <opt text='<code>git diff 1bb5ab8</code>' >
 That's right, but there is also another correct option!
@@ -111,7 +111,7 @@ That's right, but there is also another correct option!
 That's right, but there is also another correct option!
 </opt>
 <opt text='The first and third options are both correct' >
-In the first option, <code>9021b83</code> is the SHA-1 of the last commit, what would you like to compare it with?
+In the first option, <code>9021b83</code> is the hash of the last commit, what would you like to compare it with?
 </opt>
 <opt text='The second and third option are both correct' correct='true' >
 Writing the newest commit is not necessary. If you write only one commit (that is not the newest one) it will compare it with the last one without specifying anything else.
@@ -162,7 +162,7 @@ Which of the following statements are TRUE about `git revert`?
 <opt text='This command creates a new commit that undoes the changes from previous commits.' >
 </opt>
 That's right, but there is also another correct option!
-<opt text='This command undoes the changes in your project up to the commit id that you have specified.'>
+<opt text='This command undoes the changes in your project up to the commit hash that you have specified.'>
 That's right, but there is also another correct option!
 </opt>
 <opt text='This command makes the history of the project shorter by deleting commits'>
