@@ -41,9 +41,11 @@ Under the hood, Git only saves the changes between your versions rather than a c
 </center>
 
 Notes:
-Both copies of the repository have a **working directory** where you can create, store, edit, and delete files (e.g., `analysis.ipynb` in the image). 
+Both copies of the repository:
 
-Both copies of the repository also maintain a full project history. This history is a record of all versions of the project files that have been created. The repository history is not automatically generated; Git must be explicitly told when to record a version of the project. These records are called **commits**. They are a snapshot of the file contents and metadata about the repository at the time the record was created (a commit includes who made the commit, when it was made, etc.).
+- have a **working directory** where you can create, store, edit, and delete files (e.g., `analysis.ipynb` in the image).
+
+- maintain a full project history. This history is a record of all versions of the project files that have been created. The repository history is not automatically generated; Git must be explicitly told when to record a version of the project. These records are called **commits**. They are a snapshot of the file contents and metadata about the repository at the time the record was created (a commit includes who made the commit, when it was made, etc.).
 
 In the local and remote repositories shown in the image, there are two commits represented as gray circles. Each commit can be identified by a human-readable message, which you write when you create the commit, and a commit hash that Git automatically adds for you.
 
