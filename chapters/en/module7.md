@@ -8,16 +8,16 @@ type: chapter
 id: 7
 ---
 
-<exercise id="1" title="Module learning outcomes" type="slides,video">
+<exercise id="0" title="Module learning outcomes" type="slides,video">
 <slides source="module7/module7_00" shot="1" start="0:003" end="05:31"></slides>
 </exercise>
 <!-- ------------------------------------ -->
 <!-- ------------------------------------ -->
-<exercise id='6' title="Jupyter notebooks" type="slides,video">
+<exercise id='1' title="Jupyter notebooks" type="slides,video">
 <slides source="module7/module7_03"></slides>
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id='7' title="Test your knowledge">
+<exercise id='2' title="Test your knowledge">
 
 Suppose that you have just opened a notebook with the following cells:
 
@@ -85,11 +85,11 @@ Note that some cells have already been executed. An error message would have res
 
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id='8' title="Markdown for text formatting" type="slides,video">
+<exercise id='3' title="Markdown for text formatting" type="slides,video">
 <slides source="module7/module7_04"></slides>
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id='9' title="Test your knowledge">
+<exercise id='4' title="Test your knowledge">
 
 It's possible to run code inside Markdown code blocks if you've specified the language after the first three back ticks, e.g. `python`.
 
@@ -119,11 +119,11 @@ You can <b>open</b> a Markdown document with any text editor, since it only cont
 
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id='10' title="Do more with JupyterLab" type="slides,video">
+<exercise id='5' title="Do more with JupyterLab" type="slides,video">
 <slides source="module7/module7_05"></slides>
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id='11' title="Test your knowledge">
+<exercise id='6' title="Test your knowledge">
 
 Which of the following statements is false?
 
@@ -171,7 +171,7 @@ This is not a valid command prefix in for a notebook cell.
 
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id='12' title="What Did We Learn" type="slides,video">
+<exercise id='7' title="What Did We Learn" type="slides,video">
 <slides source="module7/module7_end"></slides>
 </exercise>
 <!-- ------------------------------------ -->
