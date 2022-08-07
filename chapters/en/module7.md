@@ -125,7 +125,7 @@ You can <b>open</b> a Markdown document with any text editor, since it only cont
 
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id='5' title="Do more with JupyterLab" type="slides,video">
+<exercise id='5' title="Intermediate JupyterLab tips and tricks" type="slides,video">
 <slides source="module7/module7_05"></slides>
 </exercise>
 <!-- ------------------------------------ -->
@@ -154,9 +154,17 @@ Each single notebook in Jupyter Lab can only be connected to a single kernel.
 
 </choice>
 
+</exercise>
+<!-- ------------------------------------ -->
+<exercise id='7' title="Advanced JupyterLab tips and tricks" type="slides,video">
+<slides source="module7/module7_06"></slides>
+</exercise>
+<!-- ------------------------------------ -->
+<exercise id='8' title="Test your knowledge">
+
 Which of the following prefix characters can be used in to run shell commands inside a code cell?
 
-<choice id="2">
+<choice id="1">
 
 <opt text="<code>&</code>">
 This is not a valid command prefix in for a notebook cell.
@@ -177,7 +185,7 @@ This is not a valid command prefix in for a notebook cell.
 
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id='7' title="What Did We Learn" type="slides,video">
+<exercise id='9' title="What Did We Learn" type="slides,video">
 <slides source="module7/module7_end"></slides>
 </exercise>
 <!-- ------------------------------------ -->
