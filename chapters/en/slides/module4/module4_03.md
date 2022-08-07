@@ -109,6 +109,8 @@ If we want to make a new commit with the changes since the reset point,
 we can perform a "soft" reset with `git reset --soft`,
 which marks all the files as changed
 and let's us decide what to add to the staging area.
+Note that this is only possible in the terminal,
+and not via JupyterLab.
 
 ---
 

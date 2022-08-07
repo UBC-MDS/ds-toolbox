@@ -39,7 +39,7 @@ the untracked files are two folders that are automatically saved:
 - `.ipynb_checkpoints` contain old backup versions of our notebook which are saved by JupyterLab automatically.
 - `.DS_Store` contains directory display options for the Finder application on MacOS.
 
-The fact that they both start with a `.` means that they will be hidden in file browsers and in the output from `ls`;
+The fact that they both start with a `.` means that they will be hidden in file browsers and in the output from `ls` in the terminal;
 an indication that they are not something that we need to work with manually,
 but are there for applications on our computer to use when needed.
 
@@ -111,7 +111,7 @@ this can quickly become tedious to type.
 Instead,
 we can use filename pattern matching and global Git settings
 to simplify this process.
-We will look closer at each of these in the following few slides.
+We will look closer at each of these two approach in the next couple of slides.
 
 ---
 
