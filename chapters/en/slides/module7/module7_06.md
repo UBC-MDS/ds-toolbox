@@ -21,6 +21,13 @@ Notes:
 
 Sometimes it is very handy to be able to quickly run shell commands from within a Jupyter notebook. You can run any shell command by prefixing it with a `!`, and run it inside a computational cell just like any other code cell.
 
+You cannot interact with the output from shell commands as you would in a terminal.
+Therefore,
+if you want to install something with Conda,
+you will not be able to respond `y/n` on the confirmation prompt
+and instead need to append the `-y` option
+to the original command to automatically accept the confirmation prompt.
+
 ---
 
 ## Running shell commands in Jupyter notebooks
@@ -55,7 +62,7 @@ when you click "Run all" in JupyterLab.
 
 <br>
 
-Magic commands are special commands that provide useful functionalities in a convenient and concise way.
+Magic commands provide useful functionalities in a convenient and concise way.
 
 <img src="/module7/cell-magic.png" width="700"></img>
 
@@ -66,12 +73,11 @@ Magic commands introduced here are provided by and specific to IPython. Other la
 </p>
 
 Notes:
-
 Magic commands are special commands which implement a particular functionality that might not be doable or straight-forward using Python code. For example, you can measure the amount of time it takes on average to run a code cell, or run a `.py` Python script file directly using the notebook's kernel.
 
 A magic command can be run either in **line** or **cell** mode:
 
-- Line mode: Only applies to one line of code, and is activated by prefixing a relevant command with `%`. For example, `%reset -f` removes all names defined by the user without restarting the kernel.
+- Line mode: Only applies to one line of code, and is activated by prefixing a relevant command with `%`. For example, `%reset -f` removes all variable names defined by the user without restarting the kernel.
 
 - Cell mode: Applies to an entire cell, and is activated by prefixing a relevant command with `%%` at the beginning of a code cell. For example, the `%%timeit` cell magic in the following code runs the cell multiple times to compute an average running time:
 
@@ -81,37 +87,53 @@ for i in range(1_000_000):
     (i - 0.1)**2
 ```
 
+Note that magic commands are only available in notebooks running a Python kernel.
+The `%lsmagic` magic command lists all the available magic commands,
+and you can [read more about the magic commands in the documentation](https://ipython.readthedocs.io/en/stable/interactive/magics.html).
+
 ---
 
-## Magic commands
-
-Two other common uses:
+## Magic commands: Post-mortem debugging
 
 - **Post-mortem debugging**:
 
 <img src="/module7/pm-debug.png" width="700"></img>
 
-- **Search command history**:
+Notes:
+You've already seen how you can reset the Python namespace using `%reset -f` and time your code using `%%timeit`.
+
+Another useful magic command allows us to perform Post-mortem debugging. If you run a cell and happen to get an error, you can investigate what happened *post mortem* (i.e., after the error was thrown (literally "after death")), by running `%debug` in a different cell. Here, you can see an example of a syntax error, and the follow-up investigation using `%debug`.
+
+When an error is thrown,
+the traceback shows that several files are affected.
+When you enter into debugging mode,
+you might not be in the right file from the beginning.
+If this is the case,
+you can use `u` and `d` to navigate up and down in the files hierarchy respectively.
+Two other useful shortcuts are `c` to continue execution until the next error
+and `q` to quit the debugger and go back to working with your code cells
+(the rest of your notebook is unresponsive until you quit the debugger with `q`).
+
+The debugger that is used by JupyterLab is the standard Python debugger `pdb`,
+so you can [read more about all the options and commands in the Python documentation](
+https://docs.python.org/3/library/pdb.html#debugger-commands-1).
+
+---
+
+## Magic commands: Searching code cell history
+
+- **Searching code cell history**:
 
 <img src="/module7/search-hist.png" width="700"></img>
 
 Notes:
+Another useful magic command is `%hist`
+which displays the history for all the input cells you have executed.
+This is a bit overwhelming on its own, but it is very useful with the `-g` option.
 
-You've already seen how you can reset the Python namespace using `%reset -f` and time your code using `%%timeit`. Let's also look at two other useful magic commands here:
+In JupyterLab, you can use `%hist -g <search_pattern>` to search through all code cells you have ever executed (including from previous sessions, so it is similar to `history | grep <search_pattern>` in the shell). This is great for when you delete that piece of code you were *100% sure* you would never need again and was not important enough to be committed, but you —of course— end up wanting it back a few days later.
 
-- **Post-mortem debugging**:
-
-If you run a cell and happen to get an error, you can investigate what happened *post mortem* (i.e., after the error was thrown), by running `%debug` in a different cell. Here, you can see an example of a syntax error, and the follow-up investigation using `%debug`.
-
-- **Search command history**:
-
-In JupyterLab, you can use `%hist -g <search_pattern>` to search through all code cells you have ever executed (including from previous sessions, so it is similar to `history | grep <search_pattern>` in the shell). This is great for when you delete that piece of code you were *100% sure* you would never need again and was not important enough to be committed, but you —of course— end up wanting it back a few days later. Here, you see an example of using `%hist -g` to find a list of executed cells which contained "`range(1, 10)`".
-
-Finally, there are many more magic commands that we can cover here. If you're interested, you can:
-
-- Run `%lsmagic` inside a cell to see the list of all magic commands, and
-
-- Find the comprehensive documentation of all magic commands [here](https://ipython.readthedocs.io/en/stable/interactive/magics.html).
+Here, you see an example of using `%hist -g` to find a list of executed cells which contained "`range(1, 10)`".
 
 ---
 
@@ -153,17 +175,16 @@ at various locations to place multiple cursors wherever you need them, and then 
 
 More advanced features of JupyterLab:
 
-- The debugger
+- The graphical debugger
 
 - Real-time collaboration
 
 - Workspaces
 
 Notes:
+In addition to what we have discussed so far, there are a few additional advanced features of JupyterLab which can be helpful when working on specific projects. Some of these features are:
 
-In addition to what we have discussed so far, there are more advanced features of JupyterLab which can be tremendously helpful when working on specific projects. Some of these features are:
-
-- The debugger
+- The graphical debugger
 
 - Real-time collaboration
 
@@ -173,17 +194,22 @@ We will not discuss these features in detail here, but we'll briefly explain the
 
 ---
 
-## The debugger
+## The graphical debugger
 
-Documentation: [https://jupyterlab.readthedocs.io/en/stable/user/debugger.html](https://jupyterlab.readthedocs.io/en/stable/user/debugger.html)
+Documentation: https://jupyterlab.readthedocs.io/en/stable/user/debugger.html
 
 <img src="/module7/debugger.gif" width="800"></img>
 
 Notes:
 
-When you write code, things usually do not go perfectly on the first go, and you'll eventually need to debug your code at some point. 
+When you write code, things usually do not go perfectly on the first go, and you'll eventually need to debug your code at some point.
 
-JupyterLab provides a very useful visual debugger, which you can use to set breakpoints and step into your code, inspect variables, and more. You can find more details, including a tutorial notebook, [here](https://jupyterlab.readthedocs.io/en/stable/user/debugger.html) in JupyterLab's official documentation.
+We have already seen how we can use `%debug` to perform post-mortem debugging
+and JupyterLab recently also added a useful graphical debugger.
+This allows for easier access to more advanced debugging techniques
+such as setting breakpoints, inspecting variables, and more.
+
+You can find more details, including a tutorial notebook, [in JupyterLab's official documentation](https://jupyterlab.readthedocs.io/en/stable/user/debugger.html).
 
 ---
 
@@ -197,9 +223,11 @@ Notes:
 
 Another interesting and potentially helpful feature of JupyterLab is that you can enable **real-time collaboration** between multiple clients. Every user will have their own cursor in the same notebook as shown in the screenshot here (pretty much like in a Google Doc!). They can simultaneously edit and execute cells, and all the changes will be visible to other users in real time.
 
-For more detailed info on the real-time collaboration feature of JupyterLab, please refer to JupyterLab's documentation [here](https://jupyterlab.readthedocs.io/en/stable/user/rtc.html).
+You can [read more about the real-time collaboration feature of JupyterLab in the documentation ](https://jupyterlab.readthedocs.io/en/stable/user/rtc.html).
 
-Note that the real-time collaboration feature of JupyterLab is still experimental.
+Note that the real-time collaboration feature of JupyterLab is still experimental,
+and being actively worked on
+so its features and interface might change quickly.
 
 ---
 
@@ -215,7 +243,7 @@ When you work in JupyterLab, you might have a couple of files, views, and other 
 
 If you shutdown and relaunch JupyterLab, you'll see that this particular setup, including the open files and tabs and their arrangements, will get restored. This is because JupyterLab internally stores these information using the concept of a **workspace**.
 
-In case you need different setup of open files and layouts while working on multiple or large projects, you may want to create and use several workspaces. This is easily possible with JupyterLab: you can create new workspaces or clone existing workspaces and modify them as you wish, just through the URL of your browser. In order to to learn how to do so, please check out JupyterLab's documentation [here](https://jupyterlab.readthedocs.io/en/stable/user/urls.html#managing-workspaces-ui).
+In case you need different setup of open files and layouts while working on multiple or large projects, you may want to create and use several workspaces. This is easily possible with JupyterLab: you can create new workspaces or clone existing workspaces and modify them as you wish, just through the URL of your browser. In order [to learn how to use workspaces, check out JupyterLab's documentation ](https://jupyterlab.readthedocs.io/en/stable/user/urls.html#managing-workspaces-ui).
 
 ---
 
