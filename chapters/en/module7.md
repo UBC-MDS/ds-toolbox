@@ -17,7 +17,7 @@ id: 7
 <slides source="module7/module7_01"></slides>
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id='2' title="Test your knowledge">
+<exercise id='2' title="✍️ Practice: Notebook knowledge">
 
 Suppose that you have just opened a notebook with the following cells:
 
@@ -91,7 +91,7 @@ Note that some cells have already been executed. An error message would have res
 <slides source="module7/module7_02"></slides>
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id='4' title="Test your knowledge">
+<exercise id='4' title="✍️ Practice: Markdown is everywhere we look">
 
 **True or False**
 
@@ -129,7 +129,7 @@ You can <b>open</b> a Markdown document with any text editor, since it only cont
 <slides source="module7/module7_03"></slides>
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id='6' title="Test your knowledge">
+<exercise id='6' title="✍️ Practice: JupyterLab level up">
 
 Which of the following statements is false?
 
@@ -160,7 +160,7 @@ Each single notebook in Jupyter Lab can only be connected to a single kernel.
 <slides source="module7/module7_04"></slides>
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id='8' title="Test your knowledge">
+<exercise id='8' title="✍️ Practice: JupyterLab level up again">
 
 Which of the following prefix characters can be used in to run shell commands inside a code cell?
 
