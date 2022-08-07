@@ -33,7 +33,7 @@ To obtain the new changes from the remote repository on GitHub, you will need to
 
 
 Notes:
-The GitHub interface indicates the name of the last person to push a commit to the remote repository, a preview of the associated commit message, the unique commit identifier, and how long ago the commit was made.
+The GitHub interface indicates the name of the last person to push a commit to the remote repository, a preview of the associated commit message, the unique commit hash, and how long ago the commit was made.
 
 In this example,
 we can see that someone else
