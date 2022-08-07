@@ -100,7 +100,7 @@ We need a text editor or programming environment such as JupyterLab or VSCode fo
 
 </choice>
 
-**True or False**       
+**True or False**
 *All the tools we are using in this course are open source and free to use.*
 
 <choice id="3" >
@@ -120,8 +120,8 @@ They are! Volunteer contributions from people around the world support the devel
 
 </exercise>
 
-<exercise id="3" title="How to use is JupyterLab?" type="slides,video">
-<slides source="module1/module7_02"></slides>
+<exercise id="3" title="How to use JupyterLab?" type="slides,video">
+<slides source="module1/module1_02"></slides>
 </exercise>
 <!-- ------------------------------------ -->
 <exercise id='4' title="Test your knowledge">
@@ -163,6 +163,8 @@ JupyterLab is an IDE, whereas Notepad is a text editor.
 
 </choice>
 
+**True or False**
+
 When you use the "Simple" mode in JupyterLab, all windows will be closed except for the currently active one.
 
 <choice id="1">
@@ -175,6 +177,8 @@ All other windows will be just <b>hidden</b> from view, not closed! Once you dis
 </opt>
 
 </choice>
+
+**True or False**
 
 All JupyterLab windows have the same toolbar.
 
