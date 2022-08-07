@@ -120,11 +120,82 @@ They are! Volunteer contributions from people around the world support the devel
 
 </exercise>
 
-<exercise id="3" title="Asking Effective Questions" type="slides,video">
+<exercise id="3" title="How to use is JupyterLab?" type="slides,video">
+<slides source="module1/module7_02"></slides>
+</exercise>
+<!-- ------------------------------------ -->
+<exercise id='4' title="Test your knowledge">
+
+**True or False**
+
+JupyterLab only supports Python.
+
+<choice id="1">
+
+<opt text="True">
+Remember that the Jupyter Project is created to be language agnostic? It supports multiple languages, including Python, Julia, R, and more.
+</opt>
+
+<opt text="False" correct="true">
+</opt>
+
+</choice>
+
+Among the following options, which one is JupyterLab most similar to?
+
+<choice id="2">
+
+<opt text="Python">
+JupyterLab is an IDE, whereas Python is a programming language.
+</opt>
+
+<opt text="Visual Studio Code" correct="true">
+Both JupyterLab and Visual Studio code are IDE's with similar features.
+</opt>
+
+<opt text="GitHub">
+JupyterLab is an IDE, whereas GitHub is an online platform for hosting and managing code through the Git system.
+</opt>
+
+<opt text="Notepad">
+JupyterLab is an IDE, whereas Notepad is a text editor.
+</opt>
+
+</choice>
+
+When you use the "Simple" mode in JupyterLab, all windows will be closed except for the currently active one.
+
+<choice id="1">
+
+<opt text="True">
+All other windows will be just <b>hidden</b> from view, not closed! Once you disable the "Simple" mode, you'll see already open windows back in their original place.
+</opt>
+
+<opt text="False" correct="true">
+</opt>
+
+</choice>
+
+All JupyterLab windows have the same toolbar.
+
+<choice id="2">
+
+<opt text="True">
+As opposed to a notebook window, you'd see that a terminal window, for example, does not have a toolbar at all.
+</opt>
+
+<opt text="False" correct="true">
+</opt>
+
+</choice>
+
+</exercise>
+
+<exercise id="5" title="Asking Effective Questions" type="slides,video">
 <slides source="module1/module1_03" shot="1" start="26:3200" end="40:07"></slides>
 </exercise>
 
-<exercise id="4" title="✍️ Your turn: How to ask efectively?">
+<exercise id="6" title="✍️ Your turn: How to ask efectively?">
 
 Which of the following is **NOT** something you should do before asking for help online.
 
@@ -169,7 +240,7 @@ People from around the world volunteer their time and expertise to answer questi
 
 </exercise>
 
-<exercise id="5" title="What Did We Just Learn?" type="slides, video">
+<exercise id="7" title="What Did We Just Learn?" type="slides, video">
 <slides source="module1/module1_end" shot="0" start="04:37" end="05:35">
 </slides>
 </exercise>
