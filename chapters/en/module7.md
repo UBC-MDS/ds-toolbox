@@ -167,7 +167,7 @@ Note that some cells have already been executed. An error message would have res
 <!-- ------------------------------------ -->
 <exercise id='9' title="Test your knowledge">
 
-It's possible to run code inside Markdown code blocks if you've specified the language after the first three back ticks, e.g. ` ```python`.
+It's possible to run code inside Markdown code blocks if you've specified the language after the first three back ticks, e.g. `python`.
 
 <choice id="1">
 

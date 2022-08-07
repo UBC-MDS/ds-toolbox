@@ -90,7 +90,7 @@ to launch JupyterLab.
 Notes:
 
 We have already seen how to install and run JupyterLab in the instructions for Assignment 1, but have also included it here so that you have all the information about JupyterLab in one place.
-Make sure that you are in a conda environment (preferably the `(base)` environment), before attempting to install JupyterLab.
+Make sure that you are in a Conda environment (preferably the `(base)` environment), before attempting to install JupyterLab.
 
 Note that on MachOS and Linux, you can use the standard terminal app to run these commands. On Windows, you need to open "Anaconda Prompt" (the equivalent the terminal in Windows) to run these commands. Remember that "Anaconda Prompt" should be available on your system, as a part of your Miniconda installation.
 
@@ -112,11 +112,11 @@ You have already used the terminal and Git extension inside JupyterLab in previo
 
 ---
 
-## Use conda environments with JupyterLab
+## Use Conda environments with JupyterLab
 
 <br>
 
-Suppose that you created a new conda environment called `dstoolbox`, and you want to use it with JupyterLab.
+Suppose that you created a new Conda environment called `dstoolbox`, and you want to use it with JupyterLab.
 
 <br>
 
@@ -140,7 +140,7 @@ conda install ipykernel
 
 Notes:
 
-From Chapter 6, you might remember that you need to follow two steps if you'd like to use conda environments within JupyterLab. That is:
+From Chapter 6, you might remember that you need to follow two steps if you'd like to use Conda environments within JupyterLab. That is:
 
 - Install `nb_conda_kernels` in your base environment by running
 
@@ -158,7 +158,7 @@ Once you've done that, you'll be able to see your desired environment in the Lau
 
 ---
 
-## Launching a notebook with a specific conda environment
+## Launching a notebook with a specific Conda environment
 
 <img style="border:1px solid black;" src="/module7/jl-launch_dstoolbox.png" width="800"></img>
 
