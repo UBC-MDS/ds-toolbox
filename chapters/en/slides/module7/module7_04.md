@@ -71,7 +71,7 @@ In order to convert a code (or raw) cell to a Markdown cell, you can do either o
 
 ---
 
-## The Markdown syntax: Headers
+## The Markdown syntax: Headings
 
 <br>
 
@@ -80,7 +80,7 @@ In order to convert a code (or raw) cell to a Markdown cell, you can do either o
 Notes:
 
 Let's learn a few most commonly used formatting rules in Markdown.
-In this slide we can see how headers are created by prepending hash symbols (`#`) to the header text.
+In this slide we can see how headings are created by prepending hash symbols (`#`) to the headings text.
 
 One hash indicated the top level heading of the document
 (this is usually your title),
