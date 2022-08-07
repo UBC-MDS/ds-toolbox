@@ -178,7 +178,7 @@ Is the third options really correct?
 </opt>
 </choice>
 
-You are writing a book using version control. In your local repository, you have a text file for each chapter. Today, after reading your work again you decided to move some of the text you have written for `chapter3.md` to `chapter1.md`. How would you save this change using Git?
+You are writing a book using version control and you have a text file for each chapter in your local repository. Today, after reading your work again, you decided to move some of the text you have written for `chapter3.md` to `chapter1.md`. How would you save this change using Git?
 
 <choice id="2">
 <opt text='I would cut and copy the text into a new file, add both files to the staging area, and then commit with a message explaining the changes.' correct='true'>
