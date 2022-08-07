@@ -2,339 +2,270 @@
 type: slides
 ---
 
-# Jupyter notebooks
+# Intermediate JupyterLab tips and tricks
 
 Notes:
-In this slide deck we will go in depth into how to to work with Jupyter notebooks.
+In this module we will present an assortment of intermediate techniques that can help you be more efficient when working in JupyterLab.
 
 ---
 
-## What is a Jupyter notebook?
+## Using multiple views of the same content
 
 <br>
 
-- A Jupyter notebook is a document that contains **narrative text**, alongside **runnable code**
+In JupyterLab, you can change the way you view content in three main ways:
 
-- Jupyter notebooks have an `.ipynb` extension
+1. Opening an additional view of the same notebook.
 
-<br>
+2. Opening an additional view of the output of a specific cell.
 
-<img src="/module7/notebook.png" width="600"></img>
-
-Notes:
-
-- A Jupyter notebook is a document that contains **narrative text**, alongside **runnable code**
-
-- Jupyter notebooks have an `.ipynb` extension
-
----
-
-## Creating new notebooks
+3. Render cell output on the side of a code cell instead of below it.
 
 <br>
 
-<img src="/module7/new-notebook.png" width="750"></img>
-
 Notes:
+As we learned previously,
+it is possible to have multiple windows open in JupyterLab.
+In fact,
+we can even view the same content in more than one window,
+which can be helpful when you
+e.g. want to have two parts of a long notebook in view at the same time
+or have specific space constraints to work around.
 
-You can create new notebooks in three ways.
+There are three main ways that we can modify how we view content in JupyterLab:
 
-The first one is to click the blue `+` button on the top left corner of the file explorer tab, which opens a new Launcher. You can then click on any one of the available environment kernels to create a new notebook with that kernel. This is marked with the left-hand side arrow in this slide.
+1. Opening an additional view of the same notebook.
+2. Opening an additional view of the output of a specific cell.
+3. Render cell output on the side of a code cell instead of below it.
 
-The second way is to click the icon in the main working area for the conda environment your want to launch, which is marked by the right-most arrow on this slide.
+Let's see how views look like in JupyterLab in the next slides.
 
 ---
 
-## Creating new notebooks
+## 1. Additional notebook views
+
+<img src="/module7/view2.png" width="650"></img>
+
+<img src="/module7/view3.png" width="650"></img>
+
+Notes:
+
+Additional notebook views can be created by right clicking the notebook's title bar, and choose "New View for Notebook". An alternative way is to go to the "File" menu, and choose "New View for Notebook".
+
+As you can see here in the screenshot at the bottom of the slide, both open tabs are views of the same Jupyter notebook. Now you can work on and edit a part of the notebook, while also looking at a different part and potentially editing that part too.
+
+Remember, though, you can only have one cell running at a time. This is because you still have only one kernel for your notebook, even though you're working with it from different views.
+
+---
+
+## 2. Additional cell output views
+
+<img src="/module7/view.png" width="425"></img>
+
+<img src="/module7/view1.png" width="425"></img>
+
+Notes:
+To create an output view for any computational cell, you can right-click anywhere in the cell, and then choose "Create New View for Output".
+This can be useful when an output can't fit on the screen under the code cell
+and need to be repositioned.
+
+You can reposition the location of your new output window as you wish, by dragging the title bar of the output window to the desired position.
+
+---
+
+## 3. Side-by-side output views
+
+<img src="/module7/sbs-output.png" width="750"></img>
+
+Notes:
+When vertical space is precious, another option is to enable **side-by-side** rendering of cell outputs. This way the output of each cell will appear horizontally to the right of the cell, thereby saving vertical space.
+This has the advantage that it applies to all output cells,
+and you don't have to create a separate view for each one,
+as you would with the additional cell output views.
+
+In order to enable this feature, either go the "View" menu and choose "Render Side-by-Side", or press `Shift + R` on your keyboard.
+When you do that, your notebook will look it does in this slide.
+
+---
+
+## Exporting notebooks
 
 <br>
 
-<img src="/module7/new-notebook2.png" width="750"></img>
+To share your work with others, it is possible to export your notebook to various formats in JupyterLab, including:
 
-Notes:
-
-The third way to create a new Jupyter notebook is to right-click on the empty space of the file explorer, and then choose "New notebook". You'll be asked to choose a kernel right afterwards, and then your new notebook will be ready.
-
----
-
-## Building blocks of notebooks
-
-<img src="/module7/cells.png" width="700"></img>
-
-Notes:
-
-- A Jupyter notebook consists of **cells**.
-
-- A cell is a block of characters, that can be interpreted in different ways depending on its type.
-
-- A in a notebook can be one of these three types:
-  - Code
-      - Execution of code in multiple languages.
-  - Markdown
-      - Formatted text, we will look more at Markdown in module 7.
-  - Raw
-      - Everything appears as is, no formatting or code execution.
-
----
-
-## Cell selection modes
-
-An **active** cell in a Jupyter notebook can be in either **command** or **edit** mode:
+1. HTML
+2. PDF
+3. Markdown
 
 <br>
 
-<img src="/module7/command-edit.png" width="650"></img>
+<img src="/module7/export.png" width="700"></img>
 
 Notes:
 
-Whenever you interact with a cell inside a Jupyter notebook, it becomes **activated**. This means that the cell is selected, and ready to be edited or executed.
+To share your work with others, it is possible to export your notebook to various formats in JupyterLab, including:
 
-An **active** cell in a Jupyter notebook can be in either **command** or **edit** mode:
+- HTML
+- PDF
+- Markdown
 
-- **Command** mode:
-  - You don't have a cursor inside the cell
-  - The cell has a **grey** background
-  - Hit `Esc` or click outside a cell to switch from **edit** to **command** mode
+Exporting your notebooks to these formats means that you can share them with your colleagues
+even if they don't have JupyterLab installed themself.
+This makes it easy to collect feedback from others,
+since they can work in a format that is already familiar to them.
 
-- **Edit** mode:
-  - You have a cursor inside the cell
-  - You can start typing or edit the code or text inside a cell
-  - The cell has a **white** background
-  - Hit `Enter` or click in a cell to switch from **command** to **edit** mode
+We will go through some of the key export options in the next few slides,
+and you can always [read more about Jupyter notebook exports in the documentation](https://jupyterlab.readthedocs.io/en/stable/user/export.html#user-export).
 
 ---
 
-## Cell selection modes
+## 1. Notebook to HTML
 
-<img src="/module7/command-edit2.png" width="550"></img>
+<img style="border:1px solid black;" src="/module7/html-export.png" width="750"></img>
+
+Notes:
+To export your notebook to HTML,
+got to `File -> Save and Export Notebook As... -> HTML`
+in the JupyterLab menu bar.
+
+You can see how our notebook looks like when converted to HTML in this slide. This is the format used to show content on the web and converting to HTML often means that all your plots and animations will show up just as they do in the JupyterLab interface.
+
+Therefore,
+converting a notebook to HTML is convenient when you want to share it with someone who does not have JupyterLab installed themselves,
+while retaining as many as possible of the visualization intact.
+After export,
+you can simply send the exported HTML file in a email (or similar) to your colleague and they can download it and open it in any modern browser such as Firefox or Chrome.
+
+In the next slide show,
+we will how you can hide code cells in your exported notebook,
+which is useful when sharing them with someone who doesn't need to review you code,
+just you analysis results.
+
+---
+
+## 2. Notebook to PDF
+
+<img style="border:1px solid black;" src="/module7/webpdf-export.png" width="750"></img>
+
+Notes:
+There are two ways of converting notebooks to PDF,
+the regular PDF option which requires LaTeX to be installed,
+and the newer WebPDF option.
+The WebPDF option is generally preferable,
+since this makes the output PDF document look more like what you see in JupyterLab,
+whereas the LaTeX PDF option will format the output document quite differently.
+
+You can export to WebPDF by going to `File -> Save and Export Notebook As... -> WebPDF`
+You can easily convert your notebook to a PDF document using the WebPDF option.
+If you don't have this option available,
+you might need to run `pip install nbconvert[webpdf]`
+in the environment where you have JupyterLab installed ([more details on webpdf in the documentation](https://nbconvert.readthedocs.io/en/latest/usage.html?highlight=webpdf#webpdf)).
+
+Please note that the WebPDF option does not support rendering images that are inserted using HTML tags.
+
+---
+
+## 3. Notebook to Markdown
+
+<img style="border:1px solid black;" src="/module7/md-export.png" width="750"></img>
+
+Notes:
+We've learned quite a bit about the Markdown format so far in this chapter. The Markdown option converts your notebook to a Markdown file that only contains plain text, and can be opened with any text editor. In order to see the rendered Markdown file however, you need to open it using JupyterLab or another IDE like VS Code.
+
+In the screenshot on this slide you can see what an example notebook would look like when converted to markdown.
+Note how computational cells are converted to Markdown code blocks with appropriate syntax highlighting language included.
+
+It is actually possible to work with notebooks directly in Markdown format instead of the default JSON format that they `.ipynb` files as stored as. This has the advantage of making the notebook source files easier to read with the human eye which can be helpful when reviewing each others code on GitHub, so it is preferred by some organizations. To do this, you would need to install the [Jupytext extension](https://jupytext.readthedocs.io/en/latest/); we will show you how to install extensions in the next few slides.
+
+---
+
+## JupyterLab extensions
+
+- JupyterLab is built to be modular and extensible by nature
+
+- When a feature is needed, developers can add it to JupyterLab by creating an extension
+
+- JupyterLab itself is mainly a collection of various extensions
+
+<img src="/module7/ext.png" width="400"></img>
 
 Notes:
 
-You can also find out whether you're in command or edit mode by looking at the status bar when you have an active cell.
+JupyterLab is built to be modular and extensible by nature. When a feature does not already exist in JupyterLab, developers can create an **extension** to provide that feature for JupyterLab.
+
+Do you remember using the Git extension in JupyterLab in previous chapters? Well, as the name suggests, that was an extension that was added on to JupyterLab when you followed the installation guide in Assignment 0!
+
+As a matter of fact, JupyterLab itself is mainly a collection of various extensions.
+We will cover some of the highlights for JupyterLab extensions in the next few slides
+and you can [find out more about JupyterLab extensions in the documentation](https://jupyterlab.readthedocs.io/en/stable/user/extensions.html).
 
 ---
 
-## Code cells and kernels
+## Installing JupyterLab extensions
 
 <br>
 
-- Code cells contain executable code written in a specific programming language.
+- JupyterLab extensions may be in either **source** or **prebuilt** format
 
-- Each notebook is connected to a kernel, which is the backend engine in charge of running code in a notebook.
+**Prebuilt**
 
-- Code cells are executed using a notebook's kernel.
-
-- You may run code cells in any order.
-
-Notes:
-
-- Code cells contain executable code written in a specific programming language.
-
-- Each notebook is connected to a kernel, which is the backend engine in charge of running code in a notebook.
-  - For example, a Jupyter notebook can be connected to an Python kernel.
-  - Remember that we installed `ipykernel` in our Conda environments to make them visible to JupyterLab? `ipykernel` is the kernel we've been talking about here, which is nothing but an interactive Python engine that works with JupyterLab.
-  - When you create a notebook with the kernel from a particular Conda environment, you'll have access to all packages installed in that environment. It is basically the same as running Python code in that environment.
-
-- Code cells are executed using a notebook's kernel
-  - When you run a code cell, the code inside the cell is sent to the kernel
-  - The kernel executes the code. If there are any outputs, these are sent back to the Jupyter notebook, and we'd see them as the cell's output.
-
-- You may run code cells in any order.
-  - Each time you run a code cell, the number to the left of the code cell (e.g. `[8]:`) is incremented by 1. This helps you keep track of the order of executions.
-
----
-
-## Running code cells
-
-To run a code cell:
-
-- First make sure the cell is selected
-
-- Then, either click the little play button in the notebook toolbar, or
-
-- Hit `Shift + Enter` on your keyboard
-
-<img src="/module7/run-cell.png" width="600"></img>
-
-Notes:
-
-To run a code cell:
-
-- First make sure the cell is selected
-  - You can click anywhere in a code cell to select and activate it
-  - An active code cell is indicated a blue vertical bar on its left
-
-- Then, either click the little play button in the notebook toolbar, or
-
-- Hit `Shift + Enter` on your keyboard
-  - You can also use `Ctrl + Enter` to run a cell. The difference is that `Shift + Enter` runs the cell, then advances to the next cell, whereas with `Ctrl + Enter` the focus remains on the currently selected cell.
-
-Note how `[ ]:` changes to `[1]:` when you run the cell. Anytime you run this cell, this execution count is incremented by 1.
-
----
-
-## Useful keyboard shortcuts for cell manipulation
-
-When you are in **command** mode, you can use the following keyboard shortcuts to perform a variety of cell actions:
-
-- `↑`: move cell selection to above cell
-- `↓`: move cell selection to below cell
-- `Shift + ↑`: extend selection to above cell
-- `Shift + ↓`: extend selection to below cell
-- `A`: insert a new cell above current cell
-- `B`: insert a new cell below current cell
-- `DD`: delete current cell
-- `C`: copy current cell
-- `X`: cut current cell
-- `V`: paste already cut or copied cell below current cell
-- `Z`: undo last cell action
-- `Shift + Z`: redo last undone cell action
-- `Ctrl + F`: find match in notebook
+- Most JupyterLab extensions are in the prebuilt format
+- These can be installed via `conda install <extension_name>`
+- They can be used right away after installation
 
 <br>
 
-You're already familiar with the following shortcuts:
+**Source**
 
-- `Ctrl + Enter`: run current cell
-- `Shift + Enter`: run current cell and advance
-
-Notes:
-
-You can always find all keyboard shortcuts using the "Settings" menu in JupyterLab interface. Just go to "Settings" -> "Advanced Settings Editor", and in the newly opened window, select "Keyboard Shortcuts" on the left sidebar.
-
----
-
-## Consoles
+- Some older JupyterLab extensions still use the source format
+- These can be installed via the Extension Manager or the `jupyter labextension install <extension_name>` command
+- A **source** extension cannot be used right away, but requires a rebuild of JupyterLab. 
 
 <br>
 
-Consoles in JupyterLab are **interactive command lines** connected to a kernel.
-
-<img src="/module7/console.png" width="600"></img>
-
-Notes:
-
-There are times that you want to quickly experiment with short pieces of code, but you don't necessarily want the code you write to be part of your Jupyter notebook.
-
-Using an interactive **console** is a great idea in such a situation. The nice thing about it is that you can open a console that's connected to your notebooks kernel, so it will be aware of all variables, arrays, functions, etc. that you have defined in your notebook.
-
-In order to open a console that's connected to your notebook's kernel, right-click on your notebook's name in the tab bar, and choose "New Console for Notebook".
-
----
-
-## Consoles
-
-<img src="/module7/console2.png" width="700"></img>
+<p style="color:black; font-size:110%; background-color:floralwhite;">
+Always refer to an extension's documentation to find the recommended way of installation.
+</p>
 
 Notes:
+JupyterLab extensions may be in either **source** or **prebuilt** format
 
-Here I have opened a console for the notebook which I already created. As you can see, I print a variable called `myString`, which stores a string value. Because the console is connected to the notebook's kernel, I can access that variable right from the console.
+**Prebuilt**
 
-You can resize or move the console window as you wish. Also, remember that you can run the piece of code that you've entered in the input area by pressing `Shift + Enter`.
-
-Since the Jupyter Console is suitable for quick exploration, an increasing number of well-known data science packages have started to include it as part of their documentation.
-For example, the well-known `numpy` package allows you to try out NumPy directly on their web page without installing anything using a special Jupyter Console (under the "Try NumPy" section at https://numpy.org/)
-
----
-
-## Getting help when writing code
+- Most JupyterLab extensions are in the prebuilt format
+- These can be installed via `conda install <extension_name>`
+- They can be used right away after installation
 
 <br>
 
-**Auto-completion:**
+**Source**
 
-You can partially type the name of a variable, function, class, or any other known name in your Python session, and then press `Tab` to see the available options for auto-completion.
+- Some older JupyterLab extensions still use the source format
+- These can be installed via the Extension Manager GUI or by typing `jupyter labextension install <extension_name>` command
+- A **source** extension cannot be used right away, but requires a rebuild of JupyterLab.
+  - This rebuild required the program **Node.js** to be installed in your Conda environment. You can install Node.js by running `conda install nodejs`.
 
-<img src="/module7/tab.png" width="500"></img>
-
-Notes:
-
-Like in a terminal, you can take advantage of the auto-completion capability of JupyterLab (through the IPython kernel).
-
-Whenever you partially type the name of a variable, function, class, etc. you can press `Tab` on your keyboard to see the available options.
-You can then press `Tab` and `Shift` + `Tab` to cycle through the completion and press `Enter` to insert the one you want.
-
-Auto-completion is a very handy feature also to see what methods and functions are available in a package. You can type the packages alias (e.g. `np` in this case for the `numpy` package) followed by a `.`, and then hit `Tab` to see the available options.
-
-It's important to remember that, you won't get auto-completion until the expressions that you're looking for are known in your Python session. This means that, for example, unless you run `import numpy as np`, auto-completion won't be available for any function belonging to the Numpy package.
+Since there are different ways of installing extensions,
+make sure to always refer to an extension's documentation to find the recommended way of installation.
+As an example,
+here is the [link to the installation steps recommended by the `jupyterlab-git` extension](https://github.com/jupyterlab/jupyterlab-git#install). This is an example of a Conda installation of a prebuilt extension.
 
 ---
 
-## Getting help when writing code
+## JupyterLab Extension Manager
 
-<br>
-
-**Contextual help:**
-
-To see a function's docstring, press `Shift + Tab` while your curser is anywhere inside a function's name characters:
-
-<img src="/module7/help.png" width="700"></img>
+<img src="/module7/ext2.png" width="700"></img>
 
 Notes:
 
-When you're writing code, you might not remember all arguments that a particular function accepts, or the type outputs. Sometimes it's also very helpful to be able to see a few examples of how a function can be used.
+JupyterLab provides a GUI for managing extensions.
 
-In these situations, you might want to have a quick look at a function's documentation (i.e. "docstring" in Python lingo).
+As shown in the screenshots, you can view a list of installed extensions by clicking on the puzzle-piece icon on the left-hand side bar of JupyterLab.
 
-In JupyterLab, you can press `Shift + Tab` while your cursor is anywhere inside a function's name characters, to quickly make the function's documentation appear as a pop-up window.
+Suppose that we're looking for a particular extension called "jupyterlab-drawio". If you type "draw" in the search box at the top and hit `Enter`, you'll see that this extension appears at the top. Now you just need to click "Install", and your desired extension will be installed.
 
-Keep in mind that, the documentation pop-up content depends on the cursor location. If you move your cursor to a different function and hit `Shift + Tab` again, the helper pop-up would show the other function's documentation.
-
----
-
-## Getting help when writing code
-
-<br>
-
-<img src="/module7/help2.png" width="800"></img>
-
-Notes:
-
-Another way of accessing the docstring for various functions is to open the "Contextual Help" window by right-clicking any cell and choosing "Show Contextual Help".
-
-As soon as you click on a function's name, the contextual help window will update to show the help for that function.
-This can be super useful when working with a package that you are not very familiar with and we recommend that you have the contextual help open all the time in this scenario.
-
----
-
-## Jupyter notebooks & reproducibility
-
-
-<img src="/module7/reprod.png" width="800"></img>
-
-Notes:
-
-In Jupyter notebooks, it is possible (and common) to execute code cells out of order. If not careful, this can lead to to reproducibility issues.
-
-Once you are done with your analysis, it's a good idea to take the following steps to ensure that your results and outputs are reproducible:
-
-- Restart your notebook kernel
-  - By doing this, you would make sure that the Python engine is fresh and does not contain any variables, functions, etc. Sometimes, you might define a variable and then delete the cell containing that piece of code. If someone else runs your notebook, they will run into error. Make sure your notebook contains everything it needs to run properly by restarting your kernel, and testing everything fresh!
-  - To restart the kernel, go to the "Kernel" menu and choose "Restart Kernel...", or click the "Restart the kernel" button in your notebook's toolbar (shown with a circular arrow icon).
-
-- After restarting, run all cells from the top
-  - This way, you would be sure that your out-of-order executions do not affect the reproducibility of your code.
-  - To run all cells from the top, go to the "Run" menu and choose "Run All Cells"
-
-You can do the above two steps; namely, restarting and running all cells, in one go: just click the dedicated button in your notebook's toolbar as shown in the screenshot here on the right.
-
-It's not a bad idea to explore other similar options in the "Kernel" and "Run" menus. For example, it's also possible and sometimes helpful to run a notebook from the top, but up to a selected cell, or run a notebook beginning from a selected cell.
-
----
-
-## The Command Palette
-
-<br>
-
-<img src="/module7/comm-pal.png" width="600"></img>
-
-Notes:
-
-Whenever you happen to forget the where a particular command is, you can take advantage of the Command Palette in JupyterLab.
-
-To open the Command Palette, go to the "View" menu and choose "Activate Command Palette", or use the corresponding keyboard shortcut.
-
-In the search box that appears, you can type the name of the command you're looking for. The nice thing is that, it works well even if you **partially** remember the command's name!
+Note that, since the extensions that you can install using the GUI are **not prebuilt**, you will be prompted with a message box to rebuild JupyterLab. But no need to worry! Simply click the "Rebuild" button. Finally, you'll see a "Build Complete" message if everything is successful. It's safest to click "Save and Reload" so that you don't lose any unsaved changes.
 
 ---
 

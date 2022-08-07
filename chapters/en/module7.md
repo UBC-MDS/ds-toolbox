@@ -14,7 +14,7 @@ id: 7
 <!-- ------------------------------------ -->
 <!-- ------------------------------------ -->
 <exercise id='1' title="Jupyter notebooks" type="slides,video">
-<slides source="module7/module7_03"></slides>
+<slides source="module7/module7_01"></slides>
 </exercise>
 <!-- ------------------------------------ -->
 <exercise id='2' title="Test your knowledge">
@@ -88,7 +88,7 @@ Note that some cells have already been executed. An error message would have res
 </exercise>
 <!-- ------------------------------------ -->
 <exercise id='3' title="Markdown for text formatting" type="slides,video">
-<slides source="module7/module7_04"></slides>
+<slides source="module7/module7_02"></slides>
 </exercise>
 <!-- ------------------------------------ -->
 <exercise id='4' title="Test your knowledge">
@@ -126,7 +126,7 @@ You can <b>open</b> a Markdown document with any text editor, since it only cont
 </exercise>
 <!-- ------------------------------------ -->
 <exercise id='5' title="Intermediate JupyterLab tips and tricks" type="slides,video">
-<slides source="module7/module7_05"></slides>
+<slides source="module7/module7_03"></slides>
 </exercise>
 <!-- ------------------------------------ -->
 <exercise id='6' title="Test your knowledge">
@@ -157,7 +157,7 @@ Each single notebook in Jupyter Lab can only be connected to a single kernel.
 </exercise>
 <!-- ------------------------------------ -->
 <exercise id='7' title="Advanced JupyterLab tips and tricks" type="slides,video">
-<slides source="module7/module7_06"></slides>
+<slides source="module7/module7_04"></slides>
 </exercise>
 <!-- ------------------------------------ -->
 <exercise id='8' title="Test your knowledge">

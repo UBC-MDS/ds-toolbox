@@ -2,282 +2,248 @@
 type: slides
 ---
 
-# Markdown for text formatting
+# Advanced JupyterLab tips and tricks
 
 Notes:
-In this slide deck we will be learning about how we can use the Markdown text format effectively in our notebooks.
+In this module we will present an assortment of intermediate techniques that can help you be more efficient when working in JupyterLab.
 
 ---
 
-## What is Markdown?
+## Running shell commands in Jupyter notebooks
 
 <br>
 
-<img src="/module7/md.png" width="200"></img>
+In order to run a shell command in a cell, prefix it with a `!`:
 
-**Markdown** is a fast and easy way to format plain text.
-
-Most important features:
-
-- Quickly write text that can be nicely formatted upon rendering
-
-- A Markdown file is nothing but a plain text file!
-
-Markdown is supported on various platforms, including GitHub (remember `README.md` files?) and even Google Doc!
+<img src="/module7/shell.png" width="600"></img>
 
 Notes:
 
-So far we've only talked about code cells, which are responsible for the computational part of a Jupyter notebook. The other major type of cell in a Jupyter notebook is what's known as a **Markdown** cell, which allows you to write formatted text. This is where you can store the narrative part of your Jupyter notebook.
+Sometimes it is very handy to be able to quickly run shell commands from within a Jupyter notebook. You can run any shell command by prefixing it with a `!`, and run it inside a computational cell just like any other code cell.
 
-**Markdown** provides a fast and easy way to format plain text, without the need to have a graphical interface to manipulate the looks of your document, or needing any special file format. If you're familiar with HTML or Latex, you'll notice a lot of similarities. But using Markdown is much simpler and geared towards applications where you need to write a formatted document with convenience, and you don't need super advanced typographical elements in your document.
-
-Markdown can either be used inside stand-alone text files (usually with the `.md` format, e.g. `README.md`), or as a part of a framework such as Jupyter notebooks.
-
-Most important features of the Markdown format are:
-
-- It let's you quickly write text that can be nicely formatted upon rendering. 
-
-- A Markdown content is nothing but plain text, and can be stored as plain text files!
+You cannot interact with the output from shell commands as you would in a terminal.
+Therefore,
+if you want to install something with Conda,
+you will not be able to respond `y/n` on the confirmation prompt
+and instead need to append the `-y` option
+to the original command to automatically accept the confirmation prompt.
 
 ---
 
-## Markdown cells
+## Running shell commands in Jupyter notebooks
 
-<br>
+A common action: exporting a notebook without code cells
 
-<img src="/module7/md-doc.png" width="800"></img>
-
-Notes:
-
-Here is an example of of a Markdown cell. On the left, you see the Markdown source itself, and on the right, you see how it looks when it is rendered by Jupyter Lab after executing the cell (e.g. by pressing `Ctrl + Enter`). When you execute a Markdown cell this, Jupyter interprets its content and renders it accordingly.
-
-It's nice to be able to format the text to look that nice just by following simple conventions!
-
----
-
-## Markdown cells
-
-<img src="/module7/md2.png" width="700"></img>
+<img src="/module7/shell-command-nbconvert.png" width="700"></img>
 
 Notes:
 
-Whenever you create a new cell in a Jupyter Notebook, by default it will be a **code** cell. So if you write regular text in it, you won't get Markdown output.
+One common use of `!` commands in notebook cells is to export a notebook without its code cells by using `nbconvert` directly,
+instead of the export menu in JupyterLab (which also calls `nbconvert` under the hood).
+To do this, copy and paste bellow command into a code cell in your notebook.
+Then modify the command with an appropriate notebook file name instead of `this-notebooks-name.ipynb`,
+and run the code cell:
 
-In order to convert a code (or raw) cell to a Markdown cell, you can do either of the following options:
-
-- In command mode, press `M` on your keyboard to convert the currently selected cell to a Markdown cell
-
-- As you can see in the picture here, you can also view the current cell type in the toolbar of your notebook. You can click on "Code", and then from the dropdown menu select "Markdown" to convert the selected cell to a Markdown cell.
-
----
-
-## The Markdown syntax: Headings
-
-<br>
-
-<img src="/module7/md3.png" width="800"></img>
-
-Notes:
-
-Let's learn a few most commonly used formatting rules in Markdown.
-In this slide we can see how headings are created by prepending hash symbols (`#`) to the headings text.
-
-One hash indicated the top level heading of the document
-(this is usually your title),
-and two hashes indicate the first level of subheadings.
-
-You can have as many levels of subheadings as you see fit,
-and they will all show up hierarchically in the table of contents tab of the left side bar
-that we introduced in chapter 1.
-
----
-
-## The Markdown syntax: Lists and quotes
-
-<br>
-
-<img src="/module7/md4.png" width="800"></img>
-
-Notes:
-
-Now's the time to create a bullet-point style list:
-
-```md
-- Item 1
-- Item 2
-- Item 3
-  - Sub-item 1
-    - Sub-sub-item 1
+```shell
+!jupyter nbconvert this-notebooks-name.ipynb \
+    --to html \
+    --output=output-filename.html \
+    --no-input
 ```
 
-You can also create numbered lists (regardless which number you put in, JupyterLab will automatically number the list in consecutive order):
-
-```md
-1. One
-1. Two
-5. Three
-```
-
-One other useful formatting syntax is the **block quote** for quoting or calling special attention to longer sections of text:
-
-```md
-> Here is a block quote!
->
-> You can have multiple paragraphs in block quotes.
-```
+Of course you can run this command using a terminal, but it could be much more convenient if you just quickly want to run a shell command in the folder in which the notebook resides.
+If you put it in the last cell in your notebook,
+you will always update the exported HTML file
+when you click "Run all" in JupyterLab.
 
 ---
 
-## The Markdown syntax: Links and images
-<br>
-
-<img src="/module7/md5.png" width="800"></img>
-
-Notes:
-
-You can insert a link into your markdown cell by following this syntax:
-
-`[Link text](https://masterdatascience.ubc.ca/)`
-
-Inserting images is also very easy and has a syntax similar to inserting links, except that you also have to remember to put an exclamation mark at the beginning:
-
-`![UBC Master of data science logo](https://ubc-mds.github.io/img/mdslogopad.png)`
-
-The text inside the `[]` is often called "alt text" and will show up if the image can't display for some reason, and it is also helpful for people who rely on accessibility features, so it is important that you include a descriptive message here. [This article describes how to write an effective alt text](https://support.microsoft.com/en-us/office/everything-you-need-to-know-to-write-effective-alt-text-df98f884-ca3d-456c-807b-1a1fa82f5dc2), in case you are interested to learn more about this topic.
-
----
-
-## The Markdown syntax: Formatted code
+## Magic commands
 
 <br>
 
-<img src="/module7/md6.png" width="800"></img>
+Magic commands provide useful functionalities in a convenient and concise way.
 
-Notes:
-
-Code is usually formatted with a **mono-space font**, just as it usually appears in any IDE. For example, anything you write in a **code cell** inside Jupyter Lab shows up with a mono-space font and has Python syntax highlighting.
-
-In Markdown, we can easily format any code to be rendered in mono-space font using back ticks like `this` (the key under `Esc` on your keyboard with the symbol <code>\`</code>). For example, this is Python code: `import numpy as np`, right?
-
-Another way to have code is to have a code block by enclosing text inside a pair of three back ticks:
-
-~~~
-```
-arr = np.zeros((2, 2))
-result = arr + 10
-```
-~~~
-
-We can also enable colorful syntax highlighting by specifying the language in front of the first set of three back ticks:
-
-~~~
-```python
-arr = np.zeros((2, 2))
-result = arr + np.pi
-```
-~~~
-
----
-
-## The Markdown syntax: Math formulas
+<img src="/module7/cell-magic.png" width="700"></img>
 
 <br>
 
-<img src="/module7/md7.png" width="800"></img>
-
-Notes:
-
-Markdown supports $\LaTeX$ math formulas, which are a powerful and commonly used way to write mathematical expression.
-If you have never seen $\LaTeX$ before, it can look a bit intimidating, especially for the more complex formulas, but you can quickly pick up the basic expressions and then look up more advanced functionality as it is needed.
-
-To write an "inline" math formula in a paragraph of text, we can surround the expression with a pair of dollar signs: `Here is an inline math formula $ F = ma $`.
-
-Longer formulas can be written in math "block", which you can create by surrounding the math expression with a pair of double dollar signs as in the bottom of the screenshot.
-
----
-
-## Pro tips for Markdown formatting
-
-<br>
-
-- Markdown provides limited formatting styles that are often enough, but not always.
-
-- Sometimes, we just need more!
-
-<br>
-
-You can use HTML inside Markdown text to enable advanced formatting, such as
-
-- Change the displayed size of an image
-- Change text size and color
-
-Notes:
-
-Since Markdown renderers use HTML under the hood to format a Markdown text document, HTML tags will be rendered when used inside a Markdown document.
-
-Sometimes it might be helpful to borrow a few tricks from HTML to achieve certain formatting styles that are not available in standard Markdown.
-
-Here are a few things you can't do with standard Markdown, but you can do with HTML tags:
-
-- Change the displayed size of an image
-- Change text size and color
-
----
-
-## Pro tip 1: Change image size
-
-You can use the following HTML tag to change the displayed size of an image:
-
-```html
-<img src="<PATH_TO_FILE>" width="400px"></img>
-```
-
-<br>
-
-<img src="/module7/html-tag.png" width="800"></img>
-
-Notes:
-
-When you use
-
-```html
-<img src="<PATH_TO_FILE>" width="400px"></img>
-```
-
-The `px` for specifying the `width` is optional. Instead of `px`, you can also use `%` to specify the `width` relative to the original width of the image. For example, the following HTML tag
-
-```html
-<img src="<PATH_TO_FILE>" width="150%"></img>
-```
-
-shows an enlarged view of the image, where the displayed width is 1.5 times larger than the original width of the image.
-
----
-
-## Pro tip 2: Change text size & color
-
-You can use the following HTML tag to change the size and color of a piece of text:
-
-```html
-<p style="color:black; font-size:120%">
-Some text you want to show in a different color or size
+<p style="color:black; font-size:110%; background-color:floralwhite;">
+Magic commands introduced here are provided by and specific to IPython. Other languages may have their own set of magic commands, or none at all.
 </p>
+
+Notes:
+Magic commands are special commands which implement a particular functionality that might not be doable or straight-forward using Python code. For example, you can measure the amount of time it takes on average to run a code cell, or run a `.py` Python script file directly using the notebook's kernel.
+
+A magic command can be run either in **line** or **cell** mode:
+
+- Line mode: Only applies to one line of code, and is activated by prefixing a relevant command with `%`. For example, `%reset -f` removes all variable names defined by the user without restarting the kernel.
+
+- Cell mode: Applies to an entire cell, and is activated by prefixing a relevant command with `%%` at the beginning of a code cell. For example, the `%%timeit` cell magic in the following code runs the cell multiple times to compute an average running time:
+
 ```
+%%timeit
+for i in range(1_000_000):
+    (i - 0.1)**2
+```
+
+Note that magic commands are only available in notebooks running a Python kernel.
+The `%lsmagic` magic command lists all the available magic commands,
+and you can [read more about the magic commands in the documentation](https://ipython.readthedocs.io/en/stable/interactive/magics.html).
+
+---
+
+## Magic commands: Post-mortem debugging
+
+- **Post-mortem debugging**:
+
+<img src="/module7/pm-debug.png" width="700"></img>
+
+Notes:
+You've already seen how you can reset the Python namespace using `%reset -f` and time your code using `%%timeit`.
+
+Another useful magic command allows us to perform Post-mortem debugging. If you run a cell and happen to get an error, you can investigate what happened *post mortem* (i.e., after the error was thrown (literally "after death")), by running `%debug` in a different cell. Here, you can see an example of a syntax error, and the follow-up investigation using `%debug`.
+
+When an error is thrown,
+the traceback shows that several files are affected.
+When you enter into debugging mode,
+you might not be in the right file from the beginning.
+If this is the case,
+you can use `u` and `d` to navigate up and down in the files hierarchy respectively.
+Two other useful shortcuts are `c` to continue execution until the next error
+and `q` to quit the debugger and go back to working with your code cells
+(the rest of your notebook is unresponsive until you quit the debugger with `q`).
+
+The debugger that is used by JupyterLab is the standard Python debugger `pdb`,
+so you can [read more about all the options and commands in the Python documentation](
+https://docs.python.org/3/library/pdb.html#debugger-commands-1).
+
+---
+
+## Magic commands: Searching code cell history
+
+- **Searching code cell history**:
+
+<img src="/module7/search-hist.png" width="700"></img>
+
+Notes:
+Another useful magic command is `%hist`
+which displays the history for all the input cells you have executed.
+This is a bit overwhelming on its own, but it is very useful with the `-g` option.
+
+In JupyterLab, you can use `%hist -g <search_pattern>` to search through all code cells you have ever executed (including from previous sessions, so it is similar to `history | grep <search_pattern>` in the shell). This is great for when you delete that piece of code you were *100% sure* you would never need again and was not important enough to be committed, but you —of course— end up wanting it back a few days later.
+
+Here, you see an example of using `%hist -g` to find a list of executed cells which contained "`range(1, 10)`".
+
+---
+
+## Multiple cursors
 
 <br>
 
-<img src="/module7/html-tag2.png" width="800"></img>
+- Hold `Alt`/`Option` + drag:
+
+<img src="/module7/multi-cursor.gif" width="700"></img>
+
+<br>
+
+- Hold `Alt`/`Option` + `Ctrl`/`Command` + click
+
+<img src="/module7/multi-cursor2.gif" width="700"></img>
 
 Notes:
-In this slide you can see how we can style a paragraph of text
-using the HTML paragraph tags (`<p>`) together with a `style` attribute.
-The `style` attribute allows us to specify CSS properties that we want to style our text with.
 
-Learning HTML and CSS is beyond the scope of this course,
-but the excellent [Khan academy has a helpful introduction to both HTML and CSS](https://www.khanacademy.org/computing/computer-programming/html-css)
-in case you are interested to learn more about these topics.
+A cool and sometimes time-saving feature in JupyterLab is the multiple cursor feature.
 
-Keep in mind that you can do much more than just change the size of an image or color of text in HTML. However, since the whole idea of Markdown is its readability and that it can be written without the usual complexity of markup languages such as HTML, try to use HTML tags sparingly and only if you absolutely need to achieve a particular formatting.
+Suppose that here, you need to type `100 + ` in front of all of these variable definitions. Instead of typing `100 + ` one by one, first hold down `Alt` (in Windows or Linux) or `Option` (in Mac). Your mouse pointer changes into a `+`. Now, click and hold while dragging down the cursor to place multiple cursors at multiple positions, just as seen in the first recording here. When you're happy with your selection, you can start typing, and voila!
+
+Instead of
+
+- holding `Alt`/`Option` + drag
+
+you can also
+
+- hold `Alt`/`Option` + `Ctrl`/`Command` + click
+
+at various locations to place multiple cursors wherever you need them, and then start typing. An example of this is shown in the second recording.
+
+---
+
+## Next-level JupyterLab
+
+<br>
+
+More advanced features of JupyterLab:
+
+- The graphical debugger
+
+- Real-time collaboration
+
+- Workspaces
+
+Notes:
+In addition to what we have discussed so far, there are a few additional advanced features of JupyterLab which can be helpful when working on specific projects. Some of these features are:
+
+- The graphical debugger
+
+- Real-time collaboration
+
+- Workspaces
+
+We will not discuss these features in detail here, but we'll briefly explain their functionality and point you to the official documentation for each feature in the next few slides.
+
+---
+
+## The graphical debugger
+
+Documentation: https://jupyterlab.readthedocs.io/en/stable/user/debugger.html
+
+<img src="/module7/debugger.gif" width="800"></img>
+
+Notes:
+
+When you write code, things usually do not go perfectly on the first go, and you'll eventually need to debug your code at some point.
+
+We have already seen how we can use `%debug` to perform post-mortem debugging
+and JupyterLab recently also added a useful graphical debugger.
+This allows for easier access to more advanced debugging techniques
+such as setting breakpoints, inspecting variables, and more.
+
+You can find more details, including a tutorial notebook, [in JupyterLab's official documentation](https://jupyterlab.readthedocs.io/en/stable/user/debugger.html).
+
+---
+
+## Real-time collaboration
+
+Documentation: [https://jupyterlab.readthedocs.io/en/stable/user/rtc.html](https://jupyterlab.readthedocs.io/en/stable/user/rtc.html)
+
+<img src="/module7/rtc.png" width="750"></img>
+
+Notes:
+
+Another interesting and potentially helpful feature of JupyterLab is that you can enable **real-time collaboration** between multiple clients. Every user will have their own cursor in the same notebook as shown in the screenshot here (pretty much like in a Google Doc!). They can simultaneously edit and execute cells, and all the changes will be visible to other users in real time.
+
+You can [read more about the real-time collaboration feature of JupyterLab in the documentation ](https://jupyterlab.readthedocs.io/en/stable/user/rtc.html).
+
+Note that the real-time collaboration feature of JupyterLab is still experimental,
+and being actively worked on
+so its features and interface might change quickly.
+
+---
+
+## Workspaces
+
+Documentation: [https://jupyterlab.readthedocs.io/en/stable/user/urls.html#managing-workspaces-ui](https://jupyterlab.readthedocs.io/en/stable/user/urls.html#managing-workspaces-ui)
+
+<img src="/module7/workspace.png" width="600"></img>
+
+Notes:
+
+When you work in JupyterLab, you might have a couple of files, views, and other windows open. You might also have set up the layout of your JupyterLab in a particular way; for example, notebooks on the left, output views on the right, and consoles on the bottom.
+
+If you shutdown and relaunch JupyterLab, you'll see that this particular setup, including the open files and tabs and their arrangements, will get restored. This is because JupyterLab internally stores these information using the concept of a **workspace**.
+
+In case you need different setup of open files and layouts while working on multiple or large projects, you may want to create and use several workspaces. This is easily possible with JupyterLab: you can create new workspaces or clone existing workspaces and modify them as you wish, just through the URL of your browser. In order [to learn how to use workspaces, check out JupyterLab's documentation ](https://jupyterlab.readthedocs.io/en/stable/user/urls.html#managing-workspaces-ui).
 
 ---
 
