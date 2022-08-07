@@ -93,6 +93,8 @@ Note that some cells have already been executed. An error message would have res
 <!-- ------------------------------------ -->
 <exercise id='4' title="Test your knowledge">
 
+**True or False**
+
 It's possible to run code inside Markdown code blocks if you've specified the language after the first three back ticks, e.g. `python`.
 
 <choice id="1">
@@ -105,6 +107,8 @@ You can't run code inside a Markdown document! Code can only be executed inside 
 </opt>
 
 </choice>
+
+**True or False**
 
 Markdown documents can be rendered with any text editor.
 
