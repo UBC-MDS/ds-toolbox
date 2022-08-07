@@ -120,11 +120,11 @@ They are! Volunteer contributions from people around the world support the devel
 
 </exercise>
 
-<exercise id="3" title="How to use JupyterLab?" type="slides,video">
+<exercise id="3" title="How to use JupyterLab" type="slides,video">
 <slides source="module1/module1_02"></slides>
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id='4' title="Test your knowledge">
+<exercise id='4' title="✍️ Practice: JupyterLab basics">
 
 **True or False**
 
@@ -199,7 +199,7 @@ As opposed to a notebook window, you'd see that a terminal window, for example, 
 <slides source="module1/module1_03" shot="1" start="26:3200" end="40:07"></slides>
 </exercise>
 
-<exercise id="6" title="✍️ Your turn: How to ask efectively?">
+<exercise id="6" title="✍️  Practice: How to ask effectively?">
 
 Which of the following is **NOT** something you should do before asking for help online.
 
