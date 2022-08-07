@@ -101,7 +101,8 @@ We need a text editor or programming environment such as JupyterLab or VSCode fo
 </choice>
 
 **True or False**
-*All the tools we are using in this course are open source and free to use.*
+
+All the tools we are using in this course are open source and free to use.
 
 <choice id="4" >
 <opt text="True"  correct="true">
