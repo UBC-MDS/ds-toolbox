@@ -58,7 +58,7 @@ Great!
 
 <opt text="Edit code files">
 
-We need a text editor or programming environment such as JupyterLab or VSCode for this!
+We need a text editor or programming environment such as JupyterLab or VS Code for this!
 
 </opt>
 
@@ -103,7 +103,7 @@ We need a text editor or programming environment such as JupyterLab or VSCode fo
 **True or False**
 *All the tools we are using in this course are open source and free to use.*
 
-<choice id="3" >
+<choice id="4" >
 <opt text="True"  correct="true">
 
 You got it!
@@ -167,7 +167,7 @@ JupyterLab is an IDE, whereas Notepad is a text editor.
 
 When you use the "Simple" mode in JupyterLab, all windows will be closed except for the currently active one.
 
-<choice id="1">
+<choice id="3">
 
 <opt text="True">
 All other windows will be just <b>hidden</b> from view, not closed! Once you disable the "Simple" mode, you'll see already open windows back in their original place.
@@ -182,7 +182,7 @@ All other windows will be just <b>hidden</b> from view, not closed! Once you dis
 
 All JupyterLab windows have the same toolbar.
 
-<choice id="2">
+<choice id="4">
 
 <opt text="True">
 As opposed to a notebook window, you'd see that a terminal window, for example, does not have a toolbar at all.
