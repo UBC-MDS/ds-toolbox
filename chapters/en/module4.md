@@ -77,7 +77,7 @@ When checking your project history you will see that the commits are displayed f
 
 <exercise id='4' title='✍️ Practice: Know your diffs'>
 
-View this git diff comparison between on GitHub:
+View this <code>git diff</code> comparison between on GitHub:
 https://github.com/UBC-MDS/equine_numbers_value_canada/compare/1bb5ab8..9021b83
 
 You can see that there has been changes made to the `README.md` file,
