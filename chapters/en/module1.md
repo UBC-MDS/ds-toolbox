@@ -199,7 +199,7 @@ As opposed to a notebook window, you'd see that a terminal window, for example, 
 <slides source="module1/module1_03" shot="1" start="26:3200" end="40:07"></slides>
 </exercise>
 
-<exercise id="6" title="✍️  Practice: How to ask effectively?">
+<exercise id="6" title="✍️  Practice: How to ask effectively">
 
 Which of the following is **NOT** something you should do before asking for help online.
 
