@@ -4,6 +4,9 @@ type: slides
 
 # Markdown for text formatting
 
+Notes:
+In this slide deck we will be learning about how we can use the Markdown text format effectively in our notebooks.
+
 ---
 
 ## What is Markdown?
@@ -46,7 +49,9 @@ Most important features of the Markdown format are:
 
 Notes:
 
-Here is an example of of a Markdown cell. On the left, you see the Markdown source itself, and on the right, you see how it looks when it is rendered by Jupyter Lab. It's nice to be able to format the text to look that nice just by following simple conventions!
+Here is an example of of a Markdown cell. On the left, you see the Markdown source itself, and on the right, you see how it looks when it is rendered by Jupyter Lab after executing the cell (e.g. by pressing `Ctrl + Enter`). When you execute a Markdown cell this, Jupyter interprets its content and renders it accordingly.
+
+It's nice to be able to format the text to look that nice just by following simple conventions!
 
 ---
 
@@ -65,28 +70,31 @@ In order to convert a code (or raw) cell to a Markdown cell, you can do either o
 - As you can see in the picture here, you can also view the current cell type in the toolbar of your notebook. You can click on "Code", and then from the dropdown menu select "Markdown" to convert the selected cell to a Markdown cell.
 
 ---
- 
-## The Markdown syntax
+
+## The Markdown syntax: Headers
 
 <br>
-
-**Headers and font styles:**
 
 <img src="/module7/md3.png" width="800"></img>
 
 Notes:
 
-Let's learn a few most commonly used formatting rules in Markdown. In order to try these out, create a Markdown cell in your Jupyter notebook as you've learner earlier. After you're done with editing the content of the cell, simply press `Ctrl + Enter` (or `Shift + Enter`) to have Jupyter render your cell. This is the same as with code cells.
+Let's learn a few most commonly used formatting rules in Markdown.
+In this slide we can see how headers are created by prepending hash symbols (`#`) to the header text.
 
-Here on the left, you can see the source Markdown written in a Markdown cell, and on the right, you see what you'd get if you "run" that cell by pressing `Ctrl + Enter`. When you do this, Jupyter interprets your Markdown content and renders it accordingly.
+One hash indicated the top level heading of the document
+(this is usually your title),
+and two hashes indicate the first level of subheadings.
+
+You can have as many levels of subheadings as you see fit,
+and they will all show up hierarchically in the table of contents tab of the left side bar
+that we introduced in chapter 1.
 
 ---
 
-## The Markdown syntax
+## The Markdown syntax: Lists and quotes
 
 <br>
-
-**Lists and quotes:**
 
 <img src="/module7/md4.png" width="800"></img>
 
@@ -120,11 +128,8 @@ One other useful formatting syntax is the **block quote** for quoting or calling
 
 ---
 
-## The Markdown syntax
-
+## The Markdown syntax: Links and images
 <br>
-
-**Links and images:**
 
 <img src="/module7/md5.png" width="800"></img>
 
@@ -138,15 +143,13 @@ Inserting images is also very easy and has a syntax similar to inserting links, 
 
 `![UBC Master of data science logo](https://ubc-mds.github.io/img/mdslogopad.png)`
 
-The text inside the `[]` will show up if the image can't display for some reason, and it is also helpful for people who rely on accessibility features.
+The text inside the `[]` is often called "alt text" and will show up if the image can't display for some reason, and it is also helpful for people who rely on accessibility features, so it is important that you include a descriptive message here. [This article describes how to write an effective alt text](https://support.microsoft.com/en-us/office/everything-you-need-to-know-to-write-effective-alt-text-df98f884-ca3d-456c-807b-1a1fa82f5dc2), in case you are interested to learn more about this topic.
 
 ---
 
-## The Markdown syntax
+## The Markdown syntax: Formatted code
 
 <br>
-
-**Formatted code:**
 
 <img src="/module7/md6.png" width="800"></img>
 
@@ -165,7 +168,7 @@ result = arr + 10
 ```
 ~~~
 
-We can also enable syntax highlighting by specifying the language in front of the first set of three back ticks:
+We can also enable colorful syntax highlighting by specifying the language in front of the first set of three back ticks:
 
 ~~~
 ```python
@@ -176,11 +179,9 @@ result = arr + np.pi
 
 ---
 
-## The Markdown syntax
+## The Markdown syntax: Math formulas
 
 <br>
-
-**Math formulas:**
 
 <img src="/module7/md7.png" width="800"></img>
 
@@ -268,10 +269,15 @@ Some text you want to show in a different color or size
 <img src="/module7/html-tag2.png" width="800"></img>
 
 Notes:
+In this slide you can see how we can style a paragraph of text
+using the HTML paragraph tags (`<p>`) together with a `style` attribute.
+The `style` attribute allows us to specify CSS properties that we want to style our text with.
 
-Keep in mind that you can do much more than just change the size of an image or color of text in HTML.
+Learning HTML and CSS is beyond the scope of this course,
+but the excellent [Khan academy has a helpful introduction to both HTML and CSS](https://www.khanacademy.org/computing/computer-programming/html-css)
+in case you are interested to learn more about these topics.
 
-However, since the whole idea of Markdown is its readability and that it can be written without the usual complexity of markup languages such as HTML, try to use HTML tags sparingly and only if you absolutely need to achieve a particular formatting.
+Keep in mind that you can do much more than just change the size of an image or color of text in HTML. However, since the whole idea of Markdown is its readability and that it can be written without the usual complexity of markup languages such as HTML, try to use HTML tags sparingly and only if you absolutely need to achieve a particular formatting.
 
 ---
 
