@@ -32,7 +32,7 @@ This is what's expected to happen, but it won't. Remember that, you've just open
 </opt>
 
 <opt text="Nothing will appear" correct="true">
-Since the first cell is not executed yet, the notebook's kernel doesn't know anything about those functions.
+Since the first cell is not executed yet, the notebook's kernel doesn't know anything about those functions. The missing counter on the left indicates that a cell is not executed, but watch out, you might open up a notebook that has a numbered cell from a previous execution which might make you think that you have executed it in this session yourself.
 </opt>
 
 <opt text="You'll get an error message">
@@ -44,6 +44,8 @@ The <code>Shift + Tab</code> shortcut is not set for opening the contextual help
 </opt>
 
 </choice>
+
+**True or False**
 
 A notebook's console uses the same kernel as the notebook itself.
 

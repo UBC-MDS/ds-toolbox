@@ -4,6 +4,9 @@ type: slides
 
 # Jupyter notebooks
 
+Notes:
+In this slide deck we will go in depth into how to to work with Jupyter notebooks.
+
 ---
 
 ## What is a Jupyter notebook?
@@ -12,7 +15,7 @@ type: slides
 
 - A Jupyter notebook is a document that contains **narrative text**, alongside **runnable code**
 
-- Jupyter notebooks have `.ipynb` extension
+- Jupyter notebooks have an `.ipynb` extension
 
 <br>
 
@@ -22,7 +25,7 @@ Notes:
 
 - A Jupyter notebook is a document that contains **narrative text**, alongside **runnable code**
 
-- Jupyter notebooks have `.ipynb` extension
+- Jupyter notebooks have an `.ipynb` extension
 
 ---
 
@@ -36,9 +39,9 @@ Notes:
 
 You can create new notebooks in three ways.
 
-The first one is to click the blue `+` button on the top left corner of the file explorer tab, which opens a new Launcher. You can then click on any one of the available environment kernels to create a new notebook with that kernel.
+The first one is to click the blue `+` button on the top left corner of the file explorer tab, which opens a new Launcher. You can then click on any one of the available environment kernels to create a new notebook with that kernel. This is marked with the left-hand side arrow in this slide.
 
-The second way is to click the icon in the main working area for the conda environment your want to launch
+The second way is to click the icon in the main working area for the conda environment your want to launch, which is marked by the right-most arrow on this slide.
 
 ---
 
@@ -50,7 +53,7 @@ The second way is to click the icon in the main working area for the conda envir
 
 Notes:
 
-The third way is to right-click on the empty space of the file explorer, and then choose "New notebook". You'll be asked to choose a kernel right afterwards, and then your new notebook will be ready.
+The third way to create a new Jupyter notebook is to right-click on the empty space of the file explorer, and then choose "New notebook". You'll be asked to choose a kernel right afterwards, and then your new notebook will be ready.
 
 ---
 
@@ -66,12 +69,25 @@ Notes:
 
 - A in a notebook can be one of these three types:
   - Code
+      - Execution of code in multiple languages.
   - Markdown
+      - Formatted text, we will look more at Markdown in module 7.
   - Raw
+      - Everything appears as is, no formatting or code execution.
 
 ---
 
 ## Cell selection modes
+
+An **active** cell in a Jupyter notebook can be in either **command** or **edit** mode:
+
+<br>
+
+<img src="/module7/command-edit.png" width="650"></img>
+
+Notes:
+
+Whenever you interact with a cell inside a Jupyter notebook, it becomes **activated**. This means that the cell is selected, and ready to be edited or executed.
 
 An **active** cell in a Jupyter notebook can be in either **command** or **edit** mode:
 
@@ -85,14 +101,6 @@ An **active** cell in a Jupyter notebook can be in either **command** or **edit*
   - You can start typing or edit the code or text inside a cell
   - The cell has a **white** background
   - Hit `Enter` or click in a cell to switch from **command** to **edit** mode
- 
-<br>
-
-<img src="/module7/command-edit.png" width="650"></img>
-
-Notes:
-
-Whenever you interact with a cell inside a Jupyter notebook, it becomes **activated**. This means that the cell is selected, and ready to be edited or executed.
 
 ---
 
@@ -123,9 +131,9 @@ Notes:
 - Code cells contain executable code written in a specific programming language.
 
 - Each notebook is connected to a kernel, which is the backend engine in charge of running code in a notebook.
-  - For example, a Jupyter notebook can be connected to an IPython kernel.
-  - Remember that we installed `ipykernel` in our conda environments to make them visible to JupyterLab? `ipykernel` is the IPython kernel we've been talking about here, which is nothing but an interactive Python engine that works with JupyterLab.
-  - When you create a notebook with the kernel from a particular conda environment, you'll have access to all packages installed in that environment. It is basically the same as running Python code in that environment.
+  - For example, a Jupyter notebook can be connected to an Python kernel.
+  - Remember that we installed `ipykernel` in our Conda environments to make them visible to JupyterLab? `ipykernel` is the kernel we've been talking about here, which is nothing but an interactive Python engine that works with JupyterLab.
+  - When you create a notebook with the kernel from a particular Conda environment, you'll have access to all packages installed in that environment. It is basically the same as running Python code in that environment.
 
 - Code cells are executed using a notebook's kernel
   - When you run a code cell, the code inside the cell is sent to the kernel
