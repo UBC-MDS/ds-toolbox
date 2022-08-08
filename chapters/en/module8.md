@@ -12,15 +12,11 @@ id: 8
 <slides source="module8/module8_00" shot="1" start="0:003" end="05:31"></slides>
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id="1" title="Jupyter Book ecosystem" type="slides,video">
+<exercise id="1" title="Create your first Jupyter Book" type="slides,video">
 <slides source="module8/module8_01"></slides>
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id="2" title="Create your first Jupyter Book" type="slides,video">
-<slides source="module8/module8_02"></slides>
-</exercise>
-<!-- ------------------------------------ -->
-<exercise id='5' title="Time for practice">
+<exercise id='2' title="Time for practice">
 
 We have the following folder containing the files we'd like to include in a report created using Jupyter Book:
 
