@@ -37,7 +37,7 @@ Key Jupyter Book features:
 - Write content as Jupyter Notebooks, Markdown, or reStructuredText
 - Add interactivity to your book, e.g., toggle visibility of cells, connect with an online service like Binder, and include interactive outputs (e.g., figures and widgets)
 - Generate a variety of outputs, including websites (HTML, CSS, JS), markdown and PDF.
-- A command-line interface to quickly build books, e.g., `jupyter-book build mybook/`
+- A command-line interface to quickly build books, e.g., `jupyter-book build my-book/`
 
 Under the hood,
 Jupyter Books rely on the well-regarded Sphinx documentation system,

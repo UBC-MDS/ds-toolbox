@@ -62,13 +62,13 @@ In order to see the changes you've made, **don't forget to rebuild your book**!
 To clean cached book files and make sure everything is rebuilt from scratch, first run:
 
 ```
-jupyter-book clean mybookname/
+jupyter-book clean my-book/
 ```
 
 and then run the following to rebuild the book:
 
 ```
-jupyter-book build mybookname/
+jupyter-book build my-book/
 ```
 
 Your new page will now show up in the rebuilt book.
@@ -82,13 +82,13 @@ In order to see the changes you've made, don't forget to rebuild your book.
 To clean cached book files and make sure everything is rebuilt from scratch, first run:
 
 ```
-jupyter-book clean mybookname/
+jupyter-book clean my-book/
 ```
 
 and then run the following to rebuild the book:
 
 ```
-jupyter-book build mybookname/
+jupyter-book build my-book/
 ```
 
 Your new page will now show up in the rebuilt book.

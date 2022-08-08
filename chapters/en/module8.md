@@ -57,19 +57,19 @@ File paths should be given relative to the book's root folder.
 
 </choice>
 
-You are done creating content for your book in `mybook/` folder. You are now inside the root folder of your book. Which command would you use to generate your Jupyter Book (i.e. your website)?
+You are done creating content for your book in `my-book/` folder. You are now inside the root folder of your book. Which command would you use to generate your Jupyter Book (i.e. your website)?
 
 <choice id="2">
 
-<opt text="<code>jb create mybook/</code>">
-<code>jb create</code> is used to create a sample Jupyter Book with template content, rather than rendering your current book contents. Also, since you're already inside the root folder, you should use <code>./</code> for the path instead of <code>mybook/</code>.
+<opt text="<code>jb create my-book/</code>">
+<code>jb create</code> is used to create a sample Jupyter Book with template content, rather than rendering your current book contents. Also, since you're already inside the root folder, you should use <code>./</code> for the path instead of <code>my-book/</code>.
 </opt>
 
 <opt text="<code>jb build ./</code>"  correct="true">
 </opt>
 
-<opt text="<code>jb build mybook/</code>">
-Since you're already inside the root folder, you should use <code>./</code> for the path instead of <code>mybook/</code>.
+<opt text="<code>jb build my-book/</code>">
+Since you're already inside the root folder, you should use <code>./</code> for the path instead of <code>my-book/</code>.
 </opt>
 
 <opt text="<code>jb create ./</code>"  correct="true">
