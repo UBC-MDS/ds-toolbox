@@ -146,11 +146,11 @@ $$\Sigma F = m \frac{dV}{dt}$$
 </opt>
 
 <opt text="<code>:label:</code> should be changed to <code>label:</code>">
-<code>:label:</code> is actually the right way to give a label to an equation.
+<code>:label:</code> is actually the right way to give a label to an equation. 
 </opt>
 
 <opt text="<code>:label:</code> should be replaced by <code>:name:</code>">
-Using <code>:name:</code> is incorrect. You've probably mistaken this with <code>name:</code> in a <code>```{figure} ```</code> block.
+Using <code>:name:</code> is incorrect. You've probably mistaken this with <code>name:</code> in a <code>```{figure} ```</code> block. 
 </opt>
 
 <opt text="<code>$$ $$</code> should be replaced with <code>$ $</code>">
