@@ -453,4 +453,4 @@ using GitHub's publishing system.
 
 ---
 
-# Let's see what you've learned!
+# Let's apply what we learned!
