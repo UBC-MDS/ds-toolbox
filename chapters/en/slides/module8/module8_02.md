@@ -2,613 +2,454 @@
 type: slides
 ---
 
-# Add your own content
+# Create your first Jupyter Book
 
 Notes:
-Now that we know what a Jupyter Book is,
-let's go ahead and practice adding content to our sample book!
+In this slide deck we will explain what Jupyter Book is and learn how to build our own.
 
 ---
 
-## Create your file and add content to it
+## What is Jupyter Book?
 
 <br>
 
-Create a new file called `my-markdown-file.md` with the following content:
-
-<img src="/module8/mymarkdownfile.png" width="700"></img>
-
-Markdown syntax specific to Jupyter Book:
-
-- `(section-label)=`
-- `[link text](link-target)`
-
-Notes:
-In the folder with all of your sample book contents, create a new file called `my-markdown-file.md`. Put the following content in it:
-
-<img src="/module8/mymarkdownfile.png" width="700"></img>
-
-We’ve added two new pieces of markdown syntax, both of them are related to cross-references.
-
-- `(section-label)=` is a label that’s attached to a section header. It refers to whatever header follows, and allows you to refer to this label later on in your text.
-
-- `[link text](link-target)` syntax is how you specify a link in markdown. Here we’ve linked to another page, as well as to the label we created above.
-
-When you build your book, you’ll see how these links resolve in the output.
-
----
-
-## Add your file to your table of content
+<img src="/module8/jb_logo.png" width="400"></img>
 
 <br>
 
-<img src="/module8/_toc.png" width="800"></img>
+Key Jupyter Book features:
+
+- Write publication-quality content
+- Write content in multiple formats
+- Add interactivity to your book
+- Generate a variety of outputs
+- A command-line interface
 
 Notes:
 
-Once you've created a file and added your own content to it, you have to add it to your table of content file, that is, `_toc.yml` to make it available to Jupyter Book.
+Jupyter Book is an open source project to help you create publication-quality books and documents from Markdown documents and Jupyter Notebooks.
 
-<img src="/module8/_toc.png" width="700"></img>
+<br>
 
-By doing this, you are informing Jupyter Book where the new file fits with your book’s structure.
+Key Jupyter Book features:
+
+- Write publication-quality content including figures, math, citations and cross-references
+- Write content as Jupyter Notebooks, Markdown, or reStructuredText
+- Add interactivity to your book, e.g., toggle visibility of cells, connect with an online service like Binder, and include interactive outputs (e.g., figures and widgets)
+- Generate a variety of outputs, including websites (HTML, CSS, JS), markdown and PDF.
+- A command-line interface to quickly build books, e.g., `jupyter-book build my-book/`
+
+Under the hood,
+Jupyter Books rely on the well-regarded Sphinx documentation system,
+which is the gold standard for writing Python package documentation.
+This makes writing Jupyter Book both powerful and flexible.
 
 ---
 
-## Rebuild your book after making changes
+## Book building process
 
 <br>
 
-**Don't forget to rebuild your book**!
+Building a Jupyter Book broadly consists of these steps:
 
 <br>
 
-Clean cached book files:
+- ✏️ **Create your book’s content**
+
+<br>
+
+- 🛠 **Build your book**
+
+<br>
+
+- 📚 **Publish your book online**
+
+Notes:
+
+Building a Jupyter Book broadly consists of these steps:
+
+- ✏️ **Create your book’s content.**
+  - You structure your book with a collection of folders, files, and configuration.
+
+- 🛠 **Build your book.**
+  - Using Jupyter Book’s command-line interface you can convert your pages into either an HTML or a PDF book.
+
+- 📚 **Publish your book online.**
+  - Once your book is built, you can share it with others. Most common is to build HTML, and host it as a public website.
+
+---
+
+## Anatomy of a Jupyter Book
+
+<br>
+
+The three components of every Jupyter Book:
+
+- A configuration file (`_config.yml`)
+
+- A table of contents file (`_toc.yml`)
+
+- Your book’s content
+
+Notes:
+
+There are three things that you need in order to build a Jupyter Book.
+
+- A configuration file (`_config.yml`)
+
+- A table of contents file (`_toc.yml`)
+
+- Your book’s content
+
+We will learn about these more in detail in the later part of this slide deck,
+but let's first see how we can conveniently generate
+a template of a sample book with all the necessary files for a book.
+
+---
+
+## Generate a sample book with template files
+
+Create a sample book:
 
 ```
-jupyter-book clean my-book/
+jupyter-book create my-book/
 ```
 
-Rebuild the book:
+<br>
+
+The created directory `my-book/` should look like this:
+
+```
+my-book/
+├── _config.yml
+├── _toc.yml
+├── intro.md
+├── logo.png
+├── markdown-notebooks.md
+├── markdown.md
+├── notebooks.ipynb
+├── references.bib
+└── requirements.txt
+```
+
+Notes:
+Jupyter Book comes bundled with a lightweight sample book that you can use both to help you understand a book’s structure and as templates to build your own book from.
+
+You can create a sample book by running the following command
+(the name of the folder can be anything, here we chose `my-book/` as an example):
+
+```
+jupyter-book create my-book/
+```
+
+This will generate a small Jupyter Book in your current working directory that you can both build and explore locally.
+This is helpful since we can quickly get an overview of what a full Jupyter Book looks like,
+instead of figuring it out
+while creating the files one by one ourselves.
+The created directory `my-book/` should look like this:
+
+```
+my-book/
+├── _config.yml
+├── _toc.yml
+├── intro.md
+├── logo.png
+├── markdown-notebooks.md
+├── markdown.md
+├── notebooks.ipynb
+├── references.bib
+└── requirements.txt
+```
+
+You can see that this structure includes the configuration and structure files
+that we mentioned on the previous slide (`_config.yml` and `_toc.yml`.).
+It also includes the following:
+
+- The landing page in `intro.md`.
+- A logo for the book in `logo.png`.
+- Content for the book in `markdown-notebooks.md`, `markdown.md`, and `notebook.ipynb`.
+- Literary references in `references.bib`.
+- The Python packages required to build the book in `requirements.txt`.
+
+We will use this sample Jupyter Book as a starting point
+to work from in the rest of this slide deck
+and explain each of the book parts in more detail.
+
+---
+
+## Book configuration (`_config.yml`)
+
+<br>
+
+All of the configuration for your book is in a YAML file called `_config.yml`.
+
+<br>
+
+Here’s an example of a simple `_config.yml` file:
+
+```yaml
+# In _config.yml
+title: My sample book
+author: The Jupyter Book Community
+logo: logo.png
+execute:
+  execute_notebooks: force
+
+# Add a bibtex file so that we can create citations
+bibtex_bibfiles:
+  - references.bib
+```
+
+Notes:
+
+All of the configuration for your book is in a file called `_config.yml`.
+This file is in the YAML format,
+just as the `environment.yml` files that we created in chapter 6 uses `conda`.
+
+You can define metadata for your book (such as its title), add a book logo, turn on different “interactive” buttons (such as a Binder button for pages built from a Jupyter Notebook), and more.
+
+Here’s an example of a simple `_config.yml` file:
+
+- `title`: defines a title for the book. It will show up in the left sidebar.
+
+- `author`: adds the author’s name to your book template, for attribution.
+
+- `logo`: defines a path to an image file for your book’s logo (it will also show up in the sidebar).
+
+- `execute`: contains a collection of configuration options to control execution and cacheing.
+
+- `execute_notebooks`: "force" tells Jupyter Book force execute any computational content each time it builds the book. By default, Jupyter Book executes and caches all book content.
+
+- `bibtex_bibfiles`: is a section to define bibliography files for your Jupyter Book. This configuration activates citations for your book.
+
+There are helpful comments in the configuration file
+that explain many of the additional options that can be used.
+For an even more [extensive explanation of all the configuration options,
+refer to the documentation](https://jupyterbook.org/en/stable/customize/config.html).
+
+---
+
+## Table of contents (`_toc.yml`)
+
+<br>
+
+The `_toc.yml` file defines the structure of the book:
+
+```yaml
+# In _toc.yml
+format: jb-book
+root: intro
+chapters:
+- file: markdown
+- file: notebooks
+- file: markdown-notebooks
+```
+
+<br>
+
+**Important:**
+
+- Each entry under `chapters:` is the name of a file (extensions are optional).
+- The filenames should be relative to your book’s **root folder**.
+
+Notes:
+Jupyter Book uses your **table of contents** file to define the structure of your book. For example, your chapters, sub-chapters, etc.
+
+This is a YAML file with a collection of pages, each one linking to a file in your book. Here’s an example of the two content files shown above:
+
+```yaml
+# In _toc.yml
+format: jb-book
+root: intro
+chapters:
+- file: markdown
+- file: notebooks
+- file: markdown-notebooks
+```
+
+The `_toc.yml` is arranged with a format such as `jb-article`, or `jb-book`.
+
+The `root` item is considered the landing page (for `html` builds) and is used as front matter (for `latex` builds).
+
+For `jb-book`, subsequent chapters can be added under the `chapters:` section in the `.yml` file.
+
+<br>
+
+**Important:**
+
+- Each entry under `chapters:` is the name of a file (extensions are optional).
+- The filenames should be relative to your book’s **root folder**.
+
+The title of each chapter will be inferred from the title in your files, i.e. the heading specified with a single `#`, such as `# Title` (the "top-level" heading).
+
+---
+
+## Table of contents (`_toc.yml`)
+
+<br>
+
+You can also put chapters into different groups, which are called `parts:`
+
+<img src="/module8/parts.png" width="750"></img>
+
+Notes:
+
+You may optionally organize your chapters into parts, by using the `parts:` key in your `_toc.yml`:
+
+The `parts:` key accepts a list of entries, each of which defines a chapter.
+
+You can number each part
+by including `numbered: True`.
+There are [more details on numbering
+and part-specific configuration in the documentation](https://jupyterbook.org/en/stable/structure/configure.html)
+
+---
+
+## Book content
+
+<br>
+
+**Markdown files (`.md`)**:
+
+<br>
+
+Let’s take a look at one of the markdown files in the template book, `intro.md`:
+
+<img src="/module8/markdown.png" width="600"></img>
+
+Notes:
+
+**Markdown files (`.md`)**:
+
+As we learned in the previous module,
+the Markdown format can be used to structure text with extra characters and syntax that give it extra meaning (e.g., using `**bold**` to denote **bold**). It is very popular and used across many different technology platforms, including Jupyter Book.
+
+<br>
+
+Let’s take a look at one of the markdown files in the template book, `intro.md`:
+
+<img src="/module8/markdown.png" width="600"></img>
+
+You can see that there are some special formatting
+that we didn't learn about in the last module,
+e.g. `:::`.
+There are some additions to the regular Markdown syntax
+that are specific for Jupyter Book
+and we will learn more about them in the next slide deck.
+
+---
+
+## Book content
+
+<br>
+
+**Jupyter Notebooks (`.ipynb`)**:
+
+<img style="border:1px solid black;" src="/module8/jnotebook.png" width="500"></img>
+
+Notes:
+
+**Jupyter Notebooks (`.ipynb`)**:
+
+The other type of content is a **Jupyter Notebook**, ending in `.ipynb`.
+
+Jupyter Notebooks have a combination of **computational** content and **narrative** content.
+
+Each notebook is associated with a kernel (e.g. Python, R, Julia) that defines the language used to execute the notebook’s computational content.
+
+By default, when Jupyter Book builds your book, **notebooks will be executed and their outputs cached**. On subsequent builds, notebook pages will be re-executed only if their code has changed.
+
+Any outputs generated by the notebook will be inserted into your built book (though they may not be in your input notebook). This way you do not need to store the notebook’s outputs with your repository.
+
+---
+
+## Time to build your book!
+
+Run the `build` command in the sample book folder:
 
 ```
 jupyter-book build my-book/
 ```
 
-Notes:
-In order to see the changes you've made, don't forget to rebuild your book.
-
 <br>
 
-To clean cached book files and make sure everything is rebuilt from scratch, first run:
+Content of the build directory (`my-book/_build/html/`):
 
 ```
-jupyter-book clean my-book/
+html/
+├── _panels_static
+│   ├── ...
+├── _sources
+│   ├── intro.md
+│   ├── markdown-notebooks.ipynb
+│   ├── ...
+├── _static
+│   ├── ...
+├── index.html
+...
 ```
 
-and then run the following to rebuild the book:
+Notes:
+
+Now that we've added content and configured our book,
+it’s time to "build" your book.
+You can think of the build process
+as a more advanced type of export
+for Jupyter Notebook,
+since it will take your source documents
+and create output documents
+that can be used to present your book,
+e.g. like a web page.
+
+Since we have already created the sample book in the folder `my-book/`, you can run the following `build` command in your terminal to create a fully functioning HTML website:
 
 ```
 jupyter-book build my-book/
 ```
 
-Your new page will now show up in the rebuilt book,
-when you refresh your browser page.
-
----
-
-## Figures
-
-You can include figures in your Jupyter Book using the following syntax:
-
-~~~
- ```{figure} https://solarsystem.nasa.gov/system/resources/detail_files/2486_stsci-h-p1936a_1800.jpg
- ---
- height: 300px
- name: jupiter-figure
- ---
- The beautiful planet Jupiter!
- ```
-~~~
+**Note**: You can use the short-hand `jb` instead of `jupyter-book` in the above command, i.e. `jb build my-book/`.
 
 <br>
 
-<img src="/module8/figure-jupiter.png" width="300"></img>
-
-Notes:
-
-You can include figures in your Jupyter Book using the following syntax:
-
-~~~
- ```{figure} https://solarsystem.nasa.gov/system/resources/detail_files/2486_stsci-h-p1936a_1800.jpg
- ---
- height: 300px
- name: jupiter-figure
- ---
- The beautiful planet Jupiter!
- ```
-~~~
-
-The numbering of figures is automatic,
-so if you insert new ones in before some of the existing ones,
-Jupyter Book will renumber the existing ones for you!
-
-The reason we have `name: jupiter-figure`
-is so we can **cross-reference** a figure later in the text,
-as we will show you in the next slide.
-
----
-
-## Cross-referencing figures
-
-<br>
-
-<img src="/module8/md-with-figure.png" width="650"></img>
-
-Notes:
-Cross-referencing a figure means linking/referencing it
-from somewhere else in the document.
-In order to reference a named figure,
-we can use {numref}`jupiter-figure` in the text.
-
-After adding a figure and referencing it in the main text,
-our markdown file (`my-markdown-file.md`) looks like in this slide.
-The rendered version is shown on the next page.
-
-
----
-
-## Cross-referencing figures
-
-The end result will look like this if you rebuild your Jupyter Book:
-
-<br>
-
-<img style="border:1px solid black;" src="/module8/rebuilt-book.png" width="650"></img>
-
-Notes:
-
-This is what the end result will look like after you rebuild your Jupyter Book.
-
-You can see how the figure we added shows up nicely in the center, has its own caption, and is numbered automatically.
-
-Also note how the referenced figure looks like in the 2nd paragraph of the text (red arrow).
-
----
-
-## Math and equations
-
-<br>
-
-In Jupyter Book, you can easily add:
-
-1. Inline math equations
-2. Math equation blocks
-3. Numbered equations
-
-<br>
-
-1. Inline math:
+If you look into `my-book/_build/html/` folder, you'll see something like this:
 
 ```
-Jupiter has a mass of: $m_{j} \approx 1.9 \times 10^{27} \: \text{kg}$
+html/
+├── _panels_static
+│   ├── ...
+├── _sources
+│   ├── intro.md
+│   ├── markdown-notebooks.ipynb
+│   ├── ...
+├── _static
+│   ├── ...
+├── index.html
+...
 ```
+
+These are all the files needed for a standalone website!
+
+---
+
+## Your first Jupyter Book website
 
 <br>
 
-When rendered by Jupyter Book, it looks like this:
+This is what your home page file `_build/html/index.html` looks like:
 
-<img style="border:1px solid black;" src="/module8/math-inline.png" width="400"></img>
-
-Notes:
-
-Jupyter Book uses **MathJax** for typesetting math which allows you to add LaTeX-style maths to your book, including
-
-- inline math equations,
-- math equation blocks, and
-- numbered equations.
-
-1. Inline math can be defined using `$` as follows:
-
-```
-Jupiter has a mass of:  $m_{j} \approx 1.9 \times 10^{27} \: \text{kg}$
-```
-
-When rendered by Jupyter Book, it looks like the screenshot at the bottom of this slide.
-
----
-
-## Math and equations
-
-<br>
-
-2. Math blocks:
-
-```
-$$
-  m_{j} \approx 1.9 \times 10^{27} \: \text{kg}
-$$
-```
-
-Rendered:
-
-<img style="border:1px solid black;" src="/module8/math-block.png" width="600"></img>
-
-<br>
-
-3. Numbered equations:
-
-~~~
-```{math}
-:label: eq_label
-m_{j} \approx 1.9 \times 10^{27} \: \text{kg}
-```
-~~~
-
-Rendered:
-
-<img style="border:1px solid black;" src="/module8/math-numbered.png" width="700"></img>
+<img style="border:1px solid black;" src="/module8/jb_index.png" width="800"></img>
 
 Notes:
 
-1. Math blocks are used for more complex expressions
-   and can be defined by enclosing the math in a pair of dollar signs, i.e. `$$`:
-
-```
-$$
-  m_{j} \approx 1.9 \times 10^{27} \: \text{kg}
-$$
-```
-
-Which will show up in the rendered book like the top-most screen host in this slide.
-
-<br>
-
-3. If you want to reference an equation in the text and have Jupyter Book automatically take care of numbering it, you can use numbered equations via the `label` attribute:
-
-~~~
-```{math}
-:label: eq_label
-m_{j} \approx 1.9 \times 10^{27} \: \text{kg}
-```
-~~~
-
-This will render as the screenshot on the bottom of this slide
-and you will see more details about cross-referencing equations like this
-in the next slide.
-
----
-
-## Cross-referencing equations
-
-- You can refer to equation using their labels.
-
-- Use `` {eq}`eq_label` `` for equations, just like ``{numref}`jupiter-figure` `` for images.
-
-<br>
-
-Here is how we add equations to `my-markdown-file.md`:
-
-~~~
-Jupiter has a mass of $m_{j} \approx 1.9 \times 10^{27} \: \text{kg}$.
-Let's show this as a code block as well:
-
-$$
-  m_{j} \approx 1.9 \times 10^{27} \: \text{kg}
-$$
-
-Another way is to have named equations so you can cross-reference them later:
-
-```{math}
-:label: eq_label
-m_{j} \approx 1.9 \times 10^{27} \: \text{kg}
-```
-
-Equation {eq}`eq_label` is an example of a named equation.
-~~~
-
-Notes:
-If you have created an equation with a label, you can link to it from within your text and across pages.
-
-You can refer to the equation using the label that you’ve provided by using `` {eq}`eq_label` ``, just like ``{numref}`jupiter-figure` `` that we used with images.
-
-<br>
-
-You can see in the slide how we add equations to `my-markdown-file.md`:
-
----
-
-## Cross-referencing equations
-
-Once you add these equations to `my-markdown-file.md` and rebuild your Jupyter Book, your book will look like:
-
-<br>
-
-<img style="border:1px solid black;" src="/module8/equation.png" width="750"></img>
-
-Notes:
-
-Once you add these equations to `my-markdown-file.md` and rebuild your Jupyter Book, your book will look like the screenshot in this slide.
-Note the equation numbering pointed at by the red arrow.
-
----
-
-## Margin content
-
-Margin content is similar to _footnotes_ in a conventional book:
-
-~~~
-```{margin} Did you know?
-Jupiter is 11.0x larger than Earth!
-```
-~~~
-
-<br>
-
-Rendered:
-
-<img style="border:1px solid black;" src="/module8/margin.png" width="800"></img>
-
-Notes:
-Sometimes it is helpful to add notes to the margin of a page. This is similar to _footnotes_ in a conventional book.
-
-In Jupyter Book, you can do that using `{margin}` blocks in a markdown file:
-
-~~~
-```{margin} Did you know?
-Jupiter is 11.0x larger than Earth!
-```
-~~~
-
-<br>
-
-This slide shows how it appears in our Jupyter Book.
-
----
-
-## Admonitions
-
-Admonitions draw attention to important information:
-
-~~~
-```{note}
-I'm a note!
-```
-~~~
-
-`{note}` can be replaced with `{warning}`, `{tip}`, `{danger}` and so on.
-
-This is how these admonitions will show up:
-
-<img src="/module8/admonition.png" width="600"></img>
-
-Notes:
-Admonitions in Jupyter Book are visual elements that you can use to draw attention to important information.
-
-There are different types of admonitions that you can use in Jupyter Book, including _Note_, _Tip_, _Warning_, _Danger_ and _Hint_.
-
-You can define an admonition by inserting an admonition code block:
-
-~~~
-```{note}
-I'm a note!
-```
-~~~
-
-`{note}` can be replaced with `{warning}`, `{tip}`, `{danger}` and so on. This slide how these admonitions will show up in the output.
-
----
-
-## Panels
-
-Panels organize content into containers:
-
-<img src="/module8/panels.png" width="700"></img>
-
-Notes:
-
-Panels provide an easy way for you to organize chunks of content into flexible containers on your page. They are useful for creating card-like layouts, flexible columns, and grids.
-
-This slide shows an example that creates two panels.
-
-Note that:
-
-- `---` separates each panel
-
-- `^^^` defines the panel header
-
-- `+++` defines the panel footer
-
-You can embed all kinds of content inside of panels. See [here](https://jupyterbook.org/en/stable/content/content-blocks.html#panels) for more details!
-
----
-
-## Dropdowns
-
-Dropdowns can hide and show content:
-
-<br>
-
-<img src="/module8/dropdowns.png" width="750"></img>
-
-Notes:
-
-You can use the `{dropdown}` directive to create a dropdown with a title,
-that shows content only when clicked.
-
-This is good when you want your readers to think about something on their own,
-before revealing the information you have written,
-e.g. for a practice quiz.
-
----
-
-## Dropdown admonitions
-
-Dropdowns admonitions combine admonitions and dropdown:
-
-<br>
-
-<img src="/module8/dropdown-admonitions.png" width="750"></img>
-
-Notes:
-You can also hide the body of your admonition blocks so that users must click a button to reveal their content.
-
-This is helpful if you’d like to include some text that isn't immediately visible to the user.
-
-You can see an example in this slide.
-
----
-
-## Showing and hiding code and its output
-
-<img src="/module8/code-cell.png" width="750"></img>
-
-<br>
-
-We need to edit the cell's **metadata** to tell Jupyter Book to show/hide the code or its output.
-
-
-Notes:
-
-Sometimes we may not want to show the content of a code cell, or its output.
-
-For example, suppose that we have the code cell in this slide.
-It generates a plot that is important to our readers,
-but maybe we don't need to show them all the code.
-
-How can we hide the input code cell
-while still showing the output visualization?
-
-We saw in the Jupyter notebook slide deck
-that we could export a notebook
-without code cells via using the `!nbconvert` shell command
-since there was not build in functionality for this.
-
-For Jupyter Book,
-hiding code input is such a common use case,
-that there is functionality built-in to hide it.
-We can activate this function and hide the input of a cell
-by editing the cell's **metadata**
-and tell Jupyter Book whether we want to hide the code or its input (or output).
-
----
-
-## Showing and hiding code and its output
-
-Accessing code cell metadata in JupyterLab:
-
-<img src="/module8/metadata.png" width="400"></img>
-
-Notes:
-
-To edit a code cell's metadata in JupyterLab:
-
-- Select the cell and click on the gear icon in your JupyterLab environment
-- Then expand the "Advanced Tools" tab
-
----
-
-## Showing and hiding code and its output
-
-<br>
-
-<img src="/module8/hide-input.png" width="500"></img>
-
-Notes:
-For hiding the code itself, add `"hide-input"` to the "Cell Metadata" box as shown in the slide.
-
-
----
-
-## Showing and hiding code and its output
-
-<br>
-
-<img src="/module8/hidden-code.png" width="800"></img>
-
-Notes:
-Now if you rebuild your book,
-the code cell will show up like the screenshot in this slide.
-
-The code itself is hidden, while the output is visible.
-If the reader clicks the "Click to show" button,
-they can see the code as well.
-
----
-
-## Showing and hiding code and its output
-
-<img src="/module8/hidden-output.png" width="800"></img>
-
-Notes:
-Similar to the last slide,
-you can hide a code cell's output
-by adding `"hide-output"` to the "Cell Metadata" in JupyterLab.
-
-This slide shows the rendered result of hiding the output.
-
----
-
-## "Gluing" variables in your notebook
-
-Using the `glue` prefix, you can:
-
-- Bind a variable to a name (called a "key")
-- Reference that variable from your page’s content
-
-<img src="/module8/glue.png" width="600"></img>
-
-Notes:
-Sometimes we might want to access the value of a variable
-in the text when we are writing.
-This is useful since the value in the text
-will be updated each time the notebook is run,
-instead of having to change it manually
-if something changes in our data or analysis code.
-
-Jupyter Book allows us to do this via the `glue` prefix,
-which is able to "glue" both text, numbers, and even figures
-into our text.
-
-You can see an example of gluing a numerical variable in this slide.
-If you are gluing a string/text variable
-and you want to avoid that the variable value is surrounded by quotation marks in the text,
-you can use pass the `text` option to the `glue` prefix like so `{glue:text}`.
-
----
-
-## "Gluing" variables in your notebook
-
-<img src="/module8/altair-captioned.png" width="700"></img>
-
-Notes:
-
-**Important application of "gluing":**
-
-Previously, we have learned how to give **auto-numbered** and **referenceable** captions to figures that contain image files.
-However, we've never discussed how we can do the same for figures generated right in notebook.
-Gluing can be used for giving captions to figures generated from code!
-
-Here I'm first creating an `altair` figure and assign it to a variable called `fig`.
-
-Then I glue the name `altair_fig` to `fig`, so I can later use it elsewhere in my Jupyter Book.
-
-After doing this, Jupyter Book knows about that figure object. So I can "paste" the figure object anywhere I want. Here, I use the functionality to give an auto-numbered and referenceable caption to my figure.
-
----
-
-## "Gluing" variables in your notebook
-
-<img style="border:1px solid black;" src="/module8/altair-rendered.png" width="525"></img>
-
-Notes:
-
-And here is what this Jupyter notebook looks like when **rendered by Jupyter Book**:
-
-Did you note that:
-
-- I've **hidden** the piece of code that generates the `altair` figure? I did that using **cell metadata tags** that I discussed in the earlier slides!
-
-- I the HTML version of your built book, try using your mouse to drag and zoom in/out on the figure. It's **interactive**!
+You can view the website you just created by opening `_build/html/index.html` using any browser that you like. You should see a webpage like this:
+
+<img style="border:1px solid black;" src="/module8/jb_index.png" width="800"></img>
+
+Although this page opens in a browser,
+so far it only exists locally on your computer.
+Later in this module
+we will see how you can make this book publicly available
+using GitHub's publishing system.
 
 ---
 

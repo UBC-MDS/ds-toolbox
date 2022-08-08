@@ -13,7 +13,7 @@ id: 8
 </exercise>
 <!-- ------------------------------------ -->
 <exercise id="1" title="Create your first Jupyter Book" type="slides,video">
-<slides source="module8/module8_01"></slides>
+<slides source="module8/module8_02"></slides>
 </exercise>
 <!-- ------------------------------------ -->
 <exercise id='2' title="Time for practice">
@@ -89,7 +89,7 @@ Since you're already inside the root folder, you should use <code>./</code> for 
 </exercise>
 <!-- ------------------------------------ -->
 <exercise id="3" title="Add your own content" type="slides,video">
-<slides source="module8/module8_02"></slides>
+<slides source="module8/module8_03"></slides>
 </exercise>
 <!-- ------------------------------------ -->
 <exercise id='4' title="Time for practice">
@@ -162,7 +162,7 @@ Neither of the two options are applicable inside a <code>```{math} ```</code> bl
 </exercise>
 <!-- ------------------------------------ -->
 <exercise id="5" title="Publish your book online" type="slides,video">
-<slides source="module8/module8_03"></slides>
+<slides source="module8/module8_04"></slides>
 </exercise>
 <!-- ------------------------------------ -->
 <exercise id='6' title="Time for practice">
