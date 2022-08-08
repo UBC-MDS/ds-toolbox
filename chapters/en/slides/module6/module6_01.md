@@ -277,10 +277,10 @@ as can be seen in this slide.
 
 <br>
 
-<img src="/module6/plasmid_regex.png" width="70%"></img>
+<img src="/module6/plasmid_regex.png" width="60%"></img>
 
 Notes:
-The same goes for when you want to find those files in a Python or R script. In this case, you have a similar pattern matching mechanism available to you called "regular expressions".
+The same goes for when you want to find those files in a Python or R script. In this case, you have a similar pattern matching mechanism available to you called "regular expressions" or "regex".
 Regular expressions are simply search patterns for finding desired strings of characters
 when we are using a programming language like Python.
 They are very similar to globbing,
