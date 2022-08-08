@@ -4,24 +4,27 @@ type: slides
 
 # Add your own content
 
+Notes:
+Now that we know what a Jupyter Book is,
+let's go ahead and practice adding content to our sample book!
+
 ---
 
 ## Create your file and add content to it
 
 <br>
 
-Now's the time to create a new file called `mymarkdownfile.md` with the following content:
+Create a new file called `my-markdown-file.md` with the following content:
 
 <img src="/module8/mymarkdownfile.png" width="700"></img>
 
-Note the two new pieces of markdown:
+Markdown syntax specific to Jupyter Book:
 
 - `(section-label)=`
 - `[link text](link-target)`
 
 Notes:
-
-In the folder with all of your sample book contents, create a new file called `mymarkdownfile.md`. Put the following content in it:
+In the folder with all of your sample book contents, create a new file called `my-markdown-file.md`. Put the following content in it:
 
 <img src="/module8/mymarkdownfile.png" width="700"></img>
 
@@ -55,26 +58,23 @@ By doing this, you are informing Jupyter Book where the new file fits with your 
 
 <br>
 
-In order to see the changes you've made, **don't forget to rebuild your book**!
+**Don't forget to rebuild your book**!
 
 <br>
 
-To clean cached book files and make sure everything is rebuilt from scratch, first run:
+Clean cached book files:
 
 ```
 jupyter-book clean my-book/
 ```
 
-and then run the following to rebuild the book:
+Rebuild the book:
 
 ```
 jupyter-book build my-book/
 ```
 
-Your new page will now show up in the rebuilt book.
-
 Notes:
-
 In order to see the changes you've made, don't forget to rebuild your book.
 
 <br>
@@ -91,7 +91,8 @@ and then run the following to rebuild the book:
 jupyter-book build my-book/
 ```
 
-Your new page will now show up in the rebuilt book.
+Your new page will now show up in the rebuilt book,
+when you refresh your browser page.
 
 ---
 
