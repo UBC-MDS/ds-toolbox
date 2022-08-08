@@ -41,18 +41,26 @@ How should we add the `EDA.ipynb` file to our `_toc.yml`?
 <choice id="1">
 
 <opt text="<code>- file: EDA.ipynb</code>">
-File paths should be relative to the book's root folder. Also, files should not have an extension in <code>_toc.yml</code>
+File paths should be relative to the book's root folder.
 </opt>
 
 <opt text="<code>- file: analysis/EDA.ipynb</code>">
-Files should not have an extension in <code>_toc.yml</code>
+Correct, but there is one more correct answer.
 </opt>
 
 <opt text="<code>- file: EDA</code>">
 File paths should be given relative to the book's root folder.
 </opt>
 
-<opt text="<code>- file: analysis/EDA</code>" correct="true">
+<opt text="<code>- file: analysis/EDA</code>">
+Correct, but there is one more correct answer.
+</opt>
+
+<opt text="Both the first and third options are correct">
+File paths should be given relative to the book's root folder.
+</opt>
+
+<opt text="Both the second and fourth options are correct" correct='true'>
 </opt>
 
 </choice>
