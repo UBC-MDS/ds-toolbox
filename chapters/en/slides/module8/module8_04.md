@@ -18,9 +18,9 @@ Once you’ve built the HTML for your book, you can host it online.
 
 - The most convenient way to do this is with a service that supports **static websites**. This means that the files we created with Jupyter Book's `build` command can simply be uploaded to this site to create a web page.
 
-- The quickest option for publishing your static book website online is to use **Github Pages**
+- The quickest option for publishing your static book website online is to use **GitHub Pages**
 
-There are a few steps to follow to publish your book using Github pages. We'll go over those in the following slides.
+There are a few steps to follow to publish your book using GitHub pages. We'll go over those in the following slides.
 
 ---
 
@@ -111,7 +111,7 @@ Notes:
 <br>
 
 - The easiest way is to use the `ghp-import` package
-  - `ghp-import` is a lightweight Python package that makes it easy to push HTML content to a Github repository
+  - `ghp-import` is a lightweight Python package that makes it easy to push HTML content to a GitHub repository
 
 <br>
 
@@ -127,8 +127,8 @@ we still do no not have a easy to use website that anyone can reach online.
 The next step is to upload the files created from the `build` command of our book online.
 These are often called **build artefacts**.
 The build artifacts are needed for rendering the book as a website,
-but we don't want them on the `main` branch,
-since we will automatically recreate them each time
+but we don't want to keep track of numerous build files on the `main` branch;
+these are ephemeral and replaceable since we will automatically recreate them each time
 we run the `build` command.
 
 Instead,
@@ -136,7 +136,7 @@ we are going to put them on a branch that is specific to GitHub pages,
 and called `gh-pages` by default.
 We could upload the build artefacts manually to this site,
 but there is a package called `ghp-import` that will automate much of this process.
-`ghp-import` is a lightweight Python package that makes it easy to push HTML content to a Github repository
+`ghp-import` is a lightweight Python package that makes it easy to push HTML content to a GitHub repository
 
 `ghp-import` works by copying all of the contents of your built book (i.e., the `_build/html` folder) to a branch of your repository called `gh-pages` (instead of `main`), and pushes it to GitHub. This way you don't create unnecessary clutter on your main branch.
 
@@ -162,7 +162,7 @@ We'll learn how to use `ghp-import` in the next few slides.
 
 <br>
 
-3. Now `gh-pages` branch is automatically set to host your website HTML files. You can view this in the **settings** page of your Github repository:
+3. Now `gh-pages` branch is automatically set to host your website HTML files. You can view this in the **settings** page of your GitHub repository:
 
 <img src="/module8/ghp-settings.png" width="800"></img>
 
@@ -184,7 +184,7 @@ Notes:
 
     With `ghp-import`, we will always use these three flags, and it is not that important to know what each one does, but here is a brief explanation:
 
-    - The `-n` flags instructs GitHub to not treat this a "jekyll" repository (another type of static webpage).
+    - The `-n` flags instructs GitHub to not treat this a "Jekyll" repository (another type of static webpage).
     - The `-p` flag is what pushes our changes to GitHub.
     - The `-f` flag create a force push. Since these build artefacts are re-generated each time, we just want to overwrite whatever is in the current `gh-pages` branch with our latest version of these files.
         - This is also mentioned in this warning from the `ghp-import` [GitHub repository](https://github.com/c-w/ghp-import):
@@ -231,14 +231,6 @@ Notes:
 <br>
 
 - Use `ghp-import -n -p -f myonlinebook/_build/html` to push the changes to the `gh-pages` branch.
-
-<br>
-
-Finally, note this warning from the `ghp-import` [GitHub repository](https://github.com/c-w/ghp-import):
-
-<b><p style="margin-left:5%; color:darkred;">
-"...`ghp-import` will DESTROY your `gh-pages` branch... and assumes that the gh-pages branch is 100% derivative. You should never edit files in your `gh-pages` branch by hand if you’re using this script..."
-</p></b>
 
 Notes:
 

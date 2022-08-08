@@ -167,7 +167,9 @@ Neither of the two options are applicable inside a <code>```{math} ```</code> bl
 <!-- ------------------------------------ -->
 <exercise id='6' title="Time for practice">
 
-The purpose of using `ghp-import` and `gh-pages` branch is to avoid having numerous HTML files in the commit history of the `main` branch each time you rebuild your book.
+**True or False**
+
+The purpose of using `ghp-import` and `gh-pages` branch is to avoid having numerous HTML files in the commit history of the `main` branch each time you rebuild your book and instead automate pushing them to a separate branch.
 
 <choice id="1">
 
@@ -179,6 +181,8 @@ That is indeed the reason for using the <code>ghp-import</code> package and the 
 </opt>
 
 </choice>
+
+**True or False**
 
 All information needed to reproduce the content of the `gh-pages` branch lives in the `main` branch of your book repository.
 
@@ -193,12 +197,14 @@ Remember that the <code>gh-pages</code> branch only contains the result of runni
 
 </choice>
 
-You need the source files on the `main` branch in order for Github Pages to show your website.
+**True or False**
+
+You need the source files on the `main` branch in order for GitHub Pages to show your website.
 
 <choice id="3">
 
 <opt text="True">
-You only need the build artifacts (i.e., the HTML files in the <code>_build/html/</code> folder) to be hosted on a branch so that Github Pages is able to show your website. Your source files are not needed for the website itself.
+You only need the build artifacts (i.e., the HTML files in the <code>_build/html/</code> folder) to be hosted on a branch so that GitHub Pages is able to show your website. Your source files are not needed for the website itself.
 </opt>
 
 <opt text="False" correct="true">
