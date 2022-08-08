@@ -2,7 +2,7 @@
 type: slides
 ---
 
-# Welcome 
+# Welcome
 
 Notes: Welcome to The Data Science Toolbox!
 
