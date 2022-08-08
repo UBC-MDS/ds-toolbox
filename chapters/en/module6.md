@@ -16,7 +16,7 @@ id: 6
 <slides source="module6/module6_01"> </slides>
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id='3' title="Test Your Knowledge">
+<exercise id='3' title="✍️ Practice: What's in a name?">
 
 Which of the following file names follows best practices?
 
@@ -63,7 +63,7 @@ If it was automatically prevented, then this couldn't have been a problem!
 <slides source="module6/module6_03"> </slides>
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id='5' title="Test Your Knowledge">
+<exercise id='5' title="✍️ Practice: Tidy desk, tidy mind">
 
 Which of the following is NOT a reason for having a standard project structure?
 
@@ -134,7 +134,7 @@ Not every project is supposed to have a documentation folder.
 <slides source="module6/module6_04"> </slides>
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id='7' title="Test Your Knowledge">
+<exercise id='7' title="✍️ Practice: Another snake in the Python ecosystem">
 
 What does `conda list` do?
 
