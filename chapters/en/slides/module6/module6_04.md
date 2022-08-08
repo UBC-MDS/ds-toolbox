@@ -268,8 +268,6 @@ For an environment to be reproducible, you need to add the version string manual
 
 ## Creating environment from an environment file
 
-To create a Conda environment from an `environment.yaml` file, you can use the following command:
-
 ```
 conda env create --file environment.yaml
 ```
@@ -277,6 +275,28 @@ conda env create --file environment.yaml
 <br>
 
 ## Cloning an environment
+
+```
+conda create --name live_env --clone test_env
+```
+
+<br>
+
+## Deleting an environment
+
+```
+conda env remove -n live_env
+```
+
+Notes:
+
+To create a Conda environment from an `environment.yaml` file, you can use the following command:
+
+```
+conda env create --file environment.yaml
+```
+
+<br>
 
 We can clone an environment with a different name using the following command:
 
@@ -288,52 +308,60 @@ In this example, `test_env` is cloned to create `live_env`.
 
 <br>
 
-## Deleting an environment
-
 If we are only testing out our environment, we can delete `live_env` to remove some clutter. Make sure that `live_env` is not currently active:
 
 ```
 conda env remove -n live_env
 ```
 
-Notes:
-
 ---
 
 ## Use Conda environments with JupyterLab
 
-<br>
-
-- By default, JupyterLab only sees the Conda environment where it is installed.
-- But there is no need to install JupyterLab in each and every new environment!
-- Instead we can use a package called `nb_conda_kernels`
-    - This makes it possible to have a single installation of JupyterLab, and access all other Conda environments.
+By default, JupyterLab only sees the Conda environment where it is installed.
 
 <br>
 
-- Suppose that you created a new Conda environment called `dstoolbox`.
-- To access your `dstoolbox` environment from JupyterLab, you need to:
-    1. Install `nb_conda_kernels` in your base environment by running
+Follow these steps to access your Conda environments in JupyterLab:
 
-        ```
-        conda install nb_conda_kernels
-        ```
-    2. Install `ipykernel` in your `dstoolbox` environment by running
+<br>
 
-        ```
-        conda install ipykernel
-        ```
-
-Notes:
-You need to follow two steps if you'd like to use Conda environments within JupyterLab. That is:
-
-- Install `nb_conda_kernels` in your base environment by running
+1. Install `nb_conda_kernels` in your `base` environment
 
 ```
 conda install nb_conda_kernels
 ```
 
-- Install `ipykernel` in your `dstoolbox` environment by running
+<br>
+
+2. Install `ipykernel` in your `dstoolbox` environment
+
+```
+conda install ipykernel
+```
+
+Notes:
+
+- By default, JupyterLab only sees the Conda environment where it is installed.
+
+- But there is no need to install JupyterLab in each and every new environment!
+
+- Instead we can use a package called `nb_conda_kernels`
+  - This makes it possible to have a single installation of JupyterLab, and access all other Conda environments.
+
+<br>
+
+- Suppose that you created a new Conda environment called `dstoolbox`.
+
+- To access your `dstoolbox` environment from JupyterLab, you need to:
+
+1. Install `nb_conda_kernels` in your `base` environment by running
+
+```
+conda install nb_conda_kernels
+```
+
+2. Install `ipykernel` in your `dstoolbox` environment by running
 
 ```
 conda install ipykernel
@@ -345,7 +373,7 @@ Once you've done that, you'll be able to see your desired environment in the Lau
 
 ## Launching a notebook with a specific Conda environment
 
-<img style="border:1px solid black;" src="/module7/jl-launch_dstoolbox.png" width="800"></img>
+<img style="border:1px solid black;" src="/module7/jl-launch_dstoolbox.png" width="800">
 
 Notes:
 
@@ -357,10 +385,6 @@ In the slide we can see that after following these steps, launching JupyterLab f
 ---
 
 ## Listing installed packages
-
-<br>
-
-We can get the list of installed packages in the currently active environment using the following command:
 
 ```
 conda list
@@ -379,6 +403,14 @@ functools32               3.2.3.2                  py27_1    conda-forge
 libgfortran               3.0.0                         0    conda-forge
 ```
 
+Notes:
+
+We can get the list of installed packages in the currently active environment using the following command:
+
+```
+conda list
+```
+
 <br>
 
 The list will include
@@ -390,8 +422,6 @@ The list will include
 ---
 
 ## Searching packages
-
-You can search to see if a particular package can be installed using `conda` or `pypi` the following command. For example, here we look for a package named `rasterio`:
 
 ```
 conda search rasterio
@@ -421,6 +451,12 @@ Found 15 packages
 
 Notes:
 
+You can search to see if a particular package can be installed using `conda` or `pypi` the following command. For example, here we look for a package named `rasterio`:
+
+```
+conda search rasterio
+```
+
 The Anaconda cloud page for `rasterio` will show how to install the package, compatible OS, individual files for that package, etc.
 
 ---
@@ -428,6 +464,14 @@ The Anaconda cloud page for `rasterio` will show how to install the package, com
 ## Installing packages
 
 <br>
+
+- The first column of the output of `conda search` shows the `channel/package-name`.
+
+<br>
+
+- You can use this information to install a desired package in the active environment.
+
+Notes:
 
 - The first column of the output of `conda search` shows the `channel/package-name`.
 - You can use this information to install a desired package in the active environment.
@@ -440,20 +484,26 @@ conda install -c conda-forge rasterio=0.35
 <br>
 
 - If you want the latest version, simply avoid providing a version, e.g. run `conda install -c conda-forge rasterio`.
-- If this package depends on other packages to function, Conda will automatically install its dependencies.
+- If this package depends on other packages to function, **Conda will automatically install its dependencies**.
 - If you have a few preferred channels, you can pre-configure these so that you don’t need to explicitly declare the channel every time you want to install a package:
 
 ```
 conda config --add channels conda-forge
 ```
 
-Notes:
-
 ---
 
 ## Removing a package
 
 <br>
+
+Remove a package using:
+
+```
+conda remove -n test_env rasterio
+```
+
+Notes:
 
 - Suppose you decided that you no longer need the package `rasterio`.
 - To remove this package from the currently active environment, you can run:
@@ -468,15 +518,35 @@ conda remove -n test_env rasterio
   - a dependency was installed explicitly at an earlier point in time or,
   - it is required be another package.
 
-Notes:
-
 ---
 
 ## Learning more about Conda
 
+<br>
+
+- Available Conda commands:
+
+<img style="border:1px solid black" src="/module6/conda-help.png" width="600px"/>
+
+<br>
+
+- Full documentation of a command:
+
+```
+conda update --help
+```
+
+<br>
+
+- Conda version:
+
+<img style="border:1px solid black" src="/module6/conda-version.png" width="300px"/>
+
+Notes:
+
 - To see which Conda commands are available, run `conda --help`
 
-<img style="border:1px solid black;" src="/module6/conda-help.png" width="700px"></img>
+<img style="border:1px solid black" src="/module6/conda-help.png" width="700px"/>
 
 <br>
 
@@ -488,14 +558,8 @@ conda update --help
 
 - The Conda version you have installed can be seen by running `conda --version` in Bash:
 
-<img style="border:1px solid black;" src="/module6/conda-version.png" width="400px"></img>
-
-<br>
-
+<img style="border:1px solid black" src="/module6/conda-version.png" width="300px"/>
 
 ---
-
-
-
 
 # Let's apply what we learned!
