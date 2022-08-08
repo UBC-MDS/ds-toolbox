@@ -16,7 +16,7 @@ id: 8
 <slides source="module8/module8_02"></slides>
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id='2' title="Time for practice">
+<exercise id='2' title="✍️ Practice: Today a reader, tomorrow a leader">
 
 We have the following folder containing the files we'd like to include in a report created using Jupyter Book:
 
@@ -92,7 +92,7 @@ Since you're already inside the root folder, you should use <code>./</code> for 
 <slides source="module8/module8_03"></slides>
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id='4' title="Time for practice">
+<exercise id='4' title="✍️ Practice: Becoming an author">
 
 Suppose that you have inserted an image in your book using the following markdown block:
 
@@ -165,7 +165,7 @@ Neither of the two options are applicable inside a <code>```{math} ```</code> bl
 <slides source="module8/module8_04"></slides>
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id='6' title="Time for practice">
+<exercise id='6' title="✍️ Practice: Publication ready!">
 
 **True or False**
 
