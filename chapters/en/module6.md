@@ -194,7 +194,7 @@ The base environment is just an environment, the rules are the same!
 
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id="8" title="What Did We Learn" type="slides,video">
+<exercise id="8" title="What Did We Learn?" type="slides,video">
 <slides source="module6/module6_end"> </slides>
 </exercise>
 <!-- ------------------------------------ -->
