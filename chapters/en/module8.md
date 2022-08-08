@@ -1,22 +1,22 @@
 ---
 title: 'Module 8: Jupyter Book'
 description:
-  'In this module, you will learn how to create beautiful, publication-ready online books using Jupyter Book.' 
+  'In this module you will learn how to create beautiful, publication-ready books and websites using Jupyter Book.' 
 prev: ../../module7
 next: ../../module9
 type: chapter
 id: 8
 ---
 
-<exercise id="1" title="Module learning outcomes" type="slides,video">
+<exercise id="0" title="Module learning outcomes" type="slides,video">
 <slides source="module8/module8_00" shot="1" start="0:003" end="05:31"></slides>
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id="2" title="Jupyter Book ecosystem" type="slides,video">
+<exercise id="1" title="Jupyter Book ecosystem" type="slides,video">
 <slides source="module8/module8_01"></slides>
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id="4" title="Create your first Jupyter Book" type="slides,video">
+<exercise id="2" title="Create your first Jupyter Book" type="slides,video">
 <slides source="module8/module8_02"></slides>
 </exercise>
 <!-- ------------------------------------ -->
@@ -84,11 +84,11 @@ Since you're already inside the root folder, you should use <code>./</code> for 
 
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id="6" title="Add your own content" type="slides,video">
+<exercise id="3" title="Add your own content" type="slides,video">
 <slides source="module8/module8_03"></slides>
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id='7' title="Time for practice">
+<exercise id='4' title="Time for practice">
 
 Suppose that you have inserted an image in your book using the following markdown block:
 
@@ -157,11 +157,11 @@ Neither of the two options are applicable inside a <code>```{math} ```</code> bl
 
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id="8" title="Publish your book online" type="slides,video">
+<exercise id="5" title="Publish your book online" type="slides,video">
 <slides source="module8/module8_04"></slides>
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id='9' title="Time for practice">
+<exercise id='6' title="Time for practice">
 
 The purpose of using `ghp-import` and `gh-pages` branch is to avoid having numerous HTML files in the commit history of the `main` branch each time you rebuild your book.
 
@@ -204,7 +204,7 @@ You only need the build artifacts (i.e., the HTML files in the <code>_build/html
 
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id="10" title="What Did We Learn" type="slides,video">
+<exercise id="7" title="What Did We Learn" type="slides,video">
 <slides source="module8/module8_end"></slides>
 </exercise>
 <!-- ------------------------------------ -->
