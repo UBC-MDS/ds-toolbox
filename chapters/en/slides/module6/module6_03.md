@@ -5,10 +5,13 @@ type: slides
 # Project Organization
 
 Note:
+In this slide deck we will learn more about how we can effectively organize our projects.
 
 ---
 
 <br>
+
+## The importance of project organization
 
 - In a data science project, it's easy to focus only on the final product
 - The code and data that produce the end result are as important
@@ -30,7 +33,7 @@ When it comes to organizing an entire project, it's even more important to struc
 
 ---
 
-**Example of a good project structure:**
+## Example of a good project structure
 
 ```
 project-name/
@@ -70,9 +73,11 @@ When most people agree on using more or less the same structure for organizing t
 
 It will be much easier for people to collaborate with each other. It will also be easier for yourself to manage your project as it grows in complexity.
 
+Let's have closer looks at each of these directories in the next slide!
+
 ---
 
-Here are some files/folders in a standard project structure:
+## Files and folders in a standard project structure:
 
 <br>
 
@@ -94,4 +99,4 @@ For example, one might choose to call their code-containing folder `code` or eve
 
 ---
 
-# Let's see what you've learned!
+# Let's apply what we learned!
