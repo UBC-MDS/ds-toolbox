@@ -17,7 +17,7 @@ id: 7
 <slides source="module7/module7_01"></slides>
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id='2' title="✍️ Practice: Notebook knowledge">
+<exercise id='2' title="✍️ Practice: Keeping a notebook ">
 
 Suppose that you have just opened a notebook with the following cells:
 
