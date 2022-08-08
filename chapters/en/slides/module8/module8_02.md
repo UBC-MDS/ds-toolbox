@@ -548,18 +548,35 @@ This slide shows the rendered result of hiding the output.
 
 ---
 
-## "Glueing" variables in your notebook
+## "Gluing" variables in your notebook
 
-Using the `glue` tool, you can:
+Using the `glue` prefix, you can:
 
 - Bind a variable to a name (called a "key")
 - Reference that variable from your page’s content
 
 <img src="/module8/glue.png" width="600"></img>
 
+Notes:
+Sometimes we might want to access the value of a variable
+in the text when we are writing.
+This is useful since the value in the text
+will be updated each time the notebook is run,
+instead of having to change it manually
+if something changes in our data or analysis code.
+
+Jupyter Book allows us to do this via the `glue` prefix,
+which is able to "glue" both text, numbers, and even figures
+into our text.
+
+You can see an example of gluing a numerical variable in this slide.
+If you are gluing a string/text variable
+and you want to avoid that the variable value is surrounded by quotation marks in the text,
+you can use pass the `text` option to the `glue` prefix like so `{glue:text}`.
+
 ---
 
-## "Glueing" variables in your notebook
+## "Gluing" variables in your notebook
 
 <img src="/module8/altair-captioned.png" width="700"></img>
 
@@ -579,7 +596,7 @@ After doing this, Jupyter Book knows about that figure object. So I can "paste" 
 
 ---
 
-## "Glueing" variables in your notebook
+## "Gluing" variables in your notebook
 
 <img style="border:1px solid black;" src="/module8/altair-rendered.png" width="525"></img>
 
