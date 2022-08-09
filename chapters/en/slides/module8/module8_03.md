@@ -42,13 +42,13 @@ When you build your book, you’ll see how these links resolve in the output.
 
 <br>
 
-<img src="/module8/_toc.png" width="800"></img>
+<img src="/module8/_toc.png" width="600"></img>
 
 Notes:
 
 Once you've created a file and added your own content to it, you have to add it to your table of content file, that is, `_toc.yml` to make it available to Jupyter Book.
 
-<img src="/module8/_toc.png" width="700"></img>
+<img src="/module8/_toc.png" width="600"></img>
 
 By doing this, you are informing Jupyter Book where the new file fits with your book’s structure.
 
@@ -140,8 +140,6 @@ as we will show you in the next slide.
 
 ## Cross-referencing figures
 
-<br>
-
 <img src="/module8/md-with-figure.png" width="650"></img>
 
 Notes:
@@ -154,14 +152,11 @@ After adding a figure and referencing it in the main text,
 our markdown file (`my-markdown-file.md`) looks like in this slide.
 The rendered version is shown on the next page.
 
-
 ---
 
 ## Cross-referencing figures
 
 The end result will look like this if you rebuild your Jupyter Book:
-
-<br>
 
 <img style="border:1px solid black;" src="/module8/rebuilt-book.png" width="650"></img>
 
@@ -320,8 +315,6 @@ You can see in the slide how we add equations to `my-markdown-file.md`:
 ## Cross-referencing equations
 
 Once you add these equations to `my-markdown-file.md` and rebuild your Jupyter Book, your book will look like:
-
-<br>
 
 <img style="border:1px solid black;" src="/module8/equation.png" width="750"></img>
 
@@ -516,7 +509,6 @@ To edit a code cell's metadata in JupyterLab:
 Notes:
 For hiding the code itself, add `"hide-input"` to the "Cell Metadata" box as shown in the slide.
 
-
 ---
 
 ## Showing and hiding code and its output
@@ -598,7 +590,7 @@ After doing this, Jupyter Book knows about that figure object. So I can "paste" 
 
 ## "Gluing" variables in your notebook
 
-<img style="border:1px solid black;" src="/module8/altair-rendered.png" width="525"></img>
+<img style="border:1px solid black;" src="/module8/altair-rendered.png" width="500"></img>
 
 Notes:
 
