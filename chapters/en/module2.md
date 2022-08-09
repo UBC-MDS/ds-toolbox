@@ -5,7 +5,7 @@ description:
 prev: ../../module1
 next: ../../module3
 type: chapter
-id: 1
+id: 2
 ---
 
 <exercise id="0" title="Module Learning Outcomes"  type="slides, video">
