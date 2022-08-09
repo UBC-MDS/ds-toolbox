@@ -2,8 +2,8 @@
 title: 'Module 2: The shell'
 description:
   'In this module we will you will learn how to use the shell to navigate your filesystem and to execute commands.'
-prev: ../../module0
-next: ../../module2
+prev: ../../module1
+next: ../../module3
 type: chapter
 id: 1
 ---

@@ -52,7 +52,7 @@ instead we have graphical user interfaces with menus and buttons,
 which is what you are commonly using when interacting with a computer 
 that runs an operating system such as MacOS, Linux, or Windows.
 
-These graphical interface can be thought of as a layer (or a *shell*)
+These graphical interface can be thought of as a layer (or a [shell](https://glosario.carpentries.org/en/#shell))
 around the internal components of your operating system.
 Shells exist as an intermediate between the human and the machine;
 they make it easy for us to express our commands,
