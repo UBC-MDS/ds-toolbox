@@ -162,10 +162,17 @@ the "Anaconda Prompt" application,
 or the newer "Windows Terminal" application.
 
 Open the respective terminal application for the operating system you are using
-and type in `jupyter lab`.
-First,
-you will see some output similar to the screenshot at the top of this slide.
-After a few second,
+by browsing your applications menu
+or searching for the name of the terminal application.
+
+One common thing we can use the shell for is a launcher for other applications.
+The first thing we are going to do is to learn how to launch JupyterLab,
+which we will use for the rest of this course.
+
+To launch JupyterLab,
+execute the `jupyter lab` command by typing it into your shell and pressing `Enter`.
+You will see some output similar to the screenshot at the top of this slide.
+After a few seconds,
 you should see a browser window open with the Jupyter Launcher page
 similar to the screenshot at the bottom of this slide.
 
