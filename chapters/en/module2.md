@@ -268,6 +268,35 @@ A pipe works between commands, not between files.
 
 </choice>
 
+How can you navigate in long text pages (such as the manual) using <code>less</code>?
+
+<choice id="3">
+
+<opt text='<code>space</code> to scroll down, <code>b</code> to scroll up'>
+Correct, but there is another correct option too.
+</opt>
+
+<opt text='<code>b</code> to scroll down, <code>space</code> to scroll up'>
+You have mixed up which key does what here.
+</opt>
+
+<opt text='<code>/</code> to search, <code>n</code> to navigate to the next search result, <code>q</code> to quit'>
+Correct, but there is another correct option too.
+</opt>
+
+<opt text='<code>\</code> to search, <code>s</code> to navigate to the next search result, <code>q</code> to quit'>
+This is not quite how you search in the text.
+</opt>
+
+<opt text='The first and third options are both correct' correct='true'>
+</opt>
+
+<opt text='The first and fourth options are both correct'>
+The first option is correct, but not the fourth.
+</opt>
+
+</choice>
+
 </exercise>
 
 <exercise id="9" title="What Did We Just Learn?" type="slides, video">

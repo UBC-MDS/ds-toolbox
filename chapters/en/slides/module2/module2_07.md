@@ -253,9 +253,12 @@ press `n`,
 and to go to the previous,
 press `shift` + `n`.
 
-These navigation keys are important to remember
-as they will be helpful to navigate other terminal pages as well,
-not just the manual!
+Technically,
+the manual pages are displayed inside a "pager" program called `less`,
+which you could use to add interactive navigation to any long piece of text.
+`less` is used widely by other shell programs,
+so these navigation keys are important to remember
+as they will be helpful to navigate other pages as well!
 
 ---
 
