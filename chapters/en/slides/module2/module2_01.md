@@ -35,9 +35,9 @@ and can be referred to for additional details.
 
 ## What is a computer?
 
-<img src='/module2/wires-computers-eniac-1946.png' width="50%" alt="A few of the world's most prominent programmers of the time computing ballistic trajectories on the ENIAC computer during the second world war."/>
+A few of the world's most prominent programmers of the time computing ballistic trajectories on the ENIAC computer during the second world war:
 
-A few of the world's most prominent programmers of the time computing ballistic trajectories on the ENIAC computer during the second world war.
+<img src='/module2/wires-computers-eniac-1946.png' width="50%" alt="A few of the world's most prominent programmers of the time computing ballistic trajectories on the ENIAC computer during the second world war."/>
 
 Notes:
 Essentially,
@@ -109,9 +109,9 @@ they might take over as the main way for us to interact with computers.
 
 ## Which shell will we be using?
 
-<img src="https://cdn.rawgit.com/odb/official-bash-logo/master/assets/Logos/Identity/PNG/BASH_logo-transparent-bg-color.png" alt="The Bourne Again SHell" width="400px"></img>
+The Bash logo:
 
-The Bourne Again SHell
+<img src="https://cdn.rawgit.com/odb/official-bash-logo/master/assets/Logos/Identity/PNG/BASH_logo-transparent-bg-color.png" alt="The Bourne Again SHell" width="400px"></img>
 
 Notes:
 Bash is the most commonly used text shell.
@@ -142,11 +142,15 @@ Let's see how to do that next!
 
 ## How do we open Bash on our computer?
 
-<img src='/module2/launch-jlab.png' width="700px" alt="A screenshot of opening the terminal in JupyterLab via the File menu."/>
+Executing the shell command `jupyter lab`:
+
+<img src='/module2/launch-jlab.png' width="700px" alt="`jupyter lab` is typed executed from the command line and some of its output is shown."/>
 
 <br>
 
-<img src='/module2/jlab-launcher.png' width="500px" alt="A screenshot of opening the terminal in JupyterLab via the File menu."/>
+The JupyterLab landing page:
+
+<img src='/module2/jlab-launcher.png' width="500px" alt="A screenshot of how the Jupyter Lab launcher looks when it is opened, including the icons for creating new notebooks."/>
 
 Notes:
 To run a shell such a Bash,
@@ -180,16 +184,15 @@ similar to the screenshot at the bottom of this slide.
 
 ## How do we open Bash from JupyterLab
 
+Opening a terminal from JupyterLab:
+
 <img src='/module2/jl-terminal-open.png' width="600px" alt="A screenshot of opening the terminal in JupyterLab via the File menu."/>
 
-A screenshot of opening the terminal in JupyterLab via the File menu.
+<br>
 
-<br>
-<br>
+An open JupyterLab terminal with black background:
 
 <img src='/module2/jl-terminal.png' width="600px" alt="A screenshot of an open JupyterLab terminal with black background."/>
-
-A screenshot of an open JupyterLab terminal with black background.
 
 Notes:
 Since there is a default terminal application on each operating system,
