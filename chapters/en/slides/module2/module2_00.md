@@ -16,6 +16,7 @@ In this module you will learn how to
 4. Use "wildcards"
 5. Define and distinguish between absolute file paths and relative file paths
 6. Read the shell's built-in manual
+7. Combine commands with pipes
 
 Notes:
 In this module we will learn to effectively communicate with the computer via a text-based shell.
