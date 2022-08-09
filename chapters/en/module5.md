@@ -23,7 +23,7 @@ id: 5
 
 </exercise>
 
-<exercise id='2' title="Be careful if you can't see the forest because of all the branches">
+<exercise id='2' title="✍️ Practice: Be careful if you can't see the forest because of all the branches">
 
 Which of these names are used to refer to the default branch in Git/GitHub?
 
@@ -96,7 +96,7 @@ Which branch are you currently working on?
 <slides source='module5/module5_02' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
-<exercise id='4' title='How branches are related'>
+<exercise id='4' title='✍️ Practice: How branches are related'>
 
 **True or False**
 
@@ -144,7 +144,7 @@ The position of the label <code>origin/master</code> indicates that both these c
 <slides source='module5/module5_03' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
-<exercise id='6' title='All roads merge to `main`'>
+<exercise id='6' title='✍️ Practice: All roads merge to `main`'>
 
 
 Would you delete a branch after merging it?
@@ -228,7 +228,7 @@ Even if the final goal of the pull request is to merge your changes with another
 <slides source='module5/module5_05' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
-<exercise id='10' title='Branching out'>
+<exercise id='10' title='✍️ Practice: Branching out'>
 
 In which cases would branching be better than using forks?
 
@@ -263,7 +263,7 @@ Using only numbers could create confusion when merging the branches. For example
 <slides source='module5/module5_06' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
-<exercise id='12' title='Forking your repository'>
+<exercise id='12' title='✍️ Practice: Forking your repository'>
 
 **True or False**
 
