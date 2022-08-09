@@ -185,11 +185,11 @@ Is <code> canadian-languages</code>  referring to a branch?
 <slides source='module5/module5_04' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
-<exercise id='8' title='You are cordially invited to review my changes'>
+<exercise id='8' title='✍️ Practice: You are cordially invited to review my changes'>
 
 **True or False**
 
-You should be quite sure when creting a pull request because you will not be able add more commits after you create it.
+You should be quite sure when creating a pull request because you will not be able add more commits after you create it.
 
 <choice id = 8>
 <opt text='True' >
@@ -236,8 +236,8 @@ In which cases would branching be better than using forks?
 <opt text='The owner of the repository have set branch protection rules to the <code>main</code>  branch'>
 Even if it is a good practice to avoid that contributors push code directly to the <code>main</code> branch by accident, protecting the branch it is not a requirement to collaborate using branching. 
 </opt>
-<opt text='You want to use GitHub issues to share with your team members or other collaborators' >
-It is always recommended to use Github issues, it does't matter your collaboration style.
+<opt text='You want to work with Pull Requests' >
+It is always recommended to use Pull Requests, no matter your collaboration style.
 </opt>
 <opt text='You have write access to the repository' correct='true'>
 If you have not write access it would be impossible to contribute without forking the repository first.
