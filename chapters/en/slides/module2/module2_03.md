@@ -5,7 +5,7 @@ type: slides
 
 # Moving Around
 
-Notes: In this module,
+Notes: In this slide deck,
 we will see how we can use the shell to move around our file system.
 
 ---
