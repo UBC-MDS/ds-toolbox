@@ -124,7 +124,7 @@ https://docs.python.org/3/library/pdb.html#debugger-commands-1).
 
 - **Searching code cell history**:
 
-<img src="/module7/search-hist.png" width="700"></img>
+<img src="/module7/search-hist.png" width="800"></img>
 
 Notes:
 Another useful magic command is `%hist`

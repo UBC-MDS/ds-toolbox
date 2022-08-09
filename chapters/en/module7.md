@@ -227,7 +227,7 @@ This is not a valid command prefix in for a notebook cell.
 </choice>
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id='9' title="What Did We Learn" type="slides,video">
+<exercise id='9' title="What Did We Learn?" type="slides,video">
 <slides source="module7/module7_end"></slides>
 </exercise>
 <!-- ------------------------------------ -->
