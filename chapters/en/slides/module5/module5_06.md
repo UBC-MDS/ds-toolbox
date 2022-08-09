@@ -80,7 +80,7 @@ To solve this you can update your forked repository with the button **fetch upst
 ---
 
 
-## Extra: Communicating using GitHub issues
+## Communicating using GitHub issues
 
 The “Issues” tab on the GitHub web interface
 
@@ -103,7 +103,7 @@ and then click the green button that says "New Issue".
 
 ---
 
-## Extra: Communicating using GitHub issues
+## Communicating using GitHub issues
 
 Dialog boxes and submission button for creating new GitHub issues.
 <center>
@@ -119,7 +119,7 @@ All issues are accessible to all project collaborators, so no one is left out of
 
 ---
 
-## Extra: Communicating using GitHub issues
+## Communicating using GitHub issues
 
 The “Closed” issues tab on the GitHub web interface. 
 
@@ -134,6 +134,15 @@ Notes:
 🙌
 When a conversation is resolved, you can click “Close issue.” The closed issue can be later viewed by clicking the “Closed” header link in the “Issue” tab.
 Issues will be automatically closed if you merge a PR that refers to the issue.
+
+Although you might think that GitHub issues are mostly for collaborative projects,
+they are highly useful for individual projects too,
+as it is important to record ideas and decisions for your self in the future.
+
+GitHub has recently also improved issues capabilities to be used for project management,
+so that you don't need to use a separate program for that.
+It is beyond the scope of this course to go through this topic in detail,
+but you can [find more information about GitHub issues on this page](https://github.com/features/issues/).
 
 ---
 

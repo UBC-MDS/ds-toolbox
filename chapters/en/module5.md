@@ -290,6 +290,39 @@ You probably don't have write access to the original repository to push modifica
 You will clone, pull, and push to your GitHub account's cloned repository (the fork). Contributions to the original GitHub repository will be made by pul requests from your fork to the original repository. 
 </opt>
 </choice>
+
+Which of the following statements are True regarding GitHub issues?
+
+<choice id = 15>
+<opt text='They are effective at recording decisions that were made, problems that were identified and addressed, and all other communication surrounding the project.'>
+This is correct, but so are some other options.
+</opt>
+
+<opt text='They are useful in both collaborative and your own private projects.'>
+This is correct, but so are some other options.
+</opt>
+
+<opt text='You can use GitHub issues for project management to plan and track your work.'>
+This is correct, but so are some other options.
+</opt>
+
+<opt text='They are only useful for collaborative projects.'>
+They are very useful to keep track of tasks and recording your thoughts in individual projects as well.
+</opt>
+
+<opt text='All of the above options are correct'>
+Not quite.
+</opt>
+
+<opt text='The first three options are all correct'>
+</opt>
+
+<opt text='The first two options are both correct'>
+These are both correct, but so is another option.
+</opt>
+
+</choice>
+
 </exercise>
 
 <exercise id="13" title="What did we learn?" type="slides,video">

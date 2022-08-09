@@ -13,6 +13,7 @@ In this module you learned how to
 3. Differentiate when to use forking or branching as a collaboration strategy.
 4. Recognize the essential components of a pull request.
 5. Determine whether directly merging changes is preferable to first opening a pull request.
+6. Explain when GitHub issues are helpful and how to use them.
 
 Notes:
 Now is time to work!
