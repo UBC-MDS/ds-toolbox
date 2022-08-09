@@ -1,7 +1,7 @@
 ---
 title: 'Module 2: The shell'
 description:
-  'In this module we will introduce you to several of the tools that we will be using in this course, as well as to computing in general.'
+  'In this module we will you will learn how to use the shell to navigate your filesystem and to execute commands.'
 prev: ../../module1
 next: ../../module3
 type: chapter
@@ -16,7 +16,7 @@ id: 2
 <slides source="module2/module2_01" shot="1" start="0:003" end="05:31"> </slides>
 </exercise>
 
-<exercise id="2" title="Test Your Knowledge">
+<exercise id="2" title='✍️ Practice: "Shell out" your knowledge'>
 
 **True or False**       
 *Using a text-based interface such as a shell to communicate with your computer is always better than using a graphical interface.*
@@ -79,7 +79,7 @@ How do you pass an option to <code>ls</code> which tells is to decorate the outp
 <slides source="module2/module2_03" shot="1" start="5:4008" end="26:2200"> </slides>
 </exercise>
 
-<exercise id="4" title="Test Your Knowledge">
+<exercise id="4" title="✍️ Practice: Ahoy captain!">
 
 Is `Documents/pdfs` a relative or absolute path?
 
@@ -152,7 +152,7 @@ While this command would list the hidden files, the <code>-F</code> flag is not 
 <slides source="module2/module2_05" shot="1" start="26:3200" end="40:07"></slides>
 </exercise>
 
-<exercise id="6" title="Test Your Knowledge">
+<exercise id="6" title="✍️ Practice: Refine your shell skills">
 
 How do you view the first few lines of a file called `notes.txt`?
 
@@ -223,7 +223,7 @@ The file needs to start with `not`.
 <slides source="module2/module2_07" shot="1" start="26:3200" end="40:07"></slides>
 </exercise>
 
-<exercise id="8" title="Test Your Knowledge">
+<exercise id="8" title="✍️ Practice: Bash it out">
 
 How can we search for the word "here" in the file `notes.txt`?
 
@@ -264,6 +264,35 @@ A pipe works between commands, not between files.
 
 <opt text='A pipe send the output from one command to another command' correct="true">
 
+</opt>
+
+</choice>
+
+How can you navigate in long text pages (such as the manual) using <code>less</code>?
+
+<choice id="3">
+
+<opt text='<code>space</code> to scroll down, <code>b</code> to scroll up'>
+Correct, but there is another correct option too.
+</opt>
+
+<opt text='<code>b</code> to scroll down, <code>space</code> to scroll up'>
+You have mixed up which key does what here.
+</opt>
+
+<opt text='<code>/</code> to search, <code>n</code> to navigate to the next search result, <code>q</code> to quit'>
+Correct, but there is another correct option too.
+</opt>
+
+<opt text='<code>\</code> to search, <code>s</code> to navigate to the next search result, <code>q</code> to quit'>
+This is not quite how you search in the text.
+</opt>
+
+<opt text='The first and third options are both correct' correct='true'>
+</opt>
+
+<opt text='The first and fourth options are both correct'>
+The first option is correct, but not the fourth.
 </opt>
 
 </choice>

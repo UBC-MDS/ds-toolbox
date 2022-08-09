@@ -27,6 +27,13 @@ To search for the word "the" in our notes file,
 we can type `grep "the" note_2022-06-22.md`.
 This will return every line in the file that contains the word "the".
 
+When you have a longer command like this that you find annoying to re-type each time,
+you can use the up/down arrows on your keyboard to navigate the history of commands.
+This way you can go back to a long command easily
+and then just modify it a bit instead of retyping it from scratch.
+In a few slides we will learn about another technique to help with long commands
+by creating shorter aliases for them.
+
 ---
 
 ## Seeing the history of commands
@@ -54,7 +61,7 @@ and in which order we ran them.
 
 ---
 
-## Combining commands
+## Combining commands with pipes
 
 ```sh
 history | grep "ls"
@@ -85,7 +92,7 @@ before printing it on the screen?
 This is exactly what a `pipe` (`|`) does,
 which we can use with the following syntax `command1 | command2`.
 In our case this would be `history | grep "ls"`,
-which sends the output to `grep`,
+which sends the output of `ls` to `grep`,
 which removes all the lines that don't contain "ls",
 before printing the remaining three lines to the screen.
 
@@ -139,14 +146,19 @@ it is possible to perform rather advanced text processing directly in the shell.
 
 ## Creating an alias
 
+Before creating the alias:
+
 ```sh
-# Before creating the alias
 l
 ```
 
 ```out
 l: command not found
 ```
+
+<br>
+
+After creating the alias:
 
 ```sh
 alias l="ls -aFltr"
@@ -188,7 +200,7 @@ we can use the shorter `l` as an "alias" for the longer command.
 If we want to keep this alias between reboots,
 we need to save it to file `~/.bash_profile` (on Windows and Mac)
 or `~/.bashrc` (on Linux)
-the same way we did during the setup instructions.
+the same way we did during the setup in assignment 1.
 
 ---
 
@@ -237,7 +249,7 @@ Notes:
 How can we find out what options like `-t` and `-r` do if we don't know of them already?
 By reading the built-in help manual!
 Typing `man ls` brings up the manual help page for the `ls` command.
-You can navigate these pages with `Space` to go down and `b` to go **B**ack up.
+You can navigate these pages with `Space` to go down and `b` to go Back up.
 `q` quits the manual and takes you back to the shell prompt.
 
 Typing `/` starts a search.
@@ -247,6 +259,20 @@ To continue to the **n**ext search hit,
 press `n`,
 and to go to the previous,
 press `shift` + `n`.
+
+Technically,
+the manual pages are displayed inside a "pager" program called `less`,
+which you could use to add interactive navigation to any long piece of text.
+`less` is used widely by other shell programs,
+so these navigation keys are important to remember
+as they will be helpful to navigate other pages as well!
+
+Note that **on Windows there is no built-in `man` command**.
+Instead you can pipe the help pages into the `less` command manually
+via e.g. `ls --help | less`.
+We setup an alias for this called `man` during the setup in assignment one,
+so if you followed those instructions,
+you should be able to type `man ls` on Windows as well.
 
 ---
 
