@@ -16,7 +16,7 @@ id: 2
 <slides source="module2/module2_01" shot="1" start="0:003" end="05:31"> </slides>
 </exercise>
 
-<exercise id="2" title="Test Your Knowledge">
+<exercise id="2" title='✍️ Practice: "Shell out" your knowledge'>
 
 **True or False**       
 *Using a text-based interface such as a shell to communicate with your computer is always better than using a graphical interface.*
@@ -79,7 +79,7 @@ How do you pass an option to <code>ls</code> which tells is to decorate the outp
 <slides source="module2/module2_03" shot="1" start="5:4008" end="26:2200"> </slides>
 </exercise>
 
-<exercise id="4" title="Test Your Knowledge">
+<exercise id="4" title="✍️ Practice: Ahoy captain!">
 
 Is `Documents/pdfs` a relative or absolute path?
 
@@ -152,7 +152,7 @@ While this command would list the hidden files, the <code>-F</code> flag is not 
 <slides source="module2/module2_05" shot="1" start="26:3200" end="40:07"></slides>
 </exercise>
 
-<exercise id="6" title="Test Your Knowledge">
+<exercise id="6" title="✍️ Practice: Refine your shell skills">
 
 How do you view the first few lines of a file called `notes.txt`?
 
@@ -223,7 +223,7 @@ The file needs to start with `not`.
 <slides source="module2/module2_07" shot="1" start="26:3200" end="40:07"></slides>
 </exercise>
 
-<exercise id="8" title="Test Your Knowledge">
+<exercise id="8" title="✍️ Practice: Bash it out">
 
 How can we search for the word "here" in the file `notes.txt`?
 
