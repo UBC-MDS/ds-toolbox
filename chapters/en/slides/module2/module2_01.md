@@ -142,11 +142,11 @@ Let's see how to do that next!
 
 ## How do we open Bash on our computer?
 
-<img src='/module2/launch-jlab.png' width="600px" alt="A screenshot of opening the terminal in JupyterLab via the File menu."/>
+<img src='/module2/launch-jlab.png' width="700px" alt="A screenshot of opening the terminal in JupyterLab via the File menu."/>
 
 <br>
 
-<img src='/module2/jlab-launcher.png' width="600px" alt="A screenshot of opening the terminal in JupyterLab via the File menu."/>
+<img src='/module2/jlab-launcher.png' width="500px" alt="A screenshot of opening the terminal in JupyterLab via the File menu."/>
 
 Notes:
 To run a shell such a Bash,
@@ -178,6 +178,8 @@ similar to the screenshot at the bottom of this slide.
 
 ---
 
+## How do we open Bash from JupyterLab
+
 <img src='/module2/jl-terminal-open.png' width="600px" alt="A screenshot of opening the terminal in JupyterLab via the File menu."/>
 
 A screenshot of opening the terminal in JupyterLab via the File menu.
@@ -190,10 +192,13 @@ A screenshot of opening the terminal in JupyterLab via the File menu.
 A screenshot of an open JupyterLab terminal with black background.
 
 Notes:
-In this course,
-we will be using Bash via the JupyterLab terminal,
-to ensure that the experience is similar
-across all three operating systems.
+Since there is a default terminal application on each operating system,
+we will be showing how to use Bash via the JupyterLab terminal in this course.
+Using the terminal application within JupyterLab gives us access to the same shell commands
+as if we would run the default terminal application on our operating system.
+The JupyterLab terminal also ensures that the experience is similar
+across all three operating systems,
+but you are free to use any terminal to follow along.
 
 To open the JupyterLab terminal,
 go to `File -> New -> Terminal`
@@ -229,6 +234,8 @@ username
 ```
 
 Notes:
+Now that we know how to open the terminal and JupyterLab,
+let's explore some commands in the Bash shell!
 Our first shell commands will let us explore our folders and files,
 and will also introduce us to several conventions that most command line tools follow.
 
