@@ -142,6 +142,35 @@ Let's see how to do that next!
 
 ## How do we open Bash on our computer?
 
+<img src='/module2/launch-jlab.png' width="600px" alt="A screenshot of opening the terminal in JupyterLab via the File menu."/>
+
+<br>
+
+<img src='/module2/jlab-launcher.png' width="600px" alt="A screenshot of opening the terminal in JupyterLab via the File menu."/>
+
+Notes:
+To run a shell such a Bash,
+we need to use a Terminal Emulator,
+or just "Terminal" for short.
+Most operating systems have one built-in,
+on MacOS it is called `Terminal.app`,
+and on Linux it is usually just called `Terminal`.
+On Windows,
+you could use the terminal application that comes with Git Bash
+that you installed in Assignment 1,
+the "Anaconda Prompt" application,
+or the newer "Windows Terminal" application.
+
+Open the respective terminal application for the operating system you are using
+and type in `jupyter lab`.
+First,
+you will see some output similar to the screenshot at the top of this slide.
+After a few second,
+you should see a browser window open with the Jupyter Launcher page
+similar to the screenshot at the bottom of this slide.
+
+---
+
 <img src='/module2/jl-terminal-open.png' width="600px" alt="A screenshot of opening the terminal in JupyterLab via the File menu."/>
 
 A screenshot of opening the terminal in JupyterLab via the File menu.
@@ -154,17 +183,6 @@ A screenshot of opening the terminal in JupyterLab via the File menu.
 A screenshot of an open JupyterLab terminal with black background.
 
 Notes:
-To run a shell such a Bash,
-we need to use a Terminal Emulator,
-or just "Terminal" for short.
-Most operating systems have one built-in,
-on MacOS it is called `Terminal.app`,
-and on Linux it is usually just called `Terminal`.
-On Windows,
-you could use the terminal application that comes with Git Bash
-that you installed in Assignment 1,
-or the newer "Windows Terminal" application.
-
 In this course,
 we will be using Bash via the JupyterLab terminal,
 to ensure that the experience is similar
