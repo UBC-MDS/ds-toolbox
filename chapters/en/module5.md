@@ -140,7 +140,7 @@ The position of the label <code>origin/master</code> indicates that both these c
 </choice>
 </exercise>
 
-<exercise id='5' title="Mergin branches"  type='slides, video'>
+<exercise id='5' title="Merging branches"  type='slides, video'>
 <slides source='module5/module5_03' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
