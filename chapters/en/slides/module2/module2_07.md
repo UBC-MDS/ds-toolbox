@@ -27,6 +27,13 @@ To search for the word "the" in our notes file,
 we can type `grep "the" note_2022-06-22.md`.
 This will return every line in the file that contains the word "the".
 
+When you have a longer command like this that you find annoying to re-type each time,
+you can use the up/down arrows on your keyboard to navigate the history of commands.
+This way you can go back to a long command easily
+and then just modify it a bit instead of retyping it from scratch.
+In a few slides we will learn about another technique to help with long commands
+by creating shorter aliases for them.
+
 ---
 
 ## Seeing the history of commands
@@ -193,7 +200,7 @@ we can use the shorter `l` as an "alias" for the longer command.
 If we want to keep this alias between reboots,
 we need to save it to file `~/.bash_profile` (on Windows and Mac)
 or `~/.bashrc` (on Linux)
-the same way we did during the setup instructions.
+the same way we did during the setup in assignment 1.
 
 ---
 
@@ -259,6 +266,13 @@ which you could use to add interactive navigation to any long piece of text.
 `less` is used widely by other shell programs,
 so these navigation keys are important to remember
 as they will be helpful to navigate other pages as well!
+
+Note that **on Windows there is no built-in `man` command**.
+Instead you can pipe the help pages into the `less` command manually
+via e.g. `ls --help | less`.
+We setup an alias for this called `man` during the setup in assignment one,
+so if you followed those instructions,
+you should be able to type `man ls` on Windows as well.
 
 ---
 
