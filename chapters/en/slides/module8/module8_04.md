@@ -76,27 +76,27 @@ I'm a note!
 
 ---
 
-## Panels
+## Grids
 
-Panels organize content into containers:
+Grids organize content into containers:
 
-<img src="/module8/panels.png" width="700"></img>
+<img src="/module8/grids.png" width="700"></img>
 
 Notes:
 
-Panels provide an easy way for you to organize chunks of content into flexible containers on your page. They are useful for creating card-like layouts, flexible columns, and grids.
+Grids provide an easy way for you to organize chunks of content into flexible containers on your page. They are useful for creating card-like layouts and flexible columns and rows.
 
-This slide shows an example that creates two panels.
+This slide shows an example that creates a grid with two cards.
 
 Note that:
 
-- `---` separates each panel
+- `:gutter:` specifies the separation width between the cards. In this case, it is set to `3`.
 
-- `^^^` defines the panel header
+- The text immediately following `:::{grid-item-card}` will be the title of that card.
 
-- `+++` defines the panel footer
+- `+++` can also be used to define the card's footer.
 
-You can embed all kinds of content inside of panels. See [here](https://jupyterbook.org/en/stable/content/components.html) for more details!
+You can embed all kinds of content inside of grids, or have grids with columns and rows of different sizes. Check out this [page](https://jupyterbook.org/en/stable/content/components.html) for more details.
 
 ---
 
