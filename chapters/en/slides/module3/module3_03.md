@@ -54,7 +54,11 @@ Let's learn step by step how to make a commit in your local repository
 </center>
 
 Notes:
-When working on files in your local version control repository (e.g., using JupyterLab) and saving your work, these changes will only initially exist in the working directory of the local repository on your computer.
+When working on files
+in your local version control repository
+(e.g., using JupyterLab) and saving your work,
+these changes will only initially exist
+in the working directory of the local repository on your computer.
 
 ---
 
@@ -68,15 +72,25 @@ When working on files in your local version control repository (e.g., using Jupy
 
 
 Notes:
-Once you reach a point that you want Git to keep a record of the current version of your work, you need to commit (i.e., snapshot) your changes. A prerequisite to this is telling Git which files should be included in that snapshot. We call this step adding the files to the **staging area**. 
+Once you reach a point that
+you want Git to keep a record of the current version of your work,
+you need to commit (i.e., snapshot) your changes.
+A prerequisite to this is telling Git which files should be included in that snapshot.
+We call this step adding the files to the **staging area**. 
 
-Note that the staging area is not a meaningful location on your computer; it is instead a temporary placeholder for these files until they are committed. The benefit of the Git version control system using a staging area is that you can choose to commit changes in only certain files. For example, we could add only the two files that are important to the analysis project (`analysis.ipynb` and `README.md`) and not the changes we made to our personal scratch notes for the project (`notes.txt`).
+Note that the staging area is not a meaningful location on your computer;
+it is instead a temporary placeholder for these files until they are committed.
+The benefit of the Git version control system using a staging area is
+that you can choose to commit changes in only certain files.
+For example, we could add only the two files that are important to the analysis project
+(`analysis.ipynb` and `README.md`) and not the changes we made
+to our personal scratch notes for the project (`notes.txt`).
 
 ---
 
-## JupyterLab: Specifying files to commit
+## Specifying files to commit (Jupyter Lab IDE)
 
-🙌 Follow these steps in your computer to add files to the staging area:
+Follow these steps in your computer to add files to the staging area:
 
 <center>
 
@@ -85,6 +99,9 @@ Note that the staging area is not a meaningful location on your computer; it is 
 </center>
 
 Notes:
+
+🙌  **Practice**
+
 To add changes we have made to a file to the staging area through the JupyterLab,
 we can use the small plus sign (`+`).
 In this screenshot,
@@ -102,7 +119,7 @@ which why it showed up under the `Changed` heading in the side panel.
 
 ---
 
-## JupyterLab: Specifying files to commit
+## Specifying files to commit (Jupyter Lab IDE)
 
 <center>
 
@@ -111,13 +128,31 @@ which why it showed up under the `Changed` heading in the side panel.
 </center>
 
 Notes:
-Clicking the plus sign (+) moves the file from the `Untracked` heading to the `Staged` heading, so that Git knows you want a snapshot of its current state as a commit (see image). Now you are ready to `commit` the changes. When committing it is important to include a (clear and helpful!) message about what was changed so that your collaborators (and future you) know what happened in this commit, something we will learn more about in the next slide deck.
 
-Note that you will also see an `eda-checkpoint.ipynb` file under the `Untracked` heading in the side panel. This is a temporary “checkpoint file” created by Jupyter when you work on `eda.ipynb`. You generally do not want to add auto-generated files like this one to Git repositories; only add the files you directly create and edit.
+🙌  **Practice**
+
+Clicking the plus sign (`+`) moves the file from the `Untracked` heading
+to the `Staged` heading,
+so that Git knows you want a snapshot
+of its current state as a commit (see image).
+Now you are ready to `commit` the changes.
+When committing it is important to
+include a (clear and helpful!) message
+about what was changed so
+that your collaborators (and future you) know what happened in this commit,
+something we will learn more about in the next slide deck.
+
+Note that you will also see an `eda-checkpoint.ipynb` file
+under the `Untracked` heading in the side panel.
+This is a temporary “checkpoint file”
+created by Jupyter when you work on `eda.ipynb`.
+You generally do not want to
+add auto-generated files like this one to Git repositories;
+only add the files you directly create and edit.
 
 ---
 
-## JupyterLab terminal: Specifying files to commit
+## Specifying files to commit (Terminal)
 
 To check the status of the files using the terminal (`Untracked` / `Changed` / `Staged`) you can use the command `git status`.
 
@@ -129,6 +164,8 @@ To check the status of the files using the terminal (`Untracked` / `Changed` / `
 
 Notes:
 
+🙌  **Practice**
+
 If you would be using the terminal outside JupyterLab,
 you would not have access to the side panel
 that shows which files are  `Untracked`, `Changed`, and `Staged`.
@@ -137,7 +174,10 @@ you can instead use the command `git status`.
 In this slide you can see how the different parts of the output from `git status`
 corresponds to the JupyterLab side panel.
 
-An advantage of using this command if you are working in the terminal is that it gives you information on which commands to use to continue your workflow. For example, for files that are under the `Changes not staged for commit` area,it is suggesred to use the command `git add <file>` to include them into the staging area.
+An advantage of using this command if you are working in the terminal
+is that it gives you information on which commands to use to continue your workflow.
+For example, for files that are under the `Changes not staged for commit` area,
+it is suggesred to use the command `git add <file>` to include them into the staging area.
 
 ```
 Changes not staged for commit:
@@ -148,7 +188,7 @@ We recommend using `git status` / checking the staging area before each commit t
 
 ---
 
-## JupyterLab terminal: Specifying files to commit
+## Specifying files to commit (Terminal)
 
 If you want to add the files to the staging area using the terminal you can use the following command:
 
@@ -157,6 +197,9 @@ If you want to add the files to the staging area using the terminal you can use 
 <img src='/module3/vc-staging-area-jl-terminal-add.png' width="100%" alt="404 image" />
 
 Notes:
+
+🙌  **Practice**
+
 Working in the terminal you can add many files at the same time listing them after `git add`.
 
 A very command to use in the terminal is `git add -p`.
