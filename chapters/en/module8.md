@@ -88,7 +88,7 @@ Since you're already inside the root folder, you should use <code>./</code> for 
 
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id="3" title="Add your own content" type="slides,video">
+<exercise id="3" title="Add your own content: Essentials" type="slides,video">
 <slides source="module8/module8_03"></slides>
 </exercise>
 <!-- ------------------------------------ -->
@@ -146,11 +146,11 @@ $$\Sigma F = m \frac{dV}{dt}$$
 </opt>
 
 <opt text="<code>:label:</code> should be changed to <code>label:</code>">
-<code>:label:</code> is actually the right way to give a label to an equation. 
+<code>:label:</code> is actually the right way to give a label to an equation.
 </opt>
 
 <opt text="<code>:label:</code> should be replaced by <code>:name:</code>">
-Using <code>:name:</code> is incorrect. You've probably mistaken this with <code>name:</code> in a <code>```{figure} ```</code> block. 
+Using <code>:name:</code> is incorrect. You've probably mistaken this with <code>name:</code> in a <code>```{figure} ```</code> block.
 </opt>
 
 <opt text="<code>$$ $$</code> should be replaced with <code>$ $</code>">
@@ -161,11 +161,34 @@ Neither of the two options are applicable inside a <code>```{math} ```</code> bl
 
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id="5" title="Publish your book online" type="slides,video">
+<exercise id="5" title="Add your own content: Advanced features" type="slides,video">
 <slides source="module8/module8_04"></slides>
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id='6' title="✍️ Practice: Publication ready!">
+<exercise id='6' title="✍️ Practice: Do it like a professional">
+
+**True or False**
+
+Altair figures can be made auto-numbered by modifying the cell meta data.
+
+<choice id="1">
+
+<opt text="True">
+You need to use the <i>gluing</i> feature in order to make generated figures auto-numbered and referenceable.
+</opt>
+
+<opt text="False" correct="true">
+</opt>
+
+</choice>
+
+</exercise>
+<!-- ------------------------------------ -->
+<exercise id="7" title="Publish your book online" type="slides,video">
+<slides source="module8/module8_05"></slides>
+</exercise>
+<!-- ------------------------------------ -->
+<exercise id='8' title="✍️ Practice: Publication ready!">
 
 **True or False**
 
@@ -214,7 +237,7 @@ You only need the build artifacts (i.e., the HTML files in the <code>_build/html
 
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id="7" title="What Did We Learn" type="slides,video">
+<exercise id="9" title="What Did We Learn?" type="slides,video">
 <slides source="module8/module8_end"></slides>
 </exercise>
 <!-- ------------------------------------ -->

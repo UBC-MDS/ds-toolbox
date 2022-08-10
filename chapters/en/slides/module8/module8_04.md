@@ -2,249 +2,290 @@
 type: slides
 ---
 
-# Publish your book online
+# Add your own content:<br>Advanced features
 
 Notes:
-In this slide deck we will learn how we can host our books online for free
+
+In the previous section, we covered adding essential elements such as figures and math equations to our book. Now is the time to learn how to benefit from more advanced features provided by Jupyter Book, so as to have more flexibility in presenting the content.
 
 ---
 
-## GitHub Pages
+## Margin content
 
-<img src="/module8/gh-pages.png" width="700"></img>
+Margin content is similar to _footnotes_ in a conventional book:
+
+~~~
+```{margin} Did you know?
+Jupiter is 11.0x larger than Earth!
+```
+~~~
+
+<br>
+
+Rendered:
+
+<img style="border:1px solid black;" src="/module8/margin.png" width="800"></img>
 
 Notes:
-Once you’ve built the HTML for your book, you can host it online.
+Sometimes it is helpful to add notes to the margin of a page. This is similar to _footnotes_ in a conventional book.
 
-- The most convenient way to do this is with a service that supports **static websites**. This means that the files we created with Jupyter Book's `build` command can simply be uploaded to this site to create a web page.
+In Jupyter Book, you can do that using `{margin}` blocks in a markdown file:
 
-- The quickest option for publishing your static book website online is to use **GitHub Pages**
+~~~
+```{margin} Did you know?
+Jupiter is 11.0x larger than Earth!
+```
+~~~
 
-There are a few steps to follow to publish your book using GitHub pages. We'll go over those in the following slides.
+<br>
+
+This slide shows how it appears in our Jupyter Book.
 
 ---
 
-## Create an online repository for your book
+## Admonitions
 
-<img src="/module8/ghp-mynewbook.png" width="550"></img>
+Admonitions draw attention to important information:
+
+~~~
+```{note}
+I'm a note!
+```
+~~~
+
+`{note}` can be replaced with `{warning}`, `{tip}`, `{danger}` and so on.
+
+This is how these admonitions will show up:
+
+<img src="/module8/admonition.png" width="600"></img>
 
 Notes:
+Admonitions in Jupyter Book are visual elements that you can use to draw attention to important information.
 
-1. First, log in to GitHub, then go to the “create a new repository” page: https://github.com/new
+There are different types of admonitions that you can use in Jupyter Book, including _Note_, _Tip_, _Warning_, _Danger_ and _Hint_.
 
-2. Next, give your online repository a name and a description. Make your repository **public** and **do not** initialize it with a README file. Your screen should look like this:
+You can define an admonition by inserting an admonition code block:
 
-3. Click “Create repository” at the end of the page.
+~~~
+```{note}
+I'm a note!
+```
+~~~
 
-After this step,
-we could go ahead an upload the built Jupyter Book to our GitHub repo directly.
-However,
-It is often a good idea to first upload the source files for our Jupyter Book
-so that we have everything in the same directory,
-so let's do that first!
+`{note}` can be replaced with `{warning}`, `{tip}`, `{danger}` and so on. This slide how these admonitions will show up in the output.
 
 ---
 
-## Push the source files to GitHub
+## Panels
 
-1. Clone the empty online repository to your computer:
+Panels organize content into containers:
 
-    ```
-    git clone https://github.com/<my-org>/<my-repository-name>
-    ```
-
-<br>
-
-2. Copy your book files into this newly cloned repository:
-
-    ```
-    cp -r mynewbook/* myonlinebook/
-    ```
-
-<br>
-
-3. Add `_build/` to your `.gitignore` to avoid pushing **build artifacts** to your `main` branch
-
-<br>
-
-4. Sync your local and remote repositories:
-
-    ```
-    cd myonlinebook
-    git add ./*
-    git commit -m "adding my first book!"
-    git push
-    ```
+<img src="/module8/panels.png" width="700"></img>
 
 Notes:
 
-1. Now, clone the (currently empty) online repository to a location on your local computer. You can do this via the command line with:
+Panels provide an easy way for you to organize chunks of content into flexible containers on your page. They are useful for creating card-like layouts, flexible columns, and grids.
 
-    ```
-    git clone https://github.com/<my-org>/<my-repository-name>
-    ```
+This slide shows an example that creates two panels.
 
-2. Copy all of your book files and folders into this newly cloned repository. For example, if you created your book locally with `jupyter-book create mynewbook` and your new repository is called `myonlinebook`, you could do this via the command line with:
+Note that:
 
-    ```
-    cp -r mynewbook/* myonlinebook/
-    ```
+- `---` separates each panel
 
-3. Add `_build/` to your `.gitignore` to avoid pushing **build artifacts** to your `main` branch. We are going to push these to another branch later to create the website.
+- `^^^` defines the panel header
 
-4. Now you need to sync your local and remote (i.e., online) repositories. You can do this with the following commands:
+- `+++` defines the panel footer
 
-    ```
-    cd myonlinebook
-    git add ./*
-    git commit -m "Add my first book"
-    git push
-    ```
+You can embed all kinds of content inside of panels. See [here](https://jupyterbook.org/en/stable/content/components.html) for more details!
 
 ---
 
-## Publish your built book online with GitHub Pages
+## Dropdowns
 
-- Next, we have to host the **build artifact** of our book online, although we don't want them on the `main` branch
-  - The build artifacts are needed for rendering the book as a website
-
-<br>
-
-- The easiest way is to use the `ghp-import` package
-  - `ghp-import` is a lightweight Python package that makes it easy to push HTML content to a GitHub repository
+Dropdowns can hide and show content:
 
 <br>
 
-We'll learn how to use `ghp-import` in the next few slides.
+<img src="/module8/dropdowns.png" width="750"></img>
 
 Notes:
-We have just pushed the **source files** for our book into our GitHub repository
-This makes it publicly accessible for you or others to see the source code
-(the notebooks, markdown document, etc).
-However,
-we still do no not have a easy to use website that anyone can reach online.
 
-The next step is to upload the files created from the `build` command of our book online.
-These are often called **build artefacts**.
-The build artifacts are needed for rendering the book as a website,
-but we don't want to keep track of numerous build files on the `main` branch;
-these are ephemeral and replaceable since we will automatically recreate them each time
-we run the `build` command.
+You can use the `{dropdown}` directive to create a dropdown with a title,
+that shows content only when clicked.
 
-Instead,
-we are going to put them on a branch that is specific to GitHub pages,
-and called `gh-pages` by default.
-We could upload the build artefacts manually to this site,
-but there is a package called `ghp-import` that will automate much of this process.
-`ghp-import` is a lightweight Python package that makes it easy to push HTML content to a GitHub repository
-
-`ghp-import` works by copying all of the contents of your built book (i.e., the `_build/html` folder) to a branch of your repository called `gh-pages` (instead of `main`), and pushes it to GitHub. This way you don't create unnecessary clutter on your main branch.
-
-We'll learn how to use `ghp-import` in the next few slides.
+This is good when you want your readers to think about something on their own,
+before revealing the information you have written,
+e.g. for a practice quiz.
 
 ---
 
-## How to use `ghp-import` to publish our book
+## Dropdown admonitions
 
-1. Install `ghp-import`:
-
-    ```
-    pip install ghp-import
-    ```
+Dropdowns admonitions combine admonitions and dropdown:
 
 <br>
 
-2. From the `main` branch of your book’s **local** root directory, call `ghp-import` and point it to your HTML files:
-
-    ```
-    ghp-import -n -p -f _build/html
-    ```
-
-<br>
-
-3. Now `gh-pages` branch is automatically set to host your website HTML files. You can view this in the **settings** page of your GitHub repository:
-
-<img src="/module8/ghp-settings.png" width="800"></img>
+<img src="/module8/dropdown-admonitions.png" width="750"></img>
 
 Notes:
+You can also hide the body of your admonition blocks so that users must click a button to reveal their content.
 
-1. Install `ghp-import`:
+This is helpful if you’d like to include some text that isn't immediately visible to the user.
 
-    ```
-    pip install ghp-import
-    ```
-
-<br>
-
-2. From the `main` branch of your book’s **local** root directory (containing the `_build/html` folder), call `ghp-import` and point it to your HTML files:
-
-    ```
-    ghp-import -n -p -f _build/html
-    ```
-
-    With `ghp-import`, we will always use these three flags, and it is not that important to know what each one does, but here is a brief explanation:
-
-    - The `-n` flags instructs GitHub to not treat this a "Jekyll" repository (another type of static webpage).
-    - The `-p` flag is what pushes our changes to GitHub.
-    - The `-f` flag create a force push. Since these build artefacts are re-generated each time, we just want to overwrite whatever is in the current `gh-pages` branch with our latest version of these files.
-        - This is also mentioned in this warning from the `ghp-import` [GitHub repository](https://github.com/c-w/ghp-import):
-            > <b><p style="margin-left:5%; color:darkred;">
-            "...`ghp-import` will DESTROY your `gh-pages` branch... and assumes that the gh-pages branch is 100% derivative. You should never edit files in your `gh-pages` branch by hand if you’re using this script..."
-</p></b>
-
-
-<br>
-
-3. Now `gh-pages` branch is automatically set to host your website HTML files. You can view this in the **settings** page of your GitHub repository as shown in this slide.
-
+You can see an example in this slide.
 
 ---
 
-## Your book is now online!
+## Showing and hiding code and its output
 
-- Typically after a few minutes your site should be viewable online at a URL such as: `https://<user>.github.io/<myonlinebook>/`
-
-<br>
-
-<img style="border:1px solid black;" src="/module8/ghp-online.png" width="800"></img>
+<img src="/module8/code-cell.png" width="750"></img>
 
 <br>
+
+We need to edit the cell's **metadata** to tell Jupyter Book to show/hide the code or its output.
+
 
 Notes:
 
-- Typically after a few minutes your site should be viewable online at a url such as: `https://<user>.github.io/<myonlinebook>/`
+Sometimes we may not want to show the content of a code cell, or its output.
 
-<br>
+For example, suppose that we have the code cell in this slide.
+It generates a plot that is important to our readers,
+but maybe we don't need to show them all the code.
 
-- If not, check your repository settings under **Settings -> Pages**.
+How can we hide the input code cell
+while still showing the output visualization?
+
+We saw in the Jupyter notebook slide deck
+that we could export a notebook
+without code cells via using the `!nbconvert` shell command
+since there was not build in functionality for this.
+
+For Jupyter Book,
+hiding code input is such a common use case,
+that there is functionality built-in to hide it.
+We can activate this function and hide the input of a cell
+by editing the cell's **metadata**
+and tell Jupyter Book whether we want to hide the code or its input (or output).
 
 ---
 
-## How to update your book
+## Showing and hiding code and its output
 
-- Make changes to your book’s content on the `main` branch of your repository
+Accessing code cell metadata in JupyterLab:
 
-<br>
-
-- Re-build your book with `jupyter-book build myonlinebook/`
-
-<br>
-
-- Use `ghp-import -n -p -f myonlinebook/_build/html` to push the changes to the `gh-pages` branch.
+<img src="/module8/metadata.png" width="400"></img>
 
 Notes:
 
-- Make changes to your book’s content on the `main` branch of your repository
+To edit a code cell's metadata in JupyterLab:
+
+- Select the cell and click on the gear icon in your JupyterLab environment
+- Then expand the "Advanced Tools" tab
+
+---
+
+## Showing and hiding code and its output
 
 <br>
 
-- Re-build your book with `jupyter-book build myonlinebook/`
+<img src="/module8/hide-input.png" width="500"></img>
+
+Notes:
+For hiding the code itself, add `"hide-input"` to the "Cell Metadata" box as shown in the slide.
+
+---
+
+## Showing and hiding code and its output
 
 <br>
 
-- Use `ghp-import -n -p -f myonlinebook/_build/html` to push the changes to the `gh-pages` branch.
+<img src="/module8/hidden-code.png" width="800"></img>
 
-<br>
+Notes:
+Now if you rebuild your book,
+the code cell will show up like the screenshot in this slide.
+
+The code itself is hidden, while the output is visible.
+If the reader clicks the "Click to show" button,
+they can see the code as well.
+
+---
+
+## Showing and hiding code and its output
+
+<img src="/module8/hidden-output.png" width="800"></img>
+
+Notes:
+Similar to the last slide,
+you can hide a code cell's output
+by adding `"hide-output"` to the "Cell Metadata" in JupyterLab.
+
+This slide shows the rendered result of hiding the output.
+
+---
+
+## "Gluing" variables in your notebook
+
+Using the `glue` prefix, you can:
+
+- Bind a variable to a name (called a "key")
+- Reference that variable from your page’s content
+
+<img style="border:1px solid black;" src="/module8/glue.png" width="600"></img>
+
+Notes:
+Sometimes we might want to access the value of a variable
+in the text when we are writing.
+This is useful since the value in the text
+will be updated each time the notebook is run,
+instead of having to change it manually
+if something changes in our data or analysis code.
+
+Jupyter Book allows us to do this via the `glue` prefix,
+which is able to "glue" both text, numbers, and even figures
+into our text.
+
+You can see an example of gluing a numerical variable in this slide.
+If you are gluing a string/text variable
+and you want to avoid that the variable value is surrounded by quotation marks in the text,
+you can use pass the `text` option to the `glue` prefix like so `{glue:text}`.
+
+---
+
+## "Gluing" variables in your notebook
+
+<img style="border:1px solid black;" src="/module8/altair-captioned.png" width="700"></img>
+
+Notes:
+
+**Important application of "gluing":**
+
+Previously, we have learned how to give **auto-numbered** and **referenceable** captions to figures that contain image files.
+However, we've never discussed how we can do the same for figures generated right in notebook.
+Gluing can be used for giving captions to figures generated from code!
+
+Here I'm first creating an `altair` figure and assign it to a variable called `fig`.
+
+Then I glue the name `altair_fig` to `fig`, so I can later use it elsewhere in my Jupyter Book.
+
+After doing this, Jupyter Book knows about that figure object. So I can "paste" the figure object anywhere I want. Here, I use the functionality to give an auto-numbered and referenceable caption to my figure.
+
+---
+
+## "Gluing" variables in your notebook
+
+<img style="border:1px solid black;" src="/module8/altair-rendered.png" width="500"></img>
+
+Notes:
+
+And here is what this Jupyter notebook looks like when **rendered by Jupyter Book**:
+
+Did you note that:
+
+- I've **hidden** the piece of code that generates the `altair` figure? I did that using **cell metadata tags** that I discussed in the earlier slides!
+
+- I the HTML version of your built book, try using your mouse to drag and zoom in/out on the figure. It's **interactive**!
 
 ---
 
