@@ -74,6 +74,21 @@ I'm a note!
 
 `{note}` can be replaced with `{warning}`, `{tip}`, `{danger}` and so on. This slide how these admonitions will show up in the output.
 
+Another way of writing the admonition syntax is to use `:::` instead of <code>```</code>:
+
+~~~
+:::note}
+I'm a note!
+:::
+~~~
+
+This does not change anything for how Jupyter Book interprets the content,
+but ensures that it is formatted as markdown instead of as code
+when viewing the file in JupyterLab,
+which can make it easier for the eye when editing.
+You can [read more about these "Markdown-friendly" directives
+in the documentation](https://jupyterbook.org/en/stable/content/content-blocks.html#markdown-friendly-directives-with).
+
 ---
 
 ## Grids
@@ -87,6 +102,8 @@ Notes:
 Grids provide an easy way for you to organize chunks of content into flexible containers on your page. They are useful for creating card-like layouts and flexible columns and rows.
 
 This slide shows an example that creates a grid with two cards.
+Not that we are using the markdown friendly `:::` directives here just as an example,
+we could also have used <code>```</code> instead.
 
 Note that:
 
