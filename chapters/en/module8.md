@@ -182,6 +182,23 @@ You need to use the <i>gluing</i> feature in order to make generated figures aut
 
 </choice>
 
+<choice id="2">
+
+How do you hide a code input cell in JupyterLab?
+
+<opt text="You use a code block starting with <code>```hide-input</code>.">
+This syntax is used to to indicate syntax highlighting for different programming languages, e.g. <code>```python</code>.
+</opt>
+
+<opt text="You use a code block starting with <code>```{hide-input}</code>.">
+This syntax is used to format some content such as admonitions and dropdowns, but not for hiding code cells.
+</opt>
+
+<opt text="You add 'hide-input' as a cell tag via the JupyterLab interface." correct="true">
+</opt>
+
+</choice>
+
 </exercise>
 <!-- ------------------------------------ -->
 <exercise id="7" title="Publish your book online" type="slides,video">
