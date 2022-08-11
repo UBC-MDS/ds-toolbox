@@ -192,7 +192,15 @@ To edit a code cell's metadata in JupyterLab:
 <img src="/module8/hide-input.png" width="500"></img>
 
 Notes:
-For hiding the code itself, add `"hide-input"` to the "Cell Metadata" box as shown in the slide.
+For hiding the code itself, add a "Cell Tag" called `hide-input` to the cell via the Jupyter Lab interface.
+The easier way to do this is to click the button "Add Tag +"
+in the side panel,
+and type in `hide-input`.
+This will automatically populate the "Cell Metadata" box with the correct text
+as shown in the slide.
+If you wanted,
+you could also edit the "Cell Metadata" text box directly,
+but you will have to be careful getting the brackets correct.
 
 ---
 
