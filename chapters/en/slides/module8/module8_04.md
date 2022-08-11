@@ -83,7 +83,7 @@ I'm a note!
 Another way of writing the admonition syntax is to use `:::` instead of <code>```</code>:
 
 ~~~
-:::note}
+:::{note}
 I'm a note!
 :::
 ~~~
@@ -112,6 +112,8 @@ Not that we are using the markdown friendly `:::` directives here just as an exa
 we could also have used <code>```</code> instead.
 
 Note that:
+
+- We are nesting directives here, starting with four `:` for the `grid` directive and three `:` for the `grid-item-card` directive to indicate that the latter is a sub-directive of the outer `grid` directive.
 
 - `:gutter:` specifies the separation width between the cards. In this case, it is set to `3`.
 
