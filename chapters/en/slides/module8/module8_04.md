@@ -37,9 +37,15 @@ Jupiter is 11.0x larger than Earth!
 ```
 ~~~
 
+Note that this syntax is similar to what we used for creating a figure:
+<code>```{figure}</code>.
+These types of blocks are called *directives* in Jupyter Book
+and we will see several different types on the following few slides.
+
 <br>
 
-This slide shows how it appears in our Jupyter Book.
+You can see the rendered version of the margin directive
+in this slide.
 
 ---
 
