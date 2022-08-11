@@ -1,26 +1,22 @@
 ---
 title: 'Module 8: Jupyter Book'
 description:
-  'In this module, you will learn how to create beautiful, publication-ready online books using Jupyter Book.' 
+  'In this module you will learn how to create beautiful, publication-ready books and websites using Jupyter Book.' 
 prev: ../../module7
 next: ../../module9
 type: chapter
 id: 8
 ---
 
-<exercise id="1" title="Module learning outcomes" type="slides,video">
+<exercise id="0" title="Module learning outcomes" type="slides,video">
 <slides source="module8/module8_00" shot="1" start="0:003" end="05:31"></slides>
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id="2" title="Jupyter Book ecosystem" type="slides,video">
-<slides source="module8/module8_01"></slides>
-</exercise>
-<!-- ------------------------------------ -->
-<exercise id="4" title="Create your first Jupyter Book" type="slides,video">
+<exercise id="1" title="Create your first Jupyter Book" type="slides,video">
 <slides source="module8/module8_02"></slides>
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id='5' title="Time for practice">
+<exercise id='2' title="✍️ Practice: Today a reader, tomorrow a leader">
 
 We have the following folder containing the files we'd like to include in a report created using Jupyter Book:
 
@@ -45,35 +41,43 @@ How should we add the `EDA.ipynb` file to our `_toc.yml`?
 <choice id="1">
 
 <opt text="<code>- file: EDA.ipynb</code>">
-File paths should be relative to the book's root folder. Also, files should not have an extension in <code>_toc.yml</code>
+File paths should be relative to the book's root folder.
 </opt>
 
 <opt text="<code>- file: analysis/EDA.ipynb</code>">
-Files should not have an extension in <code>_toc.yml</code>
+Correct, but there is one more correct answer.
 </opt>
 
 <opt text="<code>- file: EDA</code>">
 File paths should be given relative to the book's root folder.
 </opt>
 
-<opt text="<code>- file: analysis/EDA</code>" correct="true">
+<opt text="<code>- file: analysis/EDA</code>">
+Correct, but there is one more correct answer.
+</opt>
+
+<opt text="Both the first and third options are correct">
+File paths should be given relative to the book's root folder.
+</opt>
+
+<opt text="Both the second and fourth options are correct" correct='true'>
 </opt>
 
 </choice>
 
-You are done creating content for your book in `mybook/` folder. You are now inside the root folder of your book. Which command would you use to generate your Jupyter Book (i.e. your website)?
+You are done creating content for your book in `my-book/` folder. You are now inside the root folder of your book. Which command would you use to generate your Jupyter Book (i.e. your website)?
 
 <choice id="2">
 
-<opt text="<code>jb create mybook/</code>">
-<code>jb create</code> is used to create a sample Jupyter Book with template content, rather than rendering your current book contents. Also, since you're already inside the root folder, you should use <code>./</code> for the path instead of <code>mybook/</code>.
+<opt text="<code>jb create my-book/</code>">
+<code>jb create</code> is used to create a sample Jupyter Book with template content, rather than rendering your current book contents. Also, since you're already inside the root folder, you should use <code>./</code> for the path instead of <code>my-book/</code>.
 </opt>
 
 <opt text="<code>jb build ./</code>"  correct="true">
 </opt>
 
-<opt text="<code>jb build mybook/</code>">
-Since you're already inside the root folder, you should use <code>./</code> for the path instead of <code>mybook/</code>.
+<opt text="<code>jb build my-book/</code>">
+Since you're already inside the root folder, you should use <code>./</code> for the path instead of <code>my-book/</code>.
 </opt>
 
 <opt text="<code>jb create ./</code>"  correct="true">
@@ -84,11 +88,11 @@ Since you're already inside the root folder, you should use <code>./</code> for 
 
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id="6" title="Add your own content" type="slides,video">
+<exercise id="3" title="Add your own content: Essentials" type="slides,video">
 <slides source="module8/module8_03"></slides>
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id='7' title="Time for practice">
+<exercise id='4' title="✍️ Practice: Becoming an author">
 
 Suppose that you have inserted an image in your book using the following markdown block:
 
@@ -157,13 +161,55 @@ Neither of the two options are applicable inside a <code>```{math} ```</code> bl
 
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id="8" title="Publish your book online" type="slides,video">
+<exercise id="5" title="Add your own content: Advanced features" type="slides,video">
 <slides source="module8/module8_04"></slides>
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id='9' title="Time for practice">
+<exercise id='6' title="✍️ Practice: Do it like a professional">
 
-The purpose of using `ghp-import` and `gh-pages` branch is to avoid having numerous HTML files in the commit history of the `main` branch each time you rebuild your book.
+**True or False**
+
+Altair figures can be made auto-numbered by modifying the cell meta data.
+
+<choice id="1">
+
+<opt text="True">
+You need to use the <i>gluing</i> feature in order to make generated figures auto-numbered and referenceable.
+</opt>
+
+<opt text="False" correct="true">
+</opt>
+
+</choice>
+
+How do you hide a code input cell in JupyterLab?
+
+<choice id="2">
+
+<opt text="You use a code block starting with <code>```hide-input</code>.">
+This syntax is used to to indicate syntax highlighting for different programming languages, e.g. <code>```python</code>.
+</opt>
+
+<opt text="You use a code block starting with <code>```{hide-input}</code>.">
+This syntax is used to format some content such as admonitions and dropdowns, but not for hiding code cells.
+</opt>
+
+<opt text="You add a cell tag called <code>hide-input</code> via the JupyterLab interface." correct="true">
+</opt>
+
+</choice>
+
+</exercise>
+<!-- ------------------------------------ -->
+<exercise id="7" title="Publish your book online" type="slides,video">
+<slides source="module8/module8_05"></slides>
+</exercise>
+<!-- ------------------------------------ -->
+<exercise id='8' title="✍️ Practice: Publication ready!">
+
+**True or False**
+
+The purpose of using `ghp-import` and `gh-pages` branch is to avoid having numerous HTML files in the commit history of the `main` branch each time you rebuild your book and instead automate pushing them to a separate branch.
 
 <choice id="1">
 
@@ -175,6 +221,8 @@ That is indeed the reason for using the <code>ghp-import</code> package and the 
 </opt>
 
 </choice>
+
+**True or False**
 
 All information needed to reproduce the content of the `gh-pages` branch lives in the `main` branch of your book repository.
 
@@ -189,12 +237,14 @@ Remember that the <code>gh-pages</code> branch only contains the result of runni
 
 </choice>
 
-You need the source files on the `main` branch in order for Github Pages to show your website.
+**True or False**
+
+You need the source files on the `main` branch in order for GitHub Pages to show your website.
 
 <choice id="3">
 
 <opt text="True">
-You only need the build artifacts (i.e., the HTML files in the <code>_build/html/</code> folder) to be hosted on a branch so that Github Pages is able to show your website. Your source files are not needed for the website itself.
+You only need the build artifacts (i.e., the HTML files in the <code>_build/html/</code> folder) to be hosted on a branch so that GitHub Pages is able to show your website. Your source files are not needed for the website itself.
 </opt>
 
 <opt text="False" correct="true">
@@ -204,7 +254,7 @@ You only need the build artifacts (i.e., the HTML files in the <code>_build/html
 
 </exercise>
 <!-- ------------------------------------ -->
-<exercise id="10" title="What Did We Learn" type="slides,video">
+<exercise id="9" title="What Did We Learn?" type="slides,video">
 <slides source="module8/module8_end"></slides>
 </exercise>
 <!-- ------------------------------------ -->
