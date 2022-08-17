@@ -21,36 +21,37 @@ id: 4
 
 </exercise>
 
-<exercise id='2' title="Test Your Knowledge">
+<exercise id='2' title="✍️ Practice: A history lesson">
 
-Clone the repo https://github.com/UBC-MDS/equine_numbers_value_canada. What is the hash or the first commit of the project? 
+Clone the repo https://github.com/UBC-MDS/equine_numbers_value_canada. What is the hash or the first commit of the project?
 
-<choice id=1>
-<opt text='<b>A.</b> cc400df4b2a382f653abd0d9e514f6daae98d2ad'>
+<choice id="1">
+<opt text='cc400df4b2a382f653abd0d9e514f6daae98d2ad'>
 Is the first commit of the project or the first commit of the user flor14?
 </opt>
-<opt text='<b>B.</b> e98d2ad'>
-To use a shorter version of a SHA you should select the first characters, not the last ones.
+<opt text='e98d2ad'>
+To use a shorter version of a commit hash you should select the first characters, not the last ones.
 </opt>
-<opt text='<b>C.</b> cc400df'>
+<opt text='cc400df'>
 Is the first commit of the project or the first commit of the user flor14?
 </opt>
-<opt text='<b>D.</b> 0896801'>
-Why D is incorrect?
+<opt text='0896801'>
+This is correct, but there is one more correct answer.
 </opt>
-<opt text='<b>E.</b> 0896801fdd38d461414e0b061b2b2ef3395f7dd0'>
-Why C is incorrect?
+<opt text='0896801fdd38d461414e0b061b2b2ef3395f7dd0'>
+This is correct, but there is one more correct answer.
 </opt>
-<opt text='A and C are correct'>
+<opt text='The first and the third options are correct'>
 Is the first commit of the project or the first commit of the user flor14?
 </opt>
-<opt text='D and E are correct' correct='true'>
+<opt text='The two last options are both correct' correct='true'>
 </opt>
 </choice>
 
-What kind of information can you get from git history? Select the inorrect one.
 
-<choice id=2>
+What kind of information is not displayed **not** in a Git project's history?
+
+<choice id="2">
 <opt text='commit message' >
 </opt>
 <opt text='date and time'>
@@ -60,7 +61,7 @@ What kind of information can you get from git history? Select the inorrect one.
 <opt text='author'>
 </opt>
 <opt text='commit number' correct='true'>
-When checking your project history you will see that the commits are displayed from older to newer using the date as a reference. There is no explicit commit numeration.
+When checking your project history you will see that the commits are displayed from older to newer using the date as a reference, but there is no explicit commit enumeration.
 </opt>
 </choice>
 </exercise>
@@ -74,68 +75,57 @@ When checking your project history you will see that the commits are displayed f
 
 </exercise>
 
-<exercise id='4' title='Test Your Knowledge'>
+<exercise id='4' title='✍️ Practice: Know your diffs'>
 
-Enter to the comparison between this two commits on GitHub: https://github.com/UBC-MDS/equine_numbers_value_canada/compare/9021b83..1bb5ab8
+View this <code>git diff</code> comparison between on GitHub:
+https://github.com/UBC-MDS/equine_numbers_value_canada/compare/1bb5ab8..9021b83
 
-Go to the project history as we learned in the past set of the slides. What is the current state of the <code>README.md</code> file in the repository (the first change you can see)? The one that appear in red or the one that appears in green?
-<choice id=3>
-<opt text='red' correct='true'>
-The colors could be tricky, because you are always comparing the commit on the left as the one displayed as the red one with the commit on the right asdisplayed as the green one. If you want to use the color code remember to always write on the left the oldest commit. In this case would be writting https://github.com/UBC-MDS/equine_numbers_value_canada/compare/1bb5ab8..9021b83.
+You can see that there has been changes made to the `README.md` file,
+highlighted in red and green in the web interface.
+Looking at the commit history of the repository and the order the commits were made in,
+which of the red and green highlights represent
+the current state of the <code>README.md</code> file in the repository?
+
+<choice id="3">
+<opt text='Red'>
+The colors could be tricky, because they depend on in which order the commits are written, so you can't rely on the same color always indicating that a change is newer/older. Try reversing the order of the commits to `1bb5ab8..9021b83` and you will see.
 </opt>
-<opt text='green' >
-Go to the repository as it is now https://github.com/UBC-MDS/equine_numbers_value_canada/ and check the <code>README.md</code> file. Is it look as the example of the left of on the right here https://github.com/UBC-MDS/equine_numbers_value_canada/compare/9021b83..1bb5ab8? 
+<opt text='Green' correct='true'>
+If you go to the current state of the repository (https://github.com/UBC-MDS/equine_numbers_value_canada/) and check the <code>README.md</code> file or the commit history,
+you can see that the green highlights represent the more recent commits
+(remember that the color alone is not enough to tell which are more recent,
+try reversing the order of the commits to `1bb5ab8..9021b83` and you will see.).
 </opt>
 </choice>
 
-How would realice this comparison using the command line? https://github.com/UBC-MDS/equine_numbers_value_canada/compare/1bb5ab8..9021b83
+How could you make this same comparison using `git diff` from the command line https://github.com/UBC-MDS/equine_numbers_value_canada/compare/1bb5ab8..9021b83?
 
-<choice id=4>
-<opt text='<b>A.</b><code>git diff 9021b83</code>' >
-<code>9021b83</code> is the SHA-1 of the last commit, what would you like to compare it with?
+<choice id="4">
+<opt text='<code>git diff 9021b83</code>' >
+<code>9021b83</code> is the hash of the last commit, what would you like to compare it with?
 </opt>
-<opt text='<b>B.</b><code>git diff 1bb5ab8</code>' >
-But there is also other correct option!
+<opt text='<code>git diff 1bb5ab8</code>' >
+That's right, but there is also another correct option!
 </opt>
-<opt text='<b>C.</b><code>git diff 1bb5ab8 9021b83</code>' >
-But there is also other correct option!
+<opt text='<code>git diff 1bb5ab8 9021b83</code>' >
+That's right, but there is also another correct option!
 </opt>
-<opt text='A and C are correct' >
-IN the option <b>A.</b>, <code>9021b83</code> is the SHA-1 of the last commit, what would you like to compare it with?
+<opt text='The first and third options are both correct' >
+In the first option, <code>9021b83</code> is the hash of the last commit, what would you like to compare it with?
 </opt>
-<opt text='B and C are correct' correct='true' >
-Writing the newest commit is not necessary. If you write only one commit (that is not the newest one) it will compare it with the last one without specifing anything else.
+<opt text='The second and third option are both correct' correct='true' >
+Writing the newest commit is not necessary. If you write only one commit (that is not the newest one) it will compare it with the last one without specifying anything else.
 </opt>
 </choice>
 </exercise>
 
-<exercise id='5' title="Restoring an older version of a file"  type='slides, video'>
+<exercise id='5' title="Reset your Git project to an earlier state"  type='slides, video'>
 <slides source='module4/module4_03' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
-<exercise id='6' title='Test Your Knowledge'>
+<exercise id='6' title='✍️ Practice: The "no regrets" reset'>
 
-You are writing a book using version control. In your local repository, you have a text file for each chapter. Today, after reading your work again you decided to move some of the text you have written for `chapter3.md` to `chapter1.md`. How would you save this change using Git?
-
-<choice>
-<opt text='I would cut and copy the text into a new file, add both files to the staging area, and then commit with a message explaining the changes.' correct='true'>
-
-</opt>
-
-<opt text='I would <b>revert</b> to the commit I did after writing that paragraph. Then, I would add the text in the correct chapter and make a new commit with a message explaining the changes.'>
-
-Are you sure you want to lose all the changes you made in `chapter2.md`? Even if you can recover those changes, reverting the changes will make you go back to that particular point in the the history of your project.
-
-</opt>
-
-<opt text='I would perform a <b>hard reset</b> to the commit I did after writing that paragraph. Then, I would add the text in the correct chapter and make a new commit with a message explaining the changes.'>
-
-When you do a hard reset, you are deleting the history of your project up to a particular commit. This means that you will lose all the changes you made between that particular commit and your most recent one.
-
-</opt>
-</choice>
-
-True or false
+**True or False**
 
 Select all the situations in which it is a good idea to reset your work to a previous commit:
 
@@ -160,30 +150,53 @@ You can hard-reset your work in both cases, but one of the options could cause p
 </choice>
 </exercise>
 
-<exercise id='7' title='Revert your changes' type='slides, video'>
+<exercise id='7' title='Revert changes made to your Git project' type='slides, video'>
 <slides source='module4/module4_04' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
-<exercise id='8' title='Test Your Knowledge'>
+<exercise id='8' title='✍️ Practice: Subtraction through addition (of a new commit)'>
 
 Which of the following statements are TRUE about `git revert`?
 
-
-<choice>
-<opt text='This command creates a new commit that undoes the changes from a previous commit.' >
+<choice id="1">
+<opt text='This command creates a new commit that undoes the changes from previous commits.' >
 </opt>
-<opt text='This command undoes the changes in your project up to the commit id that you have specified.'>
+That's right, but there is also another correct option!
+<opt text='This command undoes the changes in your project up to the commit hash that you have specified.'>
+That's right, but there is also another correct option!
 </opt>
-<opt text='This command makes the history of the project shorter (deletes commits)'>
+<opt text='This command makes the history of the project shorter by deleting commits'>
+Resetting deletes commits, but reverting does not.
 </opt>
 <opt text='This command is used to undo changes in your working directory that have not been comitted yet.'>
+We cannot use revert for this task.
 </opt>
-<opt text='A and B are correct' correct='true'>
+<opt text='The first and second options are both correct' correct='true'>
 </opt>
-<opt text='A and C are correct'>
+<opt text='The first and third options are both correct'>
+Is the third options really correct?
 </opt>
 </choice>
 
+You are writing a book using version control and you have a text file for each chapter in your local repository. Today, after reading your work again, you decided to move some of the text you have written for `chapter3.md` to `chapter1.md`. How would you save this change using Git?
+
+<choice id="2">
+<opt text='I would cut and copy the text into a new file, add both files to the staging area, and then commit with a message explaining the changes.' correct='true'>
+
+</opt>
+
+<opt text='I would <b>revert</b> to the commit I did after writing that paragraph. Then, I would add the text in the correct chapter and make a new commit with a message explaining the changes.'>
+
+Are you sure you want to lose all the changes you made in `chapter2.md`? Even if you can recover those changes, reverting the changes will make you go back to that particular point in the the history of your project.
+
+</opt>
+
+<opt text='I would perform a <b>hard reset</b> to the commit I did after writing that paragraph. Then, I would add the text in the correct chapter and make a new commit with a message explaining the changes.'>
+
+When you do a hard reset, you are deleting the history of your project up to a particular commit. This means that you will lose all the changes you made between that particular commit and your most recent one.
+
+</opt>
+</choice>
 
 </exercise>
 
@@ -191,7 +204,7 @@ Which of the following statements are TRUE about `git revert`?
 <slides source='module4/module4_05' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
-<exercise id='10' title='Test Your Knowledge'>
+<exercise id='10' title='✍️ Practice: Merge with care'>
 
 What do you have to do if you are working with the terminal and you want to write a different text for this merge conflict?
 
@@ -209,13 +222,13 @@ What do you have to do if you are working with the terminal and you want to writ
 </exercise>
 
 
-
-
 <exercise id='11' title='.gitgnore'  type='slides, video'>
 <slides source='module4/module4_06' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
-<exercise id='12' title='Test Your Knowledge'>
+<exercise id='12' title='✍️ Practice: Ignorance is bliss'>
+
+**True or False**
 
 `**/` is prepended to an entry in `.gitignore` to tell Git that this entry is a folder.
 
@@ -230,16 +243,16 @@ What do you have to do if you are working with the terminal and you want to writ
 
 </choice>
 
-The `.gitignore` file itself needs to be committed, and is thus version-controlled.
+The `.gitignore` file itself can be committed and pushed to a remote repository.
 
 <choice id="2">
 
 <opt text="True" correct="true">
-Right, <code>.gitignore</code> is not ignored itself.
+Yes, <code>.gitignore</code> is like any other file in your repository, so if you want to share it with your collaborators, you need to commit it and push it to the remote repository.
 </opt>
 
 <opt text="False">
-Remember that you need to do "add" and "commit" <code>.gitignore</code> with Git?
+<code>.gitignore</code> is like any other file in your repository, so if you want to share it with your collaborators, you need to commit it and push it to the remote repository.
 </opt>
 </choice>
 </exercise>
