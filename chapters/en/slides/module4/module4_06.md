@@ -33,9 +33,12 @@ no changes added to commit (use "git add" and/or "git commit -a")
 
 Notes:
 
-Git is letting us know about untracked files (ones we have never committed before).
+Git is letting us know about 
+untracked files (ones we have never committed before).
 
-We don’t care about these files. We’d prefer not to have them clutter our view, so we can pay attention to files we do want to track.
+We don’t care about these files.
+We’d prefer not to have them clutter our view, 
+so we can pay attention to files we do want to track.
 
 What do we do?
 
@@ -69,7 +72,9 @@ nothing to commit, working tree clean
 
 Notes:
 
-Here are the steps you need to take in order to have Git ignore the files and folders that you don't want to be committed to your repo.
+Here are the steps you need to take in order 
+to have Git ignore the files and folders
+that you don't want to be committed to your repo.
 
 ---
 
@@ -108,8 +113,10 @@ Here are the steps to follow:
 Notes:
 
 The first trick:
-if you need a particular file or folder name to be ignored by Git everywhere,
-you don't need to list the path to each and every instance of that file or folder name in your `.gitignore`.
+if you need a particular file or folder name 
+to be ignored by Git everywhere,
+you don't need to list the path to each
+ and every instance of that file or folder name in your `.gitignore`.
 
 Simply add `**/` to the beginning of that file or folder name!
 
@@ -137,11 +144,17 @@ The specified files should now be automatically ignored in all repos, without ne
 
 Notes:
 
-Now comes the second trick: There might be certain files that you'd like to always get ignored in all repos.
+Now comes the second trick: 
+There might be certain files that 
+you'd like to always get ignored in all repos.
 
-In that case, you can add them once to a global `.gitignore` file called `.gitignore_global` which lives in your home directory.
+In that case,
+you can add them once to a global `.gitignore` file called 
+`.gitignore_global` which lives in your home directory.
 
-This way, you'll no longer need to add those particular file or folder names to the `.gitignore` file of each repo on your computer.
+This way, 
+you'll no longer need to add those particular file or folder names
+to the `.gitignore` file of each repo on your computer.
 
 ---
 

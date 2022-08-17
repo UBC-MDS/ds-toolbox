@@ -15,7 +15,16 @@ We are going to learn two ways to go back in time to a previous commit:
 1. **Doing a hard reset** 
 2. **Reverting previous changes** 
 
-Notes: Oh no! It's not uncommon to realize that we made a mistake when viewing the history! We didn't mean to delete our list of dependencies. Don't worry! We can now take advantage of tracking our files using version control to retrieve an older version of a file to replace the current version.
+Notes:
+
+When viewing the history,
+it is common to recognise 
+that we made a mistake!
+Don't be concerned!
+We can now use version control 
+to track our files and
+retrieve an older version of a file 
+to replace the current version. 
 
 
 
@@ -28,7 +37,12 @@ Commit ID or SHA-1 hash
 commit b22d6421363c7b82e2b88b0b5f1f25edca703303
 commit b22d
 ```
-Notes: The commit ID or SHA-1 identifies the commit. The commit ID will be necessary to identify the change that we want to modify.
+Notes: 
+
+The `commit id` (also known as SHA-1 hash) 
+identifies the commit. 
+
+The `commit id` will be necessary to identify the change that we want to modify.
 
 ---
 
@@ -46,7 +60,13 @@ Notes: The commit ID or SHA-1 identifies the commit. The commit ID will be neces
 
 Notes:
 
-If you want to delete changes and also remove the associated commits, you can perform a hard reset. For that, you should click the clock icon next to the commit you would like to go back to in time.
+You can perform a hard reset
+to delete changes as well as 
+the associated commits.
+To do so, 
+click the clock icon
+next to the commit
+you want to go back to in time. 
 
 
 
@@ -62,7 +82,9 @@ If you want to delete changes and also remove the associated commits, you can pe
 
 </center>
 
-Notes: Be careful! This action can't be undone
+Notes: 
+
+Be careful! This action can't be undone
 
 
 
@@ -78,10 +100,22 @@ Notes: Be careful! This action can't be undone
 
 </center>
 
-Notes: This is the key step. If you want to undo your local changes, you can do so by pulling information back from the remote repository. But if you push, you will be changing the remote, and thus making these changes permanent.
+Notes: 
 
+This is the key step. 
+If you want to undo your local changes,
+you can do so by pulling information back
+from the remote repository.
+But if you push, 
+you will be changing the remote,
+and thus making these changes permanent.
 
-**Important!** If you are going to do this, it is extremely important that you share it with your collaborators, because it is possible that your changes are going to affect their work.
+**Important!**
+If you do this,
+it is critical that
+you notify your collaborators 
+because your changes
+may have an impact on their work. 
 
 
 ---
@@ -97,7 +131,13 @@ Notes: This is the key step. If you want to undo your local changes, you can do 
 </center>
 
 Notes:
-Look at the log to see which version of the file we want to go back to and get its **Short SHA-1** (the first characters of the commit ID, we'll need this to know which point in time to retrieve the file from). Then try with the command `git reset --hard <commit id>`. 
+Examine the log to determine
+which version of the file
+you want to go back to and obtain its **Short SHA-1 hash** 
+(the first characters of the **commit ID**, 
+we'll need this to determine 
+which point in time to retrieve the file from). 
+Then use the command `git reset --hard <commit id>`. 
 
 ---
 
@@ -112,9 +152,10 @@ Look at the log to see which version of the file we want to go back to and get i
 </center>
 
 Notes:
-Don't forget `git push` to get the file backed up on GitHub!
+Don't forget to use `git push` to backup the file to GitHub!
 
-**Important!** If you are going to do this, it is extremely important that you share it with your collaborators, because it is possible that your changes are going to affect their work.
+**Important!**
+If you do this, it is critical that you notify your collaborators because your changes may have an impact on their work. 
 
 
 ---
