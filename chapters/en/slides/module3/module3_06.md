@@ -3,7 +3,7 @@ type: slides
 title: 'module3_06'
 ---
 
-# PULLing changes from a remote repository
+# Pulling changes from a remote repository
 
 ---
 
@@ -16,13 +16,25 @@ title: 'module3_06'
 </center>
 
 Notes:
-If you are working on a project with collaborators, they will also be making changes to files (e.g., to the analysis code in a Jupyter notebook and the project’s `README` file), committing them to their own local repository, and pushing their commits to the remote GitHub repository to share them with you. When they push their changes, those changes will initially only exist in the remote GitHub repository and not in your local repository on your computer.
+If you are working on a project with collaborators,
+they will also be making changes to files
+(e.g., to the analysis code in a Jupyter notebook and the project’s `README` file),
+committing them to their own local repository,
+and pushing their commits to the remote GitHub repository to share them with you.
+When they push their changes,
+those changes will initially only exist in the remote GitHub repository
+and not in your local repository on your computer.
 
-To obtain the new changes from the remote repository on GitHub, you will need to pull/download those changes to your own local repository. By pulling changes, you synchronize your local repository to what is present on GitHub. Additionally, until you pull changes from the remote repository, you will not be able to push any more changes yourself (though you will still be able to work and make commits in your own local repository).
+To obtain the new changes from the remote repository on GitHub,
+you will need to pull/download those changes to your own local repository.
+By pulling changes, you synchronize your local repository to what is present on GitHub.
+Additionally, until you pull changes from the remote repository,
+you will not be able to push any more changes yourself
+(though you will still be able to work and make commits in your own local repository).
 
 ---
 
-## Pulling changes from GitHub using JupyterLab
+## Pulling changes from GitHub (JupyterLab IDE)
 
 
 <center>
@@ -33,7 +45,11 @@ To obtain the new changes from the remote repository on GitHub, you will need to
 
 
 Notes:
-The GitHub interface indicates the name of the last person to push a commit to the remote repository, a preview of the associated commit message, the unique commit hash, and how long ago the commit was made.
+
+The GitHub interface indicates the name of the last user
+to push a commit to the remote repository,
+a preview of the associated commit message,
+the unique commit hash, and how long ago the commit was made.
 
 In this example,
 we can see that someone else
@@ -45,7 +61,7 @@ to our local Git repository.
 
 ---
 
-## Pulling changes from GitHub using JupyterLab
+## Pulling changes from GitHub (JupyterLab IDE)
 
 <center>
 
@@ -54,17 +70,21 @@ to our local Git repository.
 </center>
 
 Notes:
+
+🙌  **Practice**
+
 To pull from GitHub in JupyterLab,
 there are N steps:
 
 **Step 1. Click the pull button in the JupyterLab Git extension.**
 
-You can tell Git to "pull" down any new changes from the remote repository at GitHub.com
+You can tell Git to "pull" down
+any new changes from the remote repository at GitHub.com
 by clicking on the cloud icon with the down arrow in JupyterLab.
 
 ---
 
-##  Pulling changes from GitHub using JupyterLab
+## Pulling changes from GitHub (JupyterLab IDE)
 
 <center>
 
@@ -73,6 +93,9 @@ by clicking on the cloud icon with the down arrow in JupyterLab.
 </center>
 
 Notes:
+
+🙌  **Practice**
+
 **Step 2. Refresh any open files that had changes pulled down.**
 
 Once the files are successfully pulled from GitHub,
@@ -90,7 +113,7 @@ after pulling and refreshing.
 
 ---
 
-## JupyterLab: Pulling changes from GitHub
+## Pulling changes from GitHub (JupyterLab IDE)
 
 <center>
 
@@ -99,6 +122,9 @@ after pulling and refreshing.
 </center>
 
 Notes:
+
+🙌  **Practice**
+
 The newly pulled changes will also show up in the history tab,
 since they are now part of your local repository,
 just as any commit you made on your computer.
@@ -108,7 +134,7 @@ before you start editing any files in your local repository.
 
 ---
 
-## Jupyter Lab terminal: Pulling changes from GitHub
+## Pulling changes from GitHub (Terminal)
 
 <center>
 
@@ -117,6 +143,9 @@ before you start editing any files in your local repository.
 </center>
 
 Notes:
+
+🙌  **Practice**
+
 If you want to pull changes from GitHub.com
 via the terminal,
 you can use the command `git pull`.
