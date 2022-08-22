@@ -49,7 +49,7 @@ Let's learn step by step how to make a commit in your local repository
 
 <center>
 
-<img src='/module3/vc-local-github-notes.png' width="700px" alt="404 image" />
+<img src='/module3/vc-local-github-notes.png' width="600px" alt="404 image" />
 
 </center>
 
@@ -66,7 +66,7 @@ in the working directory of the local repository on your computer.
 
 <center>
 
-<img src='/module3/vc-staging-area.png' width="85%" alt="404 image" />
+<img src='/module3/vc-staging-area.png' width="600px" alt="404 image" />
 
 </center>
 
@@ -94,7 +94,7 @@ Follow these steps in your computer to add files to the staging area:
 
 <center>
 
-<img src='/module3/vc-commits-jupyter-2.png' width="100%" alt="404 image" />
+<img src='/module3/vc-commits-jupyter-2.png' width="600px" alt="404 image" />
 
 </center>
 
@@ -123,7 +123,7 @@ which why it showed up under the `Changed` heading in the side panel.
 
 <center>
 
-<img src='/module3/vc-commits-jupyter-3.png' width="100%" alt="404 image" />
+<img src='/module3/vc-commits-jupyter-3.png' width="600px" alt="404 image" />
 
 </center>
 
@@ -158,7 +158,7 @@ To check the status of the files using the terminal (`Untracked` / `Changed` / `
 
 <center>
 
-<img src='/module3/vc-staging-area-jl-terminal-status.png' width="100%" alt="404 image" />
+<img src='/module3/vc-staging-area-jl-terminal-status.png' width="600px" alt="404 image" />
 
 </center>
 
@@ -194,7 +194,7 @@ If you want to add the files to the staging area using the terminal you can use 
 
 `git add <file-name(s)>`
 
-<img src='/module3/vc-staging-area-jl-terminal-add.png' width="100%" alt="404 image" />
+<img src='/module3/vc-staging-area-jl-terminal-add.png' width="600px" alt="404 image" />
 
 Notes:
 

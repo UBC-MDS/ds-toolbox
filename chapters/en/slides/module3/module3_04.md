@@ -15,7 +15,7 @@ to the repository on our computer.
 
 <center>
 
-<img src='/module3/vc-commit.png' width="100%" alt="404 image"/>
+<img src='/module3/vc-commit.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -41,7 +41,7 @@ and collaborators would not yet be able to see your new changes online.
 
 <center>
 
-<img src='/module3/commit-messages-comic.png' width="70%" alt="404 image"/>
+<img src='/module3/commit-messages-comic.png' width="600px%" alt="404 image"/>
 
 </center>
 
@@ -63,7 +63,7 @@ Let's commit the files that are in the staging area
 
 <center>
 
-<img src='/module3/vc-commits-jupyter.png' width="90%" alt="404 image"/>
+<img src='/module3/vc-commits-jupyter.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -90,7 +90,7 @@ click the Jupyter Git extension icon on the far left-hand side of JupyterLab.
 
 <center>
 
-<img src='/module3/vc-commits-jupyter-4_1.png' width="80%" alt="404 image"/>
+<img src='/module3/vc-commits-jupyter-4_1.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -121,7 +121,7 @@ and is added as author information to the commit message.
 
 <center>
 
-<img src='/module3/vc-commits-jupyter-4_2.png' width="80%" alt="404 image"/>
+<img src='/module3/vc-commits-jupyter-4_2.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -149,7 +149,7 @@ You can see a good example of an informative title and long description in this 
 
 <center>
 
-<img src='/module3/vc-commits-jupyter-5.png' width="80%" alt="404 image"/>
+<img src='/module3/vc-commits-jupyter-5.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -166,7 +166,7 @@ After recording a commit, the staging area should be empty and you will see that
 
 <center>
 
-<img src='/module3/vc-commits-jupyter-5_2.png' width="90%" alt="404 image"/>
+<img src='/module3/vc-commits-jupyter-5_2.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -185,7 +185,7 @@ You have now tracked this change and made it part of the history of your project
 
 <center>
 
-<img src="/module3/vc-commit-jl-terminal.png" alt="404 image" width="70%">
+<img src="/module3/vc-commit-jl-terminal.png" width="600px" alt="404 image" >
 
 </center>
 
@@ -208,7 +208,7 @@ as shown in the next slide.
 
 <center>
 
-<img src="/module3/vc-commit-jl-terminal-editor.png" alt="404 image" width="70%">
+<img src="/module3/vc-commit-jl-terminal-editor.png" alt="404 image" width="600px">
 
 Notes:
 

@@ -22,7 +22,7 @@ we will learn the basics of how to create repository that uses version control.
 
 <center>
 
-<img src='/module3/vc-local-github-2.png' width="80%" alt="404 image"/>
+<img src='/module3/vc-local-github-2.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -54,7 +54,7 @@ cannot easily be expressed in plain text.
 
 <center>
 
-<img src='/module3/vc-local-github.png' width="55%" alt="404 image" />
+<img src='/module3/vc-local-github.png' width="600px" alt="404 image" />
 
 </center>
 
@@ -85,7 +85,7 @@ that will give you more flexibility to track your changes.
 
 <center>
 
-<img src='/module3/vc-commits.png' width="70%" alt="404 image"/>
+<img src='/module3/vc-commits.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -148,7 +148,7 @@ starting with how to create the remote repository!
 
 <center>
 
-<img src='/module3/vc-remote-repository.png' width="60%" alt="404 image" />
+<img src='/module3/vc-new-repository-github.png' width="600px" alt="404 image" />
 
 </center>
 
@@ -167,7 +167,7 @@ by clicking on the `+` icon in the upper right-hand corner, and then on `New Rep
 
 <center>
 
-<img src='/module3/vc-remote-repository-2.png' width="40%" alt="404 image" />
+<img src='/module3/vc-new-repository-create.png' width="600px" alt="404 image" />
 
 </center>
 
@@ -203,7 +203,7 @@ That's it! Now let's clone it to get a local copy on your computer.
 
 <center>
 
-<img src='/module3/vc-clone-jupyter.png' width="60%" alt="404 image" align="center"/>
+<img src='/module3/vc-clone-jupyter-https.png' width="600px" alt="404 image" align="center"/>
 
 </center>
 
@@ -226,7 +226,7 @@ and choose to copy the URL from the HTTPS tab.
 
 <center>
 
-<img src='/module3/vc-clone-jupyter-2.png' width="60%" alt="404 image"/>
+<img src='/module3/vc-clone-jupyter-2.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -245,7 +245,7 @@ When you click this button a dialog box will show up, which we will explain in t
 
 <center>
 
-<img src='/module3/vc-clone-jupyter-3.png' width="60%" alt="404 image"/>
+<img src='/module3/vc-clone-jupyter-URL.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -261,7 +261,7 @@ Once the dialog box pops up, you can paste the URL of the GitHub project reposit
 
 <center>
 
-<img src='/module3/vc-clone-jupyter-4.png' width="60%" alt="404 image"/>
+<img src='/module3/vc-clone-jupyter-4.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -279,7 +279,7 @@ Inside this folder are all the files that existed on your repository on GitHub.
 
 <center>
 
-<img src='/module3/vc-clone-jupyter-4.png' width="60%" alt="404 image"/>
+<img src='/module3/vc-clone-jupyter-terminal.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -310,7 +310,7 @@ just as it did when we clones via the graphical Git client.
 
 <center>
 
-<img src='/module3/vc-clone-jupyter-4.png' width="60%" alt="404 image"/>
+<img src='/module3/vc-git-hidden-folder.png' width="600px" alt="404 image"/>
 
 </center>
 

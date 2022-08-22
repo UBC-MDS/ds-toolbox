@@ -11,7 +11,7 @@ title: 'module3_05'
 
 <center>
 
-<img src='/module3/vc-push.png' width="90%" alt="404 image"/>
+<img src='/module3/vc-push.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -29,7 +29,7 @@ they will be able to see the changes you made.
 
 <center>
 
-<img src='/module3/vc-push-jupyter.png' width="90%" alt="404 image"/>
+<img src='/module3/vc-push-jupyter.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -53,7 +53,7 @@ press the Git extension "push" button
 
 <center>
 
-<img src='/module3/vc-push-jupyter-1.png' width="90%" alt="404 image"/>
+<img src='/module3/vc-push-jupyter-1.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -74,7 +74,7 @@ JupyterLab will remember your password so you don't need to enter it each time.
 
 <center>
 
-<img src='/module3/vc-push-jupyter-2.png' width="90%" alt="404 image"/>
+<img src='/module3/vc-push-jupyter-2.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -90,7 +90,7 @@ Next, you will see this prompt that the push was successful.
 
 <center>
 
-<img src='/module3/vc-push-jupyter-3.png' width="90%" alt="404 image"/>
+<img src='/module3/vc-push-jupyter-3.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -108,7 +108,7 @@ and the time of the most recently pushed commit for each file.
 
 <center>
 
-<img src='/module3/vc-push-jl-terminal.png' width="90%" alt="404 image"/>
+<img src='/module3/vc-push-jl-terminal.png' width="600px" alt="404 image"/>
 
 </center>
 

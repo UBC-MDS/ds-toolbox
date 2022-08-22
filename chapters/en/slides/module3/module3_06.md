@@ -11,7 +11,7 @@ title: 'module3_06'
 
 <center>
 
-<img src='/module3/vc-pull.png' width="55%" alt="404 image"/>
+<img src='/module3/vc-pull.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -39,7 +39,7 @@ you will not be able to push any more changes yourself
 
 <center>
 
-<img src='/module3/vc-pull-jupyter.png' width="70%" alt="404 image"/>
+<img src='/module3/vc-pull-jupyter.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -65,7 +65,7 @@ to our local Git repository.
 
 <center>
 
-<img src='/module3/vc-pull-jupyter-1.png' width="80%" alt="404 image"/>
+<img src='/module3/vc-pull-jupyter-1.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -88,7 +88,7 @@ by clicking on the cloud icon with the down arrow in JupyterLab.
 
 <center>
 
-<img src='/module3/vc-pull-jupyter-4.png' width="70%" alt="404 image"/>
+<img src='/module3/vc-pull-jupyter-4.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -117,7 +117,7 @@ after pulling and refreshing.
 
 <center>
 
-<img src='/module3/vc-pull-jupyter-4.png' width="70%" alt="404 image" />
+<img src='/module3/vc-pull-jupyter-4.png' width="600px" alt="404 image" />
 
 </center>
 
@@ -138,7 +138,7 @@ before you start editing any files in your local repository.
 
 <center>
 
-<img src='/module3/vc-pull-jl-terminal.png' width="60%" alt="404 image" />
+<img src='/module3/vc-pull-jl-terminal.png' width="600px" alt="404 image" />
 
 </center>
 

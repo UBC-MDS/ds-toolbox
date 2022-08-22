@@ -24,7 +24,7 @@ when working on our projects.
 
 <center>
 
-<img src='/module3/vc-final-comic.png' width="30%" alt="404 image"/>
+<img src='/module3/vc-final-comic.png' width="600px" alt="404 image"/>
 
 <center/>
 
@@ -54,12 +54,13 @@ and you can then browse through the history.
 
 ## What is version control, and why should I use it?
 
+<img src='/module3/vc-files.png' width="600px" alt="404 image"/>
+
+
 Instead of creating a new copy for each version of a file
-with an unwieldy name (as in the image below), 
+with an unwieldy name (as in the image), 
 version control allows you to have a single file 
 and records the changes between the versions.
-
-<img src='/module3/vc-files.png' width="30%" alt="404 image"/>
 
 Notes:
 Additionally, data analyses are typically completed by teams.
@@ -102,11 +103,11 @@ earlier versions of the project and to revert changes.
 
 **Git** - Version control system
 
-<img src='/module3/git-logo.png' width="10%" alt="404 image"/>
+<img src='/module3/git-logo.png' width="150px" alt="404 image"/>
 
 **GitHub** - Repository hosting service
 
-<img src='/module3/github-logo.png' width="10%" alt="404 image"/>
+<img src='/module3/github-logo.png' width="150px" alt="404 image"/>
 
 Notes:
 To **version control** a project, you generally need two things:
