@@ -5,7 +5,8 @@ type: slides
 # Advanced JupyterLab tips and tricks
 
 Notes:
-In this module we will present an assortment of intermediate techniques that can help you be more efficient when working in JupyterLab.
+
+In this slide deck, we will present a number of advanced techniques that can help you be more productive when using JupyterLab.
 
 ---
 
@@ -38,11 +39,12 @@ A common action: exporting a notebook without code cells
 
 Notes:
 
-One common use of `!` commands in notebook cells is to export a notebook without its code cells by using `nbconvert` directly,
-instead of the export menu in JupyterLab (which also calls `nbconvert` under the hood).
-To do this, copy and paste bellow command into a code cell in your notebook.
-Then modify the command with an appropriate notebook file name instead of `this-notebooks-name.ipynb`,
-and run the code cell:
+One common use of an `!` command in a notebook cell is to export a notebook without its code cells by using the `nbconvert` command directly,
+instead of using the export menu in JupyterLab—which also calls `nbconvert` under the hood.
+
+To do this, copy and paste the command below into a code cell in your notebook.
+Then replace `this-notebooks-name.ipynb` with an appropriate notebook filename,
+and finally run the code cell:
 
 ```shell
 !jupyter nbconvert this-notebooks-name.ipynb \
@@ -51,9 +53,11 @@ and run the code cell:
     --no-input
 ```
 
-Of course you can run this command using a terminal, but it could be much more convenient if you just quickly want to run a shell command in the folder in which the notebook resides.
+Of course you can run this command using a terminal,
+but it could be much more convenient if you just want to quickly run a shell command in the folder in which the notebook resides.
+
 If you put it in the last cell in your notebook,
-you will always update the exported HTML file
+you will always have an updated HTML export file
 when you click "Run all" in JupyterLab.
 
 ---
@@ -73,13 +77,16 @@ Magic commands introduced here are provided by and specific to IPython. Other la
 </p>
 
 Notes:
-Magic commands are special commands which implement a particular functionality that might not be doable or straight-forward using Python code. For example, you can measure the amount of time it takes on average to run a code cell, or run a `.py` Python script file directly using the notebook's kernel.
+
+Magic commands are special commands which implement a particular functionality that might not be doable or straight-forward using Python code.
+
+For example, you can measure the amount of time it takes on average to run a code cell, or run a `.py` Python script file directly using the notebook's kernel.
 
 A magic command can be run either in **line** or **cell** mode:
 
-- Line mode: Only applies to one line of code, and is activated by prefixing a relevant command with `%`. For example, `%reset -f` removes all variable names defined by the user without restarting the kernel.
+- Line mode only applies to one line of code, and is activated by prefixing a relevant command with `%`. For example, `%reset -f` removes all variable names defined by the user without restarting the kernel.
 
-- Cell mode: Applies to an entire cell, and is activated by prefixing a relevant command with `%%` at the beginning of a code cell. For example, the `%%timeit` cell magic in the following code runs the cell multiple times to compute an average running time:
+- Cell mode applies to an entire cell, and is activated by prefixing a relevant command with `%%` at the beginning of a code cell. For example, the `%%timeit` cell magic in the following code runs the cell multiple times to compute an average running time:
 
 ```
 %%timeit
@@ -88,8 +95,8 @@ for i in range(1_000_000):
 ```
 
 Note that magic commands are only available in notebooks running a Python kernel.
-The `%lsmagic` magic command lists all the available magic commands,
-and you can [read more about the magic commands in the documentation](https://ipython.readthedocs.io/en/stable/interactive/magics.html).
+If you want to see a full list of available magic commands, you can run `%lsmagic` (which itself is a magic command).
+Also check out this [link](https://ipython.readthedocs.io/en/stable/interactive/magics.html) to find more information about magic commands.
 
 ---
 
@@ -100,19 +107,22 @@ and you can [read more about the magic commands in the documentation](https://ip
 <img src="/module7/pm-debug.png" width="700"></img>
 
 Notes:
-You've already seen how you can reset the Python namespace using `%reset -f` and time your code using `%%timeit`.
 
-Another useful magic command allows us to perform Post-mortem debugging. If you run a cell and happen to get an error, you can investigate what happened *post mortem* (i.e., after the error was thrown (literally "after death")), by running `%debug` in a different cell. Here, you can see an example of a syntax error, and the follow-up investigation using `%debug`.
+We've already seen how we can reset the Python namespace using `%reset -f` and how to time code execution using `%%timeit`.
+
+There is another useful magic command which allows us to perform "post-mortem" (literally meaning "after death") debugging. If you run a cell and happen to get an error, you can investigate what happened *post mortem*; that is, after the error was thrown, by running `%debug` in a different cell. Here, you can see an example of a syntax error, and the follow-up investigation using `%debug`.
 
 When an error is thrown,
 the traceback shows that several files are affected.
+
 When you enter into debugging mode,
 you might not be in the right file from the beginning.
 If this is the case,
-you can use `u` and `d` to navigate up and down in the files hierarchy respectively.
-Two other useful shortcuts are `c` to continue execution until the next error
-and `q` to quit the debugger and go back to working with your code cells
-(the rest of your notebook is unresponsive until you quit the debugger with `q`).
+you can use `U` and `D` keys on your keboard to navigate up and down, respectively, in the files hierarchy.
+
+Two other useful keyboard shortcuts are `C` for continuing execution until the next error,
+and `Q` to quit the debugger and go back to working with your code cells.
+Note that the rest of your notebook will be unresponsive until you quit the debugger by pressing `Q`.
 
 The debugger that is used by JupyterLab is the standard Python debugger `pdb`,
 so you can [read more about all the options and commands in the Python documentation](
@@ -131,7 +141,9 @@ Another useful magic command is `%hist`
 which displays the history for all the input cells you have executed.
 This is a bit overwhelming on its own, but it is very useful with the `-g` option.
 
-In JupyterLab, you can use `%hist -g <search_pattern>` to search through all code cells you have ever executed (including from previous sessions, so it is similar to `history | grep <search_pattern>` in the shell). This is great for when you delete that piece of code you were *100% sure* you would never need again and was not important enough to be committed, but you —of course— end up wanting it back a few days later.
+In JupyterLab, you can use `%hist -g <search_pattern>` to search through all code cells you have ever executed. This also includes executed statements from previous sessions, so it's similar to `history | grep <search_pattern>` in the shell.
+
+This is a great option for when you've deleted that piece of code you were *100% sure* you'd never need again and was not important enough to be committed, but you—of course—ended up wanting it back a few days later.
 
 Here, you see an example of using `%hist -g` to find a list of executed cells which contained "`range(1, 10)`".
 
