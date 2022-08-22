@@ -22,7 +22,7 @@ we will learn the basics of how to create repository that uses version control.
 
 <center>
 
-<img src='/module3/vc-local-github-2.png' width="600px" alt="404 image"/>
+<img src='/module3/vc-local-github-2.png' width="700px" alt="404 image"/>
 
 </center>
 
@@ -167,7 +167,7 @@ by clicking on the `+` icon in the upper right-hand corner, and then on `New Rep
 
 <center>
 
-<img src='/module3/vc-new-repository-create.png' width="600px" alt="404 image" />
+<img src='/module3/vc-new-repository-create.png' width="500px" alt="404 image" />
 
 </center>
 
@@ -199,7 +199,9 @@ That's it! Now let's clone it to get a local copy on your computer.
 
 ## 2. Cloning a repository using Jupyter Lab (IDE)
 
- 
+<br>
+<br>
+<br>
 
 <center>
 
@@ -275,11 +277,11 @@ Inside this folder are all the files that existed on your repository on GitHub.
 
 ---
 
-## 2. Cloning a repository using Jupyter Lab (terminal)
+## 2. Cloning a repository using Jupyter Lab (Terminal)
 
 <center>
 
-<img src='/module3/vc-clone-jupyter-terminal.png' width="600px" alt="404 image"/>
+<img src='/module3/vc-clone-jupyter-terminal.png' width="650px" alt="404 image"/>
 
 </center>
 

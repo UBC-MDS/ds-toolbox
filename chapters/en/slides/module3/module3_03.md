@@ -66,7 +66,7 @@ in the working directory of the local repository on your computer.
 
 <center>
 
-<img src='/module3/vc-staging-area.png' width="600px" alt="404 image" />
+<img src='/module3/vc-staging-area.png' width="700px" alt="404 image" />
 
 </center>
 

@@ -24,7 +24,7 @@ when working on our projects.
 
 <center>
 
-<img src='/module3/vc-final-comic.png' width="600px" alt="404 image"/>
+<img src='/module3/vc-final-comic.png' width="400px" alt="404 image"/>
 
 <center/>
 
@@ -54,7 +54,7 @@ and you can then browse through the history.
 
 ## What is version control, and why should I use it?
 
-<img src='/module3/vc-files.png' width="600px" alt="404 image"/>
+<img src='/module3/vc-files.png' width="300px" alt="404 image"/>
 
 
 Instead of creating a new copy for each version of a file

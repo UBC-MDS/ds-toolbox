@@ -15,7 +15,7 @@ to the repository on our computer.
 
 <center>
 
-<img src='/module3/vc-commit.png' width="600px" alt="404 image"/>
+<img src='/module3/vc-commit.png' width="700px" alt="404 image"/>
 
 </center>
 

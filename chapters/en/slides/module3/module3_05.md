@@ -11,7 +11,7 @@ title: 'module3_05'
 
 <center>
 
-<img src='/module3/vc-push.png' width="600px" alt="404 image"/>
+<img src='/module3/vc-push.png' width="700px" alt="404 image"/>
 
 </center>
 
