@@ -146,9 +146,13 @@ starting with how to create the remote repository!
 
 ## 1. Creating a remote repository on GitHub
 
+<br>
+<br>
+<br>
+
 <center>
 
-<img src='/module3/vc-new-repository-github.png' width="600px" alt="404 image" />
+<img src='/module3/vc-new-repository-github.png' width="800px" alt="404 image" />
 
 </center>
 
@@ -158,10 +162,18 @@ Notes:
 
 Before you can create remote repositories on GitHub, you will need a GitHub account; 
 you can sign up for a free account at https://github.com.
-Once you have logged into your account, you can create a new repository to host your project 
-by clicking on the `+` icon in the upper right-hand corner, and then on `New Repository`.
+Once you have logged into your account,
+you can create a new repository to host your project 
+by clicking on the `+` icon 
+in the upper right-hand corner,
+and then on `New Repository`.
+
+Another way to create a repository is
+by clicking the green button `New`
+on the left side of the screen.
 
 ---
+
 
 ## 1. Creating a remote repository on GitHub
 
@@ -176,16 +188,22 @@ Notes:
 🙌  **Practice**
 
 Repositories can be set up with a variety of configurations,
-including a name, optional description, and the inclusion (or not) of several template files.
-One of the most important configuration items to choose is the visibility to the outside world, 
+including a name,
+optional description, and 
+the inclusion (or not) of several template files.
+One of the most important configuration items to choose
+is the visibility to the outside world, 
 either public or private:
 
 - **Public repositories** can be viewed by anyone.
 - **Private repositories** can be viewed by only you.
 
-Both public and private repositories are only editable by you, but you can change that by giving access to other collaborators.
+Both public and private repositories are only editable by you, 
+but you can change that by giving access to other collaborators.
 
-To get started with a public repository having a template `README.md` file, take the following steps:
+To get started with 
+a public repository having a template `README.md` file, 
+take the following steps:
 
 1. Enter the name of your project repository. In the example below, we use `canadian_languages`. 
 2. Most repositories follow a similar naming convention involving only lowercase letter words separated by either underscores or hyphens.
@@ -226,6 +244,10 @@ and choose to copy the URL from the HTTPS tab.
 
 ## 2. Cloning a repository using Jupyter Lab (IDE)
 
+<br>
+<br>
+<br>
+
 <center>
 
 <img src='/module3/vc-clone-jupyter-2.png' width="600px" alt="404 image"/>
@@ -238,12 +260,18 @@ Notes:
 
 Next, open JupyterLab and click the Jupyter Git Clone icon
 in the "Files" tab of the left side bar.
-We have marked this icon with a red circle in the screenshot in this slide.
-When you click this button a dialog box will show up, which we will explain in the next slide.
+We have marked this icon with a red circle
+in the screenshot in this slide.
+When you click this button a dialog box will show up,
+which we will explain in the next slide.
 
 ---
 
 ## 2. Cloning a repository using Jupyter Lab (IDE)
+
+<br>
+<br>
+<br>
 
 <center>
 
@@ -255,11 +283,21 @@ Notes:
 
 🙌  **Practice**
 
-Once the dialog box pops up, you can paste the URL of the GitHub project repository you copied earlier and click the blue “CLONE” button. This will download the repository files to your computer.
+Once the dialog box pops up, 
+you can paste the URL of
+the GitHub project repository
+you copied earlier and 
+click the blue “CLONE” button. 
+This will download the repository files 
+to your computer.
 
 ---
 
 ## 2. Cloning a repository using Jupyter Lab (IDE)
+
+<br>
+<br>
+<br>
 
 <center>
 
@@ -272,12 +310,19 @@ Notes:
 🙌  **Practice**
 
 When the cloning is complete,
-you will now see a folder for the repository showing up in the file browser tab.
-Inside this folder are all the files that existed on your repository on GitHub.
+you will now see a folder
+for the repository showing up 
+in the file browser tab.
+Inside this folder are all the files 
+that existed on your repository on GitHub.
 
 ---
 
 ## 2. Cloning a repository using Jupyter Lab (Terminal)
+
+<br>
+<br>
+<br>
 
 <center>
 
@@ -289,11 +334,16 @@ Notes:
 
 🙌  **Practice**
 
-It is also possible to work with Git from the terminal instead of the JupyterLab Git client.
-We will later see that there are some advantages of working in the terminal for the more advanced commands.
-For now, let's see how we can perform the same cloning steps in the terminal
+It is also possible to work with Git from the terminal
+instead of the JupyterLab Git client.
+We will later see that 
+there are some advantages of working in the terminal
+for the more advanced commands.
+For now, let's see how we can perform 
+the same cloning steps in the terminal
 as we just did via the graphical Git client.
-Note that we will never need to clone a project *both* from the Git client
+Note that we will never need to
+clone a project *both* from the Git client
 and the terminal,
 so we are just doing this here
 to show you how it is done in both interfaces.
@@ -303,12 +353,17 @@ we will use the `git clone` command
 followed by the same URL we copied previously
 as can be seen in the screenshot on this slide.
 After the cloning has finished,
-you will see that the repository appears in the JupyterLab files tab,
+you will see that the repository appears
+in the JupyterLab files tab,
 just as it did when we clones via the graphical Git client.
 
 ---
 
 ## How can you check that you are working in a Git repository? (Terminal)
+
+<br>
+<br>
+<br>
 
 <center>
 
