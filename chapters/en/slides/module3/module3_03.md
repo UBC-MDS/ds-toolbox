@@ -100,7 +100,7 @@ to our personal scratch notes for the project (`notes.txt`).
 
 <center>
 
-<img src='/module3/vc-commits-jupyter-2.png' width="600px" alt="404 image" />
+<img src='/module3/vc-jupyter-add-staging-area.png' width="600px" alt="404 image" />
 
 </center>
 
@@ -133,7 +133,7 @@ which why it showed up under the `Changed` heading in the side panel.
 
 <center>
 
-<img src='/module3/vc-commits-jupyter-3.png' width="600px" alt="404 image" />
+<img src='/module3/vc-jupyter-staged.png' width="600px" alt="404 image" />
 
 </center>
 
@@ -167,7 +167,7 @@ only add the files you directly create and edit.
 
 <center>
 
-<img src='/module3/vc-staging-area-jl-terminal-status.png' width="600px" alt="404 image" />
+<img src='/module3/vc-jupyter-git-status-terminal.png' width="600px" alt="404 image" />
 
 </center>
 
@@ -177,13 +177,13 @@ Notes:
 
 🙌  **Practice**
 
-If you would be using the terminal outside JupyterLab,
+If you would be using the terminal outside Jupyter Lab,
 you would not have access to the side panel
 that shows which files are  `Untracked`, `Changed`, and `Staged`.
 To check the status of all files in your repository using the terminal
 you can instead use the command `git status`.
 In this slide you can see how the different parts of the output from `git status`
-corresponds to the JupyterLab side panel.
+corresponds to the Jupyter Lab side panel.
 
 An advantage of using this command if you are working in the terminal
 is that it gives you information on which commands to use to continue your workflow.

@@ -15,7 +15,7 @@ In this slide deck we will learn more about how to collaborate effectively on Gi
 
 <center>
 
-<img src='/module5/quote.jpg' width="80%" alt="404 image" />
+<img src='/module5/quote.jpg' width="600px" alt="404 image" />
 
 </center>
 
@@ -74,7 +74,7 @@ The “Invite a collaborator” button on the GitHub web interface.
 
 <center>
 
-<img src='/module5/add-collab-1.png' width="70%" alt="404 image" />
+<img src='/module5/add-collab-1.png' width="600px" alt="404 image" />
 
 </center>
 
@@ -92,7 +92,7 @@ As mentioned earlier, GitHub allows you to control who has access to your projec
 
 <center>
 
-<img src='/module5/add-collab-2.png' width="80%" alt="404 image" />
+<img src='/module5/add-collab-2.png' width="600px" alt="404 image" />
 
 </center>
 
@@ -110,7 +110,7 @@ Under "Branch name pattern", type the branch name or pattern you want to protect
 
 <center>
 
-<img src='/module5/add-branch-protection-rule.png' width="80%" alt="404 image" />
+<img src='/module5/add-branch-protection-rule.png' width="600px" alt="404 image" />
 
 </center>
 
@@ -126,7 +126,7 @@ To add a branch protection rule you can go to **Settings > Code and Automation (
 
 <center>
 
-<img src='/module5/PR-reviews-required-updated.png' width="80%" alt="404 image" />
+<img src='/module5/PR-reviews-required-updated.png' width="600px" alt="404 image" />
 
 </center>
 
@@ -142,7 +142,7 @@ Notice that you can create protect branches different to `main` but we will not 
 
 <center>
 
-<img src='/module5/branches-house-analogy-explained.png' width="80%" alt="404 image" />
+<img src='/module5/branches-house-analogy-explained.png' width="600px" alt="404 image" />
 
 </center>
 
@@ -164,7 +164,7 @@ We are ready to start collaborating!
 ## How pull requests look like after you protect the branch
 <center>
 
-<img src='/module5/PR-aprove.png' width="80%" alt="404 image" />
+<img src='/module5/PR-aprove.png' width="600px" alt="404 image" />
 
 </center>
 

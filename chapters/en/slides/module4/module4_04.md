@@ -13,7 +13,7 @@ In this slide deck we will see how we can undo changes we have made without dele
 
 <center>
 
-<img src='/module4/vc-revert.png' width="70%" alt="404 image"/>
+<img src='/module4/vc-revert.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -37,7 +37,7 @@ as seen in this slide.
 
 <center>
 
-<img src='/module4/vc-revert-2.png' width="90%" alt="404 image"/>
+<img src='/module4/vc-revert-2.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -51,7 +51,7 @@ When you click the arrow, JupyterLab asks you for the commit title and descripti
 
 <center>
 
-<img src='/module4/vc-revert-3.png' width="80%" alt="404 image"/>
+<img src='/module4/vc-revert-3.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -69,7 +69,7 @@ a reversion if more friendly for collaborating on GitHub, but it is still import
 
 <center>
 
-<img src='/module4/vc-revert-t.png' width="80%" alt="404 image"/>
+<img src='/module4/vc-revert-t.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -84,7 +84,7 @@ together with the commit hash you want to revert to.
 
 <center>
 
-<img src='/module4/vc-revert-t2.png' width="80%" alt="404 image"/>
+<img src='/module4/vc-revert-t2.png' width="600px" alt="404 image"/>
 
 </center>
 

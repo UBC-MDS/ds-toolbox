@@ -15,7 +15,7 @@ In this slide deck, we will learn how we can merge branches together.
 
 <center>
 
-<img src='/module5/branches-house-analogy-explained.png' width="100%" alt="404 image"/>
+<img src='/module5/branches-house-analogy-explained.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -31,7 +31,7 @@ Upon merging, the changes you were working on in a particular branch are combine
 
 <center>
 
-<img src='/module5/merge-branch.png' width="100%" alt="404 image"/>
+<img src='/module5/merge-branch.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -47,7 +47,7 @@ Notice that after doing this, the report branch is not deleted automatically, so
 
 <center>
 
-<img src='/module5/merge-branch-2.png' width="100%" alt="404 image"/>
+<img src='/module5/merge-branch-2.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -60,7 +60,7 @@ If you want to use the terminal to merge the branches and you are currently work
 
 <center>
 
-<img src='/module5/git-history-log.png' width="100%" alt="404 image"/>
+<img src='/module5/git-history-log.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -74,7 +74,7 @@ Let's see how VS Code's graphical representation of the Git history changed when
 
 <center>
 
-<img src='/module5/delete-branch.png' width="100%" alt="404 image"/>
+<img src='/module5/delete-branch.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -90,7 +90,7 @@ You can only delete a branch when you are not working on it (it is not highlight
 
 <center>
 
-<img src='/module5/delete-branch-t.png' width="100%" alt="404 image"/>
+<img src='/module5/delete-branch-t.png' width="600px" alt="404 image"/>
 
 </center>
 

@@ -31,7 +31,7 @@ We will use the repository you just created as an example for the rest of this m
 
 <center>
 
-<img src='/module5/branches-related.png' width="100%" alt="404 image"/>
+<img src='/module5/branches-related.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -50,7 +50,7 @@ Remember that you can use `space` on your keyboard to page down through the comm
 
 <center>
 
-<img src='/module5/git-history-log-unmerged.png' width="100%" alt="404 image"/>
+<img src='/module5/git-history-log-unmerged.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -68,7 +68,7 @@ Where it currently says "master", change it to show "All branches" and you shoul
 
 <center>
 
-<img src='/module5/observing-trees.png' width="100%" alt="404 image"/>
+<img src='/module5/observing-trees.png' width="600px" alt="404 image"/>
 
 </center>
 
