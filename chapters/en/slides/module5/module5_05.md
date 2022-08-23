@@ -186,7 +186,7 @@ This means that when you are doing a pull request you will need the approval of 
 Notes:
 Giving your collaborators access to your repository is mandatory to collaborate using branches. Protecting the main branch is considered good practice but experienced users that are very familiar with the workflow could opt to not use this strategy.
 
-The workflow will be the same that we have learned before, cloning, adding to the staging area, committing the changes and pushing to the repo with the only difference being that you will have to create a pull request. Merge conflicts could happen and you can use the strategies you have learned in the past chapters to resolve them.
+The workflow will be the same that we have learned before, cloning, adding to the staging area, committing the changes and pushing to the repo with the only difference being that you will have to create a pull request. Merge conflicts could happen and you can use the strategies you have learned in the past modules to resolve them.
 
 ---
 

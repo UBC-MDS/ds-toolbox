@@ -6,8 +6,8 @@ type: slides
 # Working with Files and Directories
 
 Notes:
-We now know how to explore files and directories, but how do we create and move them around? 
-That's what we will find out in this chapter.
+We now know how to explore files and directories, but how do we create and move them around?
+That's what we will find out in this module.
 
 ---
 

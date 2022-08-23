@@ -40,7 +40,7 @@ Even if you can use Git without an associated hosting service, it is a very comm
 </opt>
 <opt text='In practice, most data science projects involve collaboration on documents that contain code (e.g., Jupyter notebooks), and version control tools facilitate collaboration on such documents.'>
 
-One of the great advantages of version control tools is that they facilitate collaboration. We will learn more on how to use Git/GitHub collaboratively in the next chapters.
+One of the great advantages of version control tools is that they facilitate collaboration. We will learn more on how to use Git/GitHub collaboratively in the next modules.
 
 </opt>
 
@@ -103,7 +103,7 @@ In general you clone your repository if you want to work locally.
 </opt>
 <opt text='Only the creator of GitHub repository, and people the creator specify, can edit the files in the repository. This is true even when the repository is public.'>
 
-This one is true! If you want to contribute to a public GitHub repository that you don't have access you can fork it and then create a pull request. Don't worry now, we will learn about these concepts in detail in chapter 4.
+This one is true! If you want to contribute to a public GitHub repository that you don't have access you can fork it and then create a pull request. Don't worry now, we will learn about these concepts in detail in module 4.
 
 </opt>
 <opt text='If the repository is public, anyone on the web can view it.' >

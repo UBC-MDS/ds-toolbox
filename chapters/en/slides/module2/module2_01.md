@@ -26,7 +26,7 @@ rather than graphical menus that we click with the mouse pointer.
 To get a deeper understanding of this concept,
 we will start with a brief introduction to computing in general.
 
-This chapter is largely based on the Shell chapters in the book
+This module is largely based on the Shell chapters in the book
 ["Research Software Engineering with Python"](https://merely-useful.tech/py-rse/bash-basics.html),
 which is freely available
 and can be referred to for additional details.
@@ -118,7 +118,7 @@ Bash is the most commonly used text shell.
 You have it installed on your computer by default if you are using a Mac or Linux machine,
 and if you are on a Windows machine you downloaded Bash as part of the setup instructions.
 
-As we mentioned in the introduction chapter,
+As we mentioned in the introduction module,
 the abbreviation BASH stands for "Bourne Again SHell".
 Other shells existed before Bash,
 and one of the most successful early shells was invented by Stephen Bourne at Bell Labs in 1977,

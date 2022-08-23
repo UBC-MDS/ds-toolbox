@@ -171,7 +171,7 @@ Please note that the WebPDF option does not support rendering images that are in
 <img style="border:1px solid black;" src="/module7/md-export.png" width="750"></img>
 
 Notes:
-We've learned quite a bit about the Markdown format so far in this chapter. The Markdown option converts your notebook to a Markdown file that only contains plain text, and can be opened with any text editor. In order to see the rendered Markdown file however, you need to open it using JupyterLab or another IDE like VS Code.
+We've learned quite a bit about the Markdown format so far in this module. The Markdown option converts your notebook to a Markdown file that only contains plain text, and can be opened with any text editor. In order to see the rendered Markdown file however, you need to open it using JupyterLab or another IDE like VS Code.
 
 In the screenshot on this slide you can see what an example notebook would look like when converted to markdown.
 Note how computational cells are converted to Markdown code blocks with appropriate syntax highlighting language included.
@@ -194,7 +194,7 @@ Notes:
 
 JupyterLab is built to be modular and extensible by nature. When a feature does not already exist in JupyterLab, developers can create an **extension** to provide that feature for JupyterLab.
 
-Do you remember using the Git extension in JupyterLab in previous chapters? Well, as the name suggests, that was an extension that was added on to JupyterLab when you followed the installation guide in Assignment 0!
+Do you remember using the Git extension in JupyterLab in previous modules? Well, as the name suggests, that was an extension that was added on to JupyterLab when you followed the installation guide in Assignment 0!
 
 As a matter of fact, JupyterLab itself is mainly a collection of various extensions.
 We will cover some of the highlights for JupyterLab extensions in the next few slides

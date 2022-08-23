@@ -88,7 +88,7 @@ and two hashes indicate the first level of subheadings.
 
 You can have as many levels of subheadings as you see fit,
 and they will all show up hierarchically in the table of contents tab of the left side bar
-that we introduced in chapter 1.
+that we introduced in module 1.
 
 ---
 

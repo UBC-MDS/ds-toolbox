@@ -204,7 +204,7 @@ Notes:
 
 All of the configuration for your book is in a file called `_config.yml`.
 This file is in the YAML format,
-just as the `environment.yml` files that we created in chapter 6 uses `conda`.
+just as the `environment.yml` files that we created in module 6 uses `conda`.
 
 You can define metadata for your book (such as its title), add a book logo, turn on different “interactive” buttons (such as a Binder button for pages built from a Jupyter Notebook), and more.
 
