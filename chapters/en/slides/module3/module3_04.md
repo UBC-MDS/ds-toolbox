@@ -13,6 +13,10 @@ to the repository on our computer.
 
 ## Committing the modified files in the staging area
 
+<br>
+<br>
+<br>
+
 <center>
 
 <img src='/module3/vc-commit.png' width="700px" alt="404 image"/>
@@ -41,7 +45,7 @@ and collaborators would not yet be able to see your new changes online.
 
 <center>
 
-<img src='/module3/commit-messages-comic.png' width="600px%" alt="404 image"/>
+<img src='/module3/commit-messages-comic.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -88,6 +92,10 @@ click the Jupyter Git extension icon on the far left-hand side of JupyterLab.
 
 ## Making the commit (JupyterLab IDE)
 
+<br>
+<br>
+<br>
+
 <center>
 
 <img src='/module3/vc-commits-jupyter-4_1.png' width="600px" alt="404 image"/>
@@ -119,6 +127,10 @@ and is added as author information to the commit message.
 
 ## Making the commit (JupyterLab IDE)
 
+<br>
+<br>
+<br>
+
 <center>
 
 <img src='/module3/vc-commits-jupyter-4_2.png' width="600px" alt="404 image"/>
@@ -146,6 +158,9 @@ You can see a good example of an informative title and long description in this 
 
 ## Making the commit (JupyterLab IDE)
 
+<br>
+<br>
+<br>
 
 <center>
 
@@ -163,6 +178,10 @@ After recording a commit, the staging area should be empty and you will see that
 ---
 
 ## Making the commit (JupyterLab IDE)
+
+<br>
+<br>
+<br>
 
 <center>
 
@@ -182,6 +201,9 @@ You have now tracked this change and made it part of the history of your project
 
 ## Making the commit (Terminal)
 
+<br>
+<br>
+<br>
 
 <center>
 
@@ -205,6 +227,9 @@ as shown in the next slide.
 
 ## Making the commit (Terminal)
 
+<br>
+<br>
+<br>
 
 <center>
 

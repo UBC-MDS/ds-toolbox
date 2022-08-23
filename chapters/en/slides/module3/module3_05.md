@@ -9,9 +9,13 @@ title: 'module3_05'
 
 ## Pushing the changes to GitHub
 
+<br>
+<br>
+<br>
+
 <center>
 
-<img src='/module3/vc-push.png' width="700px" alt="404 image"/>
+<img src='/module3/vc-push.png' width="800px" alt="404 image"/>
 
 </center>
 
@@ -21,11 +25,15 @@ you need to push (i.e., send/upload) those commits back to GitHub.
 This updates the history in the remote repository (i.e., GitHub) to match what you have in your local repository. 
 Now when collaborators interact with the remote repository, 
 they will be able to see the changes you made.
- You can also take comfort in the fact that your work is now backed up in the cloud!
+You can also take comfort in the fact that your work is now backed up in the cloud!
 
 ---
 
 ## Pushing the commits to GitHub (Jupyter Lab IDE)
+
+<br>
+<br>
+<br>
 
 <center>
 
@@ -51,6 +59,10 @@ press the Git extension "push" button
 
 ## Pushing the commits to GitHub (Jupyter Lab IDE)
 
+<br>
+<br>
+<br>
+
 <center>
 
 <img src='/module3/vc-push-jupyter-1.png' width="600px" alt="404 image"/>
@@ -72,6 +84,10 @@ JupyterLab will remember your password so you don't need to enter it each time.
 
 ## Pushing the commits to GitHub (Jupyter Lab IDE)
 
+<br>
+<br>
+<br>
+
 <center>
 
 <img src='/module3/vc-push-jupyter-2.png' width="600px" alt="404 image"/>
@@ -87,6 +103,10 @@ Next, you will see this prompt that the push was successful.
 ---
 
 ## Pushing the commits to GitHub (Jupyter Lab IDE)
+
+<br>
+<br>
+<br>
 
 <center>
 
@@ -105,6 +125,10 @@ and the time of the most recently pushed commit for each file.
 ---
 
 ## Pushing the commits to GitHub (Terminal)
+
+<br>
+<br>
+<br>
 
 <center>
 

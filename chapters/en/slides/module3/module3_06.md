@@ -36,6 +36,9 @@ you will not be able to push any more changes yourself
 
 ## Pulling changes from GitHub (JupyterLab IDE)
 
+<br>
+<br>
+<br>
 
 <center>
 
@@ -63,6 +66,10 @@ to our local Git repository.
 
 ## Pulling changes from GitHub (JupyterLab IDE)
 
+<br>
+<br>
+<br>
+
 <center>
 
 <img src='/module3/vc-pull-jupyter-1.png' width="600px" alt="404 image"/>
@@ -83,6 +90,10 @@ any new changes from the remote repository at GitHub.com
 by clicking on the cloud icon with the down arrow in JupyterLab.
 
 ---
+
+<br>
+<br>
+<br>
 
 ## Pulling changes from GitHub (JupyterLab IDE)
 
@@ -115,6 +126,10 @@ after pulling and refreshing.
 
 ## Pulling changes from GitHub (JupyterLab IDE)
 
+<br>
+<br>
+<br>
+
 <center>
 
 <img src='/module3/vc-pull-jupyter-4.png' width="600px" alt="404 image" />
@@ -135,6 +150,10 @@ before you start editing any files in your local repository.
 ---
 
 ## Pulling changes from GitHub (Terminal)
+
+<br>
+<br>
+<br>
 
 <center>
 

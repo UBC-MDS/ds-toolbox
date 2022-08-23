@@ -291,6 +291,20 @@ click the blue “CLONE” button.
 This will download the repository files 
 to your computer.
 
+It is important to keep in mind
+where you want to locate your repository.
+Before cloning the repository, 
+navigate to the desired folder 
+using the `File Browser` button
+on the left sidebar. 
+
+Pay attention to 
+not clone your repository
+inside another Git repository.
+This is not considered
+a good practice.
+
+
 ---
 
 ## 2. Cloning a repository using Jupyter Lab (IDE)
@@ -375,12 +389,30 @@ Notes:
 
 🙌  **Practice**
 
-A Git repository stores all the necessary information for version control your project in a hidden folder called `.git`. If you want to know if you are working in a Git repo using the terminal you can use the bash command `ls -a` as you can see in the image. The `-a` flag will include into the lists of files displayed on the terminal the hidden folders. If `.git` is included you are working in a Git repository.
+A Git repository stores 
+all the necessary information for 
+version control your project 
+in a hidden folder called `.git`. 
+If you want to know if 
+you are working in a Git repo
+using the terminal 
+you can use the bash command `ls -a` 
+as you can see in the image.
+The `-a` flag will include 
+into the lists of files displayed on the terminal 
+the hidden folders. 
+If `.git` is included 
+you are working in a Git repository.
 
-Remember to first double check that you are in the directory which the files have been cloned to.
+Remember to first double check 
+that you are in the directory 
+which the files have been cloned to.
 When you clone, the files will be downloaded to a subdirectory of the folder you are currently in,
-so you need to use `cd` to get to that folder before running `ls -a`.
-By cloning a repository from GitHub to your computer, you are automatically getting a copy of `.git` and thus, working in a Git repository.
+so you need to use `cd` 
+to get to that folder before running `ls -a`.
+By cloning a repository from GitHub to your computer, 
+you are automatically getting a copy of `.git` and thus,
+working in a Git repository.
 
 ---
 

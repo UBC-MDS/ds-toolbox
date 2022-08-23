@@ -64,9 +64,13 @@ in the working directory of the local repository on your computer.
 
 ## Committing changes to a local repository 
 
+<br>
+<br>
+<br>
+
 <center>
 
-<img src='/module3/vc-staging-area.png' width="700px" alt="404 image" />
+<img src='/module3/vc-staging-area.png' width="800px" alt="404 image" />
 
 </center>
 
@@ -90,7 +94,9 @@ to our personal scratch notes for the project (`notes.txt`).
 
 ## Specifying files to commit (Jupyter Lab IDE)
 
-Follow these steps in your computer to add files to the staging area:
+<br>
+<br>
+<br>
 
 <center>
 
@@ -120,6 +126,10 @@ which why it showed up under the `Changed` heading in the side panel.
 ---
 
 ## Specifying files to commit (Jupyter Lab IDE)
+
+<br>
+<br>
+<br>
 
 <center>
 
@@ -154,13 +164,14 @@ only add the files you directly create and edit.
 
 ## Specifying files to commit (Terminal)
 
-To check the status of the files using the terminal (`Untracked` / `Changed` / `Staged`) you can use the command `git status`.
 
 <center>
 
 <img src='/module3/vc-staging-area-jl-terminal-status.png' width="600px" alt="404 image" />
 
 </center>
+
+To check the status of the files using the terminal (`Untracked` / `Changed` / `Staged`) you can use the command `git status`.
 
 Notes:
 
@@ -194,7 +205,13 @@ If you want to add the files to the staging area using the terminal you can use 
 
 `git add <file-name(s)>`
 
+
+<center>
+
 <img src='/module3/vc-staging-area-jl-terminal-add.png' width="600px" alt="404 image" />
+
+</center>
+
 
 Notes:
 
