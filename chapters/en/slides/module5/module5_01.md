@@ -14,6 +14,9 @@ and how they can make our Git workflow more effective.
 
 ## What is a branch?
 
+<br>
+<br>
+<br>
 
 <center>
 
@@ -104,6 +107,10 @@ could be called `master` instead of `main`.
 
 ## How to create a branch? (JupyterLab)
 
+<br>
+<br>
+<br>
+
 <center>
 
 <img src='/module5/create_branch.png' width="85%" alt="404 image" />
@@ -141,6 +148,10 @@ Now we can refer to the specific GitHub remote we are working on with the nickna
 
 ## How to create a branch? (Terminal)
 
+<br>
+<br>
+<br>
+
 <center>
 
 <img src='/module5/terminal-branches.png' width="600px" alt="404 image" />
@@ -177,6 +188,10 @@ and with the command line (running the command `git log --oneline`):
 
 ## How to create a branch? (Terminal)
 
+<br>
+<br>
+<br>
+
 <center>
 
 <img src='/module5/branches-head.png' width="600px" alt="404 image" />
@@ -206,6 +221,10 @@ But how can we push a local branch to GitHub?
 ---
 
 ## Pushing a new branch
+
+<br>
+<br>
+<br>
 
 <center>
 

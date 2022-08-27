@@ -37,6 +37,9 @@ Let's look closer at each one in the next few slides.
 
 ## 1. Viewing the history of a project: GitHub
 
+<br>
+<br>
+<br>
 
 <center>
 
@@ -50,6 +53,10 @@ On the repo's landing page on GitHub, you can click the "*N* commits" link marke
 ---
 
 ## 1. Viewing the history of a project: GitHub
+
+<br>
+<br>
+<br>
 
 <center>
 
@@ -70,6 +77,10 @@ at the time of this commit by clicking the `<>` button.
 
 ## 2. Viewing the history of a project: Jupyter Lab
 
+<br>
+<br>
+<br>
+
 <center>
 
 <img src='/module4/vc-history-jl-2.png' width="600px" alt="404 image"/>
@@ -86,6 +97,10 @@ the time when the commit was made, its author, and hash.
 
 ## 3. Viewing the history of a project: the Terminal
 
+<br>
+<br>
+<br>
+
 <center>
 
 <img src='/module4/vc-history-terminal.png' width="600px" alt="404 image"/>
@@ -100,6 +115,10 @@ and in this slide we have marked which part of the `git log` output correspond t
 ---
 
 ## 3. Viewing the history of a project: the Terminal
+
+<br>
+<br>
+<br>
 
 <center>
 

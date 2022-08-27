@@ -37,7 +37,7 @@ You can also take comfort in the fact that your work is now backed up in the clo
 
 <center>
 
-<img src='/module3/vc-push-jupyter.png' width="600px" alt="404 image"/>
+<img src='/module3/vc-pushing-jupyter.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -54,24 +54,6 @@ To push your staged and committed changes to GitHub,
 first open the Git extension in JupyterLab and
 press the Git extension "push" button 
 (click on the cloud icon with the up arrow on the Jupyter Git tab which is circled in red in this slide).
-
----
-
-## Pushing the commits to GitHub (Jupyter Lab IDE)
-
-<br>
-<br>
-<br>
-
-<center>
-
-<img src='/module3/vc-push-jupyter-1.png' width="600px" alt="404 image"/>
-
-</center>
-
-Notes:
-
-🙌 **Practice**
 
 **Step 2. Enter your Git credentials to authorize the push to the remote repository.**
 
@@ -90,7 +72,7 @@ JupyterLab will remember your password so you don't need to enter it each time.
 
 <center>
 
-<img src='/module3/vc-push-jupyter-2.png' width="600px" alt="404 image"/>
+<img src='/module3/vc-successfully-pushed.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -132,7 +114,7 @@ and the time of the most recently pushed commit for each file.
 
 <center>
 
-<img src='/module3/vc-push-jl-terminal.png' width="600px" alt="404 image"/>
+<img src='/module3/vc-git-push.png' width="600px" alt="404 image"/>
 
 </center>
 

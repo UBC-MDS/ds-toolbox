@@ -28,6 +28,9 @@ We will use the repository you just created as an example for the rest of this m
 
 ## Seeing how branches are related (terminal)
 
+<br>
+<br>
+<br>
 
 <center>
 
@@ -48,6 +51,10 @@ Remember that you can use `space` on your keyboard to page down through the comm
 
 ## Seeing how branches are related (VS Code)
 
+<br>
+<br>
+<br>
+
 <center>
 
 <img src='/module5/git-history-log-unmerged.png' width="600px" alt="404 image"/>
@@ -65,6 +72,10 @@ Where it currently says "master", change it to show "All branches" and you shoul
 ---
 
 ## Observing the trees
+
+<br>
+<br>
+<br>
 
 <center>
 

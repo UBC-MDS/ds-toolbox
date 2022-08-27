@@ -32,6 +32,10 @@ we will cover `git revert`.
 
 ## Hard reset (JupyterLab)
 
+<br>
+<br>
+<br>
+
 <center>
 
 <img src='/module4/vc-reset.png' width="600px" alt="404 image"/>
@@ -61,6 +65,10 @@ to make sure you are sure that you want to discard your commits.
 ---
 
 ## Hard reset (JupyterLab)
+
+<br>
+<br>
+<br>
 
 <center>
 

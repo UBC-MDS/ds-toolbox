@@ -92,6 +92,34 @@ to our personal scratch notes for the project (`notes.txt`).
 
 ---
 
+## Open Git (JupyterLab IDE)
+
+
+
+<center>
+
+<img src='/module3/vc-commits-jupyter.png' width="600px" alt="404 image"/>
+
+</center>
+
+Notes:
+
+🙌 **Practice**
+
+Let's commit the files that are in the staging area
+
+**Step 1. Click Jupyter Git extension icon (circled in red).**
+
+After you have cloned the remote repository from GitHub to create a local repository,
+you can get to work editing, creating, and deleting files.
+For example, suppose you created a new file named `eda.ipynb`
+that you would like to commit to the project history.
+To "add" this modified file to the staging area 
+(i.e., flag that this is a file with changes we would like to commit),
+click the Jupyter Git extension icon on the far left-hand side of JupyterLab.
+
+---
+
 ## Specifying files to commit (Jupyter Lab IDE)
 
 <br>
@@ -107,6 +135,8 @@ to our personal scratch notes for the project (`notes.txt`).
 Notes:
 
 🙌  **Practice**
+
+**Step 1. Add the files you want to commit to the staging area.**
 
 To add changes we have made to a file to the staging area through the JupyterLab,
 we can use the small plus sign (`+`).
@@ -164,6 +194,9 @@ only add the files you directly create and edit.
 
 ## Specifying files to commit (Terminal)
 
+<br>
+<br>
+<br>
 
 <center>
 
@@ -205,10 +238,13 @@ If you want to add the files to the staging area using the terminal you can use 
 
 `git add <file-name(s)>`
 
+<br>
+<br>
+<br>
 
 <center>
 
-<img src='/module3/vc-staging-area-jl-terminal-add.png' width="600px" alt="404 image" />
+<img src='/module3/vc-staging-terminal.png' width="600px" alt="404 image" />
 
 </center>
 

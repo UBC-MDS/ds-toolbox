@@ -43,6 +43,10 @@ and collaborators would not yet be able to see your new changes online.
 
 ## Committing to add sections to your project history
 
+<br>
+<br>
+<br>
+
 <center>
 
 <img src='/module3/commit-messages-comic.png' width="600px" alt="404 image"/>
@@ -59,34 +63,6 @@ including ourselves in the future.
 Writing clear and descriptive commit messages
 increases the quality of your project and facilitates collaborative work.
 
----
-
-## Making the commit (JupyterLab IDE)
-
-Let's commit the files that are in the staging area
-
-<center>
-
-<img src='/module3/vc-commits-jupyter.png' width="600px" alt="404 image"/>
-
-</center>
-
-Notes:
-
-🙌 **Practice**
-
-There are two required steps when creating a commit in JupyterLab,
-which we will explain in the next few slides.
-
-**Step 1. Click Jupyter Git extension icon (circled in red).**
-
-After you have cloned the remote repository from GitHub to create a local repository,
-you can get to work editing, creating, and deleting files.
-For example, suppose you created a new file named `eda.ipynb`
-that you would like to commit to the project history.
-To "add" this modified file to the staging area 
-(i.e., flag that this is a file with changes we would like to commit),
-click the Jupyter Git extension icon on the far left-hand side of JupyterLab.
 
 ---
 
@@ -98,7 +74,7 @@ click the Jupyter Git extension icon on the far left-hand side of JupyterLab.
 
 <center>
 
-<img src='/module3/vc-commits-jupyter-4_1.png' width="600px" alt="404 image"/>
+<img src='/module3/vc-commit-jupyter.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -106,7 +82,7 @@ Notes:
 
 🙌 **Practice**
 
-**Step 2. Add a commit message into the Jupyter Git extension commit text box before pressing the blue "Commit" button to commit the staged changes.**
+**Step 3. Add a commit message into the Jupyter Git extension commit text box before pressing the blue "Commit" button to commit the staged changes.**
 
 To commit the staged changes together with an associated commit message,
 you must write a message in the text box at the bottom of the Git pane
@@ -133,7 +109,7 @@ and is added as author information to the commit message.
 
 <center>
 
-<img src='/module3/vc-commits-jupyter-4_2.png' width="600px" alt="404 image"/>
+<img src='/module3/vc-commit-description-jupyter.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -164,7 +140,7 @@ You can see a good example of an informative title and long description in this 
 
 <center>
 
-<img src='/module3/vc-commits-jupyter-5.png' width="600px" alt="404 image"/>
+<img src='/module3/vc-commit-done-jupyterlab.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -185,7 +161,7 @@ After recording a commit, the staging area should be empty and you will see that
 
 <center>
 
-<img src='/module3/vc-commits-jupyter-5_2.png' width="600px" alt="404 image"/>
+<img src='/module3/vc-jupyter-history.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -207,7 +183,7 @@ You have now tracked this change and made it part of the history of your project
 
 <center>
 
-<img src="/module3/vc-commit-jl-terminal.png" width="600px" alt="404 image" >
+<img src="/module3/vc-commit-editor.png" width="600px" alt="404 image" >
 
 </center>
 

@@ -12,6 +12,10 @@ In this slide deck we will see how we can visualize the changes between two comm
 
 ## Comparing commits
 
+<br>
+<br>
+<br>
+
 <center>
 
 <img src='/module4/diff-intro.png' width="600px" alt="404 image"/>
@@ -41,6 +45,10 @@ so let's explore how we can access this view in JupyterLab, the terminal, and on
 
 ## 🙌 Differences between commits: JupyterLab
 
+<br>
+<br>
+<br>
+
 <center>
 
 <img src='/module4/diff-commits-jl.png' width="600px" alt="404 image"/>
@@ -61,6 +69,10 @@ By default you are going to compare the information with the last commit.
 
 ## 🙌 Differences between commits: JupyterLab
 
+<br>
+<br>
+<br>
+
 <center>
 
 <img src='/module4/diff-commits-distant-jl.png' width="600px" alt="404 image"/>
@@ -74,6 +86,10 @@ A new tab will be open in the bottom of the screen. There you can select the fil
 ---
 
 ## 🙌 Differences between commits: Terminal
+
+<br>
+<br>
+<br>
 
 <center>
 
@@ -104,6 +120,10 @@ in the familiar `git diff` format.
 ---
 
 ## 🙌 Differences between commits: GitHub
+
+<br>
+<br>
+<br>
 
 <center>
 

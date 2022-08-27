@@ -11,6 +11,10 @@ In this slide deck we will see how we can undo changes we have made without dele
 
 ## Reversion (JupyterLab)
 
+<br>
+<br>
+<br>
+
 <center>
 
 <img src='/module4/vc-revert.png' width="600px" alt="404 image"/>
@@ -34,6 +38,9 @@ as seen in this slide.
 
 ## Reversion (JupyterLab)
 
+<br>
+<br>
+<br>
 
 <center>
 
@@ -48,6 +55,9 @@ When you click the arrow, JupyterLab asks you for the commit title and descripti
 
 ## Reversion (JupyterLab)
 
+<br>
+<br>
+<br>
 
 <center>
 
@@ -62,6 +72,7 @@ Remember to push your changes if you want to keep your remote updated. In contra
 a reversion if more friendly for collaborating on GitHub, but it is still important to push big reversions soon and inform your collaborators, since some of them might be modifying the part that you reverted!
 
 ---
+
 
 ## Reversion (Terminal)
 
@@ -81,6 +92,10 @@ together with the commit hash you want to revert to.
 ---
 
 ## Reversion (Terminal)
+
+<br>
+<br>
+<br>
 
 <center>
 

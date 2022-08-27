@@ -12,6 +12,9 @@ In this slide deck, we will learn how we can merge branches together.
 
 ## Merging branches
 
+<br>
+<br>
+<br>
 
 <center>
 
@@ -29,6 +32,10 @@ Upon merging, the changes you were working on in a particular branch are combine
 
 ## Merging branches (JupyterLab)
 
+<br>
+<br>
+<br>
+
 <center>
 
 <img src='/module5/merge-branch.png' width="600px" alt="404 image"/>
@@ -45,6 +52,10 @@ Notice that after doing this, the report branch is not deleted automatically, so
 
 ## Merging branches (Terminal)
 
+<br>
+<br>
+<br>
+
 <center>
 
 <img src='/module5/merge-branch-2.png' width="600px" alt="404 image"/>
@@ -57,6 +68,10 @@ If you want to use the terminal to merge the branches and you are currently work
 ---
 
 ## Visualizing merged branches
+
+<br>
+<br>
+<br>
 
 <center>
 
@@ -71,6 +86,10 @@ Let's see how VS Code's graphical representation of the Git history changed when
 ---
 
 ## Deleting branches (JupyterLab)
+
+<br>
+<br>
+<br>
 
 <center>
 
@@ -87,6 +106,9 @@ You can only delete a branch when you are not working on it (it is not highlight
 
 ## Deleting branches (terminal)
 
+<br>
+<br>
+<br>
 
 <center>
 

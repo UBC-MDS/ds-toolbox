@@ -12,6 +12,9 @@ In this slide deck we will learn more about how to collaborate effectively on Gi
 
 ## Let's work together!
 
+<br>
+<br>
+<br>
 
 <center>
 
@@ -90,6 +93,10 @@ As mentioned earlier, GitHub allows you to control who has access to your projec
 
 ## Giving collaborators access to your project
 
+<br>
+<br>
+<br>
+
 <center>
 
 <img src='/module5/add-collab-2.png' width="600px" alt="404 image" />
@@ -124,6 +131,10 @@ To add a branch protection rule you can go to **Settings > Code and Automation (
 
 ## Branch protection rules
 
+<br>
+<br>
+<br>
+
 <center>
 
 <img src='/module5/PR-reviews-required-updated.png' width="600px" alt="404 image" />
@@ -139,6 +150,10 @@ Notice that you can create protect branches different to `main` but we will not 
 ---
 
 ## Branch protection rules
+
+<br>
+<br>
+<br>
 
 <center>
 
@@ -162,6 +177,11 @@ We are ready to start collaborating!
 ---
 
 ## How pull requests look like after you protect the branch
+
+<br>
+<br>
+<br>
+
 <center>
 
 <img src='/module5/PR-aprove.png' width="600px" alt="404 image" />
