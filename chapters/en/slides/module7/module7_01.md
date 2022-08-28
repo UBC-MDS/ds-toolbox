@@ -5,7 +5,8 @@ type: slides
 # Jupyter notebooks
 
 Notes:
-In this slide deck we will go in depth into how to to work with Jupyter notebooks.
+
+In this slide deck, we will go in depth into how to to work with Jupyter notebooks.
 
 ---
 
@@ -37,11 +38,13 @@ Notes:
 
 Notes:
 
-You can create new notebooks in three ways.
+You can create new notebooks in three ways:
 
-The first one is to click the blue `+` button on the top left corner of the file explorer tab, which opens a new Launcher. You can then click on any one of the available environment kernels to create a new notebook with that kernel. This is marked with the left-hand side arrow in this slide.
+The first way is to click the blue `+` button on the top left corner of the file explorer tab, which opens a new Launcher.
 
-The second way is to click the icon in the main working area for the conda environment your want to launch, which is marked by the right-most arrow on this slide.
+You can then click on any one of the available environment kernels to create a new notebook with that kernel. This is marked with the red arrow on the left side of this slide.
+
+The second way is to click the icon in the main working area for the conda environment you want to launch, which is marked by the red arrow on the right side of this slide.
 
 ---
 
@@ -67,13 +70,14 @@ Notes:
 
 - A cell is a block of characters, that can be interpreted in different ways depending on its type.
 
-- A in a notebook can be one of these three types:
+- Each cell in a notebook can be one of these three types:
+
   - Code
-      - Execution of code in multiple languages.
+    - Allows the execution of code in multiple languages.
   - Markdown
-      - Formatted text, we will look more at Markdown in module 7.
+    - Contains formatted text. We will look more at Markdown in Module 7.
   - Raw
-      - Everything appears as is, no formatting or code execution.
+    - In a raw cell, everything appears as is, without any formatting or code execution.
 
 ---
 
@@ -92,15 +96,17 @@ Whenever you interact with a cell inside a Jupyter notebook, it becomes **activa
 An **active** cell in a Jupyter notebook can be in either **command** or **edit** mode:
 
 - **Command** mode:
+
   - You don't have a cursor inside the cell
   - The cell has a **grey** background
-  - Hit `Esc` or click outside a cell to switch from **edit** to **command** mode
+  - You can hit `Esc` or click outside a cell to switch from **edit** to **command** mode
 
 - **Edit** mode:
+
   - You have a cursor inside the cell
   - You can start typing or edit the code or text inside a cell
   - The cell has a **white** background
-  - Hit `Enter` or click in a cell to switch from **command** to **edit** mode
+  - You can hit `Enter` or click in a cell to switch from **command** to **edit** mode
 
 ---
 
@@ -110,7 +116,8 @@ An **active** cell in a Jupyter notebook can be in either **command** or **edit*
 
 Notes:
 
-You can also find out whether you're in command or edit mode by looking at the status bar when you have an active cell.
+You can also find out whether you're in command or edit mode
+by looking at the status bar when you have an active cell.
 
 ---
 
@@ -137,7 +144,7 @@ Notes:
 
 - Code cells are executed using a notebook's kernel
   - When you run a code cell, the code inside the cell is sent to the kernel
-  - The kernel executes the code. If there are any outputs, these are sent back to the Jupyter notebook, and we'd see them as the cell's output.
+  - The kernel executes the code. If there are any outputs, those will be sent back to the Jupyter notebook, and we'll see them as the cell's output.
 
 - You may run code cells in any order.
   - Each time you run a code cell, the number to the left of the code cell (e.g. `[8]:`) is incremented by 1. This helps you keep track of the order of executions.
@@ -162,14 +169,14 @@ To run a code cell:
 
 - First make sure the cell is selected
   - You can click anywhere in a code cell to select and activate it
-  - An active code cell is indicated a blue vertical bar on its left
+  - An active code cell is indicated by a blue vertical bar on its left
 
 - Then, either click the little play button in the notebook toolbar, or
 
 - Hit `Shift + Enter` on your keyboard
   - You can also use `Ctrl + Enter` to run a cell. The difference is that `Shift + Enter` runs the cell, then advances to the next cell, whereas with `Ctrl + Enter` the focus remains on the currently selected cell.
 
-Note how `[ ]:` changes to `[1]:` when you run the cell. Anytime you run this cell, this execution count is incremented by 1.
+Note how `[ ]:` next to the cell changes to `[1]:` when you run the cell. Anytime you run this cell, this execution count is incremented by 1.
 
 ---
 
@@ -216,7 +223,7 @@ Notes:
 
 There are times that you want to quickly experiment with short pieces of code, but you don't necessarily want the code you write to be part of your Jupyter notebook.
 
-Using an interactive **console** is a great idea in such a situation. The nice thing about it is that you can open a console that's connected to your notebooks kernel, so it will be aware of all variables, arrays, functions, etc. that you have defined in your notebook.
+Using an interactive **console** is a great idea in such a situation. The nice thing about it is that you can open a console that's connected to your notebook's kernel, so it will be aware of all variables, arrays, functions, etc. that you have defined in your notebook.
 
 In order to open a console that's connected to your notebook's kernel, right-click on your notebook's name in the tab bar, and choose "New Console for Notebook".
 
@@ -304,7 +311,7 @@ This can be super useful when working with a package that you are not very famil
 
 Notes:
 
-In Jupyter notebooks, it is possible (and common) to execute code cells out of order. If not careful, this can lead to to reproducibility issues.
+In Jupyter notebooks, it is possible (and common) to execute code cells out of order. If not careful, this can lead to reproducibility issues.
 
 Once you are done with your analysis, it's a good idea to take the following steps to ensure that your results and outputs are reproducible:
 
@@ -316,7 +323,7 @@ Once you are done with your analysis, it's a good idea to take the following ste
   - This way, you would be sure that your out-of-order executions do not affect the reproducibility of your code.
   - To run all cells from the top, go to the "Run" menu and choose "Run All Cells"
 
-You can do the above two steps; namely, restarting and running all cells, in one go: just click the dedicated button in your notebook's toolbar as shown in the screenshot here on the right.
+You can do the above two steps; namely, restarting and running all cells, all in one go: just click the dedicated button in your notebook's toolbar as shown in the screenshot here on the right.
 
 It's not a bad idea to explore other similar options in the "Kernel" and "Run" menus. For example, it's also possible and sometimes helpful to run a notebook from the top, but up to a selected cell, or run a notebook beginning from a selected cell.
 
@@ -330,7 +337,7 @@ It's not a bad idea to explore other similar options in the "Kernel" and "Run" m
 
 Notes:
 
-Whenever you happen to forget the where a particular command is, you can take advantage of the Command Palette in JupyterLab.
+Whenever you happen to forget where a particular command is, you can take advantage of the Command Palette in JupyterLab.
 
 To open the Command Palette, go to the "View" menu and choose "Activate Command Palette", or use the corresponding keyboard shortcut.
 

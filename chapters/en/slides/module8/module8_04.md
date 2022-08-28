@@ -6,7 +6,9 @@ type: slides
 
 Notes:
 
-In the previous section, we covered adding essential elements such as figures and math equations to our book. Now is the time to learn how to benefit from more advanced features provided by Jupyter Book, so as to have more flexibility in presenting the content.
+In the previous section, we covered adding essential elements such as figures and math equations to our book.
+
+Now is the time to learn how to benefit from more advanced features provided by Jupyter Book, so as to have more flexibility in presenting the content.
 
 ---
 
@@ -27,9 +29,10 @@ Rendered:
 <img style="border:1px solid black;" src="/module8/margin.png" width="800"></img>
 
 Notes:
+
 Sometimes it is helpful to add notes to the margin of a page. This is similar to _footnotes_ in a conventional book.
 
-In Jupyter Book, you can do that using `{margin}` blocks in a markdown file:
+In Jupyter Book, you can do that using blocks denoted by `{margin}` in a markdown file:
 
 ~~~
 ```{margin} Did you know?
@@ -39,6 +42,7 @@ Jupiter is 11.0x larger than Earth!
 
 Note that this syntax is similar to what we used for creating a figure:
 <code>```{figure}</code>.
+
 These types of blocks are called *directives* in Jupyter Book
 and we will see several different types on the following few slides.
 
@@ -78,7 +82,7 @@ I'm a note!
 ```
 ~~~
 
-`{note}` can be replaced with `{warning}`, `{tip}`, `{danger}` and so on. This slide how these admonitions will show up in the output.
+`{note}` can be replaced with `{warning}`, `{tip}`, `{danger}` and so on. This slide shows how these admonitions will show up in the output.
 
 Another way of writing the admonition syntax is to use `:::` instead of <code>```</code>:
 
@@ -89,9 +93,10 @@ I'm a note!
 ~~~
 
 This does not change anything for how Jupyter Book interprets the content,
-but ensures that it is formatted as markdown instead of as code
+but ensures that it is formatted as Markdown instead of as code
 when viewing the file in JupyterLab,
 which can make it easier for the eye when editing.
+
 You can [read more about these "Markdown-friendly" directives
 in the documentation](https://jupyterbook.org/en/stable/content/content-blocks.html#markdown-friendly-directives-with).
 
@@ -153,6 +158,7 @@ Dropdowns admonitions combine admonitions and dropdown:
 <img src="/module8/dropdown-admonitions.png" width="750"></img>
 
 Notes:
+
 You can also hide the body of your admonition blocks so that users must click a button to reveal their content.
 
 This is helpful if you’d like to include some text that isn't immediately visible to the user.
@@ -169,7 +175,6 @@ You can see an example in this slide.
 
 We need to edit the cell's **metadata** to tell Jupyter Book to show/hide the code or its output.
 
-
 Notes:
 
 Sometimes we may not want to show the content of a code cell, or its output.
@@ -178,20 +183,21 @@ For example, suppose that we have the code cell in this slide.
 It generates a plot that is important to our readers,
 but maybe we don't need to show them all the code.
 
-How can we hide the input code cell
+So how can we hide the input code cell
 while still showing the output visualization?
 
 We saw in the Jupyter notebook slide deck
 that we could export a notebook
-without code cells via using the `!nbconvert` shell command
-since there was not build in functionality for this.
+without its code cells using the `nbconvert` shell command,
+since there was no built-in interface element in JupyterLab to achieve this.
 
 For Jupyter Book,
-hiding code input is such a common use case,
-that there is functionality built-in to hide it.
-We can activate this function and hide the input of a cell
+the option to hide code input is built-in
+since it's a very common use case.
+
+We can hide the input of a cell
 by editing the cell's **metadata**
-and tell Jupyter Book whether we want to hide the code or its input (or output).
+to tell Jupyter Book whether we want to hide the code input or its output.
 
 ---
 
@@ -217,6 +223,7 @@ To edit a code cell's metadata in JupyterLab:
 <img src="/module8/hide-input.png" width="500"></img>
 
 Notes:
+
 For hiding the code itself, add a "Cell Tag" called `hide-input` to the cell via the Jupyter Lab interface.
 The easier way to do this is to click the button "Add Tag +"
 in the side panel,
@@ -236,10 +243,11 @@ but you will have to be careful getting the brackets correct.
 <img src="/module8/hidden-code.png" width="800"></img>
 
 Notes:
+
 Now if you rebuild your book,
 the code cell will show up like the screenshot in this slide.
 
-The code itself is hidden, while the output is visible.
+You can see that the code itself is hidden, while the output is visible.
 If the reader clicks the "Click to show" button,
 they can see the code as well.
 
@@ -250,6 +258,7 @@ they can see the code as well.
 <img src="/module8/hidden-output.png" width="800"></img>
 
 Notes:
+
 Similar to the last slide,
 you can hide a code cell's output
 by adding `"hide-output"` to the "Cell Metadata" in JupyterLab.
@@ -268,21 +277,22 @@ Using the `glue` prefix, you can:
 <img style="border:1px solid black;" src="/module8/glue.png" width="600"></img>
 
 Notes:
-Sometimes we might want to access the value of a variable
-in the text when we are writing.
+
+Sometimes we might want to access the value of a variable within the text that we're writing.
+
 This is useful since the value in the text
-will be updated each time the notebook is run,
+will be updated each time the notebook is executed,
 instead of having to change it manually
 if something changes in our data or analysis code.
 
-Jupyter Book allows us to do this via the `glue` prefix,
-which is able to "glue" both text, numbers, and even figures
+Jupyter Book allows us to do this using the `glue` prefix,
+which makes it possible to "glue" numbers and even figures
 into our text.
 
 You can see an example of gluing a numerical variable in this slide.
 If you are gluing a string/text variable
-and you want to avoid that the variable value is surrounded by quotation marks in the text,
-you can use pass the `text` option to the `glue` prefix like so `{glue:text}`.
+and you want to avoid the variable value being surrounded by quotation marks in the text,
+you can pass the `text` option to the `glue` prefix like this: `{glue:text}`.
 
 ---
 
@@ -296,13 +306,13 @@ Notes:
 
 Previously, we have learned how to give **auto-numbered** and **referenceable** captions to figures that contain image files.
 However, we've never discussed how we can do the same for figures generated right in notebook.
-Gluing can be used for giving captions to figures generated from code!
+Good news is, gluing can be used for giving captions to figures generated from code as well.
 
-Here I'm first creating an `altair` figure and assign it to a variable called `fig`.
+Here I first create an `altair` figure and then I assign it to a variable called `fig`.
 
-Then I glue the name `altair_fig` to `fig`, so I can later use it elsewhere in my Jupyter Book.
+Then I glue the name `altair_fig` to `fig`, so I can use it later elsewhere in my Jupyter Book.
 
-After doing this, Jupyter Book knows about that figure object. So I can "paste" the figure object anywhere I want. Here, I use the functionality to give an auto-numbered and referenceable caption to my figure.
+After doing this, Jupyter Book knows about that figure object, so I can "paste" the object anywhere I want. Here, I've used this functionality to give an auto-numbered and referenceable caption to my figure.
 
 ---
 
@@ -314,11 +324,11 @@ Notes:
 
 And here is what this Jupyter notebook looks like when **rendered by Jupyter Book**:
 
-Did you note that:
+Note that:
 
-- I've **hidden** the piece of code that generates the `altair` figure? I did that using **cell metadata tags** that I discussed in the earlier slides!
+- I've **hidden** the piece of code that generates the `altair` figure. I did this using **cell metadata tags** that we discussed in the earlier slides.
 
-- I the HTML version of your built book, try using your mouse to drag and zoom in/out on the figure. It's **interactive**!
+- Moreover, in the HTML version of your built book, try using your mouse to drag and zoom in/out on the figure. You'll see that the figure is **interactive**, just like in a Jupyter notebook!
 
 ---
 

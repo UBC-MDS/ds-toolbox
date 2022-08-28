@@ -5,6 +5,7 @@ type: slides
 # Add your own content:<br>Essentials
 
 Notes:
+
 Now that we know what a Jupyter Book is,
 let's go ahead and practice adding basic content to our sample book!
 
@@ -24,6 +25,7 @@ Markdown syntax specific to Jupyter Book:
 - `[link text](link-target)`
 
 Notes:
+
 In the folder with all of your sample book contents, create a new file called `my-markdown-file.md`. Put the following content in it:
 
 <img src="/module8/mymarkdownfile.png" width="700"></img>
@@ -36,7 +38,7 @@ We’ve added two new pieces of markdown syntax, both of them are related to cro
 
 When you build your book, you’ll see how these links resolve in the output.
 
-You can find out more about cross-referencing in Jupyter Book here: [https://jupyterbook.org/en/stable/content/references.html](https://jupyterbook.org/en/stable/content/references.html).
+You can find out more about cross-referencing in Jupyter Book's documentation linked here: [https://jupyterbook.org/en/stable/content/references.html](https://jupyterbook.org/en/stable/content/references.html).
 
 ---
 
@@ -77,6 +79,7 @@ jupyter-book build my-book/
 ```
 
 Notes:
+
 In order to see the changes you've made, don't forget to rebuild your book.
 
 <br>
@@ -93,8 +96,7 @@ and then run the following to rebuild the book:
 jupyter-book build my-book/
 ```
 
-Your new page will now show up in the rebuilt book,
-when you refresh your browser page.
+Your new page will now show up in the rebuilt book when you refresh your browser page.
 
 ---
 
@@ -118,7 +120,7 @@ You can include figures in your Jupyter Book using the following syntax:
 
 Notes:
 
-You can include figures in your Jupyter Book using the following syntax:
+You can include figures in your Jupyter Book using the syntax that you can see on the slide:
 
 ~~~
  ```{figure} https://solarsystem.nasa.gov/system/resources/detail_files/2486_stsci-h-p1936a_1800.jpg
@@ -131,7 +133,7 @@ You can include figures in your Jupyter Book using the following syntax:
 ~~~
 
 The numbering of figures is automatic,
-so if you insert new ones in before some of the existing ones,
+so if you insert new ones before some of the existing figures,
 Jupyter Book will renumber the existing ones for you!
 
 The reason we have `name: jupiter-figure`
@@ -145,13 +147,14 @@ as we will show you in the next slide.
 <img src="/module8/md-with-figure.png" width="650"></img>
 
 Notes:
-Cross-referencing a figure means linking/referencing it
+
+Cross-referencing a figure means linking/referencing the figure
 from somewhere else in the document.
-In order to reference a named figure,
-we can use {numref}`jupiter-figure` in the text.
+Here for example, in order to reference the figure that we've named `jupiter-figure`,
+we can use <code>{numref}\`jupiter-figure\`</code> in the text.
 
 After adding a figure and referencing it in the main text,
-our markdown file (`my-markdown-file.md`) looks like in this slide.
+our markdown file (i.e., `my-markdown-file.md`) looks like in this slide.
 The rendered version is shown on the next page.
 
 ---
@@ -204,7 +207,9 @@ Jupyter Book uses **MathJax** for typesetting math which allows you to add LaTeX
 - math equation blocks, and
 - numbered equations.
 
-1. Inline math can be defined using `$` as follows:
+<br>
+
+1. Inline math can be defined by enclosing expressions in `$`s as you can see on the slide:
 
 ```
 Jupiter has a mass of:  $m_{j} \approx 1.9 \times 10^{27} \: \text{kg}$
@@ -247,8 +252,7 @@ Rendered:
 
 Notes:
 
-1. Math blocks are used for more complex expressions
-   and can be defined by enclosing the math in a pair of dollar signs, i.e. `$$`:
+2. Math blocks are used for more complex expressions and can be defined by enclosing the math in a pair of dollar signs, i.e. `$$`:
 
 ```
 $$
@@ -256,7 +260,7 @@ $$
 $$
 ```
 
-Which will show up in the rendered book like the top-most screen host in this slide.
+which will show up in the rendered book like the top-most screenshot in this slide.
 
 <br>
 
@@ -304,6 +308,7 @@ Equation {eq}`eq_label` is an example of a named equation.
 ~~~
 
 Notes:
+
 If you have created an equation with a label, you can link to it from within your text and across pages.
 
 You can refer to the equation using the label that you’ve provided by using `` {eq}`eq_label` ``, just like ``{numref}`jupiter-figure` `` that we used with images.

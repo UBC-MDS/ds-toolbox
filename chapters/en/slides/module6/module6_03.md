@@ -5,7 +5,8 @@ type: slides
 # Project Organization
 
 Note:
-In this slide deck we will learn more about how we can effectively organize our projects.
+
+In this slide deck, we will learn more about how we can effectively organize our projects.
 
 ---
 
@@ -13,23 +14,34 @@ In this slide deck we will learn more about how we can effectively organize our 
 
 ## The importance of project organization
 
-- In a data science project, it's easy to focus only on the final product
-- The code and data that produce the end result are as important
-- It's hard to change your mind once you're halfway there, so **it's best to start with a standard project structure** from the very beginning
-
-<br>
-
 **Benefits of a standard project structure:**
 
 - Well-organized code is self documenting!
 - A new collaborator would immediately know where to look for specific things
 - Your future self would find it much easier to reproduce your own results
 
+<br>
+
+Therefore:
+
+- The code and data that produce the end result are as important as the final product.
+- It's hard to change your mind once you're halfway there, so **it's best to start with a standard project structure** from the very beginning.
+
 Note:
 
-In the first part of this module, we talked about how using certain file name conventions makes finding and processing relevant information easy.
+In the first part of this module, we talked about how using certain filename conventions makes finding and processing relevant information easier.
 
-When it comes to organizing an entire project, it's even more important to structure the files and folders in a logical, commonly accepted way.
+When it comes to organizing an entire project, it's even more important to structure files and folders in a logical and commonly accepted way.
+This is because there are several benefits to maintaining a standard project structure:
+
+- Well-organized code is self documenting!
+- A new collaborator would immediately know where to look for specific things
+- Your future self would find it much easier to reproduce your own results
+
+Therefore:
+
+- The code and data that produce the end result are as important as the final product
+- It's hard to change your mind once you're halfway there, so **it's best to start with a standard project structure** from the very beginning
 
 ---
 
@@ -70,10 +82,9 @@ Note that each category of files has its own special folder.
 When I look at this repo, I would immediately know where to look to find the data or where reports are kept, even if I haven never seen this project repo before.
 
 When most people agree on using more or less the same structure for organizing their projects, good things will happen.
+It will also be much easier for people to collaborate with each other, and for yourself to manage your project as the size and complexity of the project grows over time.
 
-It will be much easier for people to collaborate with each other. It will also be easier for yourself to manage your project as it grows in complexity.
-
-Let's have closer looks at each of these directories in the next slide!
+Let's have a closer looks at each of these directories in the next slide.
 
 ---
 
@@ -91,11 +102,10 @@ Let's have closer looks at each of these directories in the next slide!
 
 Note:
 
-Here, I just want you to tell you about the role of each file and folder in an example of a standard project repo.
+Here, I just want to tell you about the role of each file and folder in an example of a standard project repo.
 
 Note that the naming of particular folders might be slightly different between different projects.
-
-For example, one might choose to call their code-containing folder `code` or even `script`. But it is still easy to see that such a folder hosts programming codes for the project, and not data or reports.
+For example, one might choose to call their code-containing folder just `code` or `script`, instead of `src`. But it's still fairly easy to see that such a folder hosts programming codes in the project folder, and not data or reports.
 
 ---
 
