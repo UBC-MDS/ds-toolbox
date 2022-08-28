@@ -140,7 +140,7 @@ Starting with a `!` tells git to not ignore a certain directory.
 
 Notes:
 The `.gitignore` file accepts wildcards for matching pattern names,
-similar to what we learned about for the shell in module 2.
+similar to what we learned about for the shell in Module 2.
 So say that we e.g. have a Git repository
 where a lot of log files files are created
 and they all end in `.log`.

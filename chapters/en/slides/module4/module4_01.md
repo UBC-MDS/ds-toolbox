@@ -112,10 +112,10 @@ Adding the options flag `--oneline` to the command `git log` will provide you wi
 This is often more convenient as it is easier to digest and get an overview of the project history,
 but it can be tedious to type out each time.
 Here it would be good to create a shell alias,
-which we learned about in module 2!
+which we learned about in Module 2!
 Executing `alias gl="git log --oneline"`
 means that we can simply type `gl` each time we want to view the git log output.
-Refer to module 2 for more details around aliases and how to make them persist through reboots.
+Refer to Module 2 for more details around aliases and how to make them persist through reboots.
 
 The terminal allows greater flexibility when it comes to displaying the history of the project.
 If you would like to know what other possibilities you have for using the `git log` command, you can access the help by typing the command `git log --help` (any operating system) or `man git log` (MacOS and Linux).
