@@ -6,7 +6,7 @@ type: slides
 # How to use JupyterLab
 
 Notes:
-You have already been working with JupyterLab and Jupyter Notebooks in the Programming for Data Science course. In this module we will go through these tools at a basic level as a reminder to prepare you for the upcoming chapters.
+You have already been working with JupyterLab and Jupyter Notebooks in the [Programming in Python for Data Science](https://prog-learn.mds.ubc.ca/) course. In this module we will go through these tools at a basic level as a reminder to prepare you for the upcoming modules.
 
 ---
 
