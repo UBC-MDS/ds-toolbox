@@ -42,7 +42,7 @@ you will not be able to push any more changes yourself
 
 <center>
 
-<img src='/module3/vc-pull-jupyter.png' width="600px" alt="404 image"/>
+<img src='/module3/vc-pulling-contributor.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -72,7 +72,7 @@ to our local Git repository.
 
 <center>
 
-<img src='/module3/vc-pull-jupyter-1.png' width="600px" alt="404 image"/>
+<img src='/module3/vc-pull-jupyter.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -91,15 +91,34 @@ by clicking on the cloud icon with the down arrow in JupyterLab.
 
 ---
 
-<br>
-<br>
-<br>
 
 ## Pulling changes from GitHub (JupyterLab IDE)
 
+<br>
+<br>
+<br>
+
 <center>
 
-<img src='/module3/vc-pull-jupyter-4.png' width="600px" alt="404 image"/>
+<img src='/module3/vc-pull-latest.png' width="600px" alt="404 image"/>
+
+</center>
+
+Notes:
+
+In some cases, JupyterLab can warn you about continue modyfing your files locally when there are changes in the branch you are working. It is better to always keep the files updated with the remote and pull the changes!
+
+---
+
+## Pulling changes from GitHub (JupyterLab IDE)
+
+<br>
+<br>
+<br>
+
+<center>
+
+<img src='/module3/vc-pull-reopen.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -110,8 +129,7 @@ Notes:
 **Step 2. Refresh any open files that had changes pulled down.**
 
 Once the files are successfully pulled from GitHub,
-you need to click “Dismiss” on the dialog box before you keep working.
-It is also important that you refresh or reopen any files
+it is important that you refresh or reopen any files
 that had changes pulled down from GitHub.
 If you don't,
 JupyterLab will keep displaying the old version of the file
@@ -132,7 +150,7 @@ after pulling and refreshing.
 
 <center>
 
-<img src='/module3/vc-pull-jupyter-4.png' width="600px" alt="404 image" />
+<img src='/module3/vc-pull-history.png' width="600px" alt="404 image" />
 
 </center>
 
@@ -157,7 +175,7 @@ before you start editing any files in your local repository.
 
 <center>
 
-<img src='/module3/vc-pull-jl-terminal.png' width="600px" alt="404 image" />
+<img src='/module3/vc-pull-terminal.png' width="600px" alt="404 image" />
 
 </center>
 
