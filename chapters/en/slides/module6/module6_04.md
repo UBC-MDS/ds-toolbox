@@ -253,7 +253,7 @@ This time, the environment file will look like this:
 
 Notes:
 
-Ssometimes package dependencies might differ between operating systems, so exporting an environment file with exact package specifications might not work for someone on a different operating system.
+Sometimes package dependencies might differ between operating systems, so exporting an environment file with exact package specifications might not work for someone on a different operating system.
 To remedy this, you can append the `--from-history` flag, which looks at the history of the packages you explicitly told Conda to install. This tells Conda to inclue only explicitly installed packages in the export.
 
 The required dependencies will then be handled in an OS-specific manner during installation, which guarantees that they will work across different OSes.  The `environment.yaml` file will be much shorter as a result.

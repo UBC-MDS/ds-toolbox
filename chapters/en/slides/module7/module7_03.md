@@ -175,7 +175,6 @@ It's worth noting that the WebPDF option does not support rendering images that 
 <img style="border:1px solid black;" src="/module7/md-export.png" width="750"></img>
 
 Notes:
-
 We've learned quite a bit about the Markdown format so far in this module. The Markdown option converts your notebook to a Markdown file that only contains plain text, and can be opened with any text editor. In order to see the rendered Markdown file, however, you need to open it using JupyterLab or another IDE like VS Code.
 
 In the screenshot on this slide, you can see what an example notebook would look like when converted to Markdown.

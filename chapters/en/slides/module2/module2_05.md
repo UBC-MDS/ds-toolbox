@@ -6,8 +6,8 @@ type: slides
 # Working with Files and Directories
 
 Notes:
-We now know how to explore files and directories, but how do we create and move them around? 
-That's what we will find out in this chapter.
+We now know how to explore files and directories, but how do we create and move them around?
+That's what we will find out in this module.
 
 ---
 
@@ -32,7 +32,7 @@ For this we first use the `~` home  directory shortcut,
 and then the `mkdir` command
 (MaKe DIRectory).
 
-We will talk more about useful naming conventions in module 6.
+We will talk more about useful naming conventions in Module 6.
 For now it is enough if you remember these three guidelines.
 
 1. Don't use spaces
