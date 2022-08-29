@@ -5,19 +5,22 @@ title: 'module4_05'
 
 # Handling merge conflicts
 
+Notes:
 In this slide deck we will see when merge conflicts arise and how to solve them.
 
 ---
 
 ## When does a merge conflict arise?
 
-This error message indicates that there are changes on the remote repository that you do not have in your local repository.
+
 
 <center>
 
-<img src='/module4/vc-merge-conflict.png' width="60%" alt="404 image"/>
+<img src='/module4/vc-merge-conflict.png' width="600px" alt="404 image"/>
 
 </center>
+
+This error message indicates that there are changes on the remote repository that you do not have in your local repository.
 
 Notes:
 As we mentioned a few slide decks ago, 
@@ -29,13 +32,15 @@ If this occurs then you will see the error message in this slide when you try to
 
 ## When does a merge conflict arise?
 
-This error message indicates you and your collaborators made changes to the **same line** of the **same file** and that Git will not be able to automatically merge the changes. 
+
 
 <center>
 
-<img src='/module4/vc-merge-conflict-2.png' width="60%" alt="404 image"/>
+<img src='/module4/vc-merge-conflict-2.png' width="600px" alt="404 image"/>
 
 </center>
+
+This error message indicates you and your collaborators made changes to the **same line** of the **same file** and that Git will not be able to automatically merge the changes. 
 
 Notes:
 However, if you and your collaborators made changes to the same line of the same file, Git will not be able to automatically merge the changes since it does not know whether to keep your version of the line(s), your collaborator's version of the line(s), or some blend of the two. When this happens, Git will tell you that you have a "merge conflict" in certain file(s) and ask you to tell it what to do explicitly.
@@ -44,11 +49,13 @@ However, if you and your collaborators made changes to the same line of the same
 
 ## Handling merge conflicts: JupyterLab
 
-Error message that indicates you and your collaborators made changes to the same line of the same file and that Git will not be able to automatically merge the changes. 
+<br>
+<br>
+<br>
 
 <center>
 
-<img src='/module4/vc-merge-conflict-3.png' width="60%" alt="404 image"/>
+<img src='/module4/vc-merge-conflict-3.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -62,11 +69,13 @@ To resolve a merge conflict, you need to open the indicated file in a plain text
 
 ## Handling merge conflicts: JupyterLab
 
-How to open a Jupyter notebook as a plain text file view in JupyterLab:
+<br>
+<br>
+<br>
 
 <center>
 
-<img src='/module4/vc-merge-conflict-4.png' width="60%" alt="404 image"/>
+<img src='/module4/vc-merge-conflict-4.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -77,11 +86,13 @@ The beginning of the merge conflict is preceded by `<<<<<<<` and the end of the 
 
 ## Handling merge conflicts: JupyterLab
 
-Here is the file where a merge conflict has been resolved:
+<br>
+<br>
+<br>
 
 <center>
 
-<img src='/module4/vc-merge-conflict-5.png' width="60%" alt="404 image"/>
+<img src='/module4/vc-merge-conflict-5.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -99,9 +110,13 @@ After you made your changes, the file must first be saved, then added to the sta
 
 ## Handling merge conflicts: Terminal
 
+<br>
+<br>
+<br>
+
 <center>
 
-<img src='/module4/vc-merge-conflict-t.png' width="70%" alt="404 image"/>
+<img src='/module4/vc-merge-conflict-t.png' width="600px" alt="404 image"/>
 
 </center>
 
