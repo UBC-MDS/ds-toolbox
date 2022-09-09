@@ -5,22 +5,26 @@ title: 'module4_05'
 
 # Handling merge conflicts
 
+Notes:
 In this slide deck we will see when merge conflicts arise and how to solve them.
 
 ---
 
 ## When does a merge conflict arise?
 
-This error message indicates that there are changes on the remote repository that you do not have in your local repository.
+
 
 <center>
 
-<img src='/module4/vc-merge-conflict.png' width="60%" alt="404 image"/>
+<img src='/module4/vc-merge-conflict.png' width="600px" alt="404 image"/>
 
 </center>
 
+This error message indicates that there are changes on the remote repository that you do not have in your local repository.
+
 Notes:
-As we mentioned a few slide decks ago, it is good practice to pull any changes at the start of every work session before you start working on your local copy. If you forget to do this you might end up in a situation where your collaborators have pushed some changes to the project to GitHub that you don't have locally.
+As we mentioned a few slide decks ago, 
+it is good practice to pull any changes at the start of every work session before you start working on your local copy. If you forget to do this you might end up in a situation where your collaborators have pushed some changes to the project to GitHub that you don't have locally.
 
 If this occurs then you will see the error message in this slide when you try to push your local changes to GitHub, telling you that the remote contains work that you don't have locally. The solution to this is usually simple: you pull down the remote changes to your computer and let Git automatically merge the changes for you, which often works well even if you and your collaborators were working on different parts of the same file!
 
@@ -28,13 +32,15 @@ If this occurs then you will see the error message in this slide when you try to
 
 ## When does a merge conflict arise?
 
-This error message indicates you and your collaborators made changes to the **same line** of the **same file** and that Git will not be able to automatically merge the changes. 
+
 
 <center>
 
-<img src='/module4/vc-merge-conflict-2.png' width="60%" alt="404 image"/>
+<img src='/module4/vc-merge-conflict-2.png' width="600px" alt="404 image"/>
 
 </center>
+
+This error message indicates you and your collaborators made changes to the **same line** of the **same file** and that Git will not be able to automatically merge the changes. 
 
 Notes:
 However, if you and your collaborators made changes to the same line of the same file, Git will not be able to automatically merge the changes since it does not know whether to keep your version of the line(s), your collaborator's version of the line(s), or some blend of the two. When this happens, Git will tell you that you have a "merge conflict" in certain file(s) and ask you to tell it what to do explicitly.
@@ -43,11 +49,13 @@ However, if you and your collaborators made changes to the same line of the same
 
 ## Handling merge conflicts: JupyterLab
 
-Error message that indicates you and your collaborators made changes to the same line of the same file and that Git will not be able to automatically merge the changes. 
+<br>
+<br>
+<br>
 
 <center>
 
-<img src='/module4/vc-merge-conflict-3.png' width="60%" alt="404 image"/>
+<img src='/module4/vc-merge-conflict-3.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -61,11 +69,13 @@ To resolve a merge conflict, you need to open the indicated file in a plain text
 
 ## Handling merge conflicts: JupyterLab
 
-How to open a Jupyter notebook as a plain text file view in JupyterLab:
+<br>
+<br>
+<br>
 
 <center>
 
-<img src='/module4/vc-merge-conflict-4.png' width="60%" alt="404 image"/>
+<img src='/module4/vc-merge-conflict-4.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -76,11 +86,13 @@ The beginning of the merge conflict is preceded by `<<<<<<<` and the end of the 
 
 ## Handling merge conflicts: JupyterLab
 
-Here is the file where a merge conflict has been resolved:
+<br>
+<br>
+<br>
 
 <center>
 
-<img src='/module4/vc-merge-conflict-5.png' width="60%" alt="404 image"/>
+<img src='/module4/vc-merge-conflict-5.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -98,9 +110,13 @@ After you made your changes, the file must first be saved, then added to the sta
 
 ## Handling merge conflicts: Terminal
 
+<br>
+<br>
+<br>
+
 <center>
 
-<img src='/module4/vc-merge-conflict-t.png' width="70%" alt="404 image"/>
+<img src='/module4/vc-merge-conflict-t.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -141,7 +157,13 @@ But what if you have just started to make changes to a file when you realize tha
 
 
 Notes:
-To solve this error in the previous slide, we can use a command called `git stash`, which removes your local changes from the working area and saves them in another location (you can think of this as a secrete pocket which Git does not care about when pulling from the remote repo, and from which you can take out the changes again when you need them). You can then do `git pull`, and follow up with a `git stash apply` to bring your changes back from the stash to the working area, and then carry on working.
+To solve this error in the previous slide, 
+we can use a command called `git stash`, 
+which removes your local changes 
+from the working area and 
+saves them in another location 
+(you can think of this as a secrete pocket
+ which Git does not care about when pulling from the remote repo, and from which you can take out the changes again when you need them). You can then do `git pull`, and follow up with a `git stash apply` to bring your changes back from the stash to the working area, and then carry on working.
 
 This workflow can save you from running into merge conflicts, as long as you have not already made modifications to the same lines as you are pulling down. If you have already modified the same file that was updated remotely, you will still run into a merge conflict when you do `git stash pop`. Stashing is also great when you are working on one feature but realize that you should actually work on another unrelated feature first, you can stash your existing work (instead of manually saving it elsewhere) and finish working on the most urgent feature first.
 

@@ -41,9 +41,13 @@ If we would have worked in a team of people, it would have been good practice to
 
 ## Opening a pull request
 
+<br>
+<br>
+<br>
+
 <center>
 
-<img src='/module5/PR.png' width="100%" alt="404 image" />
+<img src='/module5/PR.png' width="600px" alt="404 image" />
 
 </center>
 
@@ -54,9 +58,13 @@ To create a pull request, you have to push the changes in your branch to GitHub.
 
 ## Opening a pull request
 
+<br>
+<br>
+<br>
+
 <center>
 
-<img src='/module5/PR-2.png' width="100%" alt="404 image" />
+<img src='/module5/PR-2.png' width="600px" alt="404 image" />
 
 </center>
 
@@ -74,9 +82,13 @@ In the body of the message you can also indicate if it is fixing a currently ope
 
 ## Opening a pull request
 
+<br>
+<br>
+<br>
+
 <center>
 
-<img src='' width="100%" alt="404 image" />
+<img src='' width="600px" alt="404 image" />
 
 </center>
 
@@ -90,9 +102,13 @@ Until the PR is ready for review, you can open it as a "Draft" by clicking the d
 
 ## Opening a pull request
 
+<br>
+<br>
+<br>
+
 <center>
 
-<img src='/module5/PR3.png' width="80%" alt="404 image" />
+<img src='/module5/PR3.png' width="600px" alt="404 image" />
 
 </center>
 
@@ -108,9 +124,13 @@ Another useful thing that you can do is to **label** each pull request, they can
 
 ## Pull request successfully merged and closed
 
+<br>
+<br>
+<br>
+
 <center>
 
-<img src='/module5/PR-delete-branch.png' width="80%" alt="404 image" />
+<img src='/module5/PR-delete-branch.png' width="600px" alt="404 image" />
 
 </center>
 

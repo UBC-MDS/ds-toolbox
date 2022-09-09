@@ -49,7 +49,7 @@ Let's learn step by step how to make a commit in your local repository
 
 <center>
 
-<img src='/module3/vc-local-github-notes.png' width="700px" alt="404 image" />
+<img src='/module3/vc-local-github-notes.png' width="600px" alt="404 image" />
 
 </center>
 
@@ -64,9 +64,13 @@ in the working directory of the local repository on your computer.
 
 ## Committing changes to a local repository 
 
+<br>
+<br>
+<br>
+
 <center>
 
-<img src='/module3/vc-staging-area.png' width="85%" alt="404 image" />
+<img src='/module3/vc-staging-area.png' width="800px" alt="404 image" />
 
 </center>
 
@@ -88,19 +92,51 @@ to our personal scratch notes for the project (`notes.txt`).
 
 ---
 
-## Specifying files to commit (Jupyter Lab IDE)
+## Open Git (JupyterLab IDE)
 
-Follow these steps in your computer to add files to the staging area:
+
 
 <center>
 
-<img src='/module3/vc-commits-jupyter-2.png' width="100%" alt="404 image" />
+<img src='/module3/vc-commits-jupyter.png' width="600px" alt="404 image"/>
+
+</center>
+
+Notes:
+
+🙌 **Practice**
+
+Let's commit the files that are in the staging area
+
+**Step 1. Click Jupyter Git extension icon (circled in red).**
+
+After you have cloned the remote repository from GitHub to create a local repository,
+you can get to work editing, creating, and deleting files.
+For example, suppose you created a new file named `eda.ipynb`
+that you would like to commit to the project history.
+To "add" this modified file to the staging area 
+(i.e., flag that this is a file with changes we would like to commit),
+click the Jupyter Git extension icon on the far left-hand side of JupyterLab.
+
+---
+
+## Specifying files to commit (Jupyter Lab IDE)
+
+<br>
+<br>
+<br>
+
+<center>
+
+<img src='/module3/vc-jupyter-add-staging-area.png' width="600px" alt="404 image" />
 
 </center>
 
 Notes:
 
 🙌  **Practice**
+
+**Step 1. Add the files you want to commit to the staging area.**
 
 To add changes we have made to a file to the staging area through the JupyterLab,
 we can use the small plus sign (`+`).
@@ -121,9 +157,13 @@ which why it showed up under the `Changed` heading in the side panel.
 
 ## Specifying files to commit (Jupyter Lab IDE)
 
+<br>
+<br>
+<br>
+
 <center>
 
-<img src='/module3/vc-commits-jupyter-3.png' width="100%" alt="404 image" />
+<img src='/module3/vc-jupyter-staged.png' width="600px" alt="404 image" />
 
 </center>
 
@@ -154,25 +194,29 @@ only add the files you directly create and edit.
 
 ## Specifying files to commit (Terminal)
 
-To check the status of the files using the terminal (`Untracked` / `Changed` / `Staged`) you can use the command `git status`.
+<br>
+<br>
+<br>
 
 <center>
 
-<img src='/module3/vc-staging-area-jl-terminal-status.png' width="100%" alt="404 image" />
+<img src='/module3/vc-jupyter-git-status-terminal.png' width="600px" alt="404 image" />
 
 </center>
+
+To check the status of the files using the terminal (`Untracked` / `Changed` / `Staged`) you can use the command `git status`.
 
 Notes:
 
 🙌  **Practice**
 
-If you would be using the terminal outside JupyterLab,
+If you would be using the terminal outside Jupyter Lab,
 you would not have access to the side panel
 that shows which files are  `Untracked`, `Changed`, and `Staged`.
 To check the status of all files in your repository using the terminal
 you can instead use the command `git status`.
 In this slide you can see how the different parts of the output from `git status`
-corresponds to the JupyterLab side panel.
+corresponds to the Jupyter Lab side panel.
 
 An advantage of using this command if you are working in the terminal
 is that it gives you information on which commands to use to continue your workflow.
@@ -194,7 +238,16 @@ If you want to add the files to the staging area using the terminal you can use 
 
 `git add <file-name(s)>`
 
-<img src='/module3/vc-staging-area-jl-terminal-add.png' width="100%" alt="404 image" />
+<br>
+<br>
+<br>
+
+<center>
+
+<img src='/module3/vc-staging-terminal.png' width="600px" alt="404 image" />
+
+</center>
+
 
 Notes:
 
