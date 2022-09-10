@@ -24,7 +24,7 @@ when working on our projects.
 
 <center>
 
-<img src='/module3/vc-final-comic.png' width="400px" alt="404 image"/>
+<img src='/module3/vc-final-comic.png' width="350px" alt="404 image"/>
 
 <center/>
 
