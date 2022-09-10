@@ -107,6 +107,8 @@ earlier versions of the project and to revert changes.
 
 ## Git and GitHub
 
+<center>
+
 **Git** - Version control system
 
 <img src='/module3/git-logo.png' width="150px" alt="404 image"/>
@@ -114,6 +116,8 @@ earlier versions of the project and to revert changes.
 **GitHub** - Repository hosting service
 
 <img src='/module3/github-logo.png' width="150px" alt="404 image"/>
+
+</center>
 
 Notes:
 To **version control** a project, you generally need two things:
@@ -141,9 +145,13 @@ because both are currently the most widely used platforms.
 
 ## When should you use a repository hosting service?
 
-**GitHub** - Repository hosting service
+<br>
+<br>
+<br>
 
 <center>
+
+**GitHub** - Repository hosting service
 
 <img src='/module3/github-logo.png' width="200px" alt="404 image"/>
 
