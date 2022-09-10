@@ -15,11 +15,11 @@ to the repository on our computer.
 
 <br>
 <br>
-<br>
+
 
 <center>
 
-<img src='/module3/vc-commit.png' width="700px" alt="404 image"/>
+<img src='/module3/vc-commit.png' width="800px" alt="404 image"/>
 
 </center>
 
@@ -74,7 +74,7 @@ increases the quality of your project and facilitates collaborative work.
 
 <center>
 
-<img src='/module3/vc-commit-jupyter.png' width="600px" alt="404 image"/>
+<img src='/module3/vc-commit-jupyter.png' width="700px" alt="404 image"/>
 
 </center>
 
@@ -109,7 +109,7 @@ and is added as author information to the commit message.
 
 <center>
 
-<img src='/module3/vc-commit-description-jupyter.png' width="600px" alt="404 image"/>
+<img src='/module3/vc-commit-description-jupyter.png' width="700px" alt="404 image"/>
 
 </center>
 
@@ -140,7 +140,7 @@ You can see a good example of an informative title and long description in this 
 
 <center>
 
-<img src='/module3/vc-commit-done-jupyterlab.png' width="600px" alt="404 image"/>
+<img src='/module3/vc-commit-done-jupyterlab.png' width="700px" alt="404 image"/>
 
 </center>
 
@@ -161,7 +161,7 @@ After recording a commit, the staging area should be empty and you will see that
 
 <center>
 
-<img src='/module3/vc-jupyter-history.png' width="600px" alt="404 image"/>
+<img src='/module3/vc-jupyter-history.png' width="700px" alt="404 image"/>
 
 </center>
 
@@ -183,7 +183,7 @@ You have now tracked this change and made it part of the history of your project
 
 <center>
 
-<img src="/module3/vc-commit-editor.png" width="600px" alt="404 image" >
+<img src="/module3/vc-commit-editor.png" width="700px" alt="404 image" >
 
 </center>
 

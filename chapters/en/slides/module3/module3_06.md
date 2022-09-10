@@ -11,7 +11,7 @@ title: 'module3_06'
 
 <center>
 
-<img src='/module3/vc-pull.png' width="600px" alt="404 image"/>
+<img src='/module3/vc-pull.png' width="700px" alt="404 image"/>
 
 </center>
 
@@ -42,7 +42,7 @@ you will not be able to push any more changes yourself
 
 <center>
 
-<img src='/module3/vc-pulling-contributor.png' width="600px" alt="404 image"/>
+<img src='/module3/vc-pulling-contributor-commit.png' width="700px" alt="404 image"/>
 
 </center>
 
@@ -72,7 +72,7 @@ to our local Git repository.
 
 <center>
 
-<img src='/module3/vc-pull-jupyter.png' width="600px" alt="404 image"/>
+<img src='/module3/vc-pull-jupyter.png' width="700px" alt="404 image"/>
 
 </center>
 
@@ -100,7 +100,7 @@ by clicking on the cloud icon with the down arrow in JupyterLab.
 
 <center>
 
-<img src='/module3/vc-pull-latest.png' width="600px" alt="404 image"/>
+<img src='/module3/vc-pull-latest.png' width="700px" alt="404 image"/>
 
 </center>
 
@@ -118,7 +118,7 @@ In some cases, JupyterLab can warn you about continue modyfing your files locall
 
 <center>
 
-<img src='/module3/vc-pull-reopen.png' width="600px" alt="404 image"/>
+<img src='/module3/vc-pull-reopen-notebook.png' width="700px" alt="404 image"/>
 
 </center>
 
@@ -175,7 +175,7 @@ before you start editing any files in your local repository.
 
 <center>
 
-<img src='/module3/vc-pull-terminal.png' width="600px" alt="404 image" />
+<img src='/module3/vc-pull-terminal-jl.png' width="600px" alt="404 image" />
 
 </center>
 

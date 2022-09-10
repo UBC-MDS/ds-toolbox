@@ -15,7 +15,7 @@ title: 'module3_05'
 
 <center>
 
-<img src='/module3/vc-push.png' width="800px" alt="404 image"/>
+<img src='/module3/vc-push.png' width="900px" alt="404 image"/>
 
 </center>
 
@@ -37,7 +37,7 @@ You can also take comfort in the fact that your work is now backed up in the clo
 
 <center>
 
-<img src='/module3/vc-pushing-jupyter.png' width="600px" alt="404 image"/>
+<img src='/module3/vc-pushing-jupyter.png' width="700px" alt="404 image"/>
 
 </center>
 
@@ -62,7 +62,12 @@ you will be prompted to enter your GitHub username and your account password.
 Click the blue “OK” button to initiate the push.
 JupyterLab will remember your password so you don't need to enter it each time.
 
+If everything went well, you will read a message on the screen 
+informing you that the push was successful.
+
 ---
+
+
 
 ## Pushing the commits to GitHub (Jupyter Lab IDE)
 
@@ -72,27 +77,7 @@ JupyterLab will remember your password so you don't need to enter it each time.
 
 <center>
 
-<img src='/module3/vc-successfully-pushed.png' width="600px" alt="404 image"/>
-
-</center>
-
-Notes:
-
-🙌 **Practice**
-
-Next, you will see this prompt that the push was successful.
-
----
-
-## Pushing the commits to GitHub (Jupyter Lab IDE)
-
-<br>
-<br>
-<br>
-
-<center>
-
-<img src='/module3/vc-push-jupyter-3.png' width="600px" alt="404 image"/>
+<img src='/module3/vc-push-jupyter-3.png' width="700px" alt="404 image"/>
 
 </center>
 

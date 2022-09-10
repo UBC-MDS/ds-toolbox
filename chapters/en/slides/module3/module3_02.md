@@ -8,7 +8,7 @@ title: 'module3_02'
 Notes:
 
 In this slide deck,
-we will learn the basics of how to create repository that uses version control.
+we will learn the basics of how to create a repository that uses version control.
 
 ---
 
@@ -22,7 +22,7 @@ we will learn the basics of how to create repository that uses version control.
 
 <center>
 
-<img src='/module3/vc-local-github-2.png' width="700px" alt="404 image"/>
+<img src='/module3/vc-local-github-2.png' width="800px" alt="404 image"/>
 
 </center>
 
@@ -32,6 +32,7 @@ Typically, when we put a data analysis project under version control,
 we create two copies of the repository.
 One copy we use as our primary workspace where we create,
 edit, and delete files. 
+  
 This copy is commonly referred to as the **local repository**.
 The local repository most commonly exists on our computer or laptop, 
 but can also exist within a workspace on a server (e.g., JupyterHub). 
@@ -41,7 +42,7 @@ This copy is commonly referred to as the **remote repository**.
 
 Under the hood, 
 Git only saves the changes between your versions 
-rather than a complete version of the document for each version,
+rather than a complete version of the document each time,
 so it is also efficient in terms of disk space. 
 Note that while Git works great for text files, 
 such as code, it is not so great for binary files such as images
@@ -54,7 +55,7 @@ cannot easily be expressed in plain text.
 
 <center>
 
-<img src='/module3/vc-local-github.png' width="600px" alt="404 image" />
+<img src='/module3/vc-local-github-3.png' width="600px" alt="404 image" />
 
 </center>
 
@@ -129,10 +130,10 @@ and then to clone it locally using the terminal or JupyterLab.
 Cloning a GitHub repository is not the same as downloading it to your computer.
 When you clone it you are downloading the files and all the project history 
 including the commits and their associated messages. 
-The information about your project
-that are not the files themselves is downloaded as a hidden folder called `.git`. 
-Any folders that contains a hidden `.git` folder is considered a Git repository. 
-By default all your projects on GitHub are Git repositories.
+The information about your project 
+that is not the files themselves is downloaded as a hidden folder called `.git`. 
+Any folder that contains a hidden `.git` folder is considered a Git repository.
+By default, all your projects on GitHub are Git repositories.
 
 You can clone your project to have a local copy
 using an integrated development environment (IDE) as JupyterLab or the terminal. 

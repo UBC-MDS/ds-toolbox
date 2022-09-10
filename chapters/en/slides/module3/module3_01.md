@@ -54,8 +54,14 @@ and you can then browse through the history.
 
 ## What is version control, and why should I use it?
 
-<img src='/module3/vc-files.png' width="300px" alt="404 image"/>
 
+
+<center>
+
+<img src='/module3/vc-files.png' width="400px" alt="404 image"/>
+
+
+</center>
 
 Instead of creating a new copy for each version of a file
 with an unwieldy name (as in the image), 
@@ -119,13 +125,15 @@ the software responsible for tracking changes,
 sharing changes you make with others,
 obtaining changes from others,
 and resolving conflicting edits.
+  
 The repository hosting service is responsible for storing
 a copy of the version-controlled project online (a repository),
 where you and your collaborators can access it remotely,
 discuss issues and bugs, and distribute your final product.
 For both of these items,
 there is a wide variety of choices.
-In this textbook we’ll use Git for version control,
+  
+In this course, we’ll use Git for version control,
 and GitHub for repository hosting,
 because both are currently the most widely used platforms.
 
@@ -133,12 +141,14 @@ Technically you don’t have to use a repository hosting service.
 You can, for example,
 version control a project that is stored only in a folder on your computer—
 never sharing it on a repository hosting service.
+  
 But using a repository hosting service
 provides a few big benefits,
 including managing collaborator access permissions,
 tools to discuss and track bugs,
 and the ability to have external collaborators contribute work,
 not to mention the safety of having your work backed up in the cloud.
+  
 Since most repository hosting services now offer free accounts,
 there are not many situations
 in which you wouldn't want to use one for your project.
