@@ -84,7 +84,7 @@ that will give you more flexibility to track your changes.
 
 Notes:
 
-Also, both repositories maintain a full project history. 
+Both repositories also keep a complete project history.
 This history is a record of all versions 
 of the project files that have been created. 
 The repository history is not automatically generated; 
