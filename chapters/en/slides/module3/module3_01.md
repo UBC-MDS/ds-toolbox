@@ -35,6 +35,7 @@ Data analysis projects often require iteration and revision
 to move from an initial idea to a finished product ready for the intended audience.
 Without deliberate and conscious effort towards tracking changes made to the analysis,
 projects tend to become messy. 
+  
 This mess can have serious, negative repercussions on an analysis project,
 including losing interesting results files that your code cannot reproduce, 
 temporary files with snippets of ideas that are forgotten or not easy to find,
@@ -44,10 +45,7 @@ mind-boggling file names that make it unclear which is the current working versi
 Being able to record and view the history of a data analysis project is important
 for understanding how and why decisions to use one method or another were made,
 among other things.
-Many of you might already have used version control software
-if you work with Google Docs, Dropbox, or TimeMachine on macOS. 
-These programs, all automatically create versions of your documents
-and you can then browse through the history.
+  
 
 
 ---
@@ -65,8 +63,44 @@ and you can then browse through the history.
 
 </center>
 
+Instead of creating a new copy for each version of a file
+with an unwieldy name (as in the image), 
+version control allows you to have a single file
+and records the changes between the versions.
+
+Many of you might already have used version control software
+if you work with Google Docs, Dropbox, or TimeMachine on macOS. 
+These programs, all automatically create versions of your documents
+and you can then browse through the history.
+
+
 
 Notes:
+
+Instead of creating a new copy for each version of a file
+with an unwieldy name (as in the image), 
+version control allows you to have a single file
+and records the changes between the versions.
+
+---
+
+## What is version control, and why should I use it?
+
+<br>
+<br>
+
+
+<center>
+
+<img src='/module3/first-pull-request.png' width="600px" alt="404 image"/>
+
+</center>
+
+<a href="Thttps://doi.org/10.5281/zenodo.3332808">image source: The Turing Way Community, & Scriberia (2019)</a>  
+
+
+Notes:
+
 Additionally, data analyses are typically completed by teams.
 This means that files need to be shared across multiple computers,
 and multiple people often end up editing the project simultaneously.
