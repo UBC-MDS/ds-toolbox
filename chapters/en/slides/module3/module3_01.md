@@ -54,6 +54,8 @@ and you can then browse through the history.
 
 ## What is version control, and why should I use it?
 
+<br>
+<br>
 
 
 <center>
@@ -63,10 +65,6 @@ and you can then browse through the history.
 
 </center>
 
-Instead of creating a new copy for each version of a file
-with an unwieldy name (as in the image), 
-version control allows you to have a single file 
-and records the changes between the versions.
 
 Notes:
 Additionally, data analyses are typically completed by teams.
@@ -107,6 +105,8 @@ earlier versions of the project and to revert changes.
 
 ## Git and GitHub
 
+<br>
+<br>
 
 <p style="text-align:center"><b>Git</b> - Version control system</p>
 
