@@ -15,7 +15,7 @@ blockquote {
 # What is version control, and why should I use it?
 
 Notes:
-In this slide deck we will about the motivation behind using version control
+In this slide deck we will talk about the motivation behind using version control
 when working on our projects.
 
 ---
@@ -132,10 +132,20 @@ where you and your collaborators can access it remotely,
 discuss issues and bugs, and distribute your final product.
 For both of these items,
 there is a wide variety of choices.
-  
+
 In this course, we’ll use Git for version control,
 and GitHub for repository hosting,
 because both are currently the most widely used platforms.
+
+---
+
+## When should you use a repository hosting service?
+
+**GitHub** - Repository hosting service
+
+<img src='/module3/github-logo.png' width="150px" alt="404 image"/>
+  
+Notes: 
 
 Technically you don’t have to use a repository hosting service.
 You can, for example,
