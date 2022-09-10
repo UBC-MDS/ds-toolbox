@@ -143,7 +143,12 @@ because both are currently the most widely used platforms.
 
 **GitHub** - Repository hosting service
 
-<img src='/module3/github-logo.png' width="150px" alt="404 image"/>
+<center>
+
+<img src='/module3/github-logo.png' width="200px" alt="404 image"/>
+
+</center>
+
   
 Notes: 
 
