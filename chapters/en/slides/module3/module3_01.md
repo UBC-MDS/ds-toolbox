@@ -108,7 +108,7 @@ earlier versions of the project and to revert changes.
 ## Git and GitHub
 
 
-<p style="text-align:center">**Git** - Version control system</p>
+<p style="text-align:center"><b>Git</b> - Version control system</p>
 
 <center>
 
@@ -116,7 +116,7 @@ earlier versions of the project and to revert changes.
 
 </center>
 
-<p style="text-align:center">**GitHub** - Repository hosting service</p>
+<p style="text-align:center"><b>GitHub</b> - Repository hosting service</p>
 
 <center>
 
@@ -155,8 +155,7 @@ because both are currently the most widely used platforms.
 <br>
 
 
-
-<p style="text-align:center">**GitHub** - Repository hosting service</p>
+<p style="text-align:center"><b>GitHub</b> - Repository hosting service</p>
 
 <center>
 

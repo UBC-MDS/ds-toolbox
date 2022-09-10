@@ -61,17 +61,8 @@ cannot easily be expressed in plain text.
 
 Notes:
 
-Both copies of the repository:
+Both copies of the repository have a **working directory** where you can create, store, edit, and delete files (e.g., `analysis.ipynb` in the image).
 
-- have a **working directory** where you can create, store, edit, and delete files (e.g., `analysis.ipynb` in the image).
-
-- maintain a full project history. This history is a record of all versions of the project files that have been created. The repository history is not automatically generated; Git must be explicitly told when to record a version of the project. These records are called **commits**. They are a snapshot of the file contents and metadata about the repository at the time the record was created (a commit includes who made the commit, when it was made, etc.).
-
-In the local and remote repositories shown in the image,
-there are two commits represented as gray circles.
-Each commit can be identified by a human-readable message,
-which you write when you create the commit,
-and a commit hash that Git automatically adds for you.
 
 You have probably noticed that in the local repository 
 there is a **staging area**, 
@@ -80,11 +71,40 @@ We will soon learn more about the staging area,
 but for now imagine that it is a particular area in your local repository
 that will give you more flexibility to track your changes.
 
+
+---
+
+## Tracking the repository history using commit messages
+
+<center>
+
+<img src='/module3/vc-local-github.png' width="600px" alt="404 image" />
+
+</center>
+
+Notes:
+
+Also, both repositories maintain a full project history. 
+This history is a record of all versions 
+of the project files that have been created. 
+The repository history is not automatically generated; 
+Git must be explicitly told when to record a version of the project. 
+These records are called **commits**. 
+They are a snapshot of the file contents and metadata about the repository 
+at the time the record was created 
+(a commit includes who made the commit, when it was made, etc.).
+
+In the local and remote repositories shown in the image,
+there are two commits represented as gray circles.
+Each commit can be identified by a human-readable message,
+which you write when you create the commit,
+and a commit hash that Git automatically adds for you.
+
 ---
 
 ## Commit message
 
-<br>
+
 <br>
 <br>
 
@@ -151,7 +171,7 @@ starting with how to create the remote repository!
 
 ## 1. Creating a remote repository on GitHub
 
-<br>
+
 <br>
 <br>
 
@@ -184,7 +204,7 @@ on the left side of the screen.
 
 <center>
 
-<img src='/module3/vc-new-repository-create.png' width="500px" alt="404 image" />
+<img src='/module3/vc-new-repository-create.png' width="400px" alt="404 image" />
 
 </center>
 
@@ -263,10 +283,11 @@ Notes:
 
 🙌  **Practice**
 
-Next, open JupyterLab and click the Jupyter Git Clone icon
+Next, open JupyterLab and click the Jupyter `Git Clone` icon
 in the "Files" tab of the left side bar.
 We have marked this icon with a red circle
 in the screenshot in this slide.
+
 When you click this button a dialog box will show up,
 which we will explain in the next slide.
 
@@ -295,6 +316,9 @@ you copied earlier and
 click the blue “CLONE” button. 
 This will download the repository files 
 to your computer.
+
+*Another way to do this is clicking on the Git icon*
+*on the side bar as you can see in the image* 
 
 It is important to keep in mind
 where you want to locate your repository.
