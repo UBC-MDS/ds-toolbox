@@ -107,13 +107,18 @@ earlier versions of the project and to revert changes.
 
 ## Git and GitHub
 
-<center>
 
-**Git** - Version control system
+<p style="text-align:center">**Git** - Version control system</p>
+
+<center>
 
 <img src='/module3/git-logo.png' width="150px" alt="404 image"/>
 
-**GitHub** - Repository hosting service
+</center>
+
+<p style="text-align:center">**GitHub** - Repository hosting service</p>
+
+<center>
 
 <img src='/module3/github-logo.png' width="150px" alt="404 image"/>
 
@@ -149,11 +154,13 @@ because both are currently the most widely used platforms.
 <br>
 <br>
 
+
+
+<p style="text-align:center">**GitHub** - Repository hosting service</p>
+
 <center>
 
-**GitHub** - Repository hosting service
-
-<img src='/module3/github-logo.png' width="200px" alt="404 image"/>
+<img src='/module3/github-logo.png' width="300px" alt="404 image"/>
 
 </center>
 
