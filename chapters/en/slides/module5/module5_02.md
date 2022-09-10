@@ -90,7 +90,11 @@ Downloading a public GitHub repository from a project you like and observing the
 Understanding these graph-based commit history visualizations is helpful to understand the relationships between branches, provides vital information about the structure of a project, and can help you fix problems if they arise.
 
 In this slide, you can see the public repository of JupyterLab that has been cloned and opened using VS Code.
-Here we can see that there are three active branches: the default master branch (the topmost commit), the branch for version 3.4 (the second commit from the top), and an older branch with a snapshot of the repo (commit message: "Update snapshots for challenger commit").
+Here we can see that there are three active branches:
+
+1. The default master branch which is indicated on the topmost row. This is the left-most orange line in the graphical representation to the left and there are five commits visible in this image on this branch (the black dots on the orange line).
+2. The branch for version 3.4 which is indicated on the second row from the top. This is the middle red line in the graphical represenation to the left and there are three commits visible in this image on this branch.
+3. The branch with a long name starting with "12758-snapshots" at the third row from the bottom (commit message: "Update snapshots for challenger commit"). This is the right most red line in the graphical representation to the left, and it contains only a single commit.
 
 ---
 
