@@ -15,7 +15,7 @@ id: 3
 
 </exercise>
 
-<exercise id="1" title="What is version control, and why should I use it?" type="slides,video">
+<exercise id="1" title="What is version control, and why should you use it?" type="slides,video">
 
 <slides source="module3/module3_01" shot="0" start="0:002" end="3:40">
 </slides>

@@ -12,7 +12,7 @@ blockquote {
 }
 </style>
 
-## What is version control, and why should you use it?
+# What is version control, and why should you use it?
 
 Notes:
 In this slide deck we will talk about the motivation behind using version control
