@@ -22,7 +22,7 @@ we will learn the basics of how to create a repository that uses version control
 
 <center>
 
-<img src='/module3/vc-local-github-2.png' width="800px" alt="404 image"/>
+<img src='/module3/vc-local-github-2.png' width="700px" alt="404 image"/>
 
 </center>
 
@@ -84,9 +84,13 @@ that will give you more flexibility to track your changes.
 
 ## Commit message
 
+<br>
+<br>
+<br>
+
 <center>
 
-<img src='/module3/vc-commits.png' width="600px" alt="404 image"/>
+<img src='/module3/vc-commits.png' width="700px" alt="404 image"/>
 
 </center>
 
@@ -224,7 +228,7 @@ That's it! Now let's clone it to get a local copy on your computer.
 
 <center>
 
-<img src='/module3/vc-clone-jupyter-https.png' width="600px" alt="404 image" align="center"/>
+<img src='/module3/vc-clone-jupyter-https.png' width="700px" alt="404 image" align="center"/>
 
 </center>
 
@@ -251,7 +255,7 @@ and choose to copy the URL from the HTTPS tab.
 
 <center>
 
-<img src='/module3/vc-clone-jupyter-2.png' width="600px" alt="404 image"/>
+<img src='/module3/vc-clone-jupyter-2.png' width="700px" alt="404 image"/>
 
 </center>
 
@@ -276,7 +280,7 @@ which we will explain in the next slide.
 
 <center>
 
-<img src='/module3/vc-clone-jupyter-URL.png' width="600px" alt="404 image"/>
+<img src='/module3/vc-clone-jupyter-URL.png' width="700px" alt="404 image"/>
 
 </center>
 
@@ -341,7 +345,7 @@ that existed on your repository on GitHub.
 
 <center>
 
-<img src='/module3/vc-clone-jupyter-terminal.png' width="650px" alt="404 image"/>
+<img src='/module3/vc-clone-jupyter-terminal.png' width="700px" alt="404 image"/>
 
 </center>
 
@@ -374,7 +378,7 @@ just as it did when we clones via the graphical Git client.
 
 ---
 
-## How can you check that you are working in a Git repository? (Terminal)
+## How do you know if you're working in a Git repository? (Terminal)
 
 <br>
 <br>
@@ -382,7 +386,7 @@ just as it did when we clones via the graphical Git client.
 
 <center>
 
-<img src='/module3/vc-git-hidden-folder.png' width="600px" alt="404 image"/>
+<img src='/module3/vc-git-hidden-folder.png' width="700px" alt="404 image"/>
 
 </center>
 
