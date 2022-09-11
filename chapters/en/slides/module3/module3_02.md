@@ -301,7 +301,7 @@ which we will explain in the next slide.
 
 <center>
 
-<img src='/module3/vc-clone-jupyter-URL.png' width="700px" alt="404 image"/>
+<img src='/module3/vc-clone-jupyter-URL.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -344,7 +344,7 @@ a good practice.
 
 <center>
 
-<img src='/module3/vc-clone-jupyter-4.png' width="600px" alt="404 image"/>
+<img src='/module3/vc-clone-jupyter-4.png' width="800px" alt="404 image"/>
 
 </center>
 

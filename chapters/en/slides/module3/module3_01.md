@@ -63,6 +63,9 @@ among other things.
 
 </center>
 
+
+Notes:
+
 Instead of creating a new copy for each version of a file
 with an unwieldy name (as in the image), 
 version control allows you to have a single file
@@ -72,15 +75,6 @@ Many of you might already have used version control software
 if you work with Google Docs, Dropbox, or TimeMachine on macOS. 
 These programs, all automatically create versions of your documents
 and you can then browse through the history.
-
-
-
-Notes:
-
-Instead of creating a new copy for each version of a file
-with an unwieldy name (as in the image), 
-version control allows you to have a single file
-and records the changes between the versions.
 
 ---
 

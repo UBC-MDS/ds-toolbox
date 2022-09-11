@@ -64,7 +64,8 @@ in the working directory of the local repository on your computer.
 
 ## Committing changes to a local repository 
 
-
+<br>
+<br>
 
 <center>
 
@@ -98,7 +99,7 @@ to our personal scratch notes for the project (`notes.txt`).
 
 <center>
 
-<img src='/module3/vc-commits-jupyter.png' width="700px" alt="404 image"/>
+<img src='/module3/vc-commits-jupyter.png' width="900px" alt="404 image"/>
 
 </center>
 
@@ -128,7 +129,7 @@ click the Jupyter Git extension icon on the far left-hand side of JupyterLab.
 
 <center>
 
-<img src='/module3/vc-jupyter-add-staging-area.png' width="700px" alt="404 image" />
+<img src='/module3/vc-jupyter-add-staging-area.png' width="800px" alt="404 image" />
 
 </center>
 
@@ -163,7 +164,7 @@ which why it showed up under the `Changed` heading in the side panel.
 
 <center>
 
-<img src='/module3/vc-jupyter-staged.png' width="700px" alt="404 image" />
+<img src='/module3/vc-jupyter-staged.png' width="800px" alt="404 image" />
 
 </center>
 
@@ -200,7 +201,7 @@ only add the files you directly create and edit.
 
 <center>
 
-<img src='/module3/vc-jupyter-git-status-terminal.png' width="700px" alt="404 image" />
+<img src='/module3/vc-jupyter-git-status-terminal.png' width="800px" alt="404 image" />
 
 </center>
 
