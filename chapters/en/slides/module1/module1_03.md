@@ -177,7 +177,7 @@ for their toy duck.
 
 ## When to ask for help?
 
-<img src="/module1/code-hero.png" alt='An illustration of a "code hero", who is seemingly flying by themselves but in that is shown to actually be lifted up by two hot air balloons consisting of educators and developers, and supported by a safety net held up by the community' width="400px"></img>
+<img src="/module1/code-hero.webp" alt='An illustration of a "code hero", who is seemingly flying by themselves but in that is shown to actually be lifted up by two hot air balloons consisting of educators and developers, and supported by a safety net held up by the community' width="400px"></img>
 
 Artwork by [@allison_horst](https://twitter.com/allison_horst)
 
