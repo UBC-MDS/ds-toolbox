@@ -41,8 +41,6 @@ const Slides = ({source, shot, start = null, end = null }) => {
     const { slideType, setSlideType } = useContext(ChapterContext)
     const { video, uiText } = useContext(LocaleContext)
     const hasVideo = video && start !== null && end !== null
-    console.log({video[parseInt(shot)]})
-    console.log({shot})
     return hasVideo ? (
         <>
             <menu className={classes.menu}>
