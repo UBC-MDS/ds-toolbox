@@ -9,11 +9,11 @@ id: 2
 ---
 
 <exercise id="0" title="Module Learning Outcomes"  type="slides, video">
-<slides source="module2/module2_00" shot="0" start="3:42" end="4:35"> </slides>
+<slides source="module2/module2_00" shot="11" start="00:00" end="00:38"> </slides>
 </exercise>
 
 <exercise id="1" title="Introduction to the shell" type="slides,video">
-<slides source="module2/module2_01" shot="1" start="0:003" end="05:31"> </slides>
+<slides source="module2/module2_01" shot="2" start="0:003" end="05:31"> </slides>
 </exercise>
 
 <exercise id="2" title='✍️ Practice: "Shell out" your knowledge'>
@@ -76,7 +76,7 @@ How do you pass an option to <code>ls</code> which tells is to decorate the outp
 </exercise>
 
 <exercise id="3" title="Navigating the file system" type="slides,video">
-<slides source="module2/module2_03" shot="1" start="5:4008" end="26:2200"> </slides>
+<slides source="module2/module2_03" shot="2" start="5:4008" end="26:2200"> </slides>
 </exercise>
 
 <exercise id="4" title="✍️ Practice: Ahoy captain!">
@@ -149,7 +149,7 @@ While this command would list the hidden files, the <code>-F</code> flag is not 
 </exercise>
 
 <exercise id="5" title="Moving, copying, and deleting files" type="slides,video">
-<slides source="module2/module2_05" shot="1" start="26:3200" end="40:07"></slides>
+<slides source="module2/module2_05" shot="2" start="26:3200" end="40:07"></slides>
 </exercise>
 
 <exercise id="6" title="✍️ Practice: Refine your shell skills">
@@ -220,7 +220,7 @@ The file needs to start with `not`.
 </exercise>
 
 <exercise id="7" title="Intermediate shell topics" type="slides,video">
-<slides source="module2/module2_07" shot="1" start="26:3200" end="40:07"></slides>
+<slides source="module2/module2_07" shot="2" start="26:3200" end="40:07"></slides>
 </exercise>
 
 <exercise id="8" title="✍️ Practice: Bash it out">
@@ -300,7 +300,7 @@ The first option is correct, but not the fourth.
 </exercise>
 
 <exercise id="9" title="What Did We Just Learn?" type="slides, video">
-<slides source="module2/module2_end" shot="0" start="04:37" end="05:35">
+<slides source="module2/module2_end" shot="12" start="00:00" end="00:27">
 </slides>
 </exercise>
 
