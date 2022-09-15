@@ -10,13 +10,13 @@ id: 4
 
 <exercise id="0" title="Module Learning Outcomes" type="slides,video">
 
-<slides source="module4/module4_00" shot="0" start="0:002" end="3:40">
+<slides source="module4/module4_00" shot="15" start="0:00" end="0:45">
 </slides>
 </exercise>
 
 <exercise id="1" title="View your Git history" type="slides,video">
 
-<slides source="module4/module4_01" shot="0" start="0:002" end="3:40">
+<slides source="module4/module4_01" shot="4" start="0:002" end="3:40">
 </slides>
 
 </exercise>
@@ -70,7 +70,7 @@ When checking your project history you will see that the commits are displayed f
 
 <exercise id="3" title="Comparing commits" type="slides,video">
 
-<slides source="module4/module4_02" shot="0" start="0:002" end="3:40">
+<slides source="module4/module4_02" shot="4" start="0:002" end="3:40">
 </slides>
 
 </exercise>
@@ -120,7 +120,7 @@ Writing the newest commit is not necessary. If you write only one commit (that i
 </exercise>
 
 <exercise id='5' title="Reset your Git project to an earlier state"  type='slides, video'>
-<slides source='module4/module4_03' shot='0' start='3:42' end='4:35'> </slides>
+<slides source='module4/module4_03' shot='4' start='3:42' end='4:35'> </slides>
 </exercise>
 
 <exercise id='6' title='✍️ Practice: The "no regrets" reset'>
@@ -151,7 +151,7 @@ You can hard-reset your work in both cases, but one of the options could cause p
 </exercise>
 
 <exercise id='7' title='Revert changes made to your Git project' type='slides, video'>
-<slides source='module4/module4_04' shot='0' start='3:42' end='4:35'> </slides>
+<slides source='module4/module4_04' shot='4' start='3:42' end='4:35'> </slides>
 </exercise>
 
 <exercise id='8' title='✍️ Practice: Subtraction through addition (of a new commit)'>
@@ -201,7 +201,7 @@ When you do a hard reset, you are deleting the history of your project up to a p
 </exercise>
 
 <exercise id='9' title="Deal with merge conflicts"  type='slides, video'>
-<slides source='module4/module4_05' shot='0' start='3:42' end='4:35'> </slides>
+<slides source='module4/module4_05' shot='4' start='3:42' end='4:35'> </slides>
 </exercise>
 
 <exercise id='10' title='✍️ Practice: Merge with care'>
@@ -223,7 +223,7 @@ What do you have to do if you are working with the terminal and you want to writ
 
 
 <exercise id='11' title='.gitgnore'  type='slides, video'>
-<slides source='module4/module4_06' shot='0' start='3:42' end='4:35'> </slides>
+<slides source='module4/module4_06' shot='4' start='3:42' end='4:35'> </slides>
 </exercise>
 
 <exercise id='12' title='✍️ Practice: Ignorance is bliss'>
@@ -259,6 +259,6 @@ Yes, <code>.gitignore</code> is like any other file in your repository, so if yo
 
 <exercise id="13" title="What did we just learned?" type="slides,video">
 
-<slides source="module4/module4_end" shot="0" start="0:002" end="3:40">
+<slides source="module4/module4_end" shot="16" start="0:00" end="0:23">
 </slides>
 </exercise>
