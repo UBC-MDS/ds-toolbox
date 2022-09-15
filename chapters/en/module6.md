@@ -9,11 +9,11 @@ id: 6
 ---
 
 <exercise id="1" title="Module learning outcomes" type="slides,video">
-<slides source="module6/module6_00" shot="1" start="0:003" end="05:31"> </slides>
+<slides source="module6/module6_00" shot="19" start="0:00" end="0:50"> </slides>
 </exercise>
 <!-- ------------------------------------ -->
 <exercise id="2" title="File Names: Best Practices" type="slides,video">
-<slides source="module6/module6_01"> </slides>
+<slides source="module6/module6_01" shot="5" start="0:00" end="0:50"> </slides>
 </exercise>
 <!-- ------------------------------------ -->
 <exercise id='3' title="✍️ Practice: What's in a name?">
@@ -60,7 +60,7 @@ If it was automatically prevented, then this couldn't have been a problem!
 </exercise>
 <!-- ------------------------------------ -->
 <exercise id="4" title="Project Organization" type="slides,video">
-<slides source="module6/module6_03"> </slides>
+<slides source="module6/module6_03" shot="5" start="0:00" end="0:50"> </slides>
 </exercise>
 <!-- ------------------------------------ -->
 <exercise id='5' title="✍️ Practice: Tidy desk, tidy mind">
@@ -131,7 +131,7 @@ Not every project is supposed to have a documentation folder.
 </exercise>
 <!-- ------------------------------------ -->
 <exercise id="6" title="Virtual Environments" type="slides,video">
-<slides source="module6/module6_04"> </slides>
+<slides source="module6/module6_04" shot="5" start="0:00" end="0:50"> </slides>
 </exercise>
 <!-- ------------------------------------ -->
 <exercise id='7' title="✍️ Practice: Another snake in the Python ecosystem">
@@ -195,6 +195,6 @@ The base environment is just an environment, the rules are the same!
 </exercise>
 <!-- ------------------------------------ -->
 <exercise id="8" title="What Did We Learn?" type="slides,video">
-<slides source="module6/module6_end"> </slides>
+<slides source="module6/module6_end" shot="20" start="0:00" end="0:34"> </slides>
 </exercise>
 <!-- ------------------------------------ -->
