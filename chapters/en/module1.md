@@ -9,7 +9,7 @@ id: 1
 ---
 
 <exercise id="0" title="Module Learning Outcomes"  type="slides, video">
-<slides source="module1/module1_00" shot="9" start="0" end="0"> </slides>
+<slides source="module1/module1_00" shot="9" start="00:00" end="00:00"> </slides>
 </exercise>
 
 <exercise id="1" title="Introduction to the Data Science Toolbox" type="slides,video">
@@ -246,6 +246,6 @@ People from around the world volunteer their time and expertise to answer questi
 </exercise>
 
 <exercise id="7" title="What Did We Just Learn?" type="slides, video">
-<slides source="module1/module1_end" shot="10" start="0" end="0">
+<slides source="module1/module1_end" shot="10" start="00:00" end="0">
 </slides>
 </exercise>
