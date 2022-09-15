@@ -202,7 +202,7 @@ This syntax is used to format some content such as admonitions and dropdowns, bu
 </exercise>
 <!-- ------------------------------------ -->
 <exercise id="7" title="Publish your book online" type="slides,video">
-<slides source="module8/module8_05" shot="24" start="0:00" end="00:29"></slides>
+<slides source="module8/module8_05" shot="8" start="0:00" end="00:29"></slides>
 </exercise>
 <!-- ------------------------------------ -->
 <exercise id='8' title="✍️ Practice: Publication ready!">
@@ -255,6 +255,6 @@ You only need the build artifacts (i.e., the HTML files in the <code>_build/html
 </exercise>
 <!-- ------------------------------------ -->
 <exercise id="9" title="What Did We Learn?" type="slides,video">
-<slides source="module8/module8_end"></slides>
+<slides source="module8/module8_end" shot="24" start="0:00" end="00:29"></slides>
 </exercise>
 <!-- ------------------------------------ -->
