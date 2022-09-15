@@ -9,11 +9,11 @@ id: 8
 ---
 
 <exercise id="0" title="Module learning outcomes" type="slides,video">
-<slides source="module8/module8_00" shot="1" start="0:003" end="05:31"></slides>
+<slides source="module8/module8_00" shot="23" start="0:00" end="00:37"></slides>
 </exercise>
 <!-- ------------------------------------ -->
 <exercise id="1" title="Create your first Jupyter Book" type="slides,video">
-<slides source="module8/module8_02"></slides>
+<slides source="module8/module8_02" shot="8" start="0:00" end="00:37"></slides>
 </exercise>
 <!-- ------------------------------------ -->
 <exercise id='2' title="✍️ Practice: Today a reader, tomorrow a leader">
@@ -89,7 +89,7 @@ Since you're already inside the root folder, you should use <code>./</code> for 
 </exercise>
 <!-- ------------------------------------ -->
 <exercise id="3" title="Add your own content: Essentials" type="slides,video">
-<slides source="module8/module8_03"></slides>
+<slides source="module8/module8_03" shot="8" start="0:00" end="00:37"></slides>
 </exercise>
 <!-- ------------------------------------ -->
 <exercise id='4' title="✍️ Practice: Becoming an author">
@@ -162,7 +162,7 @@ Neither of the two options are applicable inside a <code>```{math} ```</code> bl
 </exercise>
 <!-- ------------------------------------ -->
 <exercise id="5" title="Add your own content: Advanced features" type="slides,video">
-<slides source="module8/module8_04"></slides>
+<slides source="module8/module8_04" shot="8" start="0:00" end="00:37"></slides>
 </exercise>
 <!-- ------------------------------------ -->
 <exercise id='6' title="✍️ Practice: Do it like a professional">
@@ -202,7 +202,7 @@ This syntax is used to format some content such as admonitions and dropdowns, bu
 </exercise>
 <!-- ------------------------------------ -->
 <exercise id="7" title="Publish your book online" type="slides,video">
-<slides source="module8/module8_05"></slides>
+<slides source="module8/module8_05" shot="24" start="0:00" end="00:29"></slides>
 </exercise>
 <!-- ------------------------------------ -->
 <exercise id='8' title="✍️ Practice: Publication ready!">
