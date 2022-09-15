@@ -65,7 +65,7 @@ const Slides = ({source, shot, start = null, end = null }) => {
                 })}
             </menu>
             {slideType === 'video' ? (
-                <Video id={shot} start={timestampToSeconds(start)} end={timestampToSeconds(end)} />
+                <Video id=shot start={timestampToSeconds(start)} end={timestampToSeconds(end)} />
             ) : (
                 <SlideDeck source={source} />
             )}
