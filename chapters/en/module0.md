@@ -10,7 +10,7 @@ id: 0
 
 <exercise id="1" title="The Data Science Toolbox" type="slides,video">
 
-<slides source="module0/module0_00" shot="/jajN3K9Nk7o" start="0" end="3:37">
+<slides source="module0/module0_00" shot="0">
 </slides>
 
 </exercise>

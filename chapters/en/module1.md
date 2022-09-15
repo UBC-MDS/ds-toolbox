@@ -9,7 +9,7 @@ id: 1
 ---
 
 <exercise id="0" title="Module Learning Outcomes"  type="slides, video">
-<slides source="module1/module1_00" shot="0" start="3:42" end="4:35"> </slides>
+<slides source="module1/module1_00" shot="9"> </slides>
 </exercise>
 
 <exercise id="1" title="Introduction to the Data Science Toolbox" type="slides,video">
@@ -122,7 +122,7 @@ They are! Volunteer contributions from people around the world support the devel
 </exercise>
 
 <exercise id="3" title="How to use JupyterLab" type="slides,video">
-<slides source="module1/module1_02"></slides>
+<slides source="module1/module1_02" shot="1" start="0:003" end="05:31"> </slides>
 </exercise>
 <!-- ------------------------------------ -->
 <exercise id='4' title="✍️ Practice: JupyterLab basics">
@@ -246,6 +246,6 @@ People from around the world volunteer their time and expertise to answer questi
 </exercise>
 
 <exercise id="7" title="What Did We Just Learn?" type="slides, video">
-<slides source="module1/module1_end" shot="0" start="04:37" end="05:35">
+<slides source="module1/module1_end" shot="10">
 </slides>
 </exercise>
