@@ -292,12 +292,11 @@ and choose to copy the URL from the HTTPS tab.
 ## 2. Cloning a repository using Jupyter Lab (IDE)
 
 <br>
-<br>
-<br>
+
 
 <center>
 
-<img src='/module3/vc-clone-jupyter-2.png' width="700px" alt="404 image"/>
+<img src='/module3/vc-clone-jupyter-2.png' width="800px" alt="404 image"/>
 
 </center>
 
@@ -318,12 +317,12 @@ which we will explain in the next slide.
 ## 2. Cloning a repository using Jupyter Lab (IDE)
 
 <br>
-<br>
-<br>
+
+
 
 <center>
 
-<img src='/module3/vc-clone-jupyter-URL.png' width="700px" alt="404 image"/>
+<img src='/module3/vc-clone-jupyter-URL.png' width="800px" alt="404 image"/>
 
 </center>
 
@@ -361,8 +360,8 @@ a good practice.
 ## 2. Cloning a repository using Jupyter Lab (IDE)
 
 <br>
-<br>
-<br>
+
+
 
 <center>
 
@@ -391,7 +390,7 @@ that existed on your repository on GitHub.
 
 <center>
 
-<img src='/module3/vc-clone-jupyter-terminal.png' width="700px" alt="404 image"/>
+<img src='/module3/vc-clone-jupyter-terminal.png' width="800px" alt="404 image"/>
 
 </center>
 
