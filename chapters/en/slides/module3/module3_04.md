@@ -24,15 +24,11 @@ to the repository on our computer.
 </center>
 
 Notes:
-Once the files we wish to commit have been added to the staging area,
-we can then "commit" those files to add them to the repository history.
+Once the files we want to keep have been added to the staging area, we can "commit" them to the repository history.
 When we do this, we are required to include an informative message 
 briefly describing the purpose of the changes we made.
-This message will be helpful to explain why the changes were made to your collaborators.
-Remember that your most common collaborator is a future version of yourself,
-and that it is very easy to forget why made a particular change a few month ago!.
 
-In the screenshot in this slide, the commit message is `"Message about changes..."`;
+In the screenshot, the commit message is `"Message about changes..."`;
 in your work you should make sure to replace this with an informative message about what you changed.
 It is also important to note that these changes
 are only being committed to the history of the local repository's on your computer.
@@ -51,9 +47,11 @@ and collaborators would not yet be able to see your new changes online.
 
 <img src='/module3/commit-messages-comic.png' width="600px" alt="404 image"/>
 
+<a href="https://xkcd.com/1296/">image source: xkcd.com</a>
+
 </center>
 
-<a href="https://xkcd.com/1296/">Image from xkcd.com</a>
+
 
 Notes:
 Writing meaningful commit messages is really important.
@@ -117,7 +115,7 @@ Notes:
 
 🙌 **Practice**
 
-**Step 2 continued**
+**Step 3 continued**
 
 When committing changes, you need to include a title/summary for each message (the upper text box in JupyterLab). Optionally, you could also include a longer description for the commit in the next text box.
 
@@ -149,7 +147,7 @@ Notes:
 
 🙌 **Practice**
 
-After recording a commit, the staging area should be empty and you will see that there are 0 staged files. You are now ready to push your changes to the remote repository on GitHub, which we will show you how to do in the next slide deck.
+After recording a commit, the staging area should be empty and you will see that there are 0 staged files. You are now ready to push your changes to the remote repository on GitHub.
 
 ---
 
@@ -233,7 +231,7 @@ Often,
 a descriptive summary in the title field is sufficient
 and we don't need to write out a long description.
 When this is the case,
-you can use the shorter version of the command `git commit` command with option `-m`,
+you can use the shorter version of the command `git commit` with the flag `-m`,
 which allows you to type in the title summary
 together with the command:
 

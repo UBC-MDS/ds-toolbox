@@ -45,22 +45,15 @@ Notes:
 
 🙌 **Practice**
 
-In the JupyterLab interface,
+In the Jupyter Lab interface,
 there are two steps involved in pushing your changes to GitHub for the first time.
 
-**Step 1. Click the "Push" button**
+**Click the "Push" button**
 
 To push your staged and committed changes to GitHub,
-first open the Git extension in JupyterLab and
-press the Git extension "push" button 
+first open the Git extension in Jupyter Lab and
+press `push` button 
 (click on the cloud icon with the up arrow on the Jupyter Git tab which is circled in red in this slide).
-
-**Step 2. Enter your Git credentials to authorize the push to the remote repository.**
-
-After pushing the upload button,
-you will be prompted to enter your GitHub username and your account password.
-Click the blue “OK” button to initiate the push.
-JupyterLab will remember your password so you don't need to enter it each time.
 
 If everything went well, you will read a message on the screen 
 informing you that the push was successful.
@@ -107,7 +100,7 @@ Notes:
 
 🙌 **Practice**
 
-We could also push from the terminal instead of from the JupyterLab Git extension.
+We could also push from the terminal instead of from the Jupyter Lab Git extension.
 If you would like to push from the terminal you can execute the command `git push`.
 
 ---

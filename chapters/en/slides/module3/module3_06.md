@@ -18,19 +18,24 @@ title: 'module3_06'
 Notes:
 If you are working on a project with collaborators,
 they will also be making changes to files
-(e.g., to the analysis code in a Jupyter notebook and the project’s `README` file),
+(e.g., to the analysis code in a
+Jupyter notebook and the project’s `README` file),
 committing them to their own local repository,
-and pushing their commits to the remote GitHub repository to share them with you.
+and pushing to the remote GitHub repository 
+to share their commits with you.
 When they push their changes,
-those changes will initially only exist in the remote GitHub repository
+those changes will initially 
+only exist in the remote GitHub repository
 and not in your local repository on your computer.
 
 To obtain the new changes from the remote repository on GitHub,
 you will need to pull/download those changes to your own local repository.
-By pulling changes, you synchronize your local repository to what is present on GitHub.
+By pulling changes, 
+you synchronize your local repository to what is present on GitHub.
 Additionally, until you pull changes from the remote repository,
 you will not be able to push any more changes yourself
-(though you will still be able to work and make commits in your own local repository).
+(though you will still be able to work 
+and make commits in your local repository).
 
 ---
 
@@ -57,8 +62,7 @@ the unique commit hash, and how long ago the commit was made.
 In this example,
 we can see that someone else
 has made a change to the repository.
-In the next slide we will see
-how we can use JupyterLab
+We can use Jupyter Lab
 to pull/download this change
 to our local Git repository.
 
@@ -81,13 +85,13 @@ Notes:
 🙌  **Practice**
 
 To pull from GitHub in JupyterLab,
-there are N steps:
+there are two steps:
 
-**Step 1. Click the pull button in the JupyterLab Git extension.**
+**Step 1. Click the pull button in the Jupyter Lab Git extension.**
 
 You can tell Git to "pull" down
 any new changes from the remote repository at GitHub.com
-by clicking on the cloud icon with the down arrow in JupyterLab.
+by clicking on the cloud icon with the down arrow in Jupyter Lab.
 
 ---
 
@@ -106,7 +110,7 @@ by clicking on the cloud icon with the down arrow in JupyterLab.
 
 Notes:
 
-In some cases, JupyterLab can warn you about continue modyfing your files locally when there are changes in the branch you are working. It is better to always keep the files updated with the remote and pull the changes!
+In some cases, Jupyte rLab can warn you about continue modyfing your files locally when there are changes in the branch you are working. It is better to always keep the files updated with the remote and pull the changes!
 
 ---
 
@@ -132,7 +136,7 @@ Once the files are successfully pulled from GitHub,
 it is important that you refresh or reopen any files
 that had changes pulled down from GitHub.
 If you don't,
-JupyterLab will keep displaying the old version of the file
+Jupyter Lab will keep displaying the old version of the file
 and it will be confusing if you make changes to this version
 instead of the newly pulled down version from GitHub.com.
 
@@ -162,8 +166,9 @@ The newly pulled changes will also show up in the history tab,
 since they are now part of your local repository,
 just as any commit you made on your computer.
 
-It is good practice to pull any changes at the start of every work session
-before you start editing any files in your local repository.
+It is best practise to pull the changes 
+at the start of each work session before 
+you begin editing any files in your local repository.
 
 ---
 
@@ -189,7 +194,7 @@ you can use the command `git pull`.
 As you can see in this slide,
 the Git will print a summary of what it changed
 when you run `git pull`
-(in this case two insertions/additions were made to the file `README.md`).
+(in the image two insertions/additions were made to the file `README.md`).
 
 ---
 
