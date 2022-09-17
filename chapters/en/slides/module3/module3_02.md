@@ -390,7 +390,7 @@ that existed on your repository on GitHub.
 
 <center>
 
-<img src='/module3/vc-clone-jupyter-terminal.png' width="800px" alt="404 image"/>
+<img src='/module3/vc-clone-jupyter-terminal.png' width="900px" alt="404 image"/>
 
 </center>
 
