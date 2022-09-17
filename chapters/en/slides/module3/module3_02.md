@@ -163,7 +163,7 @@ but we are not going to cover it in this course.
 <br>
 <br>
 <br>
-<br>ß
+<br>
 
 <center>
 
