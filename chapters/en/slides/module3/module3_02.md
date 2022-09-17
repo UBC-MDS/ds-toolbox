@@ -22,7 +22,7 @@ we will learn the basics of how to create a repository that uses version control
 
 <center>
 
-<img src='/module3/vc-local-github-2.png' width="700px" alt="404 image"/>
+<img src='/module3/vc-local-github-2.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -33,12 +33,12 @@ we create two copies of the repository.
 One copy is used as our primary workspace where we create,
 edit, and delete files. 
   
-This copy is commonly referred to as the **local repository**.
+This copy is referred to as the **local repository**.
 The local repository most commonly exists on our computer or laptop, 
 but can also exist within a workspace on a server (e.g., JupyterHub). 
 The other copy is typically stored in a repository hosting service (e.g., GitHub),
 where we can easily share it with our collaborators. 
-This copy is commonly referred to as the **remote repository**.
+This copy is known as the **remote repository**.
 
 Under the hood, 
 Git only saves the changes between your versions 
@@ -149,8 +149,26 @@ one for each commit: `Daa29d6` and `884c7ce`.
 
 Notes:
 
-We are going to learn how to create a remote repository in GitHub
-and then to clone it locally using the terminal and JupyterLab.
+First, we are going to learn how to create a remote repository on GitHub and then to clone it locally using the terminal or JupyterLab.
+
+There is another possible option to create a repository,
+that is creating it locally and then pushing it to GitHub,
+but we are not going to cover it in this course.
+
+---
+
+## How can you create your repositories? 
+
+<br>
+<br>
+
+<center>
+
+<img src='/module3/vc-local-github-clone.png' width="600px" alt="404 image"/>
+
+</center>
+
+Notes:
 
 Cloning a GitHub repository is not the same as downloading it to your computer.
 When you clone it you are downloading the files and all the project history 
@@ -420,7 +438,8 @@ Notes:
 
 🙌  **Practice**
 
-A Git repository stores 
+As we mentioned before, 
+a Git repository stores 
 all the necessary information for 
 version control your project 
 in a hidden folder called `.git`. 
