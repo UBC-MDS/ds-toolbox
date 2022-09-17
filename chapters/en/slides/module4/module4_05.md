@@ -80,7 +80,8 @@ To resolve a merge conflict, you need to open the indicated file in a plain text
 </center>
 
 Notes:
-The beginning of the merge conflict is preceded by `<<<<<<<` and the end of the merge conflict is marked by `>>>>>>>`. Between these markings, Git also inserts a separator (`=======`). The version of the change before the separator is your change (marked with `HEAD`), and the version that follows the separator was the change that existed on GitHub (marked with the commit hash). In the image, you can see that in your local repository there is a line of code that calls `scale_color_manual` with three color values (`deeppink2`, `cyan4`, and `purple1`). It looks like your collaborator made an edit to that line too, except with different colors (to `blue3`, `red3`, `and black`)!
+The beginning of the merge conflict is preceded by `<<<<<<<` and
+the end of the merge conflict is marked by `>>>>>>>`. Between these markings, Git also inserts a separator (`=======`). The version of the change before the separator is your change (marked with `HEAD`), and the version that follows the separator was the change that existed on GitHub (marked with the commit hash). In the image, you can see that in your local repository there is a line of code that calls `scale_color_manual` with three color values (`deeppink2`, `cyan4`, and `purple1`). It looks like your collaborator made an edit to that line too, except with different colors (to `blue3`, `red3`, `and black`)!
 
 ---
 

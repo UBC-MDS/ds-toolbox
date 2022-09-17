@@ -26,9 +26,9 @@ when working on our projects.
 
 <img src='/module3/vc-final-comic.png' width="350px" alt="404 image"/>
 
-<center/>
-
 <a href="http://www.phdcomics.com">image source: “Piled Higher and Deeper” by Jorge Cham</a>  
+
+</center>
 
 Notes:
 Data analysis projects often require iteration and revision 
@@ -60,11 +60,12 @@ among other things.
 
 <img src='/module3/vc-files.png' width="400px" alt="404 image"/>
 
-
 </center>
 
 
 Notes:
+
+What does exactly mean to "record the history of a project"?
 
 Instead of creating a new copy for each version of a file
 with an unwieldy name (as in the image), 
@@ -88,10 +89,9 @@ and you can then browse through the history.
 
 <img src='/module3/first-pull-request.png' width="600px" alt="404 image"/>
 
-</center>
-
 <a href="Thttps://doi.org/10.5281/zenodo.3332808">image source: The Turing Way Community, & Scriberia (2019)</a>  
 
+</center>
 
 Notes:
 
