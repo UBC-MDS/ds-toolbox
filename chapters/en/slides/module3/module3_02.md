@@ -320,7 +320,7 @@ which we will explain in the next slide.
 
 <center>
 
-<img src='/module3/vc-clone-jupyter-URL.png' width="600px" alt="404 image"/>
+<img src='/module3/vc-clone-jupyter-URL.png' width="700px" alt="404 image"/>
 
 </center>
 
@@ -430,7 +430,7 @@ using the graphical Git client.
 
 <center>
 
-<img src='/module3/vc-git-hidden-folder.png' width="700px" alt="404 image"/>
+<img src='/module3/vc-git-hidden-folder.png' width="800px" alt="404 image"/>
 
 </center>
 
