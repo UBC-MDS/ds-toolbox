@@ -75,7 +75,7 @@ How do you pass an option to <code>ls</code> which tells is to decorate the outp
 
 </exercise>
 
-<exercise id="3" title="Navigating the file system" type="slides,video">
+<exercise id="3" title="Moving around" type="slides,video">
 <slides source="module2/module2_03" shot="2" start="15:27" end="26:21"> </slides>
 </exercise>
 
@@ -148,7 +148,7 @@ While this command would list the hidden files, the <code>-F</code> flag is not 
 
 </exercise>
 
-<exercise id="5" title="Moving, copying, and deleting files" type="slides,video">
+<exercise id="5" title="Working with files and directories" type="slides,video">
 <slides source="module2/module2_05" shot="2" start="26:23" end="42:20"></slides>
 </exercise>
 
