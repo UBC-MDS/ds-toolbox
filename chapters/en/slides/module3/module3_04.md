@@ -130,6 +130,8 @@ When committing changes, you need to include a title/summary for each message (t
 <b>Bad messages</b> ❌ : <br>
     - fixes an error <br>
     - added new code <br>
+<br>
+<br>
 <b>Good messages</b> ✅ : <br>
     - Reorder sections to make the README more welcoming <br>
     - Fix notebook error to allow for export with images <br>
@@ -138,7 +140,7 @@ When committing changes, you need to include a title/summary for each message (t
 Notes:
 
 
-You can see an example of an informative title and long description in this slide.   
+You can see example of informative commit titles in this slide.   
 The general guideline for the title is to summarize the purpose of the commit as a short descriptive message.  
 It is recommended to write your messages in imperative mood (imagine that your commit should complete the sentence "this commit will...") and start with a capital letter. 
 
