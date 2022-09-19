@@ -223,7 +223,7 @@ as shown in the next slide.
 
 <center>
 
-<img src="/module3/vc-commit-jl-terminal-editor.png" alt="404 image" width="650px">
+<img src="/module3/vc-commit-jl-terminal-editor.png" alt="404 image" width="700px">
 
 Notes:
 
@@ -242,6 +242,22 @@ and then pressing `Enter`.
 Then you can go back
 and make sure that VS Code is your default editor
 by following the instructions in the first assignment.
+
+
+
+
+---
+
+## Making the commit (Terminal)
+
+<br>
+
+
+<center>
+
+<img src="/module3/vc-commit-jl-message-terminal.png" alt="404 image" width="700px">
+
+Notes:
 
 Often,
 a descriptive summary in the title field is sufficient
