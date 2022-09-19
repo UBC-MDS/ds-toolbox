@@ -26,9 +26,9 @@ in the git repository on your computer is used for.
 <br>
 <br>
 
-> 1. Make a commit of your own changes in the local repository.
-> 2. Send your new commits to the remote GitHub repository.
-> 3.Retrieve any new changes (that others made) from the remote GitHub repository.
+> 1. <b>Make a commit</b> of your own changes in the local repository.
+> 2. <b>Send your new commits to the remote</b> GitHub repository.
+> 3. <b>Retrieve any new changes</b> (that others made) from the remote GitHub repository.
 
 Notes:
 When you work in a local version-controlled repository, there are generally three additional steps you must take as part of your regular workflow.
@@ -36,13 +36,22 @@ In addition to working on your files
 creating, editing, and deleting them as you normally would do, 
 you must also tell Git when to:
 
-1. <b>Make a commit</b> of your own changes in the local repository.
-2. <b>Send your new commits to the remote</b> GitHub repository.
-3. <b>Retrieve any new changes</b> (that others made) from the remote GitHub repository.
+1. **Make a commit** of your own changes in the local repository.
+2. **Send your new commits to the remote** GitHub repository.
+3. **Retrieve any new changes** (that others made) from the remote GitHub repository.
 
 In this section will discuss the first step.
 
+Making a commit is a two step process 
+where you first add the changes to the staging area 
+and then commit them, 
+which saves the differences between 
+the current and previous version of the file together 
+with your message describing what you did. 
+These changes are saved in the hidden `.git` directory in the Git repository.
 
+Let's learn step by step
+how to make a commit in your local repository
 
 ---
 
@@ -55,17 +64,6 @@ In this section will discuss the first step.
 </center>
 
 Notes:
-
-Making a commit is a two step process 
-where you first add the changes to the staging area 
-and then commit them, 
-which saves the differences between 
-the current and previous version of the file together 
-with your message describing what you did. 
-These changes are saved in the hidden `.git` directory in the Git repository.
-
-Let's learn step by step
-how to make a commit in your local repository
 
 When working on files
 in your local version control repository
@@ -161,12 +159,7 @@ we are adding the notebook file `eda.ipynb` to our project's staging area
 and is something we often do at the beginning of our project
 in order to familiarize ourselves with our dataset).
 
-Note that because if this was the first change we ever made to this file,
-it would have shown up under the `Untracked` heading in the side panel,
-indicating that Git is not yet keeping track of this file.
-However,
-in this example we had already made a previous commit to `eda.ipynb`,
-which why it showed up under the `Changed` heading in the side panel.
+Note that if this was the first change we ever made to this file, it would have shown up under the `Untracked` heading in the side panel, indicating that Git is not yet keeping track of this file. However, in this example, we had already made a previous commit to `eda.ipynb`, which is why it showed up under the Changed heading in the side panel.
 
 ---
 
@@ -196,8 +189,7 @@ about what was changed so
 that your collaborators (and future you) know what happened in this commit,
 something we will learn more about in the next slide deck.
 
-Note that you will also see an `eda-checkpoint.ipynb` file
-under the `Untracked` heading in the side panel.
+You will also notice a `eda-checkpoint.ipynb` file in the side panel under the `Untracked` heading.
 This is a temporary “checkpoint file”
 created by Jupyter when you work on `eda.ipynb`.
 You generally do not want to
