@@ -36,11 +36,25 @@ In addition to working on your files
 creating, editing, and deleting them as you normally would do, 
 you must also tell Git when to:
 
-1. **Make a commit** of your own changes in the local repository.
-2. **Send your new commits to the remote** GitHub repository.
-3. **Retrieve any new changes** (that others made) from the remote GitHub repository.
+1. <b>Make a commit</b> of your own changes in the local repository.
+2. <b>Send your new commits to the remote</b> GitHub repository.
+3. <b>Retrieve any new changes</b> (that others made) from the remote GitHub repository.
 
 In this section will discuss the first step.
+
+
+
+---
+
+## Local repository with changes to files
+
+<center>
+
+<img src='/module3/vc-local-github-notes.png' width="500px" alt="404 image" />
+
+</center>
+
+Notes:
 
 Making a commit is a two step process 
 where you first add the changes to the staging area 
@@ -53,17 +67,6 @@ These changes are saved in the hidden `.git` directory in the Git repository.
 Let's learn step by step
 how to make a commit in your local repository
 
----
-
-## Local repository with changes to files
-
-<center>
-
-<img src='/module3/vc-local-github-notes.png' width="600px" alt="404 image" />
-
-</center>
-
-Notes:
 When working on files
 in your local version control repository
 (e.g., using JupyterLab) and saving your work,
@@ -135,8 +138,7 @@ click the Jupyter Git extension icon on the far left-hand side of JupyterLab.
 ## Specifying files to commit (Jupyter Lab IDE)
 
 <br>
-<br>
-<br>
+
 
 <center>
 
@@ -171,8 +173,7 @@ which why it showed up under the `Changed` heading in the side panel.
 ## Specifying files to commit (Jupyter Lab IDE)
 
 <br>
-<br>
-<br>
+
 
 <center>
 
@@ -208,8 +209,7 @@ only add the files you directly create and edit.
 ## Specifying files to commit (Terminal)
 
 <br>
-<br>
-<br>
+
 
 <center>
 
@@ -253,7 +253,7 @@ We recommend using `git status` to check the staging area before each commit to 
 
 <center>
 
-<img src='/module3/vc-stage-terminal.png' width="700px" alt="404 image" />
+<img src='/module3/vc-stage-terminal.png' width="800px" alt="404 image" />
 
 </center>
 

@@ -67,12 +67,11 @@ increases the quality of your project and facilitates collaborative work.
 ## Making the commit (JupyterLab IDE)
 
 <br>
-<br>
-<br>
+
 
 <center>
 
-<img src='/module3/vc-commit-jupyter.png' width="700px" alt="404 image"/>
+<img src='/module3/vc-commit-jupyter.png' width="800px" alt="404 image"/>
 
 </center>
 
@@ -102,12 +101,11 @@ and is added as author information to the commit message.
 ## Making the commit (JupyterLab IDE)
 
 <br>
-<br>
-<br>
+
 
 <center>
 
-<img src='/module3/vc-commit-description-jupyter.png' width="700px" alt="404 image"/>
+<img src='/module3/vc-commit-description-jupyter.png' width="800px" alt="404 image"/>
 
 </center>
 
@@ -133,12 +131,11 @@ You can see a good example of an informative title and long description in this 
 ## Making the commit (JupyterLab IDE)
 
 <br>
-<br>
-<br>
+
 
 <center>
 
-<img src='/module3/vc-commit-done-jupyterlab.png' width="700px" alt="404 image"/>
+<img src='/module3/vc-commit-done-jupyterlab.png' width="800px" alt="404 image"/>
 
 </center>
 
@@ -154,12 +151,11 @@ After recording a commit, the staging area should be empty and you will see that
 ## Making the commit (JupyterLab IDE)
 
 <br>
-<br>
-<br>
+
 
 <center>
 
-<img src='/module3/vc-jupyter-history.png' width="700px" alt="404 image"/>
+<img src='/module3/vc-jupyter-history.png' width="800px" alt="404 image"/>
 
 </center>
 
@@ -176,12 +172,10 @@ You have now tracked this change and made it part of the history of your project
 ## Making the commit (Terminal)
 
 <br>
-<br>
-<br>
 
 <center>
 
-<img src="/module3/vc-commit-editor.png" width="700px" alt="404 image" >
+<img src="/module3/vc-commit-editor.png" width="800px" alt="404 image" >
 
 </center>
 
@@ -202,12 +196,11 @@ as shown in the next slide.
 ## Making the commit (Terminal)
 
 <br>
-<br>
-<br>
+
 
 <center>
 
-<img src="/module3/vc-commit-jl-terminal-editor.png" alt="404 image" width="600px">
+<img src="/module3/vc-commit-jl-terminal-editor.png" alt="404 image" width="650px">
 
 Notes:
 
