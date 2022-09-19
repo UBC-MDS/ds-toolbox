@@ -44,7 +44,7 @@ you must also tell Git when to:
 
 In this section will discuss the first step.
 
-Making a commit at the same time a two step process 
+Making a commit is at the same time a two step process 
 where you first add the changes to the staging area 
 and then commit them, 
 which saves the differences between 
@@ -180,7 +180,7 @@ Notes:
 
 🙌  **Practice**
 
-Clicking the plus sign (`+`) moves the file from the `Untracked` heading
+Clicking the plus sign (`+`) moves the file from the `Changed` heading
 to the `Staged` heading,
 so that Git knows you want a snapshot
 of its current state as a commit (see image).

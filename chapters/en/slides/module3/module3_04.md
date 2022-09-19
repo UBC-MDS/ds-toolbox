@@ -79,7 +79,7 @@ Notes:
 
 🙌 **Practice**
 
-**Step 3. Add a commit message into the Jupyter Git extension commit text box before pressing the blue "Commit" button to commit the staged changes.**
+**Step 3. Add a commit message into the Jupyter Git extension commit text box.**
 
 To commit the staged changes together with an associated commit message,
 you must write a message in the text box at the bottom of the Git pane
@@ -117,14 +117,31 @@ Notes:
 
 When committing changes, you need to include a title/summary for each message (the upper text box in JupyterLab). Optionally, you could also include a longer description for the commit in the next text box.
 
-You can see a good example of an informative title and long description in this slide. The general guideline for the title is to summarize the purpose of the commit as a short descriptive message. It is recommended to write your messages in imperative mood (imagine that your commit should complete the sentence "this commit will...") and start with a capital letter. You can [read more about how to write a good commit message in this article](https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/) and see a few examples below:
 
-- Bad messages:
+
+---
+
+## Making the commit (JupyterLab IDE)
+
+<br>
+<br>
+<br>
+
+- <br>Bad messages</br> ❌:
     - fixes an error
     - added new code
-- Good messages:
+- <br>Good messages</br> ✅ :
     - Reorder sections to make the README more welcoming
     - Fix notebook error to allow for export with images
+
+
+Notes:
+
+
+You can see an example of an informative title and long description in this slide.   
+The general guideline for the title is to summarize the purpose of the commit as a short descriptive message.  
+It is recommended to write your messages in imperative mood (imagine that your commit should complete the sentence "this commit will...") and start with a capital letter. 
+
 
 ---
 
@@ -164,7 +181,7 @@ Notes:
 🙌 **Practice**
 
 After the changes have been successfully committed,
-you can view them in the History tab together with your message.
+you can view them in the **History** tab together with your message.
 You have now tracked this change and made it part of the history of your project!
 
 ---
