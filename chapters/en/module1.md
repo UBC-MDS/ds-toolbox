@@ -13,7 +13,7 @@ id: 1
 </exercise>
 
 <exercise id="1" title="Introduction to the Data Science Toolbox" type="slides,video">
-<slides source="module1/module1_01" shot="1" start="0:003" end="05:31"> </slides>
+<slides source="module1/module1_01" shot="1" start="0:00" end="13:30"> </slides>
 </exercise>
 
 <exercise id="2" title="✍️  Practice: The tools of the trade">
@@ -122,7 +122,7 @@ They are! Volunteer contributions from people around the world support the devel
 </exercise>
 
 <exercise id="3" title="How to use JupyterLab" type="slides,video">
-<slides source="module1/module1_02" shot="1" start="0:003" end="05:31"> </slides>
+<slides source="module1/module1_02" shot="1" start="13:31" end="21:35"> </slides>
 </exercise>
 <!-- ------------------------------------ -->
 <exercise id='4' title="✍️ Practice: JupyterLab basics">
@@ -197,7 +197,7 @@ As opposed to a notebook window, you'd see that a terminal window, for example, 
 </exercise>
 
 <exercise id="5" title="Asking Effective Questions" type="slides,video">
-<slides source="module1/module1_03" shot="1" start="26:3200" end="40:07"></slides>
+<slides source="module1/module1_03" shot="1" start="21:36" end="30:49"></slides>
 </exercise>
 
 <exercise id="6" title="✍️  Practice: How to ask effectively">
