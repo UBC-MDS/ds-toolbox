@@ -130,8 +130,8 @@ you can get to work editing, creating, and deleting files.
 For example, suppose you created a new file named `eda.ipynb`
 that you would like to commit to the project history.
 Our next step is to "add" this modified file to the staging area 
-(i.e., flag that this is a file with changes we would like to commit),
-click the Jupyter Git extension icon on the far left-hand side of JupyterLab.
+(i.e., flag that this is a file with changes we would like to commit). 
+To do this first you have to click the Jupyter Git extension icon on the far left-hand side of JupyterLab.
 
 ---
 
