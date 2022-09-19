@@ -172,12 +172,16 @@ You have now tracked this change and made it part of the history of your project
 ## Making the commit (Terminal)
 
 <br>
+<br>
+<br>
 
 <center>
 
 <img src="/module3/vc-commit-editor.png" width="800px" alt="404 image" >
 
 </center>
+
+`git commit`
 
 Notes:
 

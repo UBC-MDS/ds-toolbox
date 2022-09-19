@@ -32,6 +32,8 @@ You can also take comfort in the fact that your work is now backed up in the clo
 ## Pushing the commits to GitHub (Jupyter Lab IDE)
 
 <br>
+<br>
+<br>
 
 <center>
 
@@ -88,7 +90,7 @@ and the time of the most recently pushed commit for each file.
 
 <center>
 
-<img src='/module3/vc-gitpush.png' width="800px" alt="404 image"/>
+<img src='/module3/vs-gitpush.png' width="800px" alt="404 image"/>
 
 </center>
 
