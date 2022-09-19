@@ -256,7 +256,7 @@ We recommend using `git status` to check the staging area before each commit to 
 
 </center>
 
-
+You can add multiple files to the staging area with the command `git add`
 
 Notes:
 
