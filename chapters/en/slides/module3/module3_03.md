@@ -25,6 +25,8 @@ in the git repository on your computer is used for.
 <br>
 <br>
 <br>
+<br>
+<br>
 
 > 1. <b>Make a commit</b> of your own changes in the local repository.
 > 2. <b>Send your new commits to the remote</b> GitHub repository.
