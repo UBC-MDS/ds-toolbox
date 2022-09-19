@@ -45,9 +45,6 @@ Notes:
 
 🙌 **Practice**
 
-In the Jupyter Lab interface,
-there are two steps involved in pushing your changes to GitHub for the first time.
-
 **Click the "Push" button**
 
 To push your staged and committed changes to GitHub,

@@ -42,10 +42,12 @@ and make commits in your local repository).
 ## Pulling changes from GitHub (JupyterLab IDE)
 
 <br>
+<br>
+<br>
 
 <center>
 
-<img src='/module3/vc-pulling-contributor-commit.png' width="800px" alt="404 image"/>
+<img src='/module3/vc-pulling-contributor-commit.png' width="850px" alt="404 image"/>
 
 </center>
 
@@ -69,10 +71,14 @@ to our local Git repository.
 ## Pulling changes from GitHub (JupyterLab IDE)
 
 <br>
+<br>
+<br>
+<br>
+<br>
 
 <center>
 
-<img src='/module3/vc-pull-jupyter.png' width="800px" alt="404 image"/>
+<img src='/module3/vc-pull-jupyter.png' width="850px" alt="404 image"/>
 
 </center>
 
@@ -95,26 +101,33 @@ by clicking on the cloud icon with the down arrow in Jupyter Lab.
 ## Pulling changes from GitHub (JupyterLab IDE)
 
 <br>
+<br>
+<br>
+
 
 <center>
 
-<img src='/module3/vc-pull-latest.png' width="800px" alt="404 image"/>
+<img src='/module3/vc-pull-latest.png' width="850px" alt="404 image"/>
 
 </center>
 
 Notes:
 
-In some cases, Jupyte rLab can warn you about continue modyfing your files locally when there are changes in the branch you are working. It is better to always keep the files updated with the remote and pull the changes!
+In some cases, JupyterLab can warn you about continue modyfing your files locally when there are changes in the branch you are working. It is better to always keep the files updated with the remote and pull the changes!
 
 ---
 
 ## Pulling changes from GitHub (JupyterLab IDE)
 
 <br>
+<br>
+<br>
+<br>
+<br>
 
 <center>
 
-<img src='/module3/vc-pull-reopen-notebook.png' width="800px" alt="404 image"/>
+<img src='/module3/vc-pull-reopen-notebook.png' width="850px" alt="404 image"/>
 
 </center>
 
@@ -141,6 +154,10 @@ after pulling and refreshing.
 ## Pulling changes from GitHub (JupyterLab IDE)
 
 <br>
+<br>
+<br>
+<br>
+<br>
 
 <center>
 
@@ -165,10 +182,12 @@ you begin editing any files in your local repository.
 ## Pulling changes from GitHub (Terminal)
 
 <br>
+<br>
+<br>
 
 <center>
 
-<img src='/module3/vc-pull-terminal-jl.png' width="800px" alt="404 image" />
+<img src='/module3/vc-pull-terminal-jl.png' width="850px" alt="404 image" />
 
 </center>
 
@@ -180,9 +199,9 @@ If you want to pull changes from GitHub.com
 via the terminal,
 you can use the command `git pull`.
 As you can see in this slide,
-the Git will print a summary of what it changed
+Git will print a summary of what it changed
 when you run `git pull`
-(in the image two insertions/additions were made to the file `README.md`).
+(in the image one insertions/additions were made to `eda.ipynb`).
 
 ---
 
