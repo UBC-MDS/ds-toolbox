@@ -13,7 +13,7 @@ id: 2
 </exercise>
 
 <exercise id="1" title="Introduction to the shell" type="slides,video">
-<slides source="module2/module2_01" shot="2" start="0:003" end="05:31"> </slides>
+<slides source="module2/module2_01" shot="2" start="0:01" end="15:26"> </slides>
 </exercise>
 
 <exercise id="2" title='✍️ Practice: "Shell out" your knowledge'>
@@ -76,7 +76,7 @@ How do you pass an option to <code>ls</code> which tells is to decorate the outp
 </exercise>
 
 <exercise id="3" title="Navigating the file system" type="slides,video">
-<slides source="module2/module2_03" shot="2" start="5:4008" end="26:2200"> </slides>
+<slides source="module2/module2_03" shot="2" start="15:27" end="26:21"> </slides>
 </exercise>
 
 <exercise id="4" title="✍️ Practice: Ahoy captain!">
@@ -149,7 +149,7 @@ While this command would list the hidden files, the <code>-F</code> flag is not 
 </exercise>
 
 <exercise id="5" title="Moving, copying, and deleting files" type="slides,video">
-<slides source="module2/module2_05" shot="2" start="26:3200" end="40:07"></slides>
+<slides source="module2/module2_05" shot="2" start="26:23" end="42:20"></slides>
 </exercise>
 
 <exercise id="6" title="✍️ Practice: Refine your shell skills">
@@ -220,7 +220,7 @@ The file needs to start with `not`.
 </exercise>
 
 <exercise id="7" title="Intermediate shell topics" type="slides,video">
-<slides source="module2/module2_07" shot="2" start="26:3200" end="40:07"></slides>
+<slides source="module2/module2_07" shot="2" start="42:22" end="59:48"></slides>
 </exercise>
 
 <exercise id="8" title="✍️ Practice: Bash it out">
