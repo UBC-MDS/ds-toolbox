@@ -11,7 +11,7 @@ title: 'module3_06'
 
 <center>
 
-<img src='/module3/vc-pull.png' width="700px" alt="404 image"/>
+<img src='/module3/vc-pull.png' width="550px" alt="404 image"/>
 
 </center>
 
@@ -42,12 +42,10 @@ and make commits in your local repository).
 ## Pulling changes from GitHub (JupyterLab IDE)
 
 <br>
-<br>
-<br>
 
 <center>
 
-<img src='/module3/vc-pulling-contributor-commit.png' width="700px" alt="404 image"/>
+<img src='/module3/vc-pulling-contributor-commit.png' width="800px" alt="404 image"/>
 
 </center>
 
@@ -71,12 +69,10 @@ to our local Git repository.
 ## Pulling changes from GitHub (JupyterLab IDE)
 
 <br>
-<br>
-<br>
 
 <center>
 
-<img src='/module3/vc-pull-jupyter.png' width="700px" alt="404 image"/>
+<img src='/module3/vc-pull-jupyter.png' width="800px" alt="404 image"/>
 
 </center>
 
@@ -99,12 +95,10 @@ by clicking on the cloud icon with the down arrow in Jupyter Lab.
 ## Pulling changes from GitHub (JupyterLab IDE)
 
 <br>
-<br>
-<br>
 
 <center>
 
-<img src='/module3/vc-pull-latest.png' width="700px" alt="404 image"/>
+<img src='/module3/vc-pull-latest.png' width="800px" alt="404 image"/>
 
 </center>
 
@@ -117,12 +111,10 @@ In some cases, Jupyte rLab can warn you about continue modyfing your files local
 ## Pulling changes from GitHub (JupyterLab IDE)
 
 <br>
-<br>
-<br>
 
 <center>
 
-<img src='/module3/vc-pull-reopen-notebook.png' width="700px" alt="404 image"/>
+<img src='/module3/vc-pull-reopen-notebook.png' width="800px" alt="404 image"/>
 
 </center>
 
@@ -149,12 +141,10 @@ after pulling and refreshing.
 ## Pulling changes from GitHub (JupyterLab IDE)
 
 <br>
-<br>
-<br>
 
 <center>
 
-<img src='/module3/vc-pull-history.png' width="600px" alt="404 image" />
+<img src='/module3/vc-pull-history.png' width="850px" alt="404 image" />
 
 </center>
 
@@ -175,12 +165,10 @@ you begin editing any files in your local repository.
 ## Pulling changes from GitHub (Terminal)
 
 <br>
-<br>
-<br>
 
 <center>
 
-<img src='/module3/vc-pull-terminal-jl.png' width="600px" alt="404 image" />
+<img src='/module3/vc-pull-terminal-jl.png' width="800px" alt="404 image" />
 
 </center>
 

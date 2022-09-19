@@ -32,12 +32,10 @@ You can also take comfort in the fact that your work is now backed up in the clo
 ## Pushing the commits to GitHub (Jupyter Lab IDE)
 
 <br>
-<br>
-<br>
 
 <center>
 
-<img src='/module3/vc-pushing-jupyter.png' width="700px" alt="404 image"/>
+<img src='/module3/vc-pushing-jupyter.png' width="850px" alt="404 image"/>
 
 </center>
 
@@ -65,12 +63,11 @@ informing you that the push was successful.
 ## Pushing the commits to GitHub (Jupyter Lab IDE)
 
 <br>
-<br>
-<br>
+
 
 <center>
 
-<img src='/module3/vc-push-jupyter-3.png' width="700px" alt="404 image"/>
+<img src='/module3/vc-push-jupyter-3.png' width="800px" alt="404 image"/>
 
 </center>
 
@@ -87,12 +84,11 @@ and the time of the most recently pushed commit for each file.
 ## Pushing the commits to GitHub (Terminal)
 
 <br>
-<br>
-<br>
+
 
 <center>
 
-<img src='/module3/vc-git-push.png' width="600px" alt="404 image"/>
+<img src='/module3/vc-gitpush.png' width="800px" alt="404 image"/>
 
 </center>
 
