@@ -127,10 +127,10 @@ When committing changes, you need to include a title/summary for each message (t
 <br>
 <br>
 
-- <br>Bad messages</br> ❌:
+<b>Bad messages</b> ❌:
     - fixes an error
     - added new code
-- <br>Good messages</br> ✅ :
+<b>Good messages</b> ✅ :
     - Reorder sections to make the README more welcoming
     - Fix notebook error to allow for export with images
 
