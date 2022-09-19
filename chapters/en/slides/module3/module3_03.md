@@ -248,16 +248,15 @@ We recommend using `git status` to check the staging area before each commit to 
 ## Specifying files to commit (Terminal)
 
 <br>
-<br>
-<br>
+
 
 <center>
 
-<img src='/module3/vc-stage-terminal.png' width="800px" alt="404 image" />
+<img src='/module3/vc-stage-terminal.png' width="850px" alt="404 image" />
 
 </center>
 
-Add the files to the staging area using the terminal -> `git add <file-name(s)>`
+
 
 Notes:
 
