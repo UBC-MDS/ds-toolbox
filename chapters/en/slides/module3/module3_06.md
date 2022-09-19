@@ -73,8 +73,7 @@ to our local Git repository.
 <br>
 <br>
 <br>
-<br>
-<br>
+
 
 <center>
 
@@ -122,8 +121,6 @@ In some cases, JupyterLab can warn you about continue modyfing your files locall
 <br>
 <br>
 <br>
-<br>
-<br>
 
 <center>
 
@@ -156,8 +153,7 @@ after pulling and refreshing.
 <br>
 <br>
 <br>
-<br>
-<br>
+
 
 <center>
 
