@@ -165,7 +165,7 @@ saves them in another location
 (you can think of this as a secrete pocket
  which Git does not care about when pulling from the remote repo, and from which you can take out the changes again when you need them). You can then do `git pull`, and follow up with a `git stash apply` to bring your changes back from the stash to the working area, and then carry on working.
 
-This workflow can save you from running into merge conflicts, as long as you have not already made modifications to the same lines as you are pulling down. If you have already modified the same file that was updated remotely, you will still run into a merge conflict when you do `git stash pop`. Stashing is also great when you are working on one feature but realize that you should actually work on another unrelated feature first, you can stash your existing work (instead of manually saving it elsewhere) and finish working on the most urgent feature first.
+This workflow can save you from running into merge conflicts, as long as you have not already made modifications to the same lines as you are pulling down. If you have already modified the same file that was updated remotely, you will still run into a merge conflict when you do `git stash apply`. Stashing is also great when you are working on one feature but realize that you should actually work on another unrelated feature first, you can stash your existing work (instead of manually saving it elsewhere) and finish working on the most urgent feature first.
 
 ---
 
