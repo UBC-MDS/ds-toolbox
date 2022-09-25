@@ -9,12 +9,11 @@ id: 7
 ---
 
 <exercise id="0" title="Module learning outcomes" type="slides,video">
-<slides source="module7/module7_00" shot="21" start="0:00" end="0:42"></slides>
+<slides source="module7/module7_00" shot="19" start="0:00" end="0:42"></slides>
 </exercise>
 <!-- ------------------------------------ -->
-<!-- ------------------------------------ -->
 <exercise id='1' title="Jupyter notebooks" type="slides,video">
-<slides source="module7/module7_01" shot="7" start="0:00" end="0:42"></slides>
+<slides source="module7/module7_01" shot="20" start="0:00" end="11:00"></slides>
 </exercise>
 <!-- ------------------------------------ -->
 <exercise id='2' title="✍️ Practice: Keeping a notebook ">
@@ -88,7 +87,7 @@ Note that some cells have already been executed. An error message would have res
 </exercise>
 <!-- ------------------------------------ -->
 <exercise id='3' title="Markdown for text formatting" type="slides,video">
-<slides source="module7/module7_02" shot="7" start="0:00" end="0:42"></slides>
+<slides source="module7/module7_02" shot="20" start="11:01" end="19:49"></slides>
 </exercise>
 <!-- ------------------------------------ -->
 <exercise id='4' title="✍️ Practice: Markdown is everywhere we look">
@@ -126,7 +125,7 @@ You can <b>open</b> a Markdown document with any text editor, since it only cont
 </exercise>
 <!-- ------------------------------------ -->
 <exercise id='5' title="Intermediate JupyterLab tips and tricks" type="slides,video">
-<slides source="module7/module7_03" shot="7" start="0:00" end="0:42"></slides>
+<slides source="module7/module7_03" shot="20" start="19:51" end="30:08"></slides>
 </exercise>
 <!-- ------------------------------------ -->
 <exercise id='6' title="✍️ Practice: JupyterLab level up">
@@ -179,7 +178,7 @@ Using additional views can allow you to compare output and input cells next to e
 </exercise>
 <!-- ------------------------------------ -->
 <exercise id='7' title="Advanced JupyterLab tips and tricks" type="slides,video">
-<slides source="module7/module7_04" shot="7" start="0:00" end="0:42"></slides>
+<slides source="module7/module7_04" shot="20" start="30:09" end="39:19"></slides>
 </exercise>
 <!-- ------------------------------------ -->
 <exercise id='8' title="✍️ Practice: JupyterLab level up again">
@@ -228,6 +227,6 @@ This is not a valid command prefix in for a notebook cell.
 </exercise>
 <!-- ------------------------------------ -->
 <exercise id='9' title="What Did We Learn?" type="slides,video">
-<slides source="module7/module7_end" shot="22" start="0:00" end="0:33"></slides>
+<slides source="module7/module7_end" shot="21" start="0:00" end="0:33"></slides>
 </exercise>
 <!-- ------------------------------------ -->
