@@ -5,7 +5,18 @@
         "slogan": "Course 4 of UBC's Key Capabilities in Data Science Program",
         "description": "In this course, we will dive into the world of data science tools and utilities. While these tools are not strictly required for data analysis, they are necessary for maintaining efficient, reproducible, and collaborative workflows, and are essential building blocks for a successful and sustained data science career.",
         "bio": "The University of British Columbia (UBC) is a comprehensive research-intensive university, consistently ranked among the 40 best universities in the world. The Key Capabilities in Data Science program was launched in September 2020 and is developed and taught by many of the same instructors as the UBC Master of Data Science program.",
-        "video": ["/jajN3K9Nk7o", "/ne-CQ-coFME", "/pLEkFYgJP6U", "/mod3-link", "/mod4-link", "/mod5-link", "/mod6-link", "/mod7-link", "/mod8-link", "/Ae6Hlhg5VG8", "/mV08Q0VwXQo", "/dsEXNYSYRzw", "/tvR4VXmDjBU", "/X6r6Y_uWU6A", "/Mc_ttS1iJmQ", "/hLKQsU3srr4", "/NvqzQOZTLS8", "/1yFbfIPliVc", "/HSUWl_fJnfw", "/I95CvlBOrXU", "/DKn7uKFw5DQ", "/l7onCEyHQGA", "/WhT1xRwYo3M", "/Na0YP_-sixY", "/9QMzJ-pnRrU", "/ZNg7kdOvXJU"],
+        "video": [
+            "/jajN3K9Nk7o",
+            "/Ae6Hlhg5VG8", "/ne-CQ-coFME", "/mV08Q0VwXQo",
+            "/dsEXNYSYRzw", "/pLEkFYgJP6U", "/tvR4VXmDjBU",
+            "/X6r6Y_uWU6A", "mod3-slideshow", "/Mc_ttS1iJmQ",
+            "/hLKQsU3srr4", "mod4-slideshow", "/NvqzQOZTLS8",
+            "/1yFbfIPliVc", "mod5-slideshow", "/HSUWl_fJnfw",
+            "/I95CvlBOrXU", "/roJaEViJ67k", "/DKn7uKFw5DQ",
+            "/l7onCEyHQGA", "/Q8SnuwFNITo", "/WhT1xRwYo3M",
+            "/Na0YP_-sixY", "/bhw-f20LWQU", "/9QMzJ-pnRrU",
+            "/ZNg7kdOvXJU"
+        ],
         "footerLinks": [
             { "text": "Website",
                 "url": "https://extendedlearning.ubc.ca/programs/key-capabilities-data-science"
