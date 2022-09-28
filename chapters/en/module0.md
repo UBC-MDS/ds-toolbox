@@ -28,8 +28,6 @@ Great! Please continue on to Module 1!
 
 </opt>
 
-</opt>
-
 <opt text="I don't think this is the right fit for me." correct="true">
 
 
