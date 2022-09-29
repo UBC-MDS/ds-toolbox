@@ -123,7 +123,7 @@ Another option is to add the flag `--oneline` (run `git log --oneline` instead o
 
 <center>
 
-<img src='/module4/vc-git-log-oneline.png' width="800px" alt="404 image"/>
+<img src='/module4/vc-git-log-oneline.png' width="900px" alt="404 image"/>
 
 </center>
 
