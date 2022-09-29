@@ -196,7 +196,7 @@ in the familiar `git diff` format.
 
 <center>
 
-<img src='/module4/diff-github.png' width="600px" alt="404 image"/>
+<img src='/module4/diff-github-example.png' width="800px" alt="404 image"/>
 
 </center>
 
