@@ -12,10 +12,13 @@ In this slide deck we will learn more about how to collaborate effectively on Gi
 
 ## Let's work together!
 
+<br>
+<br>
+<br>
 
 <center>
 
-<img src='/module5/quote.jpg' width="80%" alt="404 image" />
+<img src='/module5/quote.jpg' width="600px" alt="404 image" />
 
 </center>
 
@@ -74,7 +77,7 @@ The “Invite a collaborator” button on the GitHub web interface.
 
 <center>
 
-<img src='/module5/add-collab-1.png' width="70%" alt="404 image" />
+<img src='/module5/add-collab-1.png' width="600px" alt="404 image" />
 
 </center>
 
@@ -90,9 +93,13 @@ As mentioned earlier, GitHub allows you to control who has access to your projec
 
 ## Giving collaborators access to your project
 
+<br>
+<br>
+<br>
+
 <center>
 
-<img src='/module5/add-collab-2.png' width="80%" alt="404 image" />
+<img src='/module5/add-collab-2.png' width="600px" alt="404 image" />
 
 </center>
 
@@ -110,7 +117,7 @@ Under "Branch name pattern", type the branch name or pattern you want to protect
 
 <center>
 
-<img src='/module5/add-branch-protection-rule.png' width="80%" alt="404 image" />
+<img src='/module5/add-branch-protection-rule.png' width="600px" alt="404 image" />
 
 </center>
 
@@ -124,9 +131,13 @@ To add a branch protection rule you can go to **Settings > Code and Automation (
 
 ## Branch protection rules
 
+<br>
+<br>
+<br>
+
 <center>
 
-<img src='/module5/PR-reviews-required-updated.png' width="80%" alt="404 image" />
+<img src='/module5/PR-reviews-required-updated.png' width="600px" alt="404 image" />
 
 </center>
 
@@ -140,9 +151,13 @@ Notice that you can create protect branches different to `main` but we will not 
 
 ## Branch protection rules
 
+<br>
+<br>
+<br>
+
 <center>
 
-<img src='/module5/branches-house-analogy-explained.png' width="80%" alt="404 image" />
+<img src='/module5/branches-house-analogy-explained.png' width="600px" alt="404 image" />
 
 </center>
 
@@ -162,9 +177,14 @@ We are ready to start collaborating!
 ---
 
 ## How pull requests look like after you protect the branch
+
+<br>
+<br>
+<br>
+
 <center>
 
-<img src='/module5/PR-aprove.png' width="80%" alt="404 image" />
+<img src='/module5/PR-aprove.png' width="600px" alt="404 image" />
 
 </center>
 
@@ -186,7 +206,7 @@ This means that when you are doing a pull request you will need the approval of 
 Notes:
 Giving your collaborators access to your repository is mandatory to collaborate using branches. Protecting the main branch is considered good practice but experienced users that are very familiar with the workflow could opt to not use this strategy.
 
-The workflow will be the same that we have learned before, cloning, adding to the staging area, committing the changes and pushing to the repo with the only difference being that you will have to create a pull request. Merge conflicts could happen and you can use the strategies you have learned in the past chapters to resolve them.
+The workflow will be the same that we have learned before, cloning, adding to the staging area, committing the changes and pushing to the repo with the only difference being that you will have to create a pull request. Merge conflicts could happen and you can use the strategies you have learned in the past modules to resolve them.
 
 ---
 

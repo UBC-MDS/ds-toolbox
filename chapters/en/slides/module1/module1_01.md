@@ -119,7 +119,7 @@ to indicate that it was a rebirth with many new features
 compared to its predecessor "The Bourne Shell"
 (named after its creator Stephen Bourne).
 
-We will learn more about the shell in module 2!
+We will learn more about the shell in Module 2!
 
 ---
 
@@ -183,7 +183,7 @@ so that there are not conflicts
 when two programs requires different versions
 of the same software.
 This is called virtual environments,
-and we will learn more about it and other Conda features in module 6!
+and we will learn more about it and other Conda features in Module 6!
 
 ---
 
@@ -222,7 +222,7 @@ and for some aspects of version control with Git.
 
 We will learn more about VS Code
 during the shell and version control modules,
-and we will look closer at advanced JupyterLab features in module 7!
+and we will look closer at advanced JupyterLab features in Module 7!
 
 ---
 

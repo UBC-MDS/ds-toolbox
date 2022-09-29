@@ -37,10 +37,13 @@ Let's look closer at each one in the next few slides.
 
 ## 1. Viewing the history of a project: GitHub
 
+<br>
+<br>
+<br>
 
 <center>
 
-<img src='/module4/vc-history-gb.png' width="90%" alt="404 image"/>
+<img src='/module4/vc-history-gb.png' width="800px" alt="404 image"/>
 
 </center>
 
@@ -51,9 +54,13 @@ On the repo's landing page on GitHub, you can click the "*N* commits" link marke
 
 ## 1. Viewing the history of a project: GitHub
 
+<br>
+<br>
+<br>
+
 <center>
 
-<img src='/module4/vc-history-gb-2.png' width="90%" alt="404 image"/>
+<img src='/module4/vc-history-gb-2.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -70,9 +77,13 @@ at the time of this commit by clicking the `<>` button.
 
 ## 2. Viewing the history of a project: Jupyter Lab
 
+<br>
+<br>
+<br>
+
 <center>
 
-<img src='/module4/vc-history-jl-2.png' width="70%" alt="404 image"/>
+<img src='/module4/vc-history-jl-2.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -86,9 +97,13 @@ the time when the commit was made, its author, and hash.
 
 ## 3. Viewing the history of a project: the Terminal
 
+<br>
+<br>
+<br>
+
 <center>
 
-<img src='/module4/vc-history-terminal.png' width="90%" alt="404 image"/>
+<img src='/module4/vc-git-log.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -101,9 +116,13 @@ and in this slide we have marked which part of the `git log` output correspond t
 
 ## 3. Viewing the history of a project: the Terminal
 
+<br>
+<br>
+<br>
+
 <center>
 
-<img src='/module4/vc-history-terminal-2.png' width="90%" alt="404 image"/>
+<img src='/module4/vc-git-log-oneline.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -112,10 +131,10 @@ Adding the options flag `--oneline` to the command `git log` will provide you wi
 This is often more convenient as it is easier to digest and get an overview of the project history,
 but it can be tedious to type out each time.
 Here it would be good to create a shell alias,
-which we learned about in module 2!
+which we learned about in Module 2!
 Executing `alias gl="git log --oneline"`
 means that we can simply type `gl` each time we want to view the git log output.
-Refer to module 2 for more details around aliases and how to make them persist through reboots.
+Refer to Module 2 for more details around aliases and how to make them persist through reboots.
 
 The terminal allows greater flexibility when it comes to displaying the history of the project.
 If you would like to know what other possibilities you have for using the `git log` command, you can access the help by typing the command `git log --help` (any operating system) or `man git log` (MacOS and Linux).

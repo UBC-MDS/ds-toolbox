@@ -48,6 +48,9 @@ The fork workflow is used in many open source projects where there is often a sm
 
 ## Developing on a forked repo
 
+<br>
+<br>
+<br>
 
 <center>
 
@@ -64,6 +67,9 @@ When you are working on a branch you have to push your branch to GitHub and ask 
 
 ## Keeping your remote (origin) up to date with the upstream remote
 
+<br>
+<br>
+<br>
 
 <center>
 

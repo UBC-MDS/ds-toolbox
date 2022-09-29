@@ -37,7 +37,7 @@ In this course, we will dive into the world of data science tools and utilities.
                                         </center>
                                         </p>
                                         <p>
-                                        <strong>Course prerequisites: This course does not have any formal prerequistes, but it is recommended that you have some experience with Jupyter Notebooks and JupyterLab, either from your own projects or the course </strong><u><a href="https://prog-learn.mds.ubc.ca/">Programming in Python for Data Science</a></u> 
+                                        <strong>Course prerequisites: <u><a href="https://prog-learn.mds.ubc.ca/">Programming in Python for Data Science</a></u></strong>
                                         </p>
                              </div>
                     </section>

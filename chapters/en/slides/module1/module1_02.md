@@ -6,7 +6,7 @@ type: slides
 # How to use JupyterLab
 
 Notes:
-You have already been working with JupyterLab and Jupyter Notebooks in the Programming for Data Science course. In this module we will go through these tools at a basic level as a reminder to prepare you for the upcoming chapters.
+You have already been working with JupyterLab and Jupyter Notebooks in the [Programming in Python for Data Science](https://prog-learn.mds.ubc.ca/) course. In this module we will go through these tools at a basic level as a reminder to prepare you for the upcoming modules.
 
 ---
 
@@ -58,7 +58,7 @@ The main document type that is most commonly used in JupyterLab is the Jupyter *
 
 One of the core strengths of Jupyter notebooks is that they enable you to combine narrative text with interactive, executable code and its output all in one place. 
 
-We'll talk about Jupyter notebooks in more detail in chapter 7.
+We'll talk about Jupyter notebooks in more detail in Module 7.
 
 ---
 
@@ -78,7 +78,7 @@ you will be installing JupyterLab on your own machine.
 After you have installed it,
 you can launch JupyterLab by running the command `jupyter lab`
 from a terminal
-(more on terminals in the first assignment instructions and in module 2).
+(more on terminals in the first assignment instructions and in Module 2).
 
 When JupyterLab launches, you're going to see the "Launcher" tab, which allows you to create various new working environments.
 
@@ -108,11 +108,11 @@ Here you can see various tabs of the left sidebar:
 
 - (2): This is the running terminals and kernels tab. Here you can see all open tabs in the working area, as well as all running kernels. A kernel is a running language engine connected to your notebooks. We'll learn more about these later in the course.
 
-- (3): This is the Git extension tab. You will be using this extensively in chapters 3-5 to version-control your repositories.
+- (3): This is the Git extension tab. You will be using this extensively in modules 3-5 to version-control your repositories.
 
 - (4): This is your table of contents tab. Whenever you insert Markdown headings to your notebooks, they will automatically show up here and will help you easily jump to any specific section of your notebook. You can also show code cells in the table of contents and expand and collapse sections to get a quick overview of your notebook.
 
-There is also an Extension Manager tab which we will talk about in more detail in module 7.
+There is also an Extension Manager tab which we will talk about in more detail in Module 7.
 
 ---
 
