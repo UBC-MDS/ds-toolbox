@@ -25,23 +25,35 @@ in the git repository on your computer is used for.
 <br>
 <br>
 <br>
+<br>
+<br>
 
-> 1. Make a commit of your own changes in the local repository.
-> 2. Send your new commits to the remote GitHub repository.
-> 3.Retrieve any new changes (that others made) from the remote GitHub repository.
+> 1. <b>Make a commit</b> of your own changes in the local repository.
+> 2. <b>Send your new commits to the remote</b> GitHub repository.
+> 3. <b>Retrieve any new changes</b> (that others made) from the remote GitHub repository.
 
 Notes:
-When you work in a local version-controlled repository, there are generally three additional steps you must take as part of your regular workflow. In addition to working on your files—creating, editing, and deleting them as you normally would—you must also tell Git when to:
+When you work in a local version-controlled repository, there are generally three additional steps you must take as part of your regular workflow.
+In addition to working on your files 
+creating, editing, and deleting them as you normally would do, 
+you must also tell Git when to:
 
 1. **Make a commit** of your own changes in the local repository.
 2. **Send your new commits to the remote** GitHub repository.
 3. **Retrieve any new changes** (that others made) from the remote GitHub repository.
 
-In this slide deck we will discuss the first step.
+In this section will discuss the first step.
 
-Making a commit is a two step process where you first add the changes to the staging area and then commit them, which saves the differences between the current and previous version of the file together with your message describing what you did. These changes are saved in the hidden `.git` directory in the Git repository.
+Making a commit is at the same time a two step process 
+where you first add the changes to the staging area 
+and then commit them, 
+which saves the differences between 
+the current and previous version of the file together 
+with your message describing what you did. 
+These changes are saved in the hidden `.git` directory in the Git repository.
 
-Let's learn step by step how to make a commit in your local repository
+Let's learn step by step
+how to make a commit in your local repository
 
 ---
 
@@ -49,22 +61,23 @@ Let's learn step by step how to make a commit in your local repository
 
 <center>
 
-<img src='/module3/vc-local-github-notes.png' width="600px" alt="404 image" />
+<img src='/module3/vc-local-github-notes.png' width="500px" alt="404 image" />
 
 </center>
 
 Notes:
+
 When working on files
 in your local version control repository
 (e.g., using JupyterLab) and saving your work,
 these changes will only initially exist
-in the working directory of the local repository on your computer.
+in the working directory of 
+the local repository on your computer.
 
 ---
 
 ## Committing changes to a local repository 
 
-<br>
 <br>
 <br>
 
@@ -94,11 +107,13 @@ to our personal scratch notes for the project (`notes.txt`).
 
 ## Open Git (JupyterLab IDE)
 
-
+<br>
+<br>
+<br>
 
 <center>
 
-<img src='/module3/vc-commits-jupyter.png' width="600px" alt="404 image"/>
+<img src='/module3/vc-commits-jupyter.png' width="900px" alt="404 image"/>
 
 </center>
 
@@ -114,21 +129,20 @@ After you have cloned the remote repository from GitHub to create a local reposi
 you can get to work editing, creating, and deleting files.
 For example, suppose you created a new file named `eda.ipynb`
 that you would like to commit to the project history.
-To "add" this modified file to the staging area 
-(i.e., flag that this is a file with changes we would like to commit),
-click the Jupyter Git extension icon on the far left-hand side of JupyterLab.
+Our next step is to "add" this modified file to the staging area 
+(i.e., flag that this is a file with changes we would like to commit). 
+To do this first you have to click the Jupyter Git extension icon on the far left-hand side of JupyterLab.
 
 ---
 
 ## Specifying files to commit (Jupyter Lab IDE)
 
 <br>
-<br>
-<br>
+
 
 <center>
 
-<img src='/module3/vc-jupyter-add-staging-area.png' width="600px" alt="404 image" />
+<img src='/module3/vc-jupyter-add-staging-area.png' width="800px" alt="404 image" />
 
 </center>
 
@@ -136,34 +150,29 @@ Notes:
 
 🙌  **Practice**
 
-**Step 1. Add the files you want to commit to the staging area.**
+**Step 2. Add the files you want to commit to the staging area.**
 
-To add changes we have made to a file to the staging area through the JupyterLab,
-we can use the small plus sign (`+`).
+We can use the small plus sign (`+`) 
+to add changes we've made to a file to the staging area
+via JupyterLab.
 In this screenshot,
 we are adding the notebook file `eda.ipynb` to our project's staging area
 ("eda" stands for "Exploratory Data Analysis",
 and is something we often do at the beginning of our project
 in order to familiarize ourselves with our dataset).
 
-Note that because if this was the first change we ever made to this file,
-it would have shown up under the `Untracked` heading in the side panel,
-indicating that Git is not yet keeping track of this file.
-However,
-in this example we had already made a previous commit to `eda.ipynb`,
-which why it showed up under the `Changed` heading in the side panel.
+Note that if this was the first change we ever made to this file, it would have shown up under the `Untracked` heading in the side panel, indicating that Git is not yet keeping track of this file. However, in this example, we had already made a previous commit to `eda.ipynb`, which is why it showed up under the Changed heading in the side panel.
 
 ---
 
 ## Specifying files to commit (Jupyter Lab IDE)
 
 <br>
-<br>
-<br>
+
 
 <center>
 
-<img src='/module3/vc-jupyter-staged.png' width="600px" alt="404 image" />
+<img src='/module3/vc-jupyter-staged.png' width="800px" alt="404 image" />
 
 </center>
 
@@ -171,7 +180,7 @@ Notes:
 
 🙌  **Practice**
 
-Clicking the plus sign (`+`) moves the file from the `Untracked` heading
+Clicking the plus sign (`+`) moves the file from the `Changed` heading
 to the `Staged` heading,
 so that Git knows you want a snapshot
 of its current state as a commit (see image).
@@ -182,8 +191,7 @@ about what was changed so
 that your collaborators (and future you) know what happened in this commit,
 something we will learn more about in the next slide deck.
 
-Note that you will also see an `eda-checkpoint.ipynb` file
-under the `Untracked` heading in the side panel.
+You will also notice a `eda-checkpoint.ipynb` file in the side panel under the `Untracked` heading.
 This is a temporary “checkpoint file”
 created by Jupyter when you work on `eda.ipynb`.
 You generally do not want to
@@ -195,12 +203,11 @@ only add the files you directly create and edit.
 ## Specifying files to commit (Terminal)
 
 <br>
-<br>
-<br>
+
 
 <center>
 
-<img src='/module3/vc-jupyter-git-status-terminal.png' width="600px" alt="404 image" />
+<img src='/module3/vc-jupyter-git-status-terminal.png' width="800px" alt="404 image" />
 
 </center>
 
@@ -228,34 +235,30 @@ Changes not staged for commit:
    (use "git add <file>..." to update what will be committed)
 ```
 
-We recommend using `git status` / checking the staging area before each commit to make sure you are committing what you think you are.
+We recommend using `git status` to check the staging area before each commit to ensure you are committing what you think you are.
 
 ---
 
 ## Specifying files to commit (Terminal)
 
-If you want to add the files to the staging area using the terminal you can use the following command:
+<br>
 
-`git add <file-name(s)>`
-
-<br>
-<br>
-<br>
 
 <center>
 
-<img src='/module3/vc-staging-terminal.png' width="600px" alt="404 image" />
+<img src='/module3/vc-stage-terminal.png' width="850px" alt="404 image" />
 
 </center>
 
+You can add multiple files to the staging area with the command `git add`
 
 Notes:
 
 🙌  **Practice**
 
-Working in the terminal you can add many files at the same time listing them after `git add`.
+When working in the terminal, you can add multiple files at once by listing them after `git add`.
 
-A very command to use in the terminal is `git add -p`.
+Another command to use in the terminal is `git add -p`.
 This allows you to interactively choose which part of each file to add
 by answering either `y` (yes) or `n` (no)
 to the messages that prompts you about which parts you want to add to the staging area.

@@ -8,7 +8,7 @@ title: 'module3_02'
 Notes:
 
 In this slide deck,
-we will learn the basics of how to create repository that uses version control.
+we will learn the basics of how to create a repository that uses version control.
 
 ---
 
@@ -22,7 +22,7 @@ we will learn the basics of how to create repository that uses version control.
 
 <center>
 
-<img src='/module3/vc-local-github-2.png' width="700px" alt="404 image"/>
+<img src='/module3/vc-local-github-2.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -30,23 +30,46 @@ Notes:
 
 Typically, when we put a data analysis project under version control,
 we create two copies of the repository.
-One copy we use as our primary workspace where we create,
+One copy is used as our primary workspace where we create,
 edit, and delete files. 
-This copy is commonly referred to as the **local repository**.
+  
+This copy is referred to as the **local repository**.
 The local repository most commonly exists on our computer or laptop, 
 but can also exist within a workspace on a server (e.g., JupyterHub). 
 The other copy is typically stored in a repository hosting service (e.g., GitHub),
 where we can easily share it with our collaborators. 
-This copy is commonly referred to as the **remote repository**.
+This copy is known as the **remote repository**.
 
 Under the hood, 
 Git only saves the changes between your versions 
-rather than a complete version of the document for each version,
+rather than a complete version of the document each time,
 so it is also efficient in terms of disk space. 
 Note that while Git works great for text files, 
 such as code, it is not so great for binary files such as images
 because the changes between two versions of the same image
 cannot easily be expressed in plain text.
+
+---
+
+## Tracking the repository history using commit messages
+
+<center>
+
+<img src='/module3/vc-local-github-3.png' width="600px" alt="404 image" />
+
+</center>
+
+Notes:
+
+Both copies of the repository have a **working directory** where you can create, store, edit, and delete files (e.g., `analysis.ipynb` in the image).
+
+You have probably noticed that in the local repository 
+there is a **staging area**, 
+which does not exist in the remote repository.
+We will soon learn more about the staging area,
+but for now imagine that it is a particular area in your local repository
+that will give you more flexibility to track your changes.
+
 
 ---
 
@@ -60,11 +83,15 @@ cannot easily be expressed in plain text.
 
 Notes:
 
-Both copies of the repository:
-
-- have a **working directory** where you can create, store, edit, and delete files (e.g., `analysis.ipynb` in the image).
-
-- maintain a full project history. This history is a record of all versions of the project files that have been created. The repository history is not automatically generated; Git must be explicitly told when to record a version of the project. These records are called **commits**. They are a snapshot of the file contents and metadata about the repository at the time the record was created (a commit includes who made the commit, when it was made, etc.).
+Both repositories also keep a complete project history.
+This history is a record of all versions 
+of the project files that have been created. 
+The repository history is not automatically generated; 
+Git must be explicitly told when to record a version of the project. 
+These records are called **commits**. 
+They are a snapshot of the file contents and metadata about the repository 
+at the time the record was created 
+(a commit includes who made the commit, when it was made, etc.).
 
 In the local and remote repositories shown in the image,
 there are two commits represented as gray circles.
@@ -72,20 +99,17 @@ Each commit can be identified by a human-readable message,
 which you write when you create the commit,
 and a commit hash that Git automatically adds for you.
 
-You have probably noticed that in the local repository 
-there is a **staging area**, 
-which does not exist in the remote repository.
-We will soon learn more about the staging area,
-but for now imagine that it is a particular area in your local repository
-that will give you more flexibility to track your changes.
-
 ---
 
 ## Commit message
 
+
+<br>
+<br>
+
 <center>
 
-<img src='/module3/vc-commits.png' width="600px" alt="404 image"/>
+<img src='/module3/vc-commits.png' width="700px" alt="404 image"/>
 
 </center>
 
@@ -103,8 +127,10 @@ one for each commit: `Created README.md` and `Added analysis draft`.
 The **hash** is a string of characters consisting of about 40 letters and numbers. 
 The purpose of the hash is to serve as a unique identifier for the commit,
 and is used by Git to index project history.
-Although hashes are quite long — imagine having to type out 40 precise characters 
-to view an old project version! — Git is able to work with shorter versions of hashes.
+Although hashes are quite long —
+imagine having to type out 40 precise characters 
+to view an old project version! —
+Git is able to work with shorter versions of hashes.
 In the image, you can see two of these shortened hashes,
 one for each commit: `Daa29d6` and `884c7ce`.
 
@@ -123,16 +149,37 @@ one for each commit: `Daa29d6` and `884c7ce`.
 
 Notes:
 
-We are going to learn how to create a remote repository in GitHub
-and then to clone it locally using the terminal or JupyterLab.
+First, we are going to learn how to create a remote repository on GitHub and then to clone it locally using the terminal or JupyterLab.
+
+There is another possible option to create a repository,
+that is creating it locally and then pushing it to GitHub,
+but we are not going to cover it in this course.
+
+---
+
+## How can you create your repositories? 
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<center>
+
+<img src='/module3/vc-local-github-clone.png' width="600px" alt="404 image"/>
+
+</center>
+
+Notes:
 
 Cloning a GitHub repository is not the same as downloading it to your computer.
 When you clone it you are downloading the files and all the project history 
 including the commits and their associated messages. 
-The information about your project
-that are not the files themselves is downloaded as a hidden folder called `.git`. 
-Any folders that contains a hidden `.git` folder is considered a Git repository. 
-By default all your projects on GitHub are Git repositories.
+The information about your project 
+that is not the files themselves is downloaded as a hidden folder called `.git`. 
+Any folder that contains a hidden `.git` folder is considered a Git repository.
+By default, all your projects on GitHub are Git repositories.
 
 You can clone your project to have a local copy
 using an integrated development environment (IDE) as JupyterLab or the terminal. 
@@ -146,7 +193,7 @@ starting with how to create the remote repository!
 
 ## 1. Creating a remote repository on GitHub
 
-<br>
+
 <br>
 <br>
 
@@ -179,7 +226,7 @@ on the left side of the screen.
 
 <center>
 
-<img src='/module3/vc-new-repository-create.png' width="500px" alt="404 image" />
+<img src='/module3/vc-new-repository-create.png' width="400px" alt="404 image" />
 
 </center>
 
@@ -196,7 +243,7 @@ is the visibility to the outside world,
 either public or private:
 
 - **Public repositories** can be viewed by anyone.
-- **Private repositories** can be viewed by only you.
+- **Private repositories** are only visible to you.
 
 Both public and private repositories are only editable by you, 
 but you can change that by giving access to other collaborators.
@@ -205,10 +252,10 @@ To get started with
 a public repository having a template `README.md` file, 
 take the following steps:
 
-1. Enter the name of your project repository. In the example below, we use `canadian_languages`. 
+1. Enter the name of your project repository. In our example, we use `canadian_languages`. 
 2. Most repositories follow a similar naming convention involving only lowercase letter words separated by either underscores or hyphens.
 3. Choose an option for the privacy of your repository.
-4. Select `Add a README file` This creates a placeholder `README.md` file in your repository’s root folder, which makes it possible to clone the repository to your computer directly.
+4. Select the option `Add a README file`. This creates a placeholder `README.md` file in your repository’s root folder, which makes it possible to clone the repository to your computer directly.
 5. When you are happy with your repository name and configuration, click on the green `Create Repository` button.
 
 That's it! Now let's clone it to get a local copy on your computer.
@@ -223,7 +270,7 @@ That's it! Now let's clone it to get a local copy on your computer.
 
 <center>
 
-<img src='/module3/vc-clone-jupyter-https.png' width="600px" alt="404 image" align="center"/>
+<img src='/module3/vc-clone-jupyter-https.png' width="700px" alt="404 image" align="center"/>
 
 </center>
 
@@ -235,7 +282,7 @@ Cloning a remote repository from GitHub to create a local repository
 results in a copy that is aware where it was obtained from, 
 so that it knows where to send/receive new committed edits. 
 In order to do this, 
-first click the green button that says "Code" on your GitHub repo,
+first click the green button that says `Code` on your GitHub repo,
 and choose to copy the URL from the HTTPS tab.
 
 *The green “Code” drop-down menu contains the remote address (URL) corresponding to the location of the remote GitHub repository.*
@@ -245,12 +292,11 @@ and choose to copy the URL from the HTTPS tab.
 ## 2. Cloning a repository using Jupyter Lab (IDE)
 
 <br>
-<br>
-<br>
+
 
 <center>
 
-<img src='/module3/vc-clone-jupyter-2.png' width="600px" alt="404 image"/>
+<img src='/module3/vc-clone-jupyter-2.png' width="800px" alt="404 image"/>
 
 </center>
 
@@ -258,10 +304,11 @@ Notes:
 
 🙌  **Practice**
 
-Next, open JupyterLab and click the Jupyter Git Clone icon
-in the "Files" tab of the left side bar.
+Next, open JupyterLab and click the Jupyter `Git Clone` icon
+in the `Files` tab of the left side bar.
 We have marked this icon with a red circle
 in the screenshot in this slide.
+
 When you click this button a dialog box will show up,
 which we will explain in the next slide.
 
@@ -270,12 +317,12 @@ which we will explain in the next slide.
 ## 2. Cloning a repository using Jupyter Lab (IDE)
 
 <br>
-<br>
-<br>
+
+
 
 <center>
 
-<img src='/module3/vc-clone-jupyter-URL.png' width="600px" alt="404 image"/>
+<img src='/module3/vc-clone-jupyter-URL.png' width="800px" alt="404 image"/>
 
 </center>
 
@@ -287,9 +334,12 @@ Once the dialog box pops up,
 you can paste the URL of
 the GitHub project repository
 you copied earlier and 
-click the blue “CLONE” button. 
+click the blue `CLONE` button. 
 This will download the repository files 
 to your computer.
+
+*Another way to do this is clicking on the Git icon*
+*on the side bar as you can see in the image* 
 
 It is important to keep in mind
 where you want to locate your repository.
@@ -310,12 +360,12 @@ a good practice.
 ## 2. Cloning a repository using Jupyter Lab (IDE)
 
 <br>
-<br>
-<br>
+
+
 
 <center>
 
-<img src='/module3/vc-clone-jupyter-4.png' width="600px" alt="404 image"/>
+<img src='/module3/vc-clone-jupyter-4.png' width="800px" alt="404 image"/>
 
 </center>
 
@@ -340,7 +390,7 @@ that existed on your repository on GitHub.
 
 <center>
 
-<img src='/module3/vc-clone-jupyter-terminal.png' width="650px" alt="404 image"/>
+<img src='/module3/vc-clone-jupyter-terminal.png' width="900px" alt="404 image"/>
 
 </center>
 
@@ -369,11 +419,12 @@ as can be seen in the screenshot on this slide.
 After the cloning has finished,
 you will see that the repository appears
 in the JupyterLab files tab,
-just as it did when we clones via the graphical Git client.
+just as it did when we cloned it
+using the graphical Git client.
 
 ---
 
-## How can you check that you are working in a Git repository? (Terminal)
+## How do you know if you're working in a Git repository? (Terminal)
 
 <br>
 <br>
@@ -381,7 +432,7 @@ just as it did when we clones via the graphical Git client.
 
 <center>
 
-<img src='/module3/vc-git-hidden-folder.png' width="600px" alt="404 image"/>
+<img src='/module3/vc-git-hidden-folder.png' width="800px" alt="404 image"/>
 
 </center>
 
@@ -389,19 +440,20 @@ Notes:
 
 🙌  **Practice**
 
-A Git repository stores 
+As we mentioned before, 
+a Git repository stores 
 all the necessary information for 
 version control your project 
 in a hidden folder called `.git`. 
 If you want to know if 
-you are working in a Git repo
+you are working in a Git repository
 using the terminal 
 you can use the bash command `ls -a` 
 as you can see in the image.
 The `-a` flag will include 
 into the lists of files displayed on the terminal 
 the hidden folders. 
-If `.git` is included 
+If the `.git` folder is present 
 you are working in a Git repository.
 
 Remember to first double check 

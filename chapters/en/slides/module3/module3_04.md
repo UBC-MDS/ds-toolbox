@@ -15,24 +15,20 @@ to the repository on our computer.
 
 <br>
 <br>
-<br>
+
 
 <center>
 
-<img src='/module3/vc-commit.png' width="700px" alt="404 image"/>
+<img src='/module3/vc-commit.png' width="800px" alt="404 image"/>
 
 </center>
 
 Notes:
-Once the files we wish to commit have been added to the staging area,
-we can then "commit" those files to add them to the repository history.
+Once the files we want to keep have been added to the staging area, we can "commit" them to the repository history.
 When we do this, we are required to include an informative message 
 briefly describing the purpose of the changes we made.
-This message will be helpful to explain why the changes were made to your collaborators.
-Remember that your most common collaborator is a future version of yourself,
-and that it is very easy to forget why made a particular change a few month ago!.
 
-In the screenshot in this slide, the commit message is `"Message about changes..."`;
+In the screenshot, the commit message is `"Message about changes..."`;
 in your work you should make sure to replace this with an informative message about what you changed.
 It is also important to note that these changes
 are only being committed to the history of the local repository's on your computer.
@@ -51,9 +47,11 @@ and collaborators would not yet be able to see your new changes online.
 
 <img src='/module3/commit-messages-comic.png' width="600px" alt="404 image"/>
 
+<a href="https://xkcd.com/1296/">image source: xkcd.com</a>
+
 </center>
 
-<a href="https://xkcd.com/1296/">Image from xkcd.com</a>
+
 
 Notes:
 Writing meaningful commit messages is really important.
@@ -69,12 +67,11 @@ increases the quality of your project and facilitates collaborative work.
 ## Making the commit (JupyterLab IDE)
 
 <br>
-<br>
-<br>
+
 
 <center>
 
-<img src='/module3/vc-commit-jupyter.png' width="600px" alt="404 image"/>
+<img src='/module3/vc-commit-jupyter.png' width="800px" alt="404 image"/>
 
 </center>
 
@@ -82,7 +79,7 @@ Notes:
 
 🙌 **Practice**
 
-**Step 3. Add a commit message into the Jupyter Git extension commit text box before pressing the blue "Commit" button to commit the staged changes.**
+**Step 3. Add a commit message into the Jupyter Git extension commit text box.**
 
 To commit the staged changes together with an associated commit message,
 you must write a message in the text box at the bottom of the Git pane
@@ -104,12 +101,11 @@ and is added as author information to the commit message.
 ## Making the commit (JupyterLab IDE)
 
 <br>
-<br>
-<br>
+
 
 <center>
 
-<img src='/module3/vc-commit-description-jupyter.png' width="600px" alt="404 image"/>
+<img src='/module3/vc-commit-description-jupyter.png' width="800px" alt="404 image"/>
 
 </center>
 
@@ -117,18 +113,11 @@ Notes:
 
 🙌 **Practice**
 
-**Step 2 continued**
+**Step 3 continued**
 
 When committing changes, you need to include a title/summary for each message (the upper text box in JupyterLab). Optionally, you could also include a longer description for the commit in the next text box.
 
-You can see a good example of an informative title and long description in this slide. The general guideline for the title is to summarize the purpose of the commit as a short descriptive message. It is recommended to write your messages in imperative mood (imagine that your commit should complete the sentence "this commit will...") and start with a capital letter. You can [read more about how to write a good commit message in this article](https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/) and see a few examples below:
 
-- Bad messages:
-    - fixes an error
-    - added new code
-- Good messages:
-    - Reorder sections to make the README more welcoming
-    - Fix notebook error to allow for export with images
 
 ---
 
@@ -138,9 +127,34 @@ You can see a good example of an informative title and long description in this 
 <br>
 <br>
 
+<b>Bad messages</b> ❌ : <br>
+    - fixes an error <br>
+    - added new code <br>
+<br>
+<br>
+<b>Good messages</b> ✅ : <br>
+    - Reorder sections to make the README more welcoming <br>
+    - Fix notebook error to allow for export with images <br>
+
+
+Notes:
+
+
+You can see example of informative commit titles in this slide.   
+The general guideline for the title is to summarize the purpose of the commit as a short descriptive message.  
+It is recommended to write your messages in imperative mood (imagine that your commit should complete the sentence "this commit will...") and start with a capital letter. 
+
+
+---
+
+## Making the commit (JupyterLab IDE)
+
+<br>
+
+
 <center>
 
-<img src='/module3/vc-commit-done-jupyterlab.png' width="600px" alt="404 image"/>
+<img src='/module3/vc-commit-done-jupyterlab.png' width="800px" alt="404 image"/>
 
 </center>
 
@@ -149,19 +163,18 @@ Notes:
 
 🙌 **Practice**
 
-After recording a commit, the staging area should be empty and you will see that there are 0 staged files. You are now ready to push your changes to the remote repository on GitHub, which we will show you how to do in the next slide deck.
+After recording a commit, the staging area should be empty and you will see that there are 0 staged files. You are now ready to push your changes to the remote repository on GitHub.
 
 ---
 
 ## Making the commit (JupyterLab IDE)
 
 <br>
-<br>
-<br>
+
 
 <center>
 
-<img src='/module3/vc-jupyter-history.png' width="600px" alt="404 image"/>
+<img src='/module3/vc-jupyter-history.png' width="800px" alt="404 image"/>
 
 </center>
 
@@ -170,7 +183,7 @@ Notes:
 🙌 **Practice**
 
 After the changes have been successfully committed,
-you can view them in the History tab together with your message.
+you can view them in the **History** tab together with your message.
 You have now tracked this change and made it part of the history of your project!
 
 ---
@@ -183,9 +196,11 @@ You have now tracked this change and made it part of the history of your project
 
 <center>
 
-<img src="/module3/vc-commit-editor.png" width="600px" alt="404 image" >
+<img src="/module3/vc-commit-editor.png" width="800px" alt="404 image" >
 
 </center>
+
+`git commit`
 
 Notes:
 
@@ -204,12 +219,13 @@ as shown in the next slide.
 ## Making the commit (Terminal)
 
 <br>
-<br>
-<br>
+
 
 <center>
 
-<img src="/module3/vc-commit-jl-terminal-editor.png" alt="404 image" width="600px">
+<img src="/module3/vc-commit-jl-terminal-editor.png" alt="404 image" width="800px">
+
+</center>
 
 Notes:
 
@@ -229,11 +245,29 @@ Then you can go back
 and make sure that VS Code is your default editor
 by following the instructions in the first assignment.
 
+
+
+
+---
+
+## Making the commit (Terminal)
+
+<br>
+
+
+<center>
+
+<img src="/module3/vc-commit-jl-message-terminal.png" alt="404 image" width="800px">
+
+</center>
+
+Notes:
+
 Often,
 a descriptive summary in the title field is sufficient
 and we don't need to write out a long description.
 When this is the case,
-you can use the shorter version of the command `git commit` command with option `-m`,
+you can use the shorter version of the command `git commit` with the flag `-m`,
 which allows you to type in the title summary
 together with the command:
 
