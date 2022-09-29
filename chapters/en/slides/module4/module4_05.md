@@ -11,12 +11,15 @@ In this slide deck we will see when merge conflicts arise and how to solve them.
 ---
 
 ## When does a merge conflict arise?
+<br>
+<br>
+<br>
 
 
 
 <center>
 
-<img src='/module4/vc-merge-conflict.png' width="600px" alt="404 image"/>
+<img src='/module4/vc-merge-conflict.png' width="800px" alt="404 image"/>
 
 </center>
 
@@ -32,11 +35,13 @@ If this occurs then you will see the error message in this slide when you try to
 
 ## When does a merge conflict arise?
 
-
+<br>
+<br>
+<br>
 
 <center>
 
-<img src='/module4/vc-merge-conflict-2.png' width="600px" alt="404 image"/>
+<img src='/module4/vc-merge-conflict-2.png' width="800px" alt="404 image"/>
 
 </center>
 
@@ -55,7 +60,7 @@ However, if you and your collaborators made changes to the same line of the same
 
 <center>
 
-<img src='/module4/vc-merge-conflict-3.png' width="600px" alt="404 image"/>
+<img src='/module4/vc-merge-conflict-3.png' width="800px" alt="404 image"/>
 
 </center>
 
@@ -75,7 +80,7 @@ To resolve a merge conflict, you need to open the indicated file in a plain text
 
 <center>
 
-<img src='/module4/vc-merge-conflict-4.png' width="600px" alt="404 image"/>
+<img src='/module4/vc-merge-conflict-4.png' width="800px" alt="404 image"/>
 
 </center>
 
@@ -93,7 +98,7 @@ the end of the merge conflict is marked by `>>>>>>>`. Between these markings, Gi
 
 <center>
 
-<img src='/module4/vc-merge-conflict-5.png' width="600px" alt="404 image"/>
+<img src='/module4/vc-merge-conflict-5.png' width="800px" alt="404 image"/>
 
 </center>
 
@@ -117,7 +122,7 @@ After you made your changes, the file must first be saved, then added to the sta
 
 <center>
 
-<img src='/module4/vc-merge-conflict-t.png' width="600px" alt="404 image"/>
+<img src='/module4/vc-merge-conflict-t.png' width="800px" alt="404 image"/>
 
 </center>
 

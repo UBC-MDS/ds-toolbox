@@ -222,7 +222,7 @@ What do you have to do if you are working with the terminal and you want to writ
 </exercise>
 
 
-<exercise id='11' title='.gitgnore'  type='slides, video'>
+<exercise id='11' title='.gitignore'  type='slides, video'>
 <slides source='module4/module4_06' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 

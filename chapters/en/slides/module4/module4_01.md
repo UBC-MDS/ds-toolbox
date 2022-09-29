@@ -43,7 +43,7 @@ Let's look closer at each one in the next few slides.
 
 <center>
 
-<img src='/module4/vc-history-gb.png' width="800px" alt="404 image"/>
+<img src='/module4/vc-history-gb.png' width="850px" alt="404 image"/>
 
 </center>
 
@@ -60,7 +60,7 @@ On the repo's landing page on GitHub, you can click the "*N* commits" link marke
 
 <center>
 
-<img src='/module4/vc-history-gb-2.png' width="600px" alt="404 image"/>
+<img src='/module4/vc-history-gb-with-notes.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -83,7 +83,7 @@ at the time of this commit by clicking the `<>` button.
 
 <center>
 
-<img src='/module4/vc-history-jl-2.png' width="600px" alt="404 image"/>
+<img src='/module4/vc-history-jl-2.png' width="800px" alt="404 image"/>
 
 </center>
 
@@ -103,7 +103,7 @@ the time when the commit was made, its author, and hash.
 
 <center>
 
-<img src='/module4/vc-git-log.png' width="600px" alt="404 image"/>
+<img src='/module4/vc-git-log.png' width="800px" alt="404 image"/>
 
 </center>
 
@@ -122,7 +122,7 @@ and in this slide we have marked which part of the `git log` output correspond t
 
 <center>
 
-<img src='/module4/vc-git-log-oneline.png' width="600px" alt="404 image"/>
+<img src='/module4/vc-git-log-oneline.png' width="800px" alt="404 image"/>
 
 </center>
 

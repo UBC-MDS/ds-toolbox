@@ -18,7 +18,7 @@ In this slide deck we will see how we can visualize the changes between two comm
 
 <center>
 
-<img src='/module4/diff-intro.png' width="600px" alt="404 image"/>
+<img src='/module4/diff-intro.png' width="850px" alt="404 image"/>
 
 </center>
 
@@ -51,7 +51,7 @@ so let's explore how we can access this view in JupyterLab, the terminal, and on
 
 <center>
 
-<img src='/module4/diff-commits-jl.png' width="600px" alt="404 image"/>
+<img src='/module4/diff-commits-jl.png' width="800px" alt="404 image"/>
 
 </center>
 
