@@ -20,7 +20,7 @@ and how they can make our Git workflow more effective.
 
 <center>
 
-<img src='/module5/branches-house-analogy.jpg' width="85%" alt="404 image" />
+<img src='/module5/house-analogy-features.jpg' width="700px" alt="404 image" />
 
 </center>
 
@@ -70,7 +70,7 @@ When we initiate a repository by default we start working on the `main` branch, 
 
 <center>
 
-<img src='/module5/branches-house-analogy-explained.png' width="85%" alt="404 image" />
+<img src='/module5/house-analogy-explained.png' width="700px" alt="404 image" />
 
 </center>
 
@@ -108,12 +108,11 @@ could be called `master` instead of `main`.
 ## How to create a branch? (JupyterLab)
 
 <br>
-<br>
-<br>
+
 
 <center>
 
-<img src='/module5/create_branch.png' width="85%" alt="404 image" />
+<img src='/module5/branches-new-jl.png' width="800px" alt="404 image" />
 
 </center>
 
@@ -130,14 +129,35 @@ In this slide,
 we create the branch from `main` or 
 from `origin/HEAD` and `origin/main`.
 We already know that `main` is the default branch,
-but what about `origin` and `HEAD`? Let's review some concepts:
+but what about `origin` and `HEAD`? 
+
+---
+
+
+## How to create a branch? (JupyterLab)
+
+<br>
+
+
+<center>
+
+<img src='/module5/branches-labels.png' width="800px" alt="404 image" />
+
+</center>
+
+Notes:
+
+Let's review some concepts:
 
 * `main` is your default local branch.
 * `HEAD` is pointing where you currently are (in this case, on the `main` branch)
 * `origin` is a nickname for your remote repo on GitHub (instead of showing the full URL), so `origin/main` is the `main` branch of the version of the repo you pushed to GitHub.com.
    You don't need to care about `origin/HEAD`, it just point to the default remote branch, which will always be `main` unless you mess around with the settings on the GitHub webpage.
 
-In JupyterLab you can see this information as labels under the tab **Changes** in the sidebar.
+In JupyterLab you can see this information as labels under the tab **Changes** in the sidebar. 
+In the terminal, you can use `git log --oneline` to check the history of your project,
+and see which commits correspond to the names `origin/HEAD`, `origin/main` and `main`.
+You can also see that the currently active branch is shown in cyan at the end of the terminal prompt.
 
 ⚠️ Here we added a new synonym for a GitHub repository.
 Previously, we were using `remote` 
@@ -149,21 +169,16 @@ Now we can refer to the specific GitHub remote we are working on with the nickna
 ## How to create a branch? (Terminal)
 
 <br>
-<br>
-<br>
 
+`git switch -c <branch-name> <commit-hash>` 
 <center>
 
-<img src='/module5/terminal-branches.png' width="600px" alt="404 image" />
+<img src='/module5/branch-switch-create.png' width="800px" alt="404 image" />
 
 </center>
 
 
 Notes:
-In the terminal, you can use `git log --oneline` to check the history of your project,
-and see which commits correspond to the names `origin/HEAD`, `origin/main` and `main`.
-You can also see that the currently active branch is shown in cyan at the end of the terminal prompt.
-
 The `git switch` command can be used 
 to alternate between existing branches.
 If a branch does not yet exist,
@@ -172,6 +187,21 @@ to create the branch as you switch to it.
 Let's create a new branch! 
 Type `git switch -c <branch-name>`, 
 to create and switch to this branch.
+If you want to create a branch
+starting in a particular commit
+you should add the commit hash next to the branch name.
+In the example, 
+the branch is created from the last commit,
+that is the default behaviour 
+when a commit hash is not included.
+
+After creating the branch,
+you will switch to working on there.
+In the terminal, you'll notice that the name of the new branch,
+in this case `report`, is now in parentheses next to the path.
+Also, the **Current branch** tab in JupyterLab is updated,
+and the new branch is now listed there.
+
 
 🙌
 
@@ -189,12 +219,10 @@ and with the command line (running the command `git log --oneline`):
 ## How to create a branch? (Terminal)
 
 <br>
-<br>
-<br>
 
 <center>
 
-<img src='/module5/branches-head.png' width="600px" alt="404 image" />
+<img src='/module5/branch-head-local-commit.png' width="800px" alt="404 image" />
 
 </center>
 
@@ -206,8 +234,8 @@ Let's see what happens when we make a commit locally.
 2. Run `git log --oneline`
 
 As expected, 
-only the reference to where we are currently (HEAD) and 
-the local main branch moved, 
+only the reference to where we are currently (`HEAD`) and 
+the `report` branch moved, 
 because we have not pushed the changes 
 to our GitHub remote (`origin`).
 If you push your changes,
@@ -223,12 +251,10 @@ But how can we push a local branch to GitHub?
 ## Pushing a new branch
 
 <br>
-<br>
-<br>
 
 <center>
 
-<img src='/module5/pushing-new-branch.png' width="600px" alt="404 image" />
+<img src='/module5/pushing-new-branch-jl-t.png' width="800px" alt="404 image" />
 
 </center>
 

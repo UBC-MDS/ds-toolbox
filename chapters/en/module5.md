@@ -92,7 +92,7 @@ Which branch are you currently working on?
 </choice>
 </exercise>
 
-<exercise id='3' title="What is the relationship between the branches?"  type='slides, video'>
+<exercise id='3' title="How branches are related"  type='slides, video'>
 <slides source='module5/module5_02' shot='0' start='3:42' end='4:35'> </slides>
 </exercise>
 
