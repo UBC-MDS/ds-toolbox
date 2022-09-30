@@ -19,7 +19,7 @@ In this slide deck we will see when merge conflicts arise and how to solve them.
 
 <center>
 
-<img src='/module4/vc-merge-conflict.png' width="800px" alt="404 image"/>
+<img src='/module4/vc-merge-conflict-jl.png' width="800px" alt="404 image"/>
 
 </center>
 
@@ -41,7 +41,7 @@ If this occurs then you will see the error message in this slide when you try to
 
 <center>
 
-<img src='/module4/vc-merge-conflict-2.png' width="800px" alt="404 image"/>
+<img src='/module4/vc-merge-conflict-jl-push.png' width="800px" alt="404 image"/>
 
 </center>
 
@@ -60,7 +60,7 @@ However, if you and your collaborators made changes to the same line of the same
 
 <center>
 
-<img src='/module4/vc-merge-conflict-3.png' width="800px" alt="404 image"/>
+<img src='/module4/vc-merge-conflict-open-editor.png' width="800px" alt="404 image"/>
 
 </center>
 
@@ -80,15 +80,18 @@ To resolve a merge conflict, you need to open the indicated file in a plain text
 
 <center>
 
-<img src='/module4/vc-merge-conflict-4.png' width="800px" alt="404 image"/>
+<img src='/module4/vc-merge-conflict-readme.png' width="800px" alt="404 image"/>
 
 </center>
 
 Notes:
 The beginning of the merge conflict is preceded by `<<<<<<<` and
-the end of the merge conflict is marked by `>>>>>>>`. Between these markings, Git also inserts a separator (`=======`). The version of the change before the separator is your change (marked with `HEAD`), and the version that follows the separator was the change that existed on GitHub (marked with the commit hash). In the image, you can see that in your local repository there is a line of code that calls `scale_color_manual` with three color values (`deeppink2`, `cyan4`, and `purple1`). It looks like your collaborator made an edit to that line too, except with different colors (to `blue3`, `red3`, `and black`)!
+the end of the merge conflict is marked by `>>>>>>>`. Between these markings, Git also inserts a separator (`=======`). The version of the change before the separator is your change (marked with `HEAD`), and the version that follows the separator was the change that existed on GitHub (marked with the commit hash). In the image, you can see that in your local repository the README.md title is `Canadian languages`. It looks like your collaborator made an edit to that line too, but the name selected for the title is slighly different: `Data Science project: Canadian languages` !
+
+
 
 ---
+
 
 ## Handling merge conflicts: JupyterLab
 
@@ -98,18 +101,43 @@ the end of the merge conflict is marked by `>>>>>>>`. Between these markings, Gi
 
 <center>
 
-<img src='/module4/vc-merge-conflict-5.png' width="800px" alt="404 image"/>
+<img src='/module4/vc-merge-conflict-jl-conflicted.png' width="800px" alt="404 image"/>
 
 </center>
 
-Notes:
+
+Notes: 
+
 To resolve the merge conflict, we can do anything we want:
 
 - Keep the change made in the local repository,
 - Keep the change made in the remote repository,
 - Write something new to replace both, or get rid of the change entirely.
 
-Once you have decided which version of the change (or what combination of changes!) to keep, you need to also remove the special marks that Git added.
+
+
+
+---
+
+
+## Handling merge conflicts: JupyterLab
+
+<br>
+<br>
+<br>
+
+<center>
+
+<img src='/module4/vc-merge-conflicts-current.png' width="800px" alt="404 image"/>
+
+</center>
+
+
+Notes: 
+
+
+
+Once you have decided which version of the change (or what combination of changes!) to keep, you need to select to keep your current or incoming changes.
 After you made your changes, the file must first be saved, then added to the staging area, and finally committed before you will be able to push your changes to GitHub.
 
 ---
@@ -132,13 +160,80 @@ and the process is similar to what we did in JupyterLab.
 We will see similar error message when we try to push and pull
 and the solution is to open our favourite text editor and edit the file containing the conflict.
 
-In this slide we have opened the file that contains the merge conflict in VS Code.
-You can see that VS Code highlights the merge conflict marks in blue and green.
-It also offer us the option to click the grey buttons above the highlighted areas 
-(marked with a red rectangle and arrows in the slide)
-as a shortcut to directly editing the text in the file.
 
 ---
+
+## Special case: Version control and Jupyter Notebooks
+
+JSON format
+
+```out
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Canadian Languages\n",
+    "\n",
+    "This project aims to understand what languages Canadian residents speak, and where they speak them."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import pandas as pd\n",
+    "import altair as alt"
+   ]
+  },
+```
+
+
+
+Notes:
+First - a bit about what a Jupyter notebook is made up of
+`.ipynb` files are “plain” text files, 
+and we can view them in a plain text editor and make some sense of them
+
+The contents of the notebook are encoded in JSON format, 
+which means that there are many brackets in the file, which can make it hard to read for humans (but easy for machines).
+
+
+---
+## Special case: Version control and Jupyter Notebooks
+
+<img src='/module4/vc-merge-conflict-eda.png' width="800px" alt="404 image"/>
+
+Notes:
+Because the notebooks are stored as plain text,
+we can use them for version control, but this is not without issues, 
+since the JSON format can make it difficult to interpret 
+difference between files and to manually fix conflicts.
+
+In this situation is better to use JupyterLab than any other editor.
+You have to go to the section called **conflicted**.
+
+
+---
+
+## Special case: Version control and Jupyter Notebooks
+
+<img src='/module4/vc-fix-merge-conflict-eda.png' width="800px" alt="404 image"/>
+
+Notes: 
+Once you click in the notebook with the merge conflict, 
+you will be able to select to accept your current local change or the incoming changes from the remote.
+You also can select the option to go back to the commit previous to the generation of the merge conflict.
+In the example, I have accepted the current changes clicking in the arrow next to the change.
+After doing this you should click on `Mark as resolved`,
+stage the changes and create a new commit solving the conflict.
+
+---
+
+
 
 ## Extra: Stashing local non-committed changes before pulling (Terminal)
 
