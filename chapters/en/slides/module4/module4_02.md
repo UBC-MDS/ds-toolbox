@@ -39,6 +39,8 @@ But what if we want to go more into the detail and see exactly what have changed
 <br>
 <br>
 <br>
+<br>
+<br>
 
 <center>
 
@@ -61,8 +63,7 @@ so let's explore how we can access this view in JupyterLab, the terminal, and on
 ## 🙌 Differences between commits: JupyterLab
 
 <br>
-<br>
-<br>
+
 
 <center>
 
@@ -107,7 +108,6 @@ index 1ba39b4..a612860 100644
  Author: Florencia D'Andrea
 +
 +Hello world!
-\ No newline at end of file
 ```
 `$ git diff aa2a019 d59b6bb` 
 
@@ -121,8 +121,6 @@ index a612860..1ba39b4 100644
  Author: Florencia D'Andrea
 -
 -Hello world!
-\ No newline at end of file
-
 ```
 
 Notes:
@@ -153,12 +151,11 @@ you find a more detailed description [on this tutorial](https://www.atlassian.co
 ## 🙌 Differences between commits: Terminal
 
 <br>
-<br>
-<br>
+
 
 <center>
 
-<img src='/module4/diff-commits-t.png' width="600px" alt="404 image"/>
+<img src='/module4/diff-commits-jl-t.png' width="800px" alt="404 image"/>
 
 </center>
 

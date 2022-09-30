@@ -15,11 +15,10 @@ In this slide deck we will see how we can restore past versions of our Git proje
 <br>
 <br>
 <br>
-<br>
-<br>
+
 
 We are going to learn two ways to travel back in time to a previous commit:
-
+<br>
 1. **Doing a hard reset**
 2. **Reverting previous changes**
 
@@ -39,8 +38,7 @@ we will cover `git revert`.
 ## Hard reset (JupyterLab)
 
 <br>
-<br>
-<br>
+
 
 <center>
 
@@ -59,8 +57,6 @@ you should click the clock icon next to the commit you would like to travel back
 ## Hard reset (JupyterLab)
 
 <br>
-<br>
-<br>
 
 <center>
 
@@ -76,8 +72,6 @@ to make sure you are sure that you want to discard your commits.
 
 ## Hard reset (JupyterLab)
 
-<br>
-<br>
 <br>
 
 <center>

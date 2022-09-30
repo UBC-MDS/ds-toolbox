@@ -12,9 +12,12 @@ In this slide deck we will explore the project's commit history.
 
 ## Viewing the history of a project
 
+<br>
+<br>
+<br>
 There are three ways you can view the Git history of a project:
 
-**Remote**
+**On the Remote**
 
 1. In the GitHub web interface through the repo's code commit view
 
@@ -81,7 +84,7 @@ at the time of this commit by clicking the `<>` button.
 
 <center>
 
-<img src='/module4/vc-history-jl-2.png' width="600px" alt="404 image"/>
+<img src='/module4/vc-history-jl-2.png' width="500px" alt="404 image"/>
 
 </center>
 
@@ -143,6 +146,10 @@ If you would like to know what other possibilities you have for using the `git l
 ---
 
 ## Viewing the history of a project
+
+<br>
+<br>
+<br>
 
 **On the remote**
 
