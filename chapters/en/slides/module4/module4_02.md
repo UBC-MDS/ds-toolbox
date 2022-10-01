@@ -22,7 +22,6 @@ In this slide deck we will see how we can visualize the changes between two comm
 Notes:
 We have just learned how to check the commit history of a project
 using GitHub, JupyterLab, and the terminal.
-In this history view,
 
 We could see some key information about each commit in the history view,
 such as when it was made and who made it.
@@ -167,8 +166,8 @@ to select the order of the commits to compare.
 You must also pay attention to the `-` and `+` symbols. 
 They are indicating the order in which the commits were chosen to be compared.
 
-* `-` symbol is indicating changes in the first commit you have selected in JupyterLab or `git diff` first commit.
-* `+` symbol is indicating changes in the second commit you have selected in JupyterLab or `git diff` second commit.
+* `-` symbol is indicating changes in the first commit you have selected in JupyterLab or `git diff` first commit hash.
+* `+` symbol is indicating changes in the second commit you have selected in JupyterLab or `git diff` second commit hash.
 
 In both cases, the phrase "Hello world!" has been added.   
 What the `-` and `+` are showing you is in which commit is the addition! 
@@ -188,7 +187,8 @@ you can find a more detailed description [in this tutorial](https://www.atlassia
 
 <br>
 <br>
-<br>
+
+`https://github.com/flordandrea/toy_ds_project/compare/d59b6bb..aa2a019`
 
 <center>
 
