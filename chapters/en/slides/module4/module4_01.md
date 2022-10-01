@@ -27,9 +27,11 @@ There are three ways you can view the Git history of a project:
 2. In the terminal, using `git log`
 
 Notes:
-Do you remember the commit messages?
-These will be very useful when looking at the history of our repository.
-we will outline three alternative ways 
+Do you remember the commit messages we learned about in module 3?
+When reviewing the history of our repository,
+the commit messages are useful since 
+they help us remember what was modified in each commit.
+We will outline three alternative ways 
 to look at the history of the entire project.
 
 Let's look closer at each one in the next few slides.
@@ -49,7 +51,11 @@ Let's look closer at each one in the next few slides.
 </center>
 
 Notes:
-On the repo's landing page on GitHub, you can click the "*N* commits" link marked in red in the slide (where *N* is the number of commits made on the repo).
+
+First, we will view the history of our project on github.com.
+On the repository's landing page on GitHub,
+you can click the "*N* commits" link marked in red in the slide 
+(where *N* is the number of commits made on the repo).
 
 ---
 
@@ -66,9 +72,8 @@ On the repo's landing page on GitHub, you can click the "*N* commits" link marke
 </center>
 
 Notes:
-After clicking the "*N* commits" link, we can see the view on this slide.
-Here we can see all the commits in our projects;
-in this toy project, there are only three commits.
+After clicking the "*N* commits" link, 
+we can see that there are only three commits in this project.
 You can identify all parts of each commit,
 including the day it was made, its author, and hash.
 You can also go back to browse the state of the repository
@@ -108,11 +113,19 @@ the time when the commit was made, its author, and hash.
 
 Notes:
 
-You can use the command `git log` to view your project's history in the terminal. In this slide, we've indicated with a red line how the three commits in the `git log` output correspond to the information in Jupyter Lab's "History" tab.
+You can use the command `git log` to view your project's history in the terminal.
+In this slide, we've indicated with a red line how the three commits in the `git log` output 
+correspond to the information in Jupyter Lab's "History" tab.
 
-It is important to note that `git log` output shows the long version of the commit hash, not the 7-character version that is displayed by default in Jupyter Lab or GitHub. Except your project is extremely large, Git won't require more than 7 characters to identify the commit. In consequence, if you need the commit hash and you are using the terminal, you can only copy and paste the first 7 hash characters of the commit.
+It is important to note that `git log` output 
+shows the long version of the commit hash, 
+not the 7-character version that is displayed by default in Jupyter Lab or GitHub. 
+Except your project is extremely large,
+Git won't require more than 7 characters to identify the commit. 
+In consequence, 
+if you need the commit hash and you are using the terminal,
+you can only copy and paste the first 7 hash characters of the commit.
 
-Another option is to add the flag `--oneline` (run `git log --oneline` instead of `git log`) to get a version of the output that automatically shortens the hash characters. You can try this command on your terminal.
 
 ---
 
@@ -129,17 +142,26 @@ Another option is to add the flag `--oneline` (run `git log --oneline` instead o
 </center>
 
 Notes:
-Another option is adding the options flag `--oneline` to the command `git log`. The command `git log --oneline` will provide a more succinct version of the information in each commit.
-This is often more convenient as it is easier to digest and get an overview of the project history,
+Another option is adding the flag `--oneline` 
+to the command `git log`. The command `git log --oneline` 
+will provide a more succinct version of the information in each commit.
+This is often more convenient as it is easier 
+to digest and get an overview of the project history,
 but it can be tedious to type out each time.
 Here it would be good to create a shell alias,
 which we learned about in module 2!
 Executing `alias gl="git log --oneline"`
-means that we can simply type `gl` each time we want to view the git log output.
-Refer to module 2 for more details around aliases and how to make them persist through reboots.
+means that we can simply type `gl` 
+each time we want to view the `git log` output.
+Refer to module 2 for more details
+around aliases and how to make them persist through reboots.
 
-The terminal allows greater flexibility when it comes to displaying the history of the project.
-If you would like to know what other possibilities you have for using the `git log` command, you can access the help by typing the command `git log --help` (any operating system) or `man git log` (MacOS and Linux).
+The terminal allows greater flexibility 
+when it comes to displaying the history of the project. 
+If you would like to know what other possibilities  
+you have for using the `git log` command,  
+you can access the help by typing the command `git log --help`  
+(any operating system) or `man git log` (MacOS and Linux).
 
 ---
 
