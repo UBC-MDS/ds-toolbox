@@ -104,7 +104,7 @@ by pulling back the commits from the remote repository.
 
 <center>
 
-<img src='/module4/vc-reset-t-jl.png' width="800px" alt="404 image"/>
+<img src='/module4/vc-reset-hard-push.png' width="800px" alt="404 image"/>
 
 </center>
 
@@ -113,14 +113,22 @@ by pulling back the commits from the remote repository.
 
 Notes:
 In the terminal,
-we can look at the `git log` output to find the commit hash we want to reset our project to. 
+you can look at the `git log` output to find the commit hash we want to reset our project to. 
 Then we can use the command `git reset --hard <commit hash>`.
-If we are really sure about this change and want to push it to GitHub
-we need to use `git push -f` to "force" the push
-since GitHub by default protects us
-from accidentally pushing after a hard reset since this can lead to problems.
-You will have to use the command 
 
+Git by default protects from unintentionally pushing after a hard reset.
+If you really want to delete the commits and remove them from GitHub,
+you must use the command `git push -f` to "force" the push in the terminal,
+regardless of whether you choose to execute the hard reset 
+using the JupyterLab IDE or the terminal.
+
+After doing a hard reset,
+JupyterLab will offer you to pull
+the locally deleted commits from the remote.
+You shouldn't pull if you want to preserve
+the deletion of commits you made with the hard reset!
+
+Extra
 If we want to make a new commit with the changes since the reset point,
 we can perform a "soft" reset with `git reset --soft`.
 This command will not discard the information on the deleted commits as `git reset --hard`,

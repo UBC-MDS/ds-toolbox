@@ -135,7 +135,7 @@ to see all the differences between two text files.
 
 <center>
 
-<img src='/module4/diff-inverted.png' width="800px" alt="404 image"/>
+<img src='/module4/diff-inverted-jl-t.png' width="800px" alt="404 image"/>
 
 </center>
 
