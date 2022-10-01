@@ -37,9 +37,6 @@ we will cover `git revert`.
 
 ## Hard reset (JupyterLab)
 
-<br>
-
-
 <center>
 
 <img src='/module4/vc-hard-reset.png' width="800px" alt="404 image"/>
@@ -56,7 +53,6 @@ you should click the clock icon next to the commit you would like to travel back
 
 ## Hard reset (JupyterLab)
 
-<br>
 
 <center>
 
@@ -72,7 +68,6 @@ to make sure you are sure that you want to discard your commits.
 
 ## Hard reset (JupyterLab)
 
-<br>
 
 <center>
 

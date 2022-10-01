@@ -14,10 +14,6 @@ In this slide deck we will see how we can undo changes we have made without dele
 
 ## Reversion (JupyterLab)
 
-<br>
-
-
-
 <center>
 
 <img src='/module4/vc-revert-jl.png' width="800px" alt="404 image"/>
@@ -41,8 +37,6 @@ as seen in this slide.
 
 ## Reversion (JupyterLab)
 
-<br>
-
 <center>
 
 <img src='/module4/vc-revert-commit.png' width="800px" alt="404 image"/>
@@ -57,8 +51,7 @@ When you click the arrow, JupyterLab asks you for the commit title and descripti
 ## Reversion (JupyterLab)
 
 <br>
-<br>
-<br>
+
 
 <center>
 

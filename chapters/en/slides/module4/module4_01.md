@@ -79,12 +79,10 @@ at the time of this commit by clicking the `<>` button.
 ## 2. Viewing the history of a project: Jupyter Lab
 
 <br>
-<br>
-<br>
 
 <center>
 
-<img src='/module4/vc-history-jl-2.png' width="500px" alt="404 image"/>
+<img src='/module4/vc-history-jl-2.png' width="400px" alt="404 image"/>
 
 </center>
 

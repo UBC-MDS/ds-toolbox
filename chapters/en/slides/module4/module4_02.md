@@ -12,9 +12,6 @@ In this slide deck we will see how we can visualize the changes between two comm
 
 ## Comparing commits
 
-<br>
-<br>
-<br>
 
 <center>
 
@@ -36,6 +33,7 @@ But what if we want to go more into the detail and see exactly what have changed
 
 ## Comparing commits
 
+<br>
 <br>
 <br>
 <br>
@@ -155,7 +153,7 @@ you find a more detailed description [on this tutorial](https://www.atlassian.co
 
 <center>
 
-<img src='/module4/diff-commits-jl-t.png' width="800px" alt="404 image"/>
+<img src='/module4/diff-commits-jl-terminal.png' width="800px" alt="404 image"/>
 
 </center>
 
