@@ -20,10 +20,10 @@ In this slide deck we will see how we can visualize the changes between two comm
 </center>
 
 Notes:
-We have just learned how to check the commit history of a project
+We have learned how to check the commit history of a project
 using GitHub, JupyterLab, and the terminal.
 
-We could see some key information about each commit in the history view,
+We can see some key information about each commit in the history view,
 such as when it was made and who made it.
 
 But what if we want to examine the specific changes made between two commits in more detail?
@@ -130,32 +130,14 @@ to see all the differences between two text files.
 ---
 ## Understanding the comparison
 
-`$ git diff d59b6bb aa2a019`
+<br>
 
-```out
-diff --git a/README.md b/README.md
-index 1ba39b4..a612860 100644
---- a/README.md
-+++ b/README.md
-@@ -1,2 +1,4 @@
- # Data science project
- Author: Florencia D'Andrea
-+
-+Hello world!
-```
-`$ git diff aa2a019 d59b6bb` 
 
-```out
-diff --git a/README.md b/README.md
-index a612860..1ba39b4 100644
---- a/README.md
-+++ b/README.md
-@@ -1,4 +1,2 @@
- # Data science project
- Author: Florencia D'Andrea
--
--Hello world!
-```
+<center>
+
+<img src='/module4/diff-inverted.png' width="800px" alt="404 image"/>
+
+</center>
 
 Notes:
 When visualizing differences, you can invert the commit order.
