@@ -23,11 +23,14 @@ We are going to learn two ways to travel back in time to a previous commit:
 2. **Reverting previous changes**
 
 Notes:
-It's not uncommon to realize that we made a mistake when viewing the history! Maybe we didn't mean to delete our list of dependencies and we want to undo our latest commit. Don't worry, we can now take advantage of tracking our files using version control to retrieve a previous state of a file to replace the current version.
+It's not uncommon to realize that we made a mistake when viewing the history! 
+Maybe we didn't mean to delete an important file and we want to undo our latest commit. 
+Don't worry, we can now take advantage of tracking our files  
+using version control to retrieve a previous state of a file and replace the current version.
 
 There are two ways of traveling back in time to an earlier state of the repo:
 
-1. Remove commits from the git history (a "hard reset").
+1. Remove commits from the Git history (a "hard reset").
 2. Create a new commit to undo previous changes (a "reversion").
 
 In this slide deck we will look into `git reset` and in the next one
@@ -62,7 +65,7 @@ you should click the clock icon next to the commit you would like to travel back
 
 Notes:
 Be careful! This action can't be undone and JupyterLab will display a dialog box 
-to make sure you are sure that you want to discard your commits.
+to confirm that you are sure that you want to discard your commits.
 
 ---
 
@@ -97,6 +100,7 @@ by pulling back the commits from the remote repository.
 ## Hard reset (Terminal)
 
 `git reset --hard <commit hash>`
+`git push -f/--force`
 
 <center>
 
@@ -109,11 +113,13 @@ by pulling back the commits from the remote repository.
 
 Notes:
 In the terminal,
-we can look at the `git log` output to find the commit hash we want to reset our project to. Then we can use the command `git reset --hard <commit hash>`.
+we can look at the `git log` output to find the commit hash we want to reset our project to. 
+Then we can use the command `git reset --hard <commit hash>`.
 If we are really sure about this change and want to push it to GitHub
 we need to use `git push -f` to "force" the push
 since GitHub by default protects us
 from accidentally pushing after a hard reset since this can lead to problems.
+You will have to use the command 
 
 If we want to make a new commit with the changes since the reset point,
 we can perform a "soft" reset with `git reset --soft`.
