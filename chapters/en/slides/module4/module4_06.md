@@ -38,7 +38,7 @@ a file you didn't have in the previous commit,
 and which hasn't yet been staged. 
 In general untracked files are recently created files.
 In the example on this slide,
-the untracked files are two folders that are automatically saved:
+there are two untracked elements that are automatically saved:
 
 - `.ipynb_checkpoints` contain old backup versions of our notebook which are saved by JupyterLab automatically.
 - `.DS_Store` contains directory display options for the Finder application on MacOS.
