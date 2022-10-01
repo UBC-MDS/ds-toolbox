@@ -12,11 +12,10 @@ In this slide deck we will see when merge conflicts arise and how to solve them.
 
 ## When does a merge conflict arise?
 
-<br>
 
 <center>
 
-<img src='/module4/vc-merge-conflict-jl.png' width="800px" alt="404 image"/>
+<img src='/module4/vc-merge-conflict-jl.png' width="700px" alt="404 image"/>
 
 </center>
 
@@ -59,11 +58,9 @@ fatal: Exiting because of an unresolved conflict.
 
 ## When does a merge conflict arise?
 
-<br>
-
 <center>
 
-<img src='/module4/vc-merge-conflict-jl-push.png' width="800px" alt="404 image"/>
+<img src='/module4/vc-merge-conflict-jl-push.png' width="700px" alt="404 image"/>
 
 </center>
 
@@ -193,7 +190,7 @@ and finally committed before you will be able to push your changes to GitHub.
 
 <center>
 
-<img src='/module4/vc-merge-conflict-jl-conflicted.png' width="800px" alt="404 image"/>
+<img src='/module4/vc-merge-conflict-jl-conflicted.png' width="700px" alt="404 image"/>
 
 </center>
 
