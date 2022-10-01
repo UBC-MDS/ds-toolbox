@@ -26,23 +26,20 @@ it is good practice to pull any changes at the start of every work session
 before you start working on your local copy.  
 If you forget to do this you might end up in a situation where
 your collaborators have pushed some changes  
-to the project to GitHub that you don't have locally.  
+to the remote that you don't have locally.  
  
-This error message indicates you and your collaborators made changes to  
-the **same line** of the **same file** and that 
-Git will not be able to automatically merge the changes.  
 The solution to this is usually simple:
 you pull down the remote changes to your computer
 and let Git automatically merge the changes for you,  
 which often works well even if you and
 your collaborators were working on different parts of the same file!  
 
-However, if you and your collaborators made changes to the same line of the same file,
+However, if you and your collaborators made changes to the **same line(s)** of the **same file(s)**,
 Git will not be able to automatically merge the changes
-since it does not know whether to keep your version of the line(s),    
+since it doesn't know whether to keep your version of the line(s),    
 your collaborator's version of the line(s), or some blend of the two.   
-When this happens, Git will tell you that you have a "merge conflict"
-in certain file(s) and ask you to tell it what to do explicitly.    
+When this happens, Git will inform you that you have a "merge conflict"
+in certain file(s) and let you decide how to solve the issue.    
 
 In the terminal, the merge conflict will look like this when you try to pull:
 
