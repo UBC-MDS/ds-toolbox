@@ -28,7 +28,7 @@ If you forget to do this you might end up in a situation where
 your collaborators have pushed some changes  
 to the remote that you don't have locally.  
  
-The solution to this is usually simple:
+The solution to this situation is usually simple:
 you pull down the remote changes to your computer
 and let Git automatically merge the changes for you,  
 which often works well even if you and
@@ -119,6 +119,10 @@ you can detect which files are affected in the merge conflict
 with the command `git status`.
 
 
+Every file affected by a merge conflict 
+will be listed in the "Unmerged paths", in the example
+we can see that there is a merge conflict on the README.md file.
+
 
 ---
 
@@ -158,6 +162,7 @@ You can click on the file and select the Option **Open With Editor** -> **Editor
 </center>
 
 Notes:
+Once you open the file, you have to find the merge conflict. 
 The beginning of the merge conflict is preceded by `<<<<<<<` and
 the end of the merge conflict is marked by `>>>>>>>`. 
 Between these markings, Git also inserts a separator (`=======`).
@@ -220,7 +225,7 @@ In the example, the issue is only affecting the `README.md` file.
 
 Notes: 
 
-Once you click in the notebook with the merge conflict, 
+Once you click the file with the merge conflict, 
 you will be able to select to accept your current local change or the incoming changes from the remote.
 In this case, I accepted the current changes by clicking the arrow next to the change.
 After that, click `Mark as resolved`,
@@ -262,11 +267,10 @@ JSON format
 
 
 Notes:
-First - a bit about what a Jupyter notebook is made up of
-`.ipynb` files are “plain” text files, 
-and we can view them in a plain text editor and make some sense of them
+First - a bit about what a Jupyter notebook are “plain” text files, 
+and we can view them in a plain text editor.
 
-The contents of the notebook are encoded in JSON format, 
+However, the contents of the notebook are encoded in JSON format, 
 which means that there are many brackets in the file, 
 which can make it hard to read for humans (but easy for machines).
 
@@ -301,7 +305,8 @@ that show up in the section called **Conflicted**.
 Notes: 
 
 A new tab will appear,
-displaying the current local changes and incoming remote changes that are incompatible.
+displaying the current local changes and 
+incoming remote changes that are incompatible.
 The conflicting lines are highlighted in red as you can see in the image.
 You can choose to keep the current changes, the incoming changes,
 or go back to the commit before the project's history diverged.
@@ -312,7 +317,7 @@ Finally, you should click the `Mark as solved` button.
 Remember that you need to stage and commit
 the changes after solving the conflict.
 
-We strongly advise using JupyterLab rather than the terminal  
+We recommend using JupyterLab rather than the terminal  
 to resolve merge conflicts in Jupyter Notebooks.
 
 ---
@@ -364,7 +369,7 @@ and from which you can take out the changes again when you need them).
 You can then do `git pull`,   
 and follow up with a `git stash apply`  
 to bring your changes back from the stash  
- to the working area, and then carry on working.  
+to the working area, and then carry on working.  
 
 This workflow can save you from running into merge conflicts,   
 as long as you have not already made modifications to the same lines as you are pulling down.   
