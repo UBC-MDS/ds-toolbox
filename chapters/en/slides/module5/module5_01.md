@@ -132,14 +132,6 @@ from `origin/HEAD` and `origin/main`.
 We already know that `main` is the default branch,
 but what about `origin` and `HEAD`? 
 
-Let's review some concepts:
-
-* `main` is your default local branch.
-* `HEAD` is pointing where you currently are (in this case, on the `main` branch)
-* `origin` is a nickname for your remote repo on GitHub (instead of showing the full URL), so `origin/main` is the `main` branch of the version of the repo you pushed to GitHub.com.
-
-You don't need to care about `origin/HEAD`, it just point to the default remote branch, which will always be `main` unless you mess around with the settings on the GitHub webpage.
-
 
 ---
 
@@ -160,6 +152,12 @@ Notes:
 In the terminal, you can use `git log --oneline` to check the history of your project,
 and see which commits correspond to the names `origin/HEAD`, `origin/main` and `main`.
 You can also see that the currently active branch is shown in cyan at the end of the terminal prompt.
+
+* `main` is your default local branch.
+* `HEAD` is pointing where you currently are (in this case, on the `main` branch)
+* `origin` is a nickname for your remote repo on GitHub (instead of showing the full URL), so `origin/main` is the `main` branch of the version of the repo you pushed to GitHub.com.
+
+You don't need to care about `origin/HEAD`, it just point to the default remote branch, which will always be `main` unless you mess around with the settings on the GitHub webpage.
 
 In JupyterLab you can see this information as labels under the tab **Changes** in the sidebar. 
 
