@@ -31,11 +31,18 @@ In this slide deck, we will learn how to merge branches in a collaborative setti
 &mdash; <a href="http://thesegalgroup.org/wp-content/uploads/2014/04/code-centric.pdf">Kalliamvakou, E. (2014). The Code-Centric Collaboration Perspective: Evidence from GitHub.</a>
 
 Notes:
-Pull requests involve merging someone else's changes into your remote repository on GitHub. They are essential for team collaboration and proper pull request review is critical for for ensuring code quality.
+Pull requests involve merging someone else's changes
+into your remote repository on GitHub.
+They are essential for team collaboration and
+proper pull request review is critical for for ensuring code quality.
 
-In the previous part, we did not push our feature branch to GitHub. Instead, we finished the development of this branch locally and merged it into our `main` branch using JupyterLab GUI or the command `git merge`.
+In the previous part, we did not push our feature branch to GitHub. 
+Instead, we finished the development of this branch locally and merged it into our `main` branch using JupyterLab GUI or the command `git merge`.
 
-If we would have worked in a team of people, it would have been good practice to have first push the branch to GitHub, and then create a pull request to let the other people on the team review the code and suggested any changes before merging it in.
+If we would have worked on a team,
+it would have been good practice to have first push the branch to GitHub,
+and then create a pull request to allow the code review
+and suggest any changes before merging it in.
 
 ---
 
@@ -102,7 +109,7 @@ Another useful thing that you can do is to **label** each pull request, they can
 
 <center>
 
-<img src='module5/PR-draft-conversion.png' width="800px" alt="404 image" />
+<img src='module5/PR-draft-conversion-image.png' width="800px" alt="404 image" />
 
 </center>
 
