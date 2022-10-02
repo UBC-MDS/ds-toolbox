@@ -145,7 +145,7 @@ Notice that you can create protect branches different to `main` but we will not 
 
 <center>
 
-<img src='/module5/branches-house-analogy-explained-new.png' width="700px" alt="404 image" />
+<img src='/module5/house-analogy-explained-new.png' width="700px" alt="404 image" />
 
 </center>
 
