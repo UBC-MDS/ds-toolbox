@@ -29,14 +29,15 @@ It would still be beneficial for the repository's owners to receive your contrib
 
 ## How can I fork a repository?
 
-Go to the GitHub page of the project that you want to fork. In the upper right corner, click the icon that says "fork". That's it! You just forked a repo!
 
 <center>
 
-<img src='/module5/create-fork.png' width="80%" alt="404 image" />
+<img src='/module5/fork-glosario.png.png' width="700px" alt="404 image" />
 
 </center>
 
+
+Go to the GitHub page of the project that you want to fork. In the upper right corner, click the icon that says "fork". That's it! You just forked a repo!
 
 Notes:
 
@@ -44,17 +45,19 @@ Notes:
 
 The fork workflow is used in many open source projects where there is often a small team of core maintainers, but contributions from many more users. For example, the JupyterLab project has around 10 members in their team, but more than 300 people have contributed code to the project and almost 2 000 has forked it.
 
+In the example, we are forking [the repository of the project Glosario](https://github.com/carpentries/glosario), a multilingual glossary for computing and data science terms that is also an open-source project. As you can see in the image, this repository has been forked by 168 users so far.
+
+🙌
+Go to the GitHub page of the project that you want to fork. In the upper right corner, click the icon that says "fork". That's it! You just forked a repo!
 ---
 
 ## Developing on a forked repo
 
 <br>
-<br>
-<br>
 
 <center>
 
-<img src='/module5/fork.png' width="80%" alt="404 image" />
+<img src='/module5/create-fork-glosario.png' width="800px" alt="404 image" />
 
 </center>
 
@@ -68,20 +71,46 @@ When you are working on a branch you have to push your branch to GitHub and ask 
 ## Keeping your remote (origin) up to date with the upstream remote
 
 <br>
-<br>
-<br>
+
 
 <center>
 
-<img src='/module5/fetch-upstream.png' width="80%" alt="404 image" />
+<img src='/module5/sync-fork.png' width="800px" alt="404 image" />
 
 </center>
 
 
 Notes:
-Forking a repo happens via the GitHub web interface, but this is a one time operation. If there are changes made to the upstream repo that you want to sync to your forked repo (origin), you have to first pull them from the upstream remote to your local computer and then push them to your forked remote (origin).
+Forking a repo happens via the GitHub web interface, but this is a one time operation. If there are changes made to the upstream repo that you want to sync to your forked repo (`origin`), you have to first pull them from the upstream remote to your local computer and then push them to your forked remote (`origin`).
 
-To solve this you can update your forked repository with the button **fetch upstream**. Then you can pull this changes to continue working locally before doing the pull request.
+To solve this you can update your forked repository with the button **Sync fork**. Then you can pull this changes to continue working locally before doing the pull request. In the example thare are not changes in the repository that I have just forked, but if this was the case I would have to select the option `update branch`.
+
+
+
+
+---
+
+## Create a pull request from the forked repository
+
+<br>
+
+
+<center>
+
+<img src='/module5/fork-contribute.png' width="800px" alt="404 image" />
+
+</center>
+
+
+Notes:
+
+When you finish your local changes and you push to the fork that lives in your user's account, you can create the pull request to the upstream repository if you click in the `Contribute` button. If you have added some commits, the `Open pull request` option will be available. 
+
+⚠️ You should read the `CONTRIBUTING.md` file before making your first contribution to a new open-source project. There you will find relevant instructions on how to participate in the project.
+Another file you must read is the `CODE OF CONDUCT.md`.
+There, you will discover information on who to contact if you ever feel uncomfortable working on the project as well as other guidelines you should adhere to in order to foster a welcoming and supportive environment among the contributors.
+
+Both files are typically located in the root of the repository.
 
 ---
 
@@ -92,7 +121,7 @@ The “Issues” tab on the GitHub web interface
 
 <center>
 
-<img src='/module5/issue-1.png' width="80%" alt="404 image" />
+<img src='/module5/issue-1.png' width="800px" alt="404 image" />
 
 </center>
 
@@ -114,7 +143,7 @@ and then click the green button that says "New Issue".
 Dialog boxes and submission button for creating new GitHub issues.
 <center>
 
-<img src='/module5/issue-2.png' width="80%" alt="404 image" />
+<img src='/module5/issue-2.png' width="800px" alt="404 image" />
 
 </center>
 
