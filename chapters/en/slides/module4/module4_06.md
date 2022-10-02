@@ -57,6 +57,10 @@ How can we achieve this?
 ## Create a `.gitignore` file
 
 <br>
+<br>
+<br>
+<br>
+
 
 Use a text editor of your choice (here we use VS Code) to create a file called `.gitignore` inside your Git repo:
 
@@ -72,8 +76,25 @@ Inside the text file, list the files and folders you would like to ignore, one p
 .DS_Store
 ```
 
+Notes:
+To "hide" folders and files from Git
+we can create a file called `.gitignore` in the root/main directory of our repository
+(the same directory where the `.git` folder is located).
+These two slides describe how we can create this file using VS Code,
+and what we need to add to it
+in order to ignore the two files from the previous slide.
+
+---
+
+## Create a `.gitignore` file
+
 <br>
-Save the file, add it to the staging area, and commit the changes with Git. Then try git status again. You should now see that the files are ignored by Git:
+<br>
+<br>
+<br>
+Save the file, add it to the staging area, and commit the changes with Git. 
+<br>
+Then try `git status` again. You should now see that the files are ignored by Git:
 
 ```
 git status
@@ -85,17 +106,15 @@ nothing to commit, working tree clean
 ```
 
 Notes:
-To "hide" folders and files from Git
-we can create a file called `.gitignore` in the root/main directory of our repository
-(the same directory where the `.git` folder is located).
-This slide describes how we can create this file using VS Code,
-and what we need to add to it
-in order to ignore the two files from the previous slide.
+
 
 ---
 
 ## .gitignore tips and tricks
 
+<br>
+<br>
+<br>
 <br>
 
 Here are two useful tricks so that you can avoid doing unnecessary work when it comes to `.gitignore`:
@@ -121,6 +140,9 @@ We will look closer at each of these two approach in the next couple of slides.
 ## 1. Recursively ignoring of filename patters
 
 <br>
+<br>
+<br>
+<br>
 
 Wildcards can be used inside `.gitignore` to ignore multiple files with the same name:
 
@@ -132,13 +154,6 @@ Prepending `**/` to filenames ignores those files in subdirectories as well:
 
 ```
 **/.*log
-```
-
-Starting with a `!` tells git to not ignore a certain directory.
-
-```
-**/*.log
-!important/.*log
 ```
 
 Notes:
@@ -155,6 +170,24 @@ If we wanted to ignore the log files in every subdirectory of the project,
 we would need to use the `**/` patterns,
 which means "in any folder".
 The line in our `.gitignore` would now read `**/*.log`.
+
+---
+
+## 1. Recursively ignoring of filename patters
+
+<br>
+<br>
+<br>
+<br>
+
+Starting with a `!` tells git to not ignore a certain directory.
+
+```
+**/*.log
+!important/.*log
+```
+
+Notes:
 
 What if we wanted to ignore all the log files,
 except those inside a specific directory?
@@ -174,23 +207,43 @@ It would look like this:
 ## 2. Using `.gitignore_global`
 
 <br>
-
-Create a global `.gitignore` file so that you do not have to create the same `.gitignore` for all your repos
-
+<br>
+<br>
 <br>
 
-Here are the steps to follow:
+Create a global `.gitignore` file in your home directoy so that you do not have to create the same `.gitignore` for all your repos
 
-- Use a text editor to create a file called `.gitignore_global`. You can run `code ~/.gitignore_global` in a terminal to do this.
-
-- Just like for a regular `.gitignore` file, add a list of files and folders that you want to get ignored in **all** repos on your computer
-
-- Save `.gitignore_global`
-
+```
+code ~/.gitignore_global
+```
 Notes:
 Now comes the second trick: There might be certain files that you'd like to always get ignored in all repos. In that case, you can add them once to a global `.gitignore` file called `.gitignore_global` which lives in your home directory.
 
-This way, you'll no longer need to add those particular file or folder names to the `.gitignore` file of each repo on your computer!
+
+
+---
+
+## 2. Using `.gitignore_global`
+
+<br>
+<br>
+<br>
+<br>
+
+
+- Just like for a regular `.gitignore` file, add a list of files and folders that you want to get ignored in **all** repos on your computer
+
+- Save `.gitignore_global` file and configure Git to exclude the file for every Git repository in your computer.
+
+```
+git config --global core.excludesfile ~/.gitignore_global
+```
+
+Notes:
+
+This way, you'll no longer need to add those particular files or folder names to the `.gitignore` file of each repo on your computer!
+
+You can read more about ignoring files on the [GitHub documentation](https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files)
 
 ---
 
