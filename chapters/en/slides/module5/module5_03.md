@@ -53,6 +53,8 @@ Notice that after doing this, the report branch is not deleted automatically, so
 
 <br>
 
+`git merge <branch>`
+
 <center>
 
 <img src='/module5/merge-branch-jl.png' width="800px" alt="404 image"/>
@@ -93,15 +95,23 @@ Let's see how VS Code's graphical representation of the Git history changed when
 </center>
 
 Notes:
-You will notice that merging the branch will not automatically delete it. If you are not going to be developing that feature anymore you can delete the branch after merging it by clicking on the small garbage bin icon in the **Branches** tab.
+You will notice that merging the branch will not automatically delete it. 
+If you are not going to be developing 
+that feature anymore you can delete the branch after merging it 
+by clicking on the small garbage bin icon in the **Branches** tab.
 
-You can only delete a branch when you are not working on it (it is not highlighted in blue in the JupyterLab UI) and although it can be difficult to recover the information after it is deleted, you can safely do so after successfully merging the changes into another branch.
+You can only delete a branch when you are not working on it 
+(it is not highlighted in blue in the JupyterLab UI)
+ and although it can be difficult to recover the information after it is deleted, 
+ you can safely do so after successfully merging the changes into another branch.
 
 ---
 
 ## Deleting branches (terminal)
 
 <br>
+
+`git branch -d <branch-name>`
 
 <center>
 
@@ -112,7 +122,11 @@ You can only delete a branch when you are not working on it (it is not highlight
 
 Notes:
 If you want to delete the branches using the terminal you can use the command `git branch -d <branch-name>`.
-
+Be careful! You shouls use `-d` and NOT `-D`. 
+If you write the flag with a capital `-D` it will force the deletion,
+even if the branch has not been merged yet,
+what could be dangerous.
+If you add the `d` flag, it will only delete the branch after it has been merged.
 
 Now that you have a better grip on how to read the Git history and how to merge branches, it will be easier to work with both branches and forks!
 

@@ -42,12 +42,10 @@ If we would have worked in a team of people, it would have been good practice to
 ## Opening a pull request
 
 <br>
-<br>
-<br>
 
 <center>
 
-<img src='/module5/PR.png' width="600px" alt="404 image" />
+<img src='/module5/PR-compare-and-pull.png' width="800px" alt="404 image" />
 
 </center>
 
@@ -59,12 +57,10 @@ To create a pull request, you have to push the changes in your branch to GitHub.
 ## Opening a pull request
 
 <br>
-<br>
-<br>
 
 <center>
 
-<img src='/module5/PR-2.png' width="600px" alt="404 image" />
+<img src='/module5/PR-compare-branches.png' width="800px" alt="404 image" />
 
 </center>
 
@@ -83,32 +79,10 @@ In the body of the message you can also indicate if it is fixing a currently ope
 ## Opening a pull request
 
 <br>
-<br>
-<br>
 
 <center>
 
-<img src='' width="600px" alt="404 image" />
-
-</center>
-
-
-Notes:
-Once you have open a pull request you can continue to add commits by pushing to your feature branch on GitHub (the commits will appear in chronological order). This means that you can open the pull request before finishing the work and doing so is a way to communicate that you are preparing changes to merge in `main` (or another branch) that will need review.
-
-Until the PR is ready for review, you can open it as a "Draft" by clicking the dropdown arrow on the green button that says "Create Pull Request" and mark it as "Ready for review" later.
-
----
-
-## Opening a pull request
-
-<br>
-<br>
-<br>
-
-<center>
-
-<img src='/module5/PR3.png' width="600px" alt="404 image" />
+<img src='/module5/PR-reviewers-labels.png' width="800px" alt="404 image" />
 
 </center>
 
@@ -122,15 +96,36 @@ Another useful thing that you can do is to **label** each pull request, they can
 
 ---
 
-## Pull request successfully merged and closed
+## Opening a pull request
 
-<br>
-<br>
 <br>
 
 <center>
 
-<img src='/module5/PR-delete-branch.png' width="600px" alt="404 image" />
+<img src='module5/PR-draft.png' width="800px" alt="404 image" />
+
+</center>
+
+
+Notes:
+
+Once you have open a pull request you can continue to add commits by pushing to your feature branch on GitHub (the commits will appear in chronological order). This means that you can open the pull request before finishing the work and doing so is a way to communicate that you are preparing changes to merge in `main` (or another branch) that will need review.
+
+Until the PR is ready for review, you can open it as a "Draft" by clicking the dropdown arrow on the green button that says "Create Pull Request" and mark it as "Ready for review" later.
+
+
+
+---
+
+## Pull request successfully merged and closed
+
+<br>
+<br>
+
+
+<center>
+
+<img src='/module5/PR-delete-branch-github.png' width="700px" alt="404 image" />
 
 </center>
 
@@ -138,6 +133,8 @@ Notes:
 After a collaborator has reviewed your changes and approved the pull request,
 they or you can click the "Merge" button.
 After doing this, GitHub gives you the option to delete the branch via the web interface. This is always safe to do, as the deleted branches can easily be restored later.
+
+Pay attention that if you delete the branch in remote, the label `origin/report` will desappear of your `git log` or project history visualization, but this doesn't mean that the branch `report` that lives in your 
 
 ---
 
