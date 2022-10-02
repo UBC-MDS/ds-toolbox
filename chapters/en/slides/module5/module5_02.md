@@ -35,6 +35,8 @@ We will use the repository you just created as an example for the rest of this m
 
 <br>
 
+`git log --oneline --all --graph`
+
 <center>
 
 <img src='/module5/branches-history-jl-t.png' width="800px" alt="404 image"/>

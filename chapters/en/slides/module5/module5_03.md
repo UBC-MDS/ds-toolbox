@@ -74,7 +74,7 @@ If you want to use the terminal to merge the branches and you are currently work
 
 <center>
 
-<img src='/module5/git-history-log-vscode-cut.png' width="700px" alt="404 image"/>
+<img src='/module5/git-log-history-vscode-cut.png' width="700px" alt="404 image"/>
 
 </center>
 
