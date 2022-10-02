@@ -14,11 +14,10 @@ In this slide deck we will learn more about how to collaborate effectively on Gi
 
 <br>
 <br>
-<br>
 
 <center>
 
-<img src='/module5/quote.jpg' width="600px" alt="404 image" />
+<img src='/module5/quote.jpg' width="700px" alt="404 image" />
 
 </center>
 
@@ -77,7 +76,7 @@ The “Invite a collaborator” button on the GitHub web interface.
 
 <center>
 
-<img src='/module5/add-collab-1.png' width="600px" alt="404 image" />
+<img src='/module5/github-colab.png' width="700px" alt="404 image" />
 
 </center>
 
@@ -87,7 +86,12 @@ Notes:
 When working with a branching workflow,
 all collaborators need to have write access to the remote repository
 so that they can push up their branches to GitHub.
-As mentioned earlier, GitHub allows you to control who has access to your project. The default of both public and private projects are that only the person who created the GitHub repository has permissions to create, edit and delete files (write access). To give your collaborators write access to the projects, navigate to the “Settings” tab and click "Invite a collaborator".
+As mentioned earlier, GitHub allows you to control who has access to your project. 
+The default of both public and private projects 
+are that only the person who created the GitHub 
+repository has permissions to create, edit and delete files (write access).
+To give your collaborators write access to the projects, 
+navigate to the “Settings” tab and click "Invite a collaborator".
 
 ---
 
@@ -95,11 +99,10 @@ As mentioned earlier, GitHub allows you to control who has access to your projec
 
 <br>
 <br>
-<br>
 
 <center>
 
-<img src='/module5/add-collab-2.png' width="600px" alt="404 image" />
+<img src='/module5/github-colab-select.png' width="700px" alt="404 image" />
 
 </center>
 
@@ -117,7 +120,7 @@ Under "Branch name pattern", type the branch name or pattern you want to protect
 
 <center>
 
-<img src='/module5/add-branch-protection-rule.png' width="600px" alt="404 image" />
+<img src='/module5/branch-protection-rule-github.png' width="700px" alt="404 image" />
 
 </center>
 
@@ -127,21 +130,6 @@ Now that all the collaborators have access they can clone the repository and cre
 🙌
 To add a branch protection rule you can go to **Settings > Code and Automation (sidebar) > Branch protection rules** and click in **"Add rule"**. 
 
----
-
-## Branch protection rules
-
-<br>
-<br>
-<br>
-
-<center>
-
-<img src='/module5/PR-reviews-required-updated.png' width="600px" alt="404 image" />
-
-</center>
-
-Notes:
 
 🙌
 Under "Branch name pattern", type the branch name or pattern you want to protect. 
@@ -153,11 +141,11 @@ Notice that you can create protect branches different to `main` but we will not 
 
 <br>
 <br>
-<br>
+
 
 <center>
 
-<img src='/module5/branches-house-analogy-explained.png' width="600px" alt="404 image" />
+<img src='/module5/branches-house-analogy-explained-new.png' width="700px" alt="404 image" />
 
 </center>
 
@@ -184,7 +172,7 @@ We are ready to start collaborating!
 
 <center>
 
-<img src='/module5/PR-aprove.png' width="600px" alt="404 image" />
+<img src='/module5/PR-blocked.png' width="600px" alt="404 image" />
 
 </center>
 

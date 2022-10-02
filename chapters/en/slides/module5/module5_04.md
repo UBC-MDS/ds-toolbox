@@ -131,24 +131,26 @@ Until the PR is ready for review, you can open it as a "Draft" by clicking the d
 
 Notes:
 After a collaborator has reviewed your changes and approved the pull request,
-they or you can click the "Merge" button.
-After doing this, GitHub gives you the option 
+they or you can click the `Merge` button and accept the pull request
+GitHub will offer you  
 to delete the branch via the web interface.
-This is always safe to do, as the deleted branches can easily be restored later.
+To do this you should click `Delete branch` button.
 
-Pay attention that if you delete the branch in remote, 
-the label `origin/report` will desappear of your `git log` or project history visualization, 
-but this doesn't mean that the branch `report` that lives in your remote repository on GitHub.
-You can directly delete the branch after merging clicking `Delete branch` on GitHub
-after you have accepted the pull request.
+Pay attention to the fact that deleting a remote branch 
+won't affect the local branch `report` in your local repository. 
+Instead, the label `origin/report` will disappear from
+your `git log`or project history visualisation.
+You still have to delete the local version of `report`
+if you want to get rid of that branch
+as we learned some minutes ago.
 
-You can use the command `git push <remote> --delete <branch>`
-to delete the remote branch from the terminal.
+It is possible to delete the remote branch from the terminal
+using the command `git push <remote> --delete <branch>`.
 For example, the command `git push origin --delete report` 
 would allow you to perform the same action that we did on GitHub in the image.
 
 Although it is not necessary to remove a branch after merging it,
-doing so can help keep your repository tidy.  
+doing so can help to keep your repository tidy.  
 
 ---
 
