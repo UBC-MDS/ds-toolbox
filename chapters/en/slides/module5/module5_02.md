@@ -86,8 +86,14 @@ it is not as detailed as the one we can get from VS Code.
 Open the current folder in VS Code by typing `code .` inside your git folder  
 (remember that `.` is a shortcut that means "current directory"). 
 In VS Code, go to the extensions tab and search for "git history",   
-install the extension and go to the source control tab in the left side bar,  
-and then click the new Git history icon. 
+install the extension.
+Then go to **View** -> **Command Palette** and
+start writing `Git: View History (git log)`. 
+A new tab will open with the Git History. 
+If you want to display all the branches
+you will have to select them in one of the menus
+as you can see in the image. 
+
 
 Where it currently says `master`,
 change it to show "All branches" and you should now see
@@ -118,9 +124,9 @@ In this slide, you can see the public repository of JupyterLab that has been clo
 Here we can see that there are three active branches:
 
 1. The default `master` branch which is indicated on the topmost row. 
-   This is the left-most orange line in the graphical representation to the left and there are five commits visible in this image on this branch (the black dots on the orange line).
-2. The branch for version 3.4 which is indicated on the second row from the top. This is the middle red line in the graphical represenation to the left and there are three commits visible in this image on this branch.
-3. The branch with a long name starting with `12758-snapshots` at the third row from the bottom (commit message: "Update snapshots for challenger commit"). This is the right most red line in the graphical representation to the left, and it contains only a single commit.
+   This is the orange line in the graphical representation to the left and there are five commits visible in this image on this branch (the black dots on the orange line).
+2. The branch for version 3.4 which is indicated on the second row from the top. This is the middle red line in the graphical represenation and there are three commits visible in this image on this branch.
+3. The branch with a long name starting with `12758-snapshots` at the third row from the bottom (commit message: "Update snapshots for challenger commit"). This is the red line in the graphical representation to the right, and it contains only a single commit.
 
 
 ---
