@@ -66,8 +66,7 @@ fatal: Exiting because of an unresolved conflict.
 Notes:
 
 You also can visualize the merge conflict
-as an error when you try to push your local changes to GitHub,
-telling you that the remote contains work that you don't have locally. 
+as an error when you try to push your local changes to GitHub. 
 
 Imagine that at least one commit in the remote repository 
 and one in your local repository 

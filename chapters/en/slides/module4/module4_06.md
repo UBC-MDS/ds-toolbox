@@ -32,13 +32,11 @@ no changes added to commit (use "git add" and/or "git commit -a")
 Notes:
 
 As we know,
-Git let us know about untracked files.
-An untracked file is
-a file you didn't have in the previous commit, 
+Git let us know about untracked files when we run the command `git status`.
+An untracked file or folder one that you didn't have in the previous commit, 
 and which hasn't yet been staged. 
-In general untracked files are recently created files.
 In the example on this slide,
-there are two untracked elements that are automatically saved:
+there is an untracked folder and file that are automatically saved:
 
 - `.ipynb_checkpoints` contain old backup versions of our notebook which are saved by JupyterLab automatically.
 - `.DS_Store` contains directory display options for the Finder application on MacOS.
