@@ -26,11 +26,12 @@ and how they can make our Git workflow more effective.
 
 
 Notes:
-In Git, a branch represents an isolated line of commits 
+In Git,
+a branch represents an isolated line of commits 
 in a repository.
 By default,
 you will always start working on 
-the so called `main` branch of the repository.
+the so called `main` branch.
 Creating a new branch allows you to work on
 a series of commits in isolation from the `main` branch.
 
@@ -66,13 +67,13 @@ it can be added back to the house (what would be similar to merged into `main`).
 
 ## When should a new branch be opened?
 
-When we initiate a repository by default we start working on the `main` branch, but we can be working in parallel in other features.
-
 <center>
 
 <img src='/module5/house-analogy-explained-new.png' width="700px" alt="404 image" />
 
 </center>
+
+When we initiate a repository by default we start working on the `main` branch, but we can be working in parallel in other features.
 
 
 Notes:
@@ -80,9 +81,9 @@ In the image we can see that
 two branches were created from `main`. 
 The first one, `feat-trained-model`, 
 is based on the state of the repository 
-at the second commit to the main branch.
+at the third commit to the `main` branch.
 The second branch is called `fix-eda-plot` 
-and was initiated from the third commit 
+and was initiated from the fourth commit 
 of the `main` branch to
 fix one of the exploratory analysis plots. 
 At the end we merge all these branches to `main` 
@@ -126,10 +127,19 @@ you can click and select it in the menu.
 You can always switch easily between branches on the **Branches** tab in the side bar.
 
 In this slide, 
-we create the branch from `main` or 
+the options available are to create a branch from `main`,
 from `origin/HEAD` and `origin/main`.
 We already know that `main` is the default branch,
 but what about `origin` and `HEAD`? 
+
+Let's review some concepts:
+
+* `main` is your default local branch.
+* `HEAD` is pointing where you currently are (in this case, on the `main` branch)
+* `origin` is a nickname for your remote repo on GitHub (instead of showing the full URL), so `origin/main` is the `main` branch of the version of the repo you pushed to GitHub.com.
+
+You don't need to care about `origin/HEAD`, it just point to the default remote branch, which will always be `main` unless you mess around with the settings on the GitHub webpage.
+
 
 ---
 
@@ -147,22 +157,18 @@ but what about `origin` and `HEAD`?
 
 Notes:
 
-Let's review some concepts:
-
-* `main` is your default local branch.
-* `HEAD` is pointing where you currently are (in this case, on the `main` branch)
-* `origin` is a nickname for your remote repo on GitHub (instead of showing the full URL), so `origin/main` is the `main` branch of the version of the repo you pushed to GitHub.com.
-   You don't need to care about `origin/HEAD`, it just point to the default remote branch, which will always be `main` unless you mess around with the settings on the GitHub webpage.
-
-In JupyterLab you can see this information as labels under the tab **Changes** in the sidebar. 
 In the terminal, you can use `git log --oneline` to check the history of your project,
 and see which commits correspond to the names `origin/HEAD`, `origin/main` and `main`.
 You can also see that the currently active branch is shown in cyan at the end of the terminal prompt.
 
+In JupyterLab you can see this information as labels under the tab **Changes** in the sidebar. 
+
+
 ⚠️ Here we added a new synonym for a GitHub repository.
 Previously, we were using `remote` 
 as a way to refer to any GitHub repository. 
-Now we can refer to the specific GitHub remote we are working on with the nickname `origin`.
+Here Git refers to the default `remote` in which 
+we are working on with the nickname `origin`.
 
 ---
 
@@ -189,7 +195,7 @@ Type `git switch -c <branch-name>`,
 to create and switch to this branch.
 If you want to create a branch
 starting in a particular commit
-you should add the commit hash next to the branch name.
+you should add the commit hash as another argument.
 In the example, 
 the branch is created from the last commit,
 that is the default behaviour 
@@ -198,7 +204,7 @@ when a commit hash is not included.
 After creating the branch,
 you will switch to working on there.
 In the terminal, you'll notice that the name of the new branch,
-in this case `report`, is now in parentheses next to the path.
+in this case `report`, appears now in parenthesis in the terminal.
 Also, the **Current branch** tab in JupyterLab is updated,
 and the new branch is now listed there.
 
@@ -252,6 +258,7 @@ But how can we push a local branch to GitHub?
 
 <br>
 
+`git push --set-upstream origin <new-branch-name>`
 <center>
 
 <img src='/module5/pushing-new-branch-jl-t.png' width="800px" alt="404 image" />
@@ -277,7 +284,19 @@ because git will remind you in the case
 you forget to specify it as you can see in the image. 
 
 
+After pushing the new branch `report` to the remote
+you will notice that the local branch `report`
+and the remote branch `origin/report` 
+are placed in the same commit when you read
+the history of the project. 
+This means that your remote repository 
+is synchronized with your local repository.
+
+
 ---
+
+
+
 
 
 # Let's apply what we learned!
