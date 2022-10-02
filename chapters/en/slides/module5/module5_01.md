@@ -20,7 +20,7 @@ and how they can make our Git workflow more effective.
 
 <center>
 
-<img src='/module5/house-analogy-features.jpg' width="700px" alt="404 image" />
+<img src='/module5/house-analogy-features-new.png' width="700px" alt="404 image" />
 
 </center>
 
@@ -70,7 +70,7 @@ When we initiate a repository by default we start working on the `main` branch, 
 
 <center>
 
-<img src='/module5/house-analogy-explained.png' width="700px" alt="404 image" />
+<img src='/module5/house-analogy-explained-new.png' width="700px" alt="404 image" />
 
 </center>
 

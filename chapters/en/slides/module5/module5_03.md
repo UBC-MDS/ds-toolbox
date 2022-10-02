@@ -18,7 +18,7 @@ In this slide deck, we will learn how we can merge branches together.
 
 <center>
 
-<img src='/module5/branches-house-analogy-explained.png' width="600px" alt="404 image"/>
+<img src='/module5/house-analogy-explained-new.png' width="700px" alt="404 image"/>
 
 </center>
 
@@ -27,18 +27,17 @@ Once you have finished your modifications in the branch you are working on, it i
 
 Upon merging, the changes you were working on in a particular branch are combined with the content of the `main` branch (or any other branch that you decide to merge your changes with).
 
+When you merge two branches you are creating a new commit with the combined changes. In the image, these commits are represented by yellow circles.
 
 ---
 
 ## Merging branches (JupyterLab)
 
 <br>
-<br>
-<br>
 
 <center>
 
-<img src='/module5/merge-branch.png' width="600px" alt="404 image"/>
+<img src='/module5/merge-branch-jl-ide.png' width="800px" alt="404 image"/>
 
 </center>
 
@@ -53,12 +52,10 @@ Notice that after doing this, the report branch is not deleted automatically, so
 ## Merging branches (Terminal)
 
 <br>
-<br>
-<br>
 
 <center>
 
-<img src='/module5/merge-branch-2.png' width="600px" alt="404 image"/>
+<img src='/module5/merge-branch-jl.png' width="800px" alt="404 image"/>
 
 </center>
 
@@ -71,11 +68,11 @@ If you want to use the terminal to merge the branches and you are currently work
 
 <br>
 <br>
-<br>
+
 
 <center>
 
-<img src='/module5/git-history-log.png' width="600px" alt="404 image"/>
+<img src='/module5/git-history-log-vscode-cut.png' width="700px" alt="404 image"/>
 
 </center>
 
@@ -88,12 +85,10 @@ Let's see how VS Code's graphical representation of the Git history changed when
 ## Deleting branches (JupyterLab)
 
 <br>
-<br>
-<br>
 
 <center>
 
-<img src='/module5/delete-branch.png' width="600px" alt="404 image"/>
+<img src='/module5/delete-branch-jl.png' width="800px" alt="404 image"/>
 
 </center>
 
@@ -107,12 +102,10 @@ You can only delete a branch when you are not working on it (it is not highlight
 ## Deleting branches (terminal)
 
 <br>
-<br>
-<br>
 
 <center>
 
-<img src='/module5/delete-branch-t.png' width="600px" alt="404 image"/>
+<img src='/module5/delete-branch-jl-t.png' width="800px" alt="404 image"/>
 
 </center>
 
