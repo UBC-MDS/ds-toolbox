@@ -94,7 +94,6 @@ In the body of the message you can also indicate if it is fixing a currently ope
 </center>
 
 Notes:
-
 The next step is for the upstream repo maintainers to review your work and merge it in if they approve it. You have the option of assigning someone to a pull request and/or designating the parson as reviewer.
 
 - **Reviewers**: You can choose anyone who can help from the list of prior authors that GitHub will offer as reviewers for that code. A review request will be sent to the reviewers and you will obtain a notification and email once they have submitted their feedback. If you are working with a team you will probably define guidelines for which team member reviews which PRs.
@@ -103,7 +102,7 @@ Another useful thing that you can do is to **label** each pull request, they can
 
 ---
 
-## Opening a pull request
+## Opening a pull request  
 
 <br>
 
@@ -115,11 +114,9 @@ Another useful thing that you can do is to **label** each pull request, they can
 
 
 Notes:
-
 Once you have open a pull request you can continue to add commits by pushing to your feature branch on GitHub (the commits will appear in chronological order). This means that you can open the pull request before finishing the work and doing so is a way to communicate that you are preparing changes to merge in `main` (or another branch) that will need review.
 
 Until the PR is ready for review, you can open it as a "Draft" by clicking the dropdown arrow on the green button that says "Create Pull Request" and mark it as "Ready for review" later.
-
 
 
 ---

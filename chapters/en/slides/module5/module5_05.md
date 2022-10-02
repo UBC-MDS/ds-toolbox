@@ -38,11 +38,12 @@ There are two main strategies we can use to work with others:
 Notes:
 There are two major ways to work in a collaborative basis using Git and GitHub: 
 
-1. Working with colleagues in a repository where all of you are members with permission to push code to the repository. We call this strategy **branching**.
+1. Working with colleagues in a repository where all of you are members with permission to push code. We call this strategy **branching**.
 
-If you start a new repository with some coworkers and you add them as collaborators, you can all contribute to it using branching. This means that all the contributors can create branches from the `main` branch.
+If you start a new repository with some coworkers and you add them as collaborators, 
+you can all contribute to it using branching. 
 
-2. Contributing to a repository that you don't have access using a GitHub tool called **forking**.
+1. Contributing to a repository that you don't have access using a GitHub tool called **forking**.
 
 The use of forks is common when collaborate on online repositories where you don't have write access, such as open source projects led by someone else.
 
