@@ -102,7 +102,7 @@ Another useful thing that you can do is to **label** each pull request, they can
 
 <center>
 
-<img src='module5/PR-draft.png' width="800px" alt="404 image" />
+<img src='module5/PR-draft-conversion.png' width="800px" alt="404 image" />
 
 </center>
 

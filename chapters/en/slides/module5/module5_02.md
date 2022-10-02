@@ -95,7 +95,7 @@ you will have to select them in one of the menus
 as you can see in the image. 
 
 
-Where it currently says `master`,
+Where it currently says `main`,
 change it to show "All branches" and you should now see
 a nice graphical overview looking like the one in the picture. 
 If the Git history view hangs or looks strange, press "Refresh".
