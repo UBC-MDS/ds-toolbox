@@ -32,7 +32,7 @@ It would still be beneficial for the repository's owners to receive your contrib
 
 <center>
 
-<img src='/module5/fork-glosario.png.png' width="700px" alt="404 image" />
+<img src='/module5/fork-glosario.png' width="800px" alt="404 image" />
 
 </center>
 
