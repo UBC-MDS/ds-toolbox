@@ -19,11 +19,11 @@ There are two main strategies we can use to work with others:
 2. <mark><b> Forking </b></mark>
 
 Notes:
-We have learned that if you create your own repository on GitHub or you are part of a team of people who all have read and write access to a repo, then you can clone it to you computer, make changes and then push them back to this repository (either on a feature branch or on the `main` branch). We called this style of collaboration **branching**.
+We have learned that if you create your repository on GitHub or you are part of a team with write access to a repo, then you can clone it to your computer, make changes and then push them back to this repository. We called this style of collaboration **branching**.
 
-If you want the code from someone else's repository, where you are not a member or official collaborator, then you can clone it and use it on computer. However, you cannot push your changes back to the GitHub repository because you don't have the write permissions to that repository.
+If you want the code from someone else's repository but you are not an official collaborator, you can clone  it and use it on your computer. However, you cannot push your changes back to the GitHub repository because you don't have write permissions to the repostory.
 
-It would still be beneficial for the repository's owners to receive your contributions if you make code modifications and enhance something, without having to grant you full access and running the risk of breaking something. **Instead of working directly on the repository, you can fork (copy) someone else's repository and work on a branch in your own copy.**
+It would still be beneficial for the repository's owners to receive your contributions if you make code enhancements, without having to grant you full access and run the risk of breaking something. **Instead of working directly on the repository, you can fork (copy) someone else's repository and work on a branch in your own copy.**
 
 ---
 

@@ -157,11 +157,10 @@ If you think in the analogy of the house, protecting the `main` branch would be 
 
 In your repository, this means that you should be sure that code in `main`, also called the production branch, is high quality code without bugs or other run problems. Each time you accept merging a contribution of another team member in `main` be sure that the code is doing what is expected and it is well documented. This way you will always have stable and well build code that runs propoperly in your `main` branch. This ensures that you are producing code in an organized way.
 
-Using branch protection rules is a team decision that could prevent mistakes of pushing to the `main` branch without notifying your colleagues. If you made only minor edits the team might let you merge these to `main` locally and then push up the updated `main` branch (or even let you not create a branch in the first place).
+Using branch protection rules is a team decision that could prevent the error of pushing to the `main` branch without notifying your colleagues. If you made only minor edits the team might let you merge these to `main` locally and then push up the updated `main` branch (or even let you not create a branch in the first place).
 
 ⚠️ Remember to get the input from other team members before deciding to implement branch protection, so that everyone in your team is on the same page.
 
-We are ready to start collaborating!
 
 
 ---
@@ -177,7 +176,7 @@ We are ready to start collaborating!
 </center>
 
 Notes:
-This means that when you are doing a pull request you will need the approval of a team member before can merge your pull request.
+This is how pull requests look like after you protect the branch. You will need the approval of a team member before you can merge the pull request.
 
 ---
 
@@ -195,6 +194,9 @@ Notes:
 Giving your collaborators access to your repository is mandatory to collaborate using branches. Protecting the main branch is considered good practice but experienced users that are very familiar with the workflow could opt to not use this strategy.
 
 The workflow will be the same that we have learned before, cloning, adding to the staging area, committing the changes and pushing to the repo with the only difference being that you will have to create a pull request. Merge conflicts could happen and you can use the strategies you have learned in the past modules to resolve them.
+
+
+We are ready to start collaborating!
 
 ---
 
