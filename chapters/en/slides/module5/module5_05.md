@@ -22,7 +22,8 @@ In this slide deck we will learn more about how to collaborate effectively on Gi
 </center>
 
 Notes:
-We have already seen some ways in which Git and GitHub allow collaboration with others. Here we will dive more in depth into which collaborative workflows are the most effective
+We have already seen some ways in which Git and GitHub allow collaboration with others. 
+Here we will dive more in depth into which collaborative workflows are the most effective
 when multiple people are contributing code to the same repository.
 
 ---

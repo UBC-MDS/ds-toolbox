@@ -57,7 +57,8 @@ and suggest any changes before merging it in.
 </center>
 
 Notes:
-To create a pull request, you have to push the changes in your branch to GitHub. After doing so, a yellow banner will appear at the top of the repository interface on GitHub and you can click the green button that says "Compare and pull request".
+To create a pull request, you have to push the changes in your branch to GitHub.
+After doing so, a yellow banner will appear at the top of the repository interface on GitHub and you can click the green button that says "Compare and pull request".
 
 ---
 
@@ -108,7 +109,7 @@ Another useful thing that you can do is to **label** each pull request, they can
 
 <center>
 
-<img src='module5/draft-conversion-pull-request-fix.jpeg' width="800px" alt="404 image" />
+<img src='module5/draft-conversion-pull-request.png' width="800px" alt="404 image" />
 
 </center>
 
