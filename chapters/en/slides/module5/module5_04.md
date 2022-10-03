@@ -103,16 +103,15 @@ Another useful thing that you can do is to **label** each pull request, they can
 
 ---
 
-## Opening a pull request  
+## Opening a pull request
 
 <br>
 
 <center>
 
-<img src='module5/draft-conversion-pull-request.png' width="800px" alt="404 image" />
+<img src='/module5/draft-conversion-pull-request.png' width="800px" alt="404 image" />
 
 </center>
-
 
 Notes:
 Once you have open a pull request you can continue to add commits by pushing to your feature branch on GitHub (the commits will appear in chronological order). This means that you can open the pull request before finishing the work and doing so is a way to communicate that you are preparing changes to merge in `main` (or another branch) that will need review.
