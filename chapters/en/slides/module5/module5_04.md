@@ -90,7 +90,7 @@ that you can use the tab **Preview** to view what the rendered Markdown
 will look like before creating the pull request.
 
 In the body of the message you can also indicate if
-it is fixing a currently open issue by typing `/close #1` 
+it is fixing a currently open issue by typing `close #1` 
 to close issue number 1 
 (pull requests and issues use the same numbering system, so if there is already an open issue, the first PR would be get the number 2).
 
