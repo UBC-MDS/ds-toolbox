@@ -45,10 +45,11 @@ Notes:
 
 The fork workflow is used in many open source projects where there is often a small team of core maintainers, but contributions from many more users. For example, the JupyterLab project has around 10 members in their team, but more than 300 people have contributed code to the project and almost 2 000 has forked it.
 
-In the example, we are forking [the repository of the project Glosario](https://github.com/carpentries/glosario), a multilingual glossary for computing and data science terms that is also an open-source project. As you can see in the image, this repository has been forked by 168 users so far.
+In the example, we are forking [the repository of the project Glosario from The Carpentries](https://github.com/carpentries/glosario), a multilingual glossary for computing and data science terms that is also an open-source project. As you can see in the image, this repository has been forked by 168 users so far.
 
 🙌
 Go to the GitHub page of the project that you want to fork. In the upper right corner, click the icon that says "fork". That's it! You just forked a repo!
+
 ---
 
 ## Developing on a forked repo
@@ -83,7 +84,7 @@ When you are working on a branch you have to push your branch to GitHub and ask 
 Notes:
 Forking a repo happens via the GitHub web interface, but this is a one time operation. If there are changes made to the upstream repo that you want to sync to your forked repo (`origin`), you have to first pull them from the upstream remote to your local computer and then push them to your forked remote (`origin`).
 
-To solve this you can update your forked repository with the button **Sync fork**. Then you can pull this changes to continue working locally before doing the pull request. In the example thare are not changes in the repository that I have just forked, but if this was the case I would have to select the option `update branch`.
+To solve this you can update your forked repository with the button **Sync fork**. Then you can pull this changes to continue working locally before opening the pull request. In the example thare are not changes in the repository that I have just forked, but if this was the case I would have to select the option `update branch`.
 
 
 
@@ -107,7 +108,7 @@ Notes:
 When you finish your local changes and you push to the fork that lives in your user's account, you can create the pull request to the upstream repository if you click in the `Contribute` button. If you have added some commits, the `Open pull request` option will be available. 
 
 ⚠️ You should read the `CONTRIBUTING.md` file before making your first contribution to a new open-source project. There you will find relevant instructions on how to participate in the project.
-Another file you must read is the `CODE OF CONDUCT.md`.
+Another file you must read is the `CODE_OF_CONDUCT.md`.
 There, you will discover information on who to contact if you ever feel uncomfortable working on the project as well as other guidelines you should adhere to in order to foster a welcoming and supportive environment among the contributors.
 
 Both files are typically located in the root of the repository.
@@ -150,7 +151,7 @@ Dialog boxes and submission button for creating new GitHub issues.
 Notes:
 GitHub issues are an alternative written communication medium to email and messaging apps, and were designed specifically to facilitate project-specific communication. Issues are opened from the “Issues” tab on the project’s GitHub page, and they persist there even after the conversation is over and the issue is closed (in contrast to email, issues are not usually deleted). One issue thread is usually created per topic, and they are easily searchable using GitHub’s search tools. 
 
-All issues are accessible to all project collaborators, so no one is left out of the conversation. If someone mention your name with the syntax `@yourname`, you will get a notification. If you want to be notified about all new issues and pull requests you can click the little eye icong in the top right corner that says "Watch". Replying to issues from email is also possible. Given all of these advantages, we highly recommend the use of issues for project-related communication.
+All issues are accessible to all project collaborators, so no one is left out of the conversation. If someone mention your name with the syntax `@yourname`, you will get a notification. If you want to be notified about all new issues and pull requests you can click the little eye icon in the top right corner that says "Watch". Replying to issues from email is also possible. Given all of these advantages, we highly recommend the use of issues for project-related communication.
 
 ---
 
@@ -172,7 +173,7 @@ Issues will be automatically closed if you merge a PR that refers to the issue.
 
 Although you might think that GitHub issues are mostly for collaborative projects,
 they are highly useful for individual projects too,
-as it is important to record ideas and decisions for your self in the future.
+as it is important to record ideas and decisions for yourself in the future.
 
 GitHub has recently also improved issues capabilities to be used for project management,
 so that you don't need to use a separate program for that.
