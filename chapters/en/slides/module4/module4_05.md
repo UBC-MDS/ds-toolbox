@@ -306,7 +306,8 @@ Notes:
 A new tab will appear,
 displaying the current local changes and 
 incoming remote changes that are incompatible.
-The conflicting lines are highlighted in red as you can see in the image.
+JupyterLab displays the .ipynb files as notebooks even during the merge conflicts
+and the conflicting lines are highlighted in red as you can see in the image.
 You can choose to keep the current changes, the incoming changes,
 or go back to the commit before the project's history diverged.
 The last option is known as "Common ancestor"
