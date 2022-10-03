@@ -122,7 +122,7 @@ You can only delete a branch when you are not working on it
 
 Notes:
 If you want to delete the branches using the terminal you can use the command `git branch -d <branch-name>`.
-Be careful! You shouls use `-d` and NOT `-D`. 
+Be careful! You should use `-d` and NOT `-D`. 
 If you write the flag with a capital `-D` it will force the deletion,
 even if the branch has not been merged yet,
 what could be dangerous.
