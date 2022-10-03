@@ -153,7 +153,7 @@ Wildcards can be used inside `.gitignore` to ignore multiple files with the same
 Prepending `**/` to filenames ignores those files in subdirectories as well:
 
 ```
-**/.*log
+**/*.log
 ```
 
 Notes:
