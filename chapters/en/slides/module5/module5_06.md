@@ -65,7 +65,7 @@ Go to the GitHub page of the project that you want to fork. In the upper right c
 Notes:
 To start developing on a fork, first clone it to your computer **(your fork, not the upstream repo)**. It is good practice to always create a branch when you are about to add changes to a fork, and in many projects this is required, so they will not accept a pull request that comes from your `main` branch. This is because it is easier to keep track of branches with descriptive names compared to having all pull request branches names `main`, but coming from different people.
 
-When you are working on a branch you have to push your branch to GitHub and ask for it to be merged via a pull request. Since you don't have write access to the upstream repo, you have to request they the maintainer pull your code (remember that merging is part of what happens during a pull, so this is similar to what we did with branches via git merge, just that the code first needs to be fetched from your forked repo)
+When you are working on a branch you have to push your changes to GitHub and ask for it to be merged via a pull request. Since you don't have write access to the upstream repo, you have to request that the maintainer pull your code (remember that merging is part of what happens during a pull request, so this is similar to what we did with branches via `git merge`, just that the code first needs to be fetched from your forked repo)
 
 ---
 
@@ -82,7 +82,7 @@ When you are working on a branch you have to push your branch to GitHub and ask 
 
 
 Notes:
-Forking a repo happens via the GitHub web interface, but this is a one time operation. If there are changes made to the upstream repo that you want to sync to your forked repo (`origin`), you have to first pull them from the upstream remote to your local computer and then push them to your forked remote (`origin`).
+Forking a repo happens via the GitHub web interface, but this is a one time operation. If there are changes made to the upstream repo that you want to sync to your forked repo (`origin`), you have to first pull them from the upstream remote to your forked remote (`origin`).
 
 To solve this you can update your forked repository with the button **Sync fork**. Then you can pull this changes to continue working locally before opening the pull request. In the example thare are not changes in the repository that I have just forked, but if this was the case I would have to select the option `update branch`.
 
