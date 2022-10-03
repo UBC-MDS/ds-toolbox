@@ -43,9 +43,9 @@ There are two major ways to work in a collaborative basis using Git and GitHub:
 If you start a new repository with some coworkers and you add them as collaborators, 
 you can all contribute to it using branching. 
 
-1. Contributing to a repository that you don't have access using a GitHub tool called **forking**.
+1. Contributing to a repository that you don't have access to using a GitHub tool called **forking**.
 
-The use of forks is common when collaborate on online repositories where you don't have write access, such as open source projects led by someone else.
+The use of forks is common when collaborating on online repositories where you don't have write access, such as open source projects led by someone else.
 
 As an example imagine that you want to contribute to this [multilingual glossary for computing and data science terms](https://glosario.carpentries.org/) created by The Carpentries, an inclusive community willing to teach data and coding skills.
 
@@ -154,7 +154,7 @@ Notes:
 
 If you think in the analogy of the house, protecting the `main` branch would be similar to avoid creating modifications in the foundation of the house meanwhile each member is working in different sections. This makes sense since any changes in the house's foundation could give rise to problems when combining the parts, including the risk of collapsing the house.
 
-In your repository this means that you should be sure that code in `main`, also called the production branch, is high quality code without bugs or other run problems. Each time you accept merging a contribution of another team member in `main` be sure that the code is doing what is expected and it is well documented. This way you will always have stable and well build code that runs propoperly in your `main` branch. This ensures that you are producing code collaboratively in an organized way.
+In your repository this means that you should be sure that code in `main`, also called the production branch, is high quality code without bugs or other run problems. Each time you accept merging a contribution of another team member in `main` be sure that the code is doing what is expected and it is well documented. This way you will always have stable and well build code that runs propoperly in your `main` branch. This ensures that you are producing code in an organized way.
 
 Using branch protection rules is a team decision that could prevent mistakes of pushing to the `main` branch without notifying your colleagues. If you made only minor edits the team might let you merge these to `main` locally and then push up the updated `main` branch (or even let you not create a branch in the first place).
 
@@ -167,8 +167,6 @@ We are ready to start collaborating!
 
 ## How pull requests look like after you protect the branch
 
-<br>
-<br>
 <br>
 
 <center>
