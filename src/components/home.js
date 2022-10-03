@@ -23,7 +23,7 @@ export default ({ lang = 'en' }) => {
                     <Layout isHome lang={lang}>
                         <Logo className={classes.logo} />
                         <section>
-                                <h1 className={classes.subtitle}><center>Data Science Toolbox</center></h1>
+                                <h1 className={classes.subtitle}><center>The Data Science Toolbox</center></h1>
                             <div className={classes.introduction}>
 
                                         <p>

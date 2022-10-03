@@ -120,7 +120,7 @@ You can include figures in your Jupyter Book using the following syntax:
 
 Notes:
 
-You can include figures in your Jupyter Book using the syntax that you can see on the slide:
+You can include figures in your Jupyter Book using the syntax that you can see on the slide [1]:
 
 ~~~
  ```{figure} https://solarsystem.nasa.gov/system/resources/detail_files/2486_stsci-h-p1936a_1800.jpg
@@ -139,6 +139,8 @@ Jupyter Book will renumber the existing ones for you!
 The reason we have `name: jupiter-figure`
 is so we can **cross-reference** a figure later in the text,
 as we will show you in the next slide.
+
+[1] Example adopted from [UBC Jupyter Days 2020 Workshop](https://ubc-dsci.github.io/jupyterdays/sessions/beuzen/jupyter_book_tutorial.html#figures)
 
 ---
 
