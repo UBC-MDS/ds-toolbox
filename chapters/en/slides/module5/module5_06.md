@@ -6,7 +6,7 @@ title: 'module5_06'
 # Collaborative GitHub workflows: Forking
 
 Notes:
-In this slide deck we will continue to learn about different ways to collaborate on GitHub.
+In this slide deck, we will continue learning about different strategies to collaborate on GitHub.
 
 ---
 
