@@ -184,7 +184,7 @@ Starting with a `!` tells git to not ignore a certain directory.
 
 ```
 **/*.log
-!important/.*log
+!important/*.log
 ```
 
 Notes:
@@ -199,7 +199,7 @@ It would look like this:
 
 ```
 **/*.log
-!important/.*log
+!important/*.log
 ```
 
 ---
