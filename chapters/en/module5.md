@@ -11,14 +11,14 @@ id: 5
 
 <exercise id="0" title="Module Learning Outcomes" type="slides,video">
 
-<slides source="module5/module5_00" shot="0" start="0:002" end="3:40">
+<slides source="module5/module5_00" shot="13" start="0:0" end="1:05">
 </slides>
 
 </exercise>
 
 <exercise id="1" title="The role of branches" type="slides,video">
 
-<slides source="module5/module5_01" shot="0" start="0:002" end="3:40">
+<slides source="module5/module5_01" shot="14" start="0:002" end="3:40">
 </slides>
 
 </exercise>
@@ -93,7 +93,7 @@ Which branch are you currently working on?
 </exercise>
 
 <exercise id='3' title="What is the relationship between the branches?"  type='slides, video'>
-<slides source='module5/module5_02' shot='0' start='3:42' end='4:35'> </slides>
+<slides source='module5/module5_02' shot='14' start='3:42' end='4:35'> </slides>
 </exercise>
 
 <exercise id='4' title='✍️ Practice: How branches are related'>
@@ -141,7 +141,7 @@ The position of the label <code>origin/master</code> indicates that both these c
 </exercise>
 
 <exercise id='5' title="Merging branches"  type='slides, video'>
-<slides source='module5/module5_03' shot='0' start='3:42' end='4:35'> </slides>
+<slides source='module5/module5_03' shot='14' start='3:42' end='4:35'> </slides>
 </exercise>
 
 <exercise id='6' title='✍️ Practice: All roads merge to `main`'>
@@ -182,7 +182,7 @@ Is <code> canadian-languages</code>  referring to a branch?
 </exercise>
 
 <exercise id='7' title='When merging branches goes social: opening pull requests'  type='slides, video'>
-<slides source='module5/module5_04' shot='0' start='3:42' end='4:35'> </slides>
+<slides source='module5/module5_04' shot='14' start='3:42' end='4:35'> </slides>
 </exercise>
 
 <exercise id='8' title='✍️ Practice: You are cordially invited to review my changes'>
@@ -225,7 +225,7 @@ Even if the final goal of the pull request is to merge your changes with another
 </exercise>
 
 <exercise id='9' title='Collaborative GitHub workflows: Branching' type='slides, video'>
-<slides source='module5/module5_05' shot='0' start='3:42' end='4:35'> </slides>
+<slides source='module5/module5_05' shot='14' start='3:42' end='4:35'> </slides>
 </exercise>
 
 <exercise id='10' title='✍️ Practice: Branching out'>
@@ -260,7 +260,7 @@ Using only numbers could create confusion when merging the branches. For example
 </exercise>
 
 <exercise id='11' title='Collaborative GitHub workflows: Forking' type='slides, video'>
-<slides source='module5/module5_06' shot='0' start='3:42' end='4:35'> </slides>
+<slides source='module5/module5_06' shot='14' start='3:42' end='4:35'> </slides>
 </exercise>
 
 <exercise id='12' title='✍️ Practice: Forking your repository'>
@@ -327,7 +327,7 @@ These are both correct, but so is another option.
 
 <exercise id="13" title="What did we learn?" type="slides,video">
 
-<slides source="module5/module5_end" shot="0" start="0:002" end="3:40">
+<slides source="module5/module5_end" shot="15" start="0:00" end="0:25">
 </slides>
 
 </exercise>

@@ -85,11 +85,11 @@ will appear at the bottom of the **History** tab.
 
 2 - In that section   
 you should choose the file for which you want to see the differences.  
-In our example,    
-we have only changed the `README.md` file.  
-The next step is to click the file icon with the `+` and `-` symbols   
+In our example,
+we have only changed the `README.md` file.
+The next step is to click the file icon with the `+` and `-` symbols
 next to the name of the file.
-The differences between both commits will be displayed as a new file.  
+The differences between both commits will be displayed as a new file.
   
 
 ---
