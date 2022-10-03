@@ -41,15 +41,6 @@ your collaborator's version of the line(s), or some blend of the two.
 When this happens, Git will inform you that you have a "merge conflict"
 in certain file(s) and let you decide how to solve the issue.    
 
-In the terminal, the merge conflict will look like this when you try to pull:
-
-```
-$ git pull
-error: Pulling is not possible because you have unmerged files.
-hint: Fix them up in the work tree, and then use 'git add/rm <file>'
-hint: as appropriate to mark resolution and make a commit.
-fatal: Exiting because of an unresolved conflict.
-```
 
 ---
 
@@ -74,18 +65,6 @@ are incompatible to combine without overwriting a portion of the work.
 This is why attempting to pull or push modifications will result in an error.
 Git is unable to merge the remote and the local version.
 
-In the terminal, the merge conflict will look like this when you try to push:
-
-```
-$ git push
-To github.com:flordandrea/canadian_languages.git
- ! [rejected]        main -> main (non-fast-forward)
-error: failed to push some refs to 'github.com:flordandrea/canadian_languages.git'
-hint: Updates were rejected because the tip of your current branch is behind
-hint: its remote counterpart. Integrate the remote changes (e.g.
-hint: 'git pull ...') before pushing again.
-hint: See the 'Note about fast-forwards' in 'git push --help' for details.
-```
 
 ---
 
