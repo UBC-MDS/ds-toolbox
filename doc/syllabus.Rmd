@@ -29,7 +29,7 @@ We are using an interactive platform that contains a series of slide decks accom
 
 Students will require a laptop meeting the following specifications (details on how to set up your laptop will follow in assignment 1):
 
- - Runs one of the following operating systems: Ubuntu 22.04 (20.04 will also likely work), macOS Big Sur (version 11.4.x or 11.5.x), Windows 10 or 11 Home, Professional, Enterprise or Education (version 2004, 20H2, 21H1, or above).
+ - Runs one of the following operating systems: Ubuntu 22.04 (20.04 will also likely work), macOS Big Sur or above (>= 11.4.x), Windows 10 or 11 Home, Professional, Enterprise or Education (version 2004, 20H2, 21H1, or above).
     - When installing Ubuntu, checking the box "Install third party..." will (among other things) install proprietary drivers, which can be helpful for wifi and graphics cards.
 - Can connect to networks via a wireless connection for on campus work
 - Has access to an internet connection that is fast and stable enough for video calling and conducting online quizzes
