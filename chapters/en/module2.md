@@ -9,16 +9,16 @@ id: 2
 ---
 
 <exercise id="0" title="Module Learning Outcomes"  type="slides, video">
-<slides source="module2/module2_00" shot="0" start="3:42" end="4:35"> </slides>
+<slides source="module2/module2_00" shot="4" start="00:00" end="00:38"> </slides>
 </exercise>
 
 <exercise id="1" title="Introduction to the shell" type="slides,video">
-<slides source="module2/module2_01" shot="1" start="0:003" end="05:31"> </slides>
+<slides source="module2/module2_01" shot="5" start="0:01" end="15:26"> </slides>
 </exercise>
 
 <exercise id="2" title='✍️ Practice: "Shell out" your knowledge'>
 
-**True or False**       
+**True or False**
 *Using a text-based interface such as a shell to communicate with your computer is always better than using a graphical interface.*
 
 <choice id="1" >
@@ -75,8 +75,8 @@ How do you pass an option to <code>ls</code> which tells is to decorate the outp
 
 </exercise>
 
-<exercise id="3" title="Navigating the file system" type="slides,video">
-<slides source="module2/module2_03" shot="1" start="5:4008" end="26:2200"> </slides>
+<exercise id="3" title="Moving around" type="slides,video">
+<slides source="module2/module2_03" shot="5" start="15:27" end="26:21"> </slides>
 </exercise>
 
 <exercise id="4" title="✍️ Practice: Ahoy captain!">
@@ -148,8 +148,8 @@ While this command would list the hidden files, the <code>-F</code> flag is not 
 
 </exercise>
 
-<exercise id="5" title="Moving, copying, and deleting files" type="slides,video">
-<slides source="module2/module2_05" shot="1" start="26:3200" end="40:07"></slides>
+<exercise id="5" title="Working with files and directories" type="slides,video">
+<slides source="module2/module2_05" shot="5" start="26:23" end="42:20"></slides>
 </exercise>
 
 <exercise id="6" title="✍️ Practice: Refine your shell skills">
@@ -220,7 +220,7 @@ The file needs to start with `not`.
 </exercise>
 
 <exercise id="7" title="Intermediate shell topics" type="slides,video">
-<slides source="module2/module2_07" shot="1" start="26:3200" end="40:07"></slides>
+<slides source="module2/module2_07" shot="5" start="42:22" end="59:48"></slides>
 </exercise>
 
 <exercise id="8" title="✍️ Practice: Bash it out">
@@ -300,7 +300,6 @@ The first option is correct, but not the fourth.
 </exercise>
 
 <exercise id="9" title="What Did We Just Learn?" type="slides, video">
-<slides source="module2/module2_end" shot="0" start="04:37" end="05:35">
+<slides source="module2/module2_end" shot="6" start="00:00" end="00:27">
 </slides>
 </exercise>
-

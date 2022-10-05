@@ -3,7 +3,10 @@ type: slides
 title: 'module4_04'
 ---
 
-# Revert changes made to your git project
+# Revert changes made to your Git project
+
+
+Notes: 
 
 In this slide deck we will see how we can undo changes we have made without deleting our past commits.
 
@@ -11,13 +14,9 @@ In this slide deck we will see how we can undo changes we have made without dele
 
 ## Reversion (JupyterLab)
 
-<br>
-<br>
-<br>
-
 <center>
 
-<img src='/module4/vc-revert.png' width="600px" alt="404 image"/>
+<img src='/module4/vc-revert-jl.png' width="800px" alt="404 image"/>
 
 </center>
 
@@ -38,13 +37,9 @@ as seen in this slide.
 
 ## Reversion (JupyterLab)
 
-<br>
-<br>
-<br>
-
 <center>
 
-<img src='/module4/vc-revert-2.png' width="600px" alt="404 image"/>
+<img src='/module4/vc-revert-commit.png' width="800px" alt="404 image"/>
 
 </center>
 
@@ -56,12 +51,11 @@ When you click the arrow, JupyterLab asks you for the commit title and descripti
 ## Reversion (JupyterLab)
 
 <br>
-<br>
-<br>
+
 
 <center>
 
-<img src='/module4/vc-revert-3.png' width="600px" alt="404 image"/>
+<img src='/module4/vc-revert-history.png' width="600px" alt="404 image"/>
 
 </center>
 
@@ -76,13 +70,16 @@ a reversion if more friendly for collaborating on GitHub, but it is still import
 
 ## Reversion (Terminal)
 
+
 `git revert <commit hash>`
 
 <center>
 
-<img src='/module4/vc-revert-t.png' width="600px" alt="404 image"/>
+<img src='/module4/vc-revert-t-jl.png' width="800px" alt="404 image"/>
 
 </center>
+
+
 
 Notes:
 If you want to revert changes with the terminal
@@ -94,23 +91,33 @@ together with the commit hash you want to revert to.
 ## Reversion (Terminal)
 
 <br>
-<br>
-<br>
+
 
 <center>
 
-<img src='/module4/vc-revert-t2.png' width="600px" alt="404 image"/>
+<img src='/module4/vc-revert-t-jl-changes.png' width="800px" alt="404 image"/>
 
 </center>
 
 Notes:
-After running `git revert`, your default text editor will pop up so you can modify the final commit message. If you close it as it is, the message will be the default one.
-After closing the editor, you can view the new reversion in the project history tab
-or with `git log`.
+After running `git revert`,  
+your default text editor will pop up so you can modify the final commit message.   
+If you close it as it is, the message will be the default one.  
+After closing the editor, you can view the new reversion in the project history tab  
+or with `git log`.   
+
+The number of files changed, insertions and deletions are informed
+when you are using the terminal or JupyterLab as you can see in the image.
 
 ---
 
 ## Travelling back in time 🕑
+
+<br>
+<br>
+<br>
+<br>
+<br>
 
 1. **Doing a hard reset** ✔️  
 

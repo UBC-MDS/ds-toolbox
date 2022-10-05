@@ -18,7 +18,7 @@ In this slide deck, we will learn how we can merge branches together.
 
 <center>
 
-<img src='/module5/branches-house-analogy-explained.png' width="600px" alt="404 image"/>
+<img src='/module5/house-analogy-explained-new.png' width="700px" alt="404 image"/>
 
 </center>
 
@@ -27,18 +27,17 @@ Once you have finished your modifications in the branch you are working on, it i
 
 Upon merging, the changes you were working on in a particular branch are combined with the content of the `main` branch (or any other branch that you decide to merge your changes with).
 
+When you merge two branches you are creating a new commit with the combined changes. In the image, these commits are represented by yellow circles.
 
 ---
 
 ## Merging branches (JupyterLab)
 
 <br>
-<br>
-<br>
 
 <center>
 
-<img src='/module5/merge-branch.png' width="600px" alt="404 image"/>
+<img src='/module5/merge-branch-jl-ide.png' width="800px" alt="404 image"/>
 
 </center>
 
@@ -53,12 +52,12 @@ Notice that after doing this, the report branch is not deleted automatically, so
 ## Merging branches (Terminal)
 
 <br>
-<br>
-<br>
+
+`git merge <branch>`
 
 <center>
 
-<img src='/module5/merge-branch-2.png' width="600px" alt="404 image"/>
+<img src='/module5/merge-branch-jl.png' width="800px" alt="404 image"/>
 
 </center>
 
@@ -71,11 +70,11 @@ If you want to use the terminal to merge the branches and you are currently work
 
 <br>
 <br>
-<br>
+
 
 <center>
 
-<img src='/module5/git-history-log.png' width="600px" alt="404 image"/>
+<img src='/module5/git-log-history-vscode-cut.png' width="700px" alt="404 image"/>
 
 </center>
 
@@ -88,38 +87,46 @@ Let's see how VS Code's graphical representation of the Git history changed when
 ## Deleting branches (JupyterLab)
 
 <br>
-<br>
-<br>
 
 <center>
 
-<img src='/module5/delete-branch.png' width="600px" alt="404 image"/>
+<img src='/module5/delete-branch-jl.png' width="800px" alt="404 image"/>
 
 </center>
 
 Notes:
-You will notice that merging the branch will not automatically delete it. If you are not going to be developing that feature anymore you can delete the branch after merging it by clicking on the small garbage bin icon in the **Branches** tab.
+You will notice that merging the branch will not automatically delete it. 
+If you are not going to be developing 
+that feature anymore you can delete the branch after merging it 
+by clicking on the small garbage bin icon in the **Branches** tab.
 
-You can only delete a branch when you are not working on it (it is not highlighted in blue in the JupyterLab UI) and although it can be difficult to recover the information after it is deleted, you can safely do so after successfully merging the changes into another branch.
+You can only delete a branch when you are not working on it 
+(it is not highlighted in blue in the JupyterLab UI)
+ and although it can be difficult to recover the information after it is deleted, 
+ you can safely do so after successfully merging the changes into another branch.
 
 ---
 
 ## Deleting branches (terminal)
 
 <br>
-<br>
-<br>
+
+`git branch -d <branch-name>`
 
 <center>
 
-<img src='/module5/delete-branch-t.png' width="600px" alt="404 image"/>
+<img src='/module5/delete-branch-jl-t.png' width="800px" alt="404 image"/>
 
 </center>
 
 
 Notes:
 If you want to delete the branches using the terminal you can use the command `git branch -d <branch-name>`.
-
+Be careful! You should use `-d` and NOT `-D`. 
+If you write the flag with a capital `-D` it will force the deletion,
+even if the branch has not been merged yet,
+what could be dangerous.
+If you add the `d` flag, it will only delete the branch after it has been merged.
 
 Now that you have a better grip on how to read the Git history and how to merge branches, it will be easier to work with both branches and forks!
 
