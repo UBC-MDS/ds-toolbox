@@ -4,11 +4,11 @@ subtitle: "Syllabus"
 output: pdf_document
 ---
 
-# Data Visualization
+# The Data Science Toolbox
 
 ## Time and Place
 
-Online, October 11, 2022
+Online, October 11 to December 12th, 2022
 
 ## Description
 
@@ -58,35 +58,36 @@ By the end of the course, students will be able to:
 
 | Position           | Name            | Email                | Office Hours                                    | Office Location |
 |--------------------|-----------------|----------------------|-------------------------------------------------|-----------------|
-| Course Facilitator | Analise Hofmann | ahofmann@mail.ubc.ca | Th 6:30-7:30pm PST <br /> Sat 10:00-11:00am PST | Zoom            |
+| Course Facilitator | Analise Hofmann | analise.hofmann@ubc.ca | Mon/Wed 6:00-7:00 pm PST | Zoom            |
+| Course Facilitator | Matt Connell | matthew.connell@ubc.ca | Tue/Thr 6:00-7:00 pm PST  | Zoom            |
 
 
 ## Course Structure
 
 - There are 8 modules in total for this course. Each module will be accompanied by an autograded multiple choice assignment to be submitted on Canvas.
 - Students will have one attempt with unlimited time to submit this assignment and are expected to walk through the scenarios in the assignment questions on their own machines before answering.
-- The students will be responsible to complete the material of 2-3 modules every 2 weeks (3 modules for weeks 1-2, 2 modules for weeks 2-4, 3 modules for weeks 4-6).
-- In weeks 4 and 7, students will need to take an online 45-minute open-book quiz testing, material from Modules 1-4 and 5-8 respectively. The quizzes can be taken at any point during the week.
+- The students will be responsible to complete the material of 1 module every week 
+- In weeks 4 and 8, students will need to take an online 45-minute open-book quiz testing, material from Modules 1-4 and 5-8 respectively. The quizzes can be taken at any point during the week.
 - At the end of the 8th module, students will complete a more comprehensive assignment where they are required to use the skills they learned throughout the course to produce an online site with technical material using the Jupyter Book platform and GitHub Pages.
 
 ## Course Completion and Grading
 
 You are assessed on each course according to UBC assessment guidelines to ensure the successful acquisition of required skills and concepts.
 
-The Data Science Toolbox is part of the Key Capabilities in Data Science program. You must obtain 70% or higher in Data Visualization and complete the final assignment to obtain a course completion grade. To successfully complete the Key Capabilities in Data Science program, you must complete all four required courses and achieve 70% or higher for each of the four courses. 
+The Data Science Toolbox is part of the Key Capabilities in Data Science program. You must obtain 70% or higher in Data Visualization and complete the final assignment (assignment 8) to obtain a course completion grade. To successfully complete the Key Capabilities in Data Science program, you must complete three of the four  courses and achieve 70% or higher for each of the three courses. 
 
 ## Assignments
 
 Each week students will submit 1 assignment for a grade. **Assignment due dates are posted on Canvas.**
-To submit your assignment, just make sure your work is saved (File -> Save and Checkpoint to be sure) **on our server** (i.e., using the link from Canvas) before the deadline.  Our server will automatically snapshot at the due date/time.
-We have supplied informative videos on how to do this in assignment 1 and referenced the links in subsequent assignments. 
+To submit your assignment click submit at the end of each assignment quiz. You will only be able to submit once so make sure to take notes of your answers as you go along so you can enter them when you return to complete your assignment.
 
 ### Course breakdown
 
 | Deliverable   | Percent Grade |
 |---------------|---------------|
-| 8 Assignments | 64 (8% each)  |
-| 2 Quizzes     | 36 (18% each) |
+| 7 Assignments | 56 (8% each)  |
+| 2 Quizzes     | 32 (16% each) |
+|  Final Assessment  <br />  (Assignment 8)    | 12 % |
 
 ## Schedule
 
@@ -107,16 +108,17 @@ We have supplied informative videos on how to do this in assignment 1 and refere
 
 | Week      | Modules to Complete                   | Submissions Due                             |
 |-----------|---------------------------------------|---------------------------------------------|
-| Week 1 -2 | Module 1,<br> Module 2, <br> Module 3 | assignment_01, assignment_02, assignment_03 |
-| Week 3-4  | Module4, <br>Module 5                 | assignment_04, assignment_05, quiz_01       |
-| Week 5-6  | Module 6,<br> Module 7, <br Module 8  | assignment_06, assignment_07                |
-| Week 7    | None                                  | quiz_02                                     |
+| Weeks 1 - 2 | Module 1,<br> Module 2, | Assignment 1, Assignment 2,  |
+| Weeks 3 - 4  | Module 3, <br> Module 4                 | Assignment 3, Assignment 4, Quiz 1      |
+| Weeks 5 - 6  | Module 5,<br> Module 6,   | Assignment 5, Assignment 6                |
+| Week 7    | Module 7     |     Assignment 7                            |
+| Weeks 8 - 9   | Module 8    | Final Assessment (Assignment 8), Quiz 2                             |
 
 ## Policies
 
 ### Late Assignments
 
-Students should submit all assignments by the due date. If for any reason a student is unable to do so, they can submit the assignments before the course end date. This is the final allowed submission date and is non-negotiable.
+Students should submit all assignments by the due date. Assignment 1 must be completed by it's due date to continue in the course. If for any reason a student is unable to submit Assignments 2 to 7 on time, they can submit the assignments before the course end date.  This is the final allowed submission date and is non-negotiable.
 
 ### Late Quizzes
 
