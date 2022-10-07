@@ -1,132 +1,165 @@
 ---
-title: "Data Visualization"
+title: "The Data Science Toolbox"
 subtitle: "Syllabus"
 output: pdf_document
 ---
 
-# Data Visualization 
+# The Data Science Toolbox
 
 ## Time and Place
-Online
-March 30, 2021– May 17, 2021
+
+Online, October 11 to December 12th, 2022
 
 ## Description
-This course is part of the Key Capabilities for Data Science program and will introduce you to key concepts in machine learning.
 
-During the course, you will work with powerful Python libraries made for data-science, including Pandas for processing tabular data and Altair for data visualization.
+Welcome to The Data Science Toolbox!  This course is part of the <u><strong><a href="https://extendedlearning.ubc.ca/programs/key-capabilities-data-science">Key Capabilities for Data Science program</a></strong></u> and covers topics related to workflows, platforms and tools used in data analysis.
 
-In this course, we will learn how to (and how not to) visualize data. We will learn about visualization grammar and how it's implemented in the "Altair" package to create our figures. In addition to common statistical visualizations, we will learn how to tell stories with data, create geographical visualizations, and bring out plots to life by adding interactive elements. Together, these skills will allow us to create effective data visualizations that strengthen our own exploratory data analysis skills and our ability to communicate insights to others.
+In this course, we will dive into the world of data science tools and utilities. While these are not strictly required for data analysis, they are necessary for efficient, reproducible, and collaborative data science practices, and are all important building blocks for a successful and sustained data science career.
 
 ## Prerequisites
-- [Programming in Python for Data Science](https://prog-learn.mds.ubc.ca/)
+
+[Programming in Python for Data Science](https://prog-learn.mds.ubc.ca/)
 
 ## Content
-We are using an interactive platform that contains a series of slide decks accompanied by multiple-choice questions and interactive coding exercises to apply what you learned during the module: [https://viz-learn.mds.ubc.ca/](https://viz-learn.mds.ubc.ca/). We recommend using Chrome, Firefox or Safari to complete the content as other browsers are incompatible with the content platform. 
 
-## Course Software Platforms
-Students will write code and perform their analysis using the [Python Programming Language](https://www.python.org/doc/essays/blurb/). Assignments, as well as the final project analysis, will be done using [Jupyter Notebooks](http://jupyter.org/).
-Students will access the worksheets and tutorials in [Jupyter Notebooks](https://ubc-dsci.github.io/introduction-to-datascience/index.html#jupyter-notebooks) through [Canvas](https://canvas.ubc.ca/courses/69825). 
-Students will require a laptop, Chromebook or tablet to complete this course.
+We are using an interactive platform that contains a series of slide decks accompanied by multiple-choice questions and interactive coding exercises to apply what you learned during the module: [https://toolbox-learn.mds.ubc.ca/](https://toolbox-learn.mds.ubc.ca/). We recommend using Chrome, Firefox or Safari to complete the content as other browsers are incompatible with the content platform.
+
+
+### Laptop requirements
+
+Students will require a laptop meeting the following specifications (details on how to set up your laptop will follow in assignment 1):
+
+ - Runs one of the following operating systems: Ubuntu 22.04 (20.04 will also likely work), macOS Big Sur or above (>= 11.4.x), Windows 10 or 11 Home, Professional, Enterprise or Education (version 2004, 20H2, 21H1, or above).
+    - When installing Ubuntu, checking the box "Install third party..." will (among other things) install proprietary drivers, which can be helpful for wifi and graphics cards.
+- Can connect to networks via a wireless connection for on campus work
+- Has access to an internet connection that is fast and stable enough for video calling and conducting online quizzes
+- Has at least 50 GB disk space available
+- Has at least 8 GB of RAM
+- Uses a 64-bit CPU
+- Is at most 6 years old at the start of the course (4 years old or newer is recommended)
+- Uses English as the default language
+- Student user has full administrative access to the computer
+
 
 ## Learning Outcomes
+
 By the end of the course, students will be able to:
 
-- Use the Altair grammar of graphics to create data visualizations.
-- Select an appropriate visualization for the data.
-- Perform exploratory data analysis on a dataset.
-- Effectively communicate findings with figures.
-- Interpret data visualizations to answer questions and formulate follow-up questions.
-    
+1. Explain why it is important to use the right tool for the job.
+2. Communicate with the computer via a text-based shell.
+3. Work with projects under version control using Git and GitHub.
+4. Use additional version control features such as git history, reverting repositories to a previous state, and resolving with merge conflicts.
+5. Collaborate with Git and GitHub by using branches, forks and pull requests.
+6. Organize coding projects with proper file names, folder structures, and virtual environments.
+7. Work more effectively with JupyterLab.
+8. Build books and create websites using Jupyter Book.
+
 ## Course Facilitator
 
-| Position | Name  | Email | Office Hours | Office Location |
-|----------|-------|-------|--------------|-----------------|
-| Course Facilitator | Analise Hofmann  | ahofmann@mail.ubc.ca | Th 6:30-7:30pm PST <br /> Sat 10:00-11:00am PST| Zoom |
+| Position           | Name            | Email                | Office Hours                                    | Office Location |
+|--------------------|-----------------|----------------------|-------------------------------------------------|-----------------|
+| Course Facilitator | Analise Hofmann | analise.hofmann@ubc.ca | Check Canvas for times | Zoom            |
+| Course Facilitator | Matt Connell | matthew.connell@ubc.ca | Check Canvas for times  | Zoom            |
 
 
 ## Course Structure
 
-There are 7 modules in total for this course. Each module will be accompanied by an auto-graded assignment to be submitted. 
-The students will be responsible to complete the material of 2-3 modules every 2 weeks (3 modules for weeks 1-2, 2 modules for weeks 2-4, 2 modules for weeks 4-6). In weeks 4 and 7, students will need to take an online 45-minute open-book quiz testing, material from Modules 1-4 and 5-7 respectively. 
-This quiz can be taken at any point during the week. At the end of the 7th module, students will have an individual project to complete where they are required to use the skills they learned in the course and produce an analysis regarding an assigned dataset.
+- There are 8 modules in total for this course. Each module will be accompanied by an autograded multiple choice assignment to be submitted on Canvas.
+- Students will have one attempt with unlimited time to submit this assignment and are expected to walk through the scenarios in the assignment questions on their own machines before answering.
+- The students will be responsible to complete the material of 1 module every week 
+- In weeks 4 and 8, students will need to take an online 45-minute open-book quiz testing, material from Modules 1-4 and 5-8 respectively. The quizzes can be taken at any point during the week.
+- At the end of the 8th module, students will complete a more comprehensive assignment where they are required to use the skills they learned throughout the course to produce an online site with technical material using the Jupyter Book platform and GitHub Pages.
 
-
-## Course Completion and Grading 
+## Course Completion and Grading
 
 You are assessed on each course according to UBC assessment guidelines to ensure the successful acquisition of required skills and concepts.
 
-Data Visualization is part of the Key Capabilities in Data Science program. You must obtain 70% or higher in Data Visualization and complete the final project to obtain a course completion grade. To successfully complete the Key Capabilities in Data Science program, you must complete all four required courses and achieve 70% or higher for each of the four courses. 
+The Data Science Toolbox is part of the Key Capabilities in Data Science program. You must obtain 70% or higher in Data Visualization and complete the final assignment (assignment 8) to obtain a course completion grade. To successfully complete the Key Capabilities in Data Science program, you must complete three of the four  courses and achieve 70% or higher for each of the three courses.
 
-
+\newpage
 ## Assignments
 
-Each week students will submit 2 assignments for a grade. **Assignment due dates are posted on Canvas.** To open the assignment, click the link (e.g. `assignment_1`) from Canvas. 
-To submit your assignment, just make sure your work is saved (File -> Save and Checkpoint to be sure) **on our server** (i.e., using the link from Canvas) before the deadline.  Our server will automatically snapshot at the due date/time.
-We have supplied informative videos on how to do this in assignment 1 and referenced the links in subsequent assignments. 
+Each week students will submit 1 assignment for a grade. **Assignment due dates are posted on Canvas.**
+To submit your assignment click submit at the end of each assignment quiz. You will only be able to submit once so make sure to take notes of your answers as you go along so you can enter them when you return to complete your assignment.
 
 ### Course breakdown
 
-| Deliverable | Percent Grade |
-|-------------|---------------|
-| Assignments | 56 (8% each) |
-| 2 Quizzes | 32 (16% each) |
-| Final project | 12 |
+| Deliverable   | Percent Grade |
+|---------------|---------------|
+| 7 Assignments | 56 (8% each)  |
+| 2 Quizzes     | 32 (16% each) |
+|  Final Assessment  <br />  (Assignment 8)    | 12 % |
 
 ## Schedule
 
-| Module | Title |Description  |
-|--------|-------|-------------|
-| Module 1| Why Visualize Data? | The importance of data visualization and how a grammar of graphics can help us do so effectively. |
-| Module 2| Visual Encoding Channels | The most and least effective ways to encode and present data graphically.| 
-| Module 3| Visualizing Distributions | How to display data distributions.|
-| Module 4| Visualizing Distributions and Exploratory Data Visualization | How to visualize two-dimensional and categorical distributions of data as well as how to perform exploratory data analysis. |
-| Module 5| Designing Plots for Communication | How to design effective plots for communication purposes by using colour, shapes, titles and annotation. |
-| Module 6| Narrative, Figure Composition and Geographical Visualizations | How to construct a narrative around visualizations, compose a figure with multiple plots and create geographical plots. | 
-| Module 7| Interactive Visualizations | Bring your plots to life by adding interactivity through conditions, selection and tooltip features. |
-
+| Module | Title                                                         | Description                                                                                            |
+|--------|---------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
+| 1      | Introduction to the Data Science Toolbox                      | Intro to the tools that we will be using in this course, as well as to computing in general            |
+| 2      | The shell                                                     | How to use the shell to navigate your filesystem and to execute commands.                              |
+| 3      | Git and GitHub intro                                          | The basics of version control with Git and GitHub.                                                     |
+| 4      | Getting groovy with Git and GitHub                            | View your git history, travel back in time, deal with merge conflicts and other useful tools.          |
+| 5      | Branches, forks, and streams… Welcome to the Git nature walk! | Discover how to efficiently collaborate with Git and GitHub by using branches, forks ad pull requests. |
+| 6      | File Names, Project Organization, Virtual Environments        | An overview of how to effectively manage files, projects, and virtual environments.                    |
+| 7      | JupyterLab                                                    | Get more in depth-knowledge about JupyterLab                                                           |
+| 8      | Jupyter Book                                                  | Learn how to create beautiful, publication-ready books and websites using Jupyter Book.                |
 
 ## Submission Schedule 
 
 *Assignments are due on Sunday at 6 pm. Office hours will be held twice a week to support and answer questions regarding the concepts learned in the lecture. Quizzes will be opened for up to 7 days, please check Canvas for quiz submission dates.* 
 
-| Week | Modules to Complete |Submissions Due|
-|------|--------|---------------|
-| Week 1 -2 | Module 1,<br> Module 2, <br> Module 3| assignment_01, assignment_02, assignment_03|
-| Week 3-4 | Module4, <br>Module 5| assignment_04, assignment_05, quiz_01|
-| Week 5-6 |Module 6,<br> Module 7| assignment_06, assignment_07| 
-| Week 7 | NA| quiz_02, final_project| 
+| Week      | Modules to Complete                   | Submissions Due                             |
+|-----------|---------------------------------------|---------------------------------------------|
+| Weeks 1 - 2 | Module 1,<br> Module 2, | Assignment 1, Assignment 2,  |
+| Weeks 3 - 4  | Module 3, <br> Module 4                 | Assignment 3, Assignment 4, Quiz 1      |
+| Weeks 5 - 6  | Module 5,<br> Module 6,   | Assignment 5, Assignment 6                |
+| Week 7    | Module 7     |     Assignment 7                            |
+| Weeks 8 - 9   | Module 8    | Final Assessment (Assignment 8), Quiz 2                             |
 
+\newpage
+## Conditions for a ‘Complete’ status in Data Science Courses
+ 
+To complete and pass a Data Science course, students are required to achieve a minimum grade of 70% (or higher) AND must submit their final project before the course end date. Gaining a ‘Complete’ status in a Data Science course is required for the course to count toward the UBC Certificate in Key Capabilities in Data Science.
+                                                                                                                                                                       
+1. Students with a grade less than 70% can retake the entire course at a reduced fee of $400. They will need to achieve a minimum average of 70% in the assignments and quizzes, and also submit their final project to be able to pass and gain a ‘Complete’ status for the course.
+ 
+2. Students gaining a minimum 70% grade, but an ‘Incomplete’ status in a course due to non-submission of the final project have two options to obtain a ‘Complete’ status in the course.
+a.  Submit the final project in the next offering of the respective course.  Fee $200. 
+With this option, only the final project is submitted.
+b. Retake the whole course in any of its upcoming offerings.  Fee $400.
+ 
+In either of the above situations (a or b), students should email their request for the selected option to Student Services (info.exl@ubc.ca).
 
 
 ## Policies
 
-### Late Assignments 
-Students should submit all assignments by the due date. If for any reason a student is unable to do so, they can submit the assignments before the course end date. This is the final allowed submission date and is non-negotiable.
+### Late Assignments
+
+Students should submit all assignments by the due date. Assignment 1 must be completed by it's due date to continue in the course. If for any reason a student is unable to submit Assignments 2 to 7 on time, they can submit the assignments before the course end date.  This is the final allowed submission date and is non-negotiable.
 
 ### Late Quizzes
+
 We allow 2 weeks to complete the first quiz and 1 week to complete the second. if you've submitted a quiz late or did not submit a quiz at all, please contact the course facilitator and we will try to make accommodations.
 
 
-### Autograder Policy
-Many of the questions in assignments are graded automatically by the software. The grading computer has exactly the same hardware setup as the server that students work on. 
-Students should make sure their assignments are *reproducible*, and run from beginning to end on the auto-grading computer. 
-In particular, **please ensure that any data that needs to be downloaded is done so by the assignment notebook with the correct filename to the correct folder**.
-
-
 ### Re-grading
+
 If you have concerns about the way your work was graded, please contact the course facilitator. 
 
 ### Device/Browser
-Students are responsible for using a device and browser compatible with all functionality of Canvas. 
+
+Students are responsible for using a device and browser compatible with all functionality of Canvas.
 Chrome or Firefox browsers are recommended; Safari has had issues with Canvas quizzes in the past.
 
+\newpage
 ### Academic Integrity 
+
 The academic enterprise is founded on honesty, civility, and integrity. As members of this enterprise, all students are expected to know, understand, and follow the codes of conduct regarding academic integrity. At the most basic level, this means submitting only original work done by you and acknowledging all sources of information or ideas and attributing them to others as required. This also means you should not cheat, copy, or mislead others about what is your work. Violations of academic integrity (i.e., misconduct) lead to the breakdown of the academic enterprise, and therefore serious consequences arise and harsh sanctions are imposed. For example, incidences of plagiarism or cheating may result in a mark of zero on the
 assignment or exam and more serious consequences may apply if the matter is referred to the President’s Advisory Committee on Student Discipline. Careful records are kept in order to monitor and prevent recurrences.
 
 A more detailed description of academic integrity, including the University’s policies and procedures, may be found in the Academic Calendar at http://calendar.ubc.ca/vancouver/index.cfm?tree=3,54,111,0.
 
 ### Plagiarism
+
 Students must correctly cite any code or text that has been authored by someone else or by the student themselves for other assignments. Cases of plagiarism may include, but are not limited to:
 
 - the reproduction (copying and pasting) of code or text with none or minimal reformatting (e.g., changing the name of the variables)
