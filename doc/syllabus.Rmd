@@ -114,6 +114,21 @@ To submit your assignment click submit at the end of each assignment quiz. You w
 | Week 7    | Module 7     |     Assignment 7                            |
 | Weeks 8 - 9   | Module 8    | Final Assessment (Assignment 8), Quiz 2                             |
 
+
+## Conditions for a ‘Complete’ status in Data Science Courses
+ 
+To complete and pass a Data Science course, students are required to achieve a minimum grade of 70% (or higher) AND must submit their final project before the course end date. Gaining a ‘Complete’ status in a Data Science course is required for the course to count toward the UBC Certificate in Key Capabilities in Data Science.
+                                                                                                                                                                       
+1. Students with a grade less than 70% can retake the entire course at a reduced fee of $400. They will need to achieve a minimum average of 70% in the assignments and quizzes, and also submit their final project to be able to pass and gain a ‘Complete’ status for the course.
+ 
+2               2. Students gaining a minimum 70% grade, but an ‘Incomplete’ status in a course due to non-submission of the final project have two options to obtain a ‘Complete’ status in the course.
+A                            a.  Submit the final project in the next offering of the respective course.  Fee $200. 
+With this option, only the final project is submitted.
+b. Retake the whole course in any of its upcoming offerings.  Fee $400.
+ 
+In either of the above situations (a or b), students should email their request for the selected option to Student Services (info.exl@ubc.ca).
+
+
 ## Policies
 
 ### Late Assignments
