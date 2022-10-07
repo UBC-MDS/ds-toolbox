@@ -58,8 +58,8 @@ By the end of the course, students will be able to:
 
 | Position           | Name            | Email                | Office Hours                                    | Office Location |
 |--------------------|-----------------|----------------------|-------------------------------------------------|-----------------|
-| Course Facilitator | Analise Hofmann | analise.hofmann@ubc.ca | Mon/Wed 6:00-7:00 pm PST | Zoom            |
-| Course Facilitator | Matt Connell | matthew.connell@ubc.ca | Tue/Thr 6:00-7:00 pm PST  | Zoom            |
+| Course Facilitator | Analise Hofmann | analise.hofmann@ubc.ca | Check Canvas for times | Zoom            |
+| Course Facilitator | Matt Connell | matthew.connell@ubc.ca | Check Canvas for times  | Zoom            |
 
 
 ## Course Structure
@@ -74,8 +74,9 @@ By the end of the course, students will be able to:
 
 You are assessed on each course according to UBC assessment guidelines to ensure the successful acquisition of required skills and concepts.
 
-The Data Science Toolbox is part of the Key Capabilities in Data Science program. You must obtain 70% or higher in Data Visualization and complete the final assignment (assignment 8) to obtain a course completion grade. To successfully complete the Key Capabilities in Data Science program, you must complete three of the four  courses and achieve 70% or higher for each of the three courses. 
+The Data Science Toolbox is part of the Key Capabilities in Data Science program. You must obtain 70% or higher in Data Visualization and complete the final assignment (assignment 8) to obtain a course completion grade. To successfully complete the Key Capabilities in Data Science program, you must complete three of the four  courses and achieve 70% or higher for each of the three courses.
 
+\newpage
 ## Assignments
 
 Each week students will submit 1 assignment for a grade. **Assignment due dates are posted on Canvas.**
@@ -114,15 +115,15 @@ To submit your assignment click submit at the end of each assignment quiz. You w
 | Week 7    | Module 7     |     Assignment 7                            |
 | Weeks 8 - 9   | Module 8    | Final Assessment (Assignment 8), Quiz 2                             |
 
-
+\newpage
 ## Conditions for a ‘Complete’ status in Data Science Courses
  
 To complete and pass a Data Science course, students are required to achieve a minimum grade of 70% (or higher) AND must submit their final project before the course end date. Gaining a ‘Complete’ status in a Data Science course is required for the course to count toward the UBC Certificate in Key Capabilities in Data Science.
                                                                                                                                                                        
 1. Students with a grade less than 70% can retake the entire course at a reduced fee of $400. They will need to achieve a minimum average of 70% in the assignments and quizzes, and also submit their final project to be able to pass and gain a ‘Complete’ status for the course.
  
-2               2. Students gaining a minimum 70% grade, but an ‘Incomplete’ status in a course due to non-submission of the final project have two options to obtain a ‘Complete’ status in the course.
-A                            a.  Submit the final project in the next offering of the respective course.  Fee $200. 
+2. Students gaining a minimum 70% grade, but an ‘Incomplete’ status in a course due to non-submission of the final project have two options to obtain a ‘Complete’ status in the course.
+a.  Submit the final project in the next offering of the respective course.  Fee $200. 
 With this option, only the final project is submitted.
 b. Retake the whole course in any of its upcoming offerings.  Fee $400.
  
@@ -149,6 +150,7 @@ If you have concerns about the way your work was graded, please contact the cour
 Students are responsible for using a device and browser compatible with all functionality of Canvas.
 Chrome or Firefox browsers are recommended; Safari has had issues with Canvas quizzes in the past.
 
+\newpage
 ### Academic Integrity 
 
 The academic enterprise is founded on honesty, civility, and integrity. As members of this enterprise, all students are expected to know, understand, and follow the codes of conduct regarding academic integrity. At the most basic level, this means submitting only original work done by you and acknowledging all sources of information or ideas and attributing them to others as required. This also means you should not cheat, copy, or mislead others about what is your work. Violations of academic integrity (i.e., misconduct) lead to the breakdown of the academic enterprise, and therefore serious consequences arise and harsh sanctions are imposed. For example, incidences of plagiarism or cheating may result in a mark of zero on the
