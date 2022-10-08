@@ -14,6 +14,8 @@ In this section, we will learn how we can host our Jupyter Books online for free
 
 <img src="/module8/gh-pages.png" width="700"></img>
 
+https://pages.github.com/
+
 Notes:
 Once you’ve built the HTML for your book, you can host it online.
 

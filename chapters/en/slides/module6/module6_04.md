@@ -59,6 +59,8 @@ The reason is that we want to run each project using the same version of package
 
 <img src="/module6/conda-logo.png" width="400px"></img>
 
+[Logo source](https://docs.conda.io/en/latest/_images/conda_logo.svg)
+
 <br>
 
 - Conda is an open source **package** and **environment** management system for any programming language
