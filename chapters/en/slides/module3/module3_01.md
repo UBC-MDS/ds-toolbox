@@ -128,6 +128,12 @@ including when the changes were made and who made them,
 throughout the history of their development.
 It also provides the means both to view 
 earlier versions of the project and to revert changes. 
+  
+    
+      
+   
+   
+*The material of this module is based on the book by Timbers, T., Campbell, T., & Lee, M. (2022). [Data science: A first introduction. CRC Press](https://datasciencebook.ca/) and the course DSCI 521: Computing Platforms for Data Science from the UBC Master of Data Science.*
 
 ---
 

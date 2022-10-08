@@ -35,6 +35,14 @@ We will outline three alternative ways
 to look at the history of the entire project.
 
 Let's look closer at each one in the next few slides.
+  
+    
+
+   
+     
+
+       
+* The material of this chapter is based the course DSCI 521: Computing Platforms for Data Science from the UBC Master of Data Science.
 
 ---
 
