@@ -39,6 +39,8 @@ A few of the world's most prominent programmers of the time computing ballistic 
 
 <img src='/module2/wires-computers-eniac-1946.png' width="50%" alt="A few of the world's most prominent programmers of the time computing ballistic trajectories on the ENIAC computer during the second world war."/>
 
+Unidentified U.S. Army photographer, Public domain, [via Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Reprogramming_ENIAC.png)
+
 Notes:
 Essentially,
 computing is about humans communicating
