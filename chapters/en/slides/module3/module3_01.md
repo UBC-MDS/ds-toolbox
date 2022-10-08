@@ -89,7 +89,7 @@ and you can then browse through the history.
 
 <img src='/module3/first-pull-request.png' width="600px" alt="404 image"/>
 
-<a href="Thttps://doi.org/10.5281/zenodo.3332808">image source: The Turing Way Community, & Scriberia (2019)</a>  
+<a href="https://doi.org/10.5281/zenodo.3332808">This image was created by Scriberia for The Turing Way community and is used under a CC-BY licence.</a>  
 
 </center>
 

@@ -17,14 +17,19 @@ In this slide deck we will learn more about how to collaborate effectively on Gi
 
 <center>
 
-<img src='/module5/quote.jpg' width="700px" alt="404 image" />
+<img src='/module5/quote.jpg' width="700px" alt="github friends" />
 
 </center>
+
+Artwork by @allison_horst
 
 Notes:
 We have already seen some ways in which Git and GitHub allow collaboration with others. 
 Here we will dive more in depth into which collaborative workflows are the most effective
 when multiple people are contributing code to the same repository.
+
+
+Artwork by @allison_horst
 
 ---
 
