@@ -14,9 +14,9 @@ id: 4
 </slides>
 </exercise>
 
-<exercise id="1" title="View your Git history" type="slides,video">
+<exercise id="1" title="Viewieng the history of your project" type="slides,video">
 
-<slides source="module4/module4_01" shot="11" start="0:002" end="3:24">
+<slides source="module4/module4_01" shot="11" start="0:002" end="3:23">
 </slides>
 
 </exercise>
@@ -120,7 +120,7 @@ Writing the newest commit is not necessary. If you write only one commit (that i
 </exercise>
 
 <exercise id='5' title="Reset your Git project to an earlier state"  type='slides, video'>
-<slides source='module4/module4_03' shot='11' start='8:42' end='12:17'> </slides>
+<slides source='module4/module4_03' shot='11' start='8:42' end='12:16'> </slides>
 </exercise>
 
 <exercise id='6' title='✍️ Practice: The "no regrets" reset'>
@@ -151,7 +151,7 @@ You can hard-reset your work in both cases, but one of the options could cause p
 </exercise>
 
 <exercise id='7' title='Revert changes made to your Git project' type='slides, video'>
-<slides source='module4/module4_04' shot='11' start='3:42' end='4:35'> </slides>
+<slides source='module4/module4_04' shot='11' start='12:17' end='15:02'> </slides>
 </exercise>
 
 <exercise id='8' title='✍️ Practice: Subtraction through addition (of a new commit)'>
@@ -201,7 +201,7 @@ When you do a hard reset, you are deleting the history of your project up to a p
 </exercise>
 
 <exercise id='9' title="Deal with merge conflicts"  type='slides, video'>
-<slides source='module4/module4_05' shot='11' start='12:17' end='15:04'> </slides>
+<slides source='module4/module4_05' shot='11' start='15:03' end='23:10'> </slides>
 </exercise>
 
 <exercise id='10' title='✍️ Practice: Merge with care'>
@@ -223,7 +223,7 @@ What do you have to do if you are working with the terminal and you want to writ
 
 
 <exercise id='11' title='.gitgnore'  type='slides, video'>
-<slides source='module4/module4_06' shot='11' start='15:04' end='23:11'> </slides>
+<slides source='module4/module4_06' shot='11' start='23:11' end='28:26'> </slides>
 </exercise>
 
 <exercise id='12' title='✍️ Practice: Ignorance is bliss'>
