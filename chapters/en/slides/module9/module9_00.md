@@ -23,9 +23,14 @@ Notes:
 
 ## Attribution
 
-- Material from UBC's <a href="https://github.com/UBC-MDS/DSCI_531_viz-1" target="_blank">DSCI 531: Data Visualization I</a> by <a href="https://joelostblom.com/" target="_blank">Joel Ostblom</a>
-- Material from UBC's <a href="https://github.com/UBC-MDS/DSCI_532_viz-2" target="_blank">DSCI 532: Data Visualization II</a> by <a href="https://joelostblom.com/" target="_blank">Joel Ostblom</a>.
+- Research Software Engineering with Python <a href="https://merely-useful.tech/py-rse" target="_blank""></a> Damien Irving, Kate Hertweck, Luke Johnston, Joel Ostblom, Charlotte Wickham, and Greg Wilson.
 
+- Material from UBC's <a href="https://github.com/UBC-MDS/DSCI_521_platforms-dsci target="_blank">DSCI 521: Computing Platforms for Data Science</a> by Tiffany A. Timbers, Vicenzo Coia, Firas Moovsi, Joel Ostblom, Florencia D'Andrea </a>
+
+- Timbers, Tiffany, Trevor Campbell, and Melissa Lee. Data science: A first introduction. CRC Press, 2022. <a href="https://datasciencebook.ca/" target="_blank">https://datasciencebook.ca/</a> 
+
+
+The logo of this course has been created by <a href="https://www.hayleyfboyce.com" target="_blank">Hayley Boyce</a>
 
 Notes: 
 
@@ -38,13 +43,10 @@ Notes:
 Not only did you put in a lot of work by completing this course, but many people did too by helping make this course possible. 
 
 Special thanks must be attributed to the following individuals and organizations (in alphabetical order):
-
-- <a href="https://www.tomasbeuzen.com/" target="_blank"> Tom Beuzen</a> 
-- <a href="https://betatim.github.io/" target="_blank">Tim Head</a>  
-- <a href="https://www.linkedin.com/in/junghoo/" target="_blank">Junghoo Kim</a>
+- <a href="https://www.hayleyfboyce.com" target="_blank">Hayley Boyce</a>
 - <a href="https://ines.io/" target="_blank">Ines Montani</a> 
 - <a href="https://www.tiffanytimbers.com/" target="_blank"> Tiffany Timbers</a> 
-- <a href="https://www.linkedin.com/in/elijah-willie-203845b9/?originalSubdomain=ca" target="_blank">Elijah Willie</a>
+- <a href="https://kvarada.github.io/" target="_blank"> Varada Kolhatkar</a> 
 
 
 - The Master of Data Science Program at UBC
@@ -57,13 +59,14 @@ Notes:
 ---
 
 ## About Us
+In alphabetical order
 
 <br>
 
-### Tiffany Timbers 
+### Florencia D'Andrea 
 
-- Website: <a href="https://www.tiffanytimbers.com/" target="_blank">www.tiffanytimbers.com</a> 
-- Twitter: <a href="https://twitter.com/TiffanyTimbers" target="_blank">@TiffanyTimbers</a> 
+- Website: <a href="florencia.netlify.app" target="_blank">www.florencia.netlify.app</a> 
+- Twitter: <a href="https://twitter.com/cantoflor_87" target="_blank">@cantoflor_87</a> 
 <br>
 <br>
 
