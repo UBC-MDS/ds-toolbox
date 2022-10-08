@@ -17,7 +17,7 @@ In this slide deck we will learn more about how to collaborate effectively on Gi
 
 <center>
 
-<img src='/module5/quote.jpg' width="700px" alt="github friends" />
+<img src='/module5/quote.jpg' width="700px" alt="Collaboration is the most compelling reason to manage a project with Git and GitHub. My definition of collaboration includes hands-on participation by multiple people, including your past and future self, as well as an asymetric model, in which some people are active makers and others only read or review - Jenny Bryan" />
 
 </center>
 
