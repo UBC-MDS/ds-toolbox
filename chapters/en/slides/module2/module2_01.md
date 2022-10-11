@@ -39,7 +39,7 @@ A few of the world's most prominent programmers of the time computing ballistic 
 
 <img src='/module2/wires-computers-eniac-1946.png' width="50%" alt="A few of the world's most prominent programmers of the time computing ballistic trajectories on the ENIAC computer during the second world war."/>
 
-Unidentified U.S. Army photographer, Public domain, [Mike Muuss' computer history archieve](http://ftp.arl.army.mil/~mike/comphist/)
+Unidentified U.S. Army photographer, Public domain, [Mike Muuss' computer history archive](http://ftp.arl.army.mil/~mike/comphist/)
 
 Notes:
 Essentially,
