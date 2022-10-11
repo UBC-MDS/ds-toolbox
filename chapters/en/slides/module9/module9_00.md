@@ -51,7 +51,7 @@ In alphabetical order:
 
 ### Florencia D'Andrea
 
-- Website: <a href="https://www.florencia.netlify.app" target="_blank">www.florencia.netlify.app</a> 
+- Website: <a href="https://florencia.netlify.app" target="_blank">www.florencia.netlify.app</a> 
 - Twitter: <a href="https://twitter.com/cantoflor_87" target="_blank">@cantoflor_87</a> 
 <br>
 <br>
