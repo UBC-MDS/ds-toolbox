@@ -89,7 +89,7 @@ and you can then browse through the history.
 
 <img src='/module3/first-pull-request.png' width="600px" alt="404 image"/>
 
-<a href="Thttps://doi.org/10.5281/zenodo.3332808">image source: The Turing Way Community, & Scriberia (2019)</a>  
+<a href="https://doi.org/10.5281/zenodo.3332808">This image was created by Scriberia for The Turing Way community and is used under a CC-BY licence.</a>  
 
 </center>
 
@@ -128,6 +128,12 @@ including when the changes were made and who made them,
 throughout the history of their development.
 It also provides the means both to view 
 earlier versions of the project and to revert changes. 
+  
+    
+      
+   
+   
+*The material of this module is based on the book by Timbers, T., Campbell, T., & Lee, M. (2022). [Data science: A first introduction. CRC Press](https://datasciencebook.ca/) and the course DSCI 521: Computing Platforms for Data Science from the UBC Master of Data Science program*
 
 ---
 
