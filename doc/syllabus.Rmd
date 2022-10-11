@@ -27,11 +27,10 @@ We are using an interactive platform that contains a series of slide decks accom
 
 ### Laptop requirements
 
-Students will require a laptop meeting the following specifications (details on how to set up your laptop will follow in assignment 1):
+Students will require a computer meeting the following specifications (details on how to set up your computer will follow in assignment 1):
 
  - Runs one of the following operating systems: Ubuntu 22.04 (20.04 will also likely work), macOS Big Sur or above (>= 11.4.x), Windows 10 or 11 Home, Professional, Enterprise or Education (version 2004, 20H2, 21H1, or above).
     - When installing Ubuntu, checking the box "Install third party..." will (among other things) install proprietary drivers, which can be helpful for wifi and graphics cards.
-- Can connect to networks via a wireless connection for on campus work
 - Has access to an internet connection that is fast and stable enough for video calling and conducting online quizzes
 - Has at least 50 GB disk space available
 - Has at least 8 GB of RAM
@@ -105,7 +104,7 @@ To submit your assignment click submit at the end of each assignment quiz. You w
 
 ## Submission Schedule 
 
-*Assignments are due on Sunday at 6 pm. Office hours will be held twice a week to support and answer questions regarding the concepts learned in the lecture. Quizzes will be opened for up to 7 days, please check Canvas for quiz submission dates.* 
+*Assignments are due on Sunday at midnight. Office hours will be held twice a week to support and answer questions regarding the concepts learned in the lecture. Quizzes will be opened for up to 7 days, please check Canvas for quiz submission dates.* 
 
 | Week      | Modules to Complete                   | Submissions Due                             |
 |-----------|---------------------------------------|---------------------------------------------|
