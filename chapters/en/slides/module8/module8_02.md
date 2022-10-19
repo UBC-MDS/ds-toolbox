@@ -14,7 +14,9 @@ In this slide deck, we will explain what Jupyter Book is and learn how to build 
 
 <br>
 
-<img src="/module8/jb_logo.png" width="400"></img>
+<img src="/module8/jb_logo.svg" width="400"></img>
+
+[Logo source](https://github.com/executablebooks/jupyter-book/blob/master/docs/images/logo-wide.svg)
 
 <br>
 

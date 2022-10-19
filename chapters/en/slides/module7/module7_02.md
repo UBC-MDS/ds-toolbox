@@ -15,6 +15,8 @@ In this slide deck, we will be learning about how we can use the Markdown text f
 
 <img src="/module7/md.png" width="200"></img>
 
+[Logo source](https://github.com/dcurtis/markdown-mark)
+
 **Markdown** is a fast and easy way to format plain text.
 
 Most important features:
