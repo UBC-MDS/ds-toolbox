@@ -10,7 +10,7 @@ id: 4
 
 <exercise id="0" title="Module Learning Outcomes" type="slides,video">
 
-<slides source="module4/module4_00" shot="10" start="0:00" end="0:01">
+<slides source="module4/module4_00" shot="10" start="0:00" end="0:44">
 </slides>
 </exercise>
 
