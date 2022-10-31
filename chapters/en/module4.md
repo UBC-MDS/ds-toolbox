@@ -86,7 +86,7 @@ Looking at the commit history of the repository and the order the commits were m
 which of the red and green highlights represent
 the current state of the <code>README.md</code> file in the repository?
 
-<choice id="3">
+<choice id="1">
 <opt text='Red'>
 The colors could be tricky, because they depend on in which order the commits are written, so you can't rely on the same color always indicating that a change is newer/older. Try reversing the order of the commits to `1bb5ab8..9021b83` and you will see.
 </opt>
@@ -100,7 +100,7 @@ try reversing the order of the commits to `1bb5ab8..9021b83` and you will see.).
 
 How could you make this same comparison using `git diff` from the command line https://github.com/UBC-MDS/equine_numbers_value_canada/compare/1bb5ab8..9021b83?
 
-<choice id="4">
+<choice id="2">
 <opt text='<code>git diff 9021b83</code>' >
 <code>9021b83</code> is the hash of the last commit, what would you like to compare it with?
 </opt>
@@ -129,7 +129,7 @@ Writing the newest commit is not necessary. If you write only one commit (that i
 
 Select all the situations in which it is a good idea to reset your work to a previous commit:
 
-<choice>
+<choice id="1">
 <opt text='When you are working on a project locally, without having already pushed your work to the remote' correct='true'>
 
 If you are working locally on a private project, it is quite safe to use reset. Nobody is going to be affected by you deleting part of the history of your project.
@@ -158,7 +158,7 @@ You can hard-reset your work in both cases, but one of the options could cause p
 
 Which of the following statements are TRUE about `git revert`?
 
-<choice id="5">
+<choice id="1">
 <opt text='This command creates a new commit that undoes the changes from previous commits.' >
 </opt>
 That's right, but there is also another correct option!
@@ -180,7 +180,7 @@ Is the third options really correct?
 
 You are writing a book using version control and you have a text file for each chapter in your local repository. Today, after reading your work again, you decided to move some of the text you have written for `chapter3.md` to `chapter1.md`. How would you save this change using Git?
 
-<choice id="6">
+<choice id="2">
 <opt text='I would cut and copy the text into a new file, add both files to the staging area, and then commit with a message explaining the changes.' correct='true'>
 
 </opt>
@@ -208,7 +208,7 @@ When you do a hard reset, you are deleting the history of your project up to a p
 
 What do you have to do if you are working with the terminal and you want to write a different text for this merge conflict?
 
-<choice id="7">
+<choice id="1">
 <opt text='Accept current change' >
 </opt>
 <opt text='Accept incoming change'>
@@ -232,7 +232,7 @@ What do you have to do if you are working with the terminal and you want to writ
 
 `**/` is prepended to an entry in `.gitignore` to tell Git that this entry is a folder.
 
-<choice id="8">
+<choice id="1">
 
 <opt text="True">
 <code>**/</code> is used to tell Git that the same file/folder name should be ignored in the subdirectories of a repo as well.
@@ -245,7 +245,7 @@ What do you have to do if you are working with the terminal and you want to writ
 
 The `.gitignore` file itself can be committed and pushed to a remote repository.
 
-<choice id="9">
+<choice id="2">
 
 <opt text="True" correct="true">
 Yes, <code>.gitignore</code> is like any other file in your repository, so if you want to share it with your collaborators, you need to commit it and push it to the remote repository.
