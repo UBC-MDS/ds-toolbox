@@ -25,7 +25,7 @@ id: 4
 
 Clone the repo https://github.com/UBC-MDS/equine_numbers_value_canada. What is the hash or the first commit of the project?
 
-<choice id="1">
+<choice id=1>
 <opt text='cc400df4b2a382f653abd0d9e514f6daae98d2ad'>
 Is the first commit of the project or the first commit of the user flor14?
 </opt>
@@ -51,7 +51,7 @@ Is the first commit of the project or the first commit of the user flor14?
 
 What kind of information is not displayed **not** in a Git project's history?
 
-<choice id="2">
+<choice id=2>
 <opt text='commit message' >
 </opt>
 <opt text='date and time'>
@@ -86,7 +86,7 @@ Looking at the commit history of the repository and the order the commits were m
 which of the red and green highlights represent
 the current state of the <code>README.md</code> file in the repository?
 
-<choice id="1">
+<choice id=1>
 <opt text='Red'>
 The colors could be tricky, because they depend on in which order the commits are written, so you can't rely on the same color always indicating that a change is newer/older. Try reversing the order of the commits to `1bb5ab8..9021b83` and you will see.
 </opt>
@@ -100,7 +100,7 @@ try reversing the order of the commits to `1bb5ab8..9021b83` and you will see.).
 
 How could you make this same comparison using `git diff` from the command line https://github.com/UBC-MDS/equine_numbers_value_canada/compare/1bb5ab8..9021b83?
 
-<choice id="2">
+<choice id=2>
 <opt text='<code>git diff 9021b83</code>' >
 <code>9021b83</code> is the hash of the last commit, what would you like to compare it with?
 </opt>
@@ -158,7 +158,7 @@ You can hard-reset your work in both cases, but one of the options could cause p
 
 Which of the following statements are TRUE about `git revert`?
 
-<choice id="1">
+<choice id=1>
 <opt text='This command creates a new commit that undoes the changes from previous commits.' >
 </opt>
 That's right, but there is also another correct option!
@@ -180,24 +180,25 @@ Is the third options really correct?
 
 You are writing a book using version control and you have a text file for each chapter in your local repository. Today, after reading your work again, you decided to move some of the text you have written for `chapter3.md` to `chapter1.md`. How would you save this change using Git?
 
-<choice id="2">
-<opt text='I would cut and copy the text into a new file, add both files to the staging area, and then commit with a message explaining the changes.' correct='true'>
+<b>Options</b>
+<b>A</b> - I would save the changes, add both files to the staging area, and then commit with a message explaining the changes. 
+<b>B</b> - I would <b>revert</b> to the commit I created after writing that paragraph. Then, I would add the text in the correct chapter and make a new commit with a message explaining the changes.
+<b>C</b> - I would perform a <b>hard reset</b> to the commit I created after writing that paragraph. Then, I would add the text in the correct chapter and make a new commit with a message explaining the changes.
 
+<choice id=2>
+<opt text='A' correct='true'>
 </opt>
 
-<opt text='I would <b>revert</b> to the commit I did after writing that paragraph. Then, I would add the text in the correct chapter and make a new commit with a message explaining the changes.'>
+<opt text='B'>
 
 Are you sure you want to lose all the changes you made in `chapter2.md`? Even if you can recover those changes, reverting the changes will make you go back to that particular point in the the history of your project.
-
 </opt>
 
-<opt text='I would perform a <b>hard reset</b> to the commit I did after writing that paragraph. Then, I would add the text in the correct chapter and make a new commit with a message explaining the changes.'>
+<opt text='C'>
 
 When you do a hard reset, you are deleting the history of your project up to a particular commit. This means that you will lose all the changes you made between that particular commit and your most recent one.
-
 </opt>
 </choice>
-
 </exercise>
 
 <exercise id='9' title="Deal with merge conflicts"  type='slides, video'>
@@ -208,7 +209,7 @@ When you do a hard reset, you are deleting the history of your project up to a p
 
 What do you have to do if you are working with the terminal and you want to write a different text for this merge conflict?
 
-<choice id="1">
+<choice id=1>
 <opt text='Accept current change' >
 </opt>
 <opt text='Accept incoming change'>
@@ -232,7 +233,7 @@ What do you have to do if you are working with the terminal and you want to writ
 
 `**/` is prepended to an entry in `.gitignore` to tell Git that this entry is a folder.
 
-<choice id="1">
+<choice id=1>
 
 <opt text="True">
 <code>**/</code> is used to tell Git that the same file/folder name should be ignored in the subdirectories of a repo as well.
