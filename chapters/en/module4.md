@@ -190,14 +190,13 @@ You are writing a book using version control and you have a text file for each c
 </opt>
 
 <opt text='B'>
-
 Are you sure you want to lose all the changes you made in `chapter2.md`? Even if you can recover those changes, reverting the changes will make you go back to that particular point in the the history of your project.
 </opt>
 
 <opt text='C'>
-
 When you do a hard reset, you are deleting the history of your project up to a particular commit. This means that you will lose all the changes you made between that particular commit and your most recent one.
 </opt>
+
 </choice>
 </exercise>
 
