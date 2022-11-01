@@ -154,7 +154,7 @@ You can hard-reset your work in both cases, but one of the options could cause p
 <slides source='module4/module4_04' shot='11' start='12:17' end='15:02'> </slides>
 </exercise>
 
-<exercise id='8' title='✍️ Practice: Subtraction through addition (of a new commit)'>
+<exercise id='8' title='✍️ Practice: Subtraction through addition'>
 
 Which of the following statements are TRUE about `git revert`?
 
