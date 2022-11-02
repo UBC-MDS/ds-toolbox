@@ -159,7 +159,7 @@ your write on the left and right side,
 so you cannot always rely on the color
 to indicate which change is the oldest.
 
-If you want to undestand in more detail  
+If you want to understand in more detail  
 what the `git diff` output  
 you can find a more detailed description [in this tutorial](https://www.atlassian.com/git/tutorials/saving-changes/git-diff).
 

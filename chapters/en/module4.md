@@ -175,7 +175,7 @@ That's right, but there is also another correct option!
 Resetting deletes commits, but reverting does not.
 
 </opt>
-<opt text='This command is used to undo changes in your working directory that have not been comitted yet.'>
+<opt text='This command is used to undo changes in your working directory that have not been committed yet.'>
 
 We cannot use revert for this task.
 

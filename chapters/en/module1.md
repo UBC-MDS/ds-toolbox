@@ -211,7 +211,7 @@ You should do this before asking a new question. It will make you find the answe
 
 </opt>
 
-<opt text="Type out the problem for youself before asking the question">
+<opt text="Type out the problem for yourself before asking the question">
 
 You should do this before asking a new question. It can help you find the solution to the problem yourself!
 

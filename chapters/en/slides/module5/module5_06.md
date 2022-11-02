@@ -21,7 +21,7 @@ There are two main strategies we can use to work with others:
 Notes:
 We have learned that if you create your repository on GitHub or you are part of a team with write access to a repo, then you can clone it to your computer, make changes and then push them back to this repository. We called this style of collaboration **branching**.
 
-If you want the code from someone else's repository but you are not an official collaborator, you can clone  it and use it on your computer. However, you cannot push your changes back to the GitHub repository because you don't have write permissions to the repostory.
+If you want the code from someone else's repository but you are not an official collaborator, you can clone  it and use it on your computer. However, you cannot push your changes back to the GitHub repository because you don't have write permissions to the repository.
 
 It would still be beneficial for the repository's owners to receive your contributions if you make code enhancements, without having to grant you full access and run the risk of breaking something. **Instead of working directly on the repository, you can fork (copy) someone else's repository and work on a branch in your own copy.**
 
@@ -84,7 +84,7 @@ When you are working on a branch you have to push your changes to GitHub and ask
 Notes:
 Forking a repo happens via the GitHub web interface, but this is a one time operation. If there are changes made to the upstream repo that you want to sync to your forked repo (`origin`), you have to first pull them from the upstream remote to your forked remote (`origin`).
 
-To solve this you can update your forked repository with the button **Sync fork**. Then you can pull this changes to continue working locally before opening the pull request. In the example thare are not changes in the repository that I have just forked, but if this was the case I would have to select the option `update branch`.
+To solve this you can update your forked repository with the button **Sync fork**. Then you can pull this changes to continue working locally before opening the pull request. In the example there are not changes in the repository that I have just forked, but if this was the case I would have to select the option `update branch`.
 
 
 

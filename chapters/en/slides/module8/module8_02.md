@@ -222,7 +222,7 @@ Here’s an example of a simple `_config.yml` file, which contains key-value pai
 
 - `logo`: defines a path to an image file for your book’s logo, which will also show up in the sidebar.
 
-- `execute`: contains a collection of configuration options to control execution and cacheing.
+- `execute`: contains a collection of configuration options to control execution and caching.
 
 - `execute_notebooks`: tells Jupyter Book to force execution of any computational content each time it builds the book. By default, Jupyter Book executes and caches all book content.
 
@@ -330,7 +330,7 @@ Notes:
 **Markdown files (`.md`)**:
 
 As we learned in the previous module,
-the Markdown format can be used to structure text with extra characters and syntax to give it extra meaning (e.g., using `**bold**` to indicate that we want that piece of text to be shwon in **bold** font). It is very popular and used across many different technology platforms, including Jupyter Book.
+the Markdown format can be used to structure text with extra characters and syntax to give it extra meaning (e.g., using `**bold**` to indicate that we want that piece of text to be shown in **bold** font). It is very popular and used across many different technology platforms, including Jupyter Book.
 
 <br>
 

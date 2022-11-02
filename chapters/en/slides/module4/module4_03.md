@@ -134,7 +134,7 @@ we can perform a "soft" reset with `git reset --soft`.
 This command will not discard the information on the deleted commits as `git reset --hard`,
 if not will save all in the staging area in case you would like to create a new commit with those changes.
 This command is useful if you want to combine a series of local commits into one.
-Note that `git reset --soft` is only avaible in the terminal,
+Note that `git reset --soft` is only available in the terminal,
 and not via JupyterLab.
 
 ---

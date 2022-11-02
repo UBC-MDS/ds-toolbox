@@ -148,7 +148,7 @@ The version of the change before the separator is your change (marked with `HEAD
 and the version that follows the separator was the change that existed on GitHub (marked with the commit hash).
 In the image, you can see that in your local repository the README.md title is `Canadian languages`.
 It looks like your collaborator made an edit to that line too,  
- but the name selected for the title is slighly different: `Data Science project: Canadian languages` !
+ but the name selected for the title is slightly different: `Data Science project: Canadian languages` !
 
 To resolve the merge conflict, we can do anything we want:
 
