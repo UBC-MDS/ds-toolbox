@@ -154,49 +154,42 @@ You can hard-reset your work in both cases, but one of the options could cause p
 <slides source='module4/module4_04' shot='11' start='12:17' end='15:02'> </slides>
 </exercise>
 
-<exercise id='8' title='✍️ Practice: Subtraction through addition'>
+<exercise id='8' title='✍️ Practice: Subtraction through addition (of a new commit)'>
 
 Which of the following statements are TRUE about `git revert`?
 
 <choice id="1">
 <opt text='This command creates a new commit that undoes the changes from previous commits.' >
+
 </opt>
+
 That's right, but there is also another correct option!
+
 <opt text='This command undoes the changes in your project up to the commit hash that you have specified.'>
+
 That's right, but there is also another correct option!
+
 </opt>
 <opt text='This command makes the history of the project shorter by deleting commits'>
+
 Resetting deletes commits, but reverting does not.
+
 </opt>
 <opt text='This command is used to undo changes in your working directory that have not been comitted yet.'>
+
 We cannot use revert for this task.
+
 </opt>
+
 <opt text='The first and second options are both correct' correct='true'>
+
 </opt>
+
 <opt text='The first and third options are both correct'>
+
 Is the third options really correct?
+
 </opt>
-</choice>
-
-You are writing a book using version control and you have a text file for each chapter in your local repository. Today, after reading your work again, you decided to move some of the text you have written for `chapter3.md` to `chapter1.md`. How would you save this change using Git?
-
-<b>Options</b>
-<b>A</b> - I would save the changes, add both files to the staging area, and then commit with a message explaining the changes. 
-<b>B</b> - I would <b>revert</b> to the commit I created after writing that paragraph. Then, I would add the text in the correct chapter and make a new commit with a message explaining the changes.
-<b>C</b> - I would perform a <b>hard reset</b> to the commit I created after writing that paragraph. Then, I would add the text in the correct chapter and make a new commit with a message explaining the changes.
-
-<choice id="2">
-<opt text='A' correct='true'>
-</opt>
-
-<opt text='B'>
-Are you sure you want to lose all the changes you made in `chapter2.md`? Even if you can recover those changes, reverting the changes will make you go back to that particular point in the the history of your project.
-</opt>
-
-<opt text='C'>
-When you do a hard reset, you are deleting the history of your project up to a particular commit. This means that you will lose all the changes you made between that particular commit and your most recent one.
-</opt>
-
 </choice>
 </exercise>
 
