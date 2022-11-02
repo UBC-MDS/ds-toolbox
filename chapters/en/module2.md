@@ -251,7 +251,7 @@ What is the purpose of a pipe (`|`) in the shell?
 <choice id="2">
 <opt text="A pipe allow you to save multiple commands and then execute them all at once">
 
-This is not quite what a pipe does; it let's you link the output from one command to another.
+This is not quite what a pipe does; it lets you link the output from one command to another.
 
 </opt>
 

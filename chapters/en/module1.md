@@ -18,7 +18,7 @@ id: 1
 
 <exercise id="2" title="✍️  Practice: The tools of the trade">
 
-What it the main reason that it is important to use the right data science tools for the job and learn to work with them effectively?
+What is the main reason that it is important to use the right data science tools for the job and learn to work with them effectively?
 
 <choice id="1" >
 <opt text="It is a requirement to work in many big companies">
@@ -211,7 +211,7 @@ You should do this before asking a new question. It will make you find the answe
 
 </opt>
 
-<opt text="Type out the problem for youself before asking the question">
+<opt text="Type out the problem for yourself before asking the question">
 
 You should do this before asking a new question. It can help you find the solution to the problem yourself!
 

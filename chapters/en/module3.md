@@ -35,7 +35,7 @@ This is one of the main benefits of version control! Remember that we can track 
 
 <opt text='Version control tools usually include a remote/cloud repository hosting service that can act as a backup of your local files (i.e., the files on your computer).'>
 
-Even if you can use Git without an associated hosting service, it is a very common practice to do so. It allows you not only to keep a backup of your work if not also to socialize and work collaboratively. For example, in this course, we are using GitHub to host our remote repositories.
+Even if you can use Git without an associated hosting service, it is a very common practice to do so. It allows you not only to keep a backup of your work, but also to socialize and work collaboratively. For example, in this course, we are using GitHub to host our remote repositories.
 
 </opt>
 <opt text='In practice, most data science projects involve collaboration on documents that contain code (e.g., Jupyter notebooks), and version control tools facilitate collaboration on such documents.'>
@@ -81,7 +81,7 @@ Try downloading a project and clone it and check if you can find any difference 
 </opt>
 <opt text='False' correct='true'>
 
-When you clone a Git repository from GitHub you get the hidden `.git` directory that contains all the history of the changes that Git knows about for that repository, and you get a remote that is already set up to push to the repository on GitHub (this makes it so that once you make changes that are added and committed to Git, all you need to do is push teh changes to GitHub). If you instead use the "Download ZIP" link you do not get the git history (stored in `.git`) nor a set-up remote for pushing to GitHub.
+When you clone a Git repository from GitHub you get the hidden `.git` directory that contains all the history of the changes that Git knows about for that repository, and you get a remote that is already set up to push to the repository on GitHub (this makes it so that once you make changes that are added and committed to Git, all you need to do is push the changes to GitHub). If you instead use the "Download ZIP" link you do not get the git history (stored in `.git`) nor a set-up remote for pushing to GitHub.
 
 </opt>
 </choice>

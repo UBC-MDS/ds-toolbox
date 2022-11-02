@@ -137,7 +137,7 @@ We will look closer at each of these two approach in the next couple of slides.
 
 ---
 
-## 1. Recursively ignoring of filename patters
+## 1. Recursively ignoring of filename patterns
 
 <br>
 <br>
@@ -173,7 +173,7 @@ The line in our `.gitignore` would now read `**/*.log`.
 
 ---
 
-## 1. Recursively ignoring of filename patters
+## 1. Recursively ignoring of filename patterns
 
 <br>
 <br>
@@ -211,7 +211,7 @@ It would look like this:
 <br>
 <br>
 
-Create a global `.gitignore` file in your home directoy so that you do not have to create the same `.gitignore` for all your repos
+Create a global `.gitignore` file in your home directory so that you do not have to create the same `.gitignore` for all your repos
 
 ```
 code ~/.gitignore_global

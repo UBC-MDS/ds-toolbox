@@ -273,7 +273,7 @@ It's important to remember that, you won't get auto-completion until the express
 
 **Contextual help:**
 
-To see a function's docstring, press `Shift + Tab` while your curser is anywhere inside a function's name characters:
+To see a function's docstring, press `Shift + Tab` while your cursor is anywhere inside a function's name characters:
 
 <img src="/module7/help.png" width="700"></img>
 

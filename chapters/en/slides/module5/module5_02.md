@@ -125,7 +125,7 @@ Here we can see that there are three active branches:
 
 1. The default `master` branch which is indicated on the topmost row. 
    This is the orange line in the graphical representation to the left and there are five commits visible in this image on this branch (the black dots on the orange line).
-2. The branch for version 3.4 which is indicated on the second row from the top. This is the middle red line in the graphical represenation and there are three commits visible in this image on this branch.
+2. The branch for version 3.4 which is indicated on the second row from the top. This is the middle red line in the graphical representation and there are three commits visible in this image on this branch.
 3. The branch with a long name starting with `12758-snapshots` at the third row from the bottom (commit message: "Update snapshots for challenger commit"). This is the red line in the graphical representation to the right, and it contains only a single commit.
 
 
