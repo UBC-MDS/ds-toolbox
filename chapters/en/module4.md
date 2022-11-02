@@ -156,7 +156,7 @@ You can hard-reset your work in both cases, but one of the options could cause p
 
 <exercise id='8' title='✍️ Practice: Subtraction through addition (of a new commit)'>
 
-Which of the following statements are TRUE about `git revert`?
+Which of the following statements are TRUE about `git revert`? 
 
 <choice id="1">
 <opt text='This command creates a new commit that undoes the changes from previous commits.' >
