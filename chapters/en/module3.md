@@ -35,7 +35,7 @@ This is one of the main benefits of version control! Remember that we can track 
 
 <opt text='Version control tools usually include a remote/cloud repository hosting service that can act as a backup of your local files (i.e., the files on your computer).'>
 
-Even if you can use Git without an associated hosting service, it is a very common practice to do so. It allows you not only to keep a backup of your work if not also to socialize and work collaboratively. For example, in this course, we are using GitHub to host our remote repositories.
+Even if you can use Git without an associated hosting service, it is a very common practice to do so. It allows you not only to keep a backup of your work, but also to socialize and work collaboratively. For example, in this course, we are using GitHub to host our remote repositories.
 
 </opt>
 <opt text='In practice, most data science projects involve collaboration on documents that contain code (e.g., Jupyter notebooks), and version control tools facilitate collaboration on such documents.'>
