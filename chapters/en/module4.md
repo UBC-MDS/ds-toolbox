@@ -205,9 +205,9 @@ What do you have to do if you are working with the terminal and you want to writ
 </opt>
 <opt text='Accept incoming change'>
 </opt>
-<opt text='Accept both changes' correct='true'>
+<opt text='Accept both changes'>
 </opt>
-<opt text='You should delete everything between <code> <<<<<<< </code> and <code> >>>>>>> </code> and add the text you want instead'>
+<opt text='You should delete everything between <code> <<<<<<< </code> and <code> >>>>>>> </code> and add the text you want instead' correct='true'>
 </opt>
 
 </choice>
