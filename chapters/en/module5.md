@@ -314,7 +314,7 @@ They are very useful to keep track of tasks and recording your thoughts in indiv
 Not quite.
 </opt>
 
-<opt text='The first three options are all correct'>
+<opt text='The first three options are all correct' correct='true'>
 </opt>
 
 <opt text='The first two options are both correct'>
