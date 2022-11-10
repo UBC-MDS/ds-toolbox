@@ -116,26 +116,23 @@ The term `origin` refers to the remote repository. If the last change in the rem
 After running <code>git log --oneline --all --graph</code> in your repository you get as output the following tree:
 
 
-<img src="/module5/module5-gitlog.png" alt="output git log"> 
+<img src="/module5/module5-exercise4-cl.png" alt="output git log"> 
 
 
 Select the options that are TRUE
 
 <choice id = 5>
-<opt text='The most recent commit on GitHub was performed on the <code>lecture-todo</code> branch'>
-You can recognize the latest commit on GitHub by comparing the timestamps for all commits marked with an <code>origin/</code> label.
+<opt text='There are changes to the <code>main</code> branch that has not been pushed to GitHub yet'>
+All the changes in the main branch have been pushed to GitHub. Notice that the <code>main</code> label (the local <code>main</code> branch) and <code>origin/main</code> (the remote <code>main</code> branch) labels are positioned in the same commit.
 </opt>
 <opt text='There are changes to the <code>lecture-todo</code> branch that has not been pushed to GitHub yet ' correct='true'>
 The <code>lecture-todo</code> branch shows up alone on the latest commit. If the changes were on GitHub there would be at least one branch with the <code>origin/</code> prefix on the latest commit as well.
 </opt>
-<opt text='The most recent local commit of this repository has associated the message "Update readme"' >
-By default, the most recent commits appear on the top of commit history. 
+<opt text='The commit 266de1e exist only in your local computer' correct='true'>
+The label <code>origin/lecture-todo</code> that are pointing the last change in the remote are downstream this two commit. This means that 266de1e was created after pulling or cloning from GitHub.
 </opt>
-<opt text='The commits a949e61 and 0a8dfef exist only in your local computer' correct='true'>
-The labels <code>origin/master</code>, <code>origin/HEAD</code> that are pointing the last change in the remote are downstream these two commits. This means that a949e61 and 0a8dfef were created after pulling or cloning from GitHub.
-</opt>
-<opt text='The commits 6e69947 and 0d5a6f7 exist both in your local computer and on GitHub' correct='true'>
-The position of the label <code>origin/master</code> indicates that both these commits are part of this branch on the GitHub remote.
+<opt text='The commits 6d60de8 and b66e2d9 exist both in your local computer and on GitHub' correct='true'>
+The position of the label <code>origin/main</code> and <code>origin/lecture-todo</code>indicates that both commits are part of these branches on the GitHub remote.
 </opt>
 </choice>
 </exercise>
