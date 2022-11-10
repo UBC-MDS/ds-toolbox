@@ -122,8 +122,8 @@ After running <code>git log --oneline --all --graph</code> in your repository yo
 Select the options that are TRUE
 
 <choice id = 5>
-<opt text='The most recent commit on GitHub was performed on the <code>lecture-todo</code> branch'>
-You can recognize the latest commit on GitHub by comparing the timestamps for all commits marked with an <code>origin/</code> label.
+<opt text='There are changes to the <code>main</code> branch that has not been pushed to GitHub yet'>
+All the changes in the main branch have been pushed to GitHub. Notice that the <code>main</code> label (the local <code>main</code> branch) and <code>origin/main</code> (the remote <code>main</code> branch) labels are positioned in the same commit.
 </opt>
 <opt text='There are changes to the <code>lecture-todo</code> branch that has not been pushed to GitHub yet ' correct='true'>
 The <code>lecture-todo</code> branch shows up alone on the latest commit. If the changes were on GitHub there would be at least one branch with the <code>origin/</code> prefix on the latest commit as well.
