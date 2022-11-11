@@ -123,16 +123,25 @@ Select the options that are TRUE
 
 <choice id = 5>
 <opt text='There are changes to the <code>main</code> branch that has not been pushed to GitHub yet'>
-All the changes in the main branch have been pushed to GitHub. Notice that the <code>main</code> label (the local <code>main</code> branch) and <code>origin/main</code> (the remote <code>main</code> branch) labels are positioned in the same commit.
+This option is not correct. All the changes in the main branch have been pushed to GitHub. Notice that the <code>main</code> label (the local <code>main</code> branch) and <code>origin/main</code> (the remote <code>main</code> branch) labels are positioned in the same commit.
 </opt>
-<opt text='There are changes to the <code>lecture-todo</code> branch that has not been pushed to GitHub yet ' correct='true'>
-The <code>lecture-todo</code> branch shows up alone on the latest commit. If the changes were on GitHub there would be at least one branch with the <code>origin/</code> prefix on the latest commit as well.
+<opt text='There are changes to the <code>lecture-todo</code> branch that has not been pushed to GitHub yet '>
+This is correct, but it is at least one more correct option! 
 </opt>
-<opt text='The commit 266de1e exist only in your local computer' correct='true'>
-The label <code>origin/lecture-todo</code> that are pointing the last change in the remote are downstream this two commit. This means that 266de1e was created after pulling or cloning from GitHub.
+<opt text='The commit 266de1e exist only in your local computer'>
+This is correct, but it is at least one more correct option! 
+The label <code>origin/lecture-todo</code> that is pointing the last change in the remote is downstream these two commits. This means that 266de1e was created after pulling or cloning from GitHub.
 </opt>
-<opt text='The commits 6d60de8 and b66e2d9 exist both in your local computer and on GitHub' correct='true'>
-The position of the label <code>origin/main</code> and <code>origin/lecture-todo</code>indicates that both commits are part of these branches on the GitHub remote.
+<opt text='The commits 6d60de8 and b66e2d9 exist both in your local computer and on GitHub'>
+This is correct, but it is at least one more correct option! 
+</opt>
+<opt text='All the options are correct'>
+The first option is incorrect. All the changes in the <code>main</code> branch have been pushed to GitHub. Notice that the <code>main</code> label (the local <code>main</code> branch) and <code>origin/main</code> (the remote <code>main</code> branch) labels are positioned in the same commit.
+</opt>
+<opt text='The last three options are correct' correct='true'>
+</opt>
+<opt text='The last two options are correct'>
+The second option is correct! As you can see in the image, the <code>lecture-todo</code> label (the local <code>lecture-todo</code> branch) is upstream the <code>origin/lecture-todo</code> label (the remote <code>lecture-todo</code> branch). These means that some commits that exist in your local copy of the repository have not been pushed to GitHub yet.
 </opt>
 </choice>
 </exercise>
