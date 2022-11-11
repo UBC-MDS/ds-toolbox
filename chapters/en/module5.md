@@ -138,10 +138,10 @@ This is correct, but it is at least one more correct option!
 <opt text='All the options are correct'>
 The first option is incorrect. All the changes in the <code>main</code> branch have been pushed to GitHub. Notice that the <code>main</code> label (the local <code>main</code> branch) and <code>origin/main</code> (the remote <code>main</code> branch) labels are positioned in the same commit.
 </opt>
-<opt text='The last three options are correct' correct='true'>
-</opt>
 <opt text='The last two options are correct'>
 The second option is correct! As you can see in the image, the <code>lecture-todo</code> label (the local <code>lecture-todo</code> branch) is upstream the <code>origin/lecture-todo</code> label (the remote <code>lecture-todo</code> branch). These means that some commits that exist in your local copy of the repository have not been pushed to GitHub yet.
+</opt>
+<opt text='The last three options are correct' correct='true'>
 </opt>
 </choice>
 </exercise>
