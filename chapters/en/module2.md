@@ -272,7 +272,7 @@ A pipe works between commands, not between files.
 
 </choice>
 
-Using the manual, look up what commands you can use to help you navigate in long text pages (such as the long word documents) using <code>less</code>?
+Using the manual, look up what commands you can use to help you navigate in long text pages (such as the long text documents) using <code>less</code>?
 
 <choice id="3">
 
