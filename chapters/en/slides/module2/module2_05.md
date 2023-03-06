@@ -329,7 +329,6 @@ note_2022-07-02.md.bkp
 ```
 
 Notes:
-
 Wildcards (also called "globbing") simplifies targeting multiple files with similar names
 in the same command.
 The most commonly used wildcard is `*` (a single asterisk).
