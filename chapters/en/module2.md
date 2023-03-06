@@ -18,8 +18,8 @@ id: 2
 
 <exercise id="2" title='✍️ Practice: "Shell out" your knowledge'>
 
-**True or False**
-*Using a text-based interface such as a shell to communicate with your computer is always better than using a graphical interface.*
+**True or False?**
+Using a text-based interface such as a shell to communicate with your computer is always better than using a graphical interface.
 
 <choice id="1" >
 <opt text="True">
@@ -52,7 +52,7 @@ The command that does this is <code>whoami</code>.
 
 </choice>
 
-How do you pass an option to <code>ls</code> which tells is to decorate the output with a suffix based on file type?
+How do you pass an option to <code>ls</code> which tells is to decorate the output with a suffix based on file type? *Note: When we talk about adding a suffix to the output of <code>ls</code>, we mean that ls will display additional characters at the end of each file or directory name in its output to provide additional information about that file.*
 
 <choice id="3" >
 <opt text="<code>ls -f</code>">
@@ -68,6 +68,10 @@ How do you pass an option to <code>ls</code> which tells is to decorate the outp
 </opt>
 
 <opt text="<code>ls --F</code>">
+
+</opt>
+
+<opt text="<code>ls - F</code>">
 
 </opt>
 
@@ -268,7 +272,7 @@ A pipe works between commands, not between files.
 
 </choice>
 
-How can you navigate in long text pages (such as the manual) using <code>less</code>?
+Using the manual, look up what commands you can use to help you navigate in long text pages (such as the long text documents) using <code>less</code>?
 
 <choice id="3">
 
