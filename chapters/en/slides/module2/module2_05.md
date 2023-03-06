@@ -329,12 +329,14 @@ note_2022-07-02.md.bkp
 ```
 
 Notes:
+
 Wildcards (also called "globbing") simplifies targeting multiple files with similar names
 in the same command.
 The most commonly used wildcard is `*` (a single asterisk).
 It matches zero or more characters,
 so typing `ls *.md` list all of the markdown files in the current directory.
 
+Let's first create 3 empty files: `note_2022-06-20.md.bkp`, `note_2022-07-02.md` and `note_2022-07-02.md.bkp` using `touch` command.
 If we wanted to list all the files created in July (month 7),
 we would need to type ls `ls *07*`,
 which means that the filename can include anything before and after `07`.
