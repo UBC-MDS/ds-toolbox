@@ -49,7 +49,7 @@ Is the first commit of the project or the first commit of the user flor14?
 </choice>
 
 
-What kind of information is not displayed **not** in a Git project's history?
+What kind of information is **not** displayed in a Git project's history?
 
 <choice id="2">
 <opt text='commit message' >
@@ -81,7 +81,7 @@ View this <code>git diff</code> comparison between on GitHub:
 https://github.com/UBC-MDS/equine_numbers_value_canada/compare/1bb5ab8..9021b83
 
 You can see that there has been changes made to the `README.md` file,
-highlighted in red and green in the web interface.
+highlighted in red (- sign)  and green (+ signs) in the web interface.
 Looking at the commit history of the repository and the order the commits were made in,
 which of the red and green highlights represent
 the current state of the <code>README.md</code> file in the repository?
@@ -124,8 +124,6 @@ Writing the newest commit is not necessary. If you write only one commit (that i
 </exercise>
 
 <exercise id='6' title='✍️ Practice: The "no regrets" reset'>
-
-**True or False**
 
 Select all the situations in which it is a good idea to reset your work to a previous commit:
 
