@@ -196,14 +196,25 @@ Is the third options really correct?
 
 <exercise id='10' title='✍️ Practice: Merge with care'>
 
-What do you have to do if you are working with the terminal and you want to write a different text for this merge conflict?
+Imagine you want to fix a merge conflict in README.md file. What do you have to do if you are working with the terminal and you want to write a different text for this merge conflict (i.e., neitehr of changes is sutisfactory for you)?
 
+```
+$ cat README.md
+
+If you have questions, please
+<<<<<<< HEAD
+open an issue
+=======
+ask your question via email.
+>>>>>>> new_branch_to_merge_later
+```
+  
 <choice id="1">
-<opt text='Accept current change' >
+<opt text='You should delete everything between <code> <<<<<<< </code> and <code> ======= </code> and leave the remaining text' >
 </opt>
-<opt text='Accept incoming change'>
+<opt text='You should delete everything between <code> ======= </code> and <code> >>>>>>> </code>  and leave the remaining text'>
 </opt>
-<opt text='Accept both changes'>
+<opt text='You should delete everything between <code> <<<<<<< </code> and <code> >>>>>>> </code> but keep all the text'>
 </opt>
 <opt text='You should delete everything between <code> <<<<<<< </code> and <code> >>>>>>> </code> and add the text you want instead' correct='true'>
 </opt>
