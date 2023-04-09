@@ -49,7 +49,7 @@ Is the first commit of the project or the first commit of the user flor14?
 </choice>
 
 
-What kind of information is not displayed **not** in a Git project's history?
+What kind of information is **not** displayed in a Git project's history?
 
 <choice id="2">
 <opt text='commit message' >
@@ -81,7 +81,7 @@ View this <code>git diff</code> comparison between on GitHub:
 https://github.com/UBC-MDS/equine_numbers_value_canada/compare/1bb5ab8..9021b83
 
 You can see that there has been changes made to the `README.md` file,
-highlighted in red and green in the web interface.
+highlighted in red (- sign)  and green (+ signs) in the web interface.
 Looking at the commit history of the repository and the order the commits were made in,
 which of the red and green highlights represent
 the current state of the <code>README.md</code> file in the repository?
@@ -124,8 +124,6 @@ Writing the newest commit is not necessary. If you write only one commit (that i
 </exercise>
 
 <exercise id='6' title='✍️ Practice: The "no regrets" reset'>
-
-**True or False**
 
 Select all the situations in which it is a good idea to reset your work to a previous commit:
 
@@ -198,14 +196,23 @@ Is the third options really correct?
 
 <exercise id='10' title='✍️ Practice: Merge with care'>
 
-What do you have to do if you are working with the terminal and you want to write a different text for this merge conflict?
+Imagine you want to fix a merge conflict in README.md file. What do you have to do if you are working with the terminal and you want to write a different text for this merge conflict (i.e., neitehr of changes is sutisfactory for you)?
 
+```
+$ cat README.md
+
+If you have questions, please
+<<<<<<< HEAD
+open an issue
+=======
+ask your question via email.
+>>>>>>> new_branch_to_merge_later
+```
+  
 <choice id="1">
-<opt text='Accept current change' >
+<opt text='You should delete everything between <code> <<<<<<< </code> and <code> ======= </code> and leave the remaining text' >
 </opt>
-<opt text='Accept incoming change'>
-</opt>
-<opt text='Accept both changes'>
+<opt text='You should delete everything between <code> ======= </code> and <code> >>>>>>> </code>  and leave the remaining text'>
 </opt>
 <opt text='You should delete everything between <code> <<<<<<< </code> and <code> >>>>>>> </code> and add the text you want instead' correct='true'>
 </opt>
