@@ -214,8 +214,6 @@ ask your question via email.
 </opt>
 <opt text='You should delete everything between <code> ======= </code> and <code> >>>>>>> </code>  and leave the remaining text'>
 </opt>
-<opt text='You should delete everything between <code> <<<<<<< </code> and <code> >>>>>>> </code> but keep all the text'>
-</opt>
 <opt text='You should delete everything between <code> <<<<<<< </code> and <code> >>>>>>> </code> and add the text you want instead' correct='true'>
 </opt>
 
