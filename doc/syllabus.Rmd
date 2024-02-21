@@ -8,7 +8,7 @@ output: pdf_document
 
 ## Time and Place
 
-Online, October 11 to December 12th, 2022
+Online, Tuesday February 27th to Monday April 29th, 2024
 
 ## Description
 
@@ -87,7 +87,8 @@ To submit your assignment click submit at the end of each assignment quiz. You w
 |---------------|---------------|
 | 7 Assignments | 56 (8% each)  |
 | 2 Quizzes     | 32 (16% each) |
-|  Final Assessment  <br />  (Assignment 8)    | 12 % |
+|  Final Project  <br />  (Assignment 8)*    | 12 % |
+* Submission of satisfactory Final Project required for course letter of completion in addition to final grade of 70%
 
 ## Schedule
 
@@ -112,7 +113,7 @@ To submit your assignment click submit at the end of each assignment quiz. You w
 | Weeks 3 - 4  | Module 3, <br> Module 4                 | Assignment 3, Assignment 4, Quiz 1      |
 | Weeks 5 - 6  | Module 5,<br> Module 6,   | Assignment 5, Assignment 6                |
 | Week 7    | Module 7     |     Assignment 7                            |
-| Weeks 8 - 9   | Module 8    | Final Assessment (Assignment 8), Quiz 2                             |
+| Weeks 8 - 9   | Module 8    | Final Project (Assignment 8), Quiz 2                             |
 
 \newpage
 ## Conditions for a ‘Complete’ status in Data Science Courses
