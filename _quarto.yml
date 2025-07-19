@@ -35,7 +35,10 @@ website:
       - section: "**M0. Welcome to The Data Science Toolbox!**"
         contents:
           - text: '0. Welcome!'
-            href: modules/index.qmd        
+            href: modules/index.qmd
+          - href: modules/module0/module0-01-the_data_science_toolbox.qmd
+          - text: '&nbsp;&nbsp; 1.1. Prerequisite confirmation'
+            href: modules/module0/module0-02-are_you_ready.qmd            
 
 # Since we are declaring options for two formats here (html and revealjs)
 # each qmd file needs to include a yaml block including which format to use for that file.
