@@ -1,0 +1,12 @@
+---
+format: html
+pagetitle: Home
+---
+
+# Welcome to The Data Science Toolbox!
+
+This course is part of the Key Capabilities for Data Science program and covers topics related to workflows, plateforms and tools used in data analysis.
+
+In this course, we will dive into the world of data science tools and utilities. While these are not strictly required for data analysis, they are necessary for efficient, reproducible, and collaborative data science practices, and are all important building blocks for a successful and sustained data science career.
+
+Course prerequisites: [Programming in Python for Data Science](https://prog-learn.mds.ubc.ca/)

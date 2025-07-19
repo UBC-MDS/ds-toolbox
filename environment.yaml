@@ -1,0 +1,13 @@
+name: 'kcds-tool'
+channels:
+    - conda-forge
+    - defaults
+dependencies:
+    - python>=3.11,<3.13
+    - altair-all=5.5.*
+    - pandas=2.2.*
+    - scipy
+    - matplotlib
+    - jupyter
+    - quarto=1.6.43
+    - pip
