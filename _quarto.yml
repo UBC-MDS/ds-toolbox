@@ -35,7 +35,23 @@ website:
       - section: "**M0. Welcome to The Data Science Toolbox!**"
         contents:
           - text: '0. Welcome!'
-            href: modules/index.qmd        
+            href: modules/index.qmd
+      - section: "**M2. The shell**"
+        contents:
+          - href: modules/module2/module2-00-module_learning_outcomes.qmd
+          - href: modules/module2/module2-01-introduction_to_the_shell.qmd
+          - text: '&nbsp;&nbsp; 1.1. Exercises'
+            href: modules/module2/module2-02-practice_shell_out_your_knowledge.qmd
+          - href: modules/module2/module2-03-moving_around.qmd
+          - text: '&nbsp;&nbsp; 2.1. Exercises'
+            href: modules/module2/module2-04-practice_ahoy_captain.qmd
+          - href: modules/module2/module2-05-working_with_files_and_directories.qmd
+          - text: '&nbsp;&nbsp; 3.1. Exercises'
+            href: modules/module2/module2-06-practice_refine_your_shell_skills.qmd
+          - href: modules/module2/module2-07-intermediate_shell_topics.qmd
+          - text: '&nbsp;&nbsp; 4.1. Exercises'
+            href: modules/module2/module2-08-practice_bash_it_out.qmd
+          - href: modules/module2/module2-09-what_did_we_just_learn.qmd
 
 # Since we are declaring options for two formats here (html and revealjs)
 # each qmd file needs to include a yaml block including which format to use for that file.
