@@ -1,0 +1,117 @@
+project:
+  type: website
+  title: "The Data Science Toolbox"
+  # Setting the execution dir allows us to use `data/`
+  # instead of relative paths in regular code cells
+  execute-dir: project
+  # `render` executes and renders modules, slides, and exercises into `_site`
+  render:
+    - modules/**/*.qmd
+    - modules/index.qmd
+  # `resources` copies files into `_site` without execution
+  resources:
+    - styles.scss
+    - src/utils.py
+    - data
+
+# Setting the pyodide resources allows live code cells to see files
+# previously copied into `_site`
+# by copying them to the virtual file system used by live coding
+pyodide:
+  resources:
+    - src/utils.py
+    - data
+
+website:
+  page-navigation: true
+  bread-crumbs: false
+  sidebar:
+    collapse-level: 1
+    logo: static/logo.svg
+    search: true
+    style: 'docked'
+    background: 'primary'
+    contents:
+      - section: "**M0. Welcome to The Data Science Toolbox!**"
+        contents:
+          - text: '0. Welcome!'
+            href: modules/index.qmd
+      - section: "**M2. The shell**"
+        contents:
+          - href: modules/module2/module2-00-module_learning_outcomes.qmd
+          - href: modules/module2/module2-01-introduction_to_the_shell.qmd
+          - text: '&nbsp;&nbsp; 1.1. Exercises'
+            href: modules/module2/module2-02-practice_shell_out_your_knowledge.qmd
+          - href: modules/module2/module2-03-moving_around.qmd
+          - text: '&nbsp;&nbsp; 2.1. Exercises'
+            href: modules/module2/module2-04-practice_ahoy_captain.qmd
+          - href: modules/module2/module2-05-working_with_files_and_directories.qmd
+          - text: '&nbsp;&nbsp; 3.1. Exercises'
+            href: modules/module2/module2-06-practice_refine_your_shell_skills.qmd
+          - href: modules/module2/module2-07-intermediate_shell_topics.qmd
+          - text: '&nbsp;&nbsp; 4.1. Exercises'
+            href: modules/module2/module2-08-practice_bash_it_out.qmd
+          - href: modules/module2/module2-09-what_did_we_just_learn.qmd
+      - section: "**M3. Git and GitHub intro**"
+        contents:
+          - href: modules/module3/module3-00-module_learning_outcomes.qmd
+          - href: modules/module3/module3-01-what_is_version_control_and_why_should_you_use_it.qmd
+          - text: '&nbsp;&nbsp; 1.1. Exercises'
+            href: modules/module3/module3-02-practice_what_is_the_difference_between_git_and_github.qmd
+          - href: modules/module3/module3-03-version_control_repositories.qmd
+          - text: '&nbsp;&nbsp; 2.1. Exercises'
+            href: modules/module3/module3-04-practice_cloning_a_github_repo.qmd
+          - href: modules/module3/module3-05-the_staging_area.qmd
+          - text: '&nbsp;&nbsp; 3.1. Exercises'
+            href: modules/module3/module3-06-practice_what_can_an_empty_area_on_your_local_computer_be_used_for.qmd
+          - href: modules/module3/module3-07-committing_changes_to_a_local_repository.qmd
+          - text: '&nbsp;&nbsp; 4.1. Exercises'
+            href: modules/module3/module3-08-practice_a_commit_in_a_bottle.qmd
+          - href: modules/module3/module3-09-pushing_changes_to_a_remote_repository.qmd
+          - text: '&nbsp;&nbsp; 5.1. Exercises'
+            href: modules/module3/module3-10-practice_everything_that_goes_up.qmd
+          - href: modules/module3/module3-11-pulling_changes_from_a_remote_repository.qmd
+          - text: '&nbsp;&nbsp; 6.1. Exercises'
+            href: modules/module3/module3-12-practice_has_to_come_down_with_changes.qmd
+          - href: modules/module3/module3-13-what_did_we_just_learn.qmd
+
+# Since we are declaring options for two formats here (html and revealjs)
+# each qmd file needs to include a yaml block including which format to use for that file.
+# https://github.com/quarto-dev/quarto-cli/issues/4583
+format:
+  html:
+    callout-icon: false
+    theme: [united, styles.scss]
+    linkcolor: '#122baf'
+    highlight-style: atom-one
+    grid:
+      sidebar-width: 350px
+      margin-width: 800px
+  live-html:
+    callout-icon: false
+    theme: [united, styles.scss]
+    linkcolor: '#122baf'
+    highlight-style: atom-one
+    grid:
+      sidebar-width: 350px
+      margin-width: 800px
+  revealjs:
+    theme: styles.scss
+    width: 100%
+    monofont: Ubuntu Mono
+    mainfont: Ubuntu
+    font-size: 0.5em
+    monobackgroundcolor: '#F1F3F5'
+    highlight-style: atom-one
+    # tango atom-one  nord
+    transition: slide
+    controls-layout: bottom-right
+    show-notes: true
+    slide-number: true
+    code-line-numbers: false
+    code-copy: true
+    progress: false
+    history: false
+    menu: false
+    execute:
+      echo: true

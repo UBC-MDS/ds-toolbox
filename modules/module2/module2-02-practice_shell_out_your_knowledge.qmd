@@ -1,0 +1,55 @@
+---
+format: html
+---
+
+<script src='../../src/quiz.js'></script>
+
+# 1.1. Exercises
+
+## ✍️ Practice: "Shell out" your knowledge
+
+<div id='mcq1'></div>
+<script>
+    generateQuiz(
+        'mcq1',
+        'True or False',
+        'Using a text-based interface such as a shell to communicate with your computer is always better than using a graphical interface.',
+        {
+        'True': 'While text-based interfaces having many advantages over graphical shells, they are not always the right tool for the job. For example, text based interfaces are better for automation, reproducibility, and advanced commands, but graphical interfaces can be easier to use for novices since they are more similar to the graphical operating systems that we are already used to using on our laptops and mobile devices.',
+        'False': 'Text-based interfaces have many advantages over graphical shells, but they are not always the right tool for the job.',
+        },
+        'False',
+    );
+</script>
+
+<div id='mcq2'></div>
+<script>
+    generateQuiz(
+        'mcq2',
+        'Question 2',
+        'What does the <code>ls</code> command do?',
+        {
+        'Lists the name of the current working directory': 'The command that does this is <code>pwd</code>.',
+        'Lists the content of the current working directory': '',
+        'Lists your username': 'The command that does this is <code>whoami</code>.',
+        },
+        'Lists the content of the current working directory',
+    );
+</script>
+
+<div id='mcq3'></div>
+<script>
+    generateQuiz(
+        'mcq3',
+        'Question 3',
+        'How do you pass an option to <code>ls</code> which tells it to decorate the output with a suffix based on file types? <i>Note: When we talk about adding a suffix to the output of <code>ls</code>, we mean that <code>ls</code> will display additional characters at the end of each file or directory name in its output to provide additional information about that file.</i>',
+        {
+        '<code>ls -f</code>': '',
+        '<code>ls --f</code>': '',
+        '<code>ls -F</code>': '',
+        '<code>ls --F</code>': '',
+        '<code>ls - F</code>': '',
+        },
+        '<code>ls -F</code>',
+    );
+</script>

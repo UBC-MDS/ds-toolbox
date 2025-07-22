@@ -1,0 +1,40 @@
+---
+format: html
+---
+
+<script src='../../src/quiz.js'></script>
+
+# 6.1. Exercises
+
+## ✍️ Practice: ...has to come down (with changes)
+
+<div id='mcq1'></div>
+<script>
+    generateQuiz(
+        'mcq1',
+        'Question 1',
+        'Which statement below is <b>not</b> true?',
+        {
+        'Cloning and pulling a GitHub repository are the exact same thing.': 'Cloning is downloading the repository for the first time, including the project history. Pulling is to update your local copy of the repository with the remote changes. For example, if a colleague has added changes to the repository you should update your local repository before push your own changes to avoid merging conflicts.',
+        'Pushing with Git is the act of sending changes that were committed to Git to a remote repository, for example, on GitHub.com.': 'Pushing updates the remote repository with any committed changes.',
+        'Pulling with Git is the act of collecting changes that exist in a remote repository, for example, on GitHub.com, that do not yet exist on the local computer you are working on.': 'Pulling updates your local repository with any changes from the remote repository.',
+        'You should push your work to GitHub anytime you want to share your work with others, or when you finish a work session and want to back up your work.': 'These are both good reasons to push your changes to GitHub.com.',
+        },
+        'Cloning and pulling a GitHub repository are the exact same thing.',
+    );
+</script>
+
+<div id='mcq2'></div>
+<script>
+    generateQuiz(
+        'mcq2',
+        'Question 2',
+        'If you are working on a GitHub repository that is frequently updated by other colleagues. What is a recommended step before start working locally?',
+        {
+        'Clone the repository again to be updated with their changes': 'The repository should be cloned only the first time you start working on a project locally. What other command would you use instead?',
+        'Stage the files you are interested to work on': 'You need to add the modified files you intend to commit to the staging area to make them part of your project history. You have already begun working locally on this step, but the question refers to an earlier step.',
+        'Pull the remote changes to your computer': '',
+        },
+        'Pull the remote changes to your computer',
+    );
+</script>

@@ -1,0 +1,57 @@
+---
+format: html
+---
+
+<script src='../../src/quiz.js'></script>
+
+# 1.1. Exercises
+
+## ✍️ Practice: Bash it out
+
+<div id='mcq1'></div>
+<script>
+    generateQuiz(
+        'mcq1',
+        'Question 1',
+        'How can we search for the word "here" in the file <code>notes.txt</code>?',
+        {
+        '<code>find \'here\' notes.txt</code>': '<code>find</code> is used to find filenames.',
+        '<code>grep "here" notes.txt</code>': '',
+        '<code>search "here" notes.txt</code>': 'There is no <code>search</code> command in the shell.',
+        },
+        '<code>grep "here" notes.txt</code>',
+    );
+</script>
+
+<div id='mcq2'></div>
+<script>
+    generateQuiz(
+        'mcq2',
+        'Question 2',
+        'What is the purpose of a pipe (<code>|</code>) in the shell?',
+        {
+        'A pipe allow you to save multiple commands and then execute them all at once': 'This is not quite what a pipe does; it lets you link the output from one command to another.',
+        'A pipe sends the output from one command to any file you want': 'A pipe works between commands, not between files.',
+        'A pipe send the output from one command to another command': '',
+        },
+        'A pipe send the output from one command to another command',
+    );
+</script>
+
+<div id='mcq3'></div>
+<script>
+    generateQuiz(
+        'mcq3',
+        'Question 3',
+        'Using the manual, look up what commands you can use to help you navigate in long text pages (such as the long text documents) using <code>less</code>?',
+        {
+        '<code>space</code> to scroll down, <code>b</code> to scroll up': 'Correct, but there is another correct option too.',
+        '<code>b</code> to scroll down, <code>space</code> to scroll up': 'You have mixed up which key does what here.',
+        '<code>/</code> to search, <code>n</code> to navigate to the next search result, <code>q</code> to quit': 'Correct, but there is another correct option too.',
+        '<code>\\</code> to search, <code>s</code> to navigate to the next search result, <code>q</code> to quit': 'This is not quite how you search in the text.',
+        'The first and third options are both correct': '',
+        'The first and fourth options are both correct': 'The first option is correct, but not the fourth.',
+        },
+        'The first and third options are both correct',
+    );
+</script>
