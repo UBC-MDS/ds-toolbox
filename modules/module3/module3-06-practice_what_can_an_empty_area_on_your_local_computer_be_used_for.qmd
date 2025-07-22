@@ -1,0 +1,54 @@
+---
+format: html
+---
+
+<script src='../../src/quiz.js'></script>
+
+# 3.1. Exercises
+
+## ✍️ Practice: What can an empty area on your local computer be used for?
+
+<div id='mcq1'></div>
+<script>
+    generateQuiz(
+        'mcq1',
+        'Question 1',
+        '<b>Git</b> has a distinct step of <b>adding</b> files to the staging area because:',
+        {
+        'Not all changes we make (i.e., files we create or edit) are ones that we want to push to our remote GitHub repository.': 'This is partially correct.',
+        'It allows us to edit multiple files at once, but associate particular commit messages with those modifications (so that the commit messages can more specifically reflect the changes that were made).': 'This is partially correct.',
+        'This is technically required of all version control software.': 'Although a staging area is used in Git, which is the most popular version control software, there are other software that use different approaches for version control.',
+        'Both the first and the third options are correct.': 'The third option is not correct. Although a staging area is used in Git, which is the most popular version control software, there are other software that use different approaches for version control.',
+        'Both the first and the second options are correct.': '',
+        },
+        'Both the first and the second options are correct.',
+    );
+</script>
+
+<div id='mcq2'></div>
+<script>
+    generateQuiz(
+        'mcq2',
+        'True or False',
+        'The staging area doesn’t exist in the GitHub web interface.',
+        {
+        'True': '',
+        'False': 'There is no equivalent to the staging area when you are working with the GitHub web interface. This means that you will have to commit each change directly and can’t e.g. combine changes from multiple files into the same commit directly via the web interface.',
+        },
+        'True',
+    );
+</script>
+
+<div id='mcq3'></div>
+<script>
+    generateQuiz(
+        'mcq3',
+        'True or False',
+        'Both changed and untracked files can be added to the staging area.',
+        {
+        'True': '',
+        'False': 'Changed files and new (untracked) files can both be added to the staging area and then committed.',
+        },
+        'True',
+    );
+</script>

@@ -1,0 +1,39 @@
+---
+format: html
+---
+
+<script src='../../src/quiz.js'></script>
+
+# 2.1. Exercises
+
+## ✍️ Practice: Cloning a GitHub repo
+
+<div id='mcq1'></div>
+<script>
+    generateQuiz(
+        'mcq1',
+        'Question 1',
+        'Which statement below is <b>not</b> true about GitHub repositories:',
+        {
+        'Immediately after a repository is created on GitHub.com using the website, the repository exists only on GitHub.com and does not exist on your computer (i.e., you need to do something to get a copy of it on your computer).': 'In general you clone your repository if you want to work locally.',
+        'Only the creator of GitHub repository, and people the creator specify, can edit the files in the repository. This is true even when the repository is public.': 'This one is true! If you want to contribute to a public GitHub repository that you don’t have write access to, you can fork it and then create a pull request. Don’t worry — we’ll cover these concepts in detail in Module 4.',
+        'If the repository is public, anyone on the web can view it.': 'In Github.com you can view a lot of public repositories!',
+        'If the repository is public, anyone on the web can edit it.': 'To be able to edit a repository, the owner should give you access first!',
+        },
+        'If the repository is public, anyone on the web can edit it.',
+    );
+</script>
+
+<div id='mcq2'></div>
+<script>
+    generateQuiz(
+        'mcq2',
+        'True or False',
+        'The definition of cloning a repository is to copy/download the entire contents (files, project history, and location of the remote repository) of a remote GitHub.com repository to a computer (e.g., your workspace on a JupyterHub, or your laptop).',
+        {
+        'True': '',
+        'False': 'When you are cloning a repository, you are downloading a <code>.git</code> hidden folder that holds information as the project history. You can retrieve that information using git commands or JupyterLab GUI.',
+        },
+        'True',
+    );
+</script>

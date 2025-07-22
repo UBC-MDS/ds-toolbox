@@ -1,0 +1,55 @@
+---
+format: html
+---
+
+<script src='../../src/quiz.js'></script>
+
+# 4.1. Exercises
+
+## ✍️ Practice: A commit in a bottle
+
+<div id='mcq1'></div>
+<script>
+    generateQuiz(
+        'mcq1',
+        'True or False',
+        'When we <b>commit</b> our changes to Git, the record of changes, the commit message, the timestamp and the user who committed the changes are all uploaded to the Git history on GitHub.',
+        {
+        'True': 'Committing your changes only puts them in the Git history on the local computer you are working on. To get the changes on GitHub you need to do an additional step of pushing the changes to the remote repository on GitHub which we will learn about in the next slide deck.',
+        'False': 'You’re right! The changes (and all the associated information) are not yet on GitHub, they are only in the Git history on the local computer you are working on (i.e., your workspace on the JupyterHub or your laptop).',
+        },
+        'False',
+    );
+</script>
+
+<div id='mcq2'></div>
+<script>
+    generateQuiz(
+        'mcq2',
+        'Question 2',
+        'When working on a project that is under version control, how often should you <code>commit</code> to your local Git repository?',
+        {
+        'After every new unit/addition/fix you add to the project': '',
+        '2-3 times': 'How many important changes did you include in your project? Rather than the absolute number of commits, it is more important to focus on the number of relevant changes. Think of the commits as checkpoints you can revisit if something goes wrong.',
+        'Only once, shortly before the deadline': 'Imagine realizing, just minutes before the deadline, that your last changes were a mistake. Git allows you to revert your project to a specific past commit. However, this is only possible if you have been committing regularly! That’s why it’s good practice to make a commit whenever you add, edit, fix, or remove an important part of your project.',
+        'Obsessively, like every 5 minutes': 'Are you sure you are committing only the relevant changes? You are probably spending too much time writing meaningful commit messages. Also, if you want to revert your project to a particular commit, you will probably spend too much time finding the exact commit you want, since not all of them are for a meaningful change.',
+        },
+        'After every new unit/addition/fix you add to the project',
+    );
+</script>
+
+<div id='mcq3'></div>
+<script>
+    generateQuiz(
+        'mcq3',
+        'Question 3',
+        'Which command(s) below would save the changes of <code>README.md</code> to my local Git repository if you are using the terminal?',
+        {
+        '<code>git init README.md</code> and <code>git commit -m "Add authors and copyright"</code>': 'What does the command <code>git init</code> do? You can read the manual to find out: <code>man git init</code> or <code>git init --help</code>.',
+        '<code>git commit -m "Add authors and copyright"</code>': 'Have you included the README.md file in the staging area?',
+        '<code>git add README.md</code> and <code>git commit -m "Add authors and copyright"</code>': '',
+        '<code>git commit -m README.md "Add authors and copyright"</code>': 'Have you include the README.md file in the staging area?',
+        },
+        '<code>git add README.md</code> and <code>git commit -m "Add authors and copyright"</code>',
+    );
+</script>

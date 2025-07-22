@@ -4,7 +4,7 @@ format:
     page-layout: full
 ---
 
-# 5. What did we just learn?
+# 2. Version control repositories
 
 ::: {.panel-tabset .nav-pills}
 
@@ -12,8 +12,8 @@ format:
 
 <iframe
     class="video"
-    src="https://www.youtube.com/embed/tvR4VXmDjBU" 
-    title="Module 2 Video - What Did We Just Learn?"
+    src="https://www.youtube.com/embed/OkqmjCOBkmI?start=226&end=878&rel=0" 
+    title="Module 3 Video - Version control repositories"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen
@@ -23,7 +23,7 @@ format:
 
 <iframe
     class="slide-deck"
-    src="slides/module2_09.html"
+    src="slides/module3_03.html"
 ></iframe>
 
 :::
