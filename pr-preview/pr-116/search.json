@@ -673,7 +673,7 @@
     "href": "modules/module3/slides/module3_07.html#making-the-commit-jupyterlab-ide-2",
     "title": "Committing changes to a local repository",
     "section": "Making the commit (JupyterLab IDE)",
-    "text": "Making the commit (JupyterLab IDE)\n \nBad messages ❌ :\n\nfixes an error\nadded new code\n\n \nGood messages ✅ :\n\nReorder sections to make the README more welcoming\nFix notebook error to allow for export with images\n\n\nYou can see example of informative commit titles in this slide.\nThe general guideline for the title is to summarize the purpose of the commit as a short descriptive message.\nIt is recommended to write your messages in imperative mood (imagine that your commit should complete the sentence “this commit will…”) and start with a capital letter."
+    "text": "Making the commit (JupyterLab IDE)\n \nBad messages ❌ :\n\nfixes an error\nadded new code\n\n \nGood messages ✅ :\n\nReorder sections to make the README more welcoming\nFix notebook error to allow for export with images\n\n\nYou can see example of informative commit titles in this slide.\nThe general guideline for the title is to summarize the purpose of the commit as a short descriptive message. It is recommended to write your messages in imperative mood (imagine that your commit should complete the sentence “this commit will…”) and start with a capital letter."
   },
   {
     "objectID": "modules/module3/slides/module3_07.html#making-the-commit-jupyterlab-ide-3",
