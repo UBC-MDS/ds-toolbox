@@ -35,7 +35,29 @@ website:
       - section: "**M0. Welcome to The Data Science Toolbox!**"
         contents:
           - text: '0. Welcome!'
-            href: modules/index.qmd        
+            href: modules/index.qmd
+      - section: "**M4. Getting groovy with Git and GitHub**"
+        contents:
+          - href: modules/module4/module4-00-module_learning_outcomes.qmd
+          - href: modules/module4/module4-01-viewieng_the_history_of_your_project.qmd
+          - text: '&nbsp;&nbsp; 1.1. Exercises'
+            href: modules/module4/module4-02-practice_a_history_lesson.qmd
+          - href: modules/module4/module4-03-comparing_commits.qmd
+          - text: '&nbsp;&nbsp; 2.1. Exercises'
+            href: modules/module4/module4-04-practice_know_your_diffs.qmd
+          - href: modules/module4/module4-05-reset_your_git_project_to_an_earlier_state.qmd
+          - text: '&nbsp;&nbsp; 3.1. Exercises'
+            href: modules/module4/module4-06-practice_the_no_regrets_reset.qmd
+          - href: modules/module4/module4-07-revert_changes_made_to_your_git_project.qmd
+          - text: '&nbsp;&nbsp; 4.1. Exercises'
+            href: modules/module4/module4-08-practice_subtraction_through_addition_of_a_new_commit.qmd
+          - href: modules/module4/module4-09-deal_with_merge_conflicts.qmd
+          - text: '&nbsp;&nbsp; 5.1. Exercises'
+            href: modules/module4/module4-10-practice_merge_with_care.qmd
+          - href: modules/module4/module4-11-.gitgnore.qmd
+          - text: '&nbsp;&nbsp; 6.1. Exercises'
+            href: modules/module4/module4-12-practice_ignorance_is_bliss.qmd
+          - href: modules/module4/module4-13-what_did_we_just_learn.qmd
 
 # Since we are declaring options for two formats here (html and revealjs)
 # each qmd file needs to include a yaml block including which format to use for that file.

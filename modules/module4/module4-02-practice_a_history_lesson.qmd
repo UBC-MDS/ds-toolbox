@@ -1,0 +1,47 @@
+---
+format: html
+---
+
+<script src='../../src/quiz.js'></script>
+
+# 1.1. Exercises
+
+## ✍️ Practice: A history lesson
+
+Clone the repo [https://github.com/UBC-MDS/equine_numbers_value_canada](https://github.com/UBC-MDS/equine_numbers_value_canada), and answer the following questions.
+
+<div id='mcq1'></div>
+<script>
+    generateQuiz(
+        'mcq1',
+        'Question 1',
+        'What is the hash or the first commit of the project?',
+        {
+        '<code>cc400df4b2a382f653abd0d9e514f6daae98d2ad</code>': 'Is this the first commit of the project or the first commit of the user flor14?',
+        '<code>e98d2ad</code>': 'To use a shortened version of a commit hash, you should use the first few characters, not the last ones.',
+        '<code>cc400df</code>': 'Is this the first commit of the project or the first commit of the user flor14?',
+        '<code>0896801</code>': 'This is correct, but there is one more correct answer.',
+        '<code>0896801fdd38d461414e0b061b2b2ef3395f7dd0</code>': 'This is correct, but there is one more correct answer.',
+        'The first and the third options are correct': 'Is this the first commit of the project or the first commit of the user flor14?',
+        'The fourth and the fifth options are correct': '',
+        },
+        'The fourth and the fifth options are correct',
+    );
+</script>
+
+<div id='mcq2'></div>
+<script>
+    generateQuiz(
+        'mcq2',
+        'Question 2',
+        'What kind of information is <b>not</b> displayed in a Git project’s history?',
+        {
+        'commit message': '',
+        'date and time': '',
+        'HASH': '',
+        'author': '',
+        'commit number': 'When checking your project history you will see that the commits are displayed from older to newer using the date as a reference, but there is no explicit commit enumeration.',
+        },
+        'commit number',
+    );
+</script>

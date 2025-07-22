@@ -1,0 +1,35 @@
+---
+format: html
+---
+
+<script src='../../src/quiz.js'></script>
+
+# 5.1. Exercises
+
+## ✍️ Practice: Merge with care
+
+```
+$ cat README.md
+
+If you have questions, please
+<<<<<<< HEAD
+open an issue
+=======
+ask your question via email.
+>>>>>>> new_branch_to_merge_later
+```
+
+<div id='mcq1'></div>
+<script>
+    generateQuiz(
+        'mcq1',
+        'Question 1',
+        'Imagine you want to fix a merge conflict in <code>README.md</code> file. What do you have to do if you are working with the terminal and you want to write a different text for this merge conflict (i.e., neitehr of changes is sutisfactory for you)?',
+        {
+        'You should delete everything between <code> <<<<<<< </code> and <code> ======= </code> and leave the remaining text': '',
+        'You should delete everything between <code> ======= </code> and <code> >>>>>>> </code> and leave the remaining text': '',
+        'You should delete everything between <code> <<<<<<< </code> and <code> >>>>>>> </code> and add the text you want instead': '',
+        },
+        'You should delete everything between <code> <<<<<<< </code> and <code> >>>>>>> </code> and add the text you want instead',
+    );
+</script>

@@ -1,0 +1,174 @@
+---
+format: revealjs
+title: Viewieng the history of your project
+title-slide-attributes:
+  data-notes: |
+    In this slide deck we will explore the project's commit history.
+---
+
+```{python}
+#  | echo: false
+%run src/utils.py
+```
+
+
+## Viewing the history of a project
+
+<br>
+
+There are three ways you can view the Git history of a project:
+
+<br>
+
+**On GitHub**
+
+1. In the GitHub web interface through the repo's code commit view
+
+**On your computer**
+
+1. In Jupyter Lab, through the repo's code commit view
+2. In the terminal, using `git log`
+
+
+:::{.notes}
+Do you remember the commit messages we learned about in module 3?
+When reviewing the history of our repository,
+the commit messages are useful since 
+they help us remember what was modified in each commit.
+We will outline three alternative ways 
+to look at the history of the entire project.
+
+Let's look closer at each one in the next few slides.
+       
+* The material of this chapter is based the course DSCI 521: Computing Platforms for Data Science from the UBC Master of Data Science program.
+:::
+
+---
+
+## 1. Viewing the history of a project: GitHub
+
+<br>
+
+![](../../../static/module4/vc-history-gb.png){width="90%" fig-alt="404 image" fig-align="center"}
+
+
+:::{.notes}
+First, we will view the history of our project on github.com.
+On the repository's landing page on GitHub,
+you can click the "*N* commits" link marked in red in the slide 
+(where *N* is the number of commits made on the repo).
+:::
+
+---
+
+## 1. Viewing the history of a project: GitHub
+
+<br>
+
+![](../../../static/module4/vc-history-gb-with-notes.png){width="90%" fig-alt="404 image" fig-align="center"}
+
+
+:::{.notes}
+After clicking the "*N* commits" link, 
+we can see that there are only three commits in this project.
+You can identify all parts of each commit,
+including the day it was made, its author, and hash.
+You can also go back to browse the state of the repository
+at the time of this commit by clicking the `<>` button.
+:::
+
+---
+
+## 2. Viewing the history of a project: Jupyter Lab
+
+<br>
+
+![](../../../static/module4/vc-history-jl-2.png){width="50%" fig-alt="404 image" fig-align="center"}
+
+:::{.notes}
+In JupyterLab, you can access the history of your project by looking in the "History" tab within the Git extension side panel (as we did in the previous module).
+In this view,
+we can see the same information as we could online:
+the time when the commit was made, its author, and hash.
+:::
+
+---
+
+## 3. Viewing the history of a project: the Terminal
+
+<br>
+
+![](../../../static/module4/vc-git-log.png){width="90%" fig-alt="404 image" fig-align="center"}
+
+
+:::{.notes}
+You can use the command `git log` to view your project's history in the terminal.
+In this slide, we've indicated with a red line how the three commits in the `git log` output 
+correspond to the information in Jupyter Lab's "History" tab.
+
+It is important to note that `git log` output 
+shows the long version of the commit hash, 
+not the 7-character version that is displayed by default in Jupyter Lab or GitHub. 
+Except your project is extremely large,
+Git won't require more than 7 characters to identify the commit. 
+In consequence, 
+if you need the commit hash and you are using the terminal,
+you can only copy and paste the first 7 hash characters of the commit.
+:::
+
+---
+
+## 3. Viewing the history of a project: the Terminal
+
+<br>
+
+![](../../../static/module4/vc-git-log-oneline.png){width="90%" fig-alt="404 image" fig-align="center"}
+
+
+:::{.notes}
+Another option is adding the flag `--oneline` 
+to the command `git log`. The command `git log --oneline` 
+will provide a more succinct version of the information in each commit.
+This is often more convenient as it is easier 
+to digest and get an overview of the project history,
+but it can be tedious to type out each time.
+Here it would be good to create a shell alias,
+which we learned about in module 2!
+Executing `alias gl="git log --oneline"`
+means that we can simply type `gl` 
+each time we want to view the `git log` output.
+Refer to module 2 for more details
+around aliases and how to make them persist through reboots.
+
+The terminal allows greater flexibility 
+when it comes to displaying the history of the project. 
+If you would like to know what other possibilities 
+you have for using the `git log` command, 
+you can access the help by typing the command `git log --help` 
+(any operating system) or `man git log` (MacOS and Linux).
+:::
+
+---
+
+## Viewing the history of a project
+
+<br>
+
+**On GitHub**
+
+1. On GitHub through the repo's code commit view ✔️
+
+**On your computer**
+
+1. In Jupyter Lab through the repo's code commit view ✔️
+2. In the terminal using `git log` ✔️
+
+
+:::{.notes}
+We have covered three distinct methods for viewing your project's history.
+Prior to starting the multiple choice questions below,
+give these commands a try yourself in an example Git repository!
+:::
+
+
+# Let's apply what we learned!
