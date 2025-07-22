@@ -29,7 +29,7 @@ mkdir notes
 
 :::{.notes}
 Let's go back to the `~/Documents` directory and create a subfolder called `notes`.
-For this we first use the `~` home  directory shortcut,
+For this we first use the `~` home directory shortcut,
 and then the `mkdir` command
 (MaKe DIRectory).
 

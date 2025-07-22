@@ -46,7 +46,7 @@ cannot easily be expressed in plain text.
 
 ## Tracking the repository history using commit messages
 
-![](../../../static/module3/vc-local-github-3.png){width="85%" fig-alt="404 image"  fig-align="center"}
+![](../../../static/module3/vc-local-github-3.png){width="85%" fig-alt="404 image" fig-align="center"}
 
 
 :::{.notes}
@@ -64,7 +64,7 @@ that will give you more flexibility to track your changes.
 
 ## Tracking the repository history using commit messages
 
-![](../../../static/module3/vc-local-github.png){width="75%" fig-alt="404 image"  fig-align="center"}
+![](../../../static/module3/vc-local-github.png){width="75%" fig-alt="404 image" fig-align="center"}
 
 
 :::{.notes}
@@ -171,7 +171,7 @@ starting with how to create the remote repository!
 <br>
 <br>
 
-![](../../../static/module3/vc-new-repository-github.png){width="90%" fig-alt="404 image"  fig-align="center"}
+![](../../../static/module3/vc-new-repository-github.png){width="90%" fig-alt="404 image" fig-align="center"}
 
 :::{.notes}
 🙌  **Practice**
@@ -193,7 +193,7 @@ on the left side of the screen.
 
 ## 1. Creating a remote repository on GitHub
 
-![](../../../static/module3/vc-new-repository-create.png){width="55%" fig-alt="404 image"  fig-align="center"}
+![](../../../static/module3/vc-new-repository-create.png){width="55%" fig-alt="404 image" fig-align="center"}
 
 
 :::{.notes}

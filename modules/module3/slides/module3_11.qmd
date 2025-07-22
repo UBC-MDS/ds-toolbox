@@ -130,7 +130,7 @@ after pulling and refreshing.
 
 <br>
 
-![](../../../static/module3/vc-pull-history.png){width="90%" fig-alt="404 image"  fig-align="center"}
+![](../../../static/module3/vc-pull-history.png){width="90%" fig-alt="404 image" fig-align="center"}
 
 
 :::{.notes}
@@ -151,7 +151,7 @@ you begin editing any files in your local repository.
 
 <br>
 
-![](../../../static/module3/vc-pull-terminal-jl.png){width="90%" fig-alt="404 image"  fig-align="center"}
+![](../../../static/module3/vc-pull-terminal-jl.png){width="90%" fig-alt="404 image" fig-align="center"}
 
 
 :::{.notes}

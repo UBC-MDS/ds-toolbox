@@ -190,7 +190,7 @@ To check the status of the files using the terminal (`Untracked` / `Changed` / `
 
 If you would be using the terminal outside Jupyter Lab,
 you would not have access to the side panel
-that shows which files are  `Untracked`, `Changed`, and `Staged`.
+that shows which files are `Untracked`, `Changed`, and `Staged`.
 To check the status of all files in your repository using the terminal
 you can instead use the command `git status`.
 In this slide you can see how the different parts of the output from `git status`

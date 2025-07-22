@@ -126,7 +126,7 @@ When committing changes, you need to include a title/summary for each message (t
 :::{.notes}
 You can see example of informative commit titles in this slide.   
 
-The general guideline for the title is to summarize the purpose of the commit as a short descriptive message.  
+The general guideline for the title is to summarize the purpose of the commit as a short descriptive message. 
 It is recommended to write your messages in imperative mood (imagine that your commit should complete the sentence "this commit will...") and start with a capital letter.
 :::
 
