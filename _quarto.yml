@@ -58,6 +58,28 @@ website:
           - text: '&nbsp;&nbsp; 6.1. Exercises'
             href: modules/module4/module4-12-practice_ignorance_is_bliss.qmd
           - href: modules/module4/module4-13-what_did_we_just_learn.qmd
+      - section: "**M5. Branches, forks, and streams… Welcome to the Git nature walk!**"
+        contents:
+          - href: modules/module5/module5-00-module_learning_outcomes.qmd
+          - href: modules/module5/module5-01-the_role_of_branches.qmd
+          - text: '&nbsp;&nbsp; 1.1. Exercises'
+            href: modules/module5/module5-02-practice_be_careful_if_you_cant_see_the_forest_because_of_all_the_branches.qmd
+          - href: modules/module5/module5-03-how_branches_are_related.qmd
+          - text: '&nbsp;&nbsp; 2.1. Exercises'
+            href: modules/module5/module5-04-practice_how_branches_are_related.qmd
+          - href: modules/module5/module5-05-merging_branches.qmd
+          - text: '&nbsp;&nbsp; 3.1. Exercises'
+            href: modules/module5/module5-06-practice_all_roads_merge_to_main.qmd
+          - href: modules/module5/module5-07-when_merging_branches_goes_social:_opening_pull_requests.qmd
+          - text: '&nbsp;&nbsp; 4.1. Exercises'
+            href: modules/module5/module5-08-practice_you_are_cordially_invited_to_review_my_changes.qmd
+          - href: modules/module5/module5-09-collaborative_github_workflows:_branching.qmd
+          - text: '&nbsp;&nbsp; 5.1. Exercises'
+            href: modules/module5/module5-10-practice_branching_out.qmd
+          - href: modules/module5/module5-11-collaborative_github_workflows:_forking.qmd
+          - text: '&nbsp;&nbsp; 6.1. Exercises'
+            href: modules/module5/module5-12-practice_forking_your_repository.qmd
+          - href: modules/module5/module5-13-what_did_we_just_learn.qmd
 
 # Since we are declaring options for two formats here (html and revealjs)
 # each qmd file needs to include a yaml block including which format to use for that file.
