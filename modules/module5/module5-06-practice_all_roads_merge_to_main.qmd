@@ -1,0 +1,42 @@
+---
+format: html
+---
+
+<script src='../../src/quiz.js'></script>
+
+# 3.1. Exercises
+
+## ✍️ Practice: All roads merge to `main`
+
+<div id='mcq1'></div>
+<script>
+    generateQuiz(
+        'mcq1',
+        'Question 1',
+        'Would you delete a branch after merging it?',
+        {
+        'Yes, to avoid having extra copies of the code that you do not need anymore': 'A branch in Git is a pointer to the previous version of the code, so it does not contain an entire extra copy of the code.',
+        'Yes, if I am not going to develop more on it': '',
+        'No, I could be discarding important information': 'Once the branch has been merged, all its information is preserved in the commit history, so deleting the branch will not discard any information',
+        },
+        'Yes, if I am not going to develop more on it',
+    );
+</script>
+
+![](../../static/module5/module5-terminal.png){width="80%" fig-alt="terminal"}
+
+<div id='mcq2'></div>
+<script>
+    generateQuiz(
+        'mcq2',
+        'Question 2',
+        'What branches are you merging in the above example?',
+        {
+        'the <code>app</code> branch with the <code>fix-app-slider</code> branch': '',
+        'the <code>app</code> branch with the <code>main</code> branch': 'Are you sure you are on the <code>main</code> branch? Where can you find which branch you are currently working on?',
+        'the <code>fix-app-slider</code> branch with the <code>main</code> branch': 'Are you sure you are on the <code>main</code> branch? Where can you find which branch you are currently working on?',
+        'the <code>canadian-languages</code> branch with the <code>app</code> branch': 'Is <code>canadian-languages</code> referring to a branch?',
+        },
+        'the <code>app</code> branch with the <code>fix-app-slider</code> branch',
+    );
+</script>

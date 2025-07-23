@@ -1,0 +1,37 @@
+---
+format: html
+---
+
+<script src='../../src/quiz.js'></script>
+
+# 6.1. Exercises
+
+## ✍️ Practice: Ignorance is bliss
+
+<div id='mcq1'></div>
+<script>
+    generateQuiz(
+        'mcq1',
+        'True or False',
+        '<code>**/</code> is prepended to an entry in <code>.gitignore</code> to tell Git that this entry is a folder.',
+        {
+        'True': '<code>**/</code> is used to tell Git that the same file/folder name should be ignored in the subdirectories of a repo as well.',
+        'False': '',
+        },
+        'False',
+    );
+</script>
+
+<div id='mcq2'></div>
+<script>
+    generateQuiz(
+        'mcq2',
+        'True or False',
+        'The <code>.gitignore</code> file itself can be committed and pushed to a remote repository.',
+        {
+        'True': 'Yes, <code>.gitignore</code> is like any other file in your repository, so if you want to share it with your collaborators, you need to commit it and push it to the remote repository.',
+        'False': '<code>.gitignore</code> is like any other file in your repository, so if you want to share it with your collaborators, you need to commit it and push it to the remote repository.',
+        },
+        'True',
+    );
+</script>

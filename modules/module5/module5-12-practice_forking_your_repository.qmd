@@ -1,0 +1,56 @@
+---
+format: html
+---
+
+<script src='../../src/quiz.js'></script>
+
+# 6.1. Exercises
+
+## ✍️ Practice: Forking your repository
+
+<div id='mcq1'></div>
+<script>
+    generateQuiz(
+        'mcq1',
+        'True or False',
+        'When working on a forked repository, it is good practice to create a new branch before submitting a pull request.',
+        {
+        'True': '',
+        'False': 'Making a pull request from a branch with a meaningful name provides reviewers with helpful context. Otherwise, they will receive changes from multiple users’ <code>main</code> branches.',
+        },
+        'True',
+    );
+</script>
+
+<div id='mcq2'></div>
+<script>
+    generateQuiz(
+        'mcq2',
+        'True or False',
+        'After forking a GitHub repository, you should clone the repository’s copy in your GitHub account to begin working on it locally.',
+        {
+        'True': 'You probably don’t have write access to the original repository to push modifications directly to it. This is why you have to clone your fork.',
+        'False': 'You will clone, pull, and push to your GitHub account’s cloned repository (the fork). Contributions to the original GitHub repository will be made by pull requests from your fork to the original repository.',
+        },
+        'True',
+    );
+</script>
+
+<div id='mcq3'></div>
+<script>
+    generateQuiz(
+        'mcq3',
+        'Question 3',
+        'Which of the following statements are True regarding GitHub issues?',
+        {
+        'They are effective at recording decisions that were made, problems that were identified and addressed, and all other communication surrounding the project.': 'This is correct, but so are some other options.',
+        'They are useful in both collaborative and your own private projects.': 'This is correct, but so are some other options.',
+        'You can use GitHub issues for project management to plan and track your work.': 'This is correct, but so are some other options.',
+        'They are only useful for collaborative projects.': 'They are very useful to keep track of tasks and recording your thoughts in individual projects as well.',
+        'All of the above options are correct': 'Not quite.',
+        'The first three options are all correct': '',
+        'The first two options are both correct': 'These are both correct, but so is another option.',
+        },
+        'The first three options are all correct',
+    );
+</script>

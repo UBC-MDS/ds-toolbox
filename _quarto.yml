@@ -1,0 +1,123 @@
+project:
+  type: website
+  title: "The Data Science Toolbox"
+  # Setting the execution dir allows us to use `data/`
+  # instead of relative paths in regular code cells
+  execute-dir: project
+  # `render` executes and renders modules, slides, and exercises into `_site`
+  render:
+    - modules/**/*.qmd
+    - modules/index.qmd
+  # `resources` copies files into `_site` without execution
+  resources:
+    - styles.scss
+    - src/utils.py
+    - data
+
+# Setting the pyodide resources allows live code cells to see files
+# previously copied into `_site`
+# by copying them to the virtual file system used by live coding
+pyodide:
+  resources:
+    - src/utils.py
+    - data
+
+website:
+  page-navigation: true
+  bread-crumbs: false
+  sidebar:
+    collapse-level: 1
+    logo: static/logo.svg
+    search: true
+    style: 'docked'
+    background: 'primary'
+    contents:
+      - section: "**M0. Welcome to The Data Science Toolbox!**"
+        contents:
+          - text: '0. Welcome!'
+            href: modules/index.qmd
+      - section: "**M4. Getting groovy with Git and GitHub**"
+        contents:
+          - href: modules/module4/module4-00-module_learning_outcomes.qmd
+          - href: modules/module4/module4-01-viewieng_the_history_of_your_project.qmd
+          - text: '&nbsp;&nbsp; 1.1. Exercises'
+            href: modules/module4/module4-02-practice_a_history_lesson.qmd
+          - href: modules/module4/module4-03-comparing_commits.qmd
+          - text: '&nbsp;&nbsp; 2.1. Exercises'
+            href: modules/module4/module4-04-practice_know_your_diffs.qmd
+          - href: modules/module4/module4-05-reset_your_git_project_to_an_earlier_state.qmd
+          - text: '&nbsp;&nbsp; 3.1. Exercises'
+            href: modules/module4/module4-06-practice_the_no_regrets_reset.qmd
+          - href: modules/module4/module4-07-revert_changes_made_to_your_git_project.qmd
+          - text: '&nbsp;&nbsp; 4.1. Exercises'
+            href: modules/module4/module4-08-practice_subtraction_through_addition_of_a_new_commit.qmd
+          - href: modules/module4/module4-09-deal_with_merge_conflicts.qmd
+          - text: '&nbsp;&nbsp; 5.1. Exercises'
+            href: modules/module4/module4-10-practice_merge_with_care.qmd
+          - href: modules/module4/module4-11-.gitgnore.qmd
+          - text: '&nbsp;&nbsp; 6.1. Exercises'
+            href: modules/module4/module4-12-practice_ignorance_is_bliss.qmd
+          - href: modules/module4/module4-13-what_did_we_just_learn.qmd
+      - section: "**M5. Branches, forks, and streams… Welcome to the Git nature walk!**"
+        contents:
+          - href: modules/module5/module5-00-module_learning_outcomes.qmd
+          - href: modules/module5/module5-01-the_role_of_branches.qmd
+          - text: '&nbsp;&nbsp; 1.1. Exercises'
+            href: modules/module5/module5-02-practice_be_careful_if_you_cant_see_the_forest_because_of_all_the_branches.qmd
+          - href: modules/module5/module5-03-how_branches_are_related.qmd
+          - text: '&nbsp;&nbsp; 2.1. Exercises'
+            href: modules/module5/module5-04-practice_how_branches_are_related.qmd
+          - href: modules/module5/module5-05-merging_branches.qmd
+          - text: '&nbsp;&nbsp; 3.1. Exercises'
+            href: modules/module5/module5-06-practice_all_roads_merge_to_main.qmd
+          - href: modules/module5/module5-07-when_merging_branches_goes_social:_opening_pull_requests.qmd
+          - text: '&nbsp;&nbsp; 4.1. Exercises'
+            href: modules/module5/module5-08-practice_you_are_cordially_invited_to_review_my_changes.qmd
+          - href: modules/module5/module5-09-collaborative_github_workflows:_branching.qmd
+          - text: '&nbsp;&nbsp; 5.1. Exercises'
+            href: modules/module5/module5-10-practice_branching_out.qmd
+          - href: modules/module5/module5-11-collaborative_github_workflows:_forking.qmd
+          - text: '&nbsp;&nbsp; 6.1. Exercises'
+            href: modules/module5/module5-12-practice_forking_your_repository.qmd
+          - href: modules/module5/module5-13-what_did_we_just_learn.qmd
+
+# Since we are declaring options for two formats here (html and revealjs)
+# each qmd file needs to include a yaml block including which format to use for that file.
+# https://github.com/quarto-dev/quarto-cli/issues/4583
+format:
+  html:
+    callout-icon: false
+    theme: [united, styles.scss]
+    linkcolor: '#122baf'
+    highlight-style: atom-one
+    grid:
+      sidebar-width: 350px
+      margin-width: 800px
+  live-html:
+    callout-icon: false
+    theme: [united, styles.scss]
+    linkcolor: '#122baf'
+    highlight-style: atom-one
+    grid:
+      sidebar-width: 350px
+      margin-width: 800px
+  revealjs:
+    theme: styles.scss
+    width: 100%
+    monofont: Ubuntu Mono
+    mainfont: Ubuntu
+    font-size: 0.5em
+    monobackgroundcolor: '#F1F3F5'
+    highlight-style: atom-one
+    # tango atom-one  nord
+    transition: slide
+    controls-layout: bottom-right
+    show-notes: true
+    slide-number: true
+    code-line-numbers: false
+    code-copy: true
+    progress: false
+    history: false
+    menu: false
+    execute:
+      echo: true

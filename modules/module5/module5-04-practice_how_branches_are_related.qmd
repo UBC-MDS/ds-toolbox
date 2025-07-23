@@ -1,0 +1,44 @@
+---
+format: html
+---
+
+<script src='../../src/quiz.js'></script>
+
+# 2.1. Exercises
+
+## ✍️ Practice: How branches are related
+
+<div id='mcq1'></div>
+<script>
+    generateQuiz(
+        'mcq1',
+        'True or False',
+        'The labels <code>origin/main</code> and <code>origin/HEAD</code> always will be associated to the more recent commit in the history of a project that you have just cloned from GitHub.',
+        {
+        'True': 'What happens if the latest change in the GitHub repository was made on a branch other than <code>main</code>? Try reproducing this on your own computer by creating a new branch in the remote repository and then pulling the changes into your local repository!',
+        'False': 'The term <code>origin</code> refers to the remote repository. If the most recent change in the remote repository you are cloning was made on a branch other than <code>main</code>, the label on the latest commit will appear as (<code>origin/new-branch</code>). <code>origin/HEAD</code> will always point to the latest commit on the main branch, unless the default branch has been changed in the GitHub settings.',
+        },
+        'False',
+    );
+</script>
+
+![](../../static/module5/module5-exercise4-cl.png){fig-alt="output git log" width="60%"}
+
+<div id='mcq2'></div>
+<script>
+    generateQuiz(
+        'mcq2',
+        'Question 2',
+        'After running <code>git log --oneline --all --graph</code> in your repository, you see the tree shown above. Select the options that are TRUE.',
+        {
+        'A. There are changes to the <code>main</code> branch that have not been pushed to GitHub yet': 'This option is not correct. All changes in the main branch have been pushed to GitHub. Notice that the <code>main</code> label (the local <code>main</code> branch) and <code>origin/main</code> (the remote <code>main</code> branch) labels are positioned on the same commit.',
+        'B. There are changes to the <code>lecture-todo</code> branch that have not been pushed to GitHub yet': 'This is correct, but there is at least one other correct option!',
+        'C. The commit 266de1e exists only on your local computer': 'This is correct, but there is at least one other correct option! <br> The <code>origin/lecture-todo</code> label, which points to the last change in the remote <code>lecture-todo</code> branch, is downstream from these two commits. This means that commit 266de1e was created after the last pull or clone from GitHub.',
+        'D. The commits 6d60de8 and b66e2d9 exist both on your local computer and on GitHub': 'This is correct, but there is at least one other correct option!',
+        'All the options are correct': 'A is incorrect. All changes in the <code>main</code> branch have been pushed to GitHub. Notice that the <code>main</code> label (the local <code>main</code> branch) and <code>origin/main</code> (the remote <code>main</code> branch) labels are positioned on the same commit.',
+        'A and B are correct': 'B is correct! As you can see in the image, the <code>lecture-todo</code> label (the local <code>lecture-todo</code> branch) is ahead of the <code>origin/lecture-todo</code> label (the remote <code>lecture-todo</code> branch). This means that some commits in your local copy of the repository have not been pushed to GitHub yet.',
+        'B, C, and D are correct': '',
+        },
+        'B, C, and D are correct',
+    );
+</script>

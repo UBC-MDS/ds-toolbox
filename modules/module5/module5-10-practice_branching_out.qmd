@@ -1,0 +1,39 @@
+---
+format: html
+---
+
+<script src='../../src/quiz.js'></script>
+
+# 5.1. Exercises
+
+## ✍️ Practice: Branching out
+
+<div id='mcq1'></div>
+<script>
+    generateQuiz(
+        'mcq1',
+        'Question 1',
+        'In which cases would branching be better than using forks?',
+        {
+        'The owner of the repository have set branch protection rules to the <code>main</code>  branch': 'Even if it is a good practice to avoid contributors pushing code directly to the <code>main</code> branch by accident, protecting the branch is not a requirement to collaborate using branching.',
+        'You want to work with Pull Requests': 'It is always recommended to use Pull Requests, no matter what your collaboration style is.',
+        'You have write access to the repository': 'If you do not have write access, it would be impossible to contribute without forking the repository first.',
+        },
+        'You have write access to the repository',
+    );
+</script>
+
+<div id='mcq2'></div>
+<script>
+    generateQuiz(
+        'mcq2',
+        'Question 2',
+        'Which of the following are good branch names?',
+        {
+        'arman, florencia, joel': 'Using the names of collaborators as branch names is not meaningful  as it does not convey what each team member is working on.',
+        'fix-dockerfile, feature-testing, feature-app-modules': 'There isn’t a single correct naming convention. You’ll need to establish a rule within your team or follow the conventions of the repository you’re contributing to.',
+        '1616789, 1235348, 1555684': 'Using only numbers can be confusing during merges. For example, naming a branch after the issue ID it addresses might seem logical, but it’s uninformative and could lead to mistakes..',
+        },
+        'fix-dockerfile, feature-testing, feature-app-modules',
+    );
+</script>

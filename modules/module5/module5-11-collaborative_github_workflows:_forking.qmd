@@ -1,0 +1,29 @@
+---
+format:
+  html:
+    page-layout: full
+---
+
+# 6. Collaborative GitHub workflows: Forking
+
+::: {.panel-tabset .nav-pills}
+
+## Video
+
+<iframe
+    class="video"
+    src="https://www.youtube.com/embed/Tn1VRCSiRzc?start=1682&end=2144&rel=0" 
+    title="Module 5 Video - Collaborative GitHub workflows: Forking"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+></iframe>
+
+## Slides
+
+<iframe
+    class="slide-deck"
+    src="slides/module5_11.html"
+></iframe>
+
+:::
