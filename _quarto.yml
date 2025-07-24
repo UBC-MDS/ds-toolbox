@@ -35,7 +35,20 @@ website:
       - section: "**M0. Welcome to The Data Science Toolbox!**"
         contents:
           - text: '0. Welcome!'
-            href: modules/index.qmd        
+            href: modules/index.qmd
+      - section: "**M6. File Names, Project Organization, Virtual Environments**"
+        contents:
+          - href: modules/module6/module6-00-module_learning_outcomes.qmd
+          - href: modules/module6/module6-01-file_names:_best_practices.qmd
+          - text: '&nbsp;&nbsp; 1.1. Exercises'
+            href: modules/module6/module6-02-practice_whats in a name.qmd
+          - href: modules/module6/module6-03-project_organization.qmd
+          - text: '&nbsp;&nbsp; 2.1. Exercises'
+            href: modules/module6/module6-04-practice_tidy_desk_tidy_mind.qmd
+          - href: modules/module6/module6-05-virtual_environments.qmd
+          - text: '&nbsp;&nbsp; 3.1. Exercises'
+            href: modules/module6/module6-06-practice_another_snake_in_the_python_ecosystem.qmd
+          - href: modules/module6/module6-07-what_did_we_just_learn.qmd
 
 # Since we are declaring options for two formats here (html and revealjs)
 # each qmd file needs to include a yaml block including which format to use for that file.
