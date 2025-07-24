@@ -1,0 +1,766 @@
+[
+  {
+    "objectID": "modules/module7/slides/module7_09.html#module-learning-outcomes",
+    "href": "modules/module7/slides/module7_09.html#module-learning-outcomes",
+    "title": "What Did we Learn and What to Expect in Assignment 7",
+    "section": "Module Learning Outcomes",
+    "text": "Module Learning Outcomes\nIn this module you learned how to\n\nPerform literate data science programming using Jupyter Notebooks.\nUse Markdown to efficiently produce formatted text.\nEnhance productivity via advanced JupyterLab features.\nExport notebooks to various formats for sharing your work.\n\n\nThe assignment will concentrate on the learning objectives as well as building knowledge on existing concepts."
+  },
+  {
+    "objectID": "modules/module7/slides/module7_05.html#using-multiple-views-of-the-same-content",
+    "href": "modules/module7/slides/module7_05.html#using-multiple-views-of-the-same-content",
+    "title": "Intermediate JupyterLab tips and tricks",
+    "section": "Using multiple views of the same content",
+    "text": "Using multiple views of the same content\n\nIn JupyterLab, you can change the way you view content in three main ways:\n\nOpening an additional view of the same notebook.\nOpening an additional view of the output of a specific cell.\nRender cell output on the side of a code cell instead of below it.\n\n\nAs we’ve learned previously, it is possible to have multiple windows open in JupyterLab.\nIn fact, we can even view the same content in more than one window, which can be helpful when for example, you want to have two parts of a long notebook visible at the same time, or have specific space constraints to work around.\nThere are 3 main ways that can change how we can view content in JupyterLab:\n\nOpening an additional view of the same notebook\nOpening an additional view of the output of a specific cell\nRender cell output on the side of a code cell instead of below it\n\nLet’s see how views look like in JupyterLab in the next slides."
+  },
+  {
+    "objectID": "modules/module7/slides/module7_05.html#additional-notebook-views",
+    "href": "modules/module7/slides/module7_05.html#additional-notebook-views",
+    "title": "Intermediate JupyterLab tips and tricks",
+    "section": "1. Additional notebook views",
+    "text": "1. Additional notebook views\n\n\n\nAdditional notebook views can be created by right clicking the notebook’s title bar, and choose “New View for Notebook”. An alternative way is to go to the “File” menu, and choose “New View for Notebook”.\nAs you can see here in the screenshot at the bottom of the slide, both open tabs are views of the same Jupyter notebook. Now you can work on and edit a part of the notebook, while also looking at a different part and potentially editing that part too.\nRemember, though, you can only have one cell running at a time. This is because you still have only one kernel for your notebook, even though you’re working with it from different views."
+  },
+  {
+    "objectID": "modules/module7/slides/module7_05.html#additional-cell-output-views",
+    "href": "modules/module7/slides/module7_05.html#additional-cell-output-views",
+    "title": "Intermediate JupyterLab tips and tricks",
+    "section": "2. Additional cell output views",
+    "text": "2. Additional cell output views\n\n\n\nTo create an output view for any computational cell, you can right-click anywhere in the cell, and then choose “Create New View for Output”. This can be useful when an output can’t fit on the screen under the code cell and needs to be repositioned.\nYou can reposition the location of your new output window as you wish, by dragging the title bar of the output window to the desired position."
+  },
+  {
+    "objectID": "modules/module7/slides/module7_05.html#side-by-side-output-views",
+    "href": "modules/module7/slides/module7_05.html#side-by-side-output-views",
+    "title": "Intermediate JupyterLab tips and tricks",
+    "section": "3. Side-by-side output views",
+    "text": "3. Side-by-side output views\n\n\nWhen vertical space is precious, another option is to enable side-by-side rendering of cell outputs. This way the output of each cell will appear horizontally to the right of the cell, thereby saving vertical space.\nThis has the advantage that it applies to all output cells. You don’t have to create a separate view for each cell as you might with cell output views.\nIn order to enable this feature, either go the “View” menu and choose “Render Side-by-Side”, or press Shift + R on your keyboard. When you do that, your notebook will look as it does in this slide."
+  },
+  {
+    "objectID": "modules/module7/slides/module7_05.html#exporting-notebooks",
+    "href": "modules/module7/slides/module7_05.html#exporting-notebooks",
+    "title": "Intermediate JupyterLab tips and tricks",
+    "section": "Exporting notebooks",
+    "text": "Exporting notebooks\n\nTo share your work with others, it is possible to export your notebook to various formats in JupyterLab, including:\n\nHTML\nPDF\nMarkdown\n\n\n\n\nTo share your work with others, it is possible to export your notebook to various formats in JupyterLab, including:\n\nHTML\nPDF\nMarkdown\n\nExporting your notebooks to these formats means that you can share them with your colleagues even if they don’t have JupyterLab installed themself. This makes it easy to collect feedback from others, since they can work in a format that is already familiar to them.\nWe will go through some of the key export options in the next few slides, and you can always read more about Jupyter notebook exports in the documentation."
+  },
+  {
+    "objectID": "modules/module7/slides/module7_05.html#notebook-to-html",
+    "href": "modules/module7/slides/module7_05.html#notebook-to-html",
+    "title": "Intermediate JupyterLab tips and tricks",
+    "section": "1. Notebook to HTML",
+    "text": "1. Notebook to HTML\n\n\nTo export your notebook to HTML, go to File -&gt; Save and Export Notebook As... -&gt; HTML in the JupyterLab menu bar.\nYou can see how our notebook looks like when converted to HTML in this slide. This is the format used to show content on the web. Converting to HTML often means that all your plots and animations will show up just as they do in the JupyterLab interface.\nTherefore, converting a notebook to HTML is convenient when you want to share it with someone who does not have JupyterLab installed on their computer, while keeping most formatting and visualizations intact.\nAfter exporting, you can simply send the HTML file in a email to your colleague and they can download and open the file in any modern browser, such as Firefox or Google Chrome."
+  },
+  {
+    "objectID": "modules/module7/slides/module7_05.html#notebook-to-pdf",
+    "href": "modules/module7/slides/module7_05.html#notebook-to-pdf",
+    "title": "Intermediate JupyterLab tips and tricks",
+    "section": "2. Notebook to PDF",
+    "text": "2. Notebook to PDF\n\n\nThere are two ways to convert notebooks to PDF: the regular PDF option which requires LaTeX to be installed, and the newer “WebPDF” option.\nThe WebPDF option is generally preferable, since this makes the output PDF document look more like what you see in JupyterLab, whereas the LaTeX PDF option will format the output document quite differently.\nYou can export to WebPDF by going to File -&gt; Save and Export Notebook As... -&gt; WebPDF.\nIf you don’t have this option available, you might need to run pip install nbconvert[webpdf] in the environment where you have JupyterLab installed (more details on webpdf in the documentation).\nIt’s worth noting that the WebPDF option does not support rendering images that are inserted using HTML tags."
+  },
+  {
+    "objectID": "modules/module7/slides/module7_05.html#notebook-to-markdown",
+    "href": "modules/module7/slides/module7_05.html#notebook-to-markdown",
+    "title": "Intermediate JupyterLab tips and tricks",
+    "section": "3. Notebook to Markdown",
+    "text": "3. Notebook to Markdown\n\n\nWe’ve learned quite a bit about the Markdown format so far in this module. The Markdown option converts your notebook to a Markdown file that only contains plain text, and can be opened with any text editor. In order to see the rendered Markdown file, however, you need to open it using JupyterLab or another IDE like VS Code.\nIn the screenshot on this slide, you can see what an example notebook would look like when converted to Markdown. Note how computational cells are converted to Markdown code blocks with appropriate syntax highlighting.\nIt is actually possible to work with notebooks directly in Markdown format instead of the default JSON format in which .ipynb files are stored. This has the advantage of making the notebook source files easier on the eyes, which can be helpful when reviewing other people’s code on GitHub. This is why it’s preferred to store notebooks as Mardown documents in some organizations.\nTo do this, you need to install the Jupytext extension. We will show you how to install extensions in the next few slides."
+  },
+  {
+    "objectID": "modules/module7/slides/module7_05.html#jupyterlab-extensions",
+    "href": "modules/module7/slides/module7_05.html#jupyterlab-extensions",
+    "title": "Intermediate JupyterLab tips and tricks",
+    "section": "JupyterLab extensions",
+    "text": "JupyterLab extensions\n\nJupyterLab is built to be modular and extensible by nature\nWhen a feature is needed, developers can add it to JupyterLab by creating an extension\nJupyterLab itself is mainly a collection of various extensions\n\n\n\nJupyterLab is built to be modular and extensible by nature. When a feature does not already exist in JupyterLab, developers can create an extension to provide that feature for JupyterLab.\nDo you remember using the Git extension in JupyterLab in previous modules? Well, as the name suggests, that was an extension that was added on to JupyterLab when you followed the installation guide in Assignment 0!\nAs a matter of fact, JupyterLab itself is mainly a collection of various extensions. We will cover some of the highlights for JupyterLab extensions in the next few slides and you can find out more about JupyterLab extensions in the documentation."
+  },
+  {
+    "objectID": "modules/module7/slides/module7_05.html#installing-jupyterlab-extensions",
+    "href": "modules/module7/slides/module7_05.html#installing-jupyterlab-extensions",
+    "title": "Intermediate JupyterLab tips and tricks",
+    "section": "Installing JupyterLab extensions",
+    "text": "Installing JupyterLab extensions\n\n\nJupyterLab extensions can be either in source or prebuilt format.\n\nPrebuilt\n\nMost JupyterLab extensions are in the prebuilt format\nThey can be installed by running conda install &lt;extension_name&gt;\nThey can be used right away after installation\n\nSource\n\nSome older JupyterLab extensions still use the source format\nThese can be installed via the Extension Manager or by using jupyter labextension install &lt;extension_name&gt;\nA source extension cannot be used right away, and requires rebuilding JupyterLab\n\n\n\nAlways refer to an extension’s documentation to find the recommended way of installation.\n\n\nJupyterLab extensions can be either in source or prebuilt format.\nPrebuilt\n\nMost JupyterLab extensions are in the prebuilt format\nThey can be installed by running conda install &lt;extension_name&gt;\nThey can be used right away after installation\n\n\nSource\n\nSome older JupyterLab extensions still use the source format\nThese can be installed via the Extension Manager GUI or by running jupyter labextension install &lt;extension_name&gt; in the command line\nA source extension cannot be used right away, and requires rebuilding JupyterLab.\n\nThis rebuild operation requires a program called Node.js to be installed in your Conda environment. You can install Node.js by running conda install nodejs.\n\n\nSince there are different ways of installing extensions, make sure to always refer to an extension’s documentation to find the recommended way of installation.\nAs an example, here is the link to the installation steps recommended by the jupyterlab-git extension. This is an example of a Conda installation of a prebuilt extension."
+  },
+  {
+    "objectID": "modules/module7/slides/module7_05.html#jupyterlab-extension-manager",
+    "href": "modules/module7/slides/module7_05.html#jupyterlab-extension-manager",
+    "title": "Intermediate JupyterLab tips and tricks",
+    "section": "JupyterLab Extension Manager",
+    "text": "JupyterLab Extension Manager\n\n\nJupyterLab provides a GUI for managing extensions.\nAs shown in the screenshots, you can view a list of installed extensions by clicking on the puzzle-piece icon on the left-hand side bar of JupyterLab.\nSuppose that we’re looking for a particular extension called “jupyterlab-drawio”. If you type “draw” in the search box at the top and hit Enter, you’ll see that this extension appears at the top. Now you just need to click “Install”, and your desired extension will be installed.\nNote that, since the extensions that you can install using the GUI are not prebuilt, you will be prompted with a message box to rebuild JupyterLab. But no need to worry! Simply click the “Rebuild” button. Finally, you’ll see a “Build Complete” message if everything is successful. It’s safest to click “Save and Reload” so that you don’t lose any unsaved changes."
+  },
+  {
+    "objectID": "modules/module7/slides/module7_01.html#what-is-a-jupyter-notebook",
+    "href": "modules/module7/slides/module7_01.html#what-is-a-jupyter-notebook",
+    "title": "Jupyter notebooks",
+    "section": "What is a Jupyter notebook?",
+    "text": "What is a Jupyter notebook?\n\n\nA Jupyter notebook is a document that contains narrative text, alongside runnable code\nJupyter notebooks have an .ipynb extension\n\n\n\n\nA Jupyter notebook is a document that contains narrative text, alongside runnable code\nJupyter notebooks have an .ipynb extension"
+  },
+  {
+    "objectID": "modules/module7/slides/module7_01.html#creating-new-notebooks",
+    "href": "modules/module7/slides/module7_01.html#creating-new-notebooks",
+    "title": "Jupyter notebooks",
+    "section": "Creating new notebooks",
+    "text": "Creating new notebooks\n\n\n\nYou can create new notebooks in three ways:\nThe first way is to click the blue + button on the top left corner of the file explorer tab, which opens a new Launcher.\nYou can then click on any one of the available environment kernels to create a new notebook with that kernel. This is marked with the red arrow on the left side of this slide.\nThe second way is to click the icon in the main working area for the conda environment you want to launch, which is marked by the red arrow on the right side of this slide."
+  },
+  {
+    "objectID": "modules/module7/slides/module7_01.html#creating-new-notebooks-1",
+    "href": "modules/module7/slides/module7_01.html#creating-new-notebooks-1",
+    "title": "Jupyter notebooks",
+    "section": "Creating new notebooks",
+    "text": "Creating new notebooks\n\n\n\nThe third way to create a new Jupyter notebook is to right-click on the empty space of the file explorer, and then choose “New notebook”. You’ll be asked to choose a kernel right afterwards, and then your new notebook will be ready."
+  },
+  {
+    "objectID": "modules/module7/slides/module7_01.html#building-blocks-of-notebooks",
+    "href": "modules/module7/slides/module7_01.html#building-blocks-of-notebooks",
+    "title": "Jupyter notebooks",
+    "section": "Building blocks of notebooks",
+    "text": "Building blocks of notebooks\n\n\n\nA Jupyter notebook consists of cells.\nA cell is a block of characters, that can be interpreted in different ways depending on its type.\nEach cell in a notebook can be one of these three types:\n\nCode\n\nAllows the execution of code in multiple languages.\n\nMarkdown\n\nContains formatted text. We will look more at Markdown in Module 7.\n\nRaw\n\nIn a raw cell, everything appears as is, without any formatting or code execution."
+  },
+  {
+    "objectID": "modules/module7/slides/module7_01.html#cell-selection-modes",
+    "href": "modules/module7/slides/module7_01.html#cell-selection-modes",
+    "title": "Jupyter notebooks",
+    "section": "Cell selection modes",
+    "text": "Cell selection modes\nAn active cell in a Jupyter notebook can be in either command or edit mode:\n\n\n\nWhenever you interact with a cell inside a Jupyter notebook, it becomes activated. This means that the cell is selected, and ready to be edited or executed.\nAn active cell in a Jupyter notebook can be in either command or edit mode:\n\nCommand mode:\n\nYou don’t have a cursor inside the cell\nThe cell has a grey background\nYou can hit Esc or click outside a cell to switch from edit to command mode\n\nEdit mode:\n\nYou have a cursor inside the cell\nYou can start typing or edit the code or text inside a cell\nThe cell has a white background\nYou can hit Enter or click in a cell to switch from command to edit mode"
+  },
+  {
+    "objectID": "modules/module7/slides/module7_01.html#cell-selection-modes-1",
+    "href": "modules/module7/slides/module7_01.html#cell-selection-modes-1",
+    "title": "Jupyter notebooks",
+    "section": "Cell selection modes",
+    "text": "Cell selection modes\n\n\nYou can also find out whether you’re in command or edit mode by looking at the status bar when you have an active cell."
+  },
+  {
+    "objectID": "modules/module7/slides/module7_01.html#code-cells-and-kernels",
+    "href": "modules/module7/slides/module7_01.html#code-cells-and-kernels",
+    "title": "Jupyter notebooks",
+    "section": "Code cells and kernels",
+    "text": "Code cells and kernels\n\n\nCode cells contain executable code written in a specific programming language.\nEach notebook is connected to a kernel, which is the backend engine in charge of running code in a notebook.\nCode cells are executed using a notebook’s kernel.\nYou may run code cells in any order.\n\n\n\nCode cells contain executable code written in a specific programming language.\nEach notebook is connected to a kernel, which is the backend engine in charge of running code in a notebook.\n\nFor example, a Jupyter notebook can be connected to an Python kernel.\nRemember that we installed ipykernel in our Conda environments to make them visible to JupyterLab? ipykernel is the kernel we’ve been talking about here, which is nothing but an interactive Python engine that works with JupyterLab.\nWhen you create a notebook with the kernel from a particular Conda environment, you’ll have access to all packages installed in that environment. It is basically the same as running Python code in that environment.\n\nCode cells are executed using a notebook’s kernel\n\nWhen you run a code cell, the code inside the cell is sent to the kernel\nThe kernel executes the code. If there are any outputs, those will be sent back to the Jupyter notebook, and we’ll see them as the cell’s output.\n\nYou may run code cells in any order.\n\nEach time you run a code cell, the number to the left of the code cell (e.g. [8]:) is incremented by 1. This helps you keep track of the order of executions."
+  },
+  {
+    "objectID": "modules/module7/slides/module7_01.html#running-code-cells",
+    "href": "modules/module7/slides/module7_01.html#running-code-cells",
+    "title": "Jupyter notebooks",
+    "section": "Running code cells",
+    "text": "Running code cells\nTo run a code cell:\n\nFirst make sure the cell is selected\nThen, either click the little play button in the notebook toolbar, or\nHit Shift + Enter on your keyboard\n\n\n\nTo run a code cell:\n\nFirst make sure the cell is selected\n\nYou can click anywhere in a code cell to select and activate it\nAn active code cell is indicated by a blue vertical bar on its left\n\nThen, either click the little play button in the notebook toolbar, or\nHit Shift + Enter on your keyboard\n\nYou can also use Ctrl + Enter to run a cell. The difference is that Shift + Enter runs the cell, then advances to the next cell, whereas with Ctrl + Enter the focus remains on the currently selected cell.\n\n\nNote how [ ]: next to the cell changes to [1]: when you run the cell. Anytime you run this cell, this execution count is incremented by 1."
+  },
+  {
+    "objectID": "modules/module7/slides/module7_01.html#useful-keyboard-shortcuts-for-cell-manipulation",
+    "href": "modules/module7/slides/module7_01.html#useful-keyboard-shortcuts-for-cell-manipulation",
+    "title": "Jupyter notebooks",
+    "section": "Useful keyboard shortcuts for cell manipulation",
+    "text": "Useful keyboard shortcuts for cell manipulation\nWhen you are in command mode, you can use the following keyboard shortcuts to perform a variety of cell actions:\n\n↑: move cell selection to above cell\n↓: move cell selection to below cell\nShift + ↑: extend selection to above cell\nShift + ↓: extend selection to below cell\nA: insert a new cell above current cell\nB: insert a new cell below current cell\nDD: delete current cell\nC: copy current cell\nX: cut current cell\nV: paste already cut or copied cell below current cell\nZ: undo last cell action\nShift + Z: redo last undone cell action\nCtrl + F: find match in notebook\n\nYou’re already familiar with the following shortcuts:\n\nCtrl + Enter: run current cell\nShift + Enter: run current cell and advance\n\n\nYou can always find all keyboard shortcuts using the “Settings” menu in JupyterLab interface. Just go to “Settings” -&gt; “Advanced Settings Editor”, and in the newly opened window, select “Keyboard Shortcuts” on the left sidebar."
+  },
+  {
+    "objectID": "modules/module7/slides/module7_01.html#consoles",
+    "href": "modules/module7/slides/module7_01.html#consoles",
+    "title": "Jupyter notebooks",
+    "section": "Consoles",
+    "text": "Consoles\n\nConsoles in JupyterLab are interactive command lines connected to a kernel.\n\n\nThere are times that you want to quickly experiment with short pieces of code, but you don’t necessarily want the code you write to be part of your Jupyter notebook.\nUsing an interactive console is a great idea in such a situation. The nice thing about it is that you can open a console that’s connected to your notebook’s kernel, so it will be aware of all variables, arrays, functions, etc. that you have defined in your notebook.\nIn order to open a console that’s connected to your notebook’s kernel, right-click on your notebook’s name in the tab bar, and choose “New Console for Notebook”."
+  },
+  {
+    "objectID": "modules/module7/slides/module7_01.html#consoles-1",
+    "href": "modules/module7/slides/module7_01.html#consoles-1",
+    "title": "Jupyter notebooks",
+    "section": "Consoles",
+    "text": "Consoles\n\n\nHere I have opened a console for the notebook which I already created. As you can see, I print a variable called myString, which stores a string value. Because the console is connected to the notebook’s kernel, I can access that variable right from the console.\nYou can resize or move the console window as you wish. Also, remember that you can run the piece of code that you’ve entered in the input area by pressing Shift + Enter.\nSince the Jupyter Console is suitable for quick exploration, an increasing number of well-known data science packages have started to include it as part of their documentation. For example, the well-known numpy package allows you to try out NumPy directly on their web page without installing anything using a special Jupyter Console (under the “Try NumPy” section at https://numpy.org/)"
+  },
+  {
+    "objectID": "modules/module7/slides/module7_01.html#getting-help-when-writing-code",
+    "href": "modules/module7/slides/module7_01.html#getting-help-when-writing-code",
+    "title": "Jupyter notebooks",
+    "section": "Getting help when writing code",
+    "text": "Getting help when writing code\n\nAuto-completion:\nYou can partially type the name of a variable, function, class, or any other known name in your Python session, and then press Tab to see the available options for auto-completion.\n\n\nLike in a terminal, you can take advantage of the auto-completion capability of JupyterLab (through the IPython kernel).\nWhenever you partially type the name of a variable, function, class, etc. you can press Tab on your keyboard to see the available options. You can then press Tab and Shift + Tab to cycle through the completion and press Enter to insert the one you want.\nAuto-completion is a very handy feature also to see what methods and functions are available in a package. You can type the packages alias (e.g. np in this case for the numpy package) followed by a ., and then hit Tab to see the available options.\nIt’s important to remember that, you won’t get auto-completion until the expressions that you’re looking for are known in your Python session. This means that, for example, unless you run import numpy as np, auto-completion won’t be available for any function belonging to the Numpy package."
+  },
+  {
+    "objectID": "modules/module7/slides/module7_01.html#getting-help-when-writing-code-1",
+    "href": "modules/module7/slides/module7_01.html#getting-help-when-writing-code-1",
+    "title": "Jupyter notebooks",
+    "section": "Getting help when writing code",
+    "text": "Getting help when writing code\n\nContextual help:\nTo see a function’s docstring, press Shift + Tab while your cursor is anywhere inside a function’s name characters:\n\n\nWhen you’re writing code, you might not remember all arguments that a particular function accepts, or the type outputs. Sometimes it’s also very helpful to be able to see a few examples of how a function can be used.\nIn these situations, you might want to have a quick look at a function’s documentation (i.e. “docstring” in Python lingo).\nIn JupyterLab, you can press Shift + Tab while your cursor is anywhere inside a function’s name characters, to quickly make the function’s documentation appear as a pop-up window.\nKeep in mind that, the documentation pop-up content depends on the cursor location. If you move your cursor to a different function and hit Shift + Tab again, the helper pop-up would show the other function’s documentation."
+  },
+  {
+    "objectID": "modules/module7/slides/module7_01.html#getting-help-when-writing-code-2",
+    "href": "modules/module7/slides/module7_01.html#getting-help-when-writing-code-2",
+    "title": "Jupyter notebooks",
+    "section": "Getting help when writing code",
+    "text": "Getting help when writing code\n\n\n\nAnother way of accessing the docstring for various functions is to open the “Contextual Help” window by right-clicking any cell and choosing “Show Contextual Help”.\nAs soon as you click on a function’s name, the contextual help window will update to show the help for that function. This can be super useful when working with a package that you are not very familiar with and we recommend that you have the contextual help open all the time in this scenario."
+  },
+  {
+    "objectID": "modules/module7/slides/module7_01.html#jupyter-notebooks-reproducibility",
+    "href": "modules/module7/slides/module7_01.html#jupyter-notebooks-reproducibility",
+    "title": "Jupyter notebooks",
+    "section": "Jupyter notebooks & reproducibility",
+    "text": "Jupyter notebooks & reproducibility\n\n\nIn Jupyter notebooks, it is possible (and common) to execute code cells out of order. If not careful, this can lead to reproducibility issues.\nOnce you are done with your analysis, it’s a good idea to take the following steps to ensure that your results and outputs are reproducible:\n\nRestart your notebook kernel\n\nBy doing this, you would make sure that the Python engine is fresh and does not contain any variables, functions, etc. Sometimes, you might define a variable and then delete the cell containing that piece of code. If someone else runs your notebook, they will run into error. Make sure your notebook contains everything it needs to run properly by restarting your kernel, and testing everything fresh!\nTo restart the kernel, go to the “Kernel” menu and choose “Restart Kernel…”, or click the “Restart the kernel” button in your notebook’s toolbar (shown with a circular arrow icon).\n\nAfter restarting, run all cells from the top\n\nThis way, you would be sure that your out-of-order executions do not affect the reproducibility of your code.\nTo run all cells from the top, go to the “Run” menu and choose “Run All Cells”\n\n\nYou can do the above two steps; namely, restarting and running all cells, all in one go: just click the dedicated button in your notebook’s toolbar as shown in the screenshot here on the right.\nIt’s not a bad idea to explore other similar options in the “Kernel” and “Run” menus. For example, it’s also possible and sometimes helpful to run a notebook from the top, but up to a selected cell, or run a notebook beginning from a selected cell."
+  },
+  {
+    "objectID": "modules/module7/slides/module7_01.html#the-command-palette",
+    "href": "modules/module7/slides/module7_01.html#the-command-palette",
+    "title": "Jupyter notebooks",
+    "section": "The Command Palette",
+    "text": "The Command Palette\n\n\n\nWhenever you happen to forget where a particular command is, you can take advantage of the Command Palette in JupyterLab.\nTo open the Command Palette, go to the “View” menu and choose “Activate Command Palette”, or use the corresponding keyboard shortcut.\nIn the search box that appears, you can type the name of the command you’re looking for. The nice thing is that, it works well even if you partially remember the command’s name!"
+  },
+  {
+    "objectID": "modules/module7/module7-09-what_did_we_just_learn.html",
+    "href": "modules/module7/module7-09-what_did_we_just_learn.html",
+    "title": "5. What Did We Just Learn?",
+    "section": "",
+    "text": "5. What Did We Just Learn?\n\nVideoSlides",
+    "crumbs": [
+      "**M7. JupyterLab**",
+      "5. What Did We Just Learn?"
+    ]
+  },
+  {
+    "objectID": "modules/module7/module7-07-advanced_jupyterlab_tips_and_tricks.html",
+    "href": "modules/module7/module7-07-advanced_jupyterlab_tips_and_tricks.html",
+    "title": "4. Advanced JupyterLab tips and tricks",
+    "section": "",
+    "text": "4. Advanced JupyterLab tips and tricks\n\nVideoSlides",
+    "crumbs": [
+      "**M7. JupyterLab**",
+      "4. Advanced JupyterLab tips and tricks"
+    ]
+  },
+  {
+    "objectID": "modules/module7/module7-05-intermediate_jupyterlab_tips_and_tricks.html",
+    "href": "modules/module7/module7-05-intermediate_jupyterlab_tips_and_tricks.html",
+    "title": "3. Intermediate JupyterLab tips and tricks",
+    "section": "",
+    "text": "3. Intermediate JupyterLab tips and tricks\n\nVideoSlides",
+    "crumbs": [
+      "**M7. JupyterLab**",
+      "3. Intermediate JupyterLab tips and tricks"
+    ]
+  },
+  {
+    "objectID": "modules/module7/module7-03-markdown_for_text_formatting.html",
+    "href": "modules/module7/module7-03-markdown_for_text_formatting.html",
+    "title": "2. Markdown for text formatting",
+    "section": "",
+    "text": "2. Markdown for text formatting\n\nVideoSlides",
+    "crumbs": [
+      "**M7. JupyterLab**",
+      "2. Markdown for text formatting"
+    ]
+  },
+  {
+    "objectID": "modules/module7/module7-01-jupyter_notebooks.html",
+    "href": "modules/module7/module7-01-jupyter_notebooks.html",
+    "title": "1. Jupyter notebooks",
+    "section": "",
+    "text": "1. Jupyter notebooks\n\nVideoSlides",
+    "crumbs": [
+      "**M7. JupyterLab**",
+      "1. Jupyter notebooks"
+    ]
+  },
+  {
+    "objectID": "modules/module6/slides/module6_07.html#module-learning-outcomes",
+    "href": "modules/module6/slides/module6_07.html#module-learning-outcomes",
+    "title": "What We Learned and What to Expect in Assignment 6",
+    "section": "Module Learning Outcomes",
+    "text": "Module Learning Outcomes\nIn this module you learned how to\n\nName files in a human- and machine-readable manner.\nOrganize projects with a meaningful folder hierarchy.\nInstall packages using the conda package manager.\nManage virtual environments with conda to keep track of project-specific package versions.\n\n\nIt is now time to put into practice everything we have learned!"
+  },
+  {
+    "objectID": "modules/module6/slides/module6_03.html#the-importance-of-project-organization",
+    "href": "modules/module6/slides/module6_03.html#the-importance-of-project-organization",
+    "title": "Project Organization",
+    "section": "The importance of project organization",
+    "text": "The importance of project organization\nBenefits of a standard project structure:\n\nWell-organized code is self documenting!\nA new collaborator would immediately know where to look for specific things\nYour future self would find it much easier to reproduce your own results\n\n\nTherefore:\n\nThe code and data that produce the end result are as important as the final product.\nIt’s hard to change your mind once you’re halfway there, so it’s best to start with a standard project structure from the very beginning.\n\n\nIn the first part of this module, we talked about how using certain filename conventions makes finding and processing relevant information easier.\nWhen it comes to organizing an entire project, it’s even more important to structure files and folders in a logical and commonly accepted way. This is because there are several benefits to maintaining a standard project structure:\n\nWell-organized code is self documenting!\nA new collaborator would immediately know where to look for specific things\nYour future self would find it much easier to reproduce your own results\n\nTherefore:\n\nThe code and data that produce the end result are as important as the final product\nIt’s hard to change your mind once you’re halfway there, so it’s best to start with a standard project structure from the very beginning"
+  },
+  {
+    "objectID": "modules/module6/slides/module6_03.html#example-of-a-good-project-structure",
+    "href": "modules/module6/slides/module6_03.html#example-of-a-good-project-structure",
+    "title": "Project Organization",
+    "section": "Example of a good project structure",
+    "text": "Example of a good project structure\nproject-name/\n├── .gitignore\n├── README.md\n├── environment.yaml\n├── LICENSE.md\n├── data/              *.csv        \n│   ├── processed/\n│   └── raw/\n├── docs/              *.md\n├── reports/           *.html, *.pdf, *.tex\n├── notebooks/         *.ipynb\n└── src/               *.py\n    ├── __init__.py\n    │\n    ├── data\n    │   └── make_dataset.py\n    │\n    ├── models\n    │   ├── predict_model.py\n    │   └── train_model.py\n    │\n    └── visualization\n        └── visualize.py\n\nIn this slide, you can see an example of what a well-organized project structure looks like.\nNote that each category of files has its own special folder.\nWhen I look at this repo, I would immediately know where to look to find the data or where reports are kept, even if I haven never seen this project repo before.\nWhen most people agree on using more or less the same structure for organizing their projects, good things will happen. It will also be much easier for people to collaborate with each other, and for yourself to manage your project as the size and complexity of the project grows over time.\nLet’s have a closer looks at each of these directories in the next slide."
+  },
+  {
+    "objectID": "modules/module6/slides/module6_03.html#files-and-folders-in-a-standard-project-structure",
+    "href": "modules/module6/slides/module6_03.html#files-and-folders-in-a-standard-project-structure",
+    "title": "Project Organization",
+    "section": "Files and folders in a standard project structure:",
+    "text": "Files and folders in a standard project structure:\n\n\n.gitignore: List of files not to commit to your repo\nREADME.md: General explanations about the project\nenvironment.yaml: Information about packages/libraries needed to reproduce the computational environment\ndata/: This is where the raw and processed data lives. Since your data usually doesn’t need version control, you can add this folder in .gitignore.\ndocs/: Contains documentation about the project, which can sometimes be automatically generated\nnotebooks/: This is where Jupyter notebook files go, which are used for exploration and communication.\nsrc/: Code files are usually stored in this folder, which can itself have subfolders as needed.\n\n\nHere, I just want to tell you about the role of each file and folder in an example of a standard project repo.\nNote that the naming of particular folders might be slightly different between different projects. For example, one might choose to call their code-containing folder just code or script, instead of src. But it’s still fairly easy to see that such a folder hosts programming codes in the project folder, and not data or reports."
+  },
+  {
+    "objectID": "modules/module6/slides/module6_00.html#module-learning-outcomes",
+    "href": "modules/module6/slides/module6_00.html#module-learning-outcomes",
+    "title": "Module Learning Outcomes",
+    "section": "Module Learning Outcomes",
+    "text": "Module Learning Outcomes\nIn this module students will learn how to\n\nName files in a human- and machine-readable manner.\nOrganize projects with a meaningful folder hierarchy.\nInstall packages using the conda package manager.\nManage virtual environments with conda to keep track of project-specific package versions.\n\n\nIn this module, we will be learning about the importance of effective and efficient organization of coding projects in terms of file names, folder structures, and virtual environments."
+  },
+  {
+    "objectID": "modules/module6/module6-04-practice_tidy_desk_tidy_mind.html",
+    "href": "modules/module6/module6-04-practice_tidy_desk_tidy_mind.html",
+    "title": "2.1. Exercises",
+    "section": "",
+    "text": "sales-proj/\n├── .gitignore\n├── README.md\n├── proj-env.yaml\n├── data/\n├── reports/\n|   ├── figures/\n│   └── visualize.py\n│\n└── src/\n    ├── __init__.py\n    ├── make_dataset.py\n    │\n    ├── analysis\n    │   ├── stat_model.py\n    │   └── ml_model.py",
+    "crumbs": [
+      "**M6. File Names, Project Organization, Virtual Environments**",
+      "&nbsp;&nbsp; 2.1. Exercises"
+    ]
+  },
+  {
+    "objectID": "modules/module6/module6-04-practice_tidy_desk_tidy_mind.html#practice-tidy-desk-tidy-mind",
+    "href": "modules/module6/module6-04-practice_tidy_desk_tidy_mind.html#practice-tidy-desk-tidy-mind",
+    "title": "2.1. Exercises",
+    "section": "",
+    "text": "sales-proj/\n├── .gitignore\n├── README.md\n├── proj-env.yaml\n├── data/\n├── reports/\n|   ├── figures/\n│   └── visualize.py\n│\n└── src/\n    ├── __init__.py\n    ├── make_dataset.py\n    │\n    ├── analysis\n    │   ├── stat_model.py\n    │   └── ml_model.py",
+    "crumbs": [
+      "**M6. File Names, Project Organization, Virtual Environments**",
+      "&nbsp;&nbsp; 2.1. Exercises"
+    ]
+  },
+  {
+    "objectID": "modules/module6/module6-00-module_learning_outcomes.html",
+    "href": "modules/module6/module6-00-module_learning_outcomes.html",
+    "title": "0. Module Learning Outcomes",
+    "section": "",
+    "text": "0. Module Learning Outcomes\n\nVideoSlides",
+    "crumbs": [
+      "**M6. File Names, Project Organization, Virtual Environments**",
+      "0. Module Learning Outcomes"
+    ]
+  },
+  {
+    "objectID": "modules/index.html",
+    "href": "modules/index.html",
+    "title": "Welcome to The Data Science Toolbox!",
+    "section": "",
+    "text": "Welcome to The Data Science Toolbox!\nThis course is part of the Key Capabilities for Data Science program and covers topics related to workflows, plateforms and tools used in data analysis.\nIn this course, we will dive into the world of data science tools and utilities. While these are not strictly required for data analysis, they are necessary for efficient, reproducible, and collaborative data science practices, and are all important building blocks for a successful and sustained data science career.\nCourse prerequisites: Programming in Python for Data Science",
+    "crumbs": [
+      "**M0. Welcome to The Data Science Toolbox!**",
+      "0. Welcome!"
+    ]
+  },
+  {
+    "objectID": "modules/module6/module6-01-file_names:_best_practices.html",
+    "href": "modules/module6/module6-01-file_names:_best_practices.html",
+    "title": "1. File Names: Best Practices",
+    "section": "",
+    "text": "1. File Names: Best Practices\n\nVideoSlides",
+    "crumbs": [
+      "**M6. File Names, Project Organization, Virtual Environments**",
+      "1. File Names: Best Practices"
+    ]
+  },
+  {
+    "objectID": "modules/module6/module6-03-project_organization.html",
+    "href": "modules/module6/module6-03-project_organization.html",
+    "title": "2. Project Organization",
+    "section": "",
+    "text": "2. Project Organization\n\nVideoSlides",
+    "crumbs": [
+      "**M6. File Names, Project Organization, Virtual Environments**",
+      "2. Project Organization"
+    ]
+  },
+  {
+    "objectID": "modules/module6/module6-05-virtual_environments.html",
+    "href": "modules/module6/module6-05-virtual_environments.html",
+    "title": "3. Virtual Environments",
+    "section": "",
+    "text": "3. Virtual Environments\n\nVideoSlides",
+    "crumbs": [
+      "**M6. File Names, Project Organization, Virtual Environments**",
+      "3. Virtual Environments"
+    ]
+  },
+  {
+    "objectID": "modules/module6/module6-07-what_did_we_just_learn.html",
+    "href": "modules/module6/module6-07-what_did_we_just_learn.html",
+    "title": "4. What Did We Just Learn?",
+    "section": "",
+    "text": "4. What Did We Just Learn?\n\nVideoSlides",
+    "crumbs": [
+      "**M6. File Names, Project Organization, Virtual Environments**",
+      "4. What Did We Just Learn?"
+    ]
+  },
+  {
+    "objectID": "modules/module6/slides/module6_01.html#examples-of-bad-filenames",
+    "href": "modules/module6/slides/module6_01.html#examples-of-bad-filenames",
+    "title": "File Names: Best Practices",
+    "section": "Examples of bad filenames",
+    "text": "Examples of bad filenames\n\nmy-figure.png\nfigure1-scatterplot-*-vs-&.png\nFigure 1 scatterplot of asterisks vs ampersands.png\n\nHere are a few examples of filenames that are not recommended to use. Pause here for a minute and study these examples; Can you point out a few problems with the examples in this slide?\nWe will come back to these and show examples of more effective filenames in the next few slides."
+  },
+  {
+    "objectID": "modules/module6/slides/module6_01.html#three-principles-for-effective-filenames",
+    "href": "modules/module6/slides/module6_01.html#three-principles-for-effective-filenames",
+    "title": "File Names: Best Practices",
+    "section": "Three principles for effective filenames",
+    "text": "Three principles for effective filenames\n\n\nBe easy to read and informative to a human\nBe machine-readable\nPlay well with default ordering\n\n\nIn general, we’d like filenames to be easy to process by the computer and easy to read and explore by a human. This means that a filename should ideally include both an easily readable human description of what is in the file, and metadata such as dates or tags that make it easy to parse for a computer. It’s also very helpful to have files show up in a logical order when viewed in a file explorer or when listed in the terminal.\nLet’s look closer at each one of these in the next few slides."
+  },
+  {
+    "objectID": "modules/module6/slides/module6_01.html#human-readable-filenames",
+    "href": "modules/module6/slides/module6_01.html#human-readable-filenames",
+    "title": "File Names: Best Practices",
+    "section": "1. Human-readable filenames",
+    "text": "1. Human-readable filenames\n\n\nName contains info on content\nConnects to the concept of a slug from semantic URLs\n\n\nExample:\nWhich set of filenames do you want to see at 3 a.m. before a deadline?\n\n\nFilenames provide an opportunity to describe what a file contains so that we don’t have to open each file in order to know what is in it (imagine how tedious this would be!).\nTherefore, it is important to write filenames in a way that makes them easy to interpret for a human reader. It is always preferred to use filenames that reflect something important about the content of the files.\nThe informative part of a filename is often called a “slug”. This is similar to how the last part of a URL is also called a “slug” and is supposed to be relevant to the content of the webpage it points to. If it nicely matches the content of the webpage and is easy to read, chances are more people will click on it, and mention it in other places. It will also help search engines identify the content of a webpage."
+  },
+  {
+    "objectID": "modules/module6/slides/module6_01.html#human-readable-filenames-1",
+    "href": "modules/module6/slides/module6_01.html#human-readable-filenames-1",
+    "title": "File Names: Best Practices",
+    "section": "1. Human-readable filenames",
+    "text": "1. Human-readable filenames\n\nAn uninformative filename:\nmy-figure.png\n\nA filename that is not human-readable:\n1_scat_len_int.png\n\nAn easy to read and informative filename:\nfig1_scatterplot-length-vs-interest.png\n\nIn this slide, the name my-figure.png does not contain much information about what this file contains.\nWhat if you created multiple figures for different purposes? Then they would all have the same name.\nThe name 1_scat_len_int.png does seem to provide some information, but it is not easy for a human to understand the file contents just from reading the filename.\nA more effective name for this file would be something like fig1_scatterplot-length-vs-interest.png. This name is easy to parse for a human and includes relevant information about the content of the file."
+  },
+  {
+    "objectID": "modules/module6/slides/module6_01.html#machine-readable-filenames-special-characters-and-spaces",
+    "href": "modules/module6/slides/module6_01.html#machine-readable-filenames-special-characters-and-spaces",
+    "title": "File Names: Best Practices",
+    "section": "2. Machine-readable filenames: Special characters and spaces",
+    "text": "2. Machine-readable filenames: Special characters and spaces\n\nAn ineffective name that contains the special characters * and &:\nfigure1-scatterplot-*-vs-&.png\n\nAn ineffective name that contains spaces:\nFigure 1 scatterplot of asterisks vs ampersands.png\n\nA name that is easy to parse for a computer:\nfig1_scatterplot-asterisks-vs-ampersands.png\n\nIn a data science project, we usually read files using a script or inside the terminal environment. Therefore, it is critical to use filenames that are both machine friendly and consistent across files with similar or related content.\nFor example, spaces and punctuation should be avoided in filenames. The reason is that these characters carry special meaning in most programming languages and in Bash. So working with a filename that contains these characters requires special treatment to prevent a script or the terminal from misinterpreting it.\nReturning to our example in the first slide, figure1-scatterplot-*-vs-&.png is not an effective file name. This is because it contains special characters, some of which have special meanings in the shell and will therefore be hard to type in (e.g. *, which we learned is a wildcard matching any sequence of characters in Bash).\nThe second name, Figure 1 scatterplot of asterisks vs ampersands.png, might initially look like a suitable filename because it is easy for us humans to read and it does not appear to contain any special characters.\nHowever, it does contain spaces, and these are often hard to work with, both in Bash and in programming languages like Python. It is therefore recommended to use hyphens instead of spaces to separate words.\nThe words in the filename are also not separated in a way that is easy for a human to read, and they are not descriptive for the contents of the file. The name 1986-01-28_raw-data-from-challenger-o-rings.txt addresses all these issues."
+  },
+  {
+    "objectID": "modules/module6/slides/module6_01.html#machine-readable-filenames-deliberate-use-of-delimiters",
+    "href": "modules/module6/slides/module6_01.html#machine-readable-filenames-deliberate-use-of-delimiters",
+    "title": "File Names: Best Practices",
+    "section": "2. Machine-readable filenames: Deliberate use of delimiters",
+    "text": "2. Machine-readable filenames: Deliberate use of delimiters\nDeliberate use of - and _ allows recovery of metadata from filenames:\n\n_ underscore used to delimit units of metadata we want later\n- hyphen used to delimit words so reading becomes easier\n\n\nAn ineffective name without delimiters:\nJun6th Figure 1 scatterplot of asterisks vs ampersands.png\n\nA name where metadata fields are separated by _:\nfig1_2022-06-20_scatterplot-asterisks-vs-ampersands.png\n\nConsistent use of delimiters for files with similar content:\n\n\nAlthough filenames should never contain punctuation characters such as * or ?, we can use underscores or hyphens to separate meaningful parts of a filename such as metadata or tags.\nUsing an extended example from our previous slide, we can see that Jun6th Figure 1 scatterplot of asterisks vs ampersands.png is an ineffective name where it is hard for a machine to figure out the different distinct metadata contained within the filename (e.g., date, figure number, and description).\nA better name would be fig1_2022-06-20_scatterplot-asterisks-vs-ampersands.png, where the format of the name is &lt;figure number&gt;_&lt;date&gt;_&lt;description&gt;, which can easily be parsed programmatically by using underscore as a separator for the different parts.\nThis also avoid using upper-case letters, which can be confusing since filenames are case sensitive on MacOS and Linux, but not on Windows.\nWhen using delimiters to separate metadata fields, it is important to be consistent across files with similar content as we can see an example of in the screenshot in this slide.\nDeliberate and consistent use of delimiters makes it easy to recover all metadata in our filenames in the future, using pattern matching via globbing or using regular expressions as we will see in the next slide."
+  },
+  {
+    "objectID": "modules/module6/slides/module6_01.html#machine-readable-filenames-pattern-matching-in-the-terminal",
+    "href": "modules/module6/slides/module6_01.html#machine-readable-filenames-pattern-matching-in-the-terminal",
+    "title": "File Names: Best Practices",
+    "section": "2. Machine-readable filenames: Pattern matching in the terminal",
+    "text": "2. Machine-readable filenames: Pattern matching in the terminal\nFiles in the directory:\n\n\nExample: Globbing with lsto narrow file listing:\n\n\nMachine-readable filenames make it easy to find a group of desired filenames by using special patterns to match parts of the filenames. These patterns are called “glob”s, and finding filenames using this method is called “globbing”.\nIn this example here, we have specified a particular pattern, namely *Plasmid* to find all filenames that contain this word. This is an example of “globbing” using the * wildcard as you might remember from Module 2.\nIf we’ve already been careful to include Plasmid in the name of all files with related content, then finding those files using a script or in the terminal would have been be very easy."
+  },
+  {
+    "objectID": "modules/module6/slides/module6_01.html#machine-readable-filenames-pattern-matching-in-the-file-browser",
+    "href": "modules/module6/slides/module6_01.html#machine-readable-filenames-pattern-matching-in-the-file-browser",
+    "title": "File Names: Best Practices",
+    "section": "2. Machine-readable filenames: Pattern matching in the file browser",
+    "text": "2. Machine-readable filenames: Pattern matching in the file browser\nExample: Using MacOS Finder search\n\n\n\nUsing these filename conventions are not only useful in the terminal, but they also make it easy to find the files you need in file browser on Linux, MacOS, or Windows, as can be seen in this slide."
+  },
+  {
+    "objectID": "modules/module6/slides/module6_01.html#machine-readable-filenames-pattern-matching-in-a-programming-language",
+    "href": "modules/module6/slides/module6_01.html#machine-readable-filenames-pattern-matching-in-a-programming-language",
+    "title": "File Names: Best Practices",
+    "section": "2. Machine-readable filenames: Pattern matching in a programming language",
+    "text": "2. Machine-readable filenames: Pattern matching in a programming language\nExample: Using regex in Python\n\n\n\nThe same goes for when you want to find those files using a Python or R script. In this case, you have a similar pattern matching mechanism available to you called “regular expressions” or “regex”. Regular expressions are simply search patterns for finding desired strings of characters that we can use in a programming language like Python. They work similarly to globbing, but have a more advanced functionality.\nThe takeaway here is that, if you consistently use machine-readable filenames, you can easily find what you want later, whether it be in the terminal, in a file explorer or using a script!"
+  },
+  {
+    "objectID": "modules/module6/slides/module6_01.html#works-well-with-default-ordering",
+    "href": "modules/module6/slides/module6_01.html#works-well-with-default-ordering",
+    "title": "File Names: Best Practices",
+    "section": "3. Works well with default ordering",
+    "text": "3. Works well with default ordering\n\n\nPut something numeric first\nLeft-pad numbers with zeros or display files in “natural” order\nUse the YYYY-MM-DD format for dates\n\n\nLet’s see some examples.\n\nOne other helpful convention to consider is to use filenames that will be ordered in a preferable way by default.\nDepending on the context, we should practice:\n\nPutting something numeric first\nLeft-pad numbers with zeros or display files in “natural” order\nUsing the YYYY-MM-DD format for dates"
+  },
+  {
+    "objectID": "modules/module6/slides/module6_01.html#works-well-with-default-ordering-1",
+    "href": "modules/module6/slides/module6_01.html#works-well-with-default-ordering-1",
+    "title": "File Names: Best Practices",
+    "section": "3. Works well with default ordering",
+    "text": "3. Works well with default ordering\n\nLogical order:\n\n\n\nIn this example, we have reason to have the first 5 files in a particular order, and the next 4 in another order. To make sure this happens by default, we can use numbers in the beginning of filenames in a particular order.\nNote the zero-left-padding of the numbers. We’ll see an example of why this is important in the next slide."
+  },
+  {
+    "objectID": "modules/module6/slides/module6_01.html#works-well-with-default-ordering-2",
+    "href": "modules/module6/slides/module6_01.html#works-well-with-default-ordering-2",
+    "title": "File Names: Best Practices",
+    "section": "3. Works well with default ordering",
+    "text": "3. Works well with default ordering\n\nls\nfigure02.png\nfigure12.png\nfigure2.png\n\nls -v\nfigure02.png\nfigure2.png\nfigure12.png\n\nIt is good to name files so that they show up in the expected order when viewing them in the terminal or in a file browser.\nBy default, figure12.png would appear before figure2.png because 1 comes before 2.\nTo avoid this, we can number files with a leading zero (e.g. 01, 02, etc) or use the -v option with ls in the terminal. The -v option is called “natural” sort and is available for some graphical file browsers as well."
+  },
+  {
+    "objectID": "modules/module6/slides/module6_01.html#works-well-with-default-ordering-3",
+    "href": "modules/module6/slides/module6_01.html#works-well-with-default-ordering-3",
+    "title": "File Names: Best Practices",
+    "section": "3. Works well with default ordering",
+    "text": "3. Works well with default ordering\nChronological order:\n\nAlways use the YYYY-MM-DD format (that is, the ISO 8601 standard) for dates:\n\n\n\nFor ordering based on date and time, we need to use a formatting that computers understand.\nWe encourage you to always use the YYYY-MM-DD format, also known as the ISO 8601 standard.\nComputer environments understand this format well, and it is also nicely readable by humans."
+  },
+  {
+    "objectID": "modules/module6/slides/module6_01.html#recap",
+    "href": "modules/module6/slides/module6_01.html#recap",
+    "title": "File Names: Best Practices",
+    "section": "Recap",
+    "text": "Recap\n\nRemember these three principles for filenames:\n\nBeing machine-readable\nBeing human-readable\nPlaying well with default ordering\n\n\nSome more examples of effective filenames:\n\n\n\nAdopting these basic principles is recommended as soon as you start working on a project because:\n\nThey are easy to implement now\nPayoffs accumulate as projects grow more complex"
+  },
+  {
+    "objectID": "modules/module6/slides/module6_05.html#why-use-virtual-environments",
+    "href": "modules/module6/slides/module6_05.html#why-use-virtual-environments",
+    "title": "Virtual Environments",
+    "section": "Why use virtual environments?",
+    "text": "Why use virtual environments?\n\n\nMore often than not, you work on multiple projects on your computer.\n\nThat means you need the projects’ computational environments to be isolated from each other.\n\n\n\n\nIsolated environments are also a first step towards reproducibility.\n\nYou need to have the right versions of packages to ensure that everything works great together.\n\n\n\nVirtual environments accomplishes exactly this:\n\n\n\nIt lets you have multiple versions of packages on the same computer without causing conflict.\n\n\n\nJust like we don’t store files and folders of different projects in the same place, we also often don’t want different projects to be run in the same computing environment.\nFor example, what if we need to run the code in a project with pandas 1.1, and another project with pandas 1.4?\nWell, we probably shouldn’t uninstall and reinstall different versions of pandas each time we switch between the two projects.\nWhat can we do then? The solution is to use different virtual computing environments! Being able to simultaneously run different versions of the same packages is highly useful when working on multiple projects on the same computer.\nUsing virtual environments is also critical for reproducibility. Why?\nThe reason is that we want to run each project using the same version of packages with which the project is developed. Failing to do this could result in many problems. For example, a newer version of a package might introduce breaking changes that could prevent our project from running properly. Also, an older version of a package might not yet have the required functionalities used in a project."
+  },
+  {
+    "objectID": "modules/module6/slides/module6_05.html#conda",
+    "href": "modules/module6/slides/module6_05.html#conda",
+    "title": "Virtual Environments",
+    "section": "Conda",
+    "text": "Conda\n\n\nLogo source\n\n\nConda is an open source package and environment management system for any programming language\nIt is the most popular in the Python community\n\n\nAlright, I hope you’re convinced that using virtual environments is a terrific idea. So, how can we create and use virtual environments?\nThere are several tools to do this, including virtualenv, venv, pipenv and conda.\nHere we use Conda, which is an open source package and environment management system for any programming language; although it’s most popular in the Python community."
+  },
+  {
+    "objectID": "modules/module6/slides/module6_05.html#managing-conda-environments",
+    "href": "modules/module6/slides/module6_05.html#managing-conda-environments",
+    "title": "Virtual Environments",
+    "section": "Managing Conda environments",
+    "text": "Managing Conda environments\nWhat is a Conda environment and why is it so useful?\n\nConda environment: a set of packages that can be used in one or multiple projects\nCreate an isolated Python environment for your project\n\n\nBenefits of using environments:\n\nReproducibility\nEasily manage different versions\nCreate isolated environments\n\n\nWhat is a Conda environment and why is it so useful to use?\n\nA Conda environment is a set of packages that can be used in one or multiple projects.\nUsing Conda environments, you can create an isolated Python environment for your project.\n\n\nThere are several major benefits to using environments:\n\nReproducibility: You can guarantee that someone else can reproduce your project by specifying which package versions you used, making it easy for others to install the same versions.\nEasily manage different versions: If two of your projects rely on different versions of the same package, you can install these in different environments.\nCreate isolated environments: If you want to play around with a new package, you don’t have to change the packages you use for your data analysis and risk messing something up."
+  },
+  {
+    "objectID": "modules/module6/slides/module6_05.html#creating-a-conda-environment",
+    "href": "modules/module6/slides/module6_05.html#creating-a-conda-environment",
+    "title": "Virtual Environments",
+    "section": "Creating a Conda environment",
+    "text": "Creating a Conda environment\n\nThere are two ways of setting up a Conda environment:\n\nCreating the environment and installing packages manually\nCreating the environment using a file in .yaml format\n\n\nThere are two ways of creating a Conda environment:\n\nCreating an environment and then installing packages manually\n\nThis can be done either at the time of environment creation or after creating the environment\n\nCreating the environment using a file in .yaml format (e.g. environment.yaml)"
+  },
+  {
+    "objectID": "modules/module6/slides/module6_05.html#creating-environments-manually",
+    "href": "modules/module6/slides/module6_05.html#creating-environments-manually",
+    "title": "Virtual Environments",
+    "section": "Creating environments manually",
+    "text": "Creating environments manually\n\n\nconda create -n test_env creates a new environment called test_env\n\n\n\nAt the time of creation, we can also specify:\n\nwhat packages to install in the new environment and\nthe channel from which to download the packages\n\n\n\nconda create -n test_env -c conda-forge python=3.9 jupyterlab pandas=1.3.2\n\nWe can create test_env Conda environment by running conda -n test_env. When you see the prompt Proceed ([y]/n)?, press Enter to continue.\nIt is also often useful to specify more than just the name of the environment, e.g. the channel from which to install packages, the Python version, and a list of packages to install into the new env.\nIn the example below, I am creating the test_env environment that uses:\n\nPython 3.9,\nthe right (usually the latest) version of jupyterlab,\nand pandas version 1.3.2\n\nConda will solve any dependencies between the packages and will create a new environment with those packages.\nUsually we don’t need to specify the channel. But in this case, let’s suppose that I want to get the latest version of these packages I can use the flag -c together with the channel name conda-forge in order to install packages from this particular channel."
+  },
+  {
+    "objectID": "modules/module6/slides/module6_05.html#activating-a-conda-environment",
+    "href": "modules/module6/slides/module6_05.html#activating-a-conda-environment",
+    "title": "Virtual Environments",
+    "section": "Activating a Conda environment",
+    "text": "Activating a Conda environment\n\n\nThe default Conda environment is called base.\nTo activate a new environment, run conda activate followed by the name of the environment:\n\n\nNoticed how your shell prompt changed?\n\n\nTo see all environments, run conda env list:\n\n\n\nThe default Conda environment is the base environment, which contains only the essential packages from Miniconda. Your shell’s prompt string is prefixed with (base) when you are inside this environment.\nTo activate the new environment we just created, you can type conda activate test_env (and conda deactivate for deactivating).\nNote how the prefix of the prompt string in your shell changes from (base) to (test_env), which helps to show you which environment is active.\nTo see all your environments, you can type conda env list. You can see that I have a few environments for my work other than (base).\nNote how the currently active environment—(test_env) in this case—is denoted with an *."
+  },
+  {
+    "objectID": "modules/module6/slides/module6_05.html#sharing-environments-with-others",
+    "href": "modules/module6/slides/module6_05.html#sharing-environments-with-others",
+    "title": "Virtual Environments",
+    "section": "Sharing environments with others",
+    "text": "Sharing environments with others\n\nEnvironments can be shared by exporting to an environment file:\nconda env export -f environment.yaml\nwhich list each package and its version in the format package=version=build.\n\nLet’s look inside environment.yaml:\n\n\nTo share an environment, you can export your Conda environment to an environment file, which will list all packages and their versions in this format: package=version=build.\nThe environment file is named environment.yaml here, but it could be called anything we want. This is just a conventional name, and using it makes it easy for others to recognize that this is a Conda environment file. Also, the extension can be either .yaml or .yml. Remember that .yaml files are plain text files, so you can use a text editor such as VS Code to open them.\nIf you open the environment file, you will realize that it contains many more packages than just jupyterlab and pandas. This is because the default behavior is to also list the dependencies that were installed together with these packages. For example, pandas depends on numpy and numpy will be installed along with pandas, even if we don’t explicitly add numpy to our installation command. This is good in the sense that an exact copy of all packages in in your environment will be listed."
+  },
+  {
+    "objectID": "modules/module6/slides/module6_05.html#sharing-environments-with-others-1",
+    "href": "modules/module6/slides/module6_05.html#sharing-environments-with-others-1",
+    "title": "Virtual Environments",
+    "section": "Sharing environments with others",
+    "text": "Sharing environments with others\nIf you want to only list the packages you explicitly installed, you should use the --from-history flag:\nconda env export --from-history -f environment.yaml\n\nThis time, the environment file will look like this:\n\n\nSometimes package dependencies might differ between operating systems, so exporting an environment file with exact package specifications might not work for someone on a different operating system. To remedy this, you can append the --from-history flag, which looks at the history of the packages you explicitly told Conda to install. This tells Conda to include only explicitly installed packages in the export.\nThe required dependencies will then be handled in an OS-specific manner during installation, which guarantees that they will work across different OSes. The environment.yaml file will be much shorter as a result.\nImportantly, this method will not include package versions unless you’ve done the installation with the package=version syntax. For an environment to be reproducible, you need to explicitly tell Conda which specific versions of packages you need to be installed."
+  },
+  {
+    "objectID": "modules/module6/slides/module6_05.html#use-conda-environments-with-jupyterlab",
+    "href": "modules/module6/slides/module6_05.html#use-conda-environments-with-jupyterlab",
+    "title": "Virtual Environments",
+    "section": "Use Conda environments with JupyterLab",
+    "text": "Use Conda environments with JupyterLab\nBy default, JupyterLab only sees the Conda environment where it is installed.\n\nFollow these steps to access your Conda environments in JupyterLab:\n\n\nInstall nb_conda_kernels in your base environment\n\nconda install nb_conda_kernels\n\n\nInstall ipykernel in your dstoolbox environment\n\nconda install ipykernel\n\n\nBy default, JupyterLab only sees the Conda environment where it is installed.\nBut there is no need to install JupyterLab in each and every new environment!\nInstead we can use a package called nb_conda_kernels\n\nThis makes it possible to have a single installation of JupyterLab, and access all other Conda environments.\n\n\n\nSuppose that you created a new Conda environment called dstoolbox. To access your dstoolbox environment from JupyterLab, you need to:\n\nInstall nb_conda_kernels in your base environment by running\n\nconda install nb_conda_kernels\n\nInstall ipykernel in your dstoolbox environment by running\n\nconda install ipykernel\nOnce you’ve done that, you’ll be able to see your desired environment in the Launcher tab when you run JupyterLab, and also access its kernel in a notebook (we’ll learn about this later)."
+  },
+  {
+    "objectID": "modules/module6/slides/module6_05.html#launching-a-notebook-with-a-specific-conda-environment",
+    "href": "modules/module6/slides/module6_05.html#launching-a-notebook-with-a-specific-conda-environment",
+    "title": "Virtual Environments",
+    "section": "Launching a notebook with a specific Conda environment",
+    "text": "Launching a notebook with a specific Conda environment\n\n\nAfter following the steps in the previous slide, you can see that the dstoolbox environment has shown up in JupyterLab’s Launcher tab. Clicking this icon would launch a new Jupyter Notebook with the dstoolbox environment.\nIn the slide, we can see that after following these steps, launching JupyterLab from the (base) environment still shows all available Conda environments, including a newly created environment called (test_env), which is marked in the slide."
+  },
+  {
+    "objectID": "modules/module6/slides/module6_05.html#listing-installed-packages",
+    "href": "modules/module6/slides/module6_05.html#listing-installed-packages",
+    "title": "Virtual Environments",
+    "section": "Listing installed packages",
+    "text": "Listing installed packages\nconda list\n# packages in environment at //miniconda/envs/test_env:\n#\nUsing Anaconda Cloud api site https://api.anaconda.org\nblas                      1.1                    openblas    conda-forge\nca-certificates           2016.9.26                     0    conda-forge\ncertifi                   2016.9.26                py27_0    conda-forge\ncycler                    0.10.0                   py27_0    conda-forge\nfreetype                  2.6.3                         1    conda-forge\nfunctools32               3.2.3.2                  py27_1    conda-forge\nlibgfortran               3.0.0                         0    conda-forge\n\nWe can get the list of installed packages in the currently active environment using the following command:\nconda list\n\nThe list will include\n\nversions of installed packages\nthe specific build, and\nthe channel that the package was downloaded from."
+  },
+  {
+    "objectID": "modules/module6/slides/module6_05.html#searching-packages",
+    "href": "modules/module6/slides/module6_05.html#searching-packages",
+    "title": "Virtual Environments",
+    "section": "Searching packages",
+    "text": "Searching packages\nconda search rasterio\nUsing Anaconda Cloud api site https://api.anaconda.org\nRun 'anaconda show &lt;USER/PACKAGE&gt;' to get more details:\nPackages:\n     Name                      |  Version | Package Types   | Platforms      \n     ------------------------- |   ------ | --------------- | ---------------\n     IOOS/rasterio             |    1.0a2 | conda           | linux-64, win-32, win-64, osx-64\n     Terradue/rasterio         |   0.32.0 | conda           | linux-64       \n                                          : Fast and direct raster I/O for use with Numpy and SciPy\n     anaconda/rasterio         |   0.36.0 | conda           | linux-64, win-32, win-64, linux-32, osx-64\n     conda-forge/rasterio      |    1.0a2 | conda           | linux-64, win-32, win-64, osx-64\n                                          : Rasterio reads and writes geospatial raster datasets\n     dharhas/rasterio          |   0.23.0 | conda           | win-64         \n                                          : Rasterio reads and writes geospatial raster datasets.\n     krisvanneste/rasterio     |   0.26.0 | conda           | win-64         \n     ocefpaf/rasterio          |   0.19.1 | conda           | linux-64, osx-64\n     omgarcia/rasterio         |   0.25.0 | conda           | linux-64       \n     pypi/rasterio             |   0.13.2 | pypi            |                \n                                          : Fast and direct raster I/O for Python programmers who use Numpy\nFound 15 packages\n\nYou can also search to see if a particular package can be installed using conda or pypi using the following command. For example, here we look for a package named rasterio:\nconda search rasterio\nThe Anaconda cloud page for rasterio will show how to install the package, compatible OS, individual files for that package, etc."
+  },
+  {
+    "objectID": "modules/module6/slides/module6_05.html#installing-packages",
+    "href": "modules/module6/slides/module6_05.html#installing-packages",
+    "title": "Virtual Environments",
+    "section": "Installing packages",
+    "text": "Installing packages\n\n\nThe first column of the output of conda search shows the channel/package-name.\n\n\n\nYou can use this information to install a desired package in the active environment.\n\n\nInstall version 0.35 of the package rasterio from the conda-forge channel using:\nconda install -c conda-forge rasterio=0.35\n\nAdd preferred channels to Conda using:\nconda config --add channels conda-forge\n\n\nThe first column of the output of conda search shows channel/package-name\nYou can use this information to install a desired package in the active environment\nFor example, to install version 0.35 of the package rasterio from the conda-forge channel, you can run:\n\nconda install -c conda-forge rasterio=0.35\n\n\nIf you want the latest version, simply avoid providing the version, i.e. simply run conda install -c conda-forge rasterio.\nIf this package depends on other packages to function, Conda will automatically install its dependencies.\nIf you have a few preferred channels, you can make them known to Conda so that you don’t need to explicitly declare the channel every time you want to install a package. This is done using the this command:\n\nconda config --add channels conda-forge"
+  },
+  {
+    "objectID": "modules/module6/slides/module6_05.html#removing-a-package",
+    "href": "modules/module6/slides/module6_05.html#removing-a-package",
+    "title": "Virtual Environments",
+    "section": "Removing a package",
+    "text": "Removing a package\n\nRemove rasterio package from test_env using:\nconda remove -n test_env rasterio\n\nSuppose that you decided that you no longer need the package rasterio. To remove this package from the currently active environment, you can run:\nconda remove -n test_env rasterio\n\n\nNote that this will remove rasterio and its dependencies, unless:\n\na dependency was installed explicitly at an earlier point in time or,\na dependency is required by another package."
+  },
+  {
+    "objectID": "modules/module6/slides/module6_05.html#learning-more-about-conda",
+    "href": "modules/module6/slides/module6_05.html#learning-more-about-conda",
+    "title": "Virtual Environments",
+    "section": "Learning more about Conda",
+    "text": "Learning more about Conda\n\nAvailable Conda commands:\n\n\n\nFull documentation of a command:\n\nconda update --help\n\nConda version:\n\n\n\n\nTo see which Conda commands are available, you can run conda --help\n\n\n\n\nTo see the full documentation of a command, you can type the command followed by --help:\n\nconda update --help\n\nThe Conda version you have installed can be seen by running conda --version in Bash:"
+  },
+  {
+    "objectID": "modules/module7/module7-00-module_learning_outcomes.html",
+    "href": "modules/module7/module7-00-module_learning_outcomes.html",
+    "title": "0. Module Learning Outcomes",
+    "section": "",
+    "text": "0. Module Learning Outcomes\n\nVideoSlides",
+    "crumbs": [
+      "**M7. JupyterLab**",
+      "0. Module Learning Outcomes"
+    ]
+  },
+  {
+    "objectID": "modules/module7/module7-02-practice_keeping_a_notebook.html",
+    "href": "modules/module7/module7-02-practice_keeping_a_notebook.html",
+    "title": "1.1. Exercises",
+    "section": "",
+    "text": "Suppose that you have just opened a notebook with the following cells:\n\n\n\n\n\n\n\n\n\nWe have a notebook like the following:",
+    "crumbs": [
+      "**M7. JupyterLab**",
+      "&nbsp;&nbsp; 1.1. Exercises"
+    ]
+  },
+  {
+    "objectID": "modules/module7/module7-02-practice_keeping_a_notebook.html#practice-keeping-a-notebook",
+    "href": "modules/module7/module7-02-practice_keeping_a_notebook.html#practice-keeping-a-notebook",
+    "title": "1.1. Exercises",
+    "section": "",
+    "text": "Suppose that you have just opened a notebook with the following cells:\n\n\n\n\n\n\n\n\n\nWe have a notebook like the following:",
+    "crumbs": [
+      "**M7. JupyterLab**",
+      "&nbsp;&nbsp; 1.1. Exercises"
+    ]
+  },
+  {
+    "objectID": "modules/module7/slides/module7_00.html#module-learning-outcomes",
+    "href": "modules/module7/slides/module7_00.html#module-learning-outcomes",
+    "title": "Module Learning Outcomes",
+    "section": "Module Learning Outcomes",
+    "text": "Module Learning Outcomes\nBy the end of this module, you will be able to\n\nPerform literate data science programming using Jupyter Notebooks.\nUse Markdown to efficiently produce formatted text.\nEnhance productivity via advanced JupyterLab features.\nExport notebooks to various formats for sharing your work.\n\n\nIn this module, you will learn how to work more effectively with JupyterLab."
+  },
+  {
+    "objectID": "modules/module7/slides/module7_03.html#what-is-markdown",
+    "href": "modules/module7/slides/module7_03.html#what-is-markdown",
+    "title": "Markdown for text formatting",
+    "section": "What is Markdown?",
+    "text": "What is Markdown?\n\n\nLogo source\n\nMarkdown is a fast and easy way to format plain text.\nMost important features:\n\nQuickly write text that can be nicely formatted upon rendering\nA Markdown file is nothing but a plain text file!\n\nMarkdown is supported on various platforms, including GitHub (remember README.md files?) and even Google Doc!\n\nSo far we’ve only talked about code cells, which are responsible for the computational part of a Jupyter notebook. The other major type of cell in a Jupyter notebook is what’s known as a Markdown cell, which allows you to write formatted text. This is where you can store the narrative part of your Jupyter notebook.\nMarkdown provides a fast and easy way to format plain text, without the need to have a graphical interface to manipulate the looks of your document, or needing any special file format.\nIf you’re familiar with HTML or Latex, you’ll notice a lot of similarities. But using Markdown is much simpler and geared towards applications where you need to write a formatted document with convenience, and you don’t need super advanced typographical elements in your document.\nMarkdown can either be used inside stand-alone text files (usually with the .md format, e.g. README.md), or as a part of a framework such as Jupyter notebooks.\nMost important features of the Markdown format are:\n\nIt lets you quickly write text that can be nicely formatted upon rendering.\nThe content of a Markdown file is nothing but plain text, and can be stored as a plain text file."
+  },
+  {
+    "objectID": "modules/module7/slides/module7_03.html#markdown-cells",
+    "href": "modules/module7/slides/module7_03.html#markdown-cells",
+    "title": "Markdown for text formatting",
+    "section": "Markdown cells",
+    "text": "Markdown cells\n\n\n\nHere is an example of a Markdown cell. On the left, you see the Markdown source itself, and on the right, you see how it looks when it’s rendered by Jupyter Lab after executing the cell (e.g. by pressing Ctrl + Enter).\nWhen you execute a Markdown cell, Jupyter interprets its content and renders it accordingly.\nIt’s nice to be able to format the text to look that nice just by following simple conventions!"
+  },
+  {
+    "objectID": "modules/module7/slides/module7_03.html#markdown-cells-1",
+    "href": "modules/module7/slides/module7_03.html#markdown-cells-1",
+    "title": "Markdown for text formatting",
+    "section": "Markdown cells",
+    "text": "Markdown cells\n\n\nWhenever you create a new cell in a Jupyter Notebook, by default it will be a code cell. So if you write regular text in it, you won’t get Markdown output.\nIn order to convert a code (or raw) cell to a Markdown cell, you can do either of the following:\n\nIn command mode, press M on your keyboard to convert the currently selected cell to a Markdown cell\nThe current cell type is also shown in the toolbar of your notebook as seen in the picture. You can click on the dropdown menu that shows the text “Code”, and then from the menu select “Markdown” to convert the selected cell to a Markdown cell."
+  },
+  {
+    "objectID": "modules/module7/slides/module7_03.html#the-markdown-syntax-headings",
+    "href": "modules/module7/slides/module7_03.html#the-markdown-syntax-headings",
+    "title": "Markdown for text formatting",
+    "section": "The Markdown syntax: Headings",
+    "text": "The Markdown syntax: Headings\n\n\n\nLet’s learn a few most commonly used formatting rules in Markdown. In this slide we can see how headings are created by prepending the pound sign (#) to the heading text.\nOne pound sign indicates the top level heading of the document (this is usually your title), and two pound signs indicate the first level of subheadings.\nYou can have as many levels of subheadings as you see fit, and they will all show up hierarchically in the table-of-contents tab in the left side bar, which we introduced in Module 1."
+  },
+  {
+    "objectID": "modules/module7/slides/module7_03.html#the-markdown-syntax-lists-and-quotes",
+    "href": "modules/module7/slides/module7_03.html#the-markdown-syntax-lists-and-quotes",
+    "title": "Markdown for text formatting",
+    "section": "The Markdown syntax: Lists and quotes",
+    "text": "The Markdown syntax: Lists and quotes\n\n\n\nNow’s the time to create a bullet-point style list:\n- Item 1\n- Item 2\n- Item 3\n  - Sub-item 1\n    - Sub-sub-item 1\nYou can also create numbered lists. Regardless which number you put in, JupyterLab will automatically number the list in consecutive order:\n1. One\n1. Two\n5. Three\nOne other useful formatting syntax is the block quote for quoting or calling special attention to longer sections of text:\n&gt; Here is a block quote!\n&gt;\n&gt; You can have multiple paragraphs in block quotes."
+  },
+  {
+    "objectID": "modules/module7/slides/module7_03.html#the-markdown-syntax-links-and-images",
+    "href": "modules/module7/slides/module7_03.html#the-markdown-syntax-links-and-images",
+    "title": "Markdown for text formatting",
+    "section": "The Markdown syntax: Links and images",
+    "text": "The Markdown syntax: Links and images\n\n\n\nYou can insert a link into your markdown cell by following this syntax:\n[Link text](https://masterdatascience.ubc.ca/)\nInserting images is also very easy and has a syntax similar to inserting links, except that you also have to remember to put an exclamation mark at the beginning:\n![UBC Master of data science logo](https://ubc-mds.github.io/img/mdslogopad.png)\nThe text inside the [] is often called “alt text” and will show up if the image can’t be display for some reason, and it is also helpful for people who rely on accessibility features, so it is important that you include a descriptive message here. This article describes how to write an effective alt text, in case you are interested to learn more about this topic."
+  },
+  {
+    "objectID": "modules/module7/slides/module7_03.html#the-markdown-syntax-formatted-code",
+    "href": "modules/module7/slides/module7_03.html#the-markdown-syntax-formatted-code",
+    "title": "Markdown for text formatting",
+    "section": "The Markdown syntax: Formatted code",
+    "text": "The Markdown syntax: Formatted code\n\n\n\nCode is usually formatted with a mono-space font, just as it usually appears in any IDE. For example, anything you write in a code cell inside Jupyter Lab shows up with a mono-space font and has Python syntax highlighting.\nIn Markdown, we can easily format any code to be rendered in mono-space font using backticks like the word this that you can see here in the picture.\nYou can type a backtick by pressing the key under Esc on your keyboard (which is the key with the ` and ~ symbols on it). For example, what you can see here on the picture, import numpy as np, looks like Python code, right?\nAnother way to write code is to have a code block by enclosing text inside a pair of 3 backticks:\n```\narr = np.zeros((2, 2))\nresult = arr + 10\n```\nWe can also enable colorful syntax highlighting by specifying the language in front of the first set of the 3 backticks:\n```python\narr = np.zeros((2, 2))\nresult = arr + np.pi\n```"
+  },
+  {
+    "objectID": "modules/module7/slides/module7_03.html#the-markdown-syntax-math-formulas",
+    "href": "modules/module7/slides/module7_03.html#the-markdown-syntax-math-formulas",
+    "title": "Markdown for text formatting",
+    "section": "The Markdown syntax: Math formulas",
+    "text": "The Markdown syntax: Math formulas\n\n\n\nMarkdown supports \\(\\LaTeX\\) math formulas, which are a powerful and commonly used way to write mathematical expressions.\nIf you have never seen \\(\\LaTeX\\) before, it can look a bit intimidating, especially for the more complex formulas. But you can quickly pick up the syntax for basic expressions, and then look up the more advanced functionality whenever needed.\nTo write an “inline” math formula in a paragraph of text, we can surround the expression with a pair of dollar signs: Here is an inline math formula $ F = ma $.\nLonger formulas can be written in a math “block”, which you can create by surrounding the math expression by a pair of double dollar signs, as shown at the bottom of the screenshot."
+  },
+  {
+    "objectID": "modules/module7/slides/module7_03.html#pro-tips-for-markdown-formatting",
+    "href": "modules/module7/slides/module7_03.html#pro-tips-for-markdown-formatting",
+    "title": "Markdown for text formatting",
+    "section": "Pro tips for Markdown formatting",
+    "text": "Pro tips for Markdown formatting\n\n\nMarkdown provides limited formatting styles that are often enough, but not always.\nSometimes, we just need more!\n\n\nYou can use HTML inside Markdown text to enable advanced formatting, such as\n\nChange the displayed size of an image\nChange text size and color\n\n\nSince Markdown renderers use HTML under the hood to format a Markdown text document, explicit HTML tags will be rendered when used inside a Markdown document.\nSometimes it might be helpful to borrow a few tricks from HTML to achieve certain formatting styles that are not available in standard Markdown.\nHere are a few things you can’t do with standard Markdown, but you can do with HTML tags:\n\nChange the displayed size of an image\nChange text size and color"
+  },
+  {
+    "objectID": "modules/module7/slides/module7_03.html#pro-tip-1-change-image-size",
+    "href": "modules/module7/slides/module7_03.html#pro-tip-1-change-image-size",
+    "title": "Markdown for text formatting",
+    "section": "Pro tip 1: Change image size",
+    "text": "Pro tip 1: Change image size\nYou can use the following HTML tag to change the displayed size of an image:\n&lt;img src=\"&lt;PATH_TO_FILE&gt;\" width=\"400px\"&gt;&lt;/img&gt;\n\n\n\nYou can use the HTML tag that you see in the slide to change the displayed size of an image:\n&lt;img src=\"&lt;PATH_TO_FILE&gt;\" width=\"400px\"&gt;&lt;/img&gt;\nNote that in width=400px, px is optional. Instead of px (which stands for “pixel”), you can also use % to specify the width relative to the original width of the image. For example, the image HTML tag with width=\"150%\"\n&lt;img src=\"&lt;PATH_TO_FILE&gt;\" width=\"150%\"&gt;&lt;/img&gt;\nenlarges the displayed image by a factor of 1.5."
+  },
+  {
+    "objectID": "modules/module7/slides/module7_03.html#pro-tip-2-change-text-size-color",
+    "href": "modules/module7/slides/module7_03.html#pro-tip-2-change-text-size-color",
+    "title": "Markdown for text formatting",
+    "section": "Pro tip 2: Change text size & color",
+    "text": "Pro tip 2: Change text size & color\nYou can also use the following HTML tag to change the size and color of a piece of text:\n&lt;p style=\"color:black; font-size:120%\"&gt;\nSome text you want to show in a different color or size\n&lt;/p&gt;\n\n\n\nIn this slide, you can see how we can also style a paragraph using the HTML paragraph tags (&lt;p&gt;) together with the style attribute. The style attribute allows us to specify CSS properties that we want to style our text with.\nLearning HTML and CSS is beyond the scope of this course, but the excellent Khan academy has a helpful introduction to both HTML and CSS in case you are interested to learn more about these topics.\nKeep in mind that you can do much more than just changing the size of an image or the color of text in HTML. However, since the whole idea of Markdown is its readability, and that it can be written without the usual complexity of markup languages such as HTML, try to use HTML tags sparingly and only if you absolutely need to achieve a particular formatting."
+  },
+  {
+    "objectID": "modules/module7/slides/module7_07.html#running-shell-commands-in-jupyter-notebooks",
+    "href": "modules/module7/slides/module7_07.html#running-shell-commands-in-jupyter-notebooks",
+    "title": "Advanced JupyterLab tips and tricks",
+    "section": "Running shell commands in Jupyter notebooks",
+    "text": "Running shell commands in Jupyter notebooks\n\nIn order to run a shell command in a cell, prefix it with a !:\n\n\nSometimes it is very handy to be able to quickly run shell commands from within a Jupyter notebook. You can run any shell command by prefixing it with a !, and run it inside a computational cell just like any other code cell.\nYou cannot interact with the output from shell commands as you would in a terminal. Therefore, if you want to install something with Conda, you will not be able to respond y/n on the confirmation prompt and instead need to append the -y option to the original command to automatically accept the confirmation prompt."
+  },
+  {
+    "objectID": "modules/module7/slides/module7_07.html#running-shell-commands-in-jupyter-notebooks-1",
+    "href": "modules/module7/slides/module7_07.html#running-shell-commands-in-jupyter-notebooks-1",
+    "title": "Advanced JupyterLab tips and tricks",
+    "section": "Running shell commands in Jupyter notebooks",
+    "text": "Running shell commands in Jupyter notebooks\nA common action: exporting a notebook without code cells\n\n\nOne common use of an ! command in a notebook cell is to export a notebook without its code cells by using the nbconvert command directly, instead of using the export menu in JupyterLab—which also calls nbconvert under the hood.\nTo do this, copy and paste the command below into a code cell in your notebook. Then replace this-notebooks-name.ipynb with an appropriate notebook filename, and finally run the code cell:\n!jupyter nbconvert this-notebooks-name.ipynb \\\n    --to html \\\n    --output=output-filename.html \\\n    --no-input\nOf course you can run this command using a terminal, but it could be much more convenient if you just want to quickly run a shell command in the folder in which the notebook resides.\nIf you put it in the last cell in your notebook, you will always have an updated HTML export file when you click “Run all” in JupyterLab."
+  },
+  {
+    "objectID": "modules/module7/slides/module7_07.html#magic-commands",
+    "href": "modules/module7/slides/module7_07.html#magic-commands",
+    "title": "Advanced JupyterLab tips and tricks",
+    "section": "Magic commands",
+    "text": "Magic commands\n\nMagic commands provide useful functionalities in a convenient and concise way.\n\n\n\nMagic commands introduced here are provided by and specific to IPython. Other languages may have their own set of magic commands, or none at all.\n\n\nMagic commands are special commands which implement a particular functionality that might not be doable or straight-forward using Python code.\nFor example, you can measure the amount of time it takes on average to run a code cell, or run a .py Python script file directly using the notebook’s kernel.\nA magic command can be run either in line or cell mode:\n\nLine mode only applies to one line of code, and is activated by prefixing a relevant command with %. For example, %reset -f removes all variable names defined by the user without restarting the kernel.\nCell mode applies to an entire cell, and is activated by prefixing a relevant command with %% at the beginning of a code cell. For example, the %%timeit cell magic in the following code runs the cell multiple times to compute an average running time:\n\n%%timeit\nfor i in range(1_000_000):\n    (i - 0.1)**2\nNote that magic commands are only available in notebooks running a Python kernel. If you want to see a full list of available magic commands, you can run %lsmagic (which itself is a magic command). Also check out this link to find more information about magic commands."
+  },
+  {
+    "objectID": "modules/module7/slides/module7_07.html#magic-commands-post-mortem-debugging",
+    "href": "modules/module7/slides/module7_07.html#magic-commands-post-mortem-debugging",
+    "title": "Advanced JupyterLab tips and tricks",
+    "section": "Magic commands: Post-mortem debugging",
+    "text": "Magic commands: Post-mortem debugging\n\nPost-mortem debugging:\n\n\n\nWe’ve already seen how we can reset the Python namespace using %reset -f and how to time code execution using %%timeit.\nThere is another useful magic command which allows us to perform “post-mortem” (literally meaning “after death”) debugging. If you run a cell and happen to get an error, you can investigate what happened post mortem; that is, after the error was thrown, by running %debug in a different cell. Here, you can see an example of a syntax error, and the follow-up investigation using %debug.\nWhen an error is thrown, the traceback shows that several files are affected.\nWhen you enter into debugging mode, you might not be in the right file from the beginning. If this is the case, you can use U and D keys on your keboard to navigate up and down, respectively, in the files hierarchy.\nTwo other useful keyboard shortcuts are C for continuing execution until the next error, and Q to quit the debugger and go back to working with your code cells. Note that the rest of your notebook will be unresponsive until you quit the debugger by pressing Q.\nThe debugger that is used by JupyterLab is the standard Python debugger pdb, so you can read more about all the options and commands in the Python documentation."
+  },
+  {
+    "objectID": "modules/module7/slides/module7_07.html#magic-commands-searching-code-cell-history",
+    "href": "modules/module7/slides/module7_07.html#magic-commands-searching-code-cell-history",
+    "title": "Advanced JupyterLab tips and tricks",
+    "section": "Magic commands: Searching code cell history",
+    "text": "Magic commands: Searching code cell history\n\nSearching code cell history:\n\n\n\nAnother useful magic command is %hist which displays the history for all the input cells you have executed. This is a bit overwhelming on its own, but it is very useful with the -g option.\nIn JupyterLab, you can use %hist -g &lt;search_pattern&gt; to search through all code cells you have ever executed. This also includes executed statements from previous sessions, so it’s similar to history | grep &lt;search_pattern&gt; in the shell.\nThis is a great option for when you’ve deleted that piece of code you were 100% sure you’d never need again and was not important enough to be committed, but you—of course—ended up wanting it back a few days later.\nHere, you see an example of using %hist -g to find a list of executed cells which contained “range(1, 10)”."
+  },
+  {
+    "objectID": "modules/module7/slides/module7_07.html#multiple-cursors",
+    "href": "modules/module7/slides/module7_07.html#multiple-cursors",
+    "title": "Advanced JupyterLab tips and tricks",
+    "section": "Multiple cursors",
+    "text": "Multiple cursors\n\n\nHold Alt/Option + drag:\n\n\n\nHold Alt/Option + Ctrl/Command + click\n\n\n\nA cool and sometimes time-saving feature in JupyterLab is the multiple cursor feature.\nSuppose that here, you need to type 100 + in front of all of these variable definitions. Instead of typing 100 + one by one, first hold down Alt (in Windows or Linux) or Option (in Mac). Your mouse pointer changes into a +. Now, click and hold while dragging down the cursor to place multiple cursors at multiple positions, just as seen in the first recording here. When you’re happy with your selection, you can start typing, and voila!\nInstead of\n\nholding Alt/Option + drag\n\nyou can also\n\nhold Alt/Option + Ctrl/Command + click\n\nat various locations to place multiple cursors wherever you need them, and then start typing. An example of this is shown in the second recording."
+  },
+  {
+    "objectID": "modules/module7/slides/module7_07.html#next-level-jupyterlab",
+    "href": "modules/module7/slides/module7_07.html#next-level-jupyterlab",
+    "title": "Advanced JupyterLab tips and tricks",
+    "section": "Next-level JupyterLab",
+    "text": "Next-level JupyterLab\n\nMore advanced features of JupyterLab:\n\nThe graphical debugger\nReal-time collaboration\nWorkspaces\n\n\nIn addition to what we have discussed so far, there are a few additional advanced features of JupyterLab which can be helpful when working on specific projects. Some of these features are:\n\nThe graphical debugger\nReal-time collaboration\nWorkspaces\n\nWe will not discuss these features in detail here, but we’ll briefly explain their functionality and point you to the official documentation for each feature in the next few slides."
+  },
+  {
+    "objectID": "modules/module7/slides/module7_07.html#the-graphical-debugger",
+    "href": "modules/module7/slides/module7_07.html#the-graphical-debugger",
+    "title": "Advanced JupyterLab tips and tricks",
+    "section": "The graphical debugger",
+    "text": "The graphical debugger\nDocumentation: https://jupyterlab.readthedocs.io/en/stable/user/debugger.html\n\n\nWhen you write code, things usually do not go perfectly on the first go, and you’ll eventually need to debug your code at some point.\nWe have already seen how we can use %debug to perform post-mortem debugging and JupyterLab recently also added a useful graphical debugger. This allows for easier access to more advanced debugging techniques such as setting breakpoints, inspecting variables, and more.\nYou can find more details, including a tutorial notebook, in JupyterLab’s official documentation."
+  },
+  {
+    "objectID": "modules/module7/slides/module7_07.html#real-time-collaboration",
+    "href": "modules/module7/slides/module7_07.html#real-time-collaboration",
+    "title": "Advanced JupyterLab tips and tricks",
+    "section": "Real-time collaboration",
+    "text": "Real-time collaboration\nDocumentation: https://jupyterlab.readthedocs.io/en/stable/user/rtc.html\n\n\nAnother interesting and potentially helpful feature of JupyterLab is that you can enable real-time collaboration between multiple clients. Every user will have their own cursor in the same notebook as shown in the screenshot here (pretty much like in a Google Doc!). They can simultaneously edit and execute cells, and all the changes will be visible to other users in real time.\nYou can read more about the real-time collaboration feature of JupyterLab in the documentation.\nNote that the real-time collaboration feature of JupyterLab is still experimental, and being actively worked on so its features and interface might change quickly."
+  },
+  {
+    "objectID": "modules/module7/slides/module7_07.html#workspaces",
+    "href": "modules/module7/slides/module7_07.html#workspaces",
+    "title": "Advanced JupyterLab tips and tricks",
+    "section": "Workspaces",
+    "text": "Workspaces\nDocumentation: https://jupyterlab.readthedocs.io/en/stable/user/urls.html\n\n\nWhen you work in JupyterLab, you might have a couple of files, views, and other windows open. You might also have set up the layout of your JupyterLab in a particular way; for example, notebooks on the left, output views on the right, and consoles on the bottom.\nIf you shutdown and relaunch JupyterLab, you’ll see that this particular setup, including the open files and tabs and their arrangements, will get restored. This is because JupyterLab internally stores these information using the concept of a workspace.\nIn case you need different setup of open files and layouts while working on multiple or large projects, you may want to create and use several workspaces. This is easily possible with JupyterLab: you can create new workspaces or clone existing workspaces and modify them as you wish, just through the URL of your browser. In order to learn how to use workspaces, check out JupyterLab’s documentation."
+  }
+]
