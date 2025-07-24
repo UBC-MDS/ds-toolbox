@@ -1,0 +1,61 @@
+---
+format: html
+---
+
+<script src='../../src/quiz.js'></script>
+
+# 2.1. Exercises
+
+## ✍️ Practice: Becoming an author
+
+Suppose that you have inserted an image in your book using the following markdown block:
+
+~~~
+```{figure} https://upload.wikimedia.org/wikipedia/commons/0/09/TheCheethcat.jpg
+ ---
+ height: 600px
+ name: an-african-cheetah
+ ---
+ An African Cheetah
+ ```
+~~~
+
+<div id='mcq1'></div>
+<script>
+    generateQuiz(
+        'mcq1',
+        'Question 1',
+        'How would you reference this image within the main markdown text?',
+        {
+        '<code>Fig. 1 shows the image of an African Cheetah.</code>': '<code>Fig. 1</code> produces a static text and isn’t automatically linked to anything. If your figure number changes to <code>2</code>, <code>Fig. 1</code> would stay the same.',
+        '<code>{ref}</code>an-african-cheetah<code> shows the image of an African Cheetah.</code>': '<code>{ref}</code>`` is not quite correct to cross-reference a figure. What did you miss?',
+        '<code>{nameref}</code>an-african-cheetah<code> shows the image of an African Cheetah.</code>': '',
+        '<code>{nameref}(an-african-cheetah) shows the image of an African Cheetah.</code>': '<code>{nameref}()</code> is not quite correct to cross-reference a figure. Which part did you get wrong?',
+        '<code>{nameref}</code>An African Cheetah<code> shows the image of an African Cheetah.</code>': 'The reference should point to the image label, not its caption.',
+        },
+        '<code>{nameref}</code>an-african-cheetah<code> shows the image of an African Cheetah.</code>',
+    );
+</script>
+
+~~~
+```{math}
+:label: newton-2nd-law
+$$\Sigma F = m \frac{dV}{dt}$$
+```
+~~~
+
+<div id='mcq2'></div>
+<script>
+    generateQuiz(
+        'mcq2',
+        'Question 2',
+        'What is one problem with the above math equation?',
+        {
+        '<code>$$ $$</code> should not be used inside a ```<code>{math} </code>``` block': '',
+        '<code>:label:</code> should be changed to <code>label:</code>': '<code>:label:</code> is actually the right way to give a label to an equation.',
+        '<code>:label:</code> should be replaced by <code>:name:</code>': 'Using <code>:name:</code> is incorrect. You’ve probably mistaken this with <code>name:</code> in a ```<code>{figure} </code>``` block.',
+        '<code>$$ $$</code> should be replaced with <code>$ $</code>': 'Neither of the two options are applicable inside a ```<code>{math} </code>``` block.',
+        },
+        '<code>$$ $$</code> should not be used inside a ```<code>{math} </code>``` block',
+    );
+</script>

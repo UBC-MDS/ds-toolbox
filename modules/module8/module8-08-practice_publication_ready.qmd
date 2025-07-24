@@ -1,0 +1,51 @@
+---
+format: html
+---
+
+<script src='../../src/quiz.js'></script>
+
+# 4.1. Exercises
+
+## ✍️ Practice: Publication ready!
+
+<div id='mcq1'></div>
+<script>
+    generateQuiz(
+        'mcq1',
+        'True or False',
+        'The purpose of using <code>ghp-import</code> and <code>gh-pages</code> branch is to avoid having numerous HTML files in the commit history of the <code>main</code> branch each time you rebuild your book and instead automate pushing them to a separate branch.',
+        {
+        'True': '',
+        'False': 'That is indeed the reason for using the <code>ghp-import</code> package and the <code>gh-pages</code> branch!',
+        },
+        'True',
+    );
+</script>
+
+<div id='mcq2'></div>
+<script>
+    generateQuiz(
+        'mcq2',
+        'True or False',
+        'All information needed to reproduce the content of the <code>gh-pages</code> branch lives in the <code>main</code> branch of your book repository.',
+        {
+        'True': '',
+        'False': 'Remember that the <code>gh-pages</code> branch only contains the result of running <code>jb build</code> on the content of your <code>main</code> branch, so it’s completely derivative.',
+        },
+        'True',
+    );
+</script>
+
+<div id='mcq3'></div>
+<script>
+    generateQuiz(
+        'mcq3',
+        'True or False',
+        'You need the source files on the <code>main</code> branch in order for GitHub Pages to show your website.',
+        {
+        'True': 'You only need the build artifacts (i.e., the HTML files in the <code>_build/html/</code> folder) to be hosted on a branch so that GitHub Pages is able to show your website. Your source files are not needed for the website itself.',
+        'False': '',
+        },
+        'False',
+    );
+</script>
