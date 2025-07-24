@@ -1,0 +1,463 @@
+[
+  {
+    "objectID": "modules/module9/slides/module9_00.html#you-did-it",
+    "href": "modules/module9/slides/module9_00.html#you-did-it",
+    "title": "Congratulations on completing the Data Science Toolbox!",
+    "section": "You did it!",
+    "text": "You did it!\nWe covered a lot of ground but you managed to finished all 9 Modules. It’s important to celebrate this success."
+  },
+  {
+    "objectID": "modules/module9/slides/module9_00.html#attribution",
+    "href": "modules/module9/slides/module9_00.html#attribution",
+    "title": "Congratulations on completing the Data Science Toolbox!",
+    "section": "Attribution",
+    "text": "Attribution\n\nResearch Software Engineering with Python, Damien Irving, Kate Hertweck, Luke Johnston, Joel Ostblom, Charlotte Wickham, and Greg Wilson.\nMaterial from UBC’s DSCI 521: Computing Platforms for Data Science by Tiffany A. Timbers, Vicenzo Coia, Firas Moovsi, Joel Ostblom, Florencia D’Andrea \nTimbers, Tiffany, Trevor Campbell, and Melissa Lee. Data science: A first introduction. CRC Press, 2022. https://datasciencebook.ca/\nJupyter Book documentation\nJupyter Project documentation\nThe logo of this course has been created by Hayley Boyce"
+  },
+  {
+    "objectID": "modules/module9/slides/module9_00.html#special-thanks",
+    "href": "modules/module9/slides/module9_00.html#special-thanks",
+    "title": "Congratulations on completing the Data Science Toolbox!",
+    "section": "Special thanks",
+    "text": "Special thanks\nNot only did you put in a lot of work by completing this course, but many people did too by helping make this course possible.\nSpecial thanks must be attributed to the following individuals and organizations (in alphabetical order):\n\nHayley Boyce\nInes Montani\n Tiffany Timbers\n Varada Kolhatkar\nThe Master of Data Science Program at UBC\nOur friends, family and colleagues for supporting us and cheering us on!"
+  },
+  {
+    "objectID": "modules/module9/slides/module9_00.html#about-us",
+    "href": "modules/module9/slides/module9_00.html#about-us",
+    "title": "Congratulations on completing the Data Science Toolbox!",
+    "section": "About us",
+    "text": "About us\nIn alphabetical order:\n\nFlorencia D’Andrea\n\nWebsite: https://florencia.netlify.app\nTwitter: @cantoflor_87  \n\nJoel Ostblom\n\nWebsite: https://joelostblom.com/\nTwitter: @joelostblom  \n\nArman Seyed-Ahmadi\n\nLinkedIn profile: https://www.linkedin.com/in/arman-seyed-ahmadi-38983864/"
+  },
+  {
+    "objectID": "modules/module8/slides/module8_09.html#module-learning-outcomes",
+    "href": "modules/module8/slides/module8_09.html#module-learning-outcomes",
+    "title": "What Did we Learn and What to Expect in Assignment 8",
+    "section": "Module Learning Outcomes",
+    "text": "Module Learning Outcomes\nIn this module you learned how to\n\nExplain the Jupyter Book ecosystem.\nBuild Jupyter Books via the command line.\nCreate your own content files.\nPublish your book online for free using GitHub Pages.\n\n\nNow is time to get to work with the last assignment!"
+  },
+  {
+    "objectID": "modules/module8/slides/module8_05.html#margin-content",
+    "href": "modules/module8/slides/module8_05.html#margin-content",
+    "title": "Add your own content: Advanced features",
+    "section": "Margin content",
+    "text": "Margin content\nMargin content is similar to footnotes in a conventional book:\n```{margin} Did you know?\nJupiter is 11.0x larger than Earth!\n```\n\nRendered:\n\n\nSometimes it is helpful to add notes to the margin of a page. This is similar to footnotes in a conventional book.\nIn Jupyter Book, you can do that using blocks denoted by {margin} in a markdown file:\n```{margin} Did you know?\nJupiter is 11.0x larger than Earth!\n```\nNote that this syntax is similar to what we used for creating a figure: ```{figure}.\nThese types of blocks are called directives in Jupyter Book and we will see several different types on the following few slides.\n\nYou can see the rendered version of the margin directive in this slide."
+  },
+  {
+    "objectID": "modules/module8/slides/module8_05.html#admonitions",
+    "href": "modules/module8/slides/module8_05.html#admonitions",
+    "title": "Add your own content: Advanced features",
+    "section": "Admonitions",
+    "text": "Admonitions\nAdmonitions draw attention to important information:\n\n\n```{note}\nI'm a note!\n```\n\n\n{note} can be replaced with {warning}, {tip}, {danger} and so on.\nThis is how these admonitions will show up:\n\n\nAdmonitions in Jupyter Book are visual elements that you can use to draw attention to important information.\nThere are different types of admonitions that you can use in Jupyter Book, including Note, Tip, Warning, Danger and Hint.\nYou can define an admonition by inserting an admonition code block:\n\n\n```{note}\nI'm a note!\n```\n\n\n{note} can be replaced with {warning}, {tip}, {danger} and so on. This slide shows how these admonitions will show up in the output.\nAnother way of writing the admonition syntax is to use ::: instead of ```:\n:::{note}\nI'm a note!\n:::\nThis does not change anything for how Jupyter Book interprets the content, but ensures that it is formatted as Markdown instead of as code when viewing the file in JupyterLab, which can make it easier for the eye when editing.\nYou can read more about these “Markdown-friendly” directives in the documentation."
+  },
+  {
+    "objectID": "modules/module8/slides/module8_05.html#grids",
+    "href": "modules/module8/slides/module8_05.html#grids",
+    "title": "Add your own content: Advanced features",
+    "section": "Grids",
+    "text": "Grids\nGrids organize content into containers:\n\n\nGrids provide an easy way for you to organize chunks of content into flexible containers on your page. They are useful for creating card-like layouts and flexible columns and rows.\nThis slide shows an example that creates a grid with two cards. Not that we are using the markdown friendly ::: directives here just as an example, we could also have used ``` instead.\nNote that:\n\nWe are nesting directives here, starting with four : for the grid directive and three : for the grid-item-card directive to indicate that the latter is a sub-directive of the outer grid directive.\n:gutter: specifies the separation width between the cards. In this case, it is set to 3.\nThe text immediately following :::{grid-item-card} will be the title of that card.\n+++ can also be used to define the card’s footer.\n\nYou can embed all kinds of content inside of grids, or have grids with columns and rows of different sizes. Check out this page for more details."
+  },
+  {
+    "objectID": "modules/module8/slides/module8_05.html#dropdowns",
+    "href": "modules/module8/slides/module8_05.html#dropdowns",
+    "title": "Add your own content: Advanced features",
+    "section": "Dropdowns",
+    "text": "Dropdowns\nDropdowns can hide and show content:\n\n\n\nYou can use the {dropdown} directive to create a dropdown with a title, that shows content only when clicked.\nThis is good when you want your readers to think about something on their own, before revealing the information you have written, e.g. for a practice quiz."
+  },
+  {
+    "objectID": "modules/module8/slides/module8_05.html#dropdown-admonitions",
+    "href": "modules/module8/slides/module8_05.html#dropdown-admonitions",
+    "title": "Add your own content: Advanced features",
+    "section": "Dropdown admonitions",
+    "text": "Dropdown admonitions\nDropdowns admonitions combine admonitions and dropdown:\n\n\n\nYou can also hide the body of your admonition blocks so that users must click a button to reveal their content.\nThis is helpful if you’d like to include some text that isn’t immediately visible to the user.\nYou can see an example in this slide."
+  },
+  {
+    "objectID": "modules/module8/slides/module8_05.html#showing-and-hiding-code-and-its-output",
+    "href": "modules/module8/slides/module8_05.html#showing-and-hiding-code-and-its-output",
+    "title": "Add your own content: Advanced features",
+    "section": "Showing and hiding code and its output",
+    "text": "Showing and hiding code and its output\n\n\nWe need to edit the cell’s metadata to tell Jupyter Book to show/hide the code or its output.\n\nSometimes we may not want to show the content of a code cell, or its output.\nFor example, suppose that we have the code cell in this slide. It generates a plot that is important to our readers, but maybe we don’t need to show them all the code.\nSo how can we hide the input code cell while still showing the output visualization?\nWe saw in the Jupyter notebook slide deck that we could export a notebook without its code cells using the nbconvert shell command, since there was no built-in interface element in JupyterLab to achieve this.\nFor Jupyter Book, the option to hide code input is built-in since it’s a very common use case.\nWe can hide the input of a cell by editing the cell’s metadata to tell Jupyter Book whether we want to hide the code input or its output."
+  },
+  {
+    "objectID": "modules/module8/slides/module8_05.html#showing-and-hiding-code-and-its-output-1",
+    "href": "modules/module8/slides/module8_05.html#showing-and-hiding-code-and-its-output-1",
+    "title": "Add your own content: Advanced features",
+    "section": "Showing and hiding code and its output",
+    "text": "Showing and hiding code and its output\nAccessing code cell metadata in JupyterLab:\n\n\nTo edit a code cell’s metadata in JupyterLab:\n\nSelect the cell and click on the gear icon in your JupyterLab environment\nThen expand the “Advanced Tools” tab"
+  },
+  {
+    "objectID": "modules/module8/slides/module8_05.html#showing-and-hiding-code-and-its-output-2",
+    "href": "modules/module8/slides/module8_05.html#showing-and-hiding-code-and-its-output-2",
+    "title": "Add your own content: Advanced features",
+    "section": "Showing and hiding code and its output",
+    "text": "Showing and hiding code and its output\n\n\n\nFor hiding the code itself, add a “Cell Tag” called hide-input to the cell via the Jupyter Lab interface. The easier way to do this is to click the button “Add Tag +” in the side panel, and type in hide-input. This will automatically populate the “Cell Metadata” box with the correct text as shown in the slide. If you wanted, you could also edit the “Cell Metadata” text box directly, but you will have to be careful getting the brackets correct."
+  },
+  {
+    "objectID": "modules/module8/slides/module8_05.html#showing-and-hiding-code-and-its-output-3",
+    "href": "modules/module8/slides/module8_05.html#showing-and-hiding-code-and-its-output-3",
+    "title": "Add your own content: Advanced features",
+    "section": "Showing and hiding code and its output",
+    "text": "Showing and hiding code and its output\n\n\n\nNow if you rebuild your book, the code cell will show up like the screenshot in this slide.\nYou can see that the code itself is hidden, while the output is visible. If the reader clicks the “Click to show” button, they can see the code as well."
+  },
+  {
+    "objectID": "modules/module8/slides/module8_05.html#showing-and-hiding-code-and-its-output-4",
+    "href": "modules/module8/slides/module8_05.html#showing-and-hiding-code-and-its-output-4",
+    "title": "Add your own content: Advanced features",
+    "section": "Showing and hiding code and its output",
+    "text": "Showing and hiding code and its output\n\n\nSimilar to the last slide, you can hide a code cell’s output by adding \"hide-output\" to the “Cell Metadata” in JupyterLab.\nThis slide shows the rendered result of hiding the output."
+  },
+  {
+    "objectID": "modules/module8/slides/module8_05.html#gluing-variables-in-your-notebook",
+    "href": "modules/module8/slides/module8_05.html#gluing-variables-in-your-notebook",
+    "title": "Add your own content: Advanced features",
+    "section": "“Gluing” variables in your notebook",
+    "text": "“Gluing” variables in your notebook\nUsing the glue prefix, you can:\n\nBind a variable to a name (called a “key”)\nReference that variable from your page’s content\n\n\n\nSometimes we might want to access the value of a variable within the text that we’re writing.\nThis is useful since the value in the text will be updated each time the notebook is executed, instead of having to change it manually if something changes in our data or analysis code.\nJupyter Book allows us to do this using the glue prefix, which makes it possible to “glue” numbers and even figures into our text.\nYou can see an example of gluing a numerical variable in this slide. If you are gluing a string/text variable and you want to avoid the variable value being surrounded by quotation marks in the text, you can pass the text option to the glue prefix like this: {glue:text}."
+  },
+  {
+    "objectID": "modules/module8/slides/module8_05.html#gluing-variables-in-your-notebook-1",
+    "href": "modules/module8/slides/module8_05.html#gluing-variables-in-your-notebook-1",
+    "title": "Add your own content: Advanced features",
+    "section": "“Gluing” variables in your notebook",
+    "text": "“Gluing” variables in your notebook\n\n\nImportant application of “gluing”:\nPreviously, we have learned how to give auto-numbered and referenceable captions to figures that contain image files. However, we’ve never discussed how we can do the same for figures generated right in notebook. Good news is, gluing can be used for giving captions to figures generated from code as well.\nHere I first create an altair figure and then I assign it to a variable called fig.\nThen I glue the name altair_fig to fig, so I can use it later elsewhere in my Jupyter Book.\nAfter doing this, Jupyter Book knows about that figure object, so I can “paste” the object anywhere I want. Here, I’ve used this functionality to give an auto-numbered and referenceable caption to my figure."
+  },
+  {
+    "objectID": "modules/module8/slides/module8_05.html#gluing-variables-in-your-notebook-2",
+    "href": "modules/module8/slides/module8_05.html#gluing-variables-in-your-notebook-2",
+    "title": "Add your own content: Advanced features",
+    "section": "“Gluing” variables in your notebook",
+    "text": "“Gluing” variables in your notebook\n\n\nAnd here is what this Jupyter notebook looks like when rendered by Jupyter Book:\nNote that:\n\nI’ve hidden the piece of code that generates the altair figure. I did this using cell metadata tags that we discussed in the earlier slides.\nMoreover, in the HTML version of your built book, try using your mouse to drag and zoom in/out on the figure. You’ll see that the figure is interactive, just like in a Jupyter notebook!"
+  },
+  {
+    "objectID": "modules/module8/slides/module8_01.html#what-is-jupyter-book",
+    "href": "modules/module8/slides/module8_01.html#what-is-jupyter-book",
+    "title": "Create your first Jupyter Book",
+    "section": "What is Jupyter Book?",
+    "text": "What is Jupyter Book?\n\n\nLogo source\n\nKey Jupyter Book features:\n\nWrite publication-quality content\nWrite content in multiple formats\nAdd interactivity to your book\nGenerate a variety of outputs\nA command-line interface\n\n\nJupyter Book is an open source project to help you create publication-quality books and documents from Markdown documents and Jupyter Notebooks.\n\nKey Jupyter Book features:\n\nWrite publication-quality content including figures, math, citations and cross-references\nWrite content as Jupyter Notebooks, Markdown, or reStructuredText\nAdd interactivity to your book, e.g., toggle visibility of cells, connect with an online service like Binder, and include interactive outputs (e.g., figures and widgets)\nGenerate a variety of outputs, including websites (which might use HTML, CSS, JS), markdown and PDF.\nJupyterBook provides a command-line interface to quickly build books, for example, you can run jupyter-book build my-book/ to easily build the output of your book.\n\nUnder the hood, Jupyter Books rely on the well-regarded Sphinx documentation system, which is the gold standard for writing Python package documentation. This makes writing Jupyter Book both powerful and flexible."
+  },
+  {
+    "objectID": "modules/module8/slides/module8_01.html#book-building-process",
+    "href": "modules/module8/slides/module8_01.html#book-building-process",
+    "title": "Create your first Jupyter Book",
+    "section": "Book building process",
+    "text": "Book building process\n\nBuilding a Jupyter Book broadly consists of these steps:\n\n\n✏️ Create your book’s content\n\n\n\n🛠 Build your book\n\n\n\n📚 Publish your book online\n\n\nBuilding a Jupyter Book broadly consists of these steps:\n\n✏️ Create your book’s content.\n\nYou structure your book with a collection of folders, files, and configuration.\n\n🛠 Build your book.\n\nUsing Jupyter Book’s command-line interface you can convert your pages into either an HTML or a PDF book.\n\n📚 Publish your book online.\n\nOnce your book is built, you can share it with others. Most common is to build HTML, and host it as a public website."
+  },
+  {
+    "objectID": "modules/module8/slides/module8_01.html#anatomy-of-a-jupyter-book",
+    "href": "modules/module8/slides/module8_01.html#anatomy-of-a-jupyter-book",
+    "title": "Create your first Jupyter Book",
+    "section": "Anatomy of a Jupyter Book",
+    "text": "Anatomy of a Jupyter Book\n\nThe three components of every Jupyter Book:\n\nA configuration file (_config.yml)\nA table of contents file (_toc.yml)\nYour book’s content\n\n\nThere are three things that you need in order to build a Jupyter Book.\n\nA configuration file (_config.yml)\nA table of contents file (_toc.yml)\nYour book’s content\n\nWe will learn about these more in detail in the later part of this slide deck, but let’s first see how we can conveniently generate a template of a sample book with all the necessary files for a book."
+  },
+  {
+    "objectID": "modules/module8/slides/module8_01.html#generate-a-sample-book-with-template-files",
+    "href": "modules/module8/slides/module8_01.html#generate-a-sample-book-with-template-files",
+    "title": "Create your first Jupyter Book",
+    "section": "Generate a sample book with template files",
+    "text": "Generate a sample book with template files\nCreate a sample book:\njupyter-book create my-book/\n\nThe created directory my-book/ should look like this:\nmy-book/\n├── _config.yml\n├── _toc.yml\n├── intro.md\n├── logo.png\n├── markdown-notebooks.md\n├── markdown.md\n├── notebooks.ipynb\n├── references.bib\n└── requirements.txt\n\nJupyter Book comes bundled with a lightweight sample book that you can use both to help you understand a book’s structure and as templates to build your own book from.\nYou can create a sample book by running the following command (the name of the folder can be anything, here we chose my-book/ as an example):\njupyter-book create my-book/\nThis will generate a small Jupyter Book in your current working directory that you can both build and explore locally.\nThis is helpful since we can quickly get an overview of what a full Jupyter Book looks like, instead of figuring it out while creating the files one by one ourselves.\nThe created directory my-book/ should look like this:\nmy-book/\n├── _config.yml\n├── _toc.yml\n├── intro.md\n├── logo.png\n├── markdown-notebooks.md\n├── markdown.md\n├── notebooks.ipynb\n├── references.bib\n└── requirements.txt\nYou can see that this structure includes the configuration and structure files that we mentioned on the previous slide (i.e., _config.yml and _toc.yml). It also includes the following:\n\nThe landing page in intro.md\nA logo for the book in logo.png\nContent for the book in markdown-notebooks.md, markdown.md, and notebook.ipynb\nLiterary references in references.bib\nThe Python packages required to build the book in requirements.txt\n\nWe will use this sample Jupyter Book as a starting point to work from in the rest of this slide deck and explain each of the book parts in more detail."
+  },
+  {
+    "objectID": "modules/module8/slides/module8_01.html#book-configuration-_config.yml",
+    "href": "modules/module8/slides/module8_01.html#book-configuration-_config.yml",
+    "title": "Create your first Jupyter Book",
+    "section": "Book configuration (_config.yml)",
+    "text": "Book configuration (_config.yml)\n\nAll of the configuration for your book is in a YAML file called _config.yml.\n\nHere’s an example of a simple _config.yml file:\n# In _config.yml\ntitle: My sample book\nauthor: The Jupyter Book Community\nlogo: logo.png\nexecute:\n  execute_notebooks: force\n\n# Add a bibtex file so that we can create citations\nbibtex_bibfiles:\n  - references.bib\n\nAll of the configuration for your book is in a file called _config.yml. This file is in the YAML format, just as the environment.yml files that we created in Module 6 uses conda.\nYou can define metadata for your book (such as its title), add a book logo, turn on different “interactive” buttons (such as a Binder button for pages built from a Jupyter Notebook), and more.\nHere’s an example of a simple _config.yml file, which contains key-value pairs to specify the configuration of our book:\n\ntitle: defines a title for the book. It will show up in the left sidebar.\nauthor: adds the author’s name to your book template, for attribution.\nlogo: defines a path to an image file for your book’s logo, which will also show up in the sidebar.\nexecute: contains a collection of configuration options to control execution and caching.\nexecute_notebooks: tells Jupyter Book to force execution of any computational content each time it builds the book. By default, Jupyter Book executes and caches all book content.\nbibtex_bibfiles: is a section to define bibliography files for your Jupyter Book. This configuration activates citations for your book.\n\nThere are helpful comments in the configuration file that explain many of the additional options that can be used. For an even more extensive explanation of all the configuration options, refer to the documentation."
+  },
+  {
+    "objectID": "modules/module8/slides/module8_01.html#table-of-contents-_toc.yml",
+    "href": "modules/module8/slides/module8_01.html#table-of-contents-_toc.yml",
+    "title": "Create your first Jupyter Book",
+    "section": "Table of contents (_toc.yml)",
+    "text": "Table of contents (_toc.yml)\n\nThe _toc.yml file defines the structure of the book:\n# In _toc.yml\nformat: jb-book\nroot: intro\nchapters:\n- file: markdown\n- file: notebooks\n- file: markdown-notebooks\n\nImportant:\n\nEach entry under chapters: is the name of a file (extensions are optional).\nThe filenames should be relative to your book’s root folder.\n\n\nJupyter Book uses your table-of-contents file to define the structure of your book. For example, your chapters, sub-chapters, etc.\nThis is a YAML file with a collection of pages, each one linking to a file in your book. Here’s an example of the _toc.yml file:\n# In _toc.yml\nformat: jb-book\nroot: intro\nchapters:\n- file: markdown\n- file: notebooks\n- file: markdown-notebooks\nThe _toc.yml can be configured to format the book either as jb-article, or jb-book.\nThe root item is considered the landing page for html builds, and is used as front matter for Latex builds.\nFor jb-book, subsequent chapters can be added under the chapters: section in the .yml file.\n\nImportant:\n\nEach entry under chapters: is the name of a file (extensions are optional).\nThe filenames should be relative to your book’s root folder.\n\nThe title of each chapter will be inferred from the title in your files, i.e. the heading specified with a single #, such as # Title, which stands for the “top-level” heading."
+  },
+  {
+    "objectID": "modules/module8/slides/module8_01.html#table-of-contents-_toc.yml-1",
+    "href": "modules/module8/slides/module8_01.html#table-of-contents-_toc.yml-1",
+    "title": "Create your first Jupyter Book",
+    "section": "Table of contents (_toc.yml)",
+    "text": "Table of contents (_toc.yml)\n\nYou can also put chapters into different groups, which are called parts:\n\n\nYou may optionally organize your chapters into parts, by using the parts: key in your _toc.yml:\nThe parts: key accepts a list of entries, each of which defines a chapter.\nYou can number each part by including numbered: True.\nThere are more details on numbering and part-specific configuration in the documentation."
+  },
+  {
+    "objectID": "modules/module8/slides/module8_01.html#book-content",
+    "href": "modules/module8/slides/module8_01.html#book-content",
+    "title": "Create your first Jupyter Book",
+    "section": "Book content",
+    "text": "Book content\n\nMarkdown files (.md):\n\nLet’s take a look at one of the markdown files in the template book, intro.md:\n\n\nMarkdown files (.md):\nAs we learned in the previous module, the Markdown format can be used to structure text with extra characters and syntax to give it extra meaning (e.g., using **bold** to indicate that we want that piece of text to be shown in bold font). It is very popular and used across many different technology platforms, including Jupyter Book.\n\nLet’s take a look at one of the markdown files in the template book, intro.md:\n\nYou can see that there are some special formatting that we didn’t learn about in the last module, e.g. :::. There are some additions to the regular Markdown syntax that are specific for Jupyter Book and we will learn more about them in the next slide deck."
+  },
+  {
+    "objectID": "modules/module8/slides/module8_01.html#book-content-1",
+    "href": "modules/module8/slides/module8_01.html#book-content-1",
+    "title": "Create your first Jupyter Book",
+    "section": "Book content",
+    "text": "Book content\n\nJupyter Notebooks (.ipynb):\n\n\nJupyter Notebooks (.ipynb):\nThe other type of content is a Jupyter Notebook file with the .ipynb extension.\nJupyter Notebooks have a combination of computational content and narrative content.\nEach notebook is associated with a kernel (e.g. Python, R, Julia) that defines the language used to execute the notebook’s computational content.\nBy default, when Jupyter Book builds your book, notebooks will be executed and their outputs cached. On subsequent builds, notebook pages will be re-executed only if their code has changed.\nAny outputs generated by the notebook will be inserted into your built book (though they may not be in your input notebook). This way you do not need to store the notebook’s outputs with your repository."
+  },
+  {
+    "objectID": "modules/module8/slides/module8_01.html#time-to-build-your-book",
+    "href": "modules/module8/slides/module8_01.html#time-to-build-your-book",
+    "title": "Create your first Jupyter Book",
+    "section": "Time to build your book!",
+    "text": "Time to build your book!\nRun the build command in the sample book folder:\njupyter-book build my-book/\n\nContent of the build directory (my-book/_build/html/):\nhtml/\n├── _panels_static\n│   ├── ...\n├── _sources\n│   ├── intro.md\n│   ├── markdown-notebooks.ipynb\n│   ├── ...\n├── _static\n│   ├── ...\n├── index.html\n...\n\nNow that we’ve added content and configured our book, it’s time to “build” the book.\nYou can think of the build process as a more advanced type of export for Jupyter Notebooks, since it will take your source documents and will create output documents (e.g. like a web page) that can be used to present your book.\nSince we have already created the sample book in the folder my-book/, you can run the following build command in your terminal to create a fully functioning HTML website:\njupyter-book build my-book/\nNote: You can use the short-hand jb instead of jupyter-book in the above command, and run jb build my-book/ instead.\n\nIf you look into my-book/_build/html/ folder, you’ll see something like this:\nhtml/\n├── _panels_static\n│   ├── ...\n├── _sources\n│   ├── intro.md\n│   ├── markdown-notebooks.ipynb\n│   ├── ...\n├── _static\n│   ├── ...\n├── index.html\n...\nThese are all the files needed for a standalone website!"
+  },
+  {
+    "objectID": "modules/module8/slides/module8_01.html#your-first-jupyter-book-website",
+    "href": "modules/module8/slides/module8_01.html#your-first-jupyter-book-website",
+    "title": "Create your first Jupyter Book",
+    "section": "Your first Jupyter Book website",
+    "text": "Your first Jupyter Book website\n\nThis is what your home page file _build/html/index.html looks like:\n\n\nYou can view the website you just created by opening _build/html/index.html using any browser that you like. You should see a webpage like this:\n\nAlthough this page opens in a browser, so far it only exists locally on your computer. Later in this module we will see how you can make this book publicly available using GitHub’s publishing system."
+  },
+  {
+    "objectID": "modules/module8/module8-09-what_did_we_just_learn.html",
+    "href": "modules/module8/module8-09-what_did_we_just_learn.html",
+    "title": "5. What Did We Just Learn?",
+    "section": "",
+    "text": "5. What Did We Just Learn?\n\nVideoSlides",
+    "crumbs": [
+      "**M8. Jupyter Book**",
+      "5. What Did We Just Learn?"
+    ]
+  },
+  {
+    "objectID": "modules/module8/module8-07-publish_your_book_online.html",
+    "href": "modules/module8/module8-07-publish_your_book_online.html",
+    "title": "4. Publish your book online",
+    "section": "",
+    "text": "4. Publish your book online\n\nVideoSlides",
+    "crumbs": [
+      "**M8. Jupyter Book**",
+      "4. Publish your book online"
+    ]
+  },
+  {
+    "objectID": "modules/module8/module8-05-add_your_own_content:_advanced_features.html",
+    "href": "modules/module8/module8-05-add_your_own_content:_advanced_features.html",
+    "title": "3. Add your own content: Advanced features",
+    "section": "",
+    "text": "3. Add your own content: Advanced features\n\nVideoSlides",
+    "crumbs": [
+      "**M8. Jupyter Book**",
+      "3. Add your own content: Advanced features"
+    ]
+  },
+  {
+    "objectID": "modules/module8/module8-03-add_your_own_content:_essentials.html",
+    "href": "modules/module8/module8-03-add_your_own_content:_essentials.html",
+    "title": "2. Add your own content: Essentials",
+    "section": "",
+    "text": "2. Add your own content: Essentials\n\nVideoSlides",
+    "crumbs": [
+      "**M8. Jupyter Book**",
+      "2. Add your own content: Essentials"
+    ]
+  },
+  {
+    "objectID": "modules/module8/module8-01-create_your_first_jupyter_book.html",
+    "href": "modules/module8/module8-01-create_your_first_jupyter_book.html",
+    "title": "1. Create your first Jupyter Book",
+    "section": "",
+    "text": "1. Create your first Jupyter Book\n\nVideoSlides",
+    "crumbs": [
+      "**M8. Jupyter Book**",
+      "1. Create your first Jupyter Book"
+    ]
+  },
+  {
+    "objectID": "modules/index.html",
+    "href": "modules/index.html",
+    "title": "Welcome to The Data Science Toolbox!",
+    "section": "",
+    "text": "Welcome to The Data Science Toolbox!\nThis course is part of the Key Capabilities for Data Science program and covers topics related to workflows, plateforms and tools used in data analysis.\nIn this course, we will dive into the world of data science tools and utilities. While these are not strictly required for data analysis, they are necessary for efficient, reproducible, and collaborative data science practices, and are all important building blocks for a successful and sustained data science career.\nCourse prerequisites: Programming in Python for Data Science",
+    "crumbs": [
+      "**M0. Welcome to The Data Science Toolbox!**",
+      "0. Welcome!"
+    ]
+  },
+  {
+    "objectID": "modules/module8/module8-00-module_learning_outcomes.html",
+    "href": "modules/module8/module8-00-module_learning_outcomes.html",
+    "title": "0. Module Learning Outcomes",
+    "section": "",
+    "text": "0. Module Learning Outcomes\n\nVideoSlides",
+    "crumbs": [
+      "**M8. Jupyter Book**",
+      "0. Module Learning Outcomes"
+    ]
+  },
+  {
+    "objectID": "modules/module8/module8-02-practice_today_a_reader_tomorrow_a_leader.html",
+    "href": "modules/module8/module8-02-practice_today_a_reader_tomorrow_a_leader.html",
+    "title": "1.1. Exercises",
+    "section": "",
+    "text": "We have the following folder containing the files we’d like to include in a report created using Jupyter Book:\nclimate-change/\n├── _config.yml\n├── _toc.yml\n├── intro.md\n├── lit-review.md\n├── logo.png\n├── analysis\n|   ├── EDA.ipynb\n|   ├── feat-eng.ipynb\n|   ├── predictive-model.ipynb\n├── discussion.md\n├── references.bib\n└── requirements.txt",
+    "crumbs": [
+      "**M8. Jupyter Book**",
+      "&nbsp;&nbsp; 1.1. Exercises"
+    ]
+  },
+  {
+    "objectID": "modules/module8/module8-02-practice_today_a_reader_tomorrow_a_leader.html#practice-today-a-reader-tomorrow-a-leader",
+    "href": "modules/module8/module8-02-practice_today_a_reader_tomorrow_a_leader.html#practice-today-a-reader-tomorrow-a-leader",
+    "title": "1.1. Exercises",
+    "section": "",
+    "text": "We have the following folder containing the files we’d like to include in a report created using Jupyter Book:\nclimate-change/\n├── _config.yml\n├── _toc.yml\n├── intro.md\n├── lit-review.md\n├── logo.png\n├── analysis\n|   ├── EDA.ipynb\n|   ├── feat-eng.ipynb\n|   ├── predictive-model.ipynb\n├── discussion.md\n├── references.bib\n└── requirements.txt",
+    "crumbs": [
+      "**M8. Jupyter Book**",
+      "&nbsp;&nbsp; 1.1. Exercises"
+    ]
+  },
+  {
+    "objectID": "modules/module8/module8-04-practice_becoming_an_author.html",
+    "href": "modules/module8/module8-04-practice_becoming_an_author.html",
+    "title": "2.1. Exercises",
+    "section": "",
+    "text": "Suppose that you have inserted an image in your book using the following markdown block:\n```{figure} https://upload.wikimedia.org/wikipedia/commons/0/09/TheCheethcat.jpg\n ---\n height: 600px\n name: an-african-cheetah\n ---\n An African Cheetah\n ```\n\n\n\n\n\n\n\n\n```{math}\n:label: newton-2nd-law\n$$\\Sigma F = m \\frac{dV}{dt}$$\n```",
+    "crumbs": [
+      "**M8. Jupyter Book**",
+      "&nbsp;&nbsp; 2.1. Exercises"
+    ]
+  },
+  {
+    "objectID": "modules/module8/module8-04-practice_becoming_an_author.html#practice-becoming-an-author",
+    "href": "modules/module8/module8-04-practice_becoming_an_author.html#practice-becoming-an-author",
+    "title": "2.1. Exercises",
+    "section": "",
+    "text": "Suppose that you have inserted an image in your book using the following markdown block:\n```{figure} https://upload.wikimedia.org/wikipedia/commons/0/09/TheCheethcat.jpg\n ---\n height: 600px\n name: an-african-cheetah\n ---\n An African Cheetah\n ```\n\n\n\n\n\n\n\n\n```{math}\n:label: newton-2nd-law\n$$\\Sigma F = m \\frac{dV}{dt}$$\n```",
+    "crumbs": [
+      "**M8. Jupyter Book**",
+      "&nbsp;&nbsp; 2.1. Exercises"
+    ]
+  },
+  {
+    "objectID": "modules/module8/slides/module8_00.html#module-learning-outcomes",
+    "href": "modules/module8/slides/module8_00.html#module-learning-outcomes",
+    "title": "Module Learning Outcomes",
+    "section": "Module Learning Outcomes",
+    "text": "Module Learning Outcomes\nBy the end of this module, you will be able to\n\nExplain the Jupyter Book ecosystem.\nBuild Jupyter Books via the command line.\nCreate your own content files.\nPublish your book online for free using GitHub Pages.\n\n\nIn this module, you will learn how to build books and create websites using Jupyter Book."
+  },
+  {
+    "objectID": "modules/module8/slides/module8_03.html#create-your-file-and-add-content-to-it",
+    "href": "modules/module8/slides/module8_03.html#create-your-file-and-add-content-to-it",
+    "title": "Add your own content: Essentials",
+    "section": "Create your file and add content to it",
+    "text": "Create your file and add content to it\n\nCreate a new file called my-markdown-file.md with the following content:\n\nMarkdown syntax specific to Jupyter Book:\n\n(section-label)=\n[link text](link-target)\n\n\nIn the folder with all of your sample book contents, create a new file called my-markdown-file.md. Put the following content in it:\n\nWe’ve added two new pieces of markdown syntax, both of them are related to cross-references.\n\n(section-label)= is a label that’s attached to a section header. It refers to whatever header follows, and allows you to refer to this label later on in your text.\n[link text](link-target) syntax is how you specify a link in markdown. Here we’ve linked to another page, as well as to the label we created above.\n\nWhen you build your book, you’ll see how these links resolve in the output.\nYou can find out more about cross-referencing in Jupyter Book’s documentation linked here: https://jupyterbook.org/en/stable/content/references.html."
+  },
+  {
+    "objectID": "modules/module8/slides/module8_03.html#add-your-file-to-your-table-of-content",
+    "href": "modules/module8/slides/module8_03.html#add-your-file-to-your-table-of-content",
+    "title": "Add your own content: Essentials",
+    "section": "Add your file to your table of content",
+    "text": "Add your file to your table of content\n\n\n\nOnce you’ve created a file and added your own content to it, you have to add it to your table of content file, that is, _toc.yml to make it available to Jupyter Book.\n\nBy doing this, you are informing Jupyter Book where the new file fits with your book’s structure."
+  },
+  {
+    "objectID": "modules/module8/slides/module8_03.html#rebuild-your-book-after-making-changes",
+    "href": "modules/module8/slides/module8_03.html#rebuild-your-book-after-making-changes",
+    "title": "Add your own content: Essentials",
+    "section": "Rebuild your book after making changes",
+    "text": "Rebuild your book after making changes\n\nDon’t forget to rebuild your book!\n\nClean cached book files:\njupyter-book clean my-book/\nRebuild the book:\njupyter-book build my-book/\n\nIn order to see the changes you’ve made, don’t forget to rebuild your book.\n\nTo clean cached book files and make sure everything is rebuilt from scratch, first run:\njupyter-book clean my-book/\nand then run the following to rebuild the book:\njupyter-book build my-book/\nYour new page will now show up in the rebuilt book when you refresh your browser page."
+  },
+  {
+    "objectID": "modules/module8/slides/module8_03.html#figures",
+    "href": "modules/module8/slides/module8_03.html#figures",
+    "title": "Add your own content: Essentials",
+    "section": "Figures",
+    "text": "Figures\nYou can include figures in your Jupyter Book using the following syntax:\n ```{figure} https://solarsystem.nasa.gov/system/resources/detail_files/2486_stsci-h-p1936a_1800.jpg\n:::\n\n ---\n height: 300px\n name: jupiter-figure\n:::\n\n ---\n The beautiful planet Jupiter!\n ```\n\n\n\nYou can include figures in your Jupyter Book using the syntax that you can see on the slide [1]:\n ```{figure} https://solarsystem.nasa.gov/system/resources/detail_files/2486_stsci-h-p1936a_1800.jpg\n:::\n\n ---\n height: 300px\n name: jupiter-figure\n:::\n\n ---\n The beautiful planet Jupiter!\n ```\nThe numbering of figures is automatic, so if you insert new ones before some of the existing figures, Jupyter Book will renumber the existing ones for you!\nThe reason we have name: jupiter-figure is so we can cross-reference a figure later in the text, as we will show you in the next slide.\n[1] Example adopted from UBC Jupyter Days 2020 Workshop"
+  },
+  {
+    "objectID": "modules/module8/slides/module8_03.html#cross-referencing-figures",
+    "href": "modules/module8/slides/module8_03.html#cross-referencing-figures",
+    "title": "Add your own content: Essentials",
+    "section": "Cross-referencing figures",
+    "text": "Cross-referencing figures\n\n\nCross-referencing a figure means linking/referencing the figure from somewhere else in the document. Here for example, in order to reference the figure that we’ve named jupiter-figure, we can use {numref}`jupiter-figure` in the text.\nAfter adding a figure and referencing it in the main text, our markdown file (i.e., my-markdown-file.md) looks like in this slide. The rendered version is shown on the next page."
+  },
+  {
+    "objectID": "modules/module8/slides/module8_03.html#cross-referencing-figures-1",
+    "href": "modules/module8/slides/module8_03.html#cross-referencing-figures-1",
+    "title": "Add your own content: Essentials",
+    "section": "Cross-referencing figures",
+    "text": "Cross-referencing figures\nThe end result will look like this if you rebuild your Jupyter Book:\n\n\nThis is what the end result will look like after you rebuild your Jupyter Book.\nYou can see how the figure we added shows up nicely in the center, has its own caption, and is numbered automatically.\nAlso note how the referenced figure looks like in the 2nd paragraph of the text (red arrow)."
+  },
+  {
+    "objectID": "modules/module8/slides/module8_03.html#math-and-equations",
+    "href": "modules/module8/slides/module8_03.html#math-and-equations",
+    "title": "Add your own content: Essentials",
+    "section": "Math and equations",
+    "text": "Math and equations\n\nIn Jupyter Book, you can easily add:\n\nInline math equations\nMath equation blocks\nNumbered equations\n\n\n\nInline math:\n\nJupiter has a mass of: $m_{j} \\approx 1.9 \\times 10^{27} \\: \\text{kg}$\n\nWhen rendered by Jupyter Book, it looks like this:\n\n\nJupyter Book uses MathJax for typesetting math which allows you to add LaTeX-style maths to your book, including\n\ninline math equations,\nmath equation blocks, and\nnumbered equations.\n\n\n\nInline math can be defined by enclosing expressions in $s as you can see on the slide:\n\nJupiter has a mass of:  $m_{j} \\approx 1.9 \\times 10^{27} \\: \\text{kg}$\nWhen rendered by Jupyter Book, it looks like the screenshot at the bottom of this slide."
+  },
+  {
+    "objectID": "modules/module8/slides/module8_03.html#math-and-equations-1",
+    "href": "modules/module8/slides/module8_03.html#math-and-equations-1",
+    "title": "Add your own content: Essentials",
+    "section": "Math and equations",
+    "text": "Math and equations\n\n\nMath blocks:\n\n$$\n  m_{j} \\approx 1.9 \\times 10^{27} \\: \\text{kg}\n$$\nRendered:\n\n\n\nNumbered equations:\n\n\n\n```{math}\n:label: eq_label\nm_{j} \\approx 1.9 \\times 10^{27} \\: \\text{kg}\n```\n\n\nRendered:\n\n\n\nMath blocks are used for more complex expressions and can be defined by enclosing the math in a pair of dollar signs, i.e. $$:\n\n$$\n  m_{j} \\approx 1.9 \\times 10^{27} \\: \\text{kg}\n$$\nwhich will show up in the rendered book like the top-most screenshot in this slide.\n\n\nIf you want to reference an equation in the text and have Jupyter Book automatically take care of numbering it, you can use numbered equations via the label attribute:\n\n\n\n```{math}\n:label: eq_label\nm_{j} \\approx 1.9 \\times 10^{27} \\: \\text{kg}\n```\n\n\nThis will render as the screenshot on the bottom of this slide and you will see more details about cross-referencing equations like this in the next slide."
+  },
+  {
+    "objectID": "modules/module8/slides/module8_03.html#cross-referencing-equations",
+    "href": "modules/module8/slides/module8_03.html#cross-referencing-equations",
+    "title": "Add your own content: Essentials",
+    "section": "Cross-referencing equations",
+    "text": "Cross-referencing equations\n\nYou can refer to equation using their labels.\nUse {eq}`eq_label` for equations, just like {numref}`jupiter-figure` for images.\n\n\nHere is how we add equations to my-markdown-file.md:\nJupiter has a mass of $m_{j} \\approx 1.9 \\times 10^{27} \\: \\text{kg}$.\nLet's show this as a code block as well:\n\n$$\n  m_{j} \\approx 1.9 \\times 10^{27} \\: \\text{kg}\n$$\n\nAnother way is to have named equations so you can cross-reference them later:\n\n\n\n```{math}\n:label: eq_label\nm_{j} \\approx 1.9 \\times 10^{27} \\: \\text{kg}\n```\n\n\n\nEquation {eq}`eq_label` is an example of a named equation.\n\nIf you have created an equation with a label, you can link to it from within your text and across pages.\nYou can refer to the equation using the label that you’ve provided by using {eq}`eq_label`, just like {numref}`jupiter-figure` that we used with images.\n\nYou can see in the slide how we add equations to my-markdown-file.md:"
+  },
+  {
+    "objectID": "modules/module8/slides/module8_03.html#cross-referencing-equations-1",
+    "href": "modules/module8/slides/module8_03.html#cross-referencing-equations-1",
+    "title": "Add your own content: Essentials",
+    "section": "Cross-referencing equations",
+    "text": "Cross-referencing equations\nOnce you add these equations to my-markdown-file.md and rebuild your Jupyter Book, your book will look like:\n\n\nOnce you add these equations to my-markdown-file.md and rebuild your Jupyter Book, your book will look like the screenshot in this slide. Note the equation numbering pointed at by the red arrow."
+  },
+  {
+    "objectID": "modules/module8/slides/module8_07.html#github-pages",
+    "href": "modules/module8/slides/module8_07.html#github-pages",
+    "title": "Publish your book online",
+    "section": "GitHub Pages",
+    "text": "GitHub Pages\n\nhttps://pages.github.com/\n\nOnce you’ve built the HTML for your book, you can host it online.\n\nThe most convenient way to do this is with a service that supports static websites. This means that the files we created with Jupyter Book’s build command can simply be uploaded to a web server to create a web page.\nThe quickest and most convenient option for publishing your book website online is to use GitHub Pages.\n\nThere are a few steps to follow to publish your book using GitHub Pages. We’ll go over those steps in the following slides."
+  },
+  {
+    "objectID": "modules/module8/slides/module8_07.html#create-an-online-repository-for-your-book",
+    "href": "modules/module8/slides/module8_07.html#create-an-online-repository-for-your-book",
+    "title": "Publish your book online",
+    "section": "Create an online repository for your book",
+    "text": "Create an online repository for your book\n\n\n\nFirst, login on GitHub, then go to the “create a new repository” page, which is linked here: https://github.com/new\nNext, give your online repository a name and a description. Make your repository public and do not initialize it with a README file. Your screen should look like this:\nClick “Create repository” at the end of the page.\n\nAfter this step, we can go ahead and upload the built Jupyter Book to our GitHub repo directly.\nHowever, it’s a good idea to first push the source files of our Jupyter Book to GitHub."
+  },
+  {
+    "objectID": "modules/module8/slides/module8_07.html#push-the-source-files-to-github",
+    "href": "modules/module8/slides/module8_07.html#push-the-source-files-to-github",
+    "title": "Publish your book online",
+    "section": "Push the source files to GitHub",
+    "text": "Push the source files to GitHub\n\nClone the empty online repository to your computer:\ngit clone https://github.com/&lt;my-org&gt;/&lt;my-repository-name&gt;\n\n\n\nCopy your book files into this newly cloned repository:\ncp -r mynewbook/* myonlinebook/\n\n\n\nAdd _build/ to your .gitignore to avoid pushing build artifacts to your main branch\n\n\n\nSync your local and remote repositories:\ncd myonlinebook\ngit add ./*\ngit commit -m \"adding my first book!\"\ngit push\n\n\nLet’s now learn how to push the source files to our books online repository:\n\nFirst, clone the (currently empty) online repository to a location on your local computer. You can do this using the git clone command:\ngit clone https://github.com/&lt;my-org&gt;/&lt;my-repository-name&gt;\nCopy all of your book’s files and folders into this newly cloned repository. For example, if you created your book locally using the jupyter-book create mynewbook command, and your new repository is called myonlinebook, you can do this in the command line using cp -r as shown on the slide:\ncp -r mynewbook/* myonlinebook/\nAdd _build/ to your .gitignore to avoid pushing build artifacts to your main branch. We are going to push these files and folders to another branch later to create the website.\nNow you need to sync your local and remote (i.e., online) repositories. You can do this with the last series of commands shown on the slide:\ncd myonlinebook\ngit add ./*\ngit commit -m \"Add my first book\"\ngit push"
+  },
+  {
+    "objectID": "modules/module8/slides/module8_07.html#publish-your-built-book-online-with-github-pages",
+    "href": "modules/module8/slides/module8_07.html#publish-your-built-book-online-with-github-pages",
+    "title": "Publish your book online",
+    "section": "Publish your built book online with GitHub Pages",
+    "text": "Publish your built book online with GitHub Pages\n\nNext, we have to host the build artifact of our book online, although we don’t want them on the main branch\n\nThe build artifacts are needed for rendering the book as a website\n\n\n\n\nThe easiest way is to use the ghp-import package\n\nghp-import is a lightweight Python package that makes it easy to push HTML content to a GitHub repository\n\n\n\nWe’ll learn how to use ghp-import in the next few slides.\n\nWe have just pushed the source files for our book into our GitHub repository This makes the source code—that is, the notebooks, markdown document, etc.—publicly accessible for everyone.\nHowever, we still aren’t hosting the book’s webpage which Jupyter Book has generated for us.\nIn order to do this, we first need to upload the HTML files generated by the build command to GitHub. These files are usually called build artifacts.\nThe build artifacts are needed for rendering the book as a website, but we don’t want to keep track of numerous build files on the main branch using Git. The build artifacts are temporary and replaceable. You can regenerate the build artifacts solely using your source files by running the build command.\nConsidering what we just discussed, we’re going to put the build artifacts on a branch that is specific to GitHub pages, which is called gh-pages by default.\nWe could upload the build artifacts manually to this site, but there is a package called ghp-import that will automate this process. ghp-import is a lightweight Python package that makes it easy to push HTML content to a GitHub repository.\nghp-import works by copying the entire content of your built book (i.e., the _build/html folder) to a branch of your repository called gh-pages (instead of main), and pushing everything to GitHub. This way you don’t create unnecessary clutter on your main branch.\nWe’ll learn how to use ghp-import in the next few slides."
+  },
+  {
+    "objectID": "modules/module8/slides/module8_07.html#how-to-use-ghp-import-to-publish-our-book",
+    "href": "modules/module8/slides/module8_07.html#how-to-use-ghp-import-to-publish-our-book",
+    "title": "Publish your book online",
+    "section": "How to use ghp-import to publish our book",
+    "text": "How to use ghp-import to publish our book\n\nInstall ghp-import:\npip install ghp-import\n\n\n\nFrom the main branch of your book’s local root directory, call ghp-import and point it to your HTML files:\nghp-import -n -p -f _build/html\n\n\n\nNow gh-pages branch is automatically set to host your website HTML files. You can view this in the settings page of your GitHub repository:\n\n\n\n\nFirst step is to install ghp-import using the command\npip install ghp-import\n\nin your current conda environment.\n\n\nThen, from the main branch of your book’s local root directory (which contains the _build/html folder), call ghp-import and point it to your HTML files. You can do this by running the second command on the slide:\nghp-import -n -p -f _build/html\nWith ghp-import, we will always use these three flags (namely, -n, -p, and -f). It’s not very important to know what each flag does, but here is a brief explanation:\n\nThe -n flag instructs GitHub to not treat this as a “Jekyll” repository (which is another type of static webpage).\nThe -p flag is what pushes our changes to GitHub.\nThe -f flag create a force push. Since these build artifacts are re-generated each time, we just want to overwrite whatever is in the current gh-pages branch with our latest version of these files.\n\nThis is also mentioned in this warning from the ghp-import GitHub repository which tells you that: &gt; \n\n“…ghp-import will DESTROY your gh-pages branch… and assumes that the gh-pages branch is 100% derivative. You should never edit files in your gh-pages branch by hand if you’re using this script…”\n\n\n\n\n\n\n\nNow the gh-pages branch is automatically set to host your website HTML files. You can view this in the settings page of your GitHub repository as shown in this slide."
+  },
+  {
+    "objectID": "modules/module8/slides/module8_07.html#your-book-is-now-online",
+    "href": "modules/module8/slides/module8_07.html#your-book-is-now-online",
+    "title": "Publish your book online",
+    "section": "Your book is now online!",
+    "text": "Your book is now online!\n\nTypically, your website should be viewable online after a few minutes at a URL such as: https://&lt;user&gt;.github.io/&lt;myonlinebook&gt;/\n\n\n\n\n\nTypically, your website should be viewable online after a few minutes at a URL such as: https://&lt;user&gt;.github.io/&lt;myonlinebook&gt;/\n\n\n\nIf not, check your repository settings (under Settings -&gt; Pages)."
+  },
+  {
+    "objectID": "modules/module8/slides/module8_07.html#how-to-update-your-book",
+    "href": "modules/module8/slides/module8_07.html#how-to-update-your-book",
+    "title": "Publish your book online",
+    "section": "How to update your book",
+    "text": "How to update your book\n\nMake changes to your book’s content on the main branch of your repository\n\n\n\nRe-build your book with jupyter-book build myonlinebook/\n\n\n\nUse ghp-import -n -p -f myonlinebook/_build/html to push the changes to the gh-pages branch.\n\n\nIn order to update the content of your book:\n\nMake your desired changes to the source files on the main branch of your repository\n\n\n\nNext, re-build your book with jupyter-book build myonlinebook/\n\n\n\nAnd finally, use ghp-import -n -p -f myonlinebook/_build/html to push the changes to the gh-pages branch."
+  },
+  {
+    "objectID": "modules/module9/module9-00-congratulations.html",
+    "href": "modules/module9/module9-00-congratulations.html",
+    "title": "0. Congratulations!",
+    "section": "",
+    "text": "0. Congratulations!\n\nVideoSlides",
+    "crumbs": [
+      "**Module Closing Remarks**",
+      "0. Congratulations!"
+    ]
+  }
+]
