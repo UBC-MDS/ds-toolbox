@@ -1,0 +1,37 @@
+---
+format: html
+---
+
+<script src='../../src/quiz.js'></script>
+
+# 2.1. Exercises
+
+## ✍️ Practice: Markdown is everywhere we look
+
+<div id='mcq1'></div>
+<script>
+    generateQuiz(
+        'mcq1',
+        'Question 1',
+        'It’s possible to run code inside Markdown code blocks if you’ve specified the language after the first three back ticks, e.g. <code>python</code>.',
+        {
+        'True': 'You can’t run code inside a Markdown document! Code can only be executed inside code cells in a Jupyter notebook.',
+        'False': '',
+        },
+        'False',
+    );
+</script>
+
+<div id='mcq2'></div>
+<script>
+    generateQuiz(
+        'mcq2',
+        'Question 2',
+        'Markdown documents can be rendered with any text editor.',
+        {
+        'True': 'You can <b>open</b> a Markdown document with any text editor, since it only contains plain text. However, you can view <b>rendered output</b> only in environments that support displaying Markdown output, such as JupyterLab, VS Code, and GitHub.',
+        'False': '',
+        },
+        'False',
+    );
+</script>

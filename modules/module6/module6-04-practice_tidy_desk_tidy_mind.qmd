@@ -1,0 +1,60 @@
+---
+format: html
+---
+
+<script src='../../src/quiz.js'></script>
+
+# 2.1. Exercises
+
+## ✍️ Practice: Tidy desk, tidy mind
+
+<div id='mcq1'></div>
+<script>
+    generateQuiz(
+        'mcq1',
+        'Question 1',
+        'Which of the following is NOT a reason for having a standard project structure?',
+        {
+        'Reproducibility': 'This is indeed one of the reasons!',
+        'Being self-documenting': 'This is indeed one of the reasons!',
+        'Ease of collaboration': 'This is indeed one of the reasons!',
+        'Optimizing code performance': 'The way a project is organized has no effect on the code performance.',
+        },
+        'Optimizing code performance',
+    );
+</script>
+
+```
+sales-proj/
+├── .gitignore
+├── README.md
+├── proj-env.yaml
+├── data/
+├── reports/
+|   ├── figures/
+│   └── visualize.py
+│
+└── src/
+    ├── __init__.py
+    ├── make_dataset.py
+    │
+    ├── analysis
+    │   ├── stat_model.py
+    │   └── ml_model.py
+```
+
+<div id='mcq2'></div>
+<script>
+    generateQuiz(
+        'mcq2',
+        'Question 2',
+        'What is one problem with the above project structure?',
+        {
+        '<code>make_dataset.py</code> is not inside a separate folder within <code>src/</code>': 'Unless the project is too complex and the <code>src</code> folder has a lot of files, it’s not necessarily needed to put different code files inside separate folders.',
+        '<code>visualize.py</code> is a python code file and should be placed inside <code>src/</code>': 'All code files should live in one place rather being scattered around.',
+        'The environment file name is <code>proj-env.yaml</code> instead of <code>environment.yaml</code>': 'As long as the file name is descriptive and relevant, any name is acceptable.',
+        'There is no folder for documentation': 'Not every project is supposed to have a documentation folder.',
+        },
+        '<code>visualize.py</code> is a python code file and should be placed inside <code>src/</code>',
+    );
+</script>

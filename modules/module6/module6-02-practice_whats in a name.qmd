@@ -1,0 +1,40 @@
+---
+format: html
+---
+
+<script src='../../src/quiz.js'></script>
+
+# 1.1. Exercises
+
+## ✍️ Practice: What's in a name?
+
+<div id='mcq1'></div>
+<script>
+    generateQuiz(
+        'mcq1',
+        'Question 1',
+        'Which of the following file names follows best practices?',
+        {
+        '<code>report 5.md</code>': 'Spaces should always be avoided in file names.',
+        '<code>group-feedback_2022-09.md</code>': '',
+        '<code>analysis_2022:09-2.md</code>': 'The recommended date format is <code>YYYY-MM-DD</code>. Also, the use of <code>:</code> is not allowed for file names.',
+        '<code>2br144.tmp</code>': 'Such a file name is not descriptive of the file contents.',
+        '<code>summary_08</code>': 'Always use proper extensions (e.g. <code>summary_08.txt</code>) for your files.',
+        },
+        '<code>group-feedback_2022-09.md</code>',
+    );
+</script>
+
+<div id='mcq2'></div>
+<script>
+    generateQuiz(
+        'mcq2',
+        'True or False',
+        'Using case sensitivity for differentiating between file names is prevented by Windows, Mac, and Linux.',
+        {
+        'True': 'File names are case-insensitive only in Windows (e.g. <code>intro.txt</code> is considered to be the same as <code>Intro.txt</code>), therefore creating two files with the same name but different letter cases is prevented. In Linux-based systems, however, you can simultaneously have both <code>intro.txt</code> and <code>Intro.txt</code>, which should be avoided.',
+        'False': 'If it was automatically prevented, then this couldn’t have been a problem!',
+        },
+        'False',
+    );
+</script>
