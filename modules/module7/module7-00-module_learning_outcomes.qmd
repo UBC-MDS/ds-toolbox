@@ -12,8 +12,8 @@ format:
 
 <iframe
     class="video"
-    src="https://www.youtube.com/embed/I95CvlBOrXU" 
-    title="Module 6 Video - Module Learning Outcomes"
+    src="https://www.youtube.com/embed/l7onCEyHQGA" 
+    title="Module 7 Video - Module Learning Outcomes"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen
@@ -23,7 +23,7 @@ format:
 
 <iframe
     class="slide-deck"
-    src="slides/module6_00.html"
+    src="slides/module7_00.html"
 ></iframe>
 
 :::

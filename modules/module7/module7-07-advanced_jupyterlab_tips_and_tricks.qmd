@@ -4,7 +4,7 @@ format:
     page-layout: full
 ---
 
-# 0. Module Learning Outcomes
+# 4. Advanced JupyterLab tips and tricks
 
 ::: {.panel-tabset .nav-pills}
 
@@ -12,8 +12,8 @@ format:
 
 <iframe
     class="video"
-    src="https://www.youtube.com/embed/I95CvlBOrXU" 
-    title="Module 6 Video - Module Learning Outcomes"
+    src="https://www.youtube.com/embed/Q8SnuwFNITo?start=1810&end=2359&rel=0" 
+    title="Module 7 Video - Advanced JupyterLab tips and tricks"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen
@@ -23,7 +23,7 @@ format:
 
 <iframe
     class="slide-deck"
-    src="slides/module6_00.html"
+    src="slides/module7_07.html"
 ></iframe>
 
 :::
