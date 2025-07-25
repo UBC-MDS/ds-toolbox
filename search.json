@@ -1,0 +1,268 @@
+[
+  {
+    "objectID": "modules/module1/slides/module1_07.html#module-learning-outcomes",
+    "href": "modules/module1/slides/module1_07.html#module-learning-outcomes",
+    "title": "What Did we Learn and What to Expect in Assignment 1",
+    "section": "Module Learning Outcomes",
+    "text": "Module Learning Outcomes\nIn this module you learned how to\n\nExplain why it is important to use the right tool for the job.\nName the tools in the data science toolbox and explain their main purposes.\nDescribe the different components of the JupyterLab interface.\nAsk effective questions.\nCreate minimal reproducible code examples when asking for help.\n\n\nThe assignment will concentrate on the learning objectives as well as building knowledge on existing concepts."
+  },
+  {
+    "objectID": "modules/module1/slides/module1_03.html#project-jupyter",
+    "href": "modules/module1/slides/module1_03.html#project-jupyter",
+    "title": "How to use JupyterLab",
+    "section": "Project Jupyter",
+    "text": "Project Jupyter\n\nMain goals of Project Jupyter:\n\nProviding an ecosystem for interactive data science projects\nBeing language agnostic: support most popular programming languages\n\n\n\nThe name “Jupyter” -&gt; “Julia” + “Python” + “R”\n\n\nProject Jupyter’s foundation is the interactive Python project (“IPython”), which was started by a Colombian graduate student in physics back in 2001 with the goal of create an easier to use Python environment for scientific computing. In 2014, the notebook interface was first introduced and this part of the project was renamed to Jupyter to indicate that it supported more programming languages than just Python. The main goals of Project Jupyter are to provide an ecosystem for interactive data science projects and to support multiple popular programming languages.\nThe name “Jupyter” is a combination of “Julia” (popular scientific computing language), “Python”, and “R” (popular statistical analysis tool)."
+  },
+  {
+    "objectID": "modules/module1/slides/module1_03.html#jupyterlab",
+    "href": "modules/module1/slides/module1_03.html#jupyterlab",
+    "title": "How to use JupyterLab",
+    "section": "JupyterLab",
+    "text": "JupyterLab\n\n\nJupyterLab is a browser-based interactive development environment\nYou can work with various types of documents in JupyterLab\nThe main document type used with JupyterLab is Jupyter notebook\n\n\nJupyterLab is an interactive development environment (IDE) that enables you to work with documents and activities such as Jupyter notebooks, text editors, terminals, and custom components in a flexible, integrated, and extensible manner.\nThe main document type that is most commonly used in JupyterLab is the Jupyter notebook.\nOne of the core strengths of Jupyter notebooks is that they enable you to combine narrative text with interactive, executable code and its output all in one place.\nWe’ll talk about Jupyter notebooks in more detail in Module 7."
+  },
+  {
+    "objectID": "modules/module1/slides/module1_03.html#the-jupyterlab-interface",
+    "href": "modules/module1/slides/module1_03.html#the-jupyterlab-interface",
+    "title": "How to use JupyterLab",
+    "section": "The JupyterLab interface",
+    "text": "The JupyterLab interface\nAfter running jupyter lab, a browser window should open with JupyterLab’s interface:\n\n\nIn previous courses in this data science specialization, you have been running JupyterLab via a web server, without installing anything on your computer.\nAs part of assignment 1 in this course, you will be installing JupyterLab on your own machine. After you have installed it, you can launch JupyterLab by running the command jupyter lab from a terminal (more on terminals in the first assignment instructions and in Module 2).\nWhen JupyterLab launches, you’re going to see the “Launcher” tab, which allows you to create various new working environments."
+  },
+  {
+    "objectID": "modules/module1/slides/module1_03.html#the-jupyterlab-interface-1",
+    "href": "modules/module1/slides/module1_03.html#the-jupyterlab-interface-1",
+    "title": "How to use JupyterLab",
+    "section": "The JupyterLab interface",
+    "text": "The JupyterLab interface\n\n\nJupyterLab is equipped with a lot of features in traditional IDE’s such as PyCharm and VS Code. However, JupyterLab is geared towards interactive and exploratory computations.\nThe JupyterLab interface mainly consists of a main work area, and a left sidebar which are marked out in this slide. You’ll spend most of your time using these two elements of the JupyterLab interface for various tasks and we will explore both of them in detail in the next slides."
+  },
+  {
+    "objectID": "modules/module1/slides/module1_03.html#the-left-sidebar",
+    "href": "modules/module1/slides/module1_03.html#the-left-sidebar",
+    "title": "How to use JupyterLab",
+    "section": "The left sidebar",
+    "text": "The left sidebar\n\n\nHere you can see various tabs of the left sidebar:\n\n(1): This tab is the file explorer, which you can use to navigate your file system, open the files you’re looking for, or even create and rename files and much more. You can right-click on any file or folder to see available options.\n(2): This is the running terminals and kernels tab. Here you can see all open tabs in the working area, as well as all running kernels. A kernel is a running language engine connected to your notebooks. We’ll learn more about these later in the course.\n(3): This is the Git extension tab. You will be using this extensively in modules 3-5 to version-control your repositories.\n(4): This is your table of contents tab. Whenever you insert Markdown headings to your notebooks, they will automatically show up here and will help you easily jump to any specific section of your notebook. You can also show code cells in the table of contents and expand and collapse sections to get a quick overview of your notebook.\n\nThere is also an Extension Manager tab which we will talk about in more detail in Module 7."
+  },
+  {
+    "objectID": "modules/module1/slides/module1_03.html#the-main-work-area",
+    "href": "modules/module1/slides/module1_03.html#the-main-work-area",
+    "title": "How to use JupyterLab",
+    "section": "The main work area",
+    "text": "The main work area\n\n\nThe main work area is where all your working windows reside. Here for example, we have opened:\n\na notebook,\nan image file,\nan IPython console, and\na terminal.\n\nThe content of each window, as well as the toolbars (and whether or not you get one!) depends on the type of the file you opened (e.g. notebook, image, PDF), and the type of the window (e.g. whether it’s a console or a terminal).\nYou can resize the windows as you wish and change their arrangement by dragging the grey margin area between them.\nYou can also drag and drop a tab to another window to make it part of that window, or you can do the reverse."
+  },
+  {
+    "objectID": "modules/module1/slides/module1_03.html#simple-mode",
+    "href": "modules/module1/slides/module1_03.html#simple-mode",
+    "title": "How to use JupyterLab",
+    "section": "Simple mode",
+    "text": "Simple mode\n\n\nIf you want to maximize a particular open tab so that you can focus on it, you can do so by\n\nfirst clicking the tabs title bar to activate it (note the thin blue bar appearing at above the title when you activate a tab),\nthen clicking the “Simple” toggle button which is located on the lower left part of the JupyterLab’s interface in the status bar.\n\nHere, I have focused on my notebook tab."
+  },
+  {
+    "objectID": "modules/module1/slides/module1_00.html#module-learning-outcomes",
+    "href": "modules/module1/slides/module1_00.html#module-learning-outcomes",
+    "title": "Module Learning Outcomes",
+    "section": "Module Learning Outcomes",
+    "text": "Module Learning Outcomes\nIn this module you will learn how to\n\nExplain why it is important to use the right tool for the job.\nName the tools in the data science toolbox and explain their main purposes.\nDescribe the different components of the JupyterLab interface.\nAsk effective questions.\nCreate minimal reproducible code examples when asking for help.\n\n\nIn this module we will be introduced to the data science tools that we will be practicing with in this course and learn how to ask effective questions."
+  },
+  {
+    "objectID": "modules/module1/module1-00-module_learning_outcomes.html",
+    "href": "modules/module1/module1-00-module_learning_outcomes.html",
+    "title": "0. Module Learning Outcomes",
+    "section": "",
+    "text": "0. Module Learning Outcomes\n\nVideoSlides",
+    "crumbs": [
+      "**M1. Introduction to the Data Science Toolbox**",
+      "0. Module Learning Outcomes"
+    ]
+  },
+  {
+    "objectID": "modules/index.html",
+    "href": "modules/index.html",
+    "title": "Welcome to The Data Science Toolbox!",
+    "section": "",
+    "text": "Welcome to The Data Science Toolbox!\nThis course is part of the Key Capabilities for Data Science program and covers topics related to workflows, plateforms and tools used in data analysis.\nIn this course, we will dive into the world of data science tools and utilities. While these are not strictly required for data analysis, they are necessary for efficient, reproducible, and collaborative data science practices, and are all important building blocks for a successful and sustained data science career.\nCourse prerequisites: Programming in Python for Data Science",
+    "crumbs": [
+      "**M0. Welcome to The Data Science Toolbox!**",
+      "0. Welcome!"
+    ]
+  },
+  {
+    "objectID": "modules/module0/module0-01-the_data_science_toolbox.html",
+    "href": "modules/module0/module0-01-the_data_science_toolbox.html",
+    "title": "1. The Data Science Toolbox",
+    "section": "",
+    "text": "1. The Data Science Toolbox\n\nVideoSlides",
+    "crumbs": [
+      "**M0. Welcome to The Data Science Toolbox!**",
+      "1. The Data Science Toolbox"
+    ]
+  },
+  {
+    "objectID": "modules/module0/slides/module0_01.html#course-learning-outcomes",
+    "href": "modules/module0/slides/module0_01.html#course-learning-outcomes",
+    "title": "Welcome!",
+    "section": "Course Learning Outcomes",
+    "text": "Course Learning Outcomes\nBy the end of the course, students are expected to be able to:\n\nExplain why it is important to use the right tool for the job.\nCommunicate with the computer via a text-based shell.\nWork with projects under version control using Git and GitHub.\nUse additional version control features such as git history, reverting repositories to a previous state, and resolving with merge conflicts.\nCollaborate with Git and GitHub by using branches, forks and pull requests.\nOrganize coding projects with proper file names, folder structures, and virtual environments.\nWork more effectively with JupyterLab.\nBuild books and create websites using Jupyter Book."
+  },
+  {
+    "objectID": "modules/module0/slides/module0_01.html#prerequisites",
+    "href": "modules/module0/slides/module0_01.html#prerequisites",
+    "title": "Welcome!",
+    "section": "Prerequisites",
+    "text": "Prerequisites\n\nThis course does not have any formal prerequisites, but it is recommended that you have some experience with Jupyter Notebooks and JupyterLab, either from your own projects or the course Programming in Python for Data Science"
+  },
+  {
+    "objectID": "modules/module1/module1-01-introduction_to_the_data_science_toolbox.html",
+    "href": "modules/module1/module1-01-introduction_to_the_data_science_toolbox.html",
+    "title": "1. Introduction to the Data Science Toolbox",
+    "section": "",
+    "text": "1. Introduction to the Data Science Toolbox\n\nVideoSlides",
+    "crumbs": [
+      "**M1. Introduction to the Data Science Toolbox**",
+      "1. Introduction to the Data Science Toolbox"
+    ]
+  },
+  {
+    "objectID": "modules/module1/module1-03-how_to_use_jupyterlab.html",
+    "href": "modules/module1/module1-03-how_to_use_jupyterlab.html",
+    "title": "2. How to use JupyterLab",
+    "section": "",
+    "text": "2. How to use JupyterLab\n\nVideoSlides",
+    "crumbs": [
+      "**M1. Introduction to the Data Science Toolbox**",
+      "2. How to use JupyterLab"
+    ]
+  },
+  {
+    "objectID": "modules/module1/module1-05-asking_effective_questions.html",
+    "href": "modules/module1/module1-05-asking_effective_questions.html",
+    "title": "3. Asking Effective Questions",
+    "section": "",
+    "text": "3. Asking Effective Questions\n\nVideoSlides",
+    "crumbs": [
+      "**M1. Introduction to the Data Science Toolbox**",
+      "3. Asking Effective Questions"
+    ]
+  },
+  {
+    "objectID": "modules/module1/module1-07-what_did_we_just_learn.html",
+    "href": "modules/module1/module1-07-what_did_we_just_learn.html",
+    "title": "4. What Did We Just Learn?",
+    "section": "",
+    "text": "4. What Did We Just Learn?\n\nVideoSlides",
+    "crumbs": [
+      "**M1. Introduction to the Data Science Toolbox**",
+      "4. What Did We Just Learn?"
+    ]
+  },
+  {
+    "objectID": "modules/module1/slides/module1_01.html#using-the-right-tool-for-the-job",
+    "href": "modules/module1/slides/module1_01.html#using-the-right-tool-for-the-job",
+    "title": "Introduction to the Data Science Toolbox",
+    "section": "Using the right tool for the job",
+    "text": "Using the right tool for the job\n\n\nKnowing which tools to use and how to use them effectively is a fundamental skill in many professions.\nFor example, imagine that you are trying to drive in a screw using a coin instead of a screwdriver. The process of driving in the screw would be less efficient and more laborious than it needs to be. Using a coin as a screwdriver might be acceptable in an emergency situation,but you would not want it to be part of your everyday workflow.\nNow imagine that instead of a coin, you were using a knife to drive in a screw. This will not only be inefficient, but slipping with the knife could cause significant personal injury!\nIn these examples, it is easy to see why using the right tool for the job is both the most efficient and safest option. Even when learning how to use the right tool could that take some time, the effort is worthwhile since it would give you increased efficiency and safety.\nFor tasks that are less hands-on or that does not give immediate negative feedback when something goes wrong, it can be harder to realize the negative consequences of a suboptimal tool choice. A prime example of this is when doing data analysis, where it can be tempting to reach for tools that are familiar instead of critically assessing which is the safest and most effective tool for the job. For a budding data scientist, it can be tricky to understand the long term consequences of using the wrong tool, but failing to do can lead to dire ramifications as we will see in the next slide."
+  },
+  {
+    "objectID": "modules/module1/slides/module1_01.html#the-consequences-of-using-the-wrong-tool",
+    "href": "modules/module1/slides/module1_01.html#the-consequences-of-using-the-wrong-tool",
+    "title": "Introduction to the Data Science Toolbox",
+    "section": "The consequences of using the wrong tool",
+    "text": "The consequences of using the wrong tool\n\n\nIn the most benign of cases, working with a less effective toolbox will be a waste of your and your employers time. A good example of this is when people repeatedly carry out tasks manually, instead of automating them which often happens when using a tool such as Excel for data analysis, instead of a programming language like Python.\nThe consequences of using the wrong tool in data science could also be more severe. A striking example of this is how cancer patients were put at risk in incorrectly administered clinical trials, based on research that had several errors introduced when using the wrong tools for data analysis. These errors were not discovered until several years later and they led to that the trials were terminated, around 25 scientific papers related to these trials were retracted, and the lead investigators were put under investigation for malpractice.\nAnother example from a couple of years ago is how the opening of a new expensive hospital was delayed because there had been an error when copying values between spreadsheet; something that could have been avoided if programmatic tools with automatic sanity checks would have been used instead (if you are interested in more details and examples on inappropriate tool use, refer to section 2.1 and 2.2 in one of our recently published papers).\nAlthough the use of improper tools and practices can lead to such negatively impactful real-life outcomes, there are few courses that focus on teaching toolbox skills to data scientists, and in many cases data scientists are expected to figure out what is effective for themselves. This is both inefficient and can lead to unfortunate and easily avoided mistakes.\nIn this course, we learn which tools to use and how to use them to facilitate they are necessary for efficient, reproducible, and collaborative data science practices, which are all important building blocks for a successful and sustained data science career.\nLet’s briefly introduce the tools in the toolbox, starting with the shell!"
+  },
+  {
+    "objectID": "modules/module1/slides/module1_01.html#the-shell-bash",
+    "href": "modules/module1/slides/module1_01.html#the-shell-bash",
+    "title": "Introduction to the Data Science Toolbox",
+    "section": "The Shell (Bash)",
+    "text": "The Shell (Bash)\n\n\n\nNavigate the filesystem\nLaunch programs\nAutomation of tasks\n\n\nThe first tool we will learn about is the shell. A shell can use to navigate our computers file system, launch programs, and automate tasks via the shell’s own programming language.\nYou can think of it as a much more powerful version of your default graphical file browser. The specific shell that we will learn more about in this course is called Bash. Bash stands for “The Bourne Again Shell”; the name was chosen as a pun to indicate that it was a rebirth with many new features compared to its predecessor “The Bourne Shell” (named after its creator Stephen Bourne).\nWe will learn more about the shell in Module 2!"
+  },
+  {
+    "objectID": "modules/module1/slides/module1_01.html#git-and-github",
+    "href": "modules/module1/slides/module1_01.html#git-and-github",
+    "title": "Introduction to the Data Science Toolbox",
+    "section": "Git and GitHub",
+    "text": "Git and GitHub\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVersion control\nCollaboration\nCommunication\n\n\nGit is a program that runs on your computer and allows you to keep track of historic versions of your files. This version control is similar to how “Track Changes” works in word processors, but much more elaborate and powerful.\nGitHub is an online platform where developers and data scientists can collaborate on their Git-based projects by raising issues, discuss features, and review code.\nGit and GitHub are used widely in both companies and hobby projects. They are the most common ways of collaborating on code and making sure that it easy to keep track of changes in code bases even as they grow large and are managed by multiple people.\nYou will learn more about Git and GitHub in modules 3-5!"
+  },
+  {
+    "objectID": "modules/module1/slides/module1_01.html#conda",
+    "href": "modules/module1/slides/module1_01.html#conda",
+    "title": "Introduction to the Data Science Toolbox",
+    "section": "Conda",
+    "text": "Conda\n\n\nInstalling programs and packages (Python, R, and more)\nManaging software versions\nSeparating software that requires different environments\n\n\nconda is a package manager, which provides a convenient way to install programs and packages. While there exist package managers that are tailor-made for programming language such as R and Python or for specific operating systems, Conda is the most widely use package manager that is both cross-platform (works on different operating systems) and allows you to install packages from many programming languages.\nConda also allows us to keep different programs separate, so that there are not conflicts when two programs requires different versions of the same software. This is called virtual environments, and we will learn more about it and other Conda features in Module 6!"
+  },
+  {
+    "objectID": "modules/module1/slides/module1_01.html#jupyterlab-and-vs-code",
+    "href": "modules/module1/slides/module1_01.html#jupyterlab-and-vs-code",
+    "title": "Introduction to the Data Science Toolbox",
+    "section": "JupyterLab and VS Code",
+    "text": "JupyterLab and VS Code\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEdit text and code files\nDevelop interactive notebooks\nCreate and view data visualizations\nGenerate reports\n\n\nAs a soft prerequisite for this course, we recommend you to already be familiar with using JupyterLab to edit Jupyter notebooks. Notebooks are powerful since they allow us to combine code, text, and rich output such as data visualizations.\nIn this course we will see some more advanced features of JupyterLab, such as how to use it with Git for version control, and also introduce you to another commonly used tool for programming: VS Code.\nVS Code is a more traditional programming environment than JupyterLab and in this course we will use it for editing text files and for some aspects of version control with Git.\nWe will learn more about VS Code during the shell and version control modules, and we will look closer at advanced JupyterLab features in Module 7!"
+  },
+  {
+    "objectID": "modules/module1/slides/module1_01.html#jupyter-book-and-markdown",
+    "href": "modules/module1/slides/module1_01.html#jupyter-book-and-markdown",
+    "title": "Introduction to the Data Science Toolbox",
+    "section": "Jupyter Book and Markdown",
+    "text": "Jupyter Book and Markdown\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCreate websites, books, and documentation\nAllows for code execution and interaction\nContent is written in Jupyter Notebooks and text files\n\n\nJupyter Book is an open source project for building beautiful, publication-quality books and documents. The books allow for code to be executed and for visualizations to be interacted with.\nContent for Jupter Book is written in Jupyter Notebooks and text files, using Markdown syntax. In this course, we will go beyond the simple examples of using Markdown for text formatting and extend that syntax to involve more advanced features which are helpful when authoring a book or web page with Jupyter Book.\nModule 8 will introduce you to how to use Jupyter Book!"
+  },
+  {
+    "objectID": "modules/module1/slides/module1_01.html#a-commitment-to-open-source",
+    "href": "modules/module1/slides/module1_01.html#a-commitment-to-open-source",
+    "title": "Introduction to the Data Science Toolbox",
+    "section": "A commitment to open source",
+    "text": "A commitment to open source\n\n\nBeing able to use the software after leaving school without paying exorbitant amounts of money\nHaving access to the source code - you can learn and fix bugs\nOpen Source software is customizable and flexible\nIt’s becoming the standard in many tech companies\nYou are part of an awesome and active community!\n\n\nAll the programs mentioned in the previous slides have active development communities and are open source, which means that anyone can read the source code and contribute to these projects. Open source programs have many benefits, primarily including those that are listed on this slide.\nIt is worthwhile saying a few extra words about the second bullet point in the slide. At first, it might not sounds that great that you software has bugs, so it is worth pointing out that nearly all software has some bugs, including commercial software from multi-billion dollar companies. The difference is that when the software is open, you can report bugs yourself and even learn how to fix them together with helpful community members (if you want to)."
+  },
+  {
+    "objectID": "modules/module1/slides/module1_05.html#why-even-bother",
+    "href": "modules/module1/slides/module1_05.html#why-even-bother",
+    "title": "Asking Effective Questions",
+    "section": "Why even bother?",
+    "text": "Why even bother?\n\nYou will get help faster\nOthers will get help faster\n\n\nAsking questions effectively means that the person helping you will be able to answer your question better and quicker. Being able to answer a question quicker means more time to help others, including your future self.\nWhen questions require clarification, fewer people will be helped overall. Sometimes this in unavoidable because the question is complex, but all too often it if because the person trying to help is not given enough information to reproduce and troubleshoot the problem, or because the question is unclear."
+  },
+  {
+    "objectID": "modules/module1/slides/module1_05.html#be-respectful-to-volunteers-helping-you",
+    "href": "modules/module1/slides/module1_05.html#be-respectful-to-volunteers-helping-you",
+    "title": "Asking Effective Questions",
+    "section": "Be respectful to volunteers helping you",
+    "text": "Be respectful to volunteers helping you\n\nPeople are often volunteering their help\nBe respectful and considerate\nDon’t ask unclear questions like this:\nWHY IS THIS CODE NOT WORKING??????\n\n\nWhen you are asking for help online, e.g. on StackOverflow or on GitHub, remember that you are often receiving help from people who are volunteering their time. So please make it as easy as possible for them to help you.\nYou might be frustrated by a problem to the point where you just want to ask something like.\n\nWHY IS THIS CODE NOT WORKING??????\n\nDon’t do this.\nNo one will help you.\nYou will get more frustrated."
+  },
+  {
+    "objectID": "modules/module1/slides/module1_05.html#how-to-ask-effectively",
+    "href": "modules/module1/slides/module1_05.html#how-to-ask-effectively",
+    "title": "Asking Effective Questions",
+    "section": "How to ask effectively",
+    "text": "How to ask effectively\n\nMake your question easy to understand\nInclude a succinct description of the problem\nMention what you were expecting to happen and what went wrong\nInclude the minimal code to reproduce the problem\n\n\nThis slide outlines the high level parts that you want to include in an effective question. In essence, you want to make your question as easy to understand as possible and your specific problem as easy to reproduce as possible.\nIf you just include a screenshot and title your question “Help”, the person helping you has to spend time trying to figure out what you want help with instead of helping with the actual problem.\nTo avoid this, include a succinct and clear description of your problem together with the minimal code needed to reproduce it. Altogether, this is often called a “Minimal Reproducible Example” (or MRE for short), which we will learn more about on the next page."
+  },
+  {
+    "objectID": "modules/module1/slides/module1_05.html#an-effective-question-with-a-minimal-reproducible-example",
+    "href": "modules/module1/slides/module1_05.html#an-effective-question-with-a-minimal-reproducible-example",
+    "title": "Asking Effective Questions",
+    "section": "An effective question with a Minimal Reproducible Example",
+    "text": "An effective question with a Minimal Reproducible Example\n\nSearch for other questions similar to yours.\nDescribe the issue clearly in the title and elaborate briefly in the text body.\nReduce the code to the minimum required to recreate your error, and paste it as text.\n\nIf your code includes functions or classes, include their definitions.\nCreate small toy dataset instead of using real data.\nUse triple backticks to create markdown code blocks with proper indentation and syntax highlighting.\n\nDescribe what you have tried so far, what you don’t understand or what went wrong, including any error messages and their full traceback.\n\n\nThis slide outlines the detailed steps of how to ask an effective question, starting with searching for other similar questions and also listing the key components of creating an MRE.\nIn essence, you want the person helping you to be able to copy your code and run it on their machine to reproduce the problem right away, so that they can focus on figuring out what has gone wrong.\nIf you are interested on more in-depth articles on how to create effective MRE’s, there have been several great articles written on what goes into an MRE. Here are some of the ones we recommend you to check out:\n\nhttps://stackoverflow.com/help/how-to-ask\nhttps://stackoverflow.com/help/minimal-reproducible-example\nhttps://community.rstudio.com/t/faq-whats-a-reproducible-example-reprex-and-how-do-i-do-one/5219\nhttps://reprex.tidyverse.org/ (an R package to help creating MREs from code)"
+  },
+  {
+    "objectID": "modules/module1/slides/module1_05.html#type-out-the-problem-for-yourself-before-asking-the-question",
+    "href": "modules/module1/slides/module1_05.html#type-out-the-problem-for-yourself-before-asking-the-question",
+    "title": "Asking Effective Questions",
+    "section": "Type out the problem for yourself before asking the question",
+    "text": "Type out the problem for yourself before asking the question\n\nType our a proper question for yourself\nSimplifying and formalizing your issue might even lead you to the solution!\n\n\nIt is easy to get frustrated by a problem, especially if you have been stuck at it for a while. When I feel this frustration myself I find it helpful and calming to put precise words on what the issue is.\nYou can start banging out words in the beginning, but as you slowly adhere to the format of asking properly, it will become like a meditative practice which calms you down and lays the foundation for posting your question online.\nIn addition to your mental well-being, writing down questions properly has another superb quality: they help you solve your own problems. The act of formalizing a question in either speech or text helps you slow down and uncover what you missed while the problem was a mere thought; it is easy to come to conclusions to quickly in our own heads and disregard possible solutions to quickly. We will look closer at this phenomena in the next slide."
+  },
+  {
+    "objectID": "modules/module1/slides/module1_05.html#rubber-duck-debugging",
+    "href": "modules/module1/slides/module1_05.html#rubber-duck-debugging",
+    "title": "Asking Effective Questions",
+    "section": "Rubber duck debugging",
+    "text": "Rubber duck debugging\n\nImage from Tim Morris - Wikimedia Common\n\nRealizing the solution to your problem as you are verbalizing it is so common that it has a name: “Rubber duck debugging”. Allegedly, a software developer put a rubber duck on their desk and whenever they had a problem they couldn’t solve in their head, they starting talking to the toy duck, and often came upon the resolution while describing the problem for their toy duck."
+  },
+  {
+    "objectID": "modules/module1/slides/module1_05.html#when-to-ask-for-help",
+    "href": "modules/module1/slides/module1_05.html#when-to-ask-for-help",
+    "title": "Asking Effective Questions",
+    "section": "When to ask for help?",
+    "text": "When to ask for help?\n\nArtwork by @allison_horst\n\nIt might be tempting to think of yourself as a “code hero” that can complete everything you need on your own. However, this mentality will ensure that you will get stuck and it would often be more beneficial to ask for help than to keep trying for another hour yourself.\nIt is also important to realize that there aren’t really any code heroes that excel from working all by themselves. Even people that appear to be super knowledgeable and have figured out everything on their own are in reality lifted up to where they are now by educators and developers, and supported by the community.\nIt is not a sign of weakness to ask for help, and since formulating your thoughts into a question might lead you to the correct answer, it is often beneficial to start doing this early after getting stuck."
+  },
+  {
+    "objectID": "modules/module1/slides/module1_05.html#where-to-ask-for-help",
+    "href": "modules/module1/slides/module1_05.html#where-to-ask-for-help",
+    "title": "Asking Effective Questions",
+    "section": "Where to ask for help",
+    "text": "Where to ask for help\n\nhttps://stackoverflow.com/\n\n\n\nhttps://stats.stackexchange.com/\n\n\n\nWhen you have written down an effective question without finding the solution yourself in the process, then it is time to reach out to the data science community and ask for help.\nOne of the most common places to ask for help with programming questions is Stack Overflow. For data science questions, its sister site Cross Validated. Thousands of volunteers are answering questions on these sites everyday.\nIf you are asking your question on either of these sites, a tip is to use tags to categorize your question. These can then be used to search for an answer via the syntax [tag-name], and community members can choose to get notifications when a new question with a certain tag is asked.\nRemember, try to make your questions as easy to understand as possible!"
+  }
+]
