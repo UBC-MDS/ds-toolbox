@@ -1,0 +1,23 @@
+---
+format: html
+---
+
+<script src='../../src/quiz.js'></script>
+
+# 1.1. Exercises
+
+## Are you ready?
+
+<div id='mcq1'></div>
+<script>
+    generateQuiz(
+        'mcq1',
+        'Question 1',
+        'This course does not require any prerequisite courses. Are you ready to start the course <i>The Data Science Toolbox</i>?',
+        {
+        'Yes! Let’s get started!': 'Great! Please continue on to Module 1!',
+        'I don’t think this is the right fit for me.': 'That’s OK, if you don’t think this is the right course for you, we hope you find what you are looking for elsewhere. We still suggest taking a look at what we have to offer in Module 1 before making your decision.',
+        },
+        ['Yes! Let’s get started!', 'I don’t think this is the right fit for me.'],
+    );
+</script>

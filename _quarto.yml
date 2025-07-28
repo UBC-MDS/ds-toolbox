@@ -36,6 +36,22 @@ website:
         contents:
           - text: '0. Welcome!'
             href: modules/index.qmd
+          - href: modules/module0/module0-01-the_data_science_toolbox.qmd
+          - text: '&nbsp;&nbsp; 0.1. Prerequisite confirmation'
+            href: modules/module0/module0-02-are_you_ready.qmd
+      - section: "**M1. Introduction to the Data Science Toolbox**"
+        contents:
+          - href: modules/module1/module1-00-module_learning_outcomes.qmd
+          - href: modules/module1/module1-01-introduction_to_the_data_science_toolbox.qmd
+          - text: '&nbsp;&nbsp; 1.1. Exercises'
+            href: modules/module1/module1-02-practice_the_tools_of_the_trade.qmd
+          - href: modules/module1/module1-03-how_to_use_jupyterlab.qmd
+          - text: '&nbsp;&nbsp; 2.1. Exercises'
+            href: modules/module1/module1-04-practice_jupyterlab_basics.qmd
+          - href: modules/module1/module1-05-asking_effective_questions.qmd
+          - text: '&nbsp;&nbsp; 3.1. Exercises'
+            href: modules/module1/module1-06-practice_how_to_ask_effectively.qmd
+          - href: modules/module1/module1-07-what_did_we_just_learn.qmd
       - section: "**M2. The shell**"
         contents:
           - href: modules/module2/module2-00-module_learning_outcomes.qmd
