@@ -15,7 +15,7 @@ format: html
         'True or False',
         'Altair figures can be made auto-numbered by modifying the cell meta data.',
         {
-        'True': 'You need to use the',
+        'True': 'You need to use the gluing feature in order to make generated figures auto-numbered and referable. ',
         'False': '',
         },
         'False',
