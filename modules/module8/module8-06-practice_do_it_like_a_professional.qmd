@@ -1,0 +1,38 @@
+---
+format: html
+---
+
+<script src='../../src/quiz.js'></script>
+
+# 3.1. Exercises
+
+## ✍️ Practice: Do it like a professional
+
+<div id='mcq1'></div>
+<script>
+    generateQuiz(
+        'mcq1',
+        'True or False',
+        'Altair figures can be made auto-numbered by modifying the cell meta data.',
+        {
+        'True': 'You need to use the gluing feature in order to make generated figures auto-numbered and referable. ',
+        'False': '',
+        },
+        'False',
+    );
+</script>
+
+<div id='mcq2'></div>
+<script>
+    generateQuiz(
+        'mcq2',
+        'Question 2',
+        'How do you hide a code input cell in JupyterLab?',
+        {
+        'You use a code block starting with ```<code>hide-input</code>.': 'This syntax is used to to indicate syntax highlighting for different programming languages, e.g. ```<code>python</code>.',
+        'You use a code block starting with ```<code>{hide-input}</code>.': 'This syntax is used to format some content such as admonitions and dropdowns, but not for hiding code cells.',
+        'You add a cell tag called <code>hide-input</code> via the JupyterLab interface.': '',
+        },
+        'You add a cell tag called <code>hide-input</code> via the JupyterLab interface.',
+    );
+</script>

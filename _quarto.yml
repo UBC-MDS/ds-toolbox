@@ -163,6 +163,25 @@ website:
           - text: '&nbsp;&nbsp; 4.1. Exercises'
             href: modules/module7/module7-08-practice_jupyterlab_level_up_again.qmd
           - href: modules/module7/module7-09-what_did_we_just_learn.qmd
+      - section: "**M8. Jupyter Book**"
+        contents:
+          - href: modules/module8/module8-00-module_learning_outcomes.qmd
+          - href: modules/module8/module8-01-create_your_first_jupyter_book.qmd
+          - text: '&nbsp;&nbsp; 1.1. Exercises'
+            href: modules/module8/module8-02-practice_today_a_reader_tomorrow_a_leader.qmd
+          - href: modules/module8/module8-03-add_your_own_content:_essentials.qmd
+          - text: '&nbsp;&nbsp; 2.1. Exercises'
+            href: modules/module8/module8-04-practice_becoming_an_author.qmd
+          - href: modules/module8/module8-05-add_your_own_content:_advanced_features.qmd
+          - text: '&nbsp;&nbsp; 3.1. Exercises'
+            href: modules/module8/module8-06-practice_do_it_like_a_professional.qmd
+          - href: modules/module8/module8-07-publish_your_book_online.qmd
+          - text: '&nbsp;&nbsp; 4.1. Exercises'
+            href: modules/module8/module8-08-practice_publication_ready.qmd
+          - href: modules/module8/module8-09-what_did_we_just_learn.qmd
+      - section: "**Module Closing Remarks**"
+        contents:
+          - href: modules/module9/module9-00-congratulations.qmd
 
 # Since we are declaring options for two formats here (html and revealjs)
 # each qmd file needs to include a yaml block including which format to use for that file.

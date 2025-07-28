@@ -1,0 +1,61 @@
+---
+format: html
+---
+
+<script src='../../src/quiz.js'></script>
+
+# 1.1. Exercises
+
+## ✍️ Practice: Today a reader, tomorrow a leader
+
+We have the following folder containing the files we'd like to include in a report created using Jupyter Book:
+
+```
+climate-change/
+├── _config.yml
+├── _toc.yml
+├── intro.md
+├── lit-review.md
+├── logo.png
+├── analysis
+|   ├── EDA.ipynb
+|   ├── feat-eng.ipynb
+|   ├── predictive-model.ipynb
+├── discussion.md
+├── references.bib
+└── requirements.txt
+```
+
+<div id='mcq1'></div>
+<script>
+    generateQuiz(
+        'mcq1',
+        'Question 1',
+        'How should we add the <code>EDA.ipynb</code> file to our <code>_toc.yml</code>?',
+        {
+        '<code>- file: EDA.ipynb</code>': 'File paths should be relative to the book’s root folder.',
+        '<code>- file: analysis/EDA.ipynb</code>': 'Correct, but there is one more correct answer.',
+        '<code>- file: EDA</code>': 'File paths should be given relative to the book’s root folder.',
+        '<code>- file: analysis/EDA</code>': 'Correct, but there is one more correct answer.',
+        'Both the first and third options are correct': 'File paths should be given relative to the book’s root folder.',
+        'Both the second and fourth options are correct': '',
+        },
+        'Both the second and fourth options are correct',
+    );
+</script>
+
+<div id='mcq2'></div>
+<script>
+    generateQuiz(
+        'mcq2',
+        'Question 2',
+        'You are done creating content for your book in <code>my-book/</code> folder. You are now inside the root folder of your book. Which command would you use to generate your Jupyter Book (i.e. your website)?',
+        {
+        '<code>jb create my-book/</code>': '<code>jb create</code> is used to create a sample Jupyter Book with template content, rather than rendering your current book contents. Also, since you’re already inside the root folder, you should use <code>./</code> for the path instead of <code>my-book/</code>.',
+        '<code>jb build ./</code>': '',
+        '<code>jb build my-book/</code>': 'Since you’re already inside the root folder, you should use <code>./</code> for the path instead of <code>my-book/</code>.',
+        '<code>jb create ./</code>': '<code>jb create</code> is used to create a sample Jupyter Book with template content, rather than rendering your current book contents.',
+        },
+        '<code>jb create ./</code>',
+    );
+</script>
