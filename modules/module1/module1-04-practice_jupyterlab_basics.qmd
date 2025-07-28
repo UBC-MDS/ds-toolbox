@@ -1,0 +1,67 @@
+---
+format: html
+---
+
+<script src='../../src/quiz.js'></script>
+
+# 2.1. Exercises
+
+## ✍️ Practice: JupyterLab basics
+
+<div id='mcq1'></div>
+<script>
+    generateQuiz(
+        'mcq1',
+        'True or False',
+        'JupyterLab only supports Python.',
+        {
+        'True': 'Remember that the Jupyter Project is created to be language agnostic? It supports multiple languages, including Python, Julia, R, and more.',
+        'False': '',
+        },
+        'False',
+    );
+</script>
+
+<div id='mcq2'></div>
+<script>
+    generateQuiz(
+        'mcq2',
+        'Question 2',
+        'Among the following options, which one is JupyterLab most similar to?',
+        {
+        'Python': 'JupyterLab is an IDE, whereas Python is a programming language.',
+        'Visual Studio Code': 'Both JupyterLab and Visual Studio code are IDE’s with similar features.',
+        'GitHub': 'JupyterLab is an IDE, whereas GitHub is an online platform for hosting and managing code through the Git system.',
+        'Notepad': 'JupyterLab is an IDE, whereas Notepad is a text editor.',
+        },
+        'Visual Studio Code',
+    );
+</script>
+
+<div id='mcq3'></div>
+<script>
+    generateQuiz(
+        'mcq3',
+        'True or False',
+        'When you use the "Simple" mode in JupyterLab, all windows will be closed except for the currently active one.',
+        {
+        'True': 'All other windows will be just',
+        'False': '',
+        },
+        'False',
+    );
+</script>
+
+<div id='mcq4'></div>
+<script>
+    generateQuiz(
+        'mcq4',
+        'True or False',
+        'All JupyterLab windows have the same toolbar.',
+        {
+        'True': 'As opposed to a notebook window, you’d see that a terminal window, for example, does not have a toolbar at all.',
+        'False': '',
+        },
+        'False',
+    );
+</script>
