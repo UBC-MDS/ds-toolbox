@@ -1,0 +1,38 @@
+---
+format: html
+---
+
+<script src='../../src/quiz.js'></script>
+
+# 3.1. Exercises
+
+## ✍️  Practice: How to ask effectively
+
+<div id='mcq1'></div>
+<script>
+    generateQuiz(
+        'mcq1',
+        'Question 1',
+        'Which of the following is <b>NOT</b> something you should do before asking for help online?',
+        {
+        'Search to see if the solution to your question already is available': 'You should do this before asking a new question. It will make you find the answer faster and spare people from doing duplicate work.',
+        'Type out the problem for yourself before asking the question': 'You should do this before asking a new question. It can help you find the solution to the problem yourself!',
+        'Post a screenshot of your full code as is.': 'You should reduce your code to a minimal example, and post it as text instead of as a screenshot.',
+        },
+        'Post a screenshot of your full code as is.',
+    );
+</script>
+
+<div id='mcq2'></div>
+<script>
+    generateQuiz(
+        'mcq2',
+        'True or False',
+        'People often get paid to answer questions on online forums.',
+        {
+        'False': 'You got it! People from around the world volunteer their time and expertise to answer questions online, so remember to be respectful and mindful of their time when asking for help.',
+        'True': 'People from around the world volunteer their time and expertise to answer questions online, so remember to be respectful and mindful of their time when asking for help.',
+        },
+        'False',
+    );
+</script>

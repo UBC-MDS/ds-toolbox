@@ -1,0 +1,51 @@
+---
+format: html
+---
+
+<script src='../../src/quiz.js'></script>
+
+# 4.1. Exercises
+
+## ✍️ Practice: You are cordially invited to review my changes
+
+<div id='mcq1'></div>
+<script>
+    generateQuiz(
+        'mcq1',
+        'True or False',
+        'You should be quite sure when creating a pull request because you will not be able add more commits after you create it.',
+        {
+        'True': 'Try open a pull request and pushing new commits and check what happen!',
+        'False': 'You can continue adding commits to a pull request by pushing to the branch you used to create it. You will see the commits as a timeline when you open it on GitHub. Try it!',
+        },
+        'False',
+    );
+</script>
+
+<div id='mcq2'></div>
+<script>
+    generateQuiz(
+        'mcq2',
+        'True or False',
+        'It is possible to open a pull request locally',
+        {
+        'True': 'It is possible to <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/checking-out-pull-requests-locally">check out a pull request locally to solve a merge conflict or test changes before approving it</a>. If you wanted to created a pull request locally, you would need to use <a href="https://cli.github.com/"> the GitHub CLI</a>.',
+        'False': 'You have to enter to your GitHub repository to start a pull request. What you can do locally is to create a new branch and push it to GitHub. Then GitHub will give you the option to start a pull request.',
+        },
+        'False',
+    );
+</script>
+
+<div id='mcq3'></div>
+<script>
+    generateQuiz(
+        'mcq3',
+        'Question 3',
+        'Is opening a pull request the same as merging a branch locally?',
+        {
+        'Yes, they are the same. You are just merging branches, either using the GitHub UI or your local interface': 'Even if the final goal of the pull request is to merge the changes into another branch, it is also a way to communicate to your team members that you have created those changes and involve them as reviewers.',
+        'You open a pull request to merge branches when you want to involve your collaborators': '',
+        },
+        'You open a pull request to merge branches when you want to involve your collaborators',
+    );
+</script>
