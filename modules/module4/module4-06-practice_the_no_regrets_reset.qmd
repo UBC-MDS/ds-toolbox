@@ -1,0 +1,24 @@
+---
+format: html
+---
+
+<script src='../../src/quiz.js'></script>
+
+# 3.1. Exercises
+
+## ✍️ Practice: The "no regrets" reset
+
+<div id='mcq1'></div>
+<script>
+    generateQuiz(
+        'mcq1',
+        'Question 1',
+        'Select all the situations in which it is a good idea to reset your work to a previous commit:',
+        {
+        'When you are working on a project locally and haven’t yet pushed your work to the remote repository': 'If you are working locally on a private project, it is quite safe to use reset. Nobody is going to be affected by you deleting part of the history of your project.',
+        'When we are working with other collaborators pushing to the same repository': 'This is not a good idea, because you are deleting part of the history of your project. Keep in mind that your collaborators are working with the full history. This could pose a problem at the time of combining the information. In this case, it is probably better to revert the changes—a command that we are going to learn in the next sections of this module.',
+        'Both are correct': 'You can hard-reset your work in both cases, but one of the options could cause problems.',
+        },
+        'When you are working on a project locally and haven’t yet pushed your work to the remote repository',
+    );
+</script>

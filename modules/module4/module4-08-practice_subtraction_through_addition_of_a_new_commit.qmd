@@ -1,0 +1,27 @@
+---
+format: html
+---
+
+<script src='../../src/quiz.js'></script>
+
+# 4.1. Exercises
+
+## ✍️ Practice: Subtraction through addition (of a new commit)
+
+<div id='mcq1'></div>
+<script>
+    generateQuiz(
+        'mcq1',
+        'Question 1',
+        'Which of the following statements are TRUE about <code>git revert</code>?',
+        {
+        'This command creates a new commit that undoes the changes from previous commits.': 'That’s right, but there is also another correct option!',
+        'This command undoes the changes in your project up to the commit hash that you have specified.': 'That’s right, but there is also another correct option!',
+        'This command makes the history of the project shorter by deleting commits': 'Resetting deletes commits, but reverting does not.',
+        'This command is used to undo changes in your working directory that have not been committed yet.': 'We cannot use revert for this task.',
+        'The first and second options are both correct': '',
+        'The first and third options are both correct': 'Is the third options really correct?',
+        },
+        'The first and second options are both correct',
+    );
+</script>
