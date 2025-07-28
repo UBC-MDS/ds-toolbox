@@ -24,7 +24,14 @@ ask your question via email.
     generateQuiz(
         'mcq1',
         'Question 1',
-        'Imagine you want to fix a merge conflict in <code>README.md</code> file. What do you have to do if you are working with the terminal and you want to write a different text for this merge conflict (i.e., neitehr of changes is sutisfactory for you)?',
+        'Imagine you want to fix a merge conflict in <code>README.md</code> file. What do you have to do if you are working with the terminal and you want to write a different text for this merge conflict (i.e., neither of changes is satisfactory for you)?',
+        {
+        'You should delete everything between <code> <<<<<<< </code> and <code> ======= </code> and leave the remaining text': '',
+        'You should delete everything between <code> ======= </code> and <code> >>>>>>> </code> and leave the remaining text': '',
+        'You should delete everything between <code> <<<<<<< </code> and <code> >>>>>>> </code> and add the text you want instead': '',
+        },
+        'You should delete everything between <code> <<<<<<< </code> and <code> >>>>>>> </code> and add the text you want instead',
+    );
         {
         'You should delete everything between <code> <<<<<<< </code> and <code> ======= </code> and leave the remaining text': '',
         'You should delete everything between <code> ======= </code> and <code> >>>>>>> </code> and leave the remaining text': '',
