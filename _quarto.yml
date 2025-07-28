@@ -36,6 +36,104 @@ website:
         contents:
           - text: '0. Welcome!'
             href: modules/index.qmd
+          - href: modules/module0/module0-01-the_data_science_toolbox.qmd
+          - text: '&nbsp;&nbsp; 0.1. Prerequisite confirmation'
+            href: modules/module0/module0-02-are_you_ready.qmd
+      - section: "**M1. Introduction to the Data Science Toolbox**"
+        contents:
+          - href: modules/module1/module1-00-module_learning_outcomes.qmd
+          - href: modules/module1/module1-01-introduction_to_the_data_science_toolbox.qmd
+          - text: '&nbsp;&nbsp; 1.1. Exercises'
+            href: modules/module1/module1-02-practice_the_tools_of_the_trade.qmd
+          - href: modules/module1/module1-03-how_to_use_jupyterlab.qmd
+          - text: '&nbsp;&nbsp; 2.1. Exercises'
+            href: modules/module1/module1-04-practice_jupyterlab_basics.qmd
+          - href: modules/module1/module1-05-asking_effective_questions.qmd
+          - text: '&nbsp;&nbsp; 3.1. Exercises'
+            href: modules/module1/module1-06-practice_how_to_ask_effectively.qmd
+          - href: modules/module1/module1-07-what_did_we_just_learn.qmd
+      - section: "**M2. The shell**"
+        contents:
+          - href: modules/module2/module2-00-module_learning_outcomes.qmd
+          - href: modules/module2/module2-01-introduction_to_the_shell.qmd
+          - text: '&nbsp;&nbsp; 1.1. Exercises'
+            href: modules/module2/module2-02-practice_shell_out_your_knowledge.qmd
+          - href: modules/module2/module2-03-moving_around.qmd
+          - text: '&nbsp;&nbsp; 2.1. Exercises'
+            href: modules/module2/module2-04-practice_ahoy_captain.qmd
+          - href: modules/module2/module2-05-working_with_files_and_directories.qmd
+          - text: '&nbsp;&nbsp; 3.1. Exercises'
+            href: modules/module2/module2-06-practice_refine_your_shell_skills.qmd
+          - href: modules/module2/module2-07-intermediate_shell_topics.qmd
+          - text: '&nbsp;&nbsp; 4.1. Exercises'
+            href: modules/module2/module2-08-practice_bash_it_out.qmd
+          - href: modules/module2/module2-09-what_did_we_just_learn.qmd
+      - section: "**M3. Git and GitHub intro**"
+        contents:
+          - href: modules/module3/module3-00-module_learning_outcomes.qmd
+          - href: modules/module3/module3-01-what_is_version_control_and_why_should_you_use_it.qmd
+          - text: '&nbsp;&nbsp; 1.1. Exercises'
+            href: modules/module3/module3-02-practice_what_is_the_difference_between_git_and_github.qmd
+          - href: modules/module3/module3-03-version_control_repositories.qmd
+          - text: '&nbsp;&nbsp; 2.1. Exercises'
+            href: modules/module3/module3-04-practice_cloning_a_github_repo.qmd
+          - href: modules/module3/module3-05-the_staging_area.qmd
+          - text: '&nbsp;&nbsp; 3.1. Exercises'
+            href: modules/module3/module3-06-practice_what_can_an_empty_area_on_your_local_computer_be_used_for.qmd
+          - href: modules/module3/module3-07-committing_changes_to_a_local_repository.qmd
+          - text: '&nbsp;&nbsp; 4.1. Exercises'
+            href: modules/module3/module3-08-practice_a_commit_in_a_bottle.qmd
+          - href: modules/module3/module3-09-pushing_changes_to_a_remote_repository.qmd
+          - text: '&nbsp;&nbsp; 5.1. Exercises'
+            href: modules/module3/module3-10-practice_everything_that_goes_up.qmd
+          - href: modules/module3/module3-11-pulling_changes_from_a_remote_repository.qmd
+          - text: '&nbsp;&nbsp; 6.1. Exercises'
+            href: modules/module3/module3-12-practice_has_to_come_down_with_changes.qmd
+          - href: modules/module3/module3-13-what_did_we_just_learn.qmd
+      - section: "**M4. Getting groovy with Git and GitHub**"
+        contents:
+          - href: modules/module4/module4-00-module_learning_outcomes.qmd
+          - href: modules/module4/module4-01-viewieng_the_history_of_your_project.qmd
+          - text: '&nbsp;&nbsp; 1.1. Exercises'
+            href: modules/module4/module4-02-practice_a_history_lesson.qmd
+          - href: modules/module4/module4-03-comparing_commits.qmd
+          - text: '&nbsp;&nbsp; 2.1. Exercises'
+            href: modules/module4/module4-04-practice_know_your_diffs.qmd
+          - href: modules/module4/module4-05-reset_your_git_project_to_an_earlier_state.qmd
+          - text: '&nbsp;&nbsp; 3.1. Exercises'
+            href: modules/module4/module4-06-practice_the_no_regrets_reset.qmd
+          - href: modules/module4/module4-07-revert_changes_made_to_your_git_project.qmd
+          - text: '&nbsp;&nbsp; 4.1. Exercises'
+            href: modules/module4/module4-08-practice_subtraction_through_addition_of_a_new_commit.qmd
+          - href: modules/module4/module4-09-deal_with_merge_conflicts.qmd
+          - text: '&nbsp;&nbsp; 5.1. Exercises'
+            href: modules/module4/module4-10-practice_merge_with_care.qmd
+          - href: modules/module4/module4-11-.gitgnore.qmd
+          - text: '&nbsp;&nbsp; 6.1. Exercises'
+            href: modules/module4/module4-12-practice_ignorance_is_bliss.qmd
+          - href: modules/module4/module4-13-what_did_we_just_learn.qmd
+      - section: "**M5. Branches, forks, and streams… Welcome to the Git nature walk!**"
+        contents:
+          - href: modules/module5/module5-00-module_learning_outcomes.qmd
+          - href: modules/module5/module5-01-the_role_of_branches.qmd
+          - text: '&nbsp;&nbsp; 1.1. Exercises'
+            href: modules/module5/module5-02-practice_be_careful_if_you_cant_see_the_forest_because_of_all_the_branches.qmd
+          - href: modules/module5/module5-03-how_branches_are_related.qmd
+          - text: '&nbsp;&nbsp; 2.1. Exercises'
+            href: modules/module5/module5-04-practice_how_branches_are_related.qmd
+          - href: modules/module5/module5-05-merging_branches.qmd
+          - text: '&nbsp;&nbsp; 3.1. Exercises'
+            href: modules/module5/module5-06-practice_all_roads_merge_to_main.qmd
+          - href: modules/module5/module5-07-when_merging_branches_goes_social:_opening_pull_requests.qmd
+          - text: '&nbsp;&nbsp; 4.1. Exercises'
+            href: modules/module5/module5-08-practice_you_are_cordially_invited_to_review_my_changes.qmd
+          - href: modules/module5/module5-09-collaborative_github_workflows:_branching.qmd
+          - text: '&nbsp;&nbsp; 5.1. Exercises'
+            href: modules/module5/module5-10-practice_branching_out.qmd
+          - href: modules/module5/module5-11-collaborative_github_workflows:_forking.qmd
+          - text: '&nbsp;&nbsp; 6.1. Exercises'
+            href: modules/module5/module5-12-practice_forking_your_repository.qmd
+          - href: modules/module5/module5-13-what_did_we_just_learn.qmd
       - section: "**M6. File Names, Project Organization, Virtual Environments**"
         contents:
           - href: modules/module6/module6-00-module_learning_outcomes.qmd

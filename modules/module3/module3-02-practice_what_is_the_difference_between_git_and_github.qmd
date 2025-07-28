@@ -1,0 +1,53 @@
+---
+format: html
+---
+
+<script src='../../src/quiz.js'></script>
+
+# 1.1. Exercises
+
+## ✍️ Practice: What is the difference between Git and GitHub?
+
+<div id='mcq1'></div>
+<script>
+    generateQuiz(
+        'mcq1',
+        'Question 1',
+        'Which of the following is not a good reason to use version control:',
+        {
+        'Version control tools provide transparency on how a project evolved by tracking the history of documents, and who made what changes to those documents.': 'This is one of the main benefits of version control! Remember that we can track the changes we did to the projects by reading the commit messages.',
+        'Version control tools usually include a remote/cloud repository hosting service that can act as a backup of your local files (i.e., the files on your computer).': 'Even though you can use Git without an associated hosting service, it is a very common practice to do so. It allows you not only to keep a backup of your work, but also to socialize and work collaboratively. For example, in this course, we are using GitHub to host our remote repositories.',
+        'In practice, most data science projects involve collaboration on documents that contain code (e.g., Jupyter notebooks), and version control tools facilitate collaboration on such documents.': 'One of the great advantages of version control tools is that they facilitate collaboration. We will learn more on how to use Git/GitHub collaboratively in the next modules.',
+        'Version control tools check the accuracy of your code.': 'Correct! Version control has many benefits, as described in the previous answers (1, 2, and 3), but checking the accuracy of your code is not one of them.',
+        },
+        'Version control tools check the accuracy of your code.',
+    );
+</script>
+
+<div id='mcq2'></div>
+<script>
+    generateQuiz(
+        'mcq2',
+        'True or False',
+        '<b>Git</b> is a remote/cloud repository hosting service where you can backup and share your files with collaborators.',
+        {
+        'True': 'Git is a tool for version control that is used locally on your computer, whereas GitHub is an example of a remote/cloud repository hosting service where you can backup and share your files with collaborators.',
+        'False': 'Git is a tool for version control that is used locally on your computer.',
+        },
+        'False',
+    );
+</script>
+
+<div id='mcq3'></div>
+<script>
+    generateQuiz(
+        'mcq3',
+        'True or False',
+        'Are you getting the same information if you <b>download</b> a repository from GitHub than if you <b>clone</b> it?',
+        {
+        'True': 'Try downloading a project and clone it and check if you can find any difference between the two options.',
+        'False': 'When you clone a Git repository from GitHub you get the hidden <code>.git</code> directory that contains all the history of the changes that Git knows about for that repository, and you get a remote that is already set up to push to the repository on GitHub (this makes it so that once you make changes that are added and committed to Git, all you need to do is push the changes to GitHub). If you instead use the "Download ZIP" link you do not get the git history (stored in <code>.git</code>) nor a set-up remote for pushing to GitHub.',
+        },
+        'False',
+    );
+</script>

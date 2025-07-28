@@ -1,0 +1,54 @@
+---
+format: html
+---
+
+<script src='../../src/quiz.js'></script>
+
+# 2.1. Exercises
+
+## ✍️ Practice: Ahoy captain!
+
+<div id='mcq1'></div>
+<script>
+    generateQuiz(
+        'mcq1',
+        'Question 1',
+        'Is <code>Documents/pdfs</code> a relative or absolute path?',
+        {
+        'Absolute': 'An absolute path always starts with a <code>/</code>  which indicates the root (uppermost) directory on the file system (on Windows an absolute path can sometimes start with a drive letter, e.g. <code>C:</code>, but Git Bash changes this to <code>/c</code> which is more in line with how Linux and MacOS work).',
+        'Relative': 'An absolute path always starts with a <code>/</code> which indicates the root (uppermost) directory on the file system (on Windows an absolute path can sometimes start with a drive letter, e.g. <code>C:</code>, but Git Bash changes this to <code>/c</code> which is more in line with how Linux and MacOS work).',
+        },
+        'Relative',
+    );
+</script>
+
+<div id='mcq2'></div>
+<script>
+    generateQuiz(
+        'mcq2',
+        'Question 2',
+        'Which of the following is True?',
+        {
+        '<code>.</code> is a shortcut for the parent directory.': '<code>.</code> is a shortcut for the <i>current</i> directory.',
+        '<code>..</code> is a shortcut for the parent directory.': '',
+        '<code>~</code> is a shortcut for the parent directory.': '<code>~</code> is a shortcut for the <i>user’s home</i> directory.',
+        },
+        '<code>..</code> is a shortcut for the parent directory.',
+    );
+</script>
+
+<div id='mcq3'></div>
+<script>
+    generateQuiz(
+        'mcq3',
+        'Question 3',
+        'How do you list all files in a directory, including hidden ones?',
+        {
+        '<code>ls -F</code>': 'The <code>-F</code> option flag adds a suffix decoration character to the output to indicate the file type.',
+        '<code>ls -Fa </code>': 'While this command would list the hidden files, the <code>-F</code> flag is not required.',
+        '<code>ls -F -a</code>': 'While this command would list the hidden files, the <code>-F</code> flag is not required.',
+        '<code>ls -a</code>': '',
+        },
+        '<code>ls -a</code>',
+    );
+</script>

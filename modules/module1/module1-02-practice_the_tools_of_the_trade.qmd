@@ -1,0 +1,70 @@
+---
+format: html
+---
+
+<script src='../../src/quiz.js'></script>
+
+# 1.1. Exercises
+
+## ✍️  Practice: The tools of the trade
+
+<div id='mcq1'></div>
+<script>
+    generateQuiz(
+        'mcq1',
+        'Question 1',
+        'What is the main reason that it is important to use the right data science tools for the job and learn to work with them effectively?',
+        {
+        'It is a requirement to work in many big companies': 'While this might be true, why do you think companies value employees that can efficiently use these tools?',
+        'It looks better on your resume if you are familiar with the state of the art data science software': 'While this is often true, why do you think companies value employees that can efficiently use these tools?',
+        'It allows you to complete tasks more effectively and reduces the number of costly mistakes made': 'Great! While the other two options are also often correct, this is the most important motivation to learn about data science tools and how to use them effectively.',
+        },
+        'It allows you to complete tasks more effectively and reduces the number of costly mistakes made',
+    );
+</script>
+
+<div id='mcq2'></div>
+<script>
+    generateQuiz(
+        'mcq2',
+        'Question 2',
+        'The Shell (Bash) allows you to:',
+        {
+        'Version control files': 'Git is the tool that allows you to version control files.',
+        'Navigate the file system': '',
+        'Edit code files': 'We need a text editor or programming environment such as JupyterLab or VS Code for this!',
+        'Create data visualizations': 'We use a programming language such as Python or R to create data visualizations.',
+        },
+        'Navigate the file system',
+    );
+</script>
+
+<div id='mcq3'></div>
+<script>
+    generateQuiz(
+        'mcq3',
+        'Question 3',
+        'What can you do with Jupyter Book?',
+        {
+        'Version control files': 'Git is the tool that allows you to version control files.',
+        'Navigate the file system': 'For this you need a shell, such as Bash.',
+        'Publish books and web pages': 'You got it!',
+        'Edit code files': 'We need a text editor or programming environment such as JupyterLab or VSCode for this!',
+        },
+        'Publish books and web pages',
+    );
+</script>
+
+<div id='mcq4'></div>
+<script>
+    generateQuiz(
+        'mcq4',
+        'True or False',
+        'All the tools we are using in this course are open source and free to use.',
+        {
+        'True': 'You got it!',
+        'False': 'They are! Volunteer contributions from people around the world support the development of these tools.',
+        },
+        'True',
+    );
+</script>
