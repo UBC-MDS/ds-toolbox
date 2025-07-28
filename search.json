@@ -1,5 +1,403 @@
 [
   {
+    "objectID": "modules/module3/slides/module3_13.html#module-learning-outcomes",
+    "href": "modules/module3/slides/module3_13.html#module-learning-outcomes",
+    "title": "What Did we Learn and What to Expect in Assignment 3",
+    "section": "Module Learning Outcomes",
+    "text": "Module Learning Outcomes\nIn this module you learned how to\n\nDifferentiate between the use of GitHub as a remote hosting service for version control and Git as a version control system.\nIdentify a Git repository.\nImplement Git’s clone, add, status, commit, pull, and push operations on the command line and their equivalent use in the JupyterLab IDE.\nUnderstand what it implies to use the staging area in a Git workflow.\nUse commits as the primary building block for storing project versions together with an attached message and a unique identifier.\n\n\nIt is now time to put into practice everything we have learned!"
+  },
+  {
+    "objectID": "modules/module3/slides/module3_09.html#pushing-the-changes-to-github",
+    "href": "modules/module3/slides/module3_09.html#pushing-the-changes-to-github",
+    "title": "Pushing changes to a remote repository",
+    "section": "Pushing the changes to GitHub",
+    "text": "Pushing the changes to GitHub\n  \n\n\nOnce you have made one or more commits that you want to share with your collaborators, you need to push (i.e., send/upload) those commits back to GitHub. This updates the history in the remote repository (i.e., GitHub) to match what you have in your local repository. Now when collaborators interact with the remote repository, they will be able to see the changes you made. You can also take comfort in the fact that your work is now backed up in the cloud!"
+  },
+  {
+    "objectID": "modules/module3/slides/module3_09.html#pushing-the-commits-to-github-jupyter-lab-ide",
+    "href": "modules/module3/slides/module3_09.html#pushing-the-commits-to-github-jupyter-lab-ide",
+    "title": "Pushing changes to a remote repository",
+    "section": "Pushing the commits to GitHub (Jupyter Lab IDE)",
+    "text": "Pushing the commits to GitHub (Jupyter Lab IDE)\n  \n\n\n🙌 Practice\nClick the “Push” button\nTo push your staged and committed changes to GitHub, first open the Git extension in Jupyter Lab and press push button (click on the cloud icon with the up arrow on the Jupyter Git tab which is circled in red in this slide).\nIf everything went well, you will read a message on the screen informing you that the push was successful."
+  },
+  {
+    "objectID": "modules/module3/slides/module3_09.html#pushing-the-commits-to-github-jupyter-lab-ide-1",
+    "href": "modules/module3/slides/module3_09.html#pushing-the-commits-to-github-jupyter-lab-ide-1",
+    "title": "Pushing changes to a remote repository",
+    "section": "Pushing the commits to GitHub (Jupyter Lab IDE)",
+    "text": "Pushing the commits to GitHub (Jupyter Lab IDE)\n\n\n\n🙌 Practice\nYou can now navigate to the GitHub web interface to see that your changes have been uploaded. There you will see a preview of the commit message, and the time of the most recently pushed commit for each file."
+  },
+  {
+    "objectID": "modules/module3/slides/module3_09.html#pushing-the-commits-to-github-terminal",
+    "href": "modules/module3/slides/module3_09.html#pushing-the-commits-to-github-terminal",
+    "title": "Pushing changes to a remote repository",
+    "section": "Pushing the commits to GitHub (Terminal)",
+    "text": "Pushing the commits to GitHub (Terminal)\n\n\n\n🙌 Practice\nWe could also push from the terminal instead of from the Jupyter Lab Git extension. If you would like to push from the terminal you can execute the command git push."
+  },
+  {
+    "objectID": "modules/module3/slides/module3_05.html#version-control-workflows",
+    "href": "modules/module3/slides/module3_05.html#version-control-workflows",
+    "title": "The staging area",
+    "section": "Version control workflows",
+    "text": "Version control workflows\n\n\nMake a commit of your own changes in the local repository.\nSend your new commits to the remote GitHub repository.\nRetrieve any new changes (that others made) from the remote GitHub repository.\n\n\nWhen you work in a local version-controlled repository, there are generally three additional steps you must take as part of your regular workflow. In addition to working on your files creating, editing, and deleting them as you normally would do, you must also tell Git when to:\n\nMake a commit of your own changes in the local repository.\nSend your new commits to the remote GitHub repository.\nRetrieve any new changes (that others made) from the remote GitHub repository.\n\nIn this section will discuss the first step.\nMaking a commit is at the same time a two step process where you first add the changes to the staging area and then commit them, which saves the differences between the current and previous version of the file together with your message describing what you did. These changes are saved in the hidden .git directory in the Git repository.\nLet’s learn step by step how to make a commit in your local repository"
+  },
+  {
+    "objectID": "modules/module3/slides/module3_05.html#local-repository-with-changes-to-files",
+    "href": "modules/module3/slides/module3_05.html#local-repository-with-changes-to-files",
+    "title": "The staging area",
+    "section": "Local repository with changes to files",
+    "text": "Local repository with changes to files\n\n\nWhen working on files in your local version control repository (e.g., using JupyterLab) and saving your work, these changes will only initially exist in the working directory of the local repository on your computer."
+  },
+  {
+    "objectID": "modules/module3/slides/module3_05.html#committing-changes-to-a-local-repository",
+    "href": "modules/module3/slides/module3_05.html#committing-changes-to-a-local-repository",
+    "title": "The staging area",
+    "section": "Committing changes to a local repository",
+    "text": "Committing changes to a local repository\n \n\n\nOnce you reach a point that you want Git to keep a record of the current version of your work, you need to commit (i.e., snapshot) your changes. A prerequisite to this is telling Git which files should be included in that snapshot. We call this step adding the files to the staging area.\nNote that the staging area is not a meaningful location on your computer; it is instead a temporary placeholder for these files until they are committed. The benefit of the Git version control system using a staging area is that you can choose to commit changes in only certain files. For example, we could add only the two files that are important to the analysis project (analysis.ipynb and README.md) and not the changes we made to our personal scratch notes for the project (notes.txt)."
+  },
+  {
+    "objectID": "modules/module3/slides/module3_05.html#open-git-jupyterlab-ide",
+    "href": "modules/module3/slides/module3_05.html#open-git-jupyterlab-ide",
+    "title": "The staging area",
+    "section": "Open Git (JupyterLab IDE)",
+    "text": "Open Git (JupyterLab IDE)\n  \n\n\n🙌 Practice\nLet’s commit the files that are in the staging area\nStep 1. Click Jupyter Git extension icon (circled in red).\nAfter you have cloned the remote repository from GitHub to create a local repository, you can get to work editing, creating, and deleting files. For example, suppose you created a new file named eda.ipynb that you would like to commit to the project history. Our next step is to “add” this modified file to the staging area (i.e., flag that this is a file with changes we would like to commit). To do this first you have to click the Jupyter Git extension icon on the far left-hand side of JupyterLab."
+  },
+  {
+    "objectID": "modules/module3/slides/module3_05.html#specifying-files-to-commit-jupyter-lab-ide",
+    "href": "modules/module3/slides/module3_05.html#specifying-files-to-commit-jupyter-lab-ide",
+    "title": "The staging area",
+    "section": "Specifying files to commit (Jupyter Lab IDE)",
+    "text": "Specifying files to commit (Jupyter Lab IDE)\n\n\n\n🙌 Practice\nStep 2. Add the files you want to commit to the staging area.\nWe can use the small plus sign (+) to add changes we’ve made to a file to the staging area via JupyterLab. In this screenshot, we are adding the notebook file eda.ipynb to our project’s staging area (“eda” stands for “Exploratory Data Analysis”, and is something we often do at the beginning of our project in order to familiarize ourselves with our dataset).\nNote that if this was the first change we ever made to this file, it would have shown up under the Untracked heading in the side panel, indicating that Git is not yet keeping track of this file. However, in this example, we had already made a previous commit to eda.ipynb, which is why it showed up under the Changed heading in the side panel."
+  },
+  {
+    "objectID": "modules/module3/slides/module3_05.html#specifying-files-to-commit-jupyter-lab-ide-1",
+    "href": "modules/module3/slides/module3_05.html#specifying-files-to-commit-jupyter-lab-ide-1",
+    "title": "The staging area",
+    "section": "Specifying files to commit (Jupyter Lab IDE)",
+    "text": "Specifying files to commit (Jupyter Lab IDE)\n\n\n\n🙌 Practice\nClicking the plus sign (+) moves the file from the Changed heading to the Staged heading, so that Git knows you want a snapshot of its current state as a commit (see image). Now you are ready to commit the changes. When committing it is important to include a (clear and helpful!) message about what was changed so that your collaborators (and future you) know what happened in this commit, something we will learn more about in the next slide deck.\nYou will also notice a eda-checkpoint.ipynb file in the side panel under the Untracked heading. This is a temporary “checkpoint file” created by Jupyter when you work on eda.ipynb. You generally do not want to add auto-generated files like this one to Git repositories; only add the files you directly create and edit."
+  },
+  {
+    "objectID": "modules/module3/slides/module3_05.html#specifying-files-to-commit-terminal",
+    "href": "modules/module3/slides/module3_05.html#specifying-files-to-commit-terminal",
+    "title": "The staging area",
+    "section": "Specifying files to commit (Terminal)",
+    "text": "Specifying files to commit (Terminal)\n\n\n\nTo check the status of the files using the terminal (Untracked / Changed / Staged) you can use the command git status.\n\n🙌 Practice\nIf you would be using the terminal outside Jupyter Lab, you would not have access to the side panel that shows which files are Untracked, Changed, and Staged. To check the status of all files in your repository using the terminal you can instead use the command git status. In this slide you can see how the different parts of the output from git status corresponds to the Jupyter Lab side panel.\nAn advantage of using this command if you are working in the terminal is that it gives you information on which commands to use to continue your workflow. For example, for files that are under the Changes not staged for commit area, it is suggesred to use the command git add &lt;file&gt; to include them into the staging area.\nChanges not staged for commit:\n   (use \"git add &lt;file&gt;...\" to update what will be committed)\nWe recommend using git status to check the staging area before each commit to ensure you are committing what you think you are."
+  },
+  {
+    "objectID": "modules/module3/slides/module3_05.html#specifying-files-to-commit-terminal-1",
+    "href": "modules/module3/slides/module3_05.html#specifying-files-to-commit-terminal-1",
+    "title": "The staging area",
+    "section": "Specifying files to commit (Terminal)",
+    "text": "Specifying files to commit (Terminal)\n\n\n\nYou can add multiple files to the staging area with the command git add\n\n🙌 Practice\nWhen working in the terminal, you can add multiple files at once by listing them after git add.\nAnother command to use in the terminal is git add -p. This allows you to interactively choose which part of each file to add by answering either y (yes) or n (no) to the messages that prompts you about which parts you want to add to the staging area. This way you can add just some changes in a file, which is helpful when trying to include only the relevant changes in each commit and ensuring that you can describe all your changes in a short commit message."
+  },
+  {
+    "objectID": "modules/module3/slides/module3_01.html#what-is-version-control-and-why-should-you-use-it",
+    "href": "modules/module3/slides/module3_01.html#what-is-version-control-and-why-should-you-use-it",
+    "title": "What is version control, and why should you use it?",
+    "section": "What is version control, and why should you use it?",
+    "text": "What is version control, and why should you use it?\n\nimage source: “Piled Higher and Deeper” by Jorge Cham\n\nData analysis projects often require iteration and revision to move from an initial idea to a finished product ready for the intended audience. Without deliberate and conscious effort towards tracking changes made to the analysis, projects tend to become messy.\nThis mess can have serious, negative repercussions on an analysis project, including losing interesting results files that your code cannot reproduce, temporary files with snippets of ideas that are forgotten or not easy to find, mind-boggling file names that make it unclear which is the current working version of the file (e.g., document_final.txt, to_hand_in_final_v2.txt, etc.), and more.\nBeing able to record and view the history of a data analysis project is important for understanding how and why decisions to use one method or another were made, among other things."
+  },
+  {
+    "objectID": "modules/module3/slides/module3_01.html#what-is-version-control-and-why-should-i-use-it",
+    "href": "modules/module3/slides/module3_01.html#what-is-version-control-and-why-should-i-use-it",
+    "title": "What is version control, and why should you use it?",
+    "section": "What is version control, and why should I use it?",
+    "text": "What is version control, and why should I use it?\n\n\n\nWhat does exactly mean to “record the history of a project”?\nInstead of creating a new copy for each version of a file with an unwieldy name (as in the image), version control allows you to have a single file and records the changes between the versions.\nMany of you might already have used version control software if you work with Google Docs, Dropbox, or TimeMachine on macOS. These programs, all automatically create versions of your documents and you can then browse through the history."
+  },
+  {
+    "objectID": "modules/module3/slides/module3_01.html#what-is-version-control-and-why-should-i-use-it-1",
+    "href": "modules/module3/slides/module3_01.html#what-is-version-control-and-why-should-i-use-it-1",
+    "title": "What is version control, and why should you use it?",
+    "section": "What is version control, and why should I use it?",
+    "text": "What is version control, and why should I use it?\n\nThis image was created by Scriberia for The Turing Way community and is used under a CC-BY licence.\n\nAdditionally, data analyses are typically completed by teams. This means that files need to be shared across multiple computers, and multiple people often end up editing the project simultaneously. In such a situation, determining who has the latest version of the project and how to resolve conflicting edits—can be a real challenge.\nVersion control also facilitates collaboration via tools to share edits with others and resolve conflicting edits. But even if you’re working on a project alone, you should still use version control. It helps you keep track of what you’ve done, when you did it, and what you’re planning to do next!"
+  },
+  {
+    "objectID": "modules/module3/slides/module3_01.html#what-is-version-control-and-why-should-i-use-it-2",
+    "href": "modules/module3/slides/module3_01.html#what-is-version-control-and-why-should-i-use-it-2",
+    "title": "What is version control, and why should you use it?",
+    "section": "What is version control, and why should I use it?",
+    "text": "What is version control, and why should I use it?\n  \n\nWe can define version control as the process of keeping a record of changes to documents, including when the changes were made and who made them, throughout the history of their development. It also provides the means both to view earlier versions of the project and to revert changes.\n\n\nWe can define version control as the process of keeping a record of changes to documents, including when the changes were made and who made them, throughout the history of their development. It also provides the means both to view earlier versions of the project and to revert changes.\nThe material of this module is based on the book by Timbers, T., Campbell, T., & Lee, M. (2022). Data science: A first introduction. CRC Press and the course DSCI 521: Computing Platforms for Data Science from the UBC Master of Data Science program"
+  },
+  {
+    "objectID": "modules/module3/slides/module3_01.html#git-and-github",
+    "href": "modules/module3/slides/module3_01.html#git-and-github",
+    "title": "What is version control, and why should you use it?",
+    "section": "Git and GitHub",
+    "text": "Git and GitHub\n\n\nGit - Version control system\n\n\n\n\n\n\n\nGitHub - Repository hosting service\n\n\n\n\n\n\n\nTo version control a project, you generally need two things: (1) a version control system and (2) a repository hosting service.\nThe version control system is the software responsible for tracking changes, sharing changes you make with others, obtaining changes from others, and resolving conflicting edits.\nThe repository hosting service is responsible for storing a copy of the version-controlled project online (a repository), where you and your collaborators can access it remotely, discuss issues and bugs, and distribute your final product. For both of these items, there is a wide variety of choices.\nIn this course, we’ll use Git for version control, and GitHub for repository hosting, because both are currently the most widely used platforms."
+  },
+  {
+    "objectID": "modules/module3/slides/module3_01.html#when-should-you-use-a-repository-hosting-service",
+    "href": "modules/module3/slides/module3_01.html#when-should-you-use-a-repository-hosting-service",
+    "title": "What is version control, and why should you use it?",
+    "section": "When should you use a repository hosting service?",
+    "text": "When should you use a repository hosting service?\n\n\nGitHub - Repository hosting service\n\n\n\nTechnically you don’t have to use a repository hosting service. You can, for example, version control a project that is stored only in a folder on your computer— never sharing it on a repository hosting service.\nBut using a repository hosting service provides a few big benefits, including managing collaborator access permissions, tools to discuss and track bugs, and the ability to have external collaborators contribute work, not to mention the safety of having your work backed up in the cloud.\nSince most repository hosting services now offer free accounts, there are not many situations in which you wouldn’t want to use one for your project."
+  },
+  {
+    "objectID": "modules/module3/module3-13-what_did_we_just_learn.html",
+    "href": "modules/module3/module3-13-what_did_we_just_learn.html",
+    "title": "7. What did we just learn?",
+    "section": "",
+    "text": "7. What did we just learn?\n\nVideoSlides",
+    "crumbs": [
+      "**M3. Git and GitHub intro**",
+      "7. What did we just learn?"
+    ]
+  },
+  {
+    "objectID": "modules/module3/module3-11-pulling_changes_from_a_remote_repository.html",
+    "href": "modules/module3/module3-11-pulling_changes_from_a_remote_repository.html",
+    "title": "6. PULLing changes from a remote repository",
+    "section": "",
+    "text": "6. PULLing changes from a remote repository\n\nVideoSlides",
+    "crumbs": [
+      "**M3. Git and GitHub intro**",
+      "6. PULLing changes from a remote repository"
+    ]
+  },
+  {
+    "objectID": "modules/module3/module3-09-pushing_changes_to_a_remote_repository.html",
+    "href": "modules/module3/module3-09-pushing_changes_to_a_remote_repository.html",
+    "title": "5. PUSHing changes to a remote repository",
+    "section": "",
+    "text": "5. PUSHing changes to a remote repository\n\nVideoSlides",
+    "crumbs": [
+      "**M3. Git and GitHub intro**",
+      "5. PUSHing changes to a remote repository"
+    ]
+  },
+  {
+    "objectID": "modules/module3/module3-07-committing_changes_to_a_local_repository.html",
+    "href": "modules/module3/module3-07-committing_changes_to_a_local_repository.html",
+    "title": "4. Committing changes to a local repository",
+    "section": "",
+    "text": "4. Committing changes to a local repository\n\nVideoSlides",
+    "crumbs": [
+      "**M3. Git and GitHub intro**",
+      "4. Committing changes to a local repository"
+    ]
+  },
+  {
+    "objectID": "modules/module3/module3-05-the_staging_area.html",
+    "href": "modules/module3/module3-05-the_staging_area.html",
+    "title": "3. The staging area",
+    "section": "",
+    "text": "3. The staging area\n\nVideoSlides",
+    "crumbs": [
+      "**M3. Git and GitHub intro**",
+      "3. The staging area"
+    ]
+  },
+  {
+    "objectID": "modules/module3/module3-03-version_control_repositories.html",
+    "href": "modules/module3/module3-03-version_control_repositories.html",
+    "title": "2. Version control repositories",
+    "section": "",
+    "text": "2. Version control repositories\n\nVideoSlides",
+    "crumbs": [
+      "**M3. Git and GitHub intro**",
+      "2. Version control repositories"
+    ]
+  },
+  {
+    "objectID": "modules/module3/module3-01-what_is_version_control_and_why_should_you_use_it.html",
+    "href": "modules/module3/module3-01-what_is_version_control_and_why_should_you_use_it.html",
+    "title": "1. What is version control, and why should you use it?",
+    "section": "",
+    "text": "1. What is version control, and why should you use it?\n\nVideoSlides",
+    "crumbs": [
+      "**M3. Git and GitHub intro**",
+      "1. What is version control, and why should you use it?"
+    ]
+  },
+  {
+    "objectID": "modules/module2/slides/module2_09.html#module-learning-outcomes",
+    "href": "modules/module2/slides/module2_09.html#module-learning-outcomes",
+    "title": "What Did we Learn and What to Expect in Assignment 2",
+    "section": "Module Learning Outcomes",
+    "text": "Module Learning Outcomes\nIn this module you learned how to\n\nUse the shell to navigate the computer’s filesystem\nCreate new files and directories\nMove, copy, and delete files and directories\nUse “wildcards”\nDefine and distinguish between absolute file paths and relative file paths\nRead the shell’s built-in manual\nCombine commands with pipes\n\n\nThe assignment will concentrate on the learning objectives as well as building knowledge on existing concepts."
+  },
+  {
+    "objectID": "modules/module2/slides/module2_05.html#creating-a-directory",
+    "href": "modules/module2/slides/module2_05.html#creating-a-directory",
+    "title": "Working with files and directories",
+    "section": "Creating a directory",
+    "text": "Creating a directory\nCreate a directory called “notes”.\ncd ~/Documents\nmkdir notes\nNaming guidelines\n\nDon’t use spaces\nDon’t begin the name with a - (hyphen)\nStick to digits and letters (preferably lower case)\n\n\nLet’s go back to the ~/Documents directory and create a subfolder called notes. For this we first use the ~ home directory shortcut, and then the mkdir command (MaKe DIRectory).\nWe will talk more about useful naming conventions in Module 6. For now it is enough if you remember these three guidelines.\n\nDon’t use spaces\nDon’t begin the name with a - (hyphen)\nStick to digits and letters (preferably lower case)"
+  },
+  {
+    "objectID": "modules/module2/slides/module2_05.html#creating-a-file",
+    "href": "modules/module2/slides/module2_05.html#creating-a-file",
+    "title": "Working with files and directories",
+    "section": "Creating a file",
+    "text": "Creating a file\nls -F notes\n \n(The output is empty because there are no files in the newly created directory)\n\ncd notes\ncode my-first-note.md\n\nSince we just created the notes directory, ls doesn’t display anything when we ask for a listing of its contents.\nLet’s change our working directory to notes, then use the VS Code editor to create a file called my-first-note.md. The command to invoke VS Code from the command line is code, and if we pass it a filename as an argument, the file will be created in the current directory. Now try launching it yourself!\nThe .md syntax means that we want to create a markdown file. File extensions like .md and .py don’t change anything about the content of the file, but they are an indicator to other program such as VS Code what type of content we are going to put inside the file. These program can then activate special functions for certain files, such as using the appropriate colors to highlight headings and functions.\nLet’s move on to the next slide to see how it looks when we are editing file in VS Code."
+  },
+  {
+    "objectID": "modules/module2/slides/module2_05.html#editing-a-file-in-vs-code",
+    "href": "modules/module2/slides/module2_05.html#editing-a-file-in-vs-code",
+    "title": "Working with files and directories",
+    "section": "Editing a file in VS Code",
+    "text": "Editing a file in VS Code\n\n\nThis is what it looks like to edit a text file in VS Code. You will see that there is a small white circle next to the file name. This is an indication that the file is not saved yet.\nWhen we are done adding our edits, we can hit Ctrl + s to save the file, which will make the white circle disappear. After saving the file, you can optionally close VS Code before returning to the terminal.\nWe are only using VS Code as a simple text editor here, but it is worth knowing that you can use use it as a powerful editor for code as well."
+  },
+  {
+    "objectID": "modules/module2/slides/module2_05.html#viewing-the-content-of-a-file-in-the-terminal",
+    "href": "modules/module2/slides/module2_05.html#viewing-the-content-of-a-file-in-the-terminal",
+    "title": "Working with files and directories",
+    "section": "Viewing the content of a file in the terminal",
+    "text": "Viewing the content of a file in the terminal\nls\nmy-first-note.md\n\nhead my-first-note.md\nThese are the first\nfew lines of content\nin the file.\n\nIf we now type ls we will see the name of the file we just created in VS Code. To see the content of the file, we can use the head command. head show the first few lines of a file (just as when we use df.head() in pandas), and optionally takes an argument for how many lines to show: head -n 10 (the default is five).\nhead works with all plain text files, such as code and markdown files, but not with binary files such as word documents, spreadsheets, or images. To see the last few lines, you can use tail instead of head."
+  },
+  {
+    "objectID": "modules/module2/slides/module2_05.html#moving-files-and-directories",
+    "href": "modules/module2/slides/module2_05.html#moving-files-and-directories",
+    "title": "Working with files and directories",
+    "section": "Moving files and directories",
+    "text": "Moving files and directories\nmv my-first-note.md ..\nls ..\nDownloads/    Music/        my-first-note.md\nDocuments/    todo.txt\nPictures/     my_program*\n\nmv ../my-fist-note.md .\nls\nmy-fist-note.md\n\nTo move a file around, we can use the mv command. For example, to move the text file we just created to the parent directory, we would type mv my-first-note.md ... This moves it to the parent directory, and keeps the name the same as we can see if we do ls ..\nIf we want to move the file back to the current directory, we can use the . shortcut: mv ../my-fist-note.md ."
+  },
+  {
+    "objectID": "modules/module2/slides/module2_05.html#renaming-a-file",
+    "href": "modules/module2/slides/module2_05.html#renaming-a-file",
+    "title": "Working with files and directories",
+    "section": "Renaming a file",
+    "text": "Renaming a file\nmv my-fist-note.md note_2022-06-20.md\nls\nnote_2022-06-20.md\n\nThe -v option prints the name of the moved file\nmv -v notte_2022-06-20.md note_2022-06-20.md\nrenamed 'notte_2022-06-20.md' -&gt; 'note_2022-06-20.md'\n\nRenaming a file can be thought of as moving it to a new filename either in the same or a different directory. This might initially seem a bit different from a graphical file browser, where renaming and moving are two distinct functions, but the underlying operation is actually the same.\nTo give our file a more descriptive name that includes the date we created this file, we would type mv my-fist-note.md notte_2022-06-20.md. We intentionally made a typo here, let’s fix it while showing off the functionality of the -v (verbose) option, which prints what was moved/renamed so that it is easier to keep track of renamed 'notte_2022-06-20.md' -&gt; 'note_2022-06-20.md'.\nWe must be careful when specifying the destination because mv will overwrite existing files without warning. The option -i (“interactive”) makes mv ask us for confirmation before overwriting,. mv also works on directories where it renames the directory without changing its contents."
+  },
+  {
+    "objectID": "modules/module2/slides/module2_05.html#copying-files-and-directories",
+    "href": "modules/module2/slides/module2_05.html#copying-files-and-directories",
+    "title": "Working with files and directories",
+    "section": "Copying files and directories",
+    "text": "Copying files and directories\nCopy the file to the parent directory:\ncp note_2022-06-20.md ..\n\nCreate a backup copy in the same directory:\ncp note_2022-06-20.md note_2022-06-20.md.bkp\nls\nnote_2022-06-20.md\nnote_2022-06-20.md.bkp\n\nThe cp command create a CoPy of a file. Just as with mv, we optionally rename the file as we are copying it.\nHere we first copy the note we created to the parent directory and then show how we could use cp to create a backup of our file in the same directory. Remember that the file extension does not change the content of the file, so this is just a visual indicator to us for what type of file this is.\nIf we ever wanted to copy a directory, we would have to specify the -r flag, which indicates that we want to copy the directory recursively, i.e. also making a copy of all the directory contents."
+  },
+  {
+    "objectID": "modules/module2/slides/module2_05.html#deleting-files-and-directories",
+    "href": "modules/module2/slides/module2_05.html#deleting-files-and-directories",
+    "title": "Working with files and directories",
+    "section": "Deleting files and directories",
+    "text": "Deleting files and directories\nrm note_2022-06-20.md.bkp\nls\nnote_2022-06-20.md\n\nrm -iv ../note_2022-06-20.md\nrm: remove regular file '../note_2022-06-20.md'? y\nremoved '../note_2022-06-20.md'\n\nLet’s clean things up by removing our backup copy that we just created. The rm commands allows us to ReMove files and folders. In this case we would type rm note_2022-06-20.md.bkp.\nDeleting is forever: unlike most graphical file browsers, the Unix shell doesn’t have a trash bin that we can recover deleted files from. Just as with mv, we can use the -v to make rm a bit more informative.\nWe can also use the -i flag to make it a bit more safe and ask for confirmation before moving the file. If we want to confirm we type y (for “yes”) and then hit Enter. Let’s use these flags when removing the copy we placed in the parent directory rm -iv ../note_2022-06-20.md.\nAnd just as with cp, we would need to include the -r flag to recursively remove a directory and all its contents."
+  },
+  {
+    "objectID": "modules/module2/slides/module2_05.html#wildcards",
+    "href": "modules/module2/slides/module2_05.html#wildcards",
+    "title": "Working with files and directories",
+    "section": "Wildcards",
+    "text": "Wildcards\ntouch note_2022-06-20.md.bkp note_2022-07-02.md note_2022-07-02.md.bkp\nls *.bkp\nnote_2022-06-20.md.bkp\nnote_2022-07-02.md.bkp\n\nls *07*\nnote_2022-07-02.md\nnote_2022-07-02.md.bkp\n\nWildcards (also called “globbing”) simplifies targeting multiple files with similar names in the same command. The most commonly used wildcard is * (a single asterisk). It matches zero or more characters, so typing ls *.md list all of the markdown files in the current directory.\nLet’s first create 3 empty files: note_2022-06-20.md.bkp, note_2022-07-02.md and note_2022-07-02.md.bkp using touch command. If we wanted to list all the files created in July (month 7), we would need to type ls ls *07*, which means that the filename can include anything before and after 07. If we would have left out the second * and type ls *07 we would not have seen any matches because there is not file that end in 07, they all have some characters after.\nUsing wildcards is helpful when we want to delete, move, or copy files with a predictable naming pattern."
+  },
+  {
+    "objectID": "modules/module2/slides/module2_01.html#what-is-a-computer",
+    "href": "modules/module2/slides/module2_01.html#what-is-a-computer",
+    "title": "Introduction to the shell",
+    "section": "What is a computer?",
+    "text": "What is a computer?\nA few of the world’s most prominent programmers of the time computing ballistic trajectories on the ENIAC computer during the second world war:\n\nUnidentified U.S. Army photographer, Public domain, Mike Muuss’ computer history archive\n\nEssentially, computing is about humans communicating with machines to modulate flows of current in the hardware. Early examples of human computer communication were quite primitive and included physically disconnecting a wire and connecting it again in a different spot.\nLuckily, we are not doing this anymore; instead we have graphical user interfaces with menus and buttons, which is what you are commonly using when interacting with a computer that runs an operating system such as MacOS, Linux, or Windows.\nThese graphical interface can be thought of as a layer (or a shell) around the internal components of your operating system. Shells exist as an intermediate between the human and the machine; they make it easy for us to express our commands, and for computers to interpret them."
+  },
+  {
+    "objectID": "modules/module2/slides/module2_01.html#what-is-text-based-communication",
+    "href": "modules/module2/slides/module2_01.html#what-is-text-based-communication",
+    "title": "Introduction to the shell",
+    "section": "What is text-based communication?",
+    "text": "What is text-based communication?\nOpen a file from a graphical menu:\n\nOpening a file via a text-based interface:\n\nfile.open('filename.csv')\n\n\nIn this slide deck, we will learn how to communicate with a computer via a text-based shell, rather than a graphical one.\nUsing a text-based shell might at first seems counter-intuitive, since the reason for creating a shell in the first place was to facilitate user interaction with the computer. So now that we have these easy to use graphical user interfaces (GUIs), why would anyone in their right mind go back to using a text based interface?\nWell, this notion is partly a misconception; GUIs can be nice when you are new to something, but text-based interfaces are actually faster and easier to use when you become more experienced and know more precisely which commands you want the machine to execute.\nWe can compare this process to learning a language: in the beginning it’s nice to look things up in a dictionary (analogous to the menu on a computer), but once we know what we want to say, it is just easer to say or type it directly, instead of being forced to spend time on looking it up first.\nBy extension, it would be even faster to speak or even just think of what you want to do and have the appropriate commands executed by the computer. This is what speech-and brain-computer interfaces are concerned with, and once these becomes more refined and accessible they might take over as the main way for us to interact with computers."
+  },
+  {
+    "objectID": "modules/module2/slides/module2_01.html#which-shell-will-we-be-using",
+    "href": "modules/module2/slides/module2_01.html#which-shell-will-we-be-using",
+    "title": "Introduction to the shell",
+    "section": "Which shell will we be using?",
+    "text": "Which shell will we be using?\nThe Bash logo:\n\n\nBash is the most commonly used text shell. You have it installed on your computer by default if you are using a Mac or Linux machine, and if you are on a Windows machine you downloaded Bash as part of the setup instructions.\nAs we mentioned in the introduction module, the abbreviation BASH stands for “Bourne Again SHell”. Other shells existed before Bash, and one of the most successful early shells was invented by Stephen Bourne at Bell Labs in 1977, which he called the Bourne Shell. In 1989, the Free Software Foundation improved the Bourne Shell and as a pun named it the Bourne Again Shell, to symbolize it was now “reborn” with new features.\nText-based shells are sometimes called command-line interfaces (CLI, or just “the command line”) and at the heart of every CLI is a read-evaluate-print loop (REPL). When we type a command and press Return (also called Enter) the CLI reads the command, evaluates it (i.e., executes it), prints the command’s output, and loops around to wait for another command.\nLet’s see how to do that next!"
+  },
+  {
+    "objectID": "modules/module2/slides/module2_01.html#how-do-we-open-bash-on-our-computer",
+    "href": "modules/module2/slides/module2_01.html#how-do-we-open-bash-on-our-computer",
+    "title": "Introduction to the shell",
+    "section": "How do we open Bash on our computer?",
+    "text": "How do we open Bash on our computer?\nExecuting the shell command jupyter lab:\n\n\nThe JupyterLab landing page:\n\n\nTo run a shell such a Bash, we need to use a Terminal Emulator, or just “Terminal” for short. Most operating systems have one built-in, on MacOS it is called Terminal.app, and on Linux it is usually just called Terminal. On Windows, you could use the terminal application that comes with Git Bash that you installed in Assignment 1, the “Anaconda Prompt” application, or the newer “Windows Terminal” application.\nOpen the respective terminal application for the operating system you are using by browsing your applications menu or searching for the name of the terminal application.\nOne common thing we can use the shell for is a launcher for other applications. The first thing we are going to do is to learn how to launch JupyterLab, which we will use for the rest of this course.\nTo launch JupyterLab, execute the jupyter lab command by typing it into your shell and pressing Enter. You will see some output similar to the screenshot at the top of this slide. After a few seconds, you should see a browser window open with the Jupyter Launcher page similar to the screenshot at the bottom of this slide."
+  },
+  {
+    "objectID": "modules/module2/slides/module2_01.html#how-do-we-open-bash-from-jupyterlab",
+    "href": "modules/module2/slides/module2_01.html#how-do-we-open-bash-from-jupyterlab",
+    "title": "Introduction to the shell",
+    "section": "How do we open Bash from JupyterLab",
+    "text": "How do we open Bash from JupyterLab\nOpening a terminal from JupyterLab:\n\n\nAn open JupyterLab terminal with black background:\n\n\nSince there is a default terminal application on each operating system, we will be showing how to use Bash via the JupyterLab terminal in this course. Using the terminal application within JupyterLab gives us access to the same shell commands as if we would run the default terminal application on our operating system. The JupyterLab terminal also ensures that the experience is similar across all three operating systems, but you are free to use any terminal to follow along.\nTo open the JupyterLab terminal, go to File -&gt; New -&gt; Terminal as in the screenshot in this slide.\nThe JupyterLab terminal that opens will look slightly different depending on which operating system you are using and what its default terminal settings are. If you want to switch between dark and light backgrounds, you can go to Settings -&gt; Theme and chose either JupyterLab Light or JupyterLab Dark."
+  },
+  {
+    "objectID": "modules/module2/slides/module2_01.html#your-first-words-in-bash",
+    "href": "modules/module2/slides/module2_01.html#your-first-words-in-bash",
+    "title": "Introduction to the shell",
+    "section": "Your first words in Bash",
+    "text": "Your first words in Bash\nThe default prompt character:\nusername@computer $\n\nTyping in the whoami command for showing your username and pressing enter to run it:\nwhoami\nusername\n\nNow that we know how to open the terminal and JupyterLab, let’s explore some commands in the Bash shell! Our first shell commands will let us explore our folders and files, and will also introduce us to several conventions that most command line tools follow.\nTo start, you will have noticed that when the Terminal with Bash launches it presents us with a blinking line or block. This is called the “prompt” because the blinking is prompting us to enter a command.\nThe default character that is used to represent the prompt is a dollar sign ($). However, different shells may use a different symbol: in particular, the zsh shell, which is the default on newer versions of MacOS, uses %.\nBefore the dollar sign, we can see our username and computer name printed, but this might look different for you depending on your operating systems and settings.\nLet’s run our first command! By typing in whoami and pressing Enter, the computer will tell us who we are by displaying our username.\nNext, let’s move on to something more useful and find out which directory we are in!"
+  },
+  {
+    "objectID": "modules/module2/slides/module2_01.html#where-are-we",
+    "href": "modules/module2/slides/module2_01.html#where-are-we",
+    "title": "Introduction to the shell",
+    "section": "Where are we?",
+    "text": "Where are we?\nThe pwd command stands for Print Working Directory.\npwd\n# Linux\n/home/username\n\n# MacOS\n/Users/username\n\n# Windows\n/c/Users/username\n\nThe shell is like a file browser in the sense that we are always inside a directory. When we launch the shell, it puts us inside our home directory by default. Each user on the computer has a separate home directory and the function and location of this directory differs a little bit between operating systems.\nTo view which directory we are currently in we can execute the command pwd (Print Working Directory). Since the home directory differs between operating system, what the shell return when we type pwd inside our home directory will depend on which operating system we are using.\nOn Linux the home directory is usually /home/username, on MacOS it is /Users/username, and on Windows it will show up as /c/Users/username (if you have Git Bash installed). Our examples in this module shows the Linux directory structure, but you will see that some of the other modules show what we would see on MacOS or Windows.\nIn general it is enough to be familiar with the directory structure on your machine, but if you ever work on a shared cloud computer to get access to more computing resources, it is important to also be familiar with the Linux directory structure since most cloud computers run Linux."
+  },
+  {
+    "objectID": "modules/module2/slides/module2_01.html#exploring-the-filesystem",
+    "href": "modules/module2/slides/module2_01.html#exploring-the-filesystem",
+    "title": "Introduction to the shell",
+    "section": "Exploring the filesystem",
+    "text": "Exploring the filesystem\nls\nDownloads     Music\nDocuments     todo.txt\nPictures      my_program\n\nNow that we know where we are, let’s see what this directory contains by using the command ls (short for “listing”), which prints the names of the files and directories in the current directory. Again, our results may be different depending on our operating system and what files or directories we have created previously.\nIn our example in the slide, we have one file with a txt extension which indicates that this files contains text, and we have five files without an extension (some of these appear to be directories, but we can’t know for sure from this output)."
+  },
+  {
+    "objectID": "modules/module2/slides/module2_01.html#using-commands-with-options",
+    "href": "modules/module2/slides/module2_01.html#using-commands-with-options",
+    "title": "Introduction to the shell",
+    "section": "Using commands with options",
+    "text": "Using commands with options\nls -F\nDownloads/    Music/\nDocuments/    todo.txt\nPictures/     my_program*\n\nWe can make the output of ls more informative by using the -F option (a command option is sometimes called a “switch” or a “flag”). Options modify the behavior of the command.\nIn this case, -F tells ls to decorate the printed output to indicate what type of file each entry is. A trailing / (“slash”) indicates a directory, while a trailing * (“asterisk”) tells us that the file is a runnable program. Depending on our setup, the shell might also use colors to indicate what type of file or directory each entry is."
+  },
+  {
+    "objectID": "modules/module2/module2-09-what_did_we_just_learn.html",
+    "href": "modules/module2/module2-09-what_did_we_just_learn.html",
+    "title": "5. What did we just learn?",
+    "section": "",
+    "text": "5. What did we just learn?\n\nVideoSlides",
+    "crumbs": [
+      "**M2. The shell**",
+      "5. What did we just learn?"
+    ]
+  },
+  {
+    "objectID": "modules/module2/module2-07-intermediate_shell_topics.html",
+    "href": "modules/module2/module2-07-intermediate_shell_topics.html",
+    "title": "4. Intermediate shell topics",
+    "section": "",
+    "text": "4. Intermediate shell topics\n\nVideoSlides",
+    "crumbs": [
+      "**M2. The shell**",
+      "4. Intermediate shell topics"
+    ]
+  },
+  {
+    "objectID": "modules/module2/module2-05-working_with_files_and_directories.html",
+    "href": "modules/module2/module2-05-working_with_files_and_directories.html",
+    "title": "3. Working with files and directories",
+    "section": "",
+    "text": "3. Working with files and directories\n\nVideoSlides",
+    "crumbs": [
+      "**M2. The shell**",
+      "3. Working with files and directories"
+    ]
+  },
+  {
+    "objectID": "modules/module2/module2-03-moving_around.html",
+    "href": "modules/module2/module2-03-moving_around.html",
+    "title": "2. Moving around",
+    "section": "",
+    "text": "2. Moving around\n\nVideoSlides",
+    "crumbs": [
+      "**M2. The shell**",
+      "2. Moving around"
+    ]
+  },
+  {
+    "objectID": "modules/module2/module2-01-introduction_to_the_shell.html",
+    "href": "modules/module2/module2-01-introduction_to_the_shell.html",
+    "title": "1. Introduction to the shell",
+    "section": "",
+    "text": "1. Introduction to the shell\n\nVideoSlides",
+    "crumbs": [
+      "**M2. The shell**",
+      "1. Introduction to the shell"
+    ]
+  },
+  {
     "objectID": "modules/module1/slides/module1_07.html#module-learning-outcomes",
     "href": "modules/module1/slides/module1_07.html#module-learning-outcomes",
     "title": "What Did we Learn and What to Expect in Assignment 1",
@@ -264,5 +662,356 @@
     "title": "Asking Effective Questions",
     "section": "Where to ask for help",
     "text": "Where to ask for help\n\nhttps://stackoverflow.com/\n\n\n\nhttps://stats.stackexchange.com/\n\n\n\nWhen you have written down an effective question without finding the solution yourself in the process, then it is time to reach out to the data science community and ask for help.\nOne of the most common places to ask for help with programming questions is Stack Overflow. For data science questions, its sister site Cross Validated. Thousands of volunteers are answering questions on these sites everyday.\nIf you are asking your question on either of these sites, a tip is to use tags to categorize your question. These can then be used to search for an answer via the syntax [tag-name], and community members can choose to get notifications when a new question with a certain tag is asked.\nRemember, try to make your questions as easy to understand as possible!"
+  },
+  {
+    "objectID": "modules/module2/module2-00-module_learning_outcomes.html",
+    "href": "modules/module2/module2-00-module_learning_outcomes.html",
+    "title": "0. Module Learning Outcomes",
+    "section": "",
+    "text": "0. Module Learning Outcomes\n\nVideoSlides",
+    "crumbs": [
+      "**M2. The shell**",
+      "0. Module Learning Outcomes"
+    ]
+  },
+  {
+    "objectID": "modules/module2/slides/module2_00.html#module-learning-outcomes",
+    "href": "modules/module2/slides/module2_00.html#module-learning-outcomes",
+    "title": "Module Learning Outcomes",
+    "section": "Module Learning Outcomes",
+    "text": "Module Learning Outcomes\nIn this module you will learn how to\n\nUse the shell to navigate the computer’s filesystem\nCreate new files and directories\nMove, copy, and delete files and directories\nUse “wildcards”\nDefine and distinguish between absolute file paths and relative file paths\nRead the shell’s built-in manual\nCombine commands with pipes\n\n\nIn this module we will learn to effectively communicate with the computer via a text-based shell."
+  },
+  {
+    "objectID": "modules/module2/slides/module2_03.html#our-file-structure",
+    "href": "modules/module2/slides/module2_03.html#our-file-structure",
+    "title": "Moving around",
+    "section": "Our file structure",
+    "text": "Our file structure\n/home/username\n├── Documents/\n│   ├── another-folder/\n│   └── my-document.pdf\n├── Downloads/\n├── Music/\n├── Pictures/\n├── .hidden-file\n├── my-program*\n└── todo.txt\n\nFor this slide deck, we will work with a file structure that looks like what is shown in this slide. We have four folders, a hidden file, and two regular files inside our user’s home directory (/home/username). Inside the Documents directory there is one additional file and one subfolder. Now let’s see how we can use different shell commands to move around in this structure."
+  },
+  {
+    "objectID": "modules/module2/slides/module2_03.html#moving-around-in-the-shell",
+    "href": "modules/module2/slides/module2_03.html#moving-around-in-the-shell",
+    "title": "Moving around",
+    "section": "Moving around in the shell",
+    "text": "Moving around in the shell\nls -F\nDownloads/    Music/\nDocuments/    todo.txt\nPictures/     my_program*\n\nls -F Documents\nmy-document.pdf\nanother-folder/\n\nLet’s first run ls again to remind us about what the directory structure looks like.\nIf we want to see what’s in the Documents directory we can ask ls to list its contents, by passing the folder name as an argument to ls."
+  },
+  {
+    "objectID": "modules/module2/slides/module2_03.html#absolute-and-relative-paths",
+    "href": "modules/module2/slides/module2_03.html#absolute-and-relative-paths",
+    "title": "Moving around",
+    "section": "Absolute and relative paths",
+    "text": "Absolute and relative paths\nRelative path\nDocuments/\n\nAbsolute path\n/home/username/Documents/\n\nNote that we can write paths in two separate ways. In the previous slide we used the position Documents relative to the directory we were already in. We could instead have written out it’s absolute position in the file system, starting with the root directory: /home/username/Documents. Absolute paths always start with a leading slash /.\nUsing a relative path is like telling someone to go two kilometers north and then half a kilometer east; using an absolute path is like giving them the latitude and longitude of their destination.\nThey both have different advantages: An absolute path will always be the same on your file system, whereas using relative paths makes it easier to work with collaborators across multiple computers."
+  },
+  {
+    "objectID": "modules/module2/slides/module2_03.html#moving-to-a-directory",
+    "href": "modules/module2/slides/module2_03.html#moving-to-a-directory",
+    "title": "Moving around",
+    "section": "Moving to a directory",
+    "text": "Moving to a directory\ncd Documents\n\nThere is not output from the cd command so we use pwd to confirm where we are.\npwd\n/home/username/Documents/\n\nIf we are going to do a lot of work inside the Documents directory, the easiest thing would be to change our current working directory, so that we don’t have to type zips over and over again. The command to do this is cd, which stands for “Change Directory”, since it changes what directory we are currently inside.\ncd doesn’t print anything. This is normal: many shell commands run silently unless something goes wrong, on the theory that they should only ask for our attention when they need it. To confirm that cd has done what we asked, we can use pwd, to print the absolute path to the current directory."
+  },
+  {
+    "objectID": "modules/module2/slides/module2_03.html#navigating-up-to-the-parent-directory",
+    "href": "modules/module2/slides/module2_03.html#navigating-up-to-the-parent-directory",
+    "title": "Moving around",
+    "section": "Navigating up to the parent directory",
+    "text": "Navigating up to the parent directory\nIncorrect command:\ncd username\ncd: username: No such file or directory\n\nCorrect command followed by pwd:\ncd ..\npwd\n/home/username\n\nWe now know how to navigate down the directory tree, but how do we go back up to our user’s home directory? It doesn’t work to simply type cd username since we are inside the Documents subdirectory.\nTo get back up, we could either type out the absolute path cd /home/username or use a special relative path called .. (two periods in a row with no spaces). This is a convenient shortcut that always means “the directory that contains the current one”, which is often called the “parent” directory of the current directory."
+  },
+  {
+    "objectID": "modules/module2/slides/module2_03.html#listing-hidden-files",
+    "href": "modules/module2/slides/module2_03.html#listing-hidden-files",
+    "title": "Moving around",
+    "section": "Listing hidden files",
+    "text": "Listing hidden files\nls -F -a\n./             Downloads/    Music/\n../            Documents/    todo.txt\n.hidden-file   Pictures/     my_program*\n\nWhy didn’t we see the special parent directory symbol .., when we listed the directory content? ls usually doesn’t show us this special directory—since it’s always there, so displaying it every time would be a distraction.\nIn fact ls hides every file starting with ., since this is an indication that the creator of the file wanted it to be hidden (e.g. many configuration files start with .).\nWe can ask ls to include all files by using the -a option, which stands for “all”. You will see that this also includes a single dot .; this stands for the current directory.\nSome option also exist in a “long form”, in this case the -a option is equivalent to writing --all. It is also possible to combine options with a single hyphen, so ls -F -a is the same as ls -Fa."
+  },
+  {
+    "objectID": "modules/module2/slides/module2_03.html#navigating-several-directories-at-a-time",
+    "href": "modules/module2/slides/module2_03.html#navigating-several-directories-at-a-time",
+    "title": "Moving around",
+    "section": "Navigating several directories at a time",
+    "text": "Navigating several directories at a time\nNavigate two folders down:\ncd Documents/another-folder\n\nNavigate two folders up:\ncd ../..\npwd\n/home/username\n\ncd allows us to navigate multiple directories at a time, by joining directory names with the path separator /. We can use this to navigate either down or up.\nFor example, typing cd Documents/another-folder would take us directly to the another-folder directory (in our example folder structure). Typing cd ../.. would take us two folders up: back to out home directory."
+  },
+  {
+    "objectID": "modules/module2/slides/module2_03.html#home-directory-shortcut",
+    "href": "modules/module2/slides/module2_03.html#home-directory-shortcut",
+    "title": "Moving around",
+    "section": "Home directory shortcut",
+    "text": "Home directory shortcut\ncd ~/Documents\npwd\n/home/username/Documents\n\nThese two cd commands both return you to the home directory:\ncd ~\ncd\npwd\n/home/username\n\ncd also offers a few shortcuts for common operations, e.g. using ~ is a shortcut for typing /home/username, so no matter in which folder you are currently located, you can type cd ~/Documents to navigate to the documents folder in your home directory.\nLikewise, you could type cd ~ to navigate to your home directory, or even just cd without any path argument, since this is a special shortcut just for the home directory.\nAnother common shortcut is cd - (hyphen), which takes you back the most recent directory you visited."
+  },
+  {
+    "objectID": "modules/module2/slides/module2_07.html#searching-for-text-patterns-in-files",
+    "href": "modules/module2/slides/module2_07.html#searching-for-text-patterns-in-files",
+    "title": "Intermediate shell topics",
+    "section": "Searching for text patterns in files",
+    "text": "Searching for text patterns in files\ngrep \"the\" note_2022-06-22.md\nnote_2022-06-22.md:These are the first\nnote_2022-06-22.md:in the file.\n\nWe can use the grep command to search for text in files. To search for the word “the” in our notes file, we can type grep \"the\" note_2022-06-22.md. This will return every line in the file that contains the word “the”.\nWhen you have a longer command like this that you find annoying to re-type each time, you can use the up/down arrows on your keyboard to navigate the history of commands. This way you can go back to a long command easily and then just modify it a bit instead of retyping it from scratch. In a few slides we will learn about another technique to help with long commands by creating shorter aliases for them."
+  },
+  {
+    "objectID": "modules/module2/slides/module2_07.html#seeing-the-history-of-commands",
+    "href": "modules/module2/slides/module2_07.html#seeing-the-history-of-commands",
+    "title": "Intermediate shell topics",
+    "section": "Seeing the history of commands",
+    "text": "Seeing the history of commands\nhistory\n1  pwd\n2  ls\n3  cd Documents/\n4  cd\n5  ls -F -a\n6  history\n\nOccasionally, we might want to re-use a command that we used in the past, but don’t remember exactly what it was. The history command can help us with this as it lists all the previous commands we have run and in which order we ran them."
+  },
+  {
+    "objectID": "modules/module2/slides/module2_07.html#combining-commands-with-pipes",
+    "href": "modules/module2/slides/module2_07.html#combining-commands-with-pipes",
+    "title": "Intermediate shell topics",
+    "section": "Combining commands with pipes",
+    "text": "Combining commands with pipes\nhistory | grep \"ls\"\n2  ls\n5  cd ls -F -a\n7  history | grep \"ls\"\n\nAs you start using the shell more, you will realize that the history command quickly fills up and it becomes difficult to find any particular command we are looking for. In cases like these, it would be useful to be able to search in the list of commands, e.g. you might remember that your command included the word ls, but you don’t remember exactly which flags you used.\nWe just learned about grep for searching for text in files, so maybe there is someway we could use it to search the text output from the history command? In other words, could we redirect the output from the history command to grep before printing it on the screen?\nThis is exactly what a pipe (|) does, which we can use with the following syntax command1 | command2. In our case this would be history | grep \"ls\", which sends the output of ls to grep, which removes all the lines that don’t contain “ls”, before printing the remaining three lines to the screen."
+  },
+  {
+    "objectID": "modules/module2/slides/module2_07.html#a-complex-pipe",
+    "href": "modules/module2/slides/module2_07.html#a-complex-pipe",
+    "title": "Intermediate shell topics",
+    "section": "A complex pipe",
+    "text": "A complex pipe\nFruit Color\nkiwi green\nplum purple\napple red\napple green\nplum purple\napple red\nwatermelon red\n\ntail -n +2 fruit-colors.txt | cut -d ' ' -f2 | sort | uniq -c\n2 green\n2 purple\n3 red\n\nPipes allow us to create rather complex commands. Imagine that we have a text file containing a list of fruits and their colors as in the top of this slide. How can we count how many fruits there are of each color?\nWe need to break this down into several steps:\n\nWe don’t want to include the first line that says “Fruit Color” when we are counting. To show the entire file except this line we can use tail -n +2 to print everything from the second line to the end of the file.\nTo get only the colors, we need to cut out the second column. We can do this using the cut command, and specifying that the delimiter in this file is a space (-d ' '), and we are interesting in cutting out the second column/field (-f2).\nTo count the unique occurrences, we first need to sort the file so that all the same colors are adjacent to each other. On a sorted file, we can use the uniq command with the -c/--count flag to count the unique occurrences of words.\n\nThis is a rather complex pipe and we introduced a few new commands as well. You don’t need to worry about the details here, it is the principle that is important: With the shell you can find many useful small commands and if you string them together using a pipe, it is possible to perform rather advanced text processing directly in the shell."
+  },
+  {
+    "objectID": "modules/module2/slides/module2_07.html#creating-an-alias",
+    "href": "modules/module2/slides/module2_07.html#creating-an-alias",
+    "title": "Intermediate shell topics",
+    "section": "Creating an alias",
+    "text": "Creating an alias\nBefore creating the alias:\nl\nl: command not found\n\nAfter creating the alias:\nalias l=\"ls -aFltr\"\nl\ntotal 12\n-rw-rw-r-- 1 usergroup username   53 Jun 20 08:47 note_2022-06-22.md\ndrwxr-xr-x 4 usergroup username 4096 Jun 20 11:45 ../\n-rw-rw-r-- 1 usergroup username    0 Jun 20 11:53 note_2022-07-02.md.bkp\n-rw-rw-r-- 1 usergroup username    0 Jun 20 11:53 note_2022-07-02.md\n-rw-rw-r-- 1 usergroup username    0 Jun 20 11:53 note_2022-06-20.md.bkp\ndrwxrwxr-x 2 usergroup username 4096 Jun 20 14:54 ./\n\nIf you have a complex command that you run every so often, but is hard to remember, or just take a long time to type out, you can create a nickname for this command. This could e.g. be a command that uses many of option flags, or a long series of commands piped together.\nAn example of this could be to enhance the ls command, which is one we use very often and could be made more helpful by have a nickname for some of the commonly used options. Let’s say that we want to include the following options:\n\n-a list all files, including hidden ones\n-F append indicator characters to make the output easier to understand\n-l show the “long” format, which includes more information about each file (read the man page to find out more!)\n-t sort files by time instead of alphabetically\n-r sort in reverse order with the most recent file at the bottom\n\nWe could type out ls -aFltr each time, but that is cumbersome. If we instead type alias l=\"ls -aFltr\", we can use the shorter l as an “alias” for the longer command. If we want to keep this alias between reboots, we need to save it to file ~/.bash_profile (on Windows and Mac) or ~/.bashrc (on Linux) the same way we did during the setup in assignment 1."
+  },
+  {
+    "objectID": "modules/module2/slides/module2_07.html#reading-the-manual",
+    "href": "modules/module2/slides/module2_07.html#reading-the-manual",
+    "title": "Intermediate shell topics",
+    "section": "Reading the manual",
+    "text": "Reading the manual\nman ls\nLS(1)                                                    User Commands\n \nNAME\n       ls - list directory contents\n \nSYNOPSIS\n       ls [OPTION]... [FILE]...\n \nDESCRIPTION\n       List  information  about the FILEs (the current directory by default).  Sort entries alphabetically if none of -cftuvSUX\n       nor --sort is specified.\n \n       Mandatory arguments to long options are mandatory for short options too.\n \n       -a, --all\n              do not ignore entries starting with .\n \n       -A, --almost-all\n              do not list implied . and ..\n \n       --author\n              with -l, print the author of each file\n \n       -b, --escape\n              print C-style escapes for nongraphic characters\n \n       --block-size=SIZE\n              with -l, scale sizes by SIZE when printing them; e.g., '--block-size=M'; see SIZE format below\n \n       -B, --ignore-backups\n              do not list implied entries ending with ~\n...\n\nHow can we find out what options like -t and -r do if we don’t know of them already? By reading the built-in help manual! Typing man ls brings up the manual help page for the ls command. You can navigate these pages with Space to go down and b to go Back up. q quits the manual and takes you back to the shell prompt.\nTyping / starts a search. Type in the search term and press Enter to be taken to the first hit. To continue to the next search hit, press n, and to go to the previous, press shift + n.\nTechnically, the manual pages are displayed inside a “pager” program called less, which you could use to add interactive navigation to any long piece of text. less is used widely by other shell programs, so these navigation keys are important to remember as they will be helpful to navigate other pages as well!\nNote that on Windows there is no built-in man command. Instead you can pipe the help pages into the less command manually via e.g. ls --help | less. We setup an alias for this called man during the setup in assignment one, so if you followed those instructions, you should be able to type man ls on Windows as well."
+  },
+  {
+    "objectID": "modules/module3/module3-00-module_learning_outcomes.html",
+    "href": "modules/module3/module3-00-module_learning_outcomes.html",
+    "title": "0. Module Learning Outcomes",
+    "section": "",
+    "text": "0. Module Learning Outcomes\n\nVideoSlides",
+    "crumbs": [
+      "**M3. Git and GitHub intro**",
+      "0. Module Learning Outcomes"
+    ]
+  },
+  {
+    "objectID": "modules/module3/slides/module3_00.html#module-learning-outcomes",
+    "href": "modules/module3/slides/module3_00.html#module-learning-outcomes",
+    "title": "Module Learning Outcomes",
+    "section": "Module Learning Outcomes",
+    "text": "Module Learning Outcomes\nIn this module you will learn how to\n\nDifferentiate between the use of GitHub as a remote hosting service for version control and Git as a version control system.\nIdentify a Git repository.\nImplement Git’s clone, add, status, commit, pull, and push operations on the command line and their equivalent use in the JupyterLab IDE.\nUnderstand what it implies to use the staging area in a Git workflow.\nUse commits as the primary building block for storing a project versions together with an attached message and a unique identifier.\n\n\nThis module covers the basics of version control with Git and GitHub."
+  },
+  {
+    "objectID": "modules/module3/slides/module3_03.html#schematic-of-local-and-remote-version-control-repositories.",
+    "href": "modules/module3/slides/module3_03.html#schematic-of-local-and-remote-version-control-repositories.",
+    "title": "Version control repositories",
+    "section": "Schematic of local and remote version control repositories.",
+    "text": "Schematic of local and remote version control repositories.\n \n\n\nTypically, when we put a data analysis project under version control, we create two copies of the repository. One copy is used as our primary workspace where we create, edit, and delete files.\nThis copy is referred to as the local repository. The local repository most commonly exists on our computer or laptop, but can also exist within a workspace on a server (e.g., JupyterHub). The other copy is typically stored in a repository hosting service (e.g., GitHub), where we can easily share it with our collaborators. This copy is known as the remote repository.\nUnder the hood, Git only saves the changes between your versions rather than a complete version of the document each time, so it is also efficient in terms of disk space. Note that while Git works great for text files, such as code, it is not so great for binary files such as images because the changes between two versions of the same image cannot easily be expressed in plain text."
+  },
+  {
+    "objectID": "modules/module3/slides/module3_03.html#tracking-the-repository-history-using-commit-messages",
+    "href": "modules/module3/slides/module3_03.html#tracking-the-repository-history-using-commit-messages",
+    "title": "Version control repositories",
+    "section": "Tracking the repository history using commit messages",
+    "text": "Tracking the repository history using commit messages\n\n\nBoth copies of the repository have a working directory where you can create, store, edit, and delete files (e.g., analysis.ipynb in the image).\nYou have probably noticed that in the local repository there is a staging area, which does not exist in the remote repository. We will soon learn more about the staging area, but for now imagine that it is a particular area in your local repository that will give you more flexibility to track your changes."
+  },
+  {
+    "objectID": "modules/module3/slides/module3_03.html#tracking-the-repository-history-using-commit-messages-1",
+    "href": "modules/module3/slides/module3_03.html#tracking-the-repository-history-using-commit-messages-1",
+    "title": "Version control repositories",
+    "section": "Tracking the repository history using commit messages",
+    "text": "Tracking the repository history using commit messages\n\n\nBoth repositories also keep a complete project history. This history is a record of all versions of the project files that have been created. The repository history is not automatically generated; Git must be explicitly told when to record a version of the project. These records are called commits. They are a snapshot of the file contents and metadata about the repository at the time the record was created (a commit includes who made the commit, when it was made, etc.).\nIn the local and remote repositories shown in the image, there are two commits represented as gray circles. Each commit can be identified by a human-readable message, which you write when you create the commit, and a commit hash that Git automatically adds for you."
+  },
+  {
+    "objectID": "modules/module3/slides/module3_03.html#commit-message",
+    "href": "modules/module3/slides/module3_03.html#commit-message",
+    "title": "Version control repositories",
+    "section": "Commit message",
+    "text": "Commit message\n \n\n\nThe purpose of the commit message is to contain a brief, rich description of what work was done since the last commit. Messages act as a very useful narrative of the changes to a project over its lifespan. If you ever want to view or revert to an earlier version of the project, the message can help you identify which commit to view or revert to. In this image, you can see two such messages, one for each commit: Created README.md and Added analysis draft.\nThe hash is a string of characters consisting of about 40 letters and numbers. The purpose of the hash is to serve as a unique identifier for the commit, and is used by Git to index project history. Although hashes are quite long — imagine having to type out 40 precise characters to view an old project version! — Git is able to work with shorter versions of hashes. In the image, you can see two of these shortened hashes, one for each commit: Daa29d6 and 884c7ce."
+  },
+  {
+    "objectID": "modules/module3/slides/module3_03.html#how-can-you-create-your-repositories",
+    "href": "modules/module3/slides/module3_03.html#how-can-you-create-your-repositories",
+    "title": "Version control repositories",
+    "section": "How can you create your repositories?",
+    "text": "How can you create your repositories?\n  \n\nCreate the remote repository in www.github.com (GitHub)\nClone the repository to your local computer with the terminal OR JupyterLab IDE (Git)\n\n\nFirst, we are going to learn how to create a remote repository on GitHub and then to clone it locally using the terminal or JupyterLab.\nThere is another possible option to create a repository, that is creating it locally and then pushing it to GitHub, but we are not going to cover it in this course."
+  },
+  {
+    "objectID": "modules/module3/slides/module3_03.html#how-can-you-create-your-repositories-1",
+    "href": "modules/module3/slides/module3_03.html#how-can-you-create-your-repositories-1",
+    "title": "Version control repositories",
+    "section": "How can you create your repositories?",
+    "text": "How can you create your repositories?\n  \n\n\nCloning a GitHub repository is not the same as downloading it to your computer. When you clone it you are downloading the files and all the project history including the commits and their associated messages. The information about your project that is not the files themselves is downloaded as a hidden folder called .git. Any folder that contains a hidden .git folder is considered a Git repository. By default, all your projects on GitHub are Git repositories.\nYou can clone your project to have a local copy using an integrated development environment (IDE) as JupyterLab or the terminal. The terminal will give you greater versatility since you can use a wide variety of commands, while the IDE will allow you to handle the basic commands in a more intuitive way.\nNext, we are going to learn more about both the steps in this slide, starting with how to create the remote repository!"
+  },
+  {
+    "objectID": "modules/module3/slides/module3_03.html#creating-a-remote-repository-on-github",
+    "href": "modules/module3/slides/module3_03.html#creating-a-remote-repository-on-github",
+    "title": "Version control repositories",
+    "section": "1. Creating a remote repository on GitHub",
+    "text": "1. Creating a remote repository on GitHub\n \n\n\n🙌 Practice\nBefore you can create remote repositories on GitHub, you will need a GitHub account; you can sign up for a free account at https://github.com. Once you have logged into your account, you can create a new repository to host your project by clicking on the + icon in the upper right-hand corner, and then on New Repository.\nAnother way to create a repository is by clicking the green button New on the left side of the screen."
+  },
+  {
+    "objectID": "modules/module3/slides/module3_03.html#creating-a-remote-repository-on-github-1",
+    "href": "modules/module3/slides/module3_03.html#creating-a-remote-repository-on-github-1",
+    "title": "Version control repositories",
+    "section": "1. Creating a remote repository on GitHub",
+    "text": "1. Creating a remote repository on GitHub\n\n\n🙌 Practice\nRepositories can be set up with a variety of configurations, including a name, optional description, and the inclusion (or not) of several template files. One of the most important configuration items to choose is the visibility to the outside world, either public or private:\n\nPublic repositories can be viewed by anyone.\nPrivate repositories are only visible to you.\n\nBoth public and private repositories are only editable by you, but you can change that by giving access to other collaborators.\nTo get started with a public repository having a template README.md file, take the following steps:\n\nEnter the name of your project repository. In our example, we use canadian_languages.\nMost repositories follow a similar naming convention involving only lowercase letter words separated by either underscores or hyphens.\nChoose an option for the privacy of your repository.\nSelect the option Add a README file. This creates a placeholder README.md file in your repository’s root folder, which makes it possible to clone the repository to your computer directly.\nWhen you are happy with your repository name and configuration, click on the green Create Repository button.\n\nThat’s it! Now let’s clone it to get a local copy on your computer."
+  },
+  {
+    "objectID": "modules/module3/slides/module3_03.html#cloning-a-repository-using-jupyter-lab-ide",
+    "href": "modules/module3/slides/module3_03.html#cloning-a-repository-using-jupyter-lab-ide",
+    "title": "Version control repositories",
+    "section": "2. Cloning a repository using Jupyter Lab (IDE)",
+    "text": "2. Cloning a repository using Jupyter Lab (IDE)\n  \n\n\n🙌 Practice\nCloning a remote repository from GitHub to create a local repository results in a copy that is aware where it was obtained from, so that it knows where to send/receive new committed edits. In order to do this, first click the green button that says Code on your GitHub repo, and choose to copy the URL from the HTTPS tab.\nThe green “Code” drop-down menu contains the remote address (URL) corresponding to the location of the remote GitHub repository."
+  },
+  {
+    "objectID": "modules/module3/slides/module3_03.html#cloning-a-repository-using-jupyter-lab-ide-1",
+    "href": "modules/module3/slides/module3_03.html#cloning-a-repository-using-jupyter-lab-ide-1",
+    "title": "Version control repositories",
+    "section": "2. Cloning a repository using Jupyter Lab (IDE)",
+    "text": "2. Cloning a repository using Jupyter Lab (IDE)\n\n\n\n🙌 Practice\nNext, open JupyterLab and click the Jupyter Git Clone icon in the Files tab of the left side bar. We have marked this icon with a red circle in the screenshot in this slide.\nWhen you click this button a dialog box will show up, which we will explain in the next slide."
+  },
+  {
+    "objectID": "modules/module3/slides/module3_03.html#cloning-a-repository-using-jupyter-lab-ide-2",
+    "href": "modules/module3/slides/module3_03.html#cloning-a-repository-using-jupyter-lab-ide-2",
+    "title": "Version control repositories",
+    "section": "2. Cloning a repository using Jupyter Lab (IDE)",
+    "text": "2. Cloning a repository using Jupyter Lab (IDE)\n\n\n\n🙌 Practice\nOnce the dialog box pops up, you can paste the URL of the GitHub project repository you copied earlier and click the blue CLONE button. This will download the repository files to your computer.\nAnother way to do this is clicking on the Git icon on the side bar as you can see in the image\nIt is important to keep in mind where you want to locate your repository. Before cloning the repository, navigate to the desired folder using the File Browser button on the left sidebar.\nPay attention to not clone your repository inside another Git repository. This is not considered a good practice."
+  },
+  {
+    "objectID": "modules/module3/slides/module3_03.html#cloning-a-repository-using-jupyter-lab-ide-3",
+    "href": "modules/module3/slides/module3_03.html#cloning-a-repository-using-jupyter-lab-ide-3",
+    "title": "Version control repositories",
+    "section": "2. Cloning a repository using Jupyter Lab (IDE)",
+    "text": "2. Cloning a repository using Jupyter Lab (IDE)\n\n\n\n🙌 Practice\nWhen the cloning is complete, you will now see a folder for the repository showing up in the file browser tab. Inside this folder are all the files that existed on your repository on GitHub."
+  },
+  {
+    "objectID": "modules/module3/slides/module3_03.html#cloning-a-repository-using-jupyter-lab-terminal",
+    "href": "modules/module3/slides/module3_03.html#cloning-a-repository-using-jupyter-lab-terminal",
+    "title": "Version control repositories",
+    "section": "2. Cloning a repository using Jupyter Lab (Terminal)",
+    "text": "2. Cloning a repository using Jupyter Lab (Terminal)\n  \n\n\n🙌 Practice\nIt is also possible to work with Git from the terminal instead of the JupyterLab Git client. We will later see that there are some advantages of working in the terminal for the more advanced commands. For now, let’s see how we can perform the same cloning steps in the terminal as we just did via the graphical Git client. Note that we will never need to clone a project both from the Git client and the terminal, so we are just doing this here to show you how it is done in both interfaces.\nTo clone a repository from the terminal, we will use the git clone command followed by the same URL we copied previously as can be seen in the screenshot on this slide. After the cloning has finished, you will see that the repository appears in the JupyterLab files tab, just as it did when we cloned it using the graphical Git client."
+  },
+  {
+    "objectID": "modules/module3/slides/module3_03.html#how-do-you-know-if-youre-working-in-a-git-repository-terminal",
+    "href": "modules/module3/slides/module3_03.html#how-do-you-know-if-youre-working-in-a-git-repository-terminal",
+    "title": "Version control repositories",
+    "section": "How do you know if you’re working in a Git repository? (Terminal)",
+    "text": "How do you know if you’re working in a Git repository? (Terminal)\n  \n\n\n🙌 Practice\nAs we mentioned before, a Git repository stores all the necessary information for version control your project in a hidden folder called .git. If you want to know if you are working in a Git repository using the terminal you can use the bash command ls -a as you can see in the image. The -a flag will include into the lists of files displayed on the terminal the hidden folders. If the .git folder is present you are working in a Git repository.\nRemember to first double check that you are in the directory which the files have been cloned to. When you clone, the files will be downloaded to a subdirectory of the folder you are currently in, so you need to use cd to get to that folder before running ls -a. By cloning a repository from GitHub to your computer, you are automatically getting a copy of .git and thus, working in a Git repository."
+  },
+  {
+    "objectID": "modules/module3/slides/module3_07.html#committing-the-modified-files-in-the-staging-area",
+    "href": "modules/module3/slides/module3_07.html#committing-the-modified-files-in-the-staging-area",
+    "title": "Committing changes to a local repository",
+    "section": "Committing the modified files in the staging area",
+    "text": "Committing the modified files in the staging area\n \n\n\nOnce the files we want to keep have been added to the staging area, we can “commit” them to the repository history. When we do this, we are required to include an informative message briefly describing the purpose of the changes we made.\nIn the screenshot, the commit message is \"Message about changes...\"; in your work you should make sure to replace this with an informative message about what you changed. It is also important to note that these changes are only being committed to the history of the local repository’s on your computer. The remote repository on GitHub has not changed, and collaborators would not yet be able to see your new changes online."
+  },
+  {
+    "objectID": "modules/module3/slides/module3_07.html#committing-to-add-sections-to-your-project-history",
+    "href": "modules/module3/slides/module3_07.html#committing-to-add-sections-to-your-project-history",
+    "title": "Committing changes to a local repository",
+    "section": "Committing to add sections to your project history",
+    "text": "Committing to add sections to your project history\n \n\n\nimage source: xkcd.com\n\n\nWriting meaningful commit messages is really important. When commit messages are too vague (code additions or Add some stuff) it will be difficult to interpret for our collaborators, including ourselves in the future. Writing clear and descriptive commit messages increases the quality of your project and facilitates collaborative work."
+  },
+  {
+    "objectID": "modules/module3/slides/module3_07.html#making-the-commit-jupyterlab-ide",
+    "href": "modules/module3/slides/module3_07.html#making-the-commit-jupyterlab-ide",
+    "title": "Committing changes to a local repository",
+    "section": "Making the commit (JupyterLab IDE)",
+    "text": "Making the commit (JupyterLab IDE)\n\n\n\n🙌 Practice\nStep 3. Add a commit message into the Jupyter Git extension commit text box.\nTo commit the staged changes together with an associated commit message, you must write a message in the text box at the bottom of the Git pane and click on the blue “Commit” button (see image). It is highly recommended to write useful and meaningful messages about what was changed.\nThese commit messages, and the time stamp for a given commit, are the primary means to navigate through the project’s history in the event that you need to view or retrieve a past version of a file, or revert your project to an earlier state.\nWhen you click the “Commit” button for the very first time, you will be prompted to enter your name and email. This only needs to be done once for each machine you use Git on, and is added as author information to the commit message."
+  },
+  {
+    "objectID": "modules/module3/slides/module3_07.html#making-the-commit-jupyterlab-ide-1",
+    "href": "modules/module3/slides/module3_07.html#making-the-commit-jupyterlab-ide-1",
+    "title": "Committing changes to a local repository",
+    "section": "Making the commit (JupyterLab IDE)",
+    "text": "Making the commit (JupyterLab IDE)\n\n\n\n🙌 Practice\nStep 3 continued\nWhen committing changes, you need to include a title/summary for each message (the upper text box in JupyterLab). Optionally, you could also include a longer description for the commit in the next text box."
+  },
+  {
+    "objectID": "modules/module3/slides/module3_07.html#making-the-commit-jupyterlab-ide-2",
+    "href": "modules/module3/slides/module3_07.html#making-the-commit-jupyterlab-ide-2",
+    "title": "Committing changes to a local repository",
+    "section": "Making the commit (JupyterLab IDE)",
+    "text": "Making the commit (JupyterLab IDE)\n \nBad messages ❌ :\n\nfixes an error\nadded new code\n\n \nGood messages ✅ :\n\nReorder sections to make the README more welcoming\nFix notebook error to allow for export with images\n\n\nYou can see example of informative commit titles in this slide.\nThe general guideline for the title is to summarize the purpose of the commit as a short descriptive message. It is recommended to write your messages in imperative mood (imagine that your commit should complete the sentence “this commit will…”) and start with a capital letter."
+  },
+  {
+    "objectID": "modules/module3/slides/module3_07.html#making-the-commit-jupyterlab-ide-3",
+    "href": "modules/module3/slides/module3_07.html#making-the-commit-jupyterlab-ide-3",
+    "title": "Committing changes to a local repository",
+    "section": "Making the commit (JupyterLab IDE)",
+    "text": "Making the commit (JupyterLab IDE)\n\n\n\n🙌 Practice\nAfter recording a commit, the staging area should be empty and you will see that there are 0 staged files. You are now ready to push your changes to the remote repository on GitHub."
+  },
+  {
+    "objectID": "modules/module3/slides/module3_07.html#making-the-commit-jupyterlab-ide-4",
+    "href": "modules/module3/slides/module3_07.html#making-the-commit-jupyterlab-ide-4",
+    "title": "Committing changes to a local repository",
+    "section": "Making the commit (JupyterLab IDE)",
+    "text": "Making the commit (JupyterLab IDE)\n\n\n\n🙌 Practice\nAfter the changes have been successfully committed, you can view them in the History tab together with your message. You have now tracked this change and made it part of the history of your project!"
+  },
+  {
+    "objectID": "modules/module3/slides/module3_07.html#making-the-commit-terminal",
+    "href": "modules/module3/slides/module3_07.html#making-the-commit-terminal",
+    "title": "Committing changes to a local repository",
+    "section": "Making the commit (Terminal)",
+    "text": "Making the commit (Terminal)\n\n\n\ngit commit\n\n🙌 Practice\nThe equivalent terminal command for making a commit with a title and long description, is to type git commit inside Bash and press enter. This will open your default text editor with a temporary file called COMMIT_EDITMSG where you can type in the commit message as shown in the next slide."
+  },
+  {
+    "objectID": "modules/module3/slides/module3_07.html#making-the-commit-terminal-1",
+    "href": "modules/module3/slides/module3_07.html#making-the-commit-terminal-1",
+    "title": "Committing changes to a local repository",
+    "section": "Making the commit (Terminal)",
+    "text": "Making the commit (Terminal)\n\n\n\n🙌 Practice\nYour default text editor should be VS Code if you followed the setup steps in the first assignment. If you didn’t, you might end up in a text editor called vim that runs inside the terminal as shown in this slide. vim is powerful, but has a steep learning curve, so in case this happens, you can exit vim by typing :q and then pressing Enter. Then you can go back and make sure that VS Code is your default editor by following the instructions in the first assignment."
+  },
+  {
+    "objectID": "modules/module3/slides/module3_07.html#making-the-commit-terminal-2",
+    "href": "modules/module3/slides/module3_07.html#making-the-commit-terminal-2",
+    "title": "Committing changes to a local repository",
+    "section": "Making the commit (Terminal)",
+    "text": "Making the commit (Terminal)\n\n\n\nOften, a descriptive summary in the title field is sufficient and we don’t need to write out a long description. When this is the case, you can use the shorter version of the command git commit with the flag -m, which allows you to type in the title summary together with the command:\ngit commit -m \"Create an eda notebook\""
+  },
+  {
+    "objectID": "modules/module3/slides/module3_11.html#pulling-changes-from-github",
+    "href": "modules/module3/slides/module3_11.html#pulling-changes-from-github",
+    "title": "Pulling changes from a remote repository",
+    "section": "Pulling changes from GitHub",
+    "text": "Pulling changes from GitHub\n\n\nIf you are working on a project with collaborators, they will also be making changes to files (e.g., to the analysis code in a Jupyter notebook and the project’s README file), committing them to their own local repository, and pushing to the remote GitHub repository to share their commits with you. When they push their changes, those changes will initially only exist in the remote GitHub repository and not in your local repository on your computer.\nTo obtain the new changes from the remote repository on GitHub, you will need to pull/download those changes to your own local repository. By pulling changes, you synchronize your local repository to what is present on GitHub. Additionally, until you pull changes from the remote repository, you will not be able to push any more changes yourself (though you will still be able to work and make commits in your local repository)."
+  },
+  {
+    "objectID": "modules/module3/slides/module3_11.html#pulling-changes-from-github-jupyterlab-ide",
+    "href": "modules/module3/slides/module3_11.html#pulling-changes-from-github-jupyterlab-ide",
+    "title": "Pulling changes from a remote repository",
+    "section": "Pulling changes from GitHub (JupyterLab IDE)",
+    "text": "Pulling changes from GitHub (JupyterLab IDE)\n\n\n\nThe GitHub interface indicates the name of the last user to push a commit to the remote repository, a preview of the associated commit message, the unique commit hash, and how long ago the commit was made.\nIn this example, we can see that someone else has made a change to the repository. We can use Jupyter Lab to pull/download this change to our local Git repository."
+  },
+  {
+    "objectID": "modules/module3/slides/module3_11.html#pulling-changes-from-github-jupyterlab-ide-1",
+    "href": "modules/module3/slides/module3_11.html#pulling-changes-from-github-jupyterlab-ide-1",
+    "title": "Pulling changes from a remote repository",
+    "section": "Pulling changes from GitHub (JupyterLab IDE)",
+    "text": "Pulling changes from GitHub (JupyterLab IDE)\n\n\n\n🙌 Practice\nTo pull from GitHub in JupyterLab, there are two steps:\nStep 1. Click the pull button in the Jupyter Lab Git extension.\nYou can tell Git to “pull” down any new changes from the remote repository at GitHub.com by clicking on the cloud icon with the down arrow in Jupyter Lab."
+  },
+  {
+    "objectID": "modules/module3/slides/module3_11.html#pulling-changes-from-github-jupyterlab-ide-2",
+    "href": "modules/module3/slides/module3_11.html#pulling-changes-from-github-jupyterlab-ide-2",
+    "title": "Pulling changes from a remote repository",
+    "section": "Pulling changes from GitHub (JupyterLab IDE)",
+    "text": "Pulling changes from GitHub (JupyterLab IDE)\n\n\n\nIn some cases, JupyterLab can warn you about continue modyfing your files locally when there are changes in the branch you are working. It is better to always keep the files updated with the remote and pull the changes!"
+  },
+  {
+    "objectID": "modules/module3/slides/module3_11.html#pulling-changes-from-github-jupyterlab-ide-3",
+    "href": "modules/module3/slides/module3_11.html#pulling-changes-from-github-jupyterlab-ide-3",
+    "title": "Pulling changes from a remote repository",
+    "section": "Pulling changes from GitHub (JupyterLab IDE)",
+    "text": "Pulling changes from GitHub (JupyterLab IDE)\n\n\n\n🙌 Practice\nStep 2. Refresh any open files that had changes pulled down.\nOnce the files are successfully pulled from GitHub, it is important that you refresh or reopen any files that had changes pulled down from GitHub. If you don’t, Jupyter Lab will keep displaying the old version of the file and it will be confusing if you make changes to this version instead of the newly pulled down version from GitHub.com.\nIn this slide, the red arrows are indicating the changes to the open notebook after pulling and refreshing."
+  },
+  {
+    "objectID": "modules/module3/slides/module3_11.html#pulling-changes-from-github-jupyterlab-ide-4",
+    "href": "modules/module3/slides/module3_11.html#pulling-changes-from-github-jupyterlab-ide-4",
+    "title": "Pulling changes from a remote repository",
+    "section": "Pulling changes from GitHub (JupyterLab IDE)",
+    "text": "Pulling changes from GitHub (JupyterLab IDE)\n\n\n\n🙌 Practice\nThe newly pulled changes will also show up in the history tab, since they are now part of your local repository, just as any commit you made on your computer.\nIt is best practise to pull the changes at the start of each work session before you begin editing any files in your local repository."
+  },
+  {
+    "objectID": "modules/module3/slides/module3_11.html#pulling-changes-from-github-terminal",
+    "href": "modules/module3/slides/module3_11.html#pulling-changes-from-github-terminal",
+    "title": "Pulling changes from a remote repository",
+    "section": "Pulling changes from GitHub (Terminal)",
+    "text": "Pulling changes from GitHub (Terminal)\n\n\n\n🙌 Practice\nIf you want to pull changes from GitHub.com via the terminal, you can use the command git pull. As you can see in this slide, Git will print a summary of what it changed when you run git pull (in the image one insertions/additions were made to eda.ipynb)."
   }
 ]
