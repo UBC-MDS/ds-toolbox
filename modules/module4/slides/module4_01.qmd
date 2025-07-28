@@ -1,6 +1,6 @@
 ---
 format: revealjs
-title: Viewieng the history of your project
+title: Viewing the history of your project
 title-slide-attributes:
   data-notes: |
     In this slide deck we will explore the project's commit history.
