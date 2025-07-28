@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-99fa6729ad23987aafeada22b1565191.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.6.43">
+
+  <title>The Data Science Toolbox – Version control repositories</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../../../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../../../site_libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../../../site_libs/revealjs/dist/theme/quarto-e5bc6a34833c3dc0463e99f20b2c4d70.css">
+  <link href="../../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../../../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" data-notes="<p>In this slide deck, we will learn the basics of how to create a repository that uses version control.</p>" class="quarto-title-block center">
+  <h1 class="title">Version control repositories</h1>
+
+<div class="quarto-title-authors">
+</div>
+
+</section>
+<section id="schematic-of-local-and-remote-version-control-repositories." class="slide level2">
+<h2>Schematic of local and remote version control repositories.</h2>
+<p><br> <br></p>
+
+<img data-src="../../../static/module3/vc-local-github-2.png" class="quarto-figure quarto-figure-center r-stretch" style="width:90.0%" alt="404 image"><aside class="notes">
+<p>Typically, when we put a data analysis project under version control, we create two copies of the repository. One copy is used as our primary workspace where we create, edit, and delete files.</p>
+<p>This copy is referred to as the <strong>local repository</strong>. The local repository most commonly exists on our computer or laptop, but can also exist within a workspace on a server (e.g., JupyterHub). The other copy is typically stored in a repository hosting service (e.g., GitHub), where we can easily share it with our collaborators. This copy is known as the <strong>remote repository</strong>.</p>
+<p>Under the hood, Git only saves the changes between your versions rather than a complete version of the document each time, so it is also efficient in terms of disk space. Note that while Git works great for text files, such as code, it is not so great for binary files such as images because the changes between two versions of the same image cannot easily be expressed in plain text.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="tracking-the-repository-history-using-commit-messages" class="slide level2">
+<h2>Tracking the repository history using commit messages</h2>
+
+<img data-src="../../../static/module3/vc-local-github-3.png" class="quarto-figure quarto-figure-center r-stretch" style="width:85.0%" alt="404 image"><aside class="notes">
+<p>Both copies of the repository have a <strong>working directory</strong> where you can create, store, edit, and delete files (e.g., <code>analysis.ipynb</code> in the image).</p>
+<p>You have probably noticed that in the local repository there is a <strong>staging area</strong>, which does not exist in the remote repository. We will soon learn more about the staging area, but for now imagine that it is a particular area in your local repository that will give you more flexibility to track your changes.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="tracking-the-repository-history-using-commit-messages-1" class="slide level2">
+<h2>Tracking the repository history using commit messages</h2>
+
+<img data-src="../../../static/module3/vc-local-github.png" class="quarto-figure quarto-figure-center r-stretch" style="width:75.0%" alt="404 image"><aside class="notes">
+<p>Both repositories also keep a complete project history. This history is a record of all versions of the project files that have been created. The repository history is not automatically generated; Git must be explicitly told when to record a version of the project. These records are called <strong>commits</strong>. They are a snapshot of the file contents and metadata about the repository at the time the record was created (a commit includes who made the commit, when it was made, etc.).</p>
+<p>In the local and remote repositories shown in the image, there are two commits represented as gray circles. Each commit can be identified by a human-readable message, which you write when you create the commit, and a commit hash that Git automatically adds for you.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="commit-message" class="slide level2">
+<h2>Commit message</h2>
+<p><br> <br></p>
+
+<img data-src="../../../static/module3/vc-commits.png" class="quarto-figure quarto-figure-center r-stretch" style="width:90.0%" alt="404 image"><aside class="notes">
+<p>The purpose of the commit message is to contain a brief, rich description of what work was done since the last commit. Messages act as a very useful narrative of the changes to a project over its lifespan. If you ever want to view or revert to an earlier version of the project, the message can help you identify which commit to view or revert to. In this image, you can see two such messages, one for each commit: <code>Created README.md</code> and <code>Added analysis draft</code>.</p>
+<p>The <strong>hash</strong> is a string of characters consisting of about 40 letters and numbers. The purpose of the hash is to serve as a unique identifier for the commit, and is used by Git to index project history. Although hashes are quite long — imagine having to type out 40 precise characters to view an old project version! — Git is able to work with shorter versions of hashes. In the image, you can see two of these shortened hashes, one for each commit: <code>Daa29d6</code> and <code>884c7ce</code>.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="how-can-you-create-your-repositories" class="slide level2">
+<h2>How can you create your repositories?</h2>
+<p><br> <br> <br></p>
+<ol type="1">
+<li>Create the remote repository in www.github.com (<strong>GitHub</strong>)</li>
+<li>Clone the repository to your local computer with the terminal <strong>OR</strong> JupyterLab IDE (<strong>Git</strong>)</li>
+</ol>
+<aside class="notes">
+<p>First, we are going to learn how to create a remote repository on GitHub and then to clone it locally using the terminal or JupyterLab.</p>
+<p>There is another possible option to create a repository, that is creating it locally and then pushing it to GitHub, but we are not going to cover it in this course.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="how-can-you-create-your-repositories-1" class="slide level2">
+<h2>How can you create your repositories?</h2>
+<p><br> <br> <br></p>
+
+<img data-src="../../../static/module3/vc-local-github-clone.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%" alt="404 image"><aside class="notes">
+<p>Cloning a GitHub repository is not the same as downloading it to your computer. When you clone it you are downloading the files and all the project history including the commits and their associated messages. The information about your project that is not the files themselves is downloaded as a hidden folder called <code>.git</code>. Any folder that contains a hidden <code>.git</code> folder is considered a Git repository. By default, all your projects on GitHub are Git repositories.</p>
+<p>You can clone your project to have a local copy using an integrated development environment (IDE) as JupyterLab or the terminal. The terminal will give you greater versatility since you can use a wide variety of commands, while the IDE will allow you to handle the basic commands in a more intuitive way.</p>
+<p>Next, we are going to learn more about both the steps in this slide, starting with how to create the remote repository!</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="creating-a-remote-repository-on-github" class="slide level2">
+<h2>1. Creating a remote repository on GitHub</h2>
+<p><br> <br></p>
+
+<img data-src="../../../static/module3/vc-new-repository-github.png" class="quarto-figure quarto-figure-center r-stretch" style="width:90.0%" alt="404 image"><aside class="notes">
+<p>🙌 <strong>Practice</strong></p>
+<p>Before you can create remote repositories on GitHub, you will need a GitHub account; you can sign up for a free account at https://github.com. Once you have logged into your account, you can create a new repository to host your project by clicking on the <code>+</code> icon in the upper right-hand corner, and then on <code>New Repository</code>.</p>
+<p>Another way to create a repository is by clicking the green button <code>New</code> on the left side of the screen.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="creating-a-remote-repository-on-github-1" class="slide level2">
+<h2>1. Creating a remote repository on GitHub</h2>
+
+<img data-src="../../../static/module3/vc-new-repository-create.png" class="quarto-figure quarto-figure-center r-stretch" style="width:55.0%" alt="404 image"><aside class="notes">
+<p>🙌 <strong>Practice</strong></p>
+<p>Repositories can be set up with a variety of configurations, including a name, optional description, and the inclusion (or not) of several template files. One of the most important configuration items to choose is the visibility to the outside world, either public or private:</p>
+<ul>
+<li><strong>Public repositories</strong> can be viewed by anyone.</li>
+<li><strong>Private repositories</strong> are only visible to you.</li>
+</ul>
+<p>Both public and private repositories are only editable by you, but you can change that by giving access to other collaborators.</p>
+<p>To get started with a public repository having a template <code>README.md</code> file, take the following steps:</p>
+<ol type="1">
+<li>Enter the name of your project repository. In our example, we use <code>canadian_languages</code>.</li>
+<li>Most repositories follow a similar naming convention involving only lowercase letter words separated by either underscores or hyphens.</li>
+<li>Choose an option for the privacy of your repository.</li>
+<li>Select the option <code>Add a README file</code>. This creates a placeholder <code>README.md</code> file in your repository’s root folder, which makes it possible to clone the repository to your computer directly.</li>
+<li>When you are happy with your repository name and configuration, click on the green <code>Create Repository</code> button.</li>
+</ol>
+<p>That’s it! Now let’s clone it to get a local copy on your computer.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="cloning-a-repository-using-jupyter-lab-ide" class="slide level2">
+<h2>2. Cloning a repository using Jupyter Lab (IDE)</h2>
+<p><br> <br> <br></p>
+
+<img data-src="../../../static/module3/vc-clone-jupyter-https.png" class="quarto-figure quarto-figure-center r-stretch" style="width:90.0%" alt="404 image"><aside class="notes">
+<p>🙌 <strong>Practice</strong></p>
+<p>Cloning a remote repository from GitHub to create a local repository results in a copy that is aware where it was obtained from, so that it knows where to send/receive new committed edits. In order to do this, first click the green button that says <code>Code</code> on your GitHub repo, and choose to copy the URL from the HTTPS tab.</p>
+<p><em>The green “Code” drop-down menu contains the remote address (URL) corresponding to the location of the remote GitHub repository.</em></p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="cloning-a-repository-using-jupyter-lab-ide-1" class="slide level2">
+<h2>2. Cloning a repository using Jupyter Lab (IDE)</h2>
+<p><br></p>
+
+<img data-src="../../../static/module3/vc-clone-jupyter-2.png" class="quarto-figure quarto-figure-center r-stretch" style="width:90.0%" alt="404 image"><aside class="notes">
+<p>🙌 <strong>Practice</strong></p>
+<p>Next, open JupyterLab and click the Jupyter <code>Git Clone</code> icon in the <code>Files</code> tab of the left side bar. We have marked this icon with a red circle in the screenshot in this slide.</p>
+<p>When you click this button a dialog box will show up, which we will explain in the next slide.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="cloning-a-repository-using-jupyter-lab-ide-2" class="slide level2">
+<h2>2. Cloning a repository using Jupyter Lab (IDE)</h2>
+<p><br></p>
+
+<img data-src="../../../static/module3/vc-clone-jupyter-URL.png" class="quarto-figure quarto-figure-center r-stretch" style="width:90.0%" alt="404 image"><aside class="notes">
+<p>🙌 <strong>Practice</strong></p>
+<p>Once the dialog box pops up, you can paste the URL of the GitHub project repository you copied earlier and click the blue <code>CLONE</code> button. This will download the repository files to your computer.</p>
+<p><em>Another way to do this is clicking on the Git icon</em> <em>on the side bar as you can see in the image</em></p>
+<p>It is important to keep in mind where you want to locate your repository. Before cloning the repository, navigate to the desired folder using the <code>File Browser</code> button on the left sidebar.</p>
+<p>Pay attention to not clone your repository inside another Git repository. This is not considered a good practice.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="cloning-a-repository-using-jupyter-lab-ide-3" class="slide level2">
+<h2>2. Cloning a repository using Jupyter Lab (IDE)</h2>
+<p><br></p>
+
+<img data-src="../../../static/module3/vc-clone-jupyter-4.png" class="quarto-figure quarto-figure-center r-stretch" style="width:90.0%" alt="404 image"><aside class="notes">
+<p>🙌 <strong>Practice</strong></p>
+<p>When the cloning is complete, you will now see a folder for the repository showing up in the file browser tab. Inside this folder are all the files that existed on your repository on GitHub.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="cloning-a-repository-using-jupyter-lab-terminal" class="slide level2">
+<h2>2. Cloning a repository using Jupyter Lab (Terminal)</h2>
+<p><br> <br> <br></p>
+
+<img data-src="../../../static/module3/vc-clone-jupyter-terminal.png" class="quarto-figure quarto-figure-center r-stretch" style="width:90.0%" alt="404 image"><aside class="notes">
+<p>🙌 <strong>Practice</strong></p>
+<p>It is also possible to work with Git from the terminal instead of the JupyterLab Git client. We will later see that there are some advantages of working in the terminal for the more advanced commands. For now, let’s see how we can perform the same cloning steps in the terminal as we just did via the graphical Git client. Note that we will never need to clone a project <em>both</em> from the Git client and the terminal, so we are just doing this here to show you how it is done in both interfaces.</p>
+<p>To clone a repository from the terminal, we will use the <code>git clone</code> command followed by the same URL we copied previously as can be seen in the screenshot on this slide. After the cloning has finished, you will see that the repository appears in the JupyterLab files tab, just as it did when we cloned it using the graphical Git client.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="how-do-you-know-if-youre-working-in-a-git-repository-terminal" class="slide level2">
+<h2>How do you know if you’re working in a Git repository? (Terminal)</h2>
+<p><br> <br> <br></p>
+
+<img data-src="../../../static/module3/vc-git-hidden-folder.png" class="quarto-figure quarto-figure-center r-stretch" style="width:90.0%" alt="404 image"><aside class="notes">
+<p>🙌 <strong>Practice</strong></p>
+<p>As we mentioned before, a Git repository stores all the necessary information for version control your project in a hidden folder called <code>.git</code>. If you want to know if you are working in a Git repository using the terminal you can use the bash command <code>ls -a</code> as you can see in the image. The <code>-a</code> flag will include into the lists of files displayed on the terminal the hidden folders. If the <code>.git</code> folder is present you are working in a Git repository.</p>
+<p>Remember to first double check that you are in the directory which the files have been cloned to. When you clone, the files will be downloaded to a subdirectory of the folder you are currently in, so you need to use <code>cd</code> to get to that folder before running <code>ls -a</code>. By cloning a repository from GitHub to your computer, you are automatically getting a copy of <code>.git</code> and thus, working in a Git repository.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="lets-apply-what-we-learned" class="title-slide slide level1 center">
+<h1>Let’s apply what we learned!</h1>
+
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../../../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../../../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../../../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../../../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../../../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../../../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../../../site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":false},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: false,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: true,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'slide',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: '100%',
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+      const toggleBodyColorMode = (bsSheetEl) => {
+        const mode = bsSheetEl.getAttribute("data-mode");
+        const bodyEl = window.document.querySelector("body");
+        if (mode === "dark") {
+          bodyEl.classList.add("quarto-dark");
+          bodyEl.classList.remove("quarto-light");
+        } else {
+          bodyEl.classList.add("quarto-light");
+          bodyEl.classList.remove("quarto-dark");
+        }
+      }
+      const toggleBodyColorPrimary = () => {
+        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+        if (bsSheetEl) {
+          toggleBodyColorMode(bsSheetEl);
+        }
+      }
+      toggleBodyColorPrimary();  
+      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+      tabsets.forEach(function(tabset) {
+        const tabby = new Tabby('#' + tabset.id);
+      });
+      const isCodeAnnotation = (el) => {
+        for (const clz of el.classList) {
+          if (clz.startsWith('code-annotation-')) {                     
+            return true;
+          }
+        }
+        return false;
+      }
+      const onCopySuccess = function(e) {
+        // button target
+        const button = e.trigger;
+        // don't keep focus
+        button.blur();
+        // flash "checked"
+        button.classList.add('code-copy-button-checked');
+        var currentTitle = button.getAttribute("title");
+        button.setAttribute("title", "Copied!");
+        let tooltip;
+        if (window.bootstrap) {
+          button.setAttribute("data-bs-toggle", "tooltip");
+          button.setAttribute("data-bs-placement", "left");
+          button.setAttribute("data-bs-title", "Copied!");
+          tooltip = new bootstrap.Tooltip(button, 
+            { trigger: "manual", 
+              customClass: "code-copy-button-tooltip",
+              offset: [0, -8]});
+          tooltip.show();    
+        }
+        setTimeout(function() {
+          if (tooltip) {
+            tooltip.hide();
+            button.removeAttribute("data-bs-title");
+            button.removeAttribute("data-bs-toggle");
+            button.removeAttribute("data-bs-placement");
+          }
+          button.setAttribute("title", currentTitle);
+          button.classList.remove('code-copy-button-checked');
+        }, 1000);
+        // clear code selection
+        e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
+      });
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp('/' + window.location.host + '/');
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+        const config = {
+          allowHTML: true,
+          maxWidth: 500,
+          delay: 100,
+          arrow: false,
+          appendTo: function(el) {
+              return el.closest('section.slide') || el.parentElement;
+          },
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'light-border',
+          placement: 'bottom-start',
+        };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
+          config['offset'] = [0,0];
+          config['maxWidth'] = 700;
+        window.tippy(el, config); 
+      }
+      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+      for (var i=0; i<noterefs.length; i++) {
+        const ref = noterefs[i];
+        tippyHover(ref, function() {
+          // use id or data attribute instead here
+          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+          try { href = new URL(href).hash; } catch {}
+          const id = href.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
+        });
+      }
+      const findCites = (el) => {
+        const parentEl = el.parentElement;
+        if (parentEl) {
+          const cites = parentEl.dataset.cites;
+          if (cites) {
+            return {
+              el,
+              cites: cites.split(' ')
+            };
+          } else {
+            return findCites(el.parentElement)
+          }
+        } else {
+          return undefined;
+        }
+      };
+      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+      for (var i=0; i<bibliorefs.length; i++) {
+        const ref = bibliorefs[i];
+        const citeInfo = findCites(ref);
+        if (citeInfo) {
+          tippyHover(citeInfo.el, function() {
+            var popup = window.document.createElement('div');
+            citeInfo.cites.forEach(function(cite) {
+              var citeDiv = window.document.createElement('div');
+              citeDiv.classList.add('hanging-indent');
+              citeDiv.classList.add('csl-entry');
+              var biblioDiv = window.document.getElementById('ref-' + cite);
+              if (biblioDiv) {
+                citeDiv.innerHTML = biblioDiv.innerHTML;
+              }
+              popup.appendChild(citeDiv);
+            });
+            return popup.innerHTML;
+          });
+        }
+      }
+    });
+    </script>
+    
+
+</body></html>
