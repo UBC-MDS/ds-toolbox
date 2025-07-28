@@ -18,11 +18,11 @@ In this course, we will dive into the world of data science tools and utilities.
 
 ## Prerequisites
 
-[Programming in Python for Data Science](https://prog-learn.mds.ubc.ca/)
+[Programming in Python for Data Science](https://ubc-mds.github.io/programming-in-python-for-data-science/)
 
 ## Content
 
-We are using an interactive platform that contains a series of slide decks accompanied by multiple-choice questions and interactive coding exercises to apply what you learned during the module: [https://toolbox-learn.mds.ubc.ca/](https://toolbox-learn.mds.ubc.ca/). We recommend using Chrome, Firefox or Safari to complete the content as other browsers are incompatible with the content platform.
+We are using an interactive platform that contains a series of slide decks accompanied by multiple-choice questions and interactive coding exercises to apply what you learned during the module: [https://ubc-mds.github.io/ds-toolbox](https://ubc-mds.github.io/ds-toolbox). We recommend using Chrome, Firefox or Safari to complete the content as other browsers are incompatible with the content platform.
 
 
 ### Laptop requirements

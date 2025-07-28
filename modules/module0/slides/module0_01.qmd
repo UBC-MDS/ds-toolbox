@@ -29,4 +29,4 @@ By the end of the course, students are expected to be able to:
 
 ## Prerequisites
 
-- This course does not have any formal prerequisites, but it is recommended that you have some experience with Jupyter Notebooks and JupyterLab, either from your own projects or the course </strong><u><a href="https://prog-learn.mds.ubc.ca/">Programming in Python for Data Science</a></u> 
+- This course does not have any formal prerequisites, but it is recommended that you have some experience with Jupyter Notebooks and JupyterLab, either from your own projects or the course </strong><u><a href="https://ubc-mds.github.io/programming-in-python-for-data-science/">Programming in Python for Data Science</a></u> 

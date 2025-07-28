@@ -9,4 +9,4 @@ This course is part of the Key Capabilities for Data Science program and covers 
 
 In this course, we will dive into the world of data science tools and utilities. While these are not strictly required for data analysis, they are necessary for efficient, reproducible, and collaborative data science practices, and are all important building blocks for a successful and sustained data science career.
 
-Course prerequisites: [Programming in Python for Data Science](https://prog-learn.mds.ubc.ca/)
+Course prerequisites: [Programming in Python for Data Science](https://ubc-mds.github.io/programming-in-python-for-data-science/)
