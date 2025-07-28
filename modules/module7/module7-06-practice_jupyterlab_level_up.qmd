@@ -1,0 +1,41 @@
+---
+format: html
+---
+
+<script src='../../src/quiz.js'></script>
+
+# 3.1. Exercises
+
+## ✍️ Practice: JupyterLab level up
+
+<div id='mcq1'></div>
+<script>
+    generateQuiz(
+        'mcq1',
+        'Question 1',
+        'Which of the following statements is false?',
+        {
+        'When you edit a notebook, all notebook views reflect the change.': 'This is a true statement.',
+        'A notebook converted to Markdown format can be opened with any text editor.': 'This is a true statement.',
+        'A source extension requires rebuilding JupyterLab.': 'This is a true statement.',
+        'Different kernels can be used with different views of a notebook.': 'Views are just "views". In other words, view are like looking at a single notebook, but from different viewpoints. Each single notebook in Jupyter Lab can only be connected to a single kernel.',
+        },
+        'Different kernels can be used with different views of a notebook.',
+    );
+</script>
+
+<div id='mcq2'></div>
+<script>
+    generateQuiz(
+        'mcq2',
+        'Question 2',
+        'Which of the following statements is true?',
+        {
+        'You should avoid using extensions since they are a security risk': 'Although some extension could provide security risks since they are written by someone else, they are not more dangerous than downloading a Python package made by someone else. In other words, most popular extensions are safe and you are encouraged to use them to improve your JupyterLab experience.',
+        'Prebuilt extensions can be installed via the extension manager GUI': 'This is only true for the old source extension format.',
+        'Exporting to WebPDF requires that you install the LaTeX typesetting program': 'This is only required for the regular PDF export.',
+        'Additional cell and notebook views are helpful when working with long notebook files': 'Using additional views can allow you to compare output and input cells next to each other, even if they are far apart in the notebook.',
+        },
+        'Additional cell and notebook views are helpful when working with long notebook files',
+    );
+</script>

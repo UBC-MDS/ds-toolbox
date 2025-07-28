@@ -1,0 +1,63 @@
+---
+format: html
+---
+
+<script src='../../src/quiz.js'></script>
+
+# 1.1. Exercises
+
+## ✍️ Practice: Keeping a notebook
+
+Suppose that you have just opened a notebook with the following cells:
+
+![](../../static/module7/mcq.png){width="60%" fig-alt="404 image"}
+
+<div id='mcq1'></div>
+<script>
+    generateQuiz(
+        'mcq1',
+        'Question 1',
+        'What happens if you hit <code>Shift + Tab</code> while your cursor is in the shown position?',
+        {
+        'A pop-up will appear to show the <code>pd.read_csv()</code>’s documentation': 'This is what’s expected to happen, but it won’t. Remember that, you’ve just opened your notebook...',
+        'Nothing will appear': 'Since the first cell is not executed yet, the notebook’s kernel doesn’t know anything about those functions. The missing counter on the left indicates that a cell is not executed, but watch out, you might open up a notebook that has a numbered cell from a previous execution which might make you think that you have executed it in this session yourself.',
+        'You’ll get an error message': 'No error error message will appear as a result of pressing <code>Shift + Tab</code>.',
+        'JupyterLab’s contextual help window will be opened': 'The <code>Shift + Tab</code> shortcut is not set for opening the contextual help window.',
+        },
+        'Nothing will appear',
+    );
+</script>
+
+<div id='mcq2'></div>
+<script>
+    generateQuiz(
+        'mcq2',
+        'True or False',
+        'A notebook’s console uses the same kernel as the notebook itself.',
+        {
+        'True': '',
+        'False': 'Even though you can launch an independent console in JupyterLab too, the console opened for a particular notebook is connected to the same kernel as the notebook.',
+        },
+        'True',
+    );
+</script>
+
+We have a notebook like the following:
+
+![](../../static/module7/mcq2.png){width="50%" fig-alt="404 image"}
+
+<div id='mcq3'></div>
+<script>
+    generateQuiz(
+        'mcq3',
+        'Question 3',
+        'What do you think the output will be if we run the last cell?',
+        {
+        '27': 'Note the order in which the cells have been executed. This would have been the output if only the second cell was already run.',
+        '9': 'Note the order in which the cells have been executed. This would have been the output if the second and third cell were already run.',
+        '60': '',
+        'An error message': 'Note that some cells have already been executed. An error message would have resulted from running the last cell only if the kernel didn’t know about the variable <code>num</code>.',
+        },
+        '60',
+    );
+</script>

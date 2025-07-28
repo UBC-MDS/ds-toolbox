@@ -134,6 +134,35 @@ website:
           - text: '&nbsp;&nbsp; 6.1. Exercises'
             href: modules/module5/module5-12-practice_forking_your_repository.qmd
           - href: modules/module5/module5-13-what_did_we_just_learn.qmd
+      - section: "**M6. File Names, Project Organization, Virtual Environments**"
+        contents:
+          - href: modules/module6/module6-00-module_learning_outcomes.qmd
+          - href: modules/module6/module6-01-file_names:_best_practices.qmd
+          - text: '&nbsp;&nbsp; 1.1. Exercises'
+            href: modules/module6/module6-02-practice_whats in a name.qmd
+          - href: modules/module6/module6-03-project_organization.qmd
+          - text: '&nbsp;&nbsp; 2.1. Exercises'
+            href: modules/module6/module6-04-practice_tidy_desk_tidy_mind.qmd
+          - href: modules/module6/module6-05-virtual_environments.qmd
+          - text: '&nbsp;&nbsp; 3.1. Exercises'
+            href: modules/module6/module6-06-practice_another_snake_in_the_python_ecosystem.qmd
+          - href: modules/module6/module6-07-what_did_we_just_learn.qmd
+      - section: "**M7. JupyterLab**"
+        contents:
+          - href: modules/module7/module7-00-module_learning_outcomes.qmd
+          - href: modules/module7/module7-01-jupyter_notebooks.qmd
+          - text: '&nbsp;&nbsp; 1.1. Exercises'
+            href: modules/module7/module7-02-practice_keeping_a_notebook.qmd
+          - href: modules/module7/module7-03-markdown_for_text_formatting.qmd
+          - text: '&nbsp;&nbsp; 2.1. Exercises'
+            href: modules/module7/module7-04-practice_markdown_is_everywhere_we_look.qmd
+          - href: modules/module7/module7-05-intermediate_jupyterlab_tips_and_tricks.qmd
+          - text: '&nbsp;&nbsp; 3.1. Exercises'
+            href: modules/module7/module7-06-practice_jupyterlab_level_up.qmd
+          - href: modules/module7/module7-07-advanced_jupyterlab_tips_and_tricks.qmd
+          - text: '&nbsp;&nbsp; 4.1. Exercises'
+            href: modules/module7/module7-08-practice_jupyterlab_level_up_again.qmd
+          - href: modules/module7/module7-09-what_did_we_just_learn.qmd
 
 # Since we are declaring options for two formats here (html and revealjs)
 # each qmd file needs to include a yaml block including which format to use for that file.

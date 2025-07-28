@@ -1,0 +1,55 @@
+---
+format: html
+---
+
+<script src='../../src/quiz.js'></script>
+
+# 3.1. Exercises
+
+## ✍️ Practice: Another snake in the Python ecosystem
+
+<div id='mcq1'></div>
+<script>
+    generateQuiz(
+        'mcq1',
+        'Question 1',
+        'What does <code>conda list</code> do?',
+        {
+        'Lists all packages in the current environment': '',
+        'Lists all environments with their packages': '<code>conda env list</code> is the command that lists all existing environments (but not their packages).',
+        'Doesn’t do anything as it needs more arguments': 'It doesn’t need more arguments if it’s used for its intended purpose!',
+        'Lists all available channels': 'We actually didn’t mention a command for listing available conda channels in the lecture slides (it’s <code>conda config --show channels</code> by the way!).',
+        },
+        'Lists all packages in the current environment',
+    );
+</script>
+
+<div id='mcq2'></div>
+<script>
+    generateQuiz(
+        'mcq2',
+        'True or False',
+        'When exporting an environment, the <code>--from-history</code> flag is used to include all packages in the environment file.',
+        {
+        'True': '<code>--from-history</code> is used to include only those packages which are explicitly installed, not their dependencies.',
+        'False': '',
+        },
+        'False',
+    );
+</script>
+
+<div id='mcq3'></div>
+<script>
+    generateQuiz(
+        'mcq3',
+        'Question 3',
+        'The <code>pandas</code> package depends on the <code>numpy</code> package. What will happen if you try to remove <code>pandas</code>, given that you installed <code>numpy</code> when creating the environment?',
+        {
+        'Both <code>pandas</code> and <code>numpy</code> will be removed': 'Since <code>numpy</code> is installed explicitly, it won’t be removed.',
+        'Will see an error': 'No error will occur for removing a package.',
+        'Only <code>pandas</code> will be removed': 'Explicitly installed packages (<code>numpy</code> in this case) are not removed along with packages that depend on them.',
+        'Depends on whether this is the base environment or not': 'The base environment is just an environment, the rules are the same!',
+        },
+        'Only <code>pandas</code> will be removed',
+    );
+</script>
